@@ -1,0 +1,47 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat 22 Jan 2022 05:37:51 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2021-12-03/Pocillopora_meandrina_KBHIv1/07_genome_size_estimation
+=====================================================================
+
+L:12 U:272 # these need to be sane values like 30 800 or so
+[Sat 22 Jan 2022 05:37:53 PM EST]      CMD: jellyfish dump -c -L 12 -U 272 smudgeplot.jellyfish.21.jf | /home/timothy/programs/smudgeplot/bin/smudgeplot.py hetkmers -o smudgeplot_kmer_pairs_k21_manual_cutoffs
+Running smudgeplot v0.2.3dev
+Task: hetkmers
+Kmers and coverages loaded.
+Kmer pairs identified.
+Kmers in unique kmer pairs identified.
+smudgeplot_kmer_pairs_k21_manual_cutoffs_families.tsv and smudgeplot_kmer_pairs_k21_manual_cutoffs_coverages.tsv files saved.
+
+Done!
+[Sat 22 Jan 2022 08:27:53 PM EST]      CMD: /home/timothy/programs/smudgeplot/bin/smudgeplot.py plot smudgeplot_kmer_pairs_k21_manual_cutoffs_coverages.tsv -o smudgeplot_results_k21_manual_cutoffs -n 32
+
+######################
+## INPUT PROCESSING ##
+######################
+
+#############
+## SUMMARY ##
+#############
+detecting two smudges at the same positions, not enough data for this number of bins lowering number of bins to 	35
+detecting two smudges at the same positions, not enough data for this number of bins lowering number of bins to 	30
+detecting two smudges at the same positions, not enough data for this number of bins lowering number of bins to 	25
+
+##########
+## PLOT ##
+##########
+null device 
+          1 
+null device 
+          1 
+Running smudgeplot v0.2.3dev
+Task: plot
+Calling: smudgeplot_plot.R -i "smudgeplot_kmer_pairs_k21_manual_cutoffs_coverages.tsv" -o "smudgeplot_results_k21_manual_cutoffs" -k 21 -n 32.0
+
+Done!
+
+=====================================================================
+Started: at Sat 22 Jan 2022 05:37:51 PM EST
+Finished: at Sat 22 Jan 2022 08:28:46 PM EST
+ExitStatus: 0
+=====================================================================

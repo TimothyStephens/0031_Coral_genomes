@@ -1,0 +1,174 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 28 Dec 2021 03:32:33 PM EST
+Working directory is /scratch/timothy/projects/0031_Montipora_genome_comparison/03_Analysis/2021-12-03/Montipora_cactus_SLJPv2/06_short_read_trimming
+=====================================================================
+
+[Tue 28 Dec 2021 03:32:35 PM EST]      CMD: cutadapt -q 20 --minimum-length 25 --cores 24 -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCA -A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT -o DRR194228_trimmed_R1.fastq.gz -p DRR194228_trimmed_R2.fastq.gz DRR194228_R1.fastq.gz DRR194228_R2.fastq.gz > DRR194228.cutadapt.log 2>&1
+[Tue 28 Dec 2021 03:52:06 PM EST]      CMD: ./find_adapters_in_reads.py -n 100000000000 -a adapters.fa -f DRR194228_R1.fastq.gz DRR194228_R2.fastq.gz DRR194228_trimmed_R1.fastq.gz DRR194228_trimmed_R2.fastq.gz
+[INFO]: 
+[INFO]: Processing file: DRR194228_R1.fastq.gz
+[INFO]: 	0	TruSeq_Universal_Adapter
+[INFO]: 	0	RC_TruSeq_Universal_Adapter
+[INFO]: 	0	TruSeq_Adapter_Index_1
+[INFO]: 	0	TruSeq_Adapter_Index_2
+[INFO]: 	0	TruSeq_Adapter_Index_3
+[INFO]: 	0	TruSeq_Adapter_Index_4
+[INFO]: 	0	TruSeq_Adapter_Index_5
+[INFO]: 	0	TruSeq_Adapter_Index_6
+[INFO]: 	0	TruSeq_Adapter_Index_7
+[INFO]: 	0	TruSeq_Adapter_Index_8
+[INFO]: 	0	TruSeq_Adapter_Index_9
+[INFO]: 	0	TruSeq_Adapter_Index_10
+[INFO]: 	0	TruSeq_Adapter_Index_11
+[INFO]: 	0	TruSeq_Adapter_Index_12
+[INFO]: 	0	TruSeq_Adapter_Index_13
+[INFO]: 	0	TruSeq_Adapter_Index_14
+[INFO]: 	0	TruSeq_Adapter_Index_15
+[INFO]: 	0	TruSeq_Adapter_Index_16
+[INFO]: 	0	TruSeq_Adapter_Index_18
+[INFO]: 	0	TruSeq_Adapter_Index_19
+[INFO]: 	0	TruSeq_Adapter_Index_20
+[INFO]: 	0	TruSeq_Adapter_Index_21
+[INFO]: 	0	TruSeq_Adapter_Index_22
+[INFO]: 	0	TruSeq_Adapter_Index_23
+[INFO]: 	0	TruSeq_Adapter_Index_25
+[INFO]: 	0	TruSeq_Adapter_Index_27
+[INFO]: 	0	I287_CJ_GAGTACG
+[INFO]: 	0	I288_CJ_TGCCCAT
+[INFO]: 	0	I289_CJ_TGTGCCA
+[INFO]: 	0	I290_CJ_CATTTAG
+[INFO]: 	0	I291_CJ_AGGACCT
+[INFO]: 	0	I292_CJ_CCAGGCA
+[INFO]: 	0	I293_CJ_TTCGCTG
+[INFO]: 	0	I294_CJ_AGACTGA
+[INFO]: 	0	I295_CJ_ACAGATA
+[INFO]: 	0	I296_CJ_AAACCTT
+[INFO]: 	0	I297_CJ_AACGGAG
+[INFO]: 	0	I298_CJ_TCCGGGA
+[INFO]: 
+[INFO]: Processing file: DRR194228_R2.fastq.gz
+[INFO]: 	0	TruSeq_Universal_Adapter
+[INFO]: 	0	RC_TruSeq_Universal_Adapter
+[INFO]: 	0	TruSeq_Adapter_Index_1
+[INFO]: 	0	TruSeq_Adapter_Index_2
+[INFO]: 	0	TruSeq_Adapter_Index_3
+[INFO]: 	0	TruSeq_Adapter_Index_4
+[INFO]: 	0	TruSeq_Adapter_Index_5
+[INFO]: 	0	TruSeq_Adapter_Index_6
+[INFO]: 	0	TruSeq_Adapter_Index_7
+[INFO]: 	0	TruSeq_Adapter_Index_8
+[INFO]: 	0	TruSeq_Adapter_Index_9
+[INFO]: 	0	TruSeq_Adapter_Index_10
+[INFO]: 	0	TruSeq_Adapter_Index_11
+[INFO]: 	0	TruSeq_Adapter_Index_12
+[INFO]: 	0	TruSeq_Adapter_Index_13
+[INFO]: 	0	TruSeq_Adapter_Index_14
+[INFO]: 	0	TruSeq_Adapter_Index_15
+[INFO]: 	0	TruSeq_Adapter_Index_16
+[INFO]: 	0	TruSeq_Adapter_Index_18
+[INFO]: 	0	TruSeq_Adapter_Index_19
+[INFO]: 	0	TruSeq_Adapter_Index_20
+[INFO]: 	0	TruSeq_Adapter_Index_21
+[INFO]: 	0	TruSeq_Adapter_Index_22
+[INFO]: 	0	TruSeq_Adapter_Index_23
+[INFO]: 	0	TruSeq_Adapter_Index_25
+[INFO]: 	0	TruSeq_Adapter_Index_27
+[INFO]: 	0	I287_CJ_GAGTACG
+[INFO]: 	0	I288_CJ_TGCCCAT
+[INFO]: 	0	I289_CJ_TGTGCCA
+[INFO]: 	0	I290_CJ_CATTTAG
+[INFO]: 	0	I291_CJ_AGGACCT
+[INFO]: 	0	I292_CJ_CCAGGCA
+[INFO]: 	0	I293_CJ_TTCGCTG
+[INFO]: 	0	I294_CJ_AGACTGA
+[INFO]: 	0	I295_CJ_ACAGATA
+[INFO]: 	0	I296_CJ_AAACCTT
+[INFO]: 	0	I297_CJ_AACGGAG
+[INFO]: 	0	I298_CJ_TCCGGGA
+[INFO]: 
+[INFO]: Processing file: DRR194228_trimmed_R1.fastq.gz
+[INFO]: 	0	TruSeq_Universal_Adapter
+[INFO]: 	0	RC_TruSeq_Universal_Adapter
+[INFO]: 	0	TruSeq_Adapter_Index_1
+[INFO]: 	0	TruSeq_Adapter_Index_2
+[INFO]: 	0	TruSeq_Adapter_Index_3
+[INFO]: 	0	TruSeq_Adapter_Index_4
+[INFO]: 	0	TruSeq_Adapter_Index_5
+[INFO]: 	0	TruSeq_Adapter_Index_6
+[INFO]: 	0	TruSeq_Adapter_Index_7
+[INFO]: 	0	TruSeq_Adapter_Index_8
+[INFO]: 	0	TruSeq_Adapter_Index_9
+[INFO]: 	0	TruSeq_Adapter_Index_10
+[INFO]: 	0	TruSeq_Adapter_Index_11
+[INFO]: 	0	TruSeq_Adapter_Index_12
+[INFO]: 	0	TruSeq_Adapter_Index_13
+[INFO]: 	0	TruSeq_Adapter_Index_14
+[INFO]: 	0	TruSeq_Adapter_Index_15
+[INFO]: 	0	TruSeq_Adapter_Index_16
+[INFO]: 	0	TruSeq_Adapter_Index_18
+[INFO]: 	0	TruSeq_Adapter_Index_19
+[INFO]: 	0	TruSeq_Adapter_Index_20
+[INFO]: 	0	TruSeq_Adapter_Index_21
+[INFO]: 	0	TruSeq_Adapter_Index_22
+[INFO]: 	0	TruSeq_Adapter_Index_23
+[INFO]: 	0	TruSeq_Adapter_Index_25
+[INFO]: 	0	TruSeq_Adapter_Index_27
+[INFO]: 	0	I287_CJ_GAGTACG
+[INFO]: 	0	I288_CJ_TGCCCAT
+[INFO]: 	0	I289_CJ_TGTGCCA
+[INFO]: 	0	I290_CJ_CATTTAG
+[INFO]: 	0	I291_CJ_AGGACCT
+[INFO]: 	0	I292_CJ_CCAGGCA
+[INFO]: 	0	I293_CJ_TTCGCTG
+[INFO]: 	0	I294_CJ_AGACTGA
+[INFO]: 	0	I295_CJ_ACAGATA
+[INFO]: 	0	I296_CJ_AAACCTT
+[INFO]: 	0	I297_CJ_AACGGAG
+[INFO]: 	0	I298_CJ_TCCGGGA
+[INFO]: 
+[INFO]: Processing file: DRR194228_trimmed_R2.fastq.gz
+[INFO]: 	0	TruSeq_Universal_Adapter
+[INFO]: 	0	RC_TruSeq_Universal_Adapter
+[INFO]: 	0	TruSeq_Adapter_Index_1
+[INFO]: 	0	TruSeq_Adapter_Index_2
+[INFO]: 	0	TruSeq_Adapter_Index_3
+[INFO]: 	0	TruSeq_Adapter_Index_4
+[INFO]: 	0	TruSeq_Adapter_Index_5
+[INFO]: 	0	TruSeq_Adapter_Index_6
+[INFO]: 	0	TruSeq_Adapter_Index_7
+[INFO]: 	0	TruSeq_Adapter_Index_8
+[INFO]: 	0	TruSeq_Adapter_Index_9
+[INFO]: 	0	TruSeq_Adapter_Index_10
+[INFO]: 	0	TruSeq_Adapter_Index_11
+[INFO]: 	0	TruSeq_Adapter_Index_12
+[INFO]: 	0	TruSeq_Adapter_Index_13
+[INFO]: 	0	TruSeq_Adapter_Index_14
+[INFO]: 	0	TruSeq_Adapter_Index_15
+[INFO]: 	0	TruSeq_Adapter_Index_16
+[INFO]: 	0	TruSeq_Adapter_Index_18
+[INFO]: 	0	TruSeq_Adapter_Index_19
+[INFO]: 	0	TruSeq_Adapter_Index_20
+[INFO]: 	0	TruSeq_Adapter_Index_21
+[INFO]: 	0	TruSeq_Adapter_Index_22
+[INFO]: 	0	TruSeq_Adapter_Index_23
+[INFO]: 	0	TruSeq_Adapter_Index_25
+[INFO]: 	0	TruSeq_Adapter_Index_27
+[INFO]: 	0	I287_CJ_GAGTACG
+[INFO]: 	0	I288_CJ_TGCCCAT
+[INFO]: 	0	I289_CJ_TGTGCCA
+[INFO]: 	0	I290_CJ_CATTTAG
+[INFO]: 	0	I291_CJ_AGGACCT
+[INFO]: 	0	I292_CJ_CCAGGCA
+[INFO]: 	0	I293_CJ_TTCGCTG
+[INFO]: 	0	I294_CJ_AGACTGA
+[INFO]: 	0	I295_CJ_ACAGATA
+[INFO]: 	0	I296_CJ_AAACCTT
+[INFO]: 	0	I297_CJ_AACGGAG
+[INFO]: 	0	I298_CJ_TCCGGGA
+
+=====================================================================
+Started: at Tue 28 Dec 2021 03:32:33 PM EST
+Finished: at Tue 28 Dec 2021 06:30:36 PM EST
+ExitStatus: 0
+=====================================================================

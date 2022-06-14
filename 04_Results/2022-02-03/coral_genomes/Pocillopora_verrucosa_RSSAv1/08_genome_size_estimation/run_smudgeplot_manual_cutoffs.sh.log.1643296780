@@ -1,0 +1,44 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 27 Jan 2022 10:19:40 AM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2021-12-03/Pocillopora_verrucosa_RSSAv1/07_genome_size_estimation
+=====================================================================
+
+L:35 U:765 # these need to be sane values like 30 800 or so
+[Thu 27 Jan 2022 10:19:42 AM EST]      CMD: jellyfish dump -c -L 35 -U 765 smudgeplot.jellyfish.21.jf | /home/timothy/programs/smudgeplot/bin/smudgeplot.py hetkmers -o smudgeplot_kmer_pairs_k21_manual_cutoffs
+Running smudgeplot v0.2.3dev
+Task: hetkmers
+Kmers and coverages loaded.
+Kmer pairs identified.
+Kmers in unique kmer pairs identified.
+smudgeplot_kmer_pairs_k21_manual_cutoffs_families.tsv and smudgeplot_kmer_pairs_k21_manual_cutoffs_coverages.tsv files saved.
+
+Done!
+[Thu 27 Jan 2022 01:10:53 PM EST]      CMD: /home/timothy/programs/smudgeplot/bin/smudgeplot.py plot smudgeplot_kmer_pairs_k21_manual_cutoffs_coverages.tsv -o smudgeplot_results_k21_manual_cutoffs -n 90
+
+######################
+## INPUT PROCESSING ##
+######################
+
+#############
+## SUMMARY ##
+#############
+
+##########
+## PLOT ##
+##########
+null device 
+          1 
+null device 
+          1 
+Running smudgeplot v0.2.3dev
+Task: plot
+Calling: smudgeplot_plot.R -i "smudgeplot_kmer_pairs_k21_manual_cutoffs_coverages.tsv" -o "smudgeplot_results_k21_manual_cutoffs" -k 21 -n 90.0
+
+Done!
+
+=====================================================================
+Started: at Thu 27 Jan 2022 10:19:40 AM EST
+Finished: at Thu 27 Jan 2022 01:11:32 PM EST
+ExitStatus: 0
+=====================================================================

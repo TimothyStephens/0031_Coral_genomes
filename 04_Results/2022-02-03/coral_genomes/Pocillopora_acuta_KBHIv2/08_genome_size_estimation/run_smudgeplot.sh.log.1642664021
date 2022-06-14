@@ -1,0 +1,62 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 20 Jan 2022 02:33:41 AM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2021-12-03/Pocillopora_acuta_KBHIv2/07_genome_size_estimation
+=====================================================================
+
+[Thu 20 Jan 2022 02:33:45 AM EST]      CMD: jellyfish count -C -m 21 -s 32G -o smudgeplot.jellyfish.21.jf -t 48 -F 2 <(zcat SRR16077714_trimmed_R1.fastq.gz) <(zcat SRR16077714_trimmed_R2.fastq.gz)
+[Thu 20 Jan 2022 02:39:57 AM EST]      CMD: jellyfish histo -t 48 smudgeplot.jellyfish.21.jf > smudgeplot.jellyfish.21.histo
+Running smudgeplot v0.2.3dev
+Task: cutoff
+
+Done!
+Running smudgeplot v0.2.3dev
+Task: cutoff
+
+Done!
+L:10 U:790 # these need to be sane values like 30 800 or so
+[Thu 20 Jan 2022 02:40:53 AM EST]      CMD: jellyfish dump -c -L 10 -U 790 smudgeplot.jellyfish.21.jf | /home/timothy/programs/smudgeplot/bin/smudgeplot.py hetkmers -o smudgeplot_kmer_pairs_k21
+Running smudgeplot v0.2.3dev
+Task: hetkmers
+Kmers and coverages loaded.
+Kmer pairs identified.
+Kmers in unique kmer pairs identified.
+smudgeplot_kmer_pairs_k21_families.tsv and smudgeplot_kmer_pairs_k21_coverages.tsv files saved.
+
+Done!
+[Thu 20 Jan 2022 06:56:20 AM EST]      CMD: /home/timothy/programs/smudgeplot/bin/smudgeplot.py plot smudgeplot_kmer_pairs_k21_coverages.tsv -o smudgeplot_results_k21
+
+######################
+## INPUT PROCESSING ##
+######################
+
+#############
+## SUMMARY ##
+#############
+detecting two smudges at the same positions, not enough data for this number of bins lowering number of bins to 	35
+detecting two smudges at the same positions, not enough data for this number of bins lowering number of bins to 	30
+detecting two smudges at the same positions, not enough data for this number of bins lowering number of bins to 	25
+detecting two smudges at the same positions, not enough data for this number of bins lowering number of bins to 	20
+!! Warning, your coverage filter on the lower end (L = 	10	) is higher than half of the 1n coverage estimate ( 1n / 2 = 	8.93
+If the real 1n coverage is half of your estimate you would not picked it up due to the filtering.
+If you have sufficient coverage, consider reruning the analysis with lower L (something like (1n / 2) - 5)
+One good way for verificaiton would be to compare it to GenomeScope estimate of haploid coverage
+
+##########
+## PLOT ##
+##########
+null device 
+          1 
+null device 
+          1 
+Running smudgeplot v0.2.3dev
+Task: plot
+Calling: smudgeplot_plot.R -i "smudgeplot_kmer_pairs_k21_coverages.tsv" -o "smudgeplot_results_k21" -k 21
+
+Done!
+
+=====================================================================
+Started: at Thu 20 Jan 2022 02:33:41 AM EST
+Finished: at Thu 20 Jan 2022 06:57:45 AM EST
+ExitStatus: 0
+=====================================================================

@@ -1,0 +1,93 @@
+This is cutadapt 3.5 with Python 3.9.9
+Command line parameters: -q 20 --minimum-length 25 --cores 24 -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCA -A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT -o SRR4254617_trimmed_R1.fastq.gz -p SRR4254617_trimmed_R2.fastq.gz SRR4254617_R1.fastq.gz SRR4254617_R2.fastq.gz
+Processing reads on 24 cores in paired-end mode ...
+Finished in 2182.81 s (9 µs/read; 6.53 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:        237,589,976
+  Read 1 with adapter:               5,835,618 (2.5%)
+  Read 2 with adapter:               5,936,721 (2.5%)
+
+== Read fate breakdown ==
+Pairs that were too short:           3,843,820 (1.6%)
+Pairs written (passing filters):   233,746,156 (98.4%)
+
+Total basepairs processed: 47,517,995,200 bp
+  Read 1: 23,758,997,600 bp
+  Read 2: 23,758,997,600 bp
+Quality-trimmed:             863,421,553 bp (1.8%)
+  Read 1:   642,632,585 bp
+  Read 2:   220,788,968 bp
+Total written (filtered):  46,257,126,026 bp (97.3%)
+  Read 1: 23,070,310,137 bp
+  Read 2: 23,186,815,889 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA; Type: regular 3'; Length: 33; Trimmed: 5835618 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-33 bp: 3
+
+Bases preceding removed adapters:
+  A: 36.7%
+  C: 22.3%
+  G: 22.1%
+  T: 18.9%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	4454401	3712343.4	0	4454401
+4	1076304	928085.8	0	1076304
+5	214347	232021.5	0	214347
+6	38061	58005.4	0	38061
+7	10774	14501.3	0	10774
+8	6649	3625.3	0	6649
+9	9412	906.3	0	5146 4266
+10	10238	226.6	1	4102 6136
+11	6221	56.6	1	3474 2747
+12	3820	14.2	1	3027 793
+13	2933	3.5	1	2671 262
+14	2448	0.9	1	1 2447
+15	8	0.2	1	0 8
+16	1	0.1	1	0 1
+20	1	0.0	2	0 0 1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT; Type: regular 3'; Length: 33; Trimmed: 5936721 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-33 bp: 3
+
+Bases preceding removed adapters:
+  A: 36.7%
+  C: 22.2%
+  G: 22.3%
+  T: 18.9%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	4529343	3712343.4	0	4529343
+4	1098729	928085.8	0	1098729
+5	217208	232021.5	0	217208
+6	38939	58005.4	0	38939
+7	10966	14501.3	0	10966
+8	6563	3625.3	0	6563
+9	9410	906.3	0	5152 4258
+10	10248	226.6	1	4036 6212
+11	6362	56.6	1	3449 2913
+12	3790	14.2	1	2987 803
+13	2794	3.5	1	2562 232
+14	2284	0.9	1	12 2272
+15	53	0.2	1	0 53
+16	25	0.1	1	0 25
+17	5	0.0	1	0 5
+18	1	0.0	1	0 1
+19	1	0.0	1	0 0 1

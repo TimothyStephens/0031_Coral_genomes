@@ -1,0 +1,54 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 27 Jan 2022 01:34:15 AM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2021-12-03/Pocillopora_verrucosa_RSSAv1/07_genome_size_estimation
+=====================================================================
+
+[Thu 27 Jan 2022 01:34:17 AM EST]      CMD: jellyfish count -C -m 21 -s 32G -o smudgeplot.jellyfish.21.jf -t 48 -F 2 <(zcat SRR11880677_trimmed_R1.fastq.gz) <(zcat SRR11880677_trimmed_R2.fastq.gz)
+[Thu 27 Jan 2022 01:47:43 AM EST]      CMD: jellyfish histo -t 48 smudgeplot.jellyfish.21.jf > smudgeplot.jellyfish.21.histo
+Running smudgeplot v0.2.3dev
+Task: cutoff
+
+Done!
+Running smudgeplot v0.2.3dev
+Task: cutoff
+
+Done!
+L:36 U:2200 # these need to be sane values like 30 800 or so
+[Thu 27 Jan 2022 01:49:38 AM EST]      CMD: jellyfish dump -c -L 36 -U 2200 smudgeplot.jellyfish.21.jf | /home/timothy/programs/smudgeplot/bin/smudgeplot.py hetkmers -o smudgeplot_kmer_pairs_k21
+Running smudgeplot v0.2.3dev
+Task: hetkmers
+Kmers and coverages loaded.
+Kmer pairs identified.
+Kmers in unique kmer pairs identified.
+smudgeplot_kmer_pairs_k21_families.tsv and smudgeplot_kmer_pairs_k21_coverages.tsv files saved.
+
+Done!
+[Thu 27 Jan 2022 04:26:54 AM EST]      CMD: /home/timothy/programs/smudgeplot/bin/smudgeplot.py plot smudgeplot_kmer_pairs_k21_coverages.tsv -o smudgeplot_results_k21
+
+######################
+## INPUT PROCESSING ##
+######################
+
+#############
+## SUMMARY ##
+#############
+
+##########
+## PLOT ##
+##########
+null device 
+          1 
+null device 
+          1 
+Running smudgeplot v0.2.3dev
+Task: plot
+Calling: smudgeplot_plot.R -i "smudgeplot_kmer_pairs_k21_coverages.tsv" -o "smudgeplot_results_k21" -k 21
+
+Done!
+
+=====================================================================
+Started: at Thu 27 Jan 2022 01:34:15 AM EST
+Finished: at Thu 27 Jan 2022 04:27:23 AM EST
+ExitStatus: 0
+=====================================================================

@@ -1,0 +1,55 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 11 Mar 2022 01:56:51 AM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/Pocillopora_acuta_LBIDv1/08_genome_size_estimation
+=====================================================================
+
+[Fri 11 Mar 2022 01:56:56 AM EST]      CMD: jellyfish count -C -m 21 -s 32G -o smudgeplot.jellyfish.21.jf -t 48 -F 2 <(zcat SRR4254617_trimmed_R1.fastq.gz) <(zcat SRR4254617_trimmed_R2.fastq.gz)
+[Fri 11 Mar 2022 02:09:18 AM EST]      CMD: jellyfish histo -t 48 smudgeplot.jellyfish.21.jf > smudgeplot.jellyfish.21.histo
+Running smudgeplot v0.2.3dev
+Task: cutoff
+
+Done!
+Running smudgeplot v0.2.3dev
+Task: cutoff
+
+Done!
+L:15 U:1700 # these need to be sane values like 30 800 or so
+[Fri 11 Mar 2022 02:10:13 AM EST]      CMD: jellyfish dump -c -L 15 -U 1700 smudgeplot.jellyfish.21.jf | /home/timothy/programs/smudgeplot/bin/smudgeplot.py hetkmers -o smudgeplot_kmer_pairs_k21
+Running smudgeplot v0.2.3dev
+Task: hetkmers
+Kmers and coverages loaded.
+Kmer pairs identified.
+Kmers in unique kmer pairs identified.
+smudgeplot_kmer_pairs_k21_families.tsv and smudgeplot_kmer_pairs_k21_coverages.tsv files saved.
+
+Done!
+[Sun 13 Mar 2022 11:53:27 AM EDT]      CMD: /home/timothy/programs/smudgeplot/bin/smudgeplot.py plot smudgeplot_kmer_pairs_k21_coverages.tsv -o smudgeplot_results_k21
+
+######################
+## INPUT PROCESSING ##
+######################
+
+#############
+## SUMMARY ##
+#############
+detecting two smudges at the same positions, not enough data for this number of bins lowering number of bins to 	35
+
+##########
+## PLOT ##
+##########
+null device 
+          1 
+null device 
+          1 
+Running smudgeplot v0.2.3dev
+Task: plot
+Calling: smudgeplot_plot.R -i "smudgeplot_kmer_pairs_k21_coverages.tsv" -o "smudgeplot_results_k21" -k 21
+
+Done!
+
+=====================================================================
+Started: at Fri 11 Mar 2022 01:56:51 AM EST
+Finished: at Sun 13 Mar 2022 11:54:28 AM EDT
+ExitStatus: 0
+=====================================================================

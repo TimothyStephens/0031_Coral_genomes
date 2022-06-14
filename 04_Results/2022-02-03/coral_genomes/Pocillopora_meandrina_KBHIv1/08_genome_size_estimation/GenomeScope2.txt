@@ -1,0 +1,37 @@
+## Results
+GenomeScope version 2.0
+input file = user_uploads/UuxRKN8zZPp3iYFjo4H3
+output directory = user_data/UuxRKN8zZPp3iYFjo4H3
+p = 2
+k = 21
+
+property                      min               max               
+Homozygous (aa)               98.4878%          98.514%           
+Heterozygous (ab)             1.48598%          1.51219%          
+Genome Haploid Length         348,529,826 bp    349,144,232 bp    
+Genome Repeat Length          117,054,655 bp    117,261,005 bp    
+Genome Unique Length          231,475,171 bp    231,883,227 bp    
+Model Fit                     73.017%           95.8708%          
+Read Error Rate               0.156246%         0.156246%         
+
+
+## Model
+Formula: y_transform ~ x^transform_exp * length * predict2_0(r1, k, d, 
+    kmercov, bias, x)
+
+Parameters:
+         Estimate Std. Error t value Pr(>|t|)    
+d       7.655e-02  1.233e-03   62.08   <2e-16 ***
+r1      1.499e-02  6.553e-05  228.75   <2e-16 ***
+kmercov 3.223e+01  1.419e-02 2271.05   <2e-16 ***
+bias    3.374e-01  6.593e-03   51.18   <2e-16 ***
+length  2.509e+08  5.744e+05  436.77   <2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 4061000 on 1995 degrees of freedom
+
+Number of iterations to convergence: 5 
+Achieved convergence tolerance: 1.49e-08
+
+

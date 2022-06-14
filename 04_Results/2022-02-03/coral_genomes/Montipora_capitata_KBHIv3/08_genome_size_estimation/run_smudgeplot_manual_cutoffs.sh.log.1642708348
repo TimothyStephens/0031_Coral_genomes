@@ -1,0 +1,49 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 20 Jan 2022 02:52:28 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2021-12-03/Montipora_capitata_KBHIv3/07_genome_size_estimation
+=====================================================================
+
+L:6 U:128 # these need to be sane values like 30 800 or so
+[Thu 20 Jan 2022 02:52:29 PM EST]      CMD: jellyfish dump -c -L 6 -U 128 smudgeplot.jellyfish.21.jf | /home/timothy/programs/smudgeplot/bin/smudgeplot.py hetkmers -o smudgeplot_kmer_pairs_k21_manual_cutoffs
+Running smudgeplot v0.2.3dev
+Task: hetkmers
+Kmers and coverages loaded.
+Kmer pairs identified.
+Kmers in unique kmer pairs identified.
+smudgeplot_kmer_pairs_k21_manual_cutoffs_families.tsv and smudgeplot_kmer_pairs_k21_manual_cutoffs_coverages.tsv files saved.
+
+Done!
+[Thu 20 Jan 2022 08:49:00 PM EST]      CMD: /home/timothy/programs/smudgeplot/bin/smudgeplot.py plot smudgeplot_kmer_pairs_k21_manual_cutoffs_coverages.tsv -o smudgeplot_results_k21_manual_cutoffs -n 15
+
+######################
+## INPUT PROCESSING ##
+######################
+
+#############
+## SUMMARY ##
+#############
+detecting two smudges at the same positions, not enough data for this number of bins lowering number of bins to 	35
+detecting two smudges at the same positions, not enough data for this number of bins lowering number of bins to 	30
+detecting two smudges at the same positions, not enough data for this number of bins lowering number of bins to 	25
+detecting two smudges at the same positions, not enough data for this number of bins lowering number of bins to 	20
+detecting two smudges at the same positions, not enough data for this number of bins lowering number of bins to 	18
+
+##########
+## PLOT ##
+##########
+null device 
+          1 
+null device 
+          1 
+Running smudgeplot v0.2.3dev
+Task: plot
+Calling: smudgeplot_plot.R -i "smudgeplot_kmer_pairs_k21_manual_cutoffs_coverages.tsv" -o "smudgeplot_results_k21_manual_cutoffs" -k 21 -n 15.0
+
+Done!
+
+=====================================================================
+Started: at Thu 20 Jan 2022 02:52:28 PM EST
+Finished: at Thu 20 Jan 2022 08:50:24 PM EST
+ExitStatus: 0
+=====================================================================

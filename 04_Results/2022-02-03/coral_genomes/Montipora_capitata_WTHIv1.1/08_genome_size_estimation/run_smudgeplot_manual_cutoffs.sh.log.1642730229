@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 20 Jan 2022 08:57:09 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2021-12-03/Montipora_capitata_WTHIv1.1/07_genome_size_estimation
+=====================================================================
+
+L:12 U:196 # these need to be sane values like 30 800 or so
+[Thu 20 Jan 2022 08:57:11 PM EST]      CMD: jellyfish dump -c -L 12 -U 196 smudgeplot.jellyfish.21.jf | /home/timothy/programs/smudgeplot/bin/smudgeplot.py hetkmers -o smudgeplot_kmer_pairs_k21_manual_cutoffs
+Running smudgeplot v0.2.3dev
+Task: hetkmers
+Kmers and coverages loaded.
+Kmer pairs identified.
+Kmers in unique kmer pairs identified.
+smudgeplot_kmer_pairs_k21_manual_cutoffs_families.tsv and smudgeplot_kmer_pairs_k21_manual_cutoffs_coverages.tsv files saved.
+
+Done!
+[Fri 21 Jan 2022 07:51:11 AM EST]      CMD: /home/timothy/programs/smudgeplot/bin/smudgeplot.py plot smudgeplot_kmer_pairs_k21_manual_cutoffs_coverages.tsv -o smudgeplot_results_k21_manual_cutoffs -n 23
+
+######################
+## INPUT PROCESSING ##
+######################
+
+#############
+## SUMMARY ##
+#############
+detecting two smudges at the same positions, not enough data for this number of bins lowering number of bins to 	35
+detecting two smudges at the same positions, not enough data for this number of bins lowering number of bins to 	30
+detecting two smudges at the same positions, not enough data for this number of bins lowering number of bins to 	25
+detecting two smudges at the same positions, not enough data for this number of bins lowering number of bins to 	20
+!! Warning, your coverage filter on the lower end (L = 	12	) is higher than half of the 1n coverage estimate ( 1n / 2 = 	11.5
+If the real 1n coverage is half of your estimate you would not picked it up due to the filtering.
+If you have sufficient coverage, consider reruning the analysis with lower L (something like (1n / 2) - 5)
+One good way for verificaiton would be to compare it to GenomeScope estimate of haploid coverage
+
+##########
+## PLOT ##
+##########
+null device 
+          1 
+null device 
+          1 
+Running smudgeplot v0.2.3dev
+Task: plot
+Calling: smudgeplot_plot.R -i "smudgeplot_kmer_pairs_k21_manual_cutoffs_coverages.tsv" -o "smudgeplot_results_k21_manual_cutoffs" -k 21 -n 23.0
+
+Done!
+
+=====================================================================
+Started: at Thu 20 Jan 2022 08:57:09 PM EST
+Finished: at Fri 21 Jan 2022 07:52:29 AM EST
+ExitStatus: 0
+=====================================================================
