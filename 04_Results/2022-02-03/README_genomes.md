@@ -285,6 +285,73 @@ rsync -zarv --delete --prune-empty-dirs --relative \
 
 
 
+
+
+
+
+
+
+## 07_short_read_trimming
+
+Run `cutadapt` on the available Illumina genome sequencing reads. Execute the `run_Cutadapt.sh` script to runthe trimming process and to double check the adapter content using my custom `find_adapters_in_reads.py` script. 
+
+```bash
+ln -s ../../../../02_Scripts/adapters.fa
+ln -s ../../../../02_Scripts/find_adapters_in_reads.py
+```
+
+**Download results**
+
+```bash
+WD="timothy@coral.rutgers.edu:/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03"
+rsync -zarv --delete --prune-empty-dirs --relative \
+ --include="*/" \
+ --include="*.sh*" --include="*.log" \
+ --exclude="*" \
+ ${WD}/./*/*/07_short_read_trimming/ \
+ . --dry-run
+```
+
+## 08_genome_size_estimation
+
+Run `smudgeplot` using the trimmed reads to identify the ploidy of each sample. Execute the `run_smudgeplot.sh` script to run `jellyfish` (k=21) and `smudgeplot` (using automatically chosen cutoffs). After this is done running, download the `smudgeplot.jellyfish.21.histo`file and run the online version of `GenomeScope2` to estimate the genome size, ploidy, and cutoffs. The latter of which we will use for a second round of `smudgeplot` analysis; manually change the cutoffs in `run_smudgeplot_manual_cutoffs.sh`before executing.
+
+After the first script has finished it is safe to remove the `smudgeplot.jellyfish.21.jf` file (only used by `jellyfish` for generation of the `*.histo` file).
+
+```bash
+rm */08_genome_size_estimation/smudgeplot.jellyfish.21.jf
+```
+
+**Download results**
+
+```bash
+WD="timothy@coral.rutgers.edu:/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03"
+rsync -zarv --prune-empty-dirs --relative \
+ --include="*/" \
+ --include="*.sh*" --include="*.log" \
+ --include="*.histo" \
+ --include="*.png" \
+ --exclude="*" \
+ ${WD}/./*/*/08_genome_size_estimation/ \
+ . --dry-run
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## 04_RepeatModeler
 
 Run `RepeatModeler` to generate a set of *de novo* predicted repeats for each genome.
@@ -681,51 +748,6 @@ rsync -zarv --delete --prune-empty-dirs --relative \
  --include="*.divsum.Kimura_distance" \
  --exclude="*" \
  ${WD}/./*/06_RepeatMasker_SCORs/ \
- . --dry-run
-```
-
-## 07_short_read_trimming
-
-Run `cutadapt` on the available Illumina genome sequencing reads. Execute the `run_Cutadapt.sh` script to runthe trimming process and to double check the adapter content using my custom `find_adapters_in_reads.py` script. 
-
-```bash
-ln -s ../../../../02_Scripts/adapters.fa
-ln -s ../../../../02_Scripts/find_adapters_in_reads.py
-```
-
-**Download results**
-
-```bash
-WD="timothy@coral.rutgers.edu:/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03"
-rsync -zarv --delete --prune-empty-dirs --relative \
- --include="*/" \
- --include="*.sh*" --include="*.log" \
- --exclude="*" \
- ${WD}/./*/07_short_read_trimming/ \
- . --dry-run
-```
-
-## 08_genome_size_estimation
-
-Run `smudgeplot` using the trimmed reads to identify the ploidy of each sample. Execute the `run_smudgeplot.sh` script to run `jellyfish` (k=21) and `smudgeplot` (using automatically chosen cutoffs). After this is done running, download the `smudgeplot.jellyfish.21.histo`file and run the online version of `GenomeScope2` to estimate the genome size, ploidy, and cutoffs. The latter of which we will use for a second round of `smudgeplot` analysis; manually change the cutoffs in `run_smudgeplot_manual_cutoffs.sh`before executing.
-
-After the first script has finished it is safe to remove the `smudgeplot.jellyfish.21.jf` file (only used by `jellyfish` for generation of the `*.histo` file).
-
-```bash
-rm */08_genome_size_estimation/smudgeplot.jellyfish.21.jf
-```
-
-**Download results**
-
-```bash
-WD="timothy@coral.rutgers.edu:/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03"
-rsync -zarv --prune-empty-dirs --relative \
- --include="*/" \
- --include="*.sh*" --include="*.log" \
- --include="*.histo" \
- --include="*.png" \
- --exclude="*" \
- ${WD}/./*/08_genome_size_estimation/ \
  . --dry-run
 ```
 
