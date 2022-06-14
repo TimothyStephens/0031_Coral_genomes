@@ -1,0 +1,43 @@
+# Files
+Genome file	Porites_lutea_OIAUv1.1.assembly.fasta
+GFF file	Porites_lutea_OIAUv1.1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	552020673
+Total contig length (bp)	503897507
+Number of scaffolds	2975
+Number of contigs	26629
+N50 of scaffolds (bp)	660708
+N50 of contigs (bp)	37172
+Percent gaps	8.718
+Percent GC	39.05
+
+# Gene stats (combined CDS+introns)
+Number of genes	31126
+Total gene length	233612206
+Average gene length (bp)	7505.37
+Gene percent GC	39.22
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1385.83
+Average number of CDS per gene/transcript	6.3374
+
+# CDS stats
+Number of CDS	197258
+Total CDS length (bp)	43135478
+Average CDS length (bp)	218.675
+Number of single-CDS transcripts	5522
+Percent single-CDS transcripts	17.7408
+CDS percent GC	44.01
+
+# Intron stats (predicted between CDS features)
+Number of introns	166132
+Total intron length (bp)	190476728
+Average intron length (bp)	1146.54
+Intron percent GC	38.07
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	27888
+Total intergenic region length (bp)	273209358
+Average intergenic region length (bp)	9796.66
+Intergenic region percent GC	38.91

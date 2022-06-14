@@ -1,0 +1,2 @@
+ba485750726a5249878f824033bf8712  Montipora_capitata_WTHIv1.1.assembly.fasta
+12ecc0134c906241189387f9d88632d5  Montipora_capitata_WTHIv1.1.genes.gff3

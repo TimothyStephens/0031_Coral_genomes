@@ -1,0 +1,2 @@
+9380b381f94a7e6c6a7ad9d60562b91b  Discosoma_sp_MSMEv1.assembly.fasta
+30e4b5369fc0edf7a20b2d533f650814  Discosoma_sp_MSMEv1.genes.cds.fna

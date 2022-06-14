@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:21:24 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_australiensis_SLJPv1/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:21:25 PM EDT]      CMD: md5sum Porites_australiensis_SLJPv1.assembly.fasta Porites_australiensis_SLJPv1.genes.cds.fna Porites_australiensis_SLJPv1.genes.pep.faa | tee Porites_australiensis_SLJPv1.makeblastdb.job_md5sum_list.txt
+2447d4911e03f9a3bea81fa95ebd4b68  Porites_australiensis_SLJPv1.assembly.fasta
+4c4aef92c5bf4400609b76a79a56f3e4  Porites_australiensis_SLJPv1.genes.cds.fna
+1c2f35cb7aaa9482c3f7a9ba6eec4917  Porites_australiensis_SLJPv1.genes.pep.faa
+[Sun 08 May 2022 05:21:27 PM EDT]      CMD: makeblastdb -dbtype nucl -in Porites_australiensis_SLJPv1.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:21:27
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_australiensis_SLJPv1/00_databases/blast/Porites_australiensis_SLJPv1.assembly.fasta
+New DB title:  Porites_australiensis_SLJPv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 4983 sequences in 5.81091 seconds.
+
+
+[Sun 08 May 2022 05:21:32 PM EDT]      CMD: makeblastdb -dbtype nucl -in Porites_australiensis_SLJPv1.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:21:32
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_australiensis_SLJPv1/00_databases/blast/Porites_australiensis_SLJPv1.genes.cds.fna
+New DB title:  Porites_australiensis_SLJPv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 30603 sequences in 0.682302 seconds.
+
+
+[Sun 08 May 2022 05:21:33 PM EDT]      CMD: makeblastdb -dbtype prot -in Porites_australiensis_SLJPv1.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:21:33
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_australiensis_SLJPv1/00_databases/blast/Porites_australiensis_SLJPv1.genes.pep.faa
+New DB title:  Porites_australiensis_SLJPv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 30603 sequences in 0.54359 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:21:24 PM EDT
+Finished: at Sun 08 May 2022 05:21:34 PM EDT
+ExitStatus: 0
+=====================================================================

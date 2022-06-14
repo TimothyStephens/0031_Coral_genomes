@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 27 May 2022 04:34:35 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_acuta_LBIDv1/01_stats
+=====================================================================
+
+[Fri 27 May 2022 04:34:36 PM EDT]      CMD: md5sum Pocillopora_acuta_LBIDv1.assembly.fasta Pocillopora_acuta_LBIDv1.genes.gff3 | tee Pocillopora_acuta_LBIDv1.genome_stats.job_md5sum_list.txt
+9f797daa6bac5b52a1161fb0a5e033c1  Pocillopora_acuta_LBIDv1.assembly.fasta
+94a34099dd6c74a8cf73716686c4018c  Pocillopora_acuta_LBIDv1.genes.gff3
+[Fri 27 May 2022 04:34:38 PM EDT]      CMD: ./genome_stats Pocillopora_acuta_LBIDv1.assembly.fasta Pocillopora_acuta_LBIDv1.genes.gff3 > Pocillopora_acuta_LBIDv1.GeneStats.tsv
+index file Pocillopora_acuta_LBIDv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Fri 27 May 2022 04:34:35 PM EDT
+Finished: at Fri 27 May 2022 04:35:02 PM EDT
+ExitStatus: 0
+=====================================================================

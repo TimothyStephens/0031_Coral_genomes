@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 27 May 2022 04:35:40 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_verrucosa_RSSAv1/01_stats
+=====================================================================
+
+[Fri 27 May 2022 04:35:41 PM EDT]      CMD: md5sum Pocillopora_verrucosa_RSSAv1.assembly.fasta Pocillopora_verrucosa_RSSAv1.genes.gff3 | tee Pocillopora_verrucosa_RSSAv1.genome_stats.job_md5sum_list.txt
+cbb95f5a4c9af1188c37a73971585b27  Pocillopora_verrucosa_RSSAv1.assembly.fasta
+1c838406b34bf19067ba3beef6b8b7b6  Pocillopora_verrucosa_RSSAv1.genes.gff3
+[Fri 27 May 2022 04:35:44 PM EDT]      CMD: ./genome_stats Pocillopora_verrucosa_RSSAv1.assembly.fasta Pocillopora_verrucosa_RSSAv1.genes.gff3 > Pocillopora_verrucosa_RSSAv1.GeneStats.tsv
+index file Pocillopora_verrucosa_RSSAv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Fri 27 May 2022 04:35:40 PM EDT
+Finished: at Fri 27 May 2022 04:36:01 PM EDT
+ExitStatus: 0
+=====================================================================

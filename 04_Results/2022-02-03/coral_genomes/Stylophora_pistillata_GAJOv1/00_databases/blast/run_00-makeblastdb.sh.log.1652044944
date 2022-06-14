@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:22:24 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Stylophora_pistillata_GAJOv1/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:22:24 PM EDT]      CMD: md5sum Stylophora_pistillata_GAJOv1.assembly.fasta Stylophora_pistillata_GAJOv1.genes.cds.fna Stylophora_pistillata_GAJOv1.genes.pep.faa | tee Stylophora_pistillata_GAJOv1.makeblastdb.job_md5sum_list.txt
+cc38d2ea3127648a00aa8bcc7bf1d564  Stylophora_pistillata_GAJOv1.assembly.fasta
+e27060010b1dbcb41f9df2d08450e5a4  Stylophora_pistillata_GAJOv1.genes.cds.fna
+5daa51c3169f0e2b2f987322c79c0e07  Stylophora_pistillata_GAJOv1.genes.pep.faa
+[Sun 08 May 2022 05:22:26 PM EDT]      CMD: makeblastdb -dbtype nucl -in Stylophora_pistillata_GAJOv1.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:22:26
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Stylophora_pistillata_GAJOv1/00_databases/blast/Stylophora_pistillata_GAJOv1.assembly.fasta
+New DB title:  Stylophora_pistillata_GAJOv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 5688 sequences in 9.69645 seconds.
+
+
+[Sun 08 May 2022 05:22:36 PM EDT]      CMD: makeblastdb -dbtype nucl -in Stylophora_pistillata_GAJOv1.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:22:36
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Stylophora_pistillata_GAJOv1/00_databases/blast/Stylophora_pistillata_GAJOv1.genes.cds.fna
+New DB title:  Stylophora_pistillata_GAJOv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 25769 sequences in 1.49519 seconds.
+
+
+[Sun 08 May 2022 05:22:38 PM EDT]      CMD: makeblastdb -dbtype prot -in Stylophora_pistillata_GAJOv1.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:22:38
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Stylophora_pistillata_GAJOv1/00_databases/blast/Stylophora_pistillata_GAJOv1.genes.pep.faa
+New DB title:  Stylophora_pistillata_GAJOv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 25769 sequences in 1.00714 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:22:24 PM EDT
+Finished: at Sun 08 May 2022 05:22:39 PM EDT
+ExitStatus: 0
+=====================================================================

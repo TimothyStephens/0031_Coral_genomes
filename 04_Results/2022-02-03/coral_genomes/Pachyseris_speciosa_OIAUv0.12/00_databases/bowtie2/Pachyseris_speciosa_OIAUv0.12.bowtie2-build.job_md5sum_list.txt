@@ -1,0 +1,2 @@
+bf47c76e9d2112c13034e034548bc335  Pachyseris_speciosa_OIAUv0.12.assembly.fasta
+238d5cef1c6ca0fe3a5ae245acab4aa9  Pachyseris_speciosa_OIAUv0.12.genes.cds.fna

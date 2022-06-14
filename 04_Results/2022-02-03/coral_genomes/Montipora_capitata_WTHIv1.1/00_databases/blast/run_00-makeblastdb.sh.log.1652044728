@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:18:48 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_capitata_WTHIv1.1/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:18:48 PM EDT]      CMD: md5sum Montipora_capitata_WTHIv1.1.assembly.fasta Montipora_capitata_WTHIv1.1.genes.cds.fna Montipora_capitata_WTHIv1.1.genes.pep.faa | tee Montipora_capitata_WTHIv1.1.makeblastdb.job_md5sum_list.txt
+ba485750726a5249878f824033bf8712  Montipora_capitata_WTHIv1.1.assembly.fasta
+7429433840f9c73eb14c201871b7c9bd  Montipora_capitata_WTHIv1.1.genes.cds.fna
+c9c63e35668bb8e71927a8cd461a4cdd  Montipora_capitata_WTHIv1.1.genes.pep.faa
+[Sun 08 May 2022 05:18:50 PM EDT]      CMD: makeblastdb -dbtype nucl -in Montipora_capitata_WTHIv1.1.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:18:50
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_capitata_WTHIv1.1/00_databases/blast/Montipora_capitata_WTHIv1.1.assembly.fasta
+New DB title:  Montipora_capitata_WTHIv1.1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 27865 sequences in 11.2306 seconds.
+
+
+[Sun 08 May 2022 05:19:02 PM EDT]      CMD: makeblastdb -dbtype nucl -in Montipora_capitata_WTHIv1.1.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:19:02
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_capitata_WTHIv1.1/00_databases/blast/Montipora_capitata_WTHIv1.1.genes.cds.fna
+New DB title:  Montipora_capitata_WTHIv1.1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 36691 sequences in 1.07233 seconds.
+
+
+[Sun 08 May 2022 05:19:03 PM EDT]      CMD: makeblastdb -dbtype prot -in Montipora_capitata_WTHIv1.1.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:19:03
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_capitata_WTHIv1.1/00_databases/blast/Montipora_capitata_WTHIv1.1.genes.pep.faa
+New DB title:  Montipora_capitata_WTHIv1.1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 36691 sequences in 0.84509 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:18:48 PM EDT
+Finished: at Sun 08 May 2022 05:19:04 PM EDT
+ExitStatus: 0
+=====================================================================

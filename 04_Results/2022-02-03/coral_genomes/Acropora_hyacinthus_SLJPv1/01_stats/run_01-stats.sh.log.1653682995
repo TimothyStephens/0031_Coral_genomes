@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 27 May 2022 04:23:15 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_hyacinthus_SLJPv1/01_stats
+=====================================================================
+
+[Fri 27 May 2022 04:23:16 PM EDT]      CMD: md5sum Acropora_hyacinthus_SLJPv1.assembly.fasta Acropora_hyacinthus_SLJPv1.genes.gff3 | tee Acropora_hyacinthus_SLJPv1.genome_stats.job_md5sum_list.txt
+423c611a762223c0435664c6073d2269  Acropora_hyacinthus_SLJPv1.assembly.fasta
+b8ce23f20f05ff11b43d98ed90875541  Acropora_hyacinthus_SLJPv1.genes.gff3
+[Fri 27 May 2022 04:23:23 PM EDT]      CMD: ./genome_stats Acropora_hyacinthus_SLJPv1.assembly.fasta Acropora_hyacinthus_SLJPv1.genes.gff3 > Acropora_hyacinthus_SLJPv1.GeneStats.tsv
+index file Acropora_hyacinthus_SLJPv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Fri 27 May 2022 04:23:15 PM EDT
+Finished: at Fri 27 May 2022 04:23:40 PM EDT
+ExitStatus: 0
+=====================================================================

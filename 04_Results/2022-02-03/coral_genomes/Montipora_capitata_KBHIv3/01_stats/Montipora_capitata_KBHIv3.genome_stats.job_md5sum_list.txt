@@ -1,0 +1,2 @@
+3499b990e93cf4576e59739785cedb11  Montipora_capitata_KBHIv3.assembly.fasta
+b34c436551b537f0bb1d9e99f99665fc  Montipora_capitata_KBHIv3.genes.gff3

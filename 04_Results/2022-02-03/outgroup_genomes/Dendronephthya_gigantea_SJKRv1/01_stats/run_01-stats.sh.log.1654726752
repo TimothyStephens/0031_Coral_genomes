@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 08 Jun 2022 06:19:12 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Dendronephthya_gigantea_SJKRv1/01_stats
+=====================================================================
+
+[Wed 08 Jun 2022 06:19:15 PM EDT]      CMD: md5sum Dendronephthya_gigantea_SJKRv1.assembly.fasta Dendronephthya_gigantea_SJKRv1.genes.gff3 | tee Dendronephthya_gigantea_SJKRv1.genome_stats.job_md5sum_list.txt
+c6bbfbaab503e606c2673e16ff87cab5  Dendronephthya_gigantea_SJKRv1.assembly.fasta
+2598862073ef6ae38606d2bb1102d628  Dendronephthya_gigantea_SJKRv1.genes.gff3
+[Wed 08 Jun 2022 06:19:17 PM EDT]      CMD: ./genome_stats Dendronephthya_gigantea_SJKRv1.assembly.fasta Dendronephthya_gigantea_SJKRv1.genes.gff3 > Dendronephthya_gigantea_SJKRv1.GeneStats.tsv
+index file Dendronephthya_gigantea_SJKRv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Wed 08 Jun 2022 06:19:12 PM EDT
+Finished: at Wed 08 Jun 2022 06:19:45 PM EDT
+ExitStatus: 0
+=====================================================================

@@ -1,0 +1,43 @@
+# Files
+Genome file	Acropora_hyacinthus_SLJPv1.assembly.fasta
+GFF file	Acropora_hyacinthus_SLJPv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	452727592
+Total contig length (bp)	417238445
+Number of scaffolds	2916
+Number of contigs	19367
+N50 of scaffolds (bp)	1562592
+N50 of contigs (bp)	42785
+Percent gaps	7.839
+Percent GC	38.98
+
+# Gene stats (combined CDS+introns)
+Number of genes	23148
+Total gene length	187202735
+Average gene length (bp)	8087.21
+Gene percent GC	39.21
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1659.11
+Average number of CDS per gene/transcript	7.37195
+
+# CDS stats
+Number of CDS	170646
+Total CDS length (bp)	38405169
+Average CDS length (bp)	225.058
+Number of single-CDS transcripts	4312
+Percent single-CDS transcripts	18.628
+CDS percent GC	44.17
+
+# Intron stats (predicted between CDS features)
+Number of introns	147498
+Total intron length (bp)	148797566
+Average intron length (bp)	1008.81
+Intron percent GC	37.85
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	21373
+Total intergenic region length (bp)	227280593
+Average intergenic region length (bp)	10634
+Intergenic region percent GC	38.78

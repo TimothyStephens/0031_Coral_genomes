@@ -1,0 +1,2 @@
+e5ed32667e7c349ae6378a25cd765521  Acropora_acuminata_SLJPv1.assembly.fasta
+67c29517b128242609dd6a7badcc2d72  Acropora_acuminata_SLJPv1.genes.cds.fna

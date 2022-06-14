@@ -1,0 +1,2 @@
+55bbe5e3c749f81810430e3370368f8f  Montipora_sp1_aff_capitata_ULFMv1.assembly.fasta
+00447e7acf6075227fced1a965f7732f  Montipora_sp1_aff_capitata_ULFMv1.genes.cds.fna

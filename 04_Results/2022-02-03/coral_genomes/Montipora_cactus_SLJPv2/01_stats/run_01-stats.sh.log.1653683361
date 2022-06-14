@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 27 May 2022 04:29:21 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_cactus_SLJPv2/01_stats
+=====================================================================
+
+[Fri 27 May 2022 04:29:22 PM EDT]      CMD: md5sum Montipora_cactus_SLJPv2.assembly.fasta Montipora_cactus_SLJPv2.genes.gff3 | tee Montipora_cactus_SLJPv2.genome_stats.job_md5sum_list.txt
+73e64a4f329e48ccedd4420cff3f10e1  Montipora_cactus_SLJPv2.assembly.fasta
+51f581f24ad71418cc6bfaada56172c0  Montipora_cactus_SLJPv2.genes.gff3
+[Fri 27 May 2022 04:29:26 PM EDT]      CMD: ./genome_stats Montipora_cactus_SLJPv2.assembly.fasta Montipora_cactus_SLJPv2.genes.gff3 > Montipora_cactus_SLJPv2.GeneStats.tsv
+index file Montipora_cactus_SLJPv2.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Fri 27 May 2022 04:29:21 PM EDT
+Finished: at Fri 27 May 2022 04:29:56 PM EDT
+ExitStatus: 0
+=====================================================================

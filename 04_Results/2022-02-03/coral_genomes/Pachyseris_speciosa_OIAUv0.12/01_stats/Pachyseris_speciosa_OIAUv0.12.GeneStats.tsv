@@ -1,0 +1,43 @@
+# Files
+Genome file	Pachyseris_speciosa_OIAUv0.12.assembly.fasta
+GFF file	Pachyseris_speciosa_OIAUv0.12.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	984430632
+Total contig length (bp)	984430632
+Number of scaffolds	2368
+Number of contigs	2368
+N50 of scaffolds (bp)	766649
+N50 of contigs (bp)	766649
+Percent gaps	0.000
+Percent GC	39.56
+
+# Gene stats (combined CDS+introns)
+Number of genes	39160
+Total gene length	297828194
+Average gene length (bp)	7605.42
+Gene percent GC	39.53
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1318.38
+Average number of CDS per gene/transcript	5.76078
+
+# CDS stats
+Number of CDS	225592
+Total CDS length (bp)	51627762
+Average CDS length (bp)	228.855
+Number of single-CDS transcripts	6155
+Percent single-CDS transcripts	15.7176
+CDS percent GC	44.7
+
+# Intron stats (predicted between CDS features)
+Number of introns	186432
+Total intron length (bp)	246200432
+Average intron length (bp)	1320.59
+Intron percent GC	38.45
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	35381
+Total intergenic region length (bp)	598103191
+Average intergenic region length (bp)	16904.6
+Intergenic region percent GC	39.57

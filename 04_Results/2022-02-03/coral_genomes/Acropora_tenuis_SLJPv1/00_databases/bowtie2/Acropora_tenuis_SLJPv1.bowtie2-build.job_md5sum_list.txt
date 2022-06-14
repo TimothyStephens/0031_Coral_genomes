@@ -1,0 +1,2 @@
+2b88e99e8d4642dd4e29d57779428293  Acropora_tenuis_SLJPv1.assembly.fasta
+74733eedabaac343ac9af49e3bd6a097  Acropora_tenuis_SLJPv1.genes.cds.fna

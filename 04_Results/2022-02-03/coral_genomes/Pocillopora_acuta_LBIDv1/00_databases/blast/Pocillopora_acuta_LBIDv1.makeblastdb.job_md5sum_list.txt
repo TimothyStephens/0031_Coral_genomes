@@ -1,0 +1,3 @@
+9f797daa6bac5b52a1161fb0a5e033c1  Pocillopora_acuta_LBIDv1.assembly.fasta
+42f2c5b627bfb44c59ab44ac82790d28  Pocillopora_acuta_LBIDv1.genes.cds.fna
+0d053fd5db07828b84ad04b35e16deca  Pocillopora_acuta_LBIDv1.genes.pep.faa

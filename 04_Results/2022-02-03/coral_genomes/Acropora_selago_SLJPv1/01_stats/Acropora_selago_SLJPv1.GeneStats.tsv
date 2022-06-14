@@ -1,0 +1,43 @@
+# Files
+Genome file	Acropora_selago_SLJPv1.assembly.fasta
+GFF file	Acropora_selago_SLJPv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	393159869
+Total contig length (bp)	368743327
+Number of scaffolds	5857
+Number of contigs	21856
+N50 of scaffolds (bp)	657172
+N50 of contigs (bp)	34546
+Percent gaps	6.210
+Percent GC	38.96
+
+# Gene stats (combined CDS+introns)
+Number of genes	23116
+Total gene length	175463046
+Average gene length (bp)	7590.55
+Gene percent GC	39.21
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1551.87
+Average number of CDS per gene/transcript	7.1316
+
+# CDS stats
+Number of CDS	164854
+Total CDS length (bp)	35873141
+Average CDS length (bp)	217.606
+Number of single-CDS transcripts	4319
+Percent single-CDS transcripts	18.684
+CDS percent GC	44.21
+
+# Intron stats (predicted between CDS features)
+Number of introns	141738
+Total intron length (bp)	139589905
+Average intron length (bp)	984.845
+Intron percent GC	37.85
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	19922
+Total intergenic region length (bp)	164982809
+Average intergenic region length (bp)	8281.44
+Intergenic region percent GC	38.69

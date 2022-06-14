@@ -1,0 +1,2 @@
+3868ed499cf554e9226b339f08a5d0fb  Amplexidiscus_fenestrafer_MSMEv1.assembly.fasta
+cfbee1597b2a6edf258fcd9c82f992eb  Amplexidiscus_fenestrafer_MSMEv1.genes.gff3

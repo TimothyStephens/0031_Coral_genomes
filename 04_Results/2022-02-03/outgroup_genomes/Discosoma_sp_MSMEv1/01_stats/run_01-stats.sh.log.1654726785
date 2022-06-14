@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 08 Jun 2022 06:19:45 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Discosoma_sp_MSMEv1/01_stats
+=====================================================================
+
+[Wed 08 Jun 2022 06:19:47 PM EDT]      CMD: md5sum Discosoma_sp_MSMEv1.assembly.fasta Discosoma_sp_MSMEv1.genes.gff3 | tee Discosoma_sp_MSMEv1.genome_stats.job_md5sum_list.txt
+9380b381f94a7e6c6a7ad9d60562b91b  Discosoma_sp_MSMEv1.assembly.fasta
+e466f9c388217dfb9cef8b0c632538e1  Discosoma_sp_MSMEv1.genes.gff3
+[Wed 08 Jun 2022 06:19:48 PM EDT]      CMD: ./genome_stats Discosoma_sp_MSMEv1.assembly.fasta Discosoma_sp_MSMEv1.genes.gff3 > Discosoma_sp_MSMEv1.GeneStats.tsv
+index file Discosoma_sp_MSMEv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Wed 08 Jun 2022 06:19:45 PM EDT
+Finished: at Wed 08 Jun 2022 06:20:17 PM EDT
+ExitStatus: 0
+=====================================================================

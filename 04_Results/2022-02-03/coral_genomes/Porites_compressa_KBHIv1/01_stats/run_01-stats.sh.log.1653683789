@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 27 May 2022 04:36:29 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_compressa_KBHIv1/01_stats
+=====================================================================
+
+[Fri 27 May 2022 04:36:30 PM EDT]      CMD: md5sum Porites_compressa_KBHIv1.assembly.fasta Porites_compressa_KBHIv1.genes.gff3 | tee Porites_compressa_KBHIv1.genome_stats.job_md5sum_list.txt
+94f0787225c2cea782867efb459b064d  Porites_compressa_KBHIv1.assembly.fasta
+50459e5d6d763fd1e44ed0add2f5a078  Porites_compressa_KBHIv1.genes.gff3
+[Fri 27 May 2022 04:36:36 PM EDT]      CMD: ./genome_stats Porites_compressa_KBHIv1.assembly.fasta Porites_compressa_KBHIv1.genes.gff3 > Porites_compressa_KBHIv1.GeneStats.tsv
+index file Porites_compressa_KBHIv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Fri 27 May 2022 04:36:29 PM EDT
+Finished: at Fri 27 May 2022 04:36:58 PM EDT
+ExitStatus: 0
+=====================================================================

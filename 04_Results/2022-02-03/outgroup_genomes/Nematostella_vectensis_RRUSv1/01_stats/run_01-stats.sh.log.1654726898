@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 08 Jun 2022 06:21:38 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Nematostella_vectensis_RRUSv1/01_stats
+=====================================================================
+
+[Wed 08 Jun 2022 06:21:39 PM EDT]      CMD: md5sum Nematostella_vectensis_RRUSv1.assembly.fasta Nematostella_vectensis_RRUSv1.genes.gff3 | tee Nematostella_vectensis_RRUSv1.genome_stats.job_md5sum_list.txt
+7aa88c41ca4f9c207d295ce7ac59583a  Nematostella_vectensis_RRUSv1.assembly.fasta
+84c5d4cb850f46b3456b2ecf3ceda00c  Nematostella_vectensis_RRUSv1.genes.gff3
+[Wed 08 Jun 2022 06:21:40 PM EDT]      CMD: ./genome_stats Nematostella_vectensis_RRUSv1.assembly.fasta Nematostella_vectensis_RRUSv1.genes.gff3 > Nematostella_vectensis_RRUSv1.GeneStats.tsv
+index file Nematostella_vectensis_RRUSv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Wed 08 Jun 2022 06:21:38 PM EDT
+Finished: at Wed 08 Jun 2022 06:21:59 PM EDT
+ExitStatus: 0
+=====================================================================

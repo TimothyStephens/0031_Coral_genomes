@@ -1,0 +1,2 @@
+8eadf2e0d888e7d04ea856f082e03277  Acropora_awi_SLJPv1.assembly.fasta
+436d819493f87a7b145c99aadd64c70c  Acropora_awi_SLJPv1.genes.gff3

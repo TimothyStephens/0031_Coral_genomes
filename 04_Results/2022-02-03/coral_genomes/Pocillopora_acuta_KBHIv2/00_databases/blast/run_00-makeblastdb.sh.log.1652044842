@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:20:42 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_acuta_KBHIv2/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:20:43 PM EDT]      CMD: md5sum Pocillopora_acuta_KBHIv2.assembly.fasta Pocillopora_acuta_KBHIv2.genes.cds.fna Pocillopora_acuta_KBHIv2.genes.pep.faa | tee Pocillopora_acuta_KBHIv2.makeblastdb.job_md5sum_list.txt
+135b6e925eff3bfe6975e75dab243fa9  Pocillopora_acuta_KBHIv2.assembly.fasta
+7800d37a46e4dbc0a3472eea045529d3  Pocillopora_acuta_KBHIv2.genes.cds.fna
+a89ef1ea58c9e2d84962a4cd2685fcc3  Pocillopora_acuta_KBHIv2.genes.pep.faa
+[Sun 08 May 2022 05:20:45 PM EDT]      CMD: makeblastdb -dbtype nucl -in Pocillopora_acuta_KBHIv2.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:20:45
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_acuta_KBHIv2/00_databases/blast/Pocillopora_acuta_KBHIv2.assembly.fasta
+New DB title:  Pocillopora_acuta_KBHIv2.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 474 sequences in 3.72461 seconds.
+
+
+[Sun 08 May 2022 05:20:49 PM EDT]      CMD: makeblastdb -dbtype nucl -in Pocillopora_acuta_KBHIv2.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:20:49
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_acuta_KBHIv2/00_databases/blast/Pocillopora_acuta_KBHIv2.genes.cds.fna
+New DB title:  Pocillopora_acuta_KBHIv2.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 33730 sequences in 1.48942 seconds.
+
+
+[Sun 08 May 2022 05:20:50 PM EDT]      CMD: makeblastdb -dbtype prot -in Pocillopora_acuta_KBHIv2.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:20:50
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_acuta_KBHIv2/00_databases/blast/Pocillopora_acuta_KBHIv2.genes.pep.faa
+New DB title:  Pocillopora_acuta_KBHIv2.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 33730 sequences in 0.583165 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:20:42 PM EDT
+Finished: at Sun 08 May 2022 05:20:51 PM EDT
+ExitStatus: 0
+=====================================================================

@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 27 May 2022 04:35:18 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_meandrina_KBHIv1/01_stats
+=====================================================================
+
+[Fri 27 May 2022 04:35:19 PM EDT]      CMD: md5sum Pocillopora_meandrina_KBHIv1.assembly.fasta Pocillopora_meandrina_KBHIv1.genes.gff3 | tee Pocillopora_meandrina_KBHIv1.genome_stats.job_md5sum_list.txt
+5b8850690429d60f23eebfcc86a6e9cc  Pocillopora_meandrina_KBHIv1.assembly.fasta
+f814ea25737cddbd6988f35e7872a3ce  Pocillopora_meandrina_KBHIv1.genes.gff3
+[Fri 27 May 2022 04:35:21 PM EDT]      CMD: ./genome_stats Pocillopora_meandrina_KBHIv1.assembly.fasta Pocillopora_meandrina_KBHIv1.genes.gff3 > Pocillopora_meandrina_KBHIv1.GeneStats.tsv
+index file Pocillopora_meandrina_KBHIv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Fri 27 May 2022 04:35:18 PM EDT
+Finished: at Fri 27 May 2022 04:35:40 PM EDT
+ExitStatus: 0
+=====================================================================

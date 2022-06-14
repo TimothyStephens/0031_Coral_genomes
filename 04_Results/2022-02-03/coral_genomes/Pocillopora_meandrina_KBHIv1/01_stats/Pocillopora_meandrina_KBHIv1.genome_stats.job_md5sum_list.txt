@@ -1,0 +1,2 @@
+5b8850690429d60f23eebfcc86a6e9cc  Pocillopora_meandrina_KBHIv1.assembly.fasta
+f814ea25737cddbd6988f35e7872a3ce  Pocillopora_meandrina_KBHIv1.genes.gff3

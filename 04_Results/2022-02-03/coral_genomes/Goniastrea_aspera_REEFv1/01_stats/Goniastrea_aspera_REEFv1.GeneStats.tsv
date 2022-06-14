@@ -1,0 +1,43 @@
+# Files
+Genome file	Goniastrea_aspera_REEFv1.assembly.fasta
+GFF file	Goniastrea_aspera_REEFv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	764857003
+Total contig length (bp)	683254319
+Number of scaffolds	5396
+Number of contigs	41328
+N50 of scaffolds (bp)	518949
+N50 of contigs (bp)	31257
+Percent gaps	10.669
+Percent GC	39.29
+
+# Gene stats (combined CDS+introns)
+Number of genes	35901
+Total gene length	278281567
+Average gene length (bp)	7751.36
+Gene percent GC	39.38
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1296.85
+Average number of CDS per gene/transcript	5.86683
+
+# CDS stats
+Number of CDS	210625
+Total CDS length (bp)	46558227
+Average CDS length (bp)	221.048
+Number of single-CDS transcripts	5704
+Percent single-CDS transcripts	15.8881
+CDS percent GC	44.41
+
+# Intron stats (predicted between CDS features)
+Number of introns	174724
+Total intron length (bp)	231723340
+Average intron length (bp)	1326.23
+Intron percent GC	38.29
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	31168
+Total intergenic region length (bp)	396527747
+Average intergenic region length (bp)	12722.3
+Intergenic region percent GC	39.25

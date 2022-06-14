@@ -1,0 +1,1 @@
+74624a2d287ddb7f32c852f6a8df36f9  Porites_rus_NAIDv1.assembly.fasta

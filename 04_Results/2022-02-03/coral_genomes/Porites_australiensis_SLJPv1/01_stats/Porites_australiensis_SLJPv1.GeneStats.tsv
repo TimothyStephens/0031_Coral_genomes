@@ -1,0 +1,43 @@
+# Files
+Genome file	Porites_australiensis_SLJPv1.assembly.fasta
+GFF file	Porites_australiensis_SLJPv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	576341789
+Total contig length (bp)	520608723
+Number of scaffolds	4983
+Number of contigs	31071
+N50 of scaffolds (bp)	554729
+N50 of contigs (bp)	39263
+Percent gaps	9.670
+Percent GC	39.14
+
+# Gene stats (combined CDS+introns)
+Number of genes	30603
+Total gene length	260127158
+Average gene length (bp)	8500.05
+Gene percent GC	39.47
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1575.76
+Average number of CDS per gene/transcript	6.81593
+
+# CDS stats
+Number of CDS	208588
+Total CDS length (bp)	48222964
+Average CDS length (bp)	231.188
+Number of single-CDS transcripts	6471
+Percent single-CDS transcripts	21.145
+CDS percent GC	44.15
+
+# Intron stats (predicted between CDS features)
+Number of introns	177985
+Total intron length (bp)	211904194
+Average intron length (bp)	1190.57
+Intron percent GC	38.33
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	26975
+Total intergenic region length (bp)	236983987
+Average intergenic region length (bp)	8785.32
+Intergenic region percent GC	38.81

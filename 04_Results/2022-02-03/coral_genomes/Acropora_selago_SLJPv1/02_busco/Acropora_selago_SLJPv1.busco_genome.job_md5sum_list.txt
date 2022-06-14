@@ -1,0 +1,1 @@
+b647498ab213c36a512341e1388794cc  Acropora_selago_SLJPv1.assembly.fasta

@@ -1,0 +1,43 @@
+# Files
+Genome file	Montipora_efflorescens_SLJPv2.assembly.fasta
+GFF file	Montipora_efflorescens_SLJPv2.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	630535801
+Total contig length (bp)	573774151
+Number of scaffolds	3589
+Number of contigs	39844
+N50 of scaffolds (bp)	1168433
+N50 of contigs (bp)	25685
+Percent gaps	9.002
+Percent GC	39.52
+
+# Gene stats (combined CDS+introns)
+Number of genes	29424
+Total gene length	295387557
+Average gene length (bp)	10039
+Gene percent GC	39.62
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1390.06
+Average number of CDS per gene/transcript	6.46037
+
+# CDS stats
+Number of CDS	190090
+Total CDS length (bp)	40901193
+Average CDS length (bp)	215.168
+Number of single-CDS transcripts	6283
+Percent single-CDS transcripts	21.3533
+CDS percent GC	44.04
+
+# Intron stats (predicted between CDS features)
+Number of introns	160666
+Total intron length (bp)	254486364
+Average intron length (bp)	1583.95
+Intron percent GC	38.85
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	26591
+Total intergenic region length (bp)	293788552
+Average intergenic region length (bp)	11048.4
+Intergenic region percent GC	39.44

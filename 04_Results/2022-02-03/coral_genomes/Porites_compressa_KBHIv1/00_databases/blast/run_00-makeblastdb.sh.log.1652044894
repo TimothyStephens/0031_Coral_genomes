@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:21:34 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_compressa_KBHIv1/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:21:35 PM EDT]      CMD: md5sum Porites_compressa_KBHIv1.assembly.fasta Porites_compressa_KBHIv1.genes.cds.fna Porites_compressa_KBHIv1.genes.pep.faa | tee Porites_compressa_KBHIv1.makeblastdb.job_md5sum_list.txt
+94f0787225c2cea782867efb459b064d  Porites_compressa_KBHIv1.assembly.fasta
+d325b00c2709ffc111bf108fe724ef3d  Porites_compressa_KBHIv1.genes.cds.fna
+20a6fe8d92e14a7987a1d911ea370f9f  Porites_compressa_KBHIv1.genes.pep.faa
+[Sun 08 May 2022 05:21:39 PM EDT]      CMD: makeblastdb -dbtype nucl -in Porites_compressa_KBHIv1.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:21:39
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_compressa_KBHIv1/00_databases/blast/Porites_compressa_KBHIv1.assembly.fasta
+New DB title:  Porites_compressa_KBHIv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 608 sequences in 6.1565 seconds.
+
+
+[Sun 08 May 2022 05:21:45 PM EDT]      CMD: makeblastdb -dbtype nucl -in Porites_compressa_KBHIv1.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:21:45
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_compressa_KBHIv1/00_databases/blast/Porites_compressa_KBHIv1.genes.cds.fna
+New DB title:  Porites_compressa_KBHIv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 44130 sequences in 0.900228 seconds.
+
+
+[Sun 08 May 2022 05:21:46 PM EDT]      CMD: makeblastdb -dbtype prot -in Porites_compressa_KBHIv1.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:21:46
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_compressa_KBHIv1/00_databases/blast/Porites_compressa_KBHIv1.genes.pep.faa
+New DB title:  Porites_compressa_KBHIv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 44130 sequences in 0.685802 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:21:34 PM EDT
+Finished: at Sun 08 May 2022 05:21:47 PM EDT
+ExitStatus: 0
+=====================================================================

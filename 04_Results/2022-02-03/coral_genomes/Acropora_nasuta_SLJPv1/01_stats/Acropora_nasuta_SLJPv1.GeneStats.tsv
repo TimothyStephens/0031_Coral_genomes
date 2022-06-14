@@ -1,0 +1,43 @@
+# Files
+Genome file	Acropora_nasuta_SLJPv1.assembly.fasta
+GFF file	Acropora_nasuta_SLJPv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	419444168
+Total contig length (bp)	389228725
+Number of scaffolds	4788
+Number of contigs	19643
+N50 of scaffolds (bp)	1045289
+N50 of contigs (bp)	40203
+Percent gaps	7.204
+Percent GC	38.97
+
+# Gene stats (combined CDS+introns)
+Number of genes	23320
+Total gene length	182969289
+Average gene length (bp)	7846.02
+Gene percent GC	39.22
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1594.4
+Average number of CDS per gene/transcript	7.21381
+
+# CDS stats
+Number of CDS	168226
+Total CDS length (bp)	37181415
+Average CDS length (bp)	221.021
+Number of single-CDS transcripts	4376
+Percent single-CDS transcripts	18.765
+CDS percent GC	44.19
+
+# Intron stats (predicted between CDS features)
+Number of introns	144906
+Total intron length (bp)	145787874
+Average intron length (bp)	1006.09
+Intron percent GC	37.87
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	20613
+Total intergenic region length (bp)	192186332
+Average intergenic region length (bp)	9323.55
+Intergenic region percent GC	38.73

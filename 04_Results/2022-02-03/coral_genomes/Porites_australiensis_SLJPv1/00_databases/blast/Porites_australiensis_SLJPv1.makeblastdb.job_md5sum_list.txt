@@ -1,0 +1,3 @@
+2447d4911e03f9a3bea81fa95ebd4b68  Porites_australiensis_SLJPv1.assembly.fasta
+4c4aef92c5bf4400609b76a79a56f3e4  Porites_australiensis_SLJPv1.genes.cds.fna
+1c2f35cb7aaa9482c3f7a9ba6eec4917  Porites_australiensis_SLJPv1.genes.pep.faa

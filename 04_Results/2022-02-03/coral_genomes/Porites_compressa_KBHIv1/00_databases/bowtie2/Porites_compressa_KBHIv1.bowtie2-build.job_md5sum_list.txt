@@ -1,0 +1,2 @@
+94f0787225c2cea782867efb459b064d  Porites_compressa_KBHIv1.assembly.fasta
+d325b00c2709ffc111bf108fe724ef3d  Porites_compressa_KBHIv1.genes.cds.fna

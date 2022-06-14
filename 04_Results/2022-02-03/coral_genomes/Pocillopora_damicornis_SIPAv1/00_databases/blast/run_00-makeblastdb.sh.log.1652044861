@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:21:01 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_damicornis_SIPAv1/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:21:02 PM EDT]      CMD: md5sum Pocillopora_damicornis_SIPAv1.assembly.fasta Pocillopora_damicornis_SIPAv1.genes.cds.fna Pocillopora_damicornis_SIPAv1.genes.pep.faa | tee Pocillopora_damicornis_SIPAv1.makeblastdb.job_md5sum_list.txt
+0c39b29eaeb5c7e95d83d4dce4f9ef30  Pocillopora_damicornis_SIPAv1.assembly.fasta
+b616bc70fe0854bc2dd9fcd32dbec0eb  Pocillopora_damicornis_SIPAv1.genes.cds.fna
+69fc065c909385ab4240b68ddee2f3ee  Pocillopora_damicornis_SIPAv1.genes.pep.faa
+[Sun 08 May 2022 05:21:03 PM EDT]      CMD: makeblastdb -dbtype nucl -in Pocillopora_damicornis_SIPAv1.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:21:03
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_damicornis_SIPAv1/00_databases/blast/Pocillopora_damicornis_SIPAv1.assembly.fasta
+New DB title:  Pocillopora_damicornis_SIPAv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 4393 sequences in 2.32987 seconds.
+
+
+[Sun 08 May 2022 05:21:06 PM EDT]      CMD: makeblastdb -dbtype nucl -in Pocillopora_damicornis_SIPAv1.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:21:06
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_damicornis_SIPAv1/00_databases/blast/Pocillopora_damicornis_SIPAv1.genes.cds.fna
+New DB title:  Pocillopora_damicornis_SIPAv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 26077 sequences in 0.662613 seconds.
+
+
+[Sun 08 May 2022 05:21:06 PM EDT]      CMD: makeblastdb -dbtype prot -in Pocillopora_damicornis_SIPAv1.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:21:06
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_damicornis_SIPAv1/00_databases/blast/Pocillopora_damicornis_SIPAv1.genes.pep.faa
+New DB title:  Pocillopora_damicornis_SIPAv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 26077 sequences in 0.449622 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:21:01 PM EDT
+Finished: at Sun 08 May 2022 05:21:07 PM EDT
+ExitStatus: 0
+=====================================================================

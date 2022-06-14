@@ -1,0 +1,43 @@
+# Files
+Genome file	Galaxea_fascicularis_REEFv1.assembly.fasta
+GFF file	Galaxea_fascicularis_REEFv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	334165880
+Total contig length (bp)	326819427
+Number of scaffolds	11269
+Number of contigs	19684
+N50 of scaffolds (bp)	87933
+N50 of contigs (bp)	37856
+Percent gaps	2.198
+Percent GC	39.43
+
+# Gene stats (combined CDS+introns)
+Number of genes	22418
+Total gene length	149677110
+Average gene length (bp)	6676.65
+Gene percent GC	39.35
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1301.29
+Average number of CDS per gene/transcript	6.78709
+
+# CDS stats
+Number of CDS	152153
+Total CDS length (bp)	29172258
+Average CDS length (bp)	191.73
+Number of single-CDS transcripts	2929
+Percent single-CDS transcripts	13.0654
+CDS percent GC	44.83
+
+# Intron stats (predicted between CDS features)
+Number of introns	129735
+Total intron length (bp)	120504852
+Average intron length (bp)	928.854
+Intron percent GC	38
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	15505
+Total intergenic region length (bp)	95553611
+Average intergenic region length (bp)	6162.76
+Intergenic region percent GC	39.4

@@ -1,0 +1,3 @@
+73e64a4f329e48ccedd4420cff3f10e1  Montipora_cactus_SLJPv2.assembly.fasta
+0bf040f99761464b80d1eb6dc80ea261  Montipora_cactus_SLJPv2.genes.cds.fna
+16bd66db55eb5543e386672d2dd06aeb  Montipora_cactus_SLJPv2.genes.pep.faa

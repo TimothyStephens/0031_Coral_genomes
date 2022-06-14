@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 08 Jun 2022 06:17:37 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_vulgaris_MIJPv3/00_databases/blast
+=====================================================================
+
+[Wed 08 Jun 2022 06:17:38 PM EDT]      CMD: md5sum Hydra_vulgaris_MIJPv3.assembly.fasta Hydra_vulgaris_MIJPv3.genes.cds.fna Hydra_vulgaris_MIJPv3.genes.pep.faa | tee Hydra_vulgaris_MIJPv3.makeblastdb.job_md5sum_list.txt
+2c1d93e0e70232038e43ddc66ab19474  Hydra_vulgaris_MIJPv3.assembly.fasta
+ccaf278edc9eaa141c3ae700883127c8  Hydra_vulgaris_MIJPv3.genes.cds.fna
+a1c424f9a3db61b993e813936065348f  Hydra_vulgaris_MIJPv3.genes.pep.faa
+[Wed 08 Jun 2022 06:17:40 PM EDT]      CMD: makeblastdb -dbtype nucl -in Hydra_vulgaris_MIJPv3.assembly.fasta
+
+
+Building a new DB, current time: 06/08/2022 18:17:40
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_vulgaris_MIJPv3/00_databases/blast/Hydra_vulgaris_MIJPv3.assembly.fasta
+New DB title:  Hydra_vulgaris_MIJPv3.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 56 sequences in 18.6465 seconds.
+
+
+[Wed 08 Jun 2022 06:17:59 PM EDT]      CMD: makeblastdb -dbtype nucl -in Hydra_vulgaris_MIJPv3.genes.cds.fna
+
+
+Building a new DB, current time: 06/08/2022 18:17:59
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_vulgaris_MIJPv3/00_databases/blast/Hydra_vulgaris_MIJPv3.genes.cds.fna
+New DB title:  Hydra_vulgaris_MIJPv3.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 21385 sequences in 1.1235 seconds.
+
+
+[Wed 08 Jun 2022 06:18:00 PM EDT]      CMD: makeblastdb -dbtype prot -in Hydra_vulgaris_MIJPv3.genes.pep.faa
+
+
+Building a new DB, current time: 06/08/2022 18:18:00
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_vulgaris_MIJPv3/00_databases/blast/Hydra_vulgaris_MIJPv3.genes.pep.faa
+New DB title:  Hydra_vulgaris_MIJPv3.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 21385 sequences in 0.728695 seconds.
+
+
+
+=====================================================================
+Started: at Wed 08 Jun 2022 06:17:37 PM EDT
+Finished: at Wed 08 Jun 2022 06:18:01 PM EDT
+ExitStatus: 0
+=====================================================================

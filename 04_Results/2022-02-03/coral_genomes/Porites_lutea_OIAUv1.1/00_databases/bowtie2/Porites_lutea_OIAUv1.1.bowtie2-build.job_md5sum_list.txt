@@ -1,0 +1,2 @@
+b5f44acc6d0a5c455b9e787db0ade717  Porites_lutea_OIAUv1.1.assembly.fasta
+e653beeb1c75bc504a805323172c7034  Porites_lutea_OIAUv1.1.genes.cds.fna

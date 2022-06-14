@@ -1,0 +1,3 @@
+85eab3e80c2580f09c5883fd52cd2228  Fungia_spp_REEFv1.assembly.fasta
+896b97ff191ec4899b9493b2caaffa1a  Fungia_spp_REEFv1.genes.cds.fna
+344d8007d89e7dee307f116658b2038d  Fungia_spp_REEFv1.genes.pep.faa

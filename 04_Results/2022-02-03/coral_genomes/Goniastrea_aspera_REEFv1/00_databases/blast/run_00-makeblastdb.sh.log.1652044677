@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:17:57 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Goniastrea_aspera_REEFv1/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:17:58 PM EDT]      CMD: md5sum Goniastrea_aspera_REEFv1.assembly.fasta Goniastrea_aspera_REEFv1.genes.cds.fna Goniastrea_aspera_REEFv1.genes.pep.faa | tee Goniastrea_aspera_REEFv1.makeblastdb.job_md5sum_list.txt
+37db2228d670f85891fbb8e54debbdc8  Goniastrea_aspera_REEFv1.assembly.fasta
+78e796bbfedd69b2d04b97d15f2c1c0b  Goniastrea_aspera_REEFv1.genes.cds.fna
+e32975a9a7d3d216edc91b0be39aa027  Goniastrea_aspera_REEFv1.genes.pep.faa
+[Sun 08 May 2022 05:18:01 PM EDT]      CMD: makeblastdb -dbtype nucl -in Goniastrea_aspera_REEFv1.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:18:01
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Goniastrea_aspera_REEFv1/00_databases/blast/Goniastrea_aspera_REEFv1.assembly.fasta
+New DB title:  Goniastrea_aspera_REEFv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 5396 sequences in 7.44263 seconds.
+
+
+[Sun 08 May 2022 05:18:09 PM EDT]      CMD: makeblastdb -dbtype nucl -in Goniastrea_aspera_REEFv1.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:18:09
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Goniastrea_aspera_REEFv1/00_databases/blast/Goniastrea_aspera_REEFv1.genes.cds.fna
+New DB title:  Goniastrea_aspera_REEFv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 35901 sequences in 0.805471 seconds.
+
+
+[Sun 08 May 2022 05:18:10 PM EDT]      CMD: makeblastdb -dbtype prot -in Goniastrea_aspera_REEFv1.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:18:10
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Goniastrea_aspera_REEFv1/00_databases/blast/Goniastrea_aspera_REEFv1.genes.pep.faa
+New DB title:  Goniastrea_aspera_REEFv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 35901 sequences in 0.593131 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:17:57 PM EDT
+Finished: at Sun 08 May 2022 05:18:11 PM EDT
+ExitStatus: 0
+=====================================================================

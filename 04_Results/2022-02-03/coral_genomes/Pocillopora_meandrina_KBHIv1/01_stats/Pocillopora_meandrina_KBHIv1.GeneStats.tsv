@@ -1,0 +1,43 @@
+# Files
+Genome file	Pocillopora_meandrina_KBHIv1.assembly.fasta
+GFF file	Pocillopora_meandrina_KBHIv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	376579914
+Total contig length (bp)	376579914
+Number of scaffolds	212
+Number of contigs	212
+N50 of scaffolds (bp)	10024633
+N50 of contigs (bp)	10024633
+Percent gaps	0.000
+Percent GC	38.03
+
+# Gene stats (combined CDS+introns)
+Number of genes	31840
+Total gene length	158140140
+Average gene length (bp)	4966.71
+Gene percent GC	38.48
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1376.98
+Average number of CDS per gene/transcript	6.54947
+
+# CDS stats
+Number of CDS	208535
+Total CDS length (bp)	43842885
+Average CDS length (bp)	210.242
+Number of single-CDS transcripts	7933
+Percent single-CDS transcripts	24.9152
+CDS percent GC	44.06
+
+# Intron stats (predicted between CDS features)
+Number of introns	176695
+Total intron length (bp)	114297255
+Average intron length (bp)	646.862
+Intron percent GC	36.34
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	31208
+Total intergenic region length (bp)	212142472
+Average intergenic region length (bp)	6797.7
+Intergenic region percent GC	37.66

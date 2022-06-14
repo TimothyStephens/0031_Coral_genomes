@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 27 May 2022 04:28:56 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montastrea_cavernosa_FGUSv2/01_stats
+=====================================================================
+
+[Fri 27 May 2022 04:28:57 PM EDT]      CMD: md5sum Montastrea_cavernosa_FGUSv2.assembly.fasta Montastrea_cavernosa_FGUSv2.genes.gff3 | tee Montastrea_cavernosa_FGUSv2.genome_stats.job_md5sum_list.txt
+f2f82d344ca10d54f6785800d606c598  Montastrea_cavernosa_FGUSv2.assembly.fasta
+83c0f58f734b4dd8a7cbe298dfaf67c9  Montastrea_cavernosa_FGUSv2.genes.gff3
+[Fri 27 May 2022 04:29:00 PM EDT]      CMD: ./genome_stats Montastrea_cavernosa_FGUSv2.assembly.fasta Montastrea_cavernosa_FGUSv2.genes.gff3 > Montastrea_cavernosa_FGUSv2.GeneStats.tsv
+index file Montastrea_cavernosa_FGUSv2.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Fri 27 May 2022 04:28:56 PM EDT
+Finished: at Fri 27 May 2022 04:29:21 PM EDT
+ExitStatus: 0
+=====================================================================

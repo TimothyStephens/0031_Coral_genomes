@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:17:11 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_yongei_SLJPv1/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:17:12 PM EDT]      CMD: md5sum Acropora_yongei_SLJPv1.assembly.fasta Acropora_yongei_SLJPv1.genes.cds.fna Acropora_yongei_SLJPv1.genes.pep.faa | tee Acropora_yongei_SLJPv1.makeblastdb.job_md5sum_list.txt
+3b8300f72ed46dc54d2a4d5e940508aa  Acropora_yongei_SLJPv1.assembly.fasta
+87f1f31c59108901d39e1a01a141a04b  Acropora_yongei_SLJPv1.genes.cds.fna
+14821b04fee1f8d73f251ea39b70c0a6  Acropora_yongei_SLJPv1.genes.pep.faa
+[Sun 08 May 2022 05:17:14 PM EDT]      CMD: makeblastdb -dbtype nucl -in Acropora_yongei_SLJPv1.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:17:14
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_yongei_SLJPv1/00_databases/blast/Acropora_yongei_SLJPv1.assembly.fasta
+New DB title:  Acropora_yongei_SLJPv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1382 sequences in 9.92123 seconds.
+
+
+[Sun 08 May 2022 05:17:24 PM EDT]      CMD: makeblastdb -dbtype nucl -in Acropora_yongei_SLJPv1.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:17:24
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_yongei_SLJPv1/00_databases/blast/Acropora_yongei_SLJPv1.genes.cds.fna
+New DB title:  Acropora_yongei_SLJPv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 23501 sequences in 0.926412 seconds.
+
+
+[Sun 08 May 2022 05:17:25 PM EDT]      CMD: makeblastdb -dbtype prot -in Acropora_yongei_SLJPv1.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:17:25
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_yongei_SLJPv1/00_databases/blast/Acropora_yongei_SLJPv1.genes.pep.faa
+New DB title:  Acropora_yongei_SLJPv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 23501 sequences in 0.83464 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:17:11 PM EDT
+Finished: at Sun 08 May 2022 05:17:26 PM EDT
+ExitStatus: 0
+=====================================================================

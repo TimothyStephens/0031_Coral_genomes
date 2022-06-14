@@ -1,0 +1,46 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat 04 Jun 2022 02:12:08 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Exaiptasia_diaphana_CC7v1/00_databases
+=====================================================================
+
+[Sat 04 Jun 2022 02:12:09 PM EDT]      CMD: samtools faidx Exaiptasia_diaphana_CC7v1.assembly.fasta
+[Sat 04 Jun 2022 02:12:11 PM EDT]      CMD: samtools faidx Exaiptasia_diaphana_CC7v1.genes.cds.fna
+[Sat 04 Jun 2022 02:12:11 PM EDT]      CMD: samtools faidx Exaiptasia_diaphana_CC7v1.genes.pep.faa
+[Sat 04 Jun 2022 02:12:12 PM EDT]      CMD: gatk CreateSequenceDictionary --REFERENCE Exaiptasia_diaphana_CC7v1.assembly.fasta
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar CreateSequenceDictionary --REFERENCE Exaiptasia_diaphana_CC7v1.assembly.fasta
+INFO	2022-06-04 14:12:14	CreateSequenceDictionary	Output dictionary will be written in Exaiptasia_diaphana_CC7v1.assembly.dict
+14:12:14.904 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Sat Jun 04 14:12:14 EDT 2022] CreateSequenceDictionary --REFERENCE Exaiptasia_diaphana_CC7v1.assembly.fasta --TRUNCATE_NAMES_AT_WHITESPACE true --NUM_SEQUENCES 2147483647 --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+Jun 04, 2022 2:12:15 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+[Sat Jun 04 14:12:15 EDT 2022] Executing as timothy@coral on Linux 5.4.0-110-generic amd64; OpenJDK 64-Bit Server VM 11.0.15+10-Ubuntu-0ubuntu0.20.04.1; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.2.0.0
+[Sat Jun 04 14:12:17 EDT 2022] picard.sam.CreateSequenceDictionary done. Elapsed time: 0.04 minutes.
+Runtime.totalMemory()=4089446400
+Tool returned:
+0
+[Sat 04 Jun 2022 02:12:17 PM EDT]      CMD: gatk CreateSequenceDictionary --REFERENCE Exaiptasia_diaphana_CC7v1.genes.cds.fna
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar CreateSequenceDictionary --REFERENCE Exaiptasia_diaphana_CC7v1.genes.cds.fna
+INFO	2022-06-04 14:12:19	CreateSequenceDictionary	Output dictionary will be written in Exaiptasia_diaphana_CC7v1.genes.cds.dict
+14:12:19.993 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Sat Jun 04 14:12:20 EDT 2022] CreateSequenceDictionary --REFERENCE Exaiptasia_diaphana_CC7v1.genes.cds.fna --TRUNCATE_NAMES_AT_WHITESPACE true --NUM_SEQUENCES 2147483647 --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+Jun 04, 2022 2:12:20 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+[Sat Jun 04 14:12:20 EDT 2022] Executing as timothy@coral on Linux 5.4.0-110-generic amd64; OpenJDK 64-Bit Server VM 11.0.15+10-Ubuntu-0ubuntu0.20.04.1; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.2.0.0
+[Sat Jun 04 14:12:21 EDT 2022] picard.sam.CreateSequenceDictionary done. Elapsed time: 0.03 minutes.
+Runtime.totalMemory()=3774873600
+Tool returned:
+0
+[Sat 04 Jun 2022 02:12:21 PM EDT]      CMD: stats.sh -Xmx12g Exaiptasia_diaphana_CC7v1.assembly.fasta 1>Exaiptasia_diaphana_CC7v1.assembly.fasta.stats 2>&1
+[Sat 04 Jun 2022 02:12:25 PM EDT]      CMD: stats.sh -Xmx12g Exaiptasia_diaphana_CC7v1.genes.cds.fna  1>Exaiptasia_diaphana_CC7v1.genes.cds.fna.stats 2>&1
+[Sat 04 Jun 2022 02:12:26 PM EDT]      CMD: md5sum Exaiptasia_diaphana_CC7v1.assembly.fasta Exaiptasia_diaphana_CC7v1.genes.cds.fna Exaiptasia_diaphana_CC7v1.genes.pep.faa Exaiptasia_diaphana_CC7v1.genes.gff3 > Exaiptasia_diaphana_CC7v1.md5sum_list.txt
+
+=====================================================================
+Started: at Sat 04 Jun 2022 02:12:08 PM EDT
+Finished: at Sat 04 Jun 2022 02:12:27 PM EDT
+ExitStatus: 0
+=====================================================================

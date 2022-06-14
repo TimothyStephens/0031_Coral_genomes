@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:19:18 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_sp1_aff_capitata_ULFMv1/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:19:19 PM EDT]      CMD: md5sum Montipora_sp1_aff_capitata_ULFMv1.assembly.fasta Montipora_sp1_aff_capitata_ULFMv1.genes.cds.fna Montipora_sp1_aff_capitata_ULFMv1.genes.pep.faa | tee Montipora_sp1_aff_capitata_ULFMv1.makeblastdb.job_md5sum_list.txt
+55bbe5e3c749f81810430e3370368f8f  Montipora_sp1_aff_capitata_ULFMv1.assembly.fasta
+00447e7acf6075227fced1a965f7732f  Montipora_sp1_aff_capitata_ULFMv1.genes.cds.fna
+69f734b94b87e7621126977b18d7a504  Montipora_sp1_aff_capitata_ULFMv1.genes.pep.faa
+[Sun 08 May 2022 05:19:21 PM EDT]      CMD: makeblastdb -dbtype nucl -in Montipora_sp1_aff_capitata_ULFMv1.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:19:21
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_sp1_aff_capitata_ULFMv1/00_databases/blast/Montipora_sp1_aff_capitata_ULFMv1.assembly.fasta
+New DB title:  Montipora_sp1_aff_capitata_ULFMv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 18550 sequences in 5.20601 seconds.
+
+
+[Sun 08 May 2022 05:19:26 PM EDT]      CMD: makeblastdb -dbtype nucl -in Montipora_sp1_aff_capitata_ULFMv1.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:19:26
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_sp1_aff_capitata_ULFMv1/00_databases/blast/Montipora_sp1_aff_capitata_ULFMv1.genes.cds.fna
+New DB title:  Montipora_sp1_aff_capitata_ULFMv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 43596 sequences in 2.01387 seconds.
+
+
+[Sun 08 May 2022 05:19:28 PM EDT]      CMD: makeblastdb -dbtype prot -in Montipora_sp1_aff_capitata_ULFMv1.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:19:28
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_sp1_aff_capitata_ULFMv1/00_databases/blast/Montipora_sp1_aff_capitata_ULFMv1.genes.pep.faa
+New DB title:  Montipora_sp1_aff_capitata_ULFMv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 43596 sequences in 1.10241 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:19:18 PM EDT
+Finished: at Sun 08 May 2022 05:19:29 PM EDT
+ExitStatus: 0
+=====================================================================

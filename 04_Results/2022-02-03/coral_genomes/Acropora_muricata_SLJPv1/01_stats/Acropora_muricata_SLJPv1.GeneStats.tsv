@@ -1,0 +1,43 @@
+# Files
+Genome file	Acropora_muricata_SLJPv1.assembly.fasta
+GFF file	Acropora_muricata_SLJPv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	420750014
+Total contig length (bp)	392093984
+Number of scaffolds	6869
+Number of contigs	22092
+N50 of scaffolds (bp)	574627
+N50 of contigs (bp)	38323
+Percent gaps	6.811
+Percent GC	39.03
+
+# Gene stats (combined CDS+introns)
+Number of genes	23647
+Total gene length	181434089
+Average gene length (bp)	7672.6
+Gene percent GC	39.25
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1564.29
+Average number of CDS per gene/transcript	7.09426
+
+# CDS stats
+Number of CDS	167758
+Total CDS length (bp)	36990797
+Average CDS length (bp)	220.501
+Number of single-CDS transcripts	4403
+Percent single-CDS transcripts	18.6197
+CDS percent GC	44.19
+
+# Intron stats (predicted between CDS features)
+Number of introns	144111
+Total intron length (bp)	144443292
+Average intron length (bp)	1002.31
+Intron percent GC	37.91
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	20091
+Total intergenic region length (bp)	175452651
+Average intergenic region length (bp)	8732.9
+Intergenic region percent GC	38.78

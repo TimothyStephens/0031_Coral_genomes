@@ -1,0 +1,43 @@
+# Files
+Genome file	Amplexidiscus_fenestrafer_MSMEv1.assembly.fasta
+GFF file	Amplexidiscus_fenestrafer_MSMEv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	370076467
+Total contig length (bp)	305666731
+Number of scaffolds	5631
+Number of contigs	31152
+N50 of scaffolds (bp)	510298
+N50 of contigs (bp)	19900
+Percent gaps	17.404
+Percent GC	39.3
+
+# Gene stats (combined CDS+introns)
+Number of genes	21372
+Total gene length	153773009
+Average gene length (bp)	7195.07
+Gene percent GC	39.62
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1423.77
+Average number of CDS per gene/transcript	6.50959
+
+# CDS stats
+Number of CDS	139123
+Total CDS length (bp)	30428856
+Average CDS length (bp)	218.719
+Number of single-CDS transcripts	2801
+Percent single-CDS transcripts	13.1059
+CDS percent GC	45.23
+
+# Intron stats (predicted between CDS features)
+Number of introns	117751
+Total intron length (bp)	123344153
+Average intron length (bp)	1047.5
+Intron percent GC	38.09
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	18933
+Total intergenic region length (bp)	172837199
+Average intergenic region length (bp)	9128.89
+Intergenic region percent GC	39

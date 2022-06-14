@@ -1,0 +1,2 @@
+c6bbfbaab503e606c2673e16ff87cab5  Dendronephthya_gigantea_SJKRv1.assembly.fasta
+60156caaaef9de796648d6693026941f  Dendronephthya_gigantea_SJKRv1.genes.cds.fna

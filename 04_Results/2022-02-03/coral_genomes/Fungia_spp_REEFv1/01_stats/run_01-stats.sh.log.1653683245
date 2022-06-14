@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 27 May 2022 04:27:25 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Fungia_spp_REEFv1/01_stats
+=====================================================================
+
+[Fri 27 May 2022 04:27:25 PM EDT]      CMD: md5sum Fungia_spp_REEFv1.assembly.fasta Fungia_spp_REEFv1.genes.gff3 | tee Fungia_spp_REEFv1.genome_stats.job_md5sum_list.txt
+85eab3e80c2580f09c5883fd52cd2228  Fungia_spp_REEFv1.assembly.fasta
+095ace9a1fcc955c8d39fb718c233240  Fungia_spp_REEFv1.genes.gff3
+[Fri 27 May 2022 04:27:28 PM EDT]      CMD: ./genome_stats Fungia_spp_REEFv1.assembly.fasta Fungia_spp_REEFv1.genes.gff3 > Fungia_spp_REEFv1.GeneStats.tsv
+index file Fungia_spp_REEFv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Fri 27 May 2022 04:27:25 PM EDT
+Finished: at Fri 27 May 2022 04:27:57 PM EDT
+ExitStatus: 0
+=====================================================================

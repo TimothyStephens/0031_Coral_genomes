@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:19:04 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_efflorescens_SLJPv2/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:19:05 PM EDT]      CMD: md5sum Montipora_efflorescens_SLJPv2.assembly.fasta Montipora_efflorescens_SLJPv2.genes.cds.fna Montipora_efflorescens_SLJPv2.genes.pep.faa | tee Montipora_efflorescens_SLJPv2.makeblastdb.job_md5sum_list.txt
+e7ae1a7125a6e124cfa9229634f67912  Montipora_efflorescens_SLJPv2.assembly.fasta
+511969c521630cdc1d1c2b8bad78074c  Montipora_efflorescens_SLJPv2.genes.cds.fna
+6f34c40e6e06ed14aabbbc3039cc1b46  Montipora_efflorescens_SLJPv2.genes.pep.faa
+[Sun 08 May 2022 05:19:09 PM EDT]      CMD: makeblastdb -dbtype nucl -in Montipora_efflorescens_SLJPv2.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:19:09
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_efflorescens_SLJPv2/00_databases/blast/Montipora_efflorescens_SLJPv2.assembly.fasta
+New DB title:  Montipora_efflorescens_SLJPv2.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 3589 sequences in 7.03492 seconds.
+
+
+[Sun 08 May 2022 05:19:16 PM EDT]      CMD: makeblastdb -dbtype nucl -in Montipora_efflorescens_SLJPv2.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:19:16
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_efflorescens_SLJPv2/00_databases/blast/Montipora_efflorescens_SLJPv2.genes.cds.fna
+New DB title:  Montipora_efflorescens_SLJPv2.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 29424 sequences in 0.860989 seconds.
+
+
+[Sun 08 May 2022 05:19:17 PM EDT]      CMD: makeblastdb -dbtype prot -in Montipora_efflorescens_SLJPv2.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:19:17
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_efflorescens_SLJPv2/00_databases/blast/Montipora_efflorescens_SLJPv2.genes.pep.faa
+New DB title:  Montipora_efflorescens_SLJPv2.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 29424 sequences in 0.723995 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:19:04 PM EDT
+Finished: at Sun 08 May 2022 05:19:18 PM EDT
+ExitStatus: 0
+=====================================================================

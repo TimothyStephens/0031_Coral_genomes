@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 27 May 2022 04:50:32 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_astreoides_BBBMv1/00_databases/blast
+=====================================================================
+
+[Fri 27 May 2022 04:50:38 PM EDT]      CMD: md5sum Porites_astreoides_BBBMv1.assembly.fasta Porites_astreoides_BBBMv1.genes.cds.fna Porites_astreoides_BBBMv1.genes.pep.faa | tee Porites_astreoides_BBBMv1.makeblastdb.job_md5sum_list.txt
+97c7bf07e71e7d48885fdeee05e91e25  Porites_astreoides_BBBMv1.assembly.fasta
+5d6872186a2bee900fe1014901bbb5a5  Porites_astreoides_BBBMv1.genes.cds.fna
+f718b41eb664ee7bdc0d6638f1533596  Porites_astreoides_BBBMv1.genes.pep.faa
+[Fri 27 May 2022 04:50:42 PM EDT]      CMD: makeblastdb -dbtype nucl -in Porites_astreoides_BBBMv1.assembly.fasta
+
+
+Building a new DB, current time: 05/27/2022 16:50:43
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_astreoides_BBBMv1/00_databases/blast/Porites_astreoides_BBBMv1.assembly.fasta
+New DB title:  Porites_astreoides_BBBMv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 3051 sequences in 22.2389 seconds.
+
+
+[Fri 27 May 2022 04:51:05 PM EDT]      CMD: makeblastdb -dbtype nucl -in Porites_astreoides_BBBMv1.genes.cds.fna
+
+
+Building a new DB, current time: 05/27/2022 16:51:05
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_astreoides_BBBMv1/00_databases/blast/Porites_astreoides_BBBMv1.genes.cds.fna
+New DB title:  Porites_astreoides_BBBMv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 64636 sequences in 4.58831 seconds.
+
+
+[Fri 27 May 2022 04:51:10 PM EDT]      CMD: makeblastdb -dbtype prot -in Porites_astreoides_BBBMv1.genes.pep.faa
+
+
+Building a new DB, current time: 05/27/2022 16:51:10
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_astreoides_BBBMv1/00_databases/blast/Porites_astreoides_BBBMv1.genes.pep.faa
+New DB title:  Porites_astreoides_BBBMv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 64636 sequences in 4.3471 seconds.
+
+
+
+=====================================================================
+Started: at Fri 27 May 2022 04:50:32 PM EDT
+Finished: at Fri 27 May 2022 04:51:14 PM EDT
+ExitStatus: 0
+=====================================================================

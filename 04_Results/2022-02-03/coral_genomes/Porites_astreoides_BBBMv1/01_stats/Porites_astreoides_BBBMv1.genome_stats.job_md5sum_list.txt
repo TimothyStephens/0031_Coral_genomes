@@ -1,0 +1,2 @@
+97c7bf07e71e7d48885fdeee05e91e25  Porites_astreoides_BBBMv1.assembly.fasta
+55f42c7b633c070e2e5a88813706824c  Porites_astreoides_BBBMv1.genes.gff3

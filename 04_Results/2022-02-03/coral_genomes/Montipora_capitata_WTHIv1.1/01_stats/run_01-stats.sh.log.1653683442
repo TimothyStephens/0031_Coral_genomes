@@ -1,0 +1,19 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 27 May 2022 04:30:42 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_capitata_WTHIv1.1/01_stats
+=====================================================================
+
+[Fri 27 May 2022 04:30:43 PM EDT]      CMD: md5sum Montipora_capitata_WTHIv1.1.assembly.fasta Montipora_capitata_WTHIv1.1.genes.gff3 | tee Montipora_capitata_WTHIv1.1.genome_stats.job_md5sum_list.txt
+ba485750726a5249878f824033bf8712  Montipora_capitata_WTHIv1.1.assembly.fasta
+12ecc0134c906241189387f9d88632d5  Montipora_capitata_WTHIv1.1.genes.gff3
+[Fri 27 May 2022 04:30:45 PM EDT]      CMD: ./genome_stats Montipora_capitata_WTHIv1.1.assembly.fasta Montipora_capitata_WTHIv1.1.genes.gff3 > Montipora_capitata_WTHIv1.1.GeneStats.tsv
+index file Montipora_capitata_WTHIv1.1.assembly.fasta.fai not found, generating...
+WARNING. chromosome (Montipora_capitata_WTHIv1.1___xfSc0014868) was not found in the FASTA file. Skipping.
+WARNING. chromosome (Montipora_capitata_WTHIv1.1___xfSc0014868) was not found in the FASTA file. Skipping.
+
+=====================================================================
+Started: at Fri 27 May 2022 04:30:42 PM EDT
+Finished: at Fri 27 May 2022 04:31:09 PM EDT
+ExitStatus: 0
+=====================================================================

@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:17:50 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Galaxea_fascicularis_REEFv1/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:17:51 PM EDT]      CMD: md5sum Galaxea_fascicularis_REEFv1.assembly.fasta Galaxea_fascicularis_REEFv1.genes.cds.fna Galaxea_fascicularis_REEFv1.genes.pep.faa | tee Galaxea_fascicularis_REEFv1.makeblastdb.job_md5sum_list.txt
+def10fa31d6a70263f9af1f85235e4a4  Galaxea_fascicularis_REEFv1.assembly.fasta
+a719acca33a8ecb28fb8b4d379075e16  Galaxea_fascicularis_REEFv1.genes.cds.fna
+610dbe58ab79d3bc5deaacd8e5b0325d  Galaxea_fascicularis_REEFv1.genes.pep.faa
+[Sun 08 May 2022 05:17:53 PM EDT]      CMD: makeblastdb -dbtype nucl -in Galaxea_fascicularis_REEFv1.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:17:53
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Galaxea_fascicularis_REEFv1/00_databases/blast/Galaxea_fascicularis_REEFv1.assembly.fasta
+New DB title:  Galaxea_fascicularis_REEFv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 11269 sequences in 3.10855 seconds.
+
+
+[Sun 08 May 2022 05:17:56 PM EDT]      CMD: makeblastdb -dbtype nucl -in Galaxea_fascicularis_REEFv1.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:17:56
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Galaxea_fascicularis_REEFv1/00_databases/blast/Galaxea_fascicularis_REEFv1.genes.cds.fna
+New DB title:  Galaxea_fascicularis_REEFv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 22418 sequences in 0.68848 seconds.
+
+
+[Sun 08 May 2022 05:17:57 PM EDT]      CMD: makeblastdb -dbtype prot -in Galaxea_fascicularis_REEFv1.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:17:57
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Galaxea_fascicularis_REEFv1/00_databases/blast/Galaxea_fascicularis_REEFv1.genes.pep.faa
+New DB title:  Galaxea_fascicularis_REEFv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 22418 sequences in 0.385461 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:17:50 PM EDT
+Finished: at Sun 08 May 2022 05:17:57 PM EDT
+ExitStatus: 0
+=====================================================================

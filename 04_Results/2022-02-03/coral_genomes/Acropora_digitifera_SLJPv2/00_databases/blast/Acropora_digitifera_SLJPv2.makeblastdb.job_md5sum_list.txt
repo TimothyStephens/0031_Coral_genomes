@@ -1,0 +1,3 @@
+f827c211aae96c6a8493dca1c0e4a506  Acropora_digitifera_SLJPv2.assembly.fasta
+4b529778a8550d5b39363e166a2c2e10  Acropora_digitifera_SLJPv2.genes.cds.fna
+654241fc0f4f4e6d39f48f14c8529916  Acropora_digitifera_SLJPv2.genes.pep.faa

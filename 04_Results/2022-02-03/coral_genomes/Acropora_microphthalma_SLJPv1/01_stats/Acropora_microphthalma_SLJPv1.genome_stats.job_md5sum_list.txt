@@ -1,0 +1,2 @@
+8da1244d214a05c90124997669584610  Acropora_microphthalma_SLJPv1.assembly.fasta
+a8ab30c7c969aaf78722a4f20f79c410  Acropora_microphthalma_SLJPv1.genes.gff3

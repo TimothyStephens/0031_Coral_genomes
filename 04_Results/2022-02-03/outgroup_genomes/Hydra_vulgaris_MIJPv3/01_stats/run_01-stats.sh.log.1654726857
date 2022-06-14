@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 08 Jun 2022 06:20:57 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_vulgaris_MIJPv3/01_stats
+=====================================================================
+
+[Wed 08 Jun 2022 06:20:58 PM EDT]      CMD: md5sum Hydra_vulgaris_MIJPv3.assembly.fasta Hydra_vulgaris_MIJPv3.genes.gff3 | tee Hydra_vulgaris_MIJPv3.genome_stats.job_md5sum_list.txt
+2c1d93e0e70232038e43ddc66ab19474  Hydra_vulgaris_MIJPv3.assembly.fasta
+cf09794fb8f0f7763a25dd59d7e375c0  Hydra_vulgaris_MIJPv3.genes.gff3
+[Wed 08 Jun 2022 06:21:00 PM EDT]      CMD: ./genome_stats Hydra_vulgaris_MIJPv3.assembly.fasta Hydra_vulgaris_MIJPv3.genes.gff3 > Hydra_vulgaris_MIJPv3.GeneStats.tsv
+index file Hydra_vulgaris_MIJPv3.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Wed 08 Jun 2022 06:20:57 PM EDT
+Finished: at Wed 08 Jun 2022 06:21:38 PM EDT
+ExitStatus: 0
+=====================================================================

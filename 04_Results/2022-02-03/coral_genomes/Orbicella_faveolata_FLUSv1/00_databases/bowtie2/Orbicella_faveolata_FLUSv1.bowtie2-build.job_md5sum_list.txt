@@ -1,0 +1,2 @@
+e44767cd7ef99e5ac97211b8b7cdef47  Orbicella_faveolata_FLUSv1.assembly.fasta
+9aacc3dc589023149b3845ab0fafd2af  Orbicella_faveolata_FLUSv1.genes.cds.fna

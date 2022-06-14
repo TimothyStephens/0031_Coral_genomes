@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 27 May 2022 04:32:57 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Platygyra_sinensis_SDTHv1/01_stats
+=====================================================================
+
+[Fri 27 May 2022 04:32:58 PM EDT]      CMD: md5sum Platygyra_sinensis_SDTHv1.assembly.fasta Platygyra_sinensis_SDTHv1.genes.gff3 | tee Platygyra_sinensis_SDTHv1.genome_stats.job_md5sum_list.txt
+e111633491e36b3c2c5ac444dba92896  Platygyra_sinensis_SDTHv1.assembly.fasta
+1d0c5da750e3b2e286818f5317940b95  Platygyra_sinensis_SDTHv1.genes.gff3
+[Fri 27 May 2022 04:33:19 PM EDT]      CMD: ./genome_stats Platygyra_sinensis_SDTHv1.assembly.fasta Platygyra_sinensis_SDTHv1.genes.gff3 > Platygyra_sinensis_SDTHv1.GeneStats.tsv
+index file Platygyra_sinensis_SDTHv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Fri 27 May 2022 04:32:57 PM EDT
+Finished: at Fri 27 May 2022 04:34:02 PM EDT
+ExitStatus: 0
+=====================================================================

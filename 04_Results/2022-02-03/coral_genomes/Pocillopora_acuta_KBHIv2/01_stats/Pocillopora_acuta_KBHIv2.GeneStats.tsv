@@ -1,0 +1,43 @@
+# Files
+Genome file	Pocillopora_acuta_KBHIv2.assembly.fasta
+GFF file	Pocillopora_acuta_KBHIv2.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	408287534
+Total contig length (bp)	408287534
+Number of scaffolds	474
+Number of contigs	474
+N50 of scaffolds (bp)	5167277
+N50 of contigs (bp)	5167277
+Percent gaps	0.000
+Percent GC	38.11
+
+# Gene stats (combined CDS+introns)
+Number of genes	33730
+Total gene length	176151796
+Average gene length (bp)	5222.41
+Gene percent GC	38.48
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1357.67
+Average number of CDS per gene/transcript	6.60033
+
+# CDS stats
+Number of CDS	222629
+Total CDS length (bp)	45794064
+Average CDS length (bp)	205.697
+Number of single-CDS transcripts	7877
+Percent single-CDS transcripts	23.3531
+CDS percent GC	44.06
+
+# Intron stats (predicted between CDS features)
+Number of introns	188899
+Total intron length (bp)	130357732
+Average intron length (bp)	690.092
+Intron percent GC	36.52
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	32615
+Total intergenic region length (bp)	224678095
+Average intergenic region length (bp)	6888.8
+Intergenic region percent GC	37.8

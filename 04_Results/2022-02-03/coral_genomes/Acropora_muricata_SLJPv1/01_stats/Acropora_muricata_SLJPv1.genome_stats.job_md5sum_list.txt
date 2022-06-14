@@ -1,0 +1,2 @@
+4a8143b47aac411ccdea2ce9a0774064  Acropora_muricata_SLJPv1.assembly.fasta
+7b022cfb76ea94eb34cc05efd930fbed  Acropora_muricata_SLJPv1.genes.gff3

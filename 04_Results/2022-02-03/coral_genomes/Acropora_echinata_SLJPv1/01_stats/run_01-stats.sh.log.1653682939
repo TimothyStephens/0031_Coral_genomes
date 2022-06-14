@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 27 May 2022 04:22:19 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_echinata_SLJPv1/01_stats
+=====================================================================
+
+[Fri 27 May 2022 04:22:20 PM EDT]      CMD: md5sum Acropora_echinata_SLJPv1.assembly.fasta Acropora_echinata_SLJPv1.genes.gff3 | tee Acropora_echinata_SLJPv1.genome_stats.job_md5sum_list.txt
+362dd3cdb682764da7f5c4b62421c1c9  Acropora_echinata_SLJPv1.assembly.fasta
+9e9341442e6d439d038e32cfadb3a350  Acropora_echinata_SLJPv1.genes.gff3
+[Fri 27 May 2022 04:22:23 PM EDT]      CMD: ./genome_stats Acropora_echinata_SLJPv1.assembly.fasta Acropora_echinata_SLJPv1.genes.gff3 > Acropora_echinata_SLJPv1.GeneStats.tsv
+index file Acropora_echinata_SLJPv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Fri 27 May 2022 04:22:19 PM EDT
+Finished: at Fri 27 May 2022 04:22:38 PM EDT
+ExitStatus: 0
+=====================================================================

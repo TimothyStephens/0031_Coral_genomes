@@ -1,0 +1,43 @@
+# Files
+Genome file	Hydra_vulgaris_MIJPv3.assembly.fasta
+GFF file	Hydra_vulgaris_MIJPv3.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	819402624
+Total contig length (bp)	817163865
+Number of scaffolds	56
+Number of contigs	2263
+N50 of scaffolds (bp)	55045248
+N50 of contigs (bp)	756747
+Percent gaps	0.273
+Percent GC	27
+
+# Gene stats (combined CDS+introns)
+Number of genes	21385
+Total gene length	385837839
+Average gene length (bp)	18042.5
+Gene percent GC	26.74
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1530.2
+Average number of CDS per gene/transcript	6.6917
+
+# CDS stats
+Number of CDS	143102
+Total CDS length (bp)	32723308
+Average CDS length (bp)	228.671
+Number of single-CDS transcripts	4430
+Percent single-CDS transcripts	20.7155
+CDS percent GC	33.64
+
+# Intron stats (predicted between CDS features)
+Number of introns	121717
+Total intron length (bp)	353114531
+Average intron length (bp)	2901.11
+Intron percent GC	26.1
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	20382
+Total intergenic region length (bp)	432642410
+Average intergenic region length (bp)	21226.7
+Intergenic region percent GC	27.24

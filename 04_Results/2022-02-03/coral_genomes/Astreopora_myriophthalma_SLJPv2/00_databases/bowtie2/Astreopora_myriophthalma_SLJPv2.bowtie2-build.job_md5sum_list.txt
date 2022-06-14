@@ -1,0 +1,2 @@
+a0f21ad5373cd703b30cc2d9acebb93a  Astreopora_myriophthalma_SLJPv2.assembly.fasta
+620c610415486dd1981464757f5503d2  Astreopora_myriophthalma_SLJPv2.genes.cds.fna

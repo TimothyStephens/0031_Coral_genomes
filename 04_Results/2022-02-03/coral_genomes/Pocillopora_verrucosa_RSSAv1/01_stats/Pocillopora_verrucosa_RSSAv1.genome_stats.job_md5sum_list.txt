@@ -1,0 +1,2 @@
+cbb95f5a4c9af1188c37a73971585b27  Pocillopora_verrucosa_RSSAv1.assembly.fasta
+1c838406b34bf19067ba3beef6b8b7b6  Pocillopora_verrucosa_RSSAv1.genes.gff3

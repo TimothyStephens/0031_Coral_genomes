@@ -1,0 +1,2 @@
+e054e120f64d524321d183a4e77c700b  Acropora_intermedia_SLJPv1.assembly.fasta
+22b223daf93b82b6f95d490275921f1a  Acropora_intermedia_SLJPv1.genes.cds.fna

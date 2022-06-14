@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 27 May 2022 04:31:40 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_sp1_aff_capitata_ULFMv1/01_stats
+=====================================================================
+
+[Fri 27 May 2022 04:31:41 PM EDT]      CMD: md5sum Montipora_sp1_aff_capitata_ULFMv1.assembly.fasta Montipora_sp1_aff_capitata_ULFMv1.genes.gff3 | tee Montipora_sp1_aff_capitata_ULFMv1.genome_stats.job_md5sum_list.txt
+55bbe5e3c749f81810430e3370368f8f  Montipora_sp1_aff_capitata_ULFMv1.assembly.fasta
+ec1cfa7ece495e2faf5303955e5f07d1  Montipora_sp1_aff_capitata_ULFMv1.genes.gff3
+[Fri 27 May 2022 04:31:45 PM EDT]      CMD: ./genome_stats Montipora_sp1_aff_capitata_ULFMv1.assembly.fasta Montipora_sp1_aff_capitata_ULFMv1.genes.gff3 > Montipora_sp1_aff_capitata_ULFMv1.GeneStats.tsv
+index file Montipora_sp1_aff_capitata_ULFMv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Fri 27 May 2022 04:31:40 PM EDT
+Finished: at Fri 27 May 2022 04:32:04 PM EDT
+ExitStatus: 0
+=====================================================================

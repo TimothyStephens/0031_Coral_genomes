@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:21:14 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_verrucosa_RSSAv1/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:21:15 PM EDT]      CMD: md5sum Pocillopora_verrucosa_RSSAv1.assembly.fasta Pocillopora_verrucosa_RSSAv1.genes.cds.fna Pocillopora_verrucosa_RSSAv1.genes.pep.faa | tee Pocillopora_verrucosa_RSSAv1.makeblastdb.job_md5sum_list.txt
+cbb95f5a4c9af1188c37a73971585b27  Pocillopora_verrucosa_RSSAv1.assembly.fasta
+c87a56ecde79c1ee6916780449b2e69e  Pocillopora_verrucosa_RSSAv1.genes.cds.fna
+ebe6471551f98c75fce5a55d39c41f97  Pocillopora_verrucosa_RSSAv1.genes.pep.faa
+[Sun 08 May 2022 05:21:17 PM EDT]      CMD: makeblastdb -dbtype nucl -in Pocillopora_verrucosa_RSSAv1.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:21:17
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_verrucosa_RSSAv1/00_databases/blast/Pocillopora_verrucosa_RSSAv1.assembly.fasta
+New DB title:  Pocillopora_verrucosa_RSSAv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 18268 sequences in 3.60585 seconds.
+
+
+[Sun 08 May 2022 05:21:22 PM EDT]      CMD: makeblastdb -dbtype nucl -in Pocillopora_verrucosa_RSSAv1.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:21:22
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_verrucosa_RSSAv1/00_databases/blast/Pocillopora_verrucosa_RSSAv1.genes.cds.fna
+New DB title:  Pocillopora_verrucosa_RSSAv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 27439 sequences in 0.743926 seconds.
+
+
+[Sun 08 May 2022 05:21:23 PM EDT]      CMD: makeblastdb -dbtype prot -in Pocillopora_verrucosa_RSSAv1.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:21:23
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_verrucosa_RSSAv1/00_databases/blast/Pocillopora_verrucosa_RSSAv1.genes.pep.faa
+New DB title:  Pocillopora_verrucosa_RSSAv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 27439 sequences in 0.713912 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:21:14 PM EDT
+Finished: at Sun 08 May 2022 05:21:24 PM EDT
+ExitStatus: 0
+=====================================================================

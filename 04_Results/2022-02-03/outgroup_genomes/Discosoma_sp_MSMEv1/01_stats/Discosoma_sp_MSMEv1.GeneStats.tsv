@@ -1,0 +1,43 @@
+# Files
+Genome file	Discosoma_sp_MSMEv1.assembly.fasta
+GFF file	Discosoma_sp_MSMEv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	444311543
+Total contig length (bp)	364336489
+Number of scaffolds	6449
+Number of contigs	39932
+N50 of scaffolds (bp)	771896
+N50 of contigs (bp)	18607
+Percent gaps	18.000
+Percent GC	39.97
+
+# Gene stats (combined CDS+introns)
+Number of genes	23199
+Total gene length	160255849
+Average gene length (bp)	6907.88
+Gene percent GC	40.32
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1348.99
+Average number of CDS per gene/transcript	5.96474
+
+# CDS stats
+Number of CDS	138376
+Total CDS length (bp)	31295240
+Average CDS length (bp)	226.161
+Number of single-CDS transcripts	3268
+Percent single-CDS transcripts	14.0868
+CDS percent GC	45.71
+
+# Intron stats (predicted between CDS features)
+Number of introns	115177
+Total intron length (bp)	128960609
+Average intron length (bp)	1119.67
+Intron percent GC	38.87
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	20865
+Total intergenic region length (bp)	229999964
+Average intergenic region length (bp)	11023.2
+Intergenic region percent GC	39.69

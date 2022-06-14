@@ -1,0 +1,43 @@
+# Files
+Genome file	Porites_rus_NAIDv1.assembly.fasta
+GFF file	Porites_rus_NAIDv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	470011093
+Total contig length (bp)	332192973
+Number of scaffolds	14982
+Number of contigs	81422
+N50 of scaffolds (bp)	137187
+N50 of contigs (bp)	5319
+Percent gaps	29.322
+Percent GC	38.86
+
+# Gene stats (combined CDS+introns)
+Number of genes	39453
+Total gene length	237912951
+Average gene length (bp)	6030.29
+Gene percent GC	39.34
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1184.61
+Average number of CDS per gene/transcript	4.9561
+
+# CDS stats
+Number of CDS	195533
+Total CDS length (bp)	46736451
+Average CDS length (bp)	239.021
+Number of single-CDS transcripts	10066
+Percent single-CDS transcripts	25.5139
+CDS percent GC	44
+
+# Intron stats (predicted between CDS features)
+Number of introns	156080
+Total intron length (bp)	191176500
+Average intron length (bp)	1224.86
+Intron percent GC	37.8
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	29522
+Total intergenic region length (bp)	158468879
+Average intergenic region length (bp)	5367.82
+Intergenic region percent GC	38.23

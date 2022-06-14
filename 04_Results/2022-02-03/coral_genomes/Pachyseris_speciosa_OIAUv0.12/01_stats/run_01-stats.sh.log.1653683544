@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 27 May 2022 04:32:24 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pachyseris_speciosa_OIAUv0.12/01_stats
+=====================================================================
+
+[Fri 27 May 2022 04:32:25 PM EDT]      CMD: md5sum Pachyseris_speciosa_OIAUv0.12.assembly.fasta Pachyseris_speciosa_OIAUv0.12.genes.gff3 | tee Pachyseris_speciosa_OIAUv0.12.genome_stats.job_md5sum_list.txt
+bf47c76e9d2112c13034e034548bc335  Pachyseris_speciosa_OIAUv0.12.assembly.fasta
+e0dc4f386e637c11c0000dd7bc18fa2d  Pachyseris_speciosa_OIAUv0.12.genes.gff3
+[Fri 27 May 2022 04:32:29 PM EDT]      CMD: ./genome_stats Pachyseris_speciosa_OIAUv0.12.assembly.fasta Pachyseris_speciosa_OIAUv0.12.genes.gff3 > Pachyseris_speciosa_OIAUv0.12.GeneStats.tsv
+index file Pachyseris_speciosa_OIAUv0.12.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Fri 27 May 2022 04:32:24 PM EDT
+Finished: at Fri 27 May 2022 04:32:57 PM EDT
+ExitStatus: 0
+=====================================================================

@@ -1,0 +1,43 @@
+# Files
+Genome file	Nematostella_vectensis_RRUSv1.assembly.fasta
+GFF file	Nematostella_vectensis_RRUSv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	252273000
+Total contig length (bp)	252158600
+Number of scaffolds	30
+Number of contigs	793
+N50 of scaffolds (bp)	16735929
+N50 of contigs (bp)	803730
+Percent gaps	0.045
+Percent GC	40.98
+
+# Gene stats (combined CDS+introns)
+Number of genes	15355
+Total gene length	122536283
+Average gene length (bp)	7980.22
+Gene percent GC	41.08
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1682.86
+Average number of CDS per gene/transcript	8.98724
+
+# CDS stats
+Number of CDS	137999
+Total CDS length (bp)	25840269
+Average CDS length (bp)	187.25
+Number of single-CDS transcripts	2830
+Percent single-CDS transcripts	18.4305
+CDS percent GC	47.69
+
+# Intron stats (predicted between CDS features)
+Number of introns	122644
+Total intron length (bp)	96696014
+Average intron length (bp)	788.428
+Intron percent GC	39.31
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	15000
+Total intergenic region length (bp)	128119820
+Average intergenic region length (bp)	8541.32
+Intergenic region percent GC	40.83

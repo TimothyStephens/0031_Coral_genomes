@@ -1,0 +1,3 @@
+4808d7d30f31902c1a1ee0523805cb1c  Exaiptasia_diaphana_CC7v1.assembly.fasta
+5111447322480588b7602af4830be0dd  Exaiptasia_diaphana_CC7v1.genes.cds.fna
+65fd42f0911ef79c0e0877ba74d8183b  Exaiptasia_diaphana_CC7v1.genes.pep.faa

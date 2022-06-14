@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:15:34 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_hyacinthus_SLJPv1/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:15:35 PM EDT]      CMD: md5sum Acropora_hyacinthus_SLJPv1.assembly.fasta Acropora_hyacinthus_SLJPv1.genes.cds.fna Acropora_hyacinthus_SLJPv1.genes.pep.faa | tee Acropora_hyacinthus_SLJPv1.makeblastdb.job_md5sum_list.txt
+423c611a762223c0435664c6073d2269  Acropora_hyacinthus_SLJPv1.assembly.fasta
+6b490396e12b32d9781143e4f538be18  Acropora_hyacinthus_SLJPv1.genes.cds.fna
+4ededf5532ace4a4e2cfb3c6503055b8  Acropora_hyacinthus_SLJPv1.genes.pep.faa
+[Sun 08 May 2022 05:15:36 PM EDT]      CMD: makeblastdb -dbtype nucl -in Acropora_hyacinthus_SLJPv1.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:15:36
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_hyacinthus_SLJPv1/00_databases/blast/Acropora_hyacinthus_SLJPv1.assembly.fasta
+New DB title:  Acropora_hyacinthus_SLJPv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 2916 sequences in 4.06917 seconds.
+
+
+[Sun 08 May 2022 05:15:40 PM EDT]      CMD: makeblastdb -dbtype nucl -in Acropora_hyacinthus_SLJPv1.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:15:40
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_hyacinthus_SLJPv1/00_databases/blast/Acropora_hyacinthus_SLJPv1.genes.cds.fna
+New DB title:  Acropora_hyacinthus_SLJPv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 23148 sequences in 0.539706 seconds.
+
+
+[Sun 08 May 2022 05:15:41 PM EDT]      CMD: makeblastdb -dbtype prot -in Acropora_hyacinthus_SLJPv1.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:15:41
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_hyacinthus_SLJPv1/00_databases/blast/Acropora_hyacinthus_SLJPv1.genes.pep.faa
+New DB title:  Acropora_hyacinthus_SLJPv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 23148 sequences in 0.420858 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:15:34 PM EDT
+Finished: at Sun 08 May 2022 05:15:42 PM EDT
+ExitStatus: 0
+=====================================================================

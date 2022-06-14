@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:15:42 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_intermedia_SLJPv1/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:15:43 PM EDT]      CMD: md5sum Acropora_intermedia_SLJPv1.assembly.fasta Acropora_intermedia_SLJPv1.genes.cds.fna Acropora_intermedia_SLJPv1.genes.pep.faa | tee Acropora_intermedia_SLJPv1.makeblastdb.job_md5sum_list.txt
+e054e120f64d524321d183a4e77c700b  Acropora_intermedia_SLJPv1.assembly.fasta
+22b223daf93b82b6f95d490275921f1a  Acropora_intermedia_SLJPv1.genes.cds.fna
+3f9f1f35bd114ec1f4911aa61c59d7ff  Acropora_intermedia_SLJPv1.genes.pep.faa
+[Sun 08 May 2022 05:15:45 PM EDT]      CMD: makeblastdb -dbtype nucl -in Acropora_intermedia_SLJPv1.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:15:45
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_intermedia_SLJPv1/00_databases/blast/Acropora_intermedia_SLJPv1.assembly.fasta
+New DB title:  Acropora_intermedia_SLJPv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 6231 sequences in 5.11108 seconds.
+
+
+[Sun 08 May 2022 05:15:50 PM EDT]      CMD: makeblastdb -dbtype nucl -in Acropora_intermedia_SLJPv1.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:15:50
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_intermedia_SLJPv1/00_databases/blast/Acropora_intermedia_SLJPv1.genes.cds.fna
+New DB title:  Acropora_intermedia_SLJPv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 23344 sequences in 0.531408 seconds.
+
+
+[Sun 08 May 2022 05:15:51 PM EDT]      CMD: makeblastdb -dbtype prot -in Acropora_intermedia_SLJPv1.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:15:51
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_intermedia_SLJPv1/00_databases/blast/Acropora_intermedia_SLJPv1.genes.pep.faa
+New DB title:  Acropora_intermedia_SLJPv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 23344 sequences in 0.411221 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:15:42 PM EDT
+Finished: at Sun 08 May 2022 05:15:51 PM EDT
+ExitStatus: 0
+=====================================================================

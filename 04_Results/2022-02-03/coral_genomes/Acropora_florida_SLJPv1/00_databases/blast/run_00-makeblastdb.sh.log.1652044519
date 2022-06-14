@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:15:19 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_florida_SLJPv1/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:15:20 PM EDT]      CMD: md5sum Acropora_florida_SLJPv1.assembly.fasta Acropora_florida_SLJPv1.genes.cds.fna Acropora_florida_SLJPv1.genes.pep.faa | tee Acropora_florida_SLJPv1.makeblastdb.job_md5sum_list.txt
+83c0df857f4af5348b4d9da16008f65a  Acropora_florida_SLJPv1.assembly.fasta
+75ef2952837510b45ddef2f79af5dc78  Acropora_florida_SLJPv1.genes.cds.fna
+a78ada70b06f614e898b1f02ddcdf82f  Acropora_florida_SLJPv1.genes.pep.faa
+[Sun 08 May 2022 05:15:21 PM EDT]      CMD: makeblastdb -dbtype nucl -in Acropora_florida_SLJPv1.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:15:21
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_florida_SLJPv1/00_databases/blast/Acropora_florida_SLJPv1.assembly.fasta
+New DB title:  Acropora_florida_SLJPv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 6996 sequences in 4.06459 seconds.
+
+
+[Sun 08 May 2022 05:15:25 PM EDT]      CMD: makeblastdb -dbtype nucl -in Acropora_florida_SLJPv1.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:15:25
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_florida_SLJPv1/00_databases/blast/Acropora_florida_SLJPv1.genes.cds.fna
+New DB title:  Acropora_florida_SLJPv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 23858 sequences in 0.531896 seconds.
+
+
+[Sun 08 May 2022 05:15:26 PM EDT]      CMD: makeblastdb -dbtype prot -in Acropora_florida_SLJPv1.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:15:26
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_florida_SLJPv1/00_databases/blast/Acropora_florida_SLJPv1.genes.pep.faa
+New DB title:  Acropora_florida_SLJPv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 23858 sequences in 0.490637 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:15:19 PM EDT
+Finished: at Sun 08 May 2022 05:15:27 PM EDT
+ExitStatus: 0
+=====================================================================

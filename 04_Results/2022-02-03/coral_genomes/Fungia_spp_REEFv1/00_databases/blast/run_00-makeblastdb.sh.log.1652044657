@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:17:37 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Fungia_spp_REEFv1/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:17:38 PM EDT]      CMD: md5sum Fungia_spp_REEFv1.assembly.fasta Fungia_spp_REEFv1.genes.cds.fna Fungia_spp_REEFv1.genes.pep.faa | tee Fungia_spp_REEFv1.makeblastdb.job_md5sum_list.txt
+85eab3e80c2580f09c5883fd52cd2228  Fungia_spp_REEFv1.assembly.fasta
+896b97ff191ec4899b9493b2caaffa1a  Fungia_spp_REEFv1.genes.cds.fna
+344d8007d89e7dee307f116658b2038d  Fungia_spp_REEFv1.genes.pep.faa
+[Sun 08 May 2022 05:17:40 PM EDT]      CMD: makeblastdb -dbtype nucl -in Fungia_spp_REEFv1.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:17:41
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Fungia_spp_REEFv1/00_databases/blast/Fungia_spp_REEFv1.assembly.fasta
+New DB title:  Fungia_spp_REEFv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 7424 sequences in 7.87618 seconds.
+
+
+[Sun 08 May 2022 05:17:49 PM EDT]      CMD: makeblastdb -dbtype nucl -in Fungia_spp_REEFv1.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:17:49
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Fungia_spp_REEFv1/00_databases/blast/Fungia_spp_REEFv1.genes.cds.fna
+New DB title:  Fungia_spp_REEFv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 38209 sequences in 0.81502 seconds.
+
+
+[Sun 08 May 2022 05:17:50 PM EDT]      CMD: makeblastdb -dbtype prot -in Fungia_spp_REEFv1.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:17:50
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Fungia_spp_REEFv1/00_databases/blast/Fungia_spp_REEFv1.genes.pep.faa
+New DB title:  Fungia_spp_REEFv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 38209 sequences in 0.579055 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:17:37 PM EDT
+Finished: at Sun 08 May 2022 05:17:50 PM EDT
+ExitStatus: 0
+=====================================================================

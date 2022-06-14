@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 27 May 2022 04:37:49 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Stylophora_pistillata_GAJOv1/01_stats
+=====================================================================
+
+[Fri 27 May 2022 04:37:50 PM EDT]      CMD: md5sum Stylophora_pistillata_GAJOv1.assembly.fasta Stylophora_pistillata_GAJOv1.genes.gff3 | tee Stylophora_pistillata_GAJOv1.genome_stats.job_md5sum_list.txt
+cc38d2ea3127648a00aa8bcc7bf1d564  Stylophora_pistillata_GAJOv1.assembly.fasta
+2f328ac556969256f0f50493804619ce  Stylophora_pistillata_GAJOv1.genes.gff3
+[Fri 27 May 2022 04:37:51 PM EDT]      CMD: ./genome_stats Stylophora_pistillata_GAJOv1.assembly.fasta Stylophora_pistillata_GAJOv1.genes.gff3 > Stylophora_pistillata_GAJOv1.GeneStats.tsv
+index file Stylophora_pistillata_GAJOv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Fri 27 May 2022 04:37:49 PM EDT
+Finished: at Fri 27 May 2022 04:38:23 PM EDT
+ExitStatus: 0
+=====================================================================

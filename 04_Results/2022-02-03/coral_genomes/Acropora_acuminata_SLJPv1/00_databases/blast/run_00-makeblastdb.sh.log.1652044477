@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:14:37 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_acuminata_SLJPv1/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:14:38 PM EDT]      CMD: md5sum Acropora_acuminata_SLJPv1.assembly.fasta Acropora_acuminata_SLJPv1.genes.cds.fna Acropora_acuminata_SLJPv1.genes.pep.faa | tee Acropora_acuminata_SLJPv1.makeblastdb.job_md5sum_list.txt
+e5ed32667e7c349ae6378a25cd765521  Acropora_acuminata_SLJPv1.assembly.fasta
+67c29517b128242609dd6a7badcc2d72  Acropora_acuminata_SLJPv1.genes.cds.fna
+66ff81009de2ca7c61089f4639a0a47d  Acropora_acuminata_SLJPv1.genes.pep.faa
+[Sun 08 May 2022 05:14:39 PM EDT]      CMD: makeblastdb -dbtype nucl -in Acropora_acuminata_SLJPv1.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:14:39
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_acuminata_SLJPv1/00_databases/blast/Acropora_acuminata_SLJPv1.assembly.fasta
+New DB title:  Acropora_acuminata_SLJPv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 3372 sequences in 4.1396 seconds.
+
+
+[Sun 08 May 2022 05:14:44 PM EDT]      CMD: makeblastdb -dbtype nucl -in Acropora_acuminata_SLJPv1.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:14:44
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_acuminata_SLJPv1/00_databases/blast/Acropora_acuminata_SLJPv1.genes.cds.fna
+New DB title:  Acropora_acuminata_SLJPv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 22307 sequences in 0.693852 seconds.
+
+
+[Sun 08 May 2022 05:14:44 PM EDT]      CMD: makeblastdb -dbtype prot -in Acropora_acuminata_SLJPv1.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:14:44
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_acuminata_SLJPv1/00_databases/blast/Acropora_acuminata_SLJPv1.genes.pep.faa
+New DB title:  Acropora_acuminata_SLJPv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 22307 sequences in 0.445478 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:14:37 PM EDT
+Finished: at Sun 08 May 2022 05:14:45 PM EDT
+ExitStatus: 0
+=====================================================================

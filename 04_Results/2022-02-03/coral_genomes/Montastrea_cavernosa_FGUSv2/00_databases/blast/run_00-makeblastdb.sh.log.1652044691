@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:18:11 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montastrea_cavernosa_FGUSv2/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:18:12 PM EDT]      CMD: md5sum Montastrea_cavernosa_FGUSv2.assembly.fasta Montastrea_cavernosa_FGUSv2.genes.cds.fna Montastrea_cavernosa_FGUSv2.genes.pep.faa | tee Montastrea_cavernosa_FGUSv2.makeblastdb.job_md5sum_list.txt
+f2f82d344ca10d54f6785800d606c598  Montastrea_cavernosa_FGUSv2.assembly.fasta
+20ac936bac2c87418396bc8f28e4c6bd  Montastrea_cavernosa_FGUSv2.genes.cds.fna
+a61927dddf58e6afecf32f5f92885167  Montastrea_cavernosa_FGUSv2.genes.pep.faa
+[Sun 08 May 2022 05:18:13 PM EDT]      CMD: makeblastdb -dbtype nucl -in Montastrea_cavernosa_FGUSv2.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:18:13
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montastrea_cavernosa_FGUSv2/00_databases/blast/Montastrea_cavernosa_FGUSv2.assembly.fasta
+New DB title:  Montastrea_cavernosa_FGUSv2.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 5161 sequences in 4.54787 seconds.
+
+
+[Sun 08 May 2022 05:18:18 PM EDT]      CMD: makeblastdb -dbtype nucl -in Montastrea_cavernosa_FGUSv2.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:18:18
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montastrea_cavernosa_FGUSv2/00_databases/blast/Montastrea_cavernosa_FGUSv2.genes.cds.fna
+New DB title:  Montastrea_cavernosa_FGUSv2.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 24740 sequences in 0.643328 seconds.
+
+
+[Sun 08 May 2022 05:18:19 PM EDT]      CMD: makeblastdb -dbtype prot -in Montastrea_cavernosa_FGUSv2.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:18:19
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montastrea_cavernosa_FGUSv2/00_databases/blast/Montastrea_cavernosa_FGUSv2.genes.pep.faa
+New DB title:  Montastrea_cavernosa_FGUSv2.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 24740 sequences in 0.444698 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:18:11 PM EDT
+Finished: at Sun 08 May 2022 05:18:19 PM EDT
+ExitStatus: 0
+=====================================================================

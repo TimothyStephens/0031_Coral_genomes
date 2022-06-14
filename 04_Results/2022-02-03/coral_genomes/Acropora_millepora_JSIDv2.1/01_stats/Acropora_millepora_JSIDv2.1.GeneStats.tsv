@@ -1,0 +1,43 @@
+# Files
+Genome file	Acropora_millepora_JSIDv2.1.assembly.fasta
+GFF file	Acropora_millepora_JSIDv2.1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	475381253
+Total contig length (bp)	475342477
+Number of scaffolds	854
+Number of contigs	1251
+N50 of scaffolds (bp)	19840543
+N50 of contigs (bp)	1091365
+Percent gaps	0.008
+Percent GC	39.06
+
+# Gene stats (combined CDS+introns)
+Number of genes	30136
+Total gene length	210050442
+Average gene length (bp)	6970.08
+Gene percent GC	39.25
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1577.24
+Average number of CDS per gene/transcript	6.54772
+
+# CDS stats
+Number of CDS	197322
+Total CDS length (bp)	47531558
+Average CDS length (bp)	240.883
+Number of single-CDS transcripts	8573
+Percent single-CDS transcripts	28.4477
+CDS percent GC	44.11
+
+# Intron stats (predicted between CDS features)
+Number of introns	167186
+Total intron length (bp)	162518884
+Average intron length (bp)	972.084
+Intron percent GC	37.83
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	28294
+Total intergenic region length (bp)	248540083
+Average intergenic region length (bp)	8784.2
+Intergenic region percent GC	38.89

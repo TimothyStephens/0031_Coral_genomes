@@ -1,0 +1,46 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 04 May 2022 01:35:31 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Fungia_spp_REEFv1/00_databases
+=====================================================================
+
+[Wed 04 May 2022 01:35:32 PM EDT]      CMD: samtools faidx Fungia_spp_REEFv1.assembly.fasta
+[Wed 04 May 2022 01:35:34 PM EDT]      CMD: samtools faidx Fungia_spp_REEFv1.genes.cds.fna
+[Wed 04 May 2022 01:35:34 PM EDT]      CMD: samtools faidx Fungia_spp_REEFv1.genes.pep.faa
+[Wed 04 May 2022 01:35:34 PM EDT]      CMD: gatk CreateSequenceDictionary --REFERENCE Fungia_spp_REEFv1.assembly.fasta
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar CreateSequenceDictionary --REFERENCE Fungia_spp_REEFv1.assembly.fasta
+INFO	2022-05-04 13:35:36	CreateSequenceDictionary	Output dictionary will be written in Fungia_spp_REEFv1.assembly.dict
+13:35:36.590 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Wed May 04 13:35:36 EDT 2022] CreateSequenceDictionary --REFERENCE Fungia_spp_REEFv1.assembly.fasta --TRUNCATE_NAMES_AT_WHITESPACE true --NUM_SEQUENCES 2147483647 --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+May 04, 2022 1:35:36 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+[Wed May 04 13:35:36 EDT 2022] Executing as timothy@coral on Linux 5.4.0-107-generic amd64; OpenJDK 64-Bit Server VM 11.0.15+10-Ubuntu-0ubuntu0.20.04.1; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.2.0.0
+[Wed May 04 13:35:39 EDT 2022] picard.sam.CreateSequenceDictionary done. Elapsed time: 0.04 minutes.
+Runtime.totalMemory()=2864709632
+Tool returned:
+0
+[Wed 04 May 2022 01:35:39 PM EDT]      CMD: gatk CreateSequenceDictionary --REFERENCE Fungia_spp_REEFv1.genes.cds.fna
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar CreateSequenceDictionary --REFERENCE Fungia_spp_REEFv1.genes.cds.fna
+INFO	2022-05-04 13:35:40	CreateSequenceDictionary	Output dictionary will be written in Fungia_spp_REEFv1.genes.cds.dict
+13:35:40.878 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Wed May 04 13:35:40 EDT 2022] CreateSequenceDictionary --REFERENCE Fungia_spp_REEFv1.genes.cds.fna --TRUNCATE_NAMES_AT_WHITESPACE true --NUM_SEQUENCES 2147483647 --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+May 04, 2022 1:35:41 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+[Wed May 04 13:35:41 EDT 2022] Executing as timothy@coral on Linux 5.4.0-107-generic amd64; OpenJDK 64-Bit Server VM 11.0.15+10-Ubuntu-0ubuntu0.20.04.1; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.2.0.0
+[Wed May 04 13:35:42 EDT 2022] picard.sam.CreateSequenceDictionary done. Elapsed time: 0.02 minutes.
+Runtime.totalMemory()=2994733056
+Tool returned:
+0
+[Wed 04 May 2022 01:35:42 PM EDT]      CMD: stats.sh -Xmx12g Fungia_spp_REEFv1.assembly.fasta 1>Fungia_spp_REEFv1.assembly.fasta.stats 2>&1
+[Wed 04 May 2022 01:35:44 PM EDT]      CMD: stats.sh -Xmx12g Fungia_spp_REEFv1.genes.cds.fna  1>Fungia_spp_REEFv1.genes.cds.fna.stats 2>&1
+[Wed 04 May 2022 01:35:45 PM EDT]      CMD: md5sum Fungia_spp_REEFv1.assembly.fasta Fungia_spp_REEFv1.genes.cds.fna Fungia_spp_REEFv1.genes.pep.faa Fungia_spp_REEFv1.genes.gff3 > Fungia_spp_REEFv1.md5sum_list.txt
+
+=====================================================================
+Started: at Wed 04 May 2022 01:35:31 PM EDT
+Finished: at Wed 04 May 2022 01:35:46 PM EDT
+ExitStatus: 0
+=====================================================================

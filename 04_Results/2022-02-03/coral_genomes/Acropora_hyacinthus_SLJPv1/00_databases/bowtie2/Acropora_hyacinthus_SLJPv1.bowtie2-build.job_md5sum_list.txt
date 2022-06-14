@@ -1,0 +1,2 @@
+423c611a762223c0435664c6073d2269  Acropora_hyacinthus_SLJPv1.assembly.fasta
+6b490396e12b32d9781143e4f538be18  Acropora_hyacinthus_SLJPv1.genes.cds.fna

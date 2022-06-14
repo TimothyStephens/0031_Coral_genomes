@@ -1,0 +1,2 @@
+cc38d2ea3127648a00aa8bcc7bf1d564  Stylophora_pistillata_GAJOv1.assembly.fasta
+2f328ac556969256f0f50493804619ce  Stylophora_pistillata_GAJOv1.genes.gff3

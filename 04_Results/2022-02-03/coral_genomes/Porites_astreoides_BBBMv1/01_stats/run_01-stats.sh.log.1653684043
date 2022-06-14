@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 27 May 2022 04:40:43 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_astreoides_BBBMv1/01_stats
+=====================================================================
+
+[Fri 27 May 2022 04:40:50 PM EDT]      CMD: md5sum Porites_astreoides_BBBMv1.assembly.fasta Porites_astreoides_BBBMv1.genes.gff3 | tee Porites_astreoides_BBBMv1.genome_stats.job_md5sum_list.txt
+97c7bf07e71e7d48885fdeee05e91e25  Porites_astreoides_BBBMv1.assembly.fasta
+55f42c7b633c070e2e5a88813706824c  Porites_astreoides_BBBMv1.genes.gff3
+[Fri 27 May 2022 04:40:53 PM EDT]      CMD: ./genome_stats Porites_astreoides_BBBMv1.assembly.fasta Porites_astreoides_BBBMv1.genes.gff3 > Porites_astreoides_BBBMv1.GeneStats.tsv
+index file Porites_astreoides_BBBMv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Fri 27 May 2022 04:40:43 PM EDT
+Finished: at Fri 27 May 2022 04:42:09 PM EDT
+ExitStatus: 0
+=====================================================================

@@ -1,0 +1,43 @@
+# Files
+Genome file	Acropora_cytherea_SLJPv1.assembly.fasta
+GFF file	Acropora_cytherea_SLJPv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	430309169
+Total contig length (bp)	403748183
+Number of scaffolds	4125
+Number of contigs	17289
+N50 of scaffolds (bp)	1083946
+N50 of contigs (bp)	50702
+Percent gaps	6.173
+Percent GC	38.98
+
+# Gene stats (combined CDS+introns)
+Number of genes	23364
+Total gene length	184862989
+Average gene length (bp)	7912.3
+Gene percent GC	39.21
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1608.57
+Average number of CDS per gene/transcript	7.26609
+
+# CDS stats
+Number of CDS	169765
+Total CDS length (bp)	37582549
+Average CDS length (bp)	221.38
+Number of single-CDS transcripts	4201
+Percent single-CDS transcripts	17.9807
+CDS percent GC	44.18
+
+# Intron stats (predicted between CDS features)
+Number of introns	146401
+Total intron length (bp)	147280440
+Average intron length (bp)	1006.01
+Intron percent GC	37.87
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	20904
+Total intergenic region length (bp)	204554647
+Average intergenic region length (bp)	9785.43
+Intergenic region percent GC	38.77

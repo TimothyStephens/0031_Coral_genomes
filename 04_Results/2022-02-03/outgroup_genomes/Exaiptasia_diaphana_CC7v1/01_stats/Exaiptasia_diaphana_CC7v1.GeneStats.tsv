@@ -1,0 +1,43 @@
+# Files
+Genome file	Exaiptasia_diaphana_CC7v1.assembly.fasta
+GFF file	Exaiptasia_diaphana_CC7v1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	258189365
+Total contig length (bp)	212211699
+Number of scaffolds	5065
+Number of contigs	31288
+N50 of scaffolds (bp)	440280
+N50 of contigs (bp)	13875
+Percent gaps	17.808
+Percent GC	36.33
+
+# Gene stats (combined CDS+introns)
+Number of genes	29269
+Total gene length	162454120
+Average gene length (bp)	5550.38
+Gene percent GC	36.76
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1551.34
+Average number of CDS per gene/transcript	7.26841
+
+# CDS stats
+Number of CDS	212739
+Total CDS length (bp)	45406032
+Average CDS length (bp)	213.435
+Number of single-CDS transcripts	1578
+Percent single-CDS transcripts	5.39137
+CDS percent GC	41.94
+
+# Intron stats (predicted between CDS features)
+Number of introns	183470
+Total intron length (bp)	117048088
+Average intron length (bp)	637.969
+Intron percent GC	34.29
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	23860
+Total intergenic region length (bp)	99858722
+Average intergenic region length (bp)	4185.19
+Intergenic region percent GC	35.5

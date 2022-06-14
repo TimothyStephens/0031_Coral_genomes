@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:19:47 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pachyseris_speciosa_OIAUv0.12/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:19:48 PM EDT]      CMD: md5sum Pachyseris_speciosa_OIAUv0.12.assembly.fasta Pachyseris_speciosa_OIAUv0.12.genes.cds.fna Pachyseris_speciosa_OIAUv0.12.genes.pep.faa | tee Pachyseris_speciosa_OIAUv0.12.makeblastdb.job_md5sum_list.txt
+bf47c76e9d2112c13034e034548bc335  Pachyseris_speciosa_OIAUv0.12.assembly.fasta
+238d5cef1c6ca0fe3a5ae245acab4aa9  Pachyseris_speciosa_OIAUv0.12.genes.cds.fna
+ea2eed5d72bf2e98ab9189a0758d26ad  Pachyseris_speciosa_OIAUv0.12.genes.pep.faa
+[Sun 08 May 2022 05:19:53 PM EDT]      CMD: makeblastdb -dbtype nucl -in Pachyseris_speciosa_OIAUv0.12.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:19:53
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pachyseris_speciosa_OIAUv0.12/00_databases/blast/Pachyseris_speciosa_OIAUv0.12.assembly.fasta
+New DB title:  Pachyseris_speciosa_OIAUv0.12.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 2368 sequences in 17.3398 seconds.
+
+
+[Sun 08 May 2022 05:20:10 PM EDT]      CMD: makeblastdb -dbtype nucl -in Pachyseris_speciosa_OIAUv0.12.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:20:10
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pachyseris_speciosa_OIAUv0.12/00_databases/blast/Pachyseris_speciosa_OIAUv0.12.genes.cds.fna
+New DB title:  Pachyseris_speciosa_OIAUv0.12.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 39160 sequences in 2.33939 seconds.
+
+
+[Sun 08 May 2022 05:20:13 PM EDT]      CMD: makeblastdb -dbtype prot -in Pachyseris_speciosa_OIAUv0.12.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:20:13
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pachyseris_speciosa_OIAUv0.12/00_databases/blast/Pachyseris_speciosa_OIAUv0.12.genes.pep.faa
+New DB title:  Pachyseris_speciosa_OIAUv0.12.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 39160 sequences in 1.28715 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:19:47 PM EDT
+Finished: at Sun 08 May 2022 05:20:14 PM EDT
+ExitStatus: 0
+=====================================================================

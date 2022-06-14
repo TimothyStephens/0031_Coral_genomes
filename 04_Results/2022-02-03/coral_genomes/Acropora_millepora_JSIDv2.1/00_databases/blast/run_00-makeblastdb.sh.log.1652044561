@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:16:01 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_millepora_JSIDv2.1/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:16:02 PM EDT]      CMD: md5sum Acropora_millepora_JSIDv2.1.assembly.fasta Acropora_millepora_JSIDv2.1.genes.cds.fna Acropora_millepora_JSIDv2.1.genes.pep.faa | tee Acropora_millepora_JSIDv2.1.makeblastdb.job_md5sum_list.txt
+6cfc6f63add1856e88b51fb3d345437c  Acropora_millepora_JSIDv2.1.assembly.fasta
+55b7c6cdb7de4351e2a6fc3bd2651286  Acropora_millepora_JSIDv2.1.genes.cds.fna
+e070ed2bf116df2ebb83fc41e69bee74  Acropora_millepora_JSIDv2.1.genes.pep.faa
+[Sun 08 May 2022 05:16:04 PM EDT]      CMD: makeblastdb -dbtype nucl -in Acropora_millepora_JSIDv2.1.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:16:04
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_millepora_JSIDv2.1/00_databases/blast/Acropora_millepora_JSIDv2.1.assembly.fasta
+New DB title:  Acropora_millepora_JSIDv2.1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 854 sequences in 9.9699 seconds.
+
+
+[Sun 08 May 2022 05:16:14 PM EDT]      CMD: makeblastdb -dbtype nucl -in Acropora_millepora_JSIDv2.1.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:16:14
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_millepora_JSIDv2.1/00_databases/blast/Acropora_millepora_JSIDv2.1.genes.cds.fna
+New DB title:  Acropora_millepora_JSIDv2.1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 30136 sequences in 1.56973 seconds.
+
+
+[Sun 08 May 2022 05:16:15 PM EDT]      CMD: makeblastdb -dbtype prot -in Acropora_millepora_JSIDv2.1.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:16:15
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_millepora_JSIDv2.1/00_databases/blast/Acropora_millepora_JSIDv2.1.genes.pep.faa
+New DB title:  Acropora_millepora_JSIDv2.1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 30136 sequences in 1.0858 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:16:01 PM EDT
+Finished: at Sun 08 May 2022 05:16:17 PM EDT
+ExitStatus: 0
+=====================================================================

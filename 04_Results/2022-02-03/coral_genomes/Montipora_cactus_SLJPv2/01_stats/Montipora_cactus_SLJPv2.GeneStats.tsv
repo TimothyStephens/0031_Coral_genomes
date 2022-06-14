@@ -1,0 +1,43 @@
+# Files
+Genome file	Montipora_cactus_SLJPv2.assembly.fasta
+GFF file	Montipora_cactus_SLJPv2.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	640828888
+Total contig length (bp)	590015660
+Number of scaffolds	3532
+Number of contigs	40245
+N50 of scaffolds (bp)	938091
+N50 of contigs (bp)	26902
+Percent gaps	7.929
+Percent GC	39.52
+
+# Gene stats (combined CDS+introns)
+Number of genes	29158
+Total gene length	300297053
+Average gene length (bp)	10299
+Gene percent GC	39.62
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1410.98
+Average number of CDS per gene/transcript	6.55871
+
+# CDS stats
+Number of CDS	191239
+Total CDS length (bp)	41141300
+Average CDS length (bp)	215.13
+Number of single-CDS transcripts	6147
+Percent single-CDS transcripts	21.0817
+CDS percent GC	44.03
+
+# Intron stats (predicted between CDS features)
+Number of introns	162081
+Total intron length (bp)	259155753
+Average intron length (bp)	1598.93
+Intron percent GC	38.87
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	26290
+Total intergenic region length (bp)	293492155
+Average intergenic region length (bp)	11163.6
+Intergenic region percent GC	39.44

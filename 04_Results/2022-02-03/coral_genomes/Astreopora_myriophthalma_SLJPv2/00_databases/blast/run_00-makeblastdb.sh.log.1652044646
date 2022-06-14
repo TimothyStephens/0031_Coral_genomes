@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:17:26 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Astreopora_myriophthalma_SLJPv2/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:17:27 PM EDT]      CMD: md5sum Astreopora_myriophthalma_SLJPv2.assembly.fasta Astreopora_myriophthalma_SLJPv2.genes.cds.fna Astreopora_myriophthalma_SLJPv2.genes.pep.faa | tee Astreopora_myriophthalma_SLJPv2.makeblastdb.job_md5sum_list.txt
+a0f21ad5373cd703b30cc2d9acebb93a  Astreopora_myriophthalma_SLJPv2.assembly.fasta
+620c610415486dd1981464757f5503d2  Astreopora_myriophthalma_SLJPv2.genes.cds.fna
+cd6531f545f22f2900feb2ab87f4090b  Astreopora_myriophthalma_SLJPv2.genes.pep.faa
+[Sun 08 May 2022 05:17:29 PM EDT]      CMD: makeblastdb -dbtype nucl -in Astreopora_myriophthalma_SLJPv2.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:17:29
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Astreopora_myriophthalma_SLJPv2/00_databases/blast/Astreopora_myriophthalma_SLJPv2.assembly.fasta
+New DB title:  Astreopora_myriophthalma_SLJPv2.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1727 sequences in 6.49049 seconds.
+
+
+[Sun 08 May 2022 05:17:36 PM EDT]      CMD: makeblastdb -dbtype nucl -in Astreopora_myriophthalma_SLJPv2.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:17:36
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Astreopora_myriophthalma_SLJPv2/00_databases/blast/Astreopora_myriophthalma_SLJPv2.genes.cds.fna
+New DB title:  Astreopora_myriophthalma_SLJPv2.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 25406 sequences in 0.84585 seconds.
+
+
+[Sun 08 May 2022 05:17:37 PM EDT]      CMD: makeblastdb -dbtype prot -in Astreopora_myriophthalma_SLJPv2.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:17:37
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Astreopora_myriophthalma_SLJPv2/00_databases/blast/Astreopora_myriophthalma_SLJPv2.genes.pep.faa
+New DB title:  Astreopora_myriophthalma_SLJPv2.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 25406 sequences in 0.497612 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:17:26 PM EDT
+Finished: at Sun 08 May 2022 05:17:37 PM EDT
+ExitStatus: 0
+=====================================================================

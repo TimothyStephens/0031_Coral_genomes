@@ -1,0 +1,2 @@
+135b6e925eff3bfe6975e75dab243fa9  Pocillopora_acuta_KBHIv2.assembly.fasta
+7800d37a46e4dbc0a3472eea045529d3  Pocillopora_acuta_KBHIv2.genes.cds.fna

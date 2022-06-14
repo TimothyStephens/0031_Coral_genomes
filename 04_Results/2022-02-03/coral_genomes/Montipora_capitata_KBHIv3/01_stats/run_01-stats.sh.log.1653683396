@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 27 May 2022 04:29:56 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_capitata_KBHIv3/01_stats
+=====================================================================
+
+[Fri 27 May 2022 04:29:56 PM EDT]      CMD: md5sum Montipora_capitata_KBHIv3.assembly.fasta Montipora_capitata_KBHIv3.genes.gff3 | tee Montipora_capitata_KBHIv3.genome_stats.job_md5sum_list.txt
+3499b990e93cf4576e59739785cedb11  Montipora_capitata_KBHIv3.assembly.fasta
+b34c436551b537f0bb1d9e99f99665fc  Montipora_capitata_KBHIv3.genes.gff3
+[Fri 27 May 2022 04:30:01 PM EDT]      CMD: ./genome_stats Montipora_capitata_KBHIv3.assembly.fasta Montipora_capitata_KBHIv3.genes.gff3 > Montipora_capitata_KBHIv3.GeneStats.tsv
+index file Montipora_capitata_KBHIv3.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Fri 27 May 2022 04:29:56 PM EDT
+Finished: at Fri 27 May 2022 04:30:42 PM EDT
+ExitStatus: 0
+=====================================================================

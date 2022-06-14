@@ -1,0 +1,43 @@
+# Files
+Genome file	Astreopora_myriophthalma_SLJPv2.assembly.fasta
+GFF file	Astreopora_myriophthalma_SLJPv2.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	381883822
+Total contig length (bp)	360469412
+Number of scaffolds	1727
+Number of contigs	13180
+N50 of scaffolds (bp)	1590751
+N50 of contigs (bp)	57482
+Percent gaps	5.608
+Percent GC	40.56
+
+# Gene stats (combined CDS+introns)
+Number of genes	25406
+Total gene length	203336217
+Average gene length (bp)	8003.47
+Gene percent GC	40.59
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1646.97
+Average number of CDS per gene/transcript	7.16217
+
+# CDS stats
+Number of CDS	181962
+Total CDS length (bp)	41843001
+Average CDS length (bp)	229.955
+Number of single-CDS transcripts	5272
+Percent single-CDS transcripts	20.751
+CDS percent GC	45.17
+
+# Intron stats (predicted between CDS features)
+Number of introns	156556
+Total intron length (bp)	161493216
+Average intron length (bp)	1031.54
+Intron percent GC	39.35
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	24342
+Total intergenic region length (bp)	159513691
+Average intergenic region length (bp)	6553.02
+Intergenic region percent GC	40.49

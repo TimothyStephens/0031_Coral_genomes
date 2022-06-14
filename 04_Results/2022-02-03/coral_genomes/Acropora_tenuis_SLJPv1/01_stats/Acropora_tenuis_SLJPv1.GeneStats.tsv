@@ -1,0 +1,43 @@
+# Files
+Genome file	Acropora_tenuis_SLJPv1.assembly.fasta
+GFF file	Acropora_tenuis_SLJPv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	406871833
+Total contig length (bp)	376818748
+Number of scaffolds	1848
+Number of contigs	20621
+N50 of scaffolds (bp)	1160220
+N50 of contigs (bp)	35574
+Percent gaps	7.386
+Percent GC	38.93
+
+# Gene stats (combined CDS+introns)
+Number of genes	23119
+Total gene length	178248197
+Average gene length (bp)	7710.03
+Gene percent GC	39.15
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1579.44
+Average number of CDS per gene/transcript	7.31347
+
+# CDS stats
+Number of CDS	169080
+Total CDS length (bp)	36515097
+Average CDS length (bp)	215.963
+Number of single-CDS transcripts	4344
+Percent single-CDS transcripts	18.7897
+CDS percent GC	44.19
+
+# Intron stats (predicted between CDS features)
+Number of introns	145961
+Total intron length (bp)	141733100
+Average intron length (bp)	971.034
+Intron percent GC	37.79
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	21723
+Total intergenic region length (bp)	197441728
+Average intergenic region length (bp)	9089.06
+Intergenic region percent GC	38.74

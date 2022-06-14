@@ -1,0 +1,3 @@
+7aa88c41ca4f9c207d295ce7ac59583a  Nematostella_vectensis_RRUSv1.assembly.fasta
+7640c46a07cb43e3469a16276edbc5d4  Nematostella_vectensis_RRUSv1.genes.cds.fna
+45fe353064eab1d6662af2b9295e4d86  Nematostella_vectensis_RRUSv1.genes.pep.faa

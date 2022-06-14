@@ -1,0 +1,43 @@
+# Files
+Genome file	Stylophora_pistillata_GAJOv1.assembly.fasta
+GFF file	Stylophora_pistillata_GAJOv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	400108361
+Total contig length (bp)	357955785
+Number of scaffolds	5688
+Number of contigs	37781
+N50 of scaffolds (bp)	457453
+N50 of contigs (bp)	20514
+Percent gaps	10.535
+Percent GC	38.54
+
+# Gene stats (combined CDS+introns)
+Number of genes	25769
+Total gene length	206632174
+Average gene length (bp)	8018.63
+Gene percent GC	38.93
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1835.44
+Average number of CDS per gene/transcript	7.80205
+
+# CDS stats
+Number of CDS	201051
+Total CDS length (bp)	47297543
+Average CDS length (bp)	235.251
+Number of single-CDS transcripts	1056
+Percent single-CDS transcripts	4.09795
+CDS percent GC	44.11
+
+# Intron stats (predicted between CDS features)
+Number of introns	175282
+Total intron length (bp)	159334631
+Average intron length (bp)	909.019
+Intron percent GC	37.24
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	22441
+Total intergenic region length (bp)	151160463
+Average intergenic region length (bp)	6735.91
+Intergenic region percent GC	38.04

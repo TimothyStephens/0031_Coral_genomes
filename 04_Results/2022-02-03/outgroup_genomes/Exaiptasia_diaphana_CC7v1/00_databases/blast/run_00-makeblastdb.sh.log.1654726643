@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 08 Jun 2022 06:17:23 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Exaiptasia_diaphana_CC7v1/00_databases/blast
+=====================================================================
+
+[Wed 08 Jun 2022 06:17:24 PM EDT]      CMD: md5sum Exaiptasia_diaphana_CC7v1.assembly.fasta Exaiptasia_diaphana_CC7v1.genes.cds.fna Exaiptasia_diaphana_CC7v1.genes.pep.faa | tee Exaiptasia_diaphana_CC7v1.makeblastdb.job_md5sum_list.txt
+4808d7d30f31902c1a1ee0523805cb1c  Exaiptasia_diaphana_CC7v1.assembly.fasta
+5111447322480588b7602af4830be0dd  Exaiptasia_diaphana_CC7v1.genes.cds.fna
+65fd42f0911ef79c0e0877ba74d8183b  Exaiptasia_diaphana_CC7v1.genes.pep.faa
+[Wed 08 Jun 2022 06:17:25 PM EDT]      CMD: makeblastdb -dbtype nucl -in Exaiptasia_diaphana_CC7v1.assembly.fasta
+
+
+Building a new DB, current time: 06/08/2022 18:17:25
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Exaiptasia_diaphana_CC7v1/00_databases/blast/Exaiptasia_diaphana_CC7v1.assembly.fasta
+New DB title:  Exaiptasia_diaphana_CC7v1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 5065 sequences in 6.4145 seconds.
+
+
+[Wed 08 Jun 2022 06:17:32 PM EDT]      CMD: makeblastdb -dbtype nucl -in Exaiptasia_diaphana_CC7v1.genes.cds.fna
+
+
+Building a new DB, current time: 06/08/2022 18:17:32
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Exaiptasia_diaphana_CC7v1/00_databases/blast/Exaiptasia_diaphana_CC7v1.genes.cds.fna
+New DB title:  Exaiptasia_diaphana_CC7v1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 29269 sequences in 1.92947 seconds.
+
+
+[Wed 08 Jun 2022 06:17:35 PM EDT]      CMD: makeblastdb -dbtype prot -in Exaiptasia_diaphana_CC7v1.genes.pep.faa
+
+
+Building a new DB, current time: 06/08/2022 18:17:35
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Exaiptasia_diaphana_CC7v1/00_databases/blast/Exaiptasia_diaphana_CC7v1.genes.pep.faa
+New DB title:  Exaiptasia_diaphana_CC7v1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 29269 sequences in 0.813913 seconds.
+
+
+
+=====================================================================
+Started: at Wed 08 Jun 2022 06:17:23 PM EDT
+Finished: at Wed 08 Jun 2022 06:17:37 PM EDT
+ExitStatus: 0
+=====================================================================

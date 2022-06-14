@@ -1,0 +1,2 @@
+b647498ab213c36a512341e1388794cc  Acropora_selago_SLJPv1.assembly.fasta
+c04ad7e67b9738b316ffddf2c1c2d165  Acropora_selago_SLJPv1.genes.gff3

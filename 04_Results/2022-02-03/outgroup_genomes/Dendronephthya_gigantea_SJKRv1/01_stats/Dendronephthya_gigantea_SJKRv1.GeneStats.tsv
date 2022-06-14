@@ -1,0 +1,43 @@
+# Files
+Genome file	Dendronephthya_gigantea_SJKRv1.assembly.fasta
+GFF file	Dendronephthya_gigantea_SJKRv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	286150628
+Total contig length (bp)	286150628
+Number of scaffolds	1321
+Number of contigs	1321
+N50 of scaffolds (bp)	1445523
+N50 of contigs (bp)	1445523
+Percent gaps	0.000
+Percent GC	36.84
+
+# Gene stats (combined CDS+introns)
+Number of genes	22045
+Total gene length	110116948
+Average gene length (bp)	4995.1
+Gene percent GC	37.48
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1672.69
+Average number of CDS per gene/transcript	8.02912
+
+# CDS stats
+Number of CDS	177002
+Total CDS length (bp)	36874399
+Average CDS length (bp)	208.328
+Number of single-CDS transcripts	3392
+Percent single-CDS transcripts	15.3867
+CDS percent GC	41.96
+
+# Intron stats (predicted between CDS features)
+Number of introns	154957
+Total intron length (bp)	73242549
+Average intron length (bp)	472.664
+Intron percent GC	35.22
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	20606
+Total intergenic region length (bp)	145236533
+Average intergenic region length (bp)	7048.26
+Intergenic region percent GC	36.45

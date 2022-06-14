@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 27 May 2022 04:25:44 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_selago_SLJPv1/01_stats
+=====================================================================
+
+[Fri 27 May 2022 04:25:45 PM EDT]      CMD: md5sum Acropora_selago_SLJPv1.assembly.fasta Acropora_selago_SLJPv1.genes.gff3 | tee Acropora_selago_SLJPv1.genome_stats.job_md5sum_list.txt
+b647498ab213c36a512341e1388794cc  Acropora_selago_SLJPv1.assembly.fasta
+c04ad7e67b9738b316ffddf2c1c2d165  Acropora_selago_SLJPv1.genes.gff3
+[Fri 27 May 2022 04:25:47 PM EDT]      CMD: ./genome_stats Acropora_selago_SLJPv1.assembly.fasta Acropora_selago_SLJPv1.genes.gff3 > Acropora_selago_SLJPv1.GeneStats.tsv
+index file Acropora_selago_SLJPv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Fri 27 May 2022 04:25:44 PM EDT
+Finished: at Fri 27 May 2022 04:26:05 PM EDT
+ExitStatus: 0
+=====================================================================

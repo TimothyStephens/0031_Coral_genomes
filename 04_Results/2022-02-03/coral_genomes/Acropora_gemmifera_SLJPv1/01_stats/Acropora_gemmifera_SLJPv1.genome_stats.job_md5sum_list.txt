@@ -1,0 +1,2 @@
+6b9fb289f6ebc1560a1d7ab48611979f  Acropora_gemmifera_SLJPv1.assembly.fasta
+690e8f96a080b1a0496c012b5a48fa14  Acropora_gemmifera_SLJPv1.genes.gff3

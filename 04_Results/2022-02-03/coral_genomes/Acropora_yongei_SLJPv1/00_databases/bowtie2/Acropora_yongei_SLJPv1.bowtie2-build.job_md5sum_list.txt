@@ -1,0 +1,2 @@
+3b8300f72ed46dc54d2a4d5e940508aa  Acropora_yongei_SLJPv1.assembly.fasta
+87f1f31c59108901d39e1a01a141a04b  Acropora_yongei_SLJPv1.genes.cds.fna

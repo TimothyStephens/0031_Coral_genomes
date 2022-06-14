@@ -1,0 +1,3 @@
+4775e1baeb7428f477382e26fa336f2c  Acropora_cytherea_SLJPv1.assembly.fasta
+788c64d491dc44bbd1c5a0b8a1bd3c73  Acropora_cytherea_SLJPv1.genes.cds.fna
+16e7f4edf10e27a9679bdd059e4c9698  Acropora_cytherea_SLJPv1.genes.pep.faa

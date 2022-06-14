@@ -1,0 +1,2 @@
+37db2228d670f85891fbb8e54debbdc8  Goniastrea_aspera_REEFv1.assembly.fasta
+78e796bbfedd69b2d04b97d15f2c1c0b  Goniastrea_aspera_REEFv1.genes.cds.fna

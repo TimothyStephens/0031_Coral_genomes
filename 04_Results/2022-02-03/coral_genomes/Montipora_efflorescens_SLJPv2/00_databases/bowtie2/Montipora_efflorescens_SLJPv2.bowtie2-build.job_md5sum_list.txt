@@ -1,0 +1,2 @@
+e7ae1a7125a6e124cfa9229634f67912  Montipora_efflorescens_SLJPv2.assembly.fasta
+511969c521630cdc1d1c2b8bad78074c  Montipora_efflorescens_SLJPv2.genes.cds.fna

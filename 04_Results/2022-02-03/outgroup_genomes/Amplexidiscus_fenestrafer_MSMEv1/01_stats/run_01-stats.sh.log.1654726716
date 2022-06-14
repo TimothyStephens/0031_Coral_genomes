@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 08 Jun 2022 06:18:36 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Amplexidiscus_fenestrafer_MSMEv1/01_stats
+=====================================================================
+
+[Wed 08 Jun 2022 06:18:39 PM EDT]      CMD: md5sum Amplexidiscus_fenestrafer_MSMEv1.assembly.fasta Amplexidiscus_fenestrafer_MSMEv1.genes.gff3 | tee Amplexidiscus_fenestrafer_MSMEv1.genome_stats.job_md5sum_list.txt
+3868ed499cf554e9226b339f08a5d0fb  Amplexidiscus_fenestrafer_MSMEv1.assembly.fasta
+cfbee1597b2a6edf258fcd9c82f992eb  Amplexidiscus_fenestrafer_MSMEv1.genes.gff3
+[Wed 08 Jun 2022 06:18:40 PM EDT]      CMD: ./genome_stats Amplexidiscus_fenestrafer_MSMEv1.assembly.fasta Amplexidiscus_fenestrafer_MSMEv1.genes.gff3 > Amplexidiscus_fenestrafer_MSMEv1.GeneStats.tsv
+index file Amplexidiscus_fenestrafer_MSMEv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Wed 08 Jun 2022 06:18:36 PM EDT
+Finished: at Wed 08 Jun 2022 06:19:12 PM EDT
+ExitStatus: 0
+=====================================================================

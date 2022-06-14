@@ -1,0 +1,2 @@
+423c611a762223c0435664c6073d2269  Acropora_hyacinthus_SLJPv1.assembly.fasta
+b8ce23f20f05ff11b43d98ed90875541  Acropora_hyacinthus_SLJPv1.genes.gff3

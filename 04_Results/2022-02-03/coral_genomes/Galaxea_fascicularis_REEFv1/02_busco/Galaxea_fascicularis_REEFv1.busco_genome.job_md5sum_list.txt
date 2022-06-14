@@ -1,0 +1,1 @@
+def10fa31d6a70263f9af1f85235e4a4  Galaxea_fascicularis_REEFv1.assembly.fasta

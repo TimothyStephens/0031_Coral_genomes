@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:17:01 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_tenuis_SLJPv1/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:17:02 PM EDT]      CMD: md5sum Acropora_tenuis_SLJPv1.assembly.fasta Acropora_tenuis_SLJPv1.genes.cds.fna Acropora_tenuis_SLJPv1.genes.pep.faa | tee Acropora_tenuis_SLJPv1.makeblastdb.job_md5sum_list.txt
+2b88e99e8d4642dd4e29d57779428293  Acropora_tenuis_SLJPv1.assembly.fasta
+74733eedabaac343ac9af49e3bd6a097  Acropora_tenuis_SLJPv1.genes.cds.fna
+6355f6cc9fbac8b5d8111365dd8279b7  Acropora_tenuis_SLJPv1.genes.pep.faa
+[Sun 08 May 2022 05:17:04 PM EDT]      CMD: makeblastdb -dbtype nucl -in Acropora_tenuis_SLJPv1.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:17:04
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_tenuis_SLJPv1/00_databases/blast/Acropora_tenuis_SLJPv1.assembly.fasta
+New DB title:  Acropora_tenuis_SLJPv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1848 sequences in 6.1734 seconds.
+
+
+[Sun 08 May 2022 05:17:10 PM EDT]      CMD: makeblastdb -dbtype nucl -in Acropora_tenuis_SLJPv1.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:17:10
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_tenuis_SLJPv1/00_databases/blast/Acropora_tenuis_SLJPv1.genes.cds.fna
+New DB title:  Acropora_tenuis_SLJPv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 23119 sequences in 0.769446 seconds.
+
+
+[Sun 08 May 2022 05:17:11 PM EDT]      CMD: makeblastdb -dbtype prot -in Acropora_tenuis_SLJPv1.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:17:11
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_tenuis_SLJPv1/00_databases/blast/Acropora_tenuis_SLJPv1.genes.pep.faa
+New DB title:  Acropora_tenuis_SLJPv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 23119 sequences in 0.607268 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:17:01 PM EDT
+Finished: at Sun 08 May 2022 05:17:11 PM EDT
+ExitStatus: 0
+=====================================================================

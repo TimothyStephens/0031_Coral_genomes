@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 27 May 2022 04:37:20 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_rus_NAIDv1/01_stats
+=====================================================================
+
+[Fri 27 May 2022 04:37:21 PM EDT]      CMD: md5sum Porites_rus_NAIDv1.assembly.fasta Porites_rus_NAIDv1.genes.gff3 | tee Porites_rus_NAIDv1.genome_stats.job_md5sum_list.txt
+74624a2d287ddb7f32c852f6a8df36f9  Porites_rus_NAIDv1.assembly.fasta
+21826dd6a55f39b3374378e53f38eca9  Porites_rus_NAIDv1.genes.gff3
+[Fri 27 May 2022 04:37:23 PM EDT]      CMD: ./genome_stats Porites_rus_NAIDv1.assembly.fasta Porites_rus_NAIDv1.genes.gff3 > Porites_rus_NAIDv1.GeneStats.tsv
+index file Porites_rus_NAIDv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Fri 27 May 2022 04:37:20 PM EDT
+Finished: at Fri 27 May 2022 04:37:49 PM EDT
+ExitStatus: 0
+=====================================================================

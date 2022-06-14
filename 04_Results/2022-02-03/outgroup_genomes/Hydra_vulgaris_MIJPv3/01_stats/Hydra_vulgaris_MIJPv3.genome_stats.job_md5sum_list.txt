@@ -1,0 +1,2 @@
+2c1d93e0e70232038e43ddc66ab19474  Hydra_vulgaris_MIJPv3.assembly.fasta
+cf09794fb8f0f7763a25dd59d7e375c0  Hydra_vulgaris_MIJPv3.genes.gff3

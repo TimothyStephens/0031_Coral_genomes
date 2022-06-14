@@ -1,0 +1,3 @@
+def10fa31d6a70263f9af1f85235e4a4  Galaxea_fascicularis_REEFv1.assembly.fasta
+a719acca33a8ecb28fb8b4d379075e16  Galaxea_fascicularis_REEFv1.genes.cds.fna
+610dbe58ab79d3bc5deaacd8e5b0325d  Galaxea_fascicularis_REEFv1.genes.pep.faa

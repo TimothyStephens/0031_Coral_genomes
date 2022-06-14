@@ -1,0 +1,43 @@
+# Files
+Genome file	Fungia_spp_REEFv1.assembly.fasta
+GFF file	Fungia_spp_REEFv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	606319501
+Total contig length (bp)	527059973
+Number of scaffolds	7424
+Number of contigs	34078
+N50 of scaffolds (bp)	323149
+N50 of contigs (bp)	28953
+Percent gaps	13.072
+Percent GC	38.41
+
+# Gene stats (combined CDS+introns)
+Number of genes	38209
+Total gene length	230081374
+Average gene length (bp)	6021.65
+Gene percent GC	38.79
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1217.23
+Average number of CDS per gene/transcript	5.5779
+
+# CDS stats
+Number of CDS	213126
+Total CDS length (bp)	46509198
+Average CDS length (bp)	218.224
+Number of single-CDS transcripts	4993
+Percent single-CDS transcripts	13.0676
+CDS percent GC	44.28
+
+# Intron stats (predicted between CDS features)
+Number of introns	174917
+Total intron length (bp)	183572176
+Average intron length (bp)	1049.48
+Intron percent GC	37.27
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	31909
+Total intergenic region length (bp)	293131611
+Average intergenic region length (bp)	9186.49
+Intergenic region percent GC	38.13

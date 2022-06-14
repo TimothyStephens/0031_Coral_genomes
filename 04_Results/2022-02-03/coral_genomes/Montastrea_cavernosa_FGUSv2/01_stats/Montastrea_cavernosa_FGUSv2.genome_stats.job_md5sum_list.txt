@@ -1,0 +1,2 @@
+f2f82d344ca10d54f6785800d606c598  Montastrea_cavernosa_FGUSv2.assembly.fasta
+83c0f58f734b4dd8a7cbe298dfaf67c9  Montastrea_cavernosa_FGUSv2.genes.gff3

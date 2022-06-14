@@ -1,0 +1,2 @@
+83c0df857f4af5348b4d9da16008f65a  Acropora_florida_SLJPv1.assembly.fasta
+f283b22587303e0d73780a57e505572e  Acropora_florida_SLJPv1.genes.gff3

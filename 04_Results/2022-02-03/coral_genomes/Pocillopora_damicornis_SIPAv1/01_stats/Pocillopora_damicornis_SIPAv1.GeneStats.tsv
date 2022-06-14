@@ -1,0 +1,43 @@
+# Files
+Genome file	Pocillopora_damicornis_SIPAv1.assembly.fasta
+GFF file	Pocillopora_damicornis_SIPAv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	234335492
+Total contig length (bp)	225727810
+Number of scaffolds	4393
+Number of contigs	53036
+N50 of scaffolds (bp)	326133
+N50 of contigs (bp)	25941
+Percent gaps	3.673
+Percent GC	37.82
+
+# Gene stats (combined CDS+introns)
+Number of genes	26077
+Total gene length	136620777
+Average gene length (bp)	5239.13
+Gene percent GC	38.17
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1365.3
+Average number of CDS per gene/transcript	6.84833
+
+# CDS stats
+Number of CDS	178584
+Total CDS length (bp)	35603001
+Average CDS length (bp)	199.363
+Number of single-CDS transcripts	3282
+Percent single-CDS transcripts	12.5858
+CDS percent GC	43.87
+
+# Intron stats (predicted between CDS features)
+Number of introns	152507
+Total intron length (bp)	101017776
+Average intron length (bp)	662.381
+Intron percent GC	36.12
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	22520
+Total intergenic region length (bp)	85763404
+Average intergenic region length (bp)	3808.32
+Intergenic region percent GC	37.27

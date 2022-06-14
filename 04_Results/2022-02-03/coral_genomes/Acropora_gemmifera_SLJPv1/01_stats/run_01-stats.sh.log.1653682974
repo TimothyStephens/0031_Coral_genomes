@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 27 May 2022 04:22:54 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_gemmifera_SLJPv1/01_stats
+=====================================================================
+
+[Fri 27 May 2022 04:22:55 PM EDT]      CMD: md5sum Acropora_gemmifera_SLJPv1.assembly.fasta Acropora_gemmifera_SLJPv1.genes.gff3 | tee Acropora_gemmifera_SLJPv1.genome_stats.job_md5sum_list.txt
+6b9fb289f6ebc1560a1d7ab48611979f  Acropora_gemmifera_SLJPv1.assembly.fasta
+690e8f96a080b1a0496c012b5a48fa14  Acropora_gemmifera_SLJPv1.genes.gff3
+[Fri 27 May 2022 04:22:57 PM EDT]      CMD: ./genome_stats Acropora_gemmifera_SLJPv1.assembly.fasta Acropora_gemmifera_SLJPv1.genes.gff3 > Acropora_gemmifera_SLJPv1.GeneStats.tsv
+index file Acropora_gemmifera_SLJPv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Fri 27 May 2022 04:22:54 PM EDT
+Finished: at Fri 27 May 2022 04:23:15 PM EDT
+ExitStatus: 0
+=====================================================================

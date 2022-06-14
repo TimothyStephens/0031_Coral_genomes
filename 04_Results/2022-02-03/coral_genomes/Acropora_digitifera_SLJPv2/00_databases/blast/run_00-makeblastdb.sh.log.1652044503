@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:15:03 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_digitifera_SLJPv2/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:15:04 PM EDT]      CMD: md5sum Acropora_digitifera_SLJPv2.assembly.fasta Acropora_digitifera_SLJPv2.genes.cds.fna Acropora_digitifera_SLJPv2.genes.pep.faa | tee Acropora_digitifera_SLJPv2.makeblastdb.job_md5sum_list.txt
+f827c211aae96c6a8493dca1c0e4a506  Acropora_digitifera_SLJPv2.assembly.fasta
+4b529778a8550d5b39363e166a2c2e10  Acropora_digitifera_SLJPv2.genes.cds.fna
+654241fc0f4f4e6d39f48f14c8529916  Acropora_digitifera_SLJPv2.genes.pep.faa
+[Sun 08 May 2022 05:15:06 PM EDT]      CMD: makeblastdb -dbtype nucl -in Acropora_digitifera_SLJPv2.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:15:06
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_digitifera_SLJPv2/00_databases/blast/Acropora_digitifera_SLJPv2.assembly.fasta
+New DB title:  Acropora_digitifera_SLJPv2.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 956 sequences in 3.77017 seconds.
+
+
+[Sun 08 May 2022 05:15:10 PM EDT]      CMD: makeblastdb -dbtype nucl -in Acropora_digitifera_SLJPv2.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:15:10
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_digitifera_SLJPv2/00_databases/blast/Acropora_digitifera_SLJPv2.genes.cds.fna
+New DB title:  Acropora_digitifera_SLJPv2.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 22327 sequences in 0.488388 seconds.
+
+
+[Sun 08 May 2022 05:15:11 PM EDT]      CMD: makeblastdb -dbtype prot -in Acropora_digitifera_SLJPv2.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:15:11
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_digitifera_SLJPv2/00_databases/blast/Acropora_digitifera_SLJPv2.genes.pep.faa
+New DB title:  Acropora_digitifera_SLJPv2.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 22327 sequences in 0.391074 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:15:03 PM EDT
+Finished: at Sun 08 May 2022 05:15:11 PM EDT
+ExitStatus: 0
+=====================================================================

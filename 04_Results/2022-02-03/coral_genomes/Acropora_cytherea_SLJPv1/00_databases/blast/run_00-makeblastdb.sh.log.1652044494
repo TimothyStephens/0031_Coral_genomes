@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:14:54 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_cytherea_SLJPv1/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:14:55 PM EDT]      CMD: md5sum Acropora_cytherea_SLJPv1.assembly.fasta Acropora_cytherea_SLJPv1.genes.cds.fna Acropora_cytherea_SLJPv1.genes.pep.faa | tee Acropora_cytherea_SLJPv1.makeblastdb.job_md5sum_list.txt
+4775e1baeb7428f477382e26fa336f2c  Acropora_cytherea_SLJPv1.assembly.fasta
+788c64d491dc44bbd1c5a0b8a1bd3c73  Acropora_cytherea_SLJPv1.genes.cds.fna
+16e7f4edf10e27a9679bdd059e4c9698  Acropora_cytherea_SLJPv1.genes.pep.faa
+[Sun 08 May 2022 05:14:57 PM EDT]      CMD: makeblastdb -dbtype nucl -in Acropora_cytherea_SLJPv1.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:14:57
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_cytherea_SLJPv1/00_databases/blast/Acropora_cytherea_SLJPv1.assembly.fasta
+New DB title:  Acropora_cytherea_SLJPv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 4125 sequences in 4.40803 seconds.
+
+
+[Sun 08 May 2022 05:15:02 PM EDT]      CMD: makeblastdb -dbtype nucl -in Acropora_cytherea_SLJPv1.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:15:02
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_cytherea_SLJPv1/00_databases/blast/Acropora_cytherea_SLJPv1.genes.cds.fna
+New DB title:  Acropora_cytherea_SLJPv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 23364 sequences in 0.790485 seconds.
+
+
+[Sun 08 May 2022 05:15:02 PM EDT]      CMD: makeblastdb -dbtype prot -in Acropora_cytherea_SLJPv1.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:15:02
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_cytherea_SLJPv1/00_databases/blast/Acropora_cytherea_SLJPv1.genes.pep.faa
+New DB title:  Acropora_cytherea_SLJPv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 23364 sequences in 0.534886 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:14:54 PM EDT
+Finished: at Sun 08 May 2022 05:15:03 PM EDT
+ExitStatus: 0
+=====================================================================

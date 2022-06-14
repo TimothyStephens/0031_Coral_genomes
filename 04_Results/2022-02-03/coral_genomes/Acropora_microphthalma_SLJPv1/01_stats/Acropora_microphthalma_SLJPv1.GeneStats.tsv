@@ -1,0 +1,43 @@
+# Files
+Genome file	Acropora_microphthalma_SLJPv1.assembly.fasta
+GFF file	Acropora_microphthalma_SLJPv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	387940075
+Total contig length (bp)	351765036
+Number of scaffolds	4971
+Number of contigs	19963
+N50 of scaffolds (bp)	1050196
+N50 of contigs (bp)	36647
+Percent gaps	9.325
+Percent GC	38.95
+
+# Gene stats (combined CDS+introns)
+Number of genes	22619
+Total gene length	174741591
+Average gene length (bp)	7725.43
+Gene percent GC	39.23
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1574.44
+Average number of CDS per gene/transcript	7.20332
+
+# CDS stats
+Number of CDS	162932
+Total CDS length (bp)	35612360
+Average CDS length (bp)	218.572
+Number of single-CDS transcripts	4251
+Percent single-CDS transcripts	18.7939
+CDS percent GC	44.21
+
+# Intron stats (predicted between CDS features)
+Number of introns	140313
+Total intron length (bp)	139129231
+Average intron length (bp)	991.563
+Intron percent GC	37.86
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	20027
+Total intergenic region length (bp)	172859818
+Average intergenic region length (bp)	8631.34
+Intergenic region percent GC	38.66

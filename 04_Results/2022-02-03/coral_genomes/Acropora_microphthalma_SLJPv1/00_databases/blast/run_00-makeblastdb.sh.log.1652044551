@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:15:51 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_microphthalma_SLJPv1/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:15:52 PM EDT]      CMD: md5sum Acropora_microphthalma_SLJPv1.assembly.fasta Acropora_microphthalma_SLJPv1.genes.cds.fna Acropora_microphthalma_SLJPv1.genes.pep.faa | tee Acropora_microphthalma_SLJPv1.makeblastdb.job_md5sum_list.txt
+8da1244d214a05c90124997669584610  Acropora_microphthalma_SLJPv1.assembly.fasta
+c6d99bd6b63fa72d352c5f0ce464080f  Acropora_microphthalma_SLJPv1.genes.cds.fna
+53d0dd53701003dfa28a5bb210773d33  Acropora_microphthalma_SLJPv1.genes.pep.faa
+[Sun 08 May 2022 05:15:53 PM EDT]      CMD: makeblastdb -dbtype nucl -in Acropora_microphthalma_SLJPv1.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:15:53
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_microphthalma_SLJPv1/00_databases/blast/Acropora_microphthalma_SLJPv1.assembly.fasta
+New DB title:  Acropora_microphthalma_SLJPv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 4971 sequences in 4.16686 seconds.
+
+
+[Sun 08 May 2022 05:15:58 PM EDT]      CMD: makeblastdb -dbtype nucl -in Acropora_microphthalma_SLJPv1.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:15:58
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_microphthalma_SLJPv1/00_databases/blast/Acropora_microphthalma_SLJPv1.genes.cds.fna
+New DB title:  Acropora_microphthalma_SLJPv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 22619 sequences in 1.1484 seconds.
+
+
+[Sun 08 May 2022 05:16:00 PM EDT]      CMD: makeblastdb -dbtype prot -in Acropora_microphthalma_SLJPv1.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:16:00
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_microphthalma_SLJPv1/00_databases/blast/Acropora_microphthalma_SLJPv1.genes.pep.faa
+New DB title:  Acropora_microphthalma_SLJPv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 22619 sequences in 0.764097 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:15:51 PM EDT
+Finished: at Sun 08 May 2022 05:16:01 PM EDT
+ExitStatus: 0
+=====================================================================

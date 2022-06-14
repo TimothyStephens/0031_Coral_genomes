@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 08 May 2022 05:16:46 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_selago_SLJPv1/00_databases/blast
+=====================================================================
+
+[Sun 08 May 2022 05:16:47 PM EDT]      CMD: md5sum Acropora_selago_SLJPv1.assembly.fasta Acropora_selago_SLJPv1.genes.cds.fna Acropora_selago_SLJPv1.genes.pep.faa | tee Acropora_selago_SLJPv1.makeblastdb.job_md5sum_list.txt
+b647498ab213c36a512341e1388794cc  Acropora_selago_SLJPv1.assembly.fasta
+25fd2a5373f9ef2c1c2a87795e6817cb  Acropora_selago_SLJPv1.genes.cds.fna
+ca13e1d405e89905cd781c3987838b6c  Acropora_selago_SLJPv1.genes.pep.faa
+[Sun 08 May 2022 05:16:49 PM EDT]      CMD: makeblastdb -dbtype nucl -in Acropora_selago_SLJPv1.assembly.fasta
+
+
+Building a new DB, current time: 05/08/2022 17:16:49
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_selago_SLJPv1/00_databases/blast/Acropora_selago_SLJPv1.assembly.fasta
+New DB title:  Acropora_selago_SLJPv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 5857 sequences in 9.22848 seconds.
+
+
+[Sun 08 May 2022 05:16:58 PM EDT]      CMD: makeblastdb -dbtype nucl -in Acropora_selago_SLJPv1.genes.cds.fna
+
+
+Building a new DB, current time: 05/08/2022 17:16:58
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_selago_SLJPv1/00_databases/blast/Acropora_selago_SLJPv1.genes.cds.fna
+New DB title:  Acropora_selago_SLJPv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 23116 sequences in 1.19369 seconds.
+
+
+[Sun 08 May 2022 05:17:00 PM EDT]      CMD: makeblastdb -dbtype prot -in Acropora_selago_SLJPv1.genes.pep.faa
+
+
+Building a new DB, current time: 05/08/2022 17:17:00
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_selago_SLJPv1/00_databases/blast/Acropora_selago_SLJPv1.genes.pep.faa
+New DB title:  Acropora_selago_SLJPv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 23116 sequences in 0.889672 seconds.
+
+
+
+=====================================================================
+Started: at Sun 08 May 2022 05:16:46 PM EDT
+Finished: at Sun 08 May 2022 05:17:01 PM EDT
+ExitStatus: 0
+=====================================================================
