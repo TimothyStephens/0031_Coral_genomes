@@ -1,0 +1,2 @@
+5e656cf15a68732247b6f415a0008a3c  Stylissa_carteri_RSSAv1.assembly.fasta
+cef8a689e4b0dbc0668cd4caa9cf3d6d  Stylissa_carteri_RSSAv1.genes.cds.fna

@@ -1,0 +1,2 @@
+047484a24c8c3386019352e42e81f6ba  Velella_velella_OKJPv1.transcripts.pep.faa
+047484a24c8c3386019352e42e81f6ba  ../00_databases/Velella_velella_OKJPv1.transcripts.pep.faa

@@ -1,0 +1,2 @@
+c9459db75947ef75c1a7bc6380bcbf92  Scolanthus_callimorphus_CRFRv1.assembly.fasta
+4093ffa73dd3ca25517c649e31b2f7a6  Scolanthus_callimorphus_CRFRv1.genes.cds.fna

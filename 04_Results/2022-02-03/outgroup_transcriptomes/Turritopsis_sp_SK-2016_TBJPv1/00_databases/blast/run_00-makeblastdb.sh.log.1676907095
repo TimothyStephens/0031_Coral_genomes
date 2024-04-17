@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Mon 20 Feb 2023 10:31:35 AM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Turritopsis_sp_SK-2016_TBJPv1/00_databases/blast
+=====================================================================
+
+[Mon 20 Feb 2023 10:31:36 AM EST]      CMD: md5sum Turritopsis_sp_SK-2016_TBJPv1.transcripts.cds.fna Turritopsis_sp_SK-2016_TBJPv1.transcripts.pep.faa | tee Turritopsis_sp_SK-2016_TBJPv1.makeblastdb.job_md5sum_list.txt
+d0887a346be546e3ef8733dac7a99eea  Turritopsis_sp_SK-2016_TBJPv1.transcripts.cds.fna
+abbe149adb468f3f72c6203d6793b3cf  Turritopsis_sp_SK-2016_TBJPv1.transcripts.pep.faa
+[Mon 20 Feb 2023 10:31:36 AM EST]      CMD: makeblastdb -dbtype nucl -in Turritopsis_sp_SK-2016_TBJPv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 02/20/2023 10:31:37
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Turritopsis_sp_SK-2016_TBJPv1/00_databases/blast/Turritopsis_sp_SK-2016_TBJPv1.transcripts.cds.fna
+New DB title:  Turritopsis_sp_SK-2016_TBJPv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 28204 sequences in 0.515344 seconds.
+
+
+[Mon 20 Feb 2023 10:31:37 AM EST]      CMD: makeblastdb -dbtype prot -in Turritopsis_sp_SK-2016_TBJPv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 02/20/2023 10:31:37
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Turritopsis_sp_SK-2016_TBJPv1/00_databases/blast/Turritopsis_sp_SK-2016_TBJPv1.transcripts.pep.faa
+New DB title:  Turritopsis_sp_SK-2016_TBJPv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 28204 sequences in 0.40041 seconds.
+
+
+
+=====================================================================
+Started: at Mon 20 Feb 2023 10:31:35 AM EST
+Finished: at Mon 20 Feb 2023 10:31:38 AM EST
+ExitStatus: 0
+=====================================================================

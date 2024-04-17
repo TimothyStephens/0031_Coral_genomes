@@ -1,0 +1,2 @@
+3fa888d767c275caf14a30b77eb5feac  Lucernaria_quadricornis_AIUSv1.transcripts.pep.faa
+3fa888d767c275caf14a30b77eb5feac  ../00_databases/Lucernaria_quadricornis_AIUSv1.transcripts.pep.faa

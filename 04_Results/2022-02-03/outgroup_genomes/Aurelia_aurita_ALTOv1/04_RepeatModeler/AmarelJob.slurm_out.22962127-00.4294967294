@@ -1,0 +1,21 @@
+=====================================================================
+Slurm config version 0.4
+Starting on hal0043.amarel.rutgers.edu at Fri Nov 11 10:46:26 EST 2022
+Nodelist hal0043
+Current JOB_ID is 22962127
+Current array index number is NA
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Aurelia_aurita_ALTOv1/04_RepeatModeler
+=====================================================================
+
+[Sat Nov 12 14:12:11 EST 2022]   - Done!
+
+=====================================================================
+Started: at Fri Nov 11 10:46:26 EST 2022 on hal0043.amarel.rutgers.edu
+Finished: at Sat Nov 12 14:12:11 EST 2022
+ExitStatus: 0
+
+   JobName   NTasks  AllocCPUS     ReqMem     MaxRSS  MaxVMSize  MaxDiskRead MaxDiskWrite   TotalCPU    CPUTime    Elapsed 
+---------- -------- ---------- ---------- ---------- ---------- ------------ ------------ ---------- ---------- ---------- 
+ AmarelJob                  24      120Gn                                                   00:00:00 27-10:18:24 1-03:25:46 
+    extern        1         24      120Gn                                                   00:00:00 27-10:18:24 1-03:25:46 
+=====================================================================

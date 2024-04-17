@@ -1,0 +1,122 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 23 Jun 2022 02:05:32 AM EDT
+Working directory is /scratch/timothy/tmp/interproscan/Montastraea_cavernosa_REEFv1/10_functional_annotation
+=====================================================================
+
+[Thu 23 Jun 2022 02:05:33 AM EDT]      CMD: md5sum Montastraea_cavernosa_REEFv1.transcripts.pep.faa ../00_databases/Montastraea_cavernosa_REEFv1.transcripts.pep.faa | tee Montastraea_cavernosa_REEFv1.transcripts.pep.faa.emapper.job_md5sum_list.txt
+c35eb8e47613e9571e6f365adad17824  Montastraea_cavernosa_REEFv1.transcripts.pep.faa
+c35eb8e47613e9571e6f365adad17824  ../00_databases/Montastraea_cavernosa_REEFv1.transcripts.pep.faa
+[Thu 23 Jun 2022 02:05:33 AM EDT]      CMD: emapper.py -i Montastraea_cavernosa_REEFv1.transcripts.pep.faa --output Montastraea_cavernosa_REEFv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 2.6226043701171875e-06 0.00 q/s (% mem usage: 50.40, % mem avail: 49.64)
+[1;34mTime to load the DB into memory: 47.65224099159241[0m
+#  emapper-2.1.6
+# emapper.py  -i Montastraea_cavernosa_REEFv1.transcripts.pep.faa --output Montastraea_cavernosa_REEFv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Montastraea_cavernosa_REEFv1/10_functional_annotation/Montastraea_cavernosa_REEFv1.transcripts.pep.faa --threads 96 -o /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Montastraea_cavernosa_REEFv1/10_functional_annotation/Montastraea_cavernosa_REEFv1.transcripts.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+CREATED ESL_REFORMAT DB. USING HMMSEARCH
+Namespace(Z=40000000, call_info='## Thu Jun 23 02:16:14 2022\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Montastraea_cavernosa_REEFv1.transcripts.pep.faa --output Montastraea_cavernosa_REEFv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem\n##', clean_overlaps='hmmsearch_clans', cpu=96, cpus_per_worker=96, cut_ga=True, db='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Montastraea_cavernosa_REEFv1/10_functional_annotation/tmp_fvlk2t0', dbtype='seqdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='hmm', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Montastraea_cavernosa_REEFv1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+500 1069.0159530639648 0.47 q/s (% mem usage: 61.90, % mem avail: 38.09)
+1000 1070.8357589244843 0.93 q/s (% mem usage: 61.90, % mem avail: 38.09)
+1500 1072.4028849601746 1.40 q/s (% mem usage: 61.90, % mem avail: 38.09)
+2000 1074.0588493347168 1.86 q/s (% mem usage: 61.90, % mem avail: 38.09)
+2500 1075.5709166526794 2.32 q/s (% mem usage: 61.90, % mem avail: 38.09)
+3000 1076.9072589874268 2.79 q/s (% mem usage: 61.90, % mem avail: 38.09)
+3500 1078.433090209961 3.25 q/s (% mem usage: 61.90, % mem avail: 38.09)
+4000 1080.2336821556091 3.70 q/s (% mem usage: 61.90, % mem avail: 38.09)
+4500 1082.203241109848 4.16 q/s (% mem usage: 61.90, % mem avail: 38.09)
+5000 1083.4655425548553 4.61 q/s (% mem usage: 61.90, % mem avail: 38.09)
+5500 1084.7658276557922 5.07 q/s (% mem usage: 61.90, % mem avail: 38.09)
+6000 1086.177325963974 5.52 q/s (% mem usage: 61.90, % mem avail: 38.09)
+6500 1087.6954715251923 5.98 q/s (% mem usage: 61.90, % mem avail: 38.09)
+7000 1089.1651947498322 6.43 q/s (% mem usage: 61.90, % mem avail: 38.09)
+7500 1090.567747592926 6.88 q/s (% mem usage: 61.90, % mem avail: 38.09)
+8000 1092.1723592281342 7.32 q/s (% mem usage: 61.90, % mem avail: 38.09)
+8500 1093.9694435596466 7.77 q/s (% mem usage: 61.90, % mem avail: 38.09)
+9000 1095.5123348236084 8.22 q/s (% mem usage: 61.90, % mem avail: 38.09)
+9500 1097.0925385951996 8.66 q/s (% mem usage: 61.90, % mem avail: 38.09)
+10000 1098.6375133991241 9.10 q/s (% mem usage: 61.90, % mem avail: 38.09)
+10500 1100.3303606510162 9.54 q/s (% mem usage: 61.90, % mem avail: 38.09)
+11000 1101.685233592987 9.98 q/s (% mem usage: 61.90, % mem avail: 38.09)
+11500 1103.278793334961 10.42 q/s (% mem usage: 61.90, % mem avail: 38.07)
+12000 1104.9716532230377 10.86 q/s (% mem usage: 61.90, % mem avail: 38.07)
+12500 1106.7046325206757 11.29 q/s (% mem usage: 61.90, % mem avail: 38.07)
+13000 1108.2115943431854 11.73 q/s (% mem usage: 61.90, % mem avail: 38.07)
+13500 1109.6144759654999 12.17 q/s (% mem usage: 61.90, % mem avail: 38.09)
+14000 1111.3507471084595 12.60 q/s (% mem usage: 61.90, % mem avail: 38.09)
+14500 1113.1017775535583 13.03 q/s (% mem usage: 61.90, % mem avail: 38.08)
+15000 1114.630821466446 13.46 q/s (% mem usage: 61.90, % mem avail: 38.08)
+15500 1116.3335025310516 13.88 q/s (% mem usage: 61.90, % mem avail: 38.08)
+16000 1117.8547639846802 14.31 q/s (% mem usage: 60.70, % mem avail: 39.26)
+16500 1119.5646998882294 14.74 q/s (% mem usage: 60.80, % mem avail: 39.23)
+17000 1121.2308058738708 15.16 q/s (% mem usage: 60.80, % mem avail: 39.18)
+17500 1122.759394645691 15.59 q/s (% mem usage: 60.90, % mem avail: 39.12)
+18000 1124.3820519447327 16.01 q/s (% mem usage: 60.90, % mem avail: 39.08)
+18500 1125.9718580245972 16.43 q/s (% mem usage: 61.10, % mem avail: 38.90)
+19000 1127.5491206645966 16.85 q/s (% mem usage: 61.20, % mem avail: 38.80)
+19500 1129.1166772842407 17.27 q/s (% mem usage: 61.30, % mem avail: 38.70)
+20000 1130.6465015411377 17.69 q/s (% mem usage: 61.30, % mem avail: 38.66)
+20500 1132.2145874500275 18.11 q/s (% mem usage: 61.40, % mem avail: 38.55)
+21000 1133.7223453521729 18.52 q/s (% mem usage: 61.50, % mem avail: 38.54)
+21500 1135.2554836273193 18.94 q/s (% mem usage: 61.50, % mem avail: 38.54)
+22000 1136.8131659030914 19.35 q/s (% mem usage: 61.50, % mem avail: 38.54)
+22500 1138.6284806728363 19.76 q/s (% mem usage: 61.50, % mem avail: 38.54)
+23000 1139.9582362174988 20.18 q/s (% mem usage: 61.50, % mem avail: 38.54)
+23500 1141.4478130340576 20.59 q/s (% mem usage: 61.50, % mem avail: 38.54)
+24000 1142.9817342758179 21.00 q/s (% mem usage: 61.50, % mem avail: 38.54)
+24500 1144.3747863769531 21.41 q/s (% mem usage: 61.50, % mem avail: 38.54)
+25000 1146.9427070617676 21.80 q/s (% mem usage: 61.50, % mem avail: 38.53)
+25500 1149.956178188324 22.17 q/s (% mem usage: 61.50, % mem avail: 38.54)
+26000 1153.0985379219055 22.55 q/s (% mem usage: 61.50, % mem avail: 38.54)
+26500 1155.0015003681183 22.94 q/s (% mem usage: 61.50, % mem avail: 38.54)
+27000 1156.45294713974 23.35 q/s (% mem usage: 61.50, % mem avail: 38.54)
+27500 1158.0030753612518 23.75 q/s (% mem usage: 61.50, % mem avail: 38.54)
+28000 1159.2080669403076 24.15 q/s (% mem usage: 61.50, % mem avail: 38.54)
+28390 1160.8236374855042 24.46 q/s (% mem usage: 61.30, % mem avail: 38.66)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Montastraea_cavernosa_REEFv1/10_functional_annotation/Montastraea_cavernosa_REEFv1.transcripts.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Montastraea_cavernosa_REEFv1/10_functional_annotation/Montastraea_cavernosa_REEFv1.transcripts.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Montastraea_cavernosa_REEFv1/10_functional_annotation/Montastraea_cavernosa_REEFv1.transcripts.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Montastraea_cavernosa_REEFv1/10_functional_annotation/Montastraea_cavernosa_REEFv1.transcripts.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Montastraea_cavernosa_REEFv1/10_functional_annotation/Montastraea_cavernosa_REEFv1.transcripts.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 28390
+Total time: 1610 secs
+FINISHED
+[Thu 23 Jun 2022 02:32:31 AM EDT]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Thu 23 Jun 2022 02:05:32 AM EDT
+Finished: at Thu 23 Jun 2022 02:32:31 AM EDT
+ExitStatus: 0
+=====================================================================

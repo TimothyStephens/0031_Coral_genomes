@@ -1,0 +1,2 @@
+2598632fc0ab695825d9424412a1661b  Haliclystus_sanjuanensis_SJUSv1.transcripts.pep.faa
+2598632fc0ab695825d9424412a1661b  ../00_databases/Haliclystus_sanjuanensis_SJUSv1.transcripts.pep.faa

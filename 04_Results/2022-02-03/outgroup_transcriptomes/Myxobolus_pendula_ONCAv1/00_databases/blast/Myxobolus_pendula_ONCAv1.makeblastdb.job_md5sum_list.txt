@@ -1,0 +1,2 @@
+abcd068f087dce88d23c7c5901469d14  Myxobolus_pendula_ONCAv1.transcripts.cds.fna
+30daf9ded0bad3721664bd6d82be2bf2  Myxobolus_pendula_ONCAv1.transcripts.pep.faa

@@ -1,0 +1,31 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 30 Nov 2022 11:04:06 AM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Acropora_hyacinthus_NANAv1/10_functional_annotation
+=====================================================================
+
+[Wed 30 Nov 2022 11:04:07 AM EST]      CMD: md5sum Acropora_hyacinthus_NANAv1.transcripts.pep.faa ../00_databases/Acropora_hyacinthus_NANAv1.transcripts.pep.faa | tee Acropora_hyacinthus_NANAv1.transcripts.pep.faa.InterProScan.job_md5sum_list.txt
+3bd4be31467e6ccf34b9339a50601ed2  Acropora_hyacinthus_NANAv1.transcripts.pep.faa
+3bd4be31467e6ccf34b9339a50601ed2  ../00_databases/Acropora_hyacinthus_NANAv1.transcripts.pep.faa
+[Wed 30 Nov 2022 11:04:07 AM EST]      CMD: /home/timothy/programs/my_interproscan/interproscan-5.53-87.0/interproscan.sh -dp --goterms --cpu 96 --input Acropora_hyacinthus_NANAv1.transcripts.pep.faa --output-file-base Acropora_hyacinthus_NANAv1.transcripts.pep.faa.InterProScan
+30/11/2022 11:04:08:177 Welcome to InterProScan-5.53-87.0
+30/11/2022 11:04:08:179 Running InterProScan v5 in STANDALONE mode... on Linux
+30/11/2022 11:04:16:191 RunID: coral_20221130_110414813_l2ek
+30/11/2022 11:04:25:992 Loading file /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Acropora_hyacinthus_NANAv1/10_functional_annotation/Acropora_hyacinthus_NANAv1.transcripts.pep.faa
+30/11/2022 11:04:25:994 Running the following analyses:
+[CDD-3.18,Coils-2.2.1,Gene3D-4.3.0,Hamap-2020_05,MobiDBLite-2.0,PANTHER-15.0,Pfam-34.0,Phobius-1.01,PIRSF-3.10,PIRSR-2021_02,PRINTS-42.0,ProSitePatterns-2021_01,ProSiteProfiles-2021_01,SFLD-4,SignalP_EUK-4.1,SignalP_GRAM_NEGATIVE-4.1,SignalP_GRAM_POSITIVE-4.1,SMART-7.1,SUPERFAMILY-1.75,TIGRFAM-15.0,TMHMM-2.0c]
+Pre-calculated match lookup service DISABLED.  Please wait for match calculations to complete...
+30/11/2022 11:04:31:596 Uploaded 20797 unique sequences for analysis
+30/11/2022 11:18:50:056 25% completed
+30/11/2022 11:33:57:525 50% completed
+30/11/2022 11:40:50:209 75% completed
+30/11/2022 11:46:48:715 90% completed
+30/11/2022 12:01:38:778 100% done:  InterProScan analyses completed 
+
+[Wed 30 Nov 2022 12:01:39 PM EST]      CMD: rm -fr temp
+
+=====================================================================
+Started: at Wed 30 Nov 2022 11:04:06 AM EST
+Finished: at Wed 30 Nov 2022 12:01:39 PM EST
+ExitStatus: 0
+=====================================================================

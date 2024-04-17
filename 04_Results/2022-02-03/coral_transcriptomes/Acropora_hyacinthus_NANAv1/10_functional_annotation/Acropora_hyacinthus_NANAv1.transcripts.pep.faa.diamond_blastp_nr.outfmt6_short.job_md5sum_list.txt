@@ -1,0 +1,2 @@
+3bd4be31467e6ccf34b9339a50601ed2  Acropora_hyacinthus_NANAv1.transcripts.pep.faa
+3bd4be31467e6ccf34b9339a50601ed2  ../00_databases/Acropora_hyacinthus_NANAv1.transcripts.pep.faa

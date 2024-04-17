@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat 12 Nov 2022 07:14:37 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Millepora_squarrosa_PRUSv1/00_databases/blast
+=====================================================================
+
+[Sat 12 Nov 2022 07:14:39 PM EST]      CMD: md5sum Millepora_squarrosa_PRUSv1.transcripts.cds.fna Millepora_squarrosa_PRUSv1.transcripts.pep.faa | tee Millepora_squarrosa_PRUSv1.makeblastdb.job_md5sum_list.txt
+d69713cc29147c2967f8d8249dcff4f8  Millepora_squarrosa_PRUSv1.transcripts.cds.fna
+61854aea33e1032f7d36f5370d0001b3  Millepora_squarrosa_PRUSv1.transcripts.pep.faa
+[Sat 12 Nov 2022 07:14:39 PM EST]      CMD: makeblastdb -dbtype nucl -in Millepora_squarrosa_PRUSv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 11/12/2022 19:14:39
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Millepora_squarrosa_PRUSv1/00_databases/blast/Millepora_squarrosa_PRUSv1.transcripts.cds.fna
+New DB title:  Millepora_squarrosa_PRUSv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 80569 sequences in 2.02203 seconds.
+
+
+[Sat 12 Nov 2022 07:14:41 PM EST]      CMD: makeblastdb -dbtype prot -in Millepora_squarrosa_PRUSv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 11/12/2022 19:14:41
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Millepora_squarrosa_PRUSv1/00_databases/blast/Millepora_squarrosa_PRUSv1.transcripts.pep.faa
+New DB title:  Millepora_squarrosa_PRUSv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 80569 sequences in 1.64475 seconds.
+
+
+
+=====================================================================
+Started: at Sat 12 Nov 2022 07:14:37 PM EST
+Finished: at Sat 12 Nov 2022 07:14:43 PM EST
+ExitStatus: 0
+=====================================================================

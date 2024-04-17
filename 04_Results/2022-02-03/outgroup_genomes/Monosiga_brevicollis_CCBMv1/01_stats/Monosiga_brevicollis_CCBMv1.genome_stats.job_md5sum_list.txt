@@ -1,0 +1,2 @@
+1735ff485cff28bfd2ecc8e862f5a898  Monosiga_brevicollis_CCBMv1.assembly.fasta
+c39a0035e73c535f3d549fed02e1cb7e  Monosiga_brevicollis_CCBMv1.genes.gff3

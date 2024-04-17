@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 14 Jun 2022 02:39:37 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Fungia_scutaria_REEFv1/01_stats
+=====================================================================
+
+[Tue 14 Jun 2022 02:39:38 PM EDT]      CMD: md5sum Fungia_scutaria_REEFv1.transcripts.cds.fna | tee Fungia_scutaria_REEFv1.CDS_stats.job_md5sum_list.txt
+dae0041785a89b2379e9d50800d4a9d1  Fungia_scutaria_REEFv1.transcripts.cds.fna
+[Tue 14 Jun 2022 02:39:38 PM EDT]      CMD: ./CDS_stats Fungia_scutaria_REEFv1.transcripts.cds.fna > Fungia_scutaria_REEFv1.GeneStats.tsv
+
+=====================================================================
+Started: at Tue 14 Jun 2022 02:39:37 PM EDT
+Finished: at Tue 14 Jun 2022 02:39:38 PM EDT
+ExitStatus: 0
+=====================================================================

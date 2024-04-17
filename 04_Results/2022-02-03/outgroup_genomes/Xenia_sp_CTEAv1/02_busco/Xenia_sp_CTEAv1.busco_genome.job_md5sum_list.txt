@@ -1,0 +1,1 @@
+612d9ab06be964c5d58eb756e92c993d  Xenia_sp_CTEAv1.assembly.fasta

@@ -1,0 +1,2 @@
+a2bc5963199a4dd8bcbbee6e55e28c93  Actinia_equina_RHUKv1.genes.pep.faa
+a2bc5963199a4dd8bcbbee6e55e28c93  ../00_databases/Actinia_equina_RHUKv1.genes.pep.faa

@@ -1,0 +1,2 @@
+3a8037903f7dab1cd30d7830cb7e2f33  Pocillopora_verrucosa_RSSAv1.genes.pep.faa
+ebe6471551f98c75fce5a55d39c41f97  ../00_databases/Pocillopora_verrucosa_RSSAv1.genes.pep.faa

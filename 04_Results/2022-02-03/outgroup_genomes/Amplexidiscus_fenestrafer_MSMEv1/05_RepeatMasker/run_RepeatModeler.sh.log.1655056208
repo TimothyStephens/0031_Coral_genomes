@@ -1,0 +1,55 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun Jun 12 13:50:08 EDT 2022
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Amplexidiscus_fenestrafer_MSMEv1/05_RepeatMasker
+=====================================================================
+
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+[Sun Jun 12 13:50:09 EDT 2022]      CMD: sed -e 's/Amplexidiscus_fenestrafer_MSMEv1___//' Amplexidiscus_fenestrafer_MSMEv1.assembly.fasta > genome.fa
+[Sun Jun 12 13:50:13 EDT 2022]      CMD: cat Amplexidiscus_fenestrafer_MSMEv1.assembly.fasta.RMDB-families.fa rmlib.fa > custom_repeat_library.fa
+[Sun Jun 12 13:50:14 EDT 2022]      CMD: RepeatMasker -no_is -a -x -gff -pa 5 -lib custom_repeat_library.fa genome.fa 1> RepeatMasker.log 2>&1
+[Mon Jun 13 03:54:11 EDT 2022]      CMD: /scratch/ts942/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/calcDivergenceFromAlign.pl -s genome.fa.divsum genome.fa.align
+.............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................Amplexidiscus_fenestrafer_MSMEv1	
+[Mon Jun 13 03:55:46 EDT 2022]      CMD: /scratch/ts942/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/createRepeatLandscape.pl -g  -div genome.fa.divsum > genome.fa.RepeatLandscape.html
+[Mon Jun 13 03:55:46 EDT 2022]      CMD: bedtools maskfasta -fi genome.fa -fo genome.fa.softmasked -bed genome.fa.out.gff -soft
+[Mon Jun 13 03:55:49 EDT 2022]      CMD: sed -e "s/^>/>Amplexidiscus_fenestrafer_MSMEv1___/" genome.fa.masked | reformat.sh in=stdin.fa out=stdout.fa fastawrap=0 > Amplexidiscus_fenestrafer_MSMEv1.assembly.fasta.masked
+java -ea -Xms300m -cp /home/ts942/PROGRAMS/bbmap/current/ jgi.ReformatReads in=stdin.fa out=stdout.fa fastawrap=0
+Executing jgi.ReformatReads [in=stdin.fa, out=stdout.fa, fastawrap=0]
+
+Input is being processed as unpaired
+Input:                  	5631 reads          	370076467 bases
+Output:                 	5631 reads (100.00%) 	370076467 bases (100.00%)
+
+Time:                         	5.887 seconds.
+Reads Processed:        5631 	0.96k reads/sec
+Bases Processed:        370m 	62.86m bases/sec
+[Mon Jun 13 03:55:56 EDT 2022]      CMD: sed -e "s/^>/>Amplexidiscus_fenestrafer_MSMEv1___/" genome.fa.softmasked > Amplexidiscus_fenestrafer_MSMEv1.assembly.fasta.softmasked
+[Mon Jun 13 03:55:56 EDT 2022]      CMD: awk -F'\t' -vPREFIX="Amplexidiscus_fenestrafer_MSMEv1" '{ if($1!~"^#") {print PREFIX"___"$0} else {print $0} }' genome.fa.out.gff > Amplexidiscus_fenestrafer_MSMEv1.assembly.fasta.out.gff
+[Mon Jun 13 03:55:56 EDT 2022]      CMD: cp genome.fa.divsum Amplexidiscus_fenestrafer_MSMEv1.assembly.fasta.divsum
+[Mon Jun 13 03:55:56 EDT 2022]      CMD: cp genome.fa.tbl Amplexidiscus_fenestrafer_MSMEv1.assembly.fasta.tbl
+[Mon Jun 13 03:55:56 EDT 2022]      CMD: tail -n 72 Amplexidiscus_fenestrafer_MSMEv1.assembly.fasta.divsum | sed -e 's/ $//' > Amplexidiscus_fenestrafer_MSMEv1.assembly.fasta.divsum.Kimura_distance
+[Mon Jun 13 03:55:56 EDT 2022]      CMD: gzip genome.fa.align genome.fa.divsum genome.fa.masked genome.fa.out genome.fa.out.gff genome.fa.softmasked genome.fa.tbl
+
+=====================================================================
+Started: at Sun Jun 12 13:50:08 EDT 2022
+Finished: at Mon Jun 13 03:59:37 EDT 2022
+ExitStatus: 0
+=====================================================================

@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 14 Jun 2022 01:43:57 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Montastraea_cavernosa_REEFv1/00_databases/blast
+=====================================================================
+
+[Tue 14 Jun 2022 01:43:58 PM EDT]      CMD: md5sum Montastraea_cavernosa_REEFv1.transcripts.cds.fna Montastraea_cavernosa_REEFv1.transcripts.pep.faa | tee Montastraea_cavernosa_REEFv1.makeblastdb.job_md5sum_list.txt
+4f554ae293c7707c2c8e32c04211cdf9  Montastraea_cavernosa_REEFv1.transcripts.cds.fna
+c35eb8e47613e9571e6f365adad17824  Montastraea_cavernosa_REEFv1.transcripts.pep.faa
+[Tue 14 Jun 2022 01:43:58 PM EDT]      CMD: makeblastdb -dbtype nucl -in Montastraea_cavernosa_REEFv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 06/14/2022 13:43:58
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Montastraea_cavernosa_REEFv1/00_databases/blast/Montastraea_cavernosa_REEFv1.transcripts.cds.fna
+New DB title:  Montastraea_cavernosa_REEFv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 39938 sequences in 0.710474 seconds.
+
+
+[Tue 14 Jun 2022 01:43:59 PM EDT]      CMD: makeblastdb -dbtype prot -in Montastraea_cavernosa_REEFv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 06/14/2022 13:43:59
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Montastraea_cavernosa_REEFv1/00_databases/blast/Montastraea_cavernosa_REEFv1.transcripts.pep.faa
+New DB title:  Montastraea_cavernosa_REEFv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 39938 sequences in 0.86576 seconds.
+
+
+
+=====================================================================
+Started: at Tue 14 Jun 2022 01:43:57 PM EDT
+Finished: at Tue 14 Jun 2022 01:44:00 PM EDT
+ExitStatus: 0
+=====================================================================

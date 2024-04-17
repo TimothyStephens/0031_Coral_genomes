@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 02:27:50 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Myxobolus_cerebralis_NANAv1/01_stats
+=====================================================================
+
+[Tue 06 Jun 2023 02:27:52 PM EDT]      CMD: md5sum Myxobolus_cerebralis_NANAv1.transcripts.cds.fna | tee Myxobolus_cerebralis_NANAv1.CDS_stats.job_md5sum_list.txt
+c7d31fd621e72fef58d8df06e3faaaf6  Myxobolus_cerebralis_NANAv1.transcripts.cds.fna
+[Tue 06 Jun 2023 02:27:52 PM EDT]      CMD: ./CDS_stats Myxobolus_cerebralis_NANAv1.transcripts.cds.fna > Myxobolus_cerebralis_NANAv1.GeneStats.tsv
+
+=====================================================================
+Started: at Tue 06 Jun 2023 02:27:50 PM EDT
+Finished: at Tue 06 Jun 2023 02:27:52 PM EDT
+ExitStatus: 0
+=====================================================================

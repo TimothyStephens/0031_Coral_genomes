@@ -1,0 +1,2 @@
+dc347c618ac8fbe8262e36769b04c7e4  Montastraea_faveolata_REEFv1.transcripts.pep.faa
+dc347c618ac8fbe8262e36769b04c7e4  ../00_databases/Montastraea_faveolata_REEFv1.transcripts.pep.faa

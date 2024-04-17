@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 08:09:53 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Salpingoeca_rosetta_HIUSv1/01_stats
+=====================================================================
+
+[Tue 25 Oct 2022 08:09:55 PM EDT]      CMD: md5sum Salpingoeca_rosetta_HIUSv1.assembly.fasta Salpingoeca_rosetta_HIUSv1.genes.gff3 | tee Salpingoeca_rosetta_HIUSv1.genome_stats.job_md5sum_list.txt
+351b5027f8a9ce268c7e7b89cfa0490e  Salpingoeca_rosetta_HIUSv1.assembly.fasta
+dcdbf0fdade9afb64ecf7337e984c7fc  Salpingoeca_rosetta_HIUSv1.genes.gff3
+[Tue 25 Oct 2022 08:09:55 PM EDT]      CMD: ./genome_stats Salpingoeca_rosetta_HIUSv1.assembly.fasta Salpingoeca_rosetta_HIUSv1.genes.gff3 > Salpingoeca_rosetta_HIUSv1.GeneStats.tsv
+index file Salpingoeca_rosetta_HIUSv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Tue 25 Oct 2022 08:09:53 PM EDT
+Finished: at Tue 25 Oct 2022 08:10:05 PM EDT
+ExitStatus: 0
+=====================================================================

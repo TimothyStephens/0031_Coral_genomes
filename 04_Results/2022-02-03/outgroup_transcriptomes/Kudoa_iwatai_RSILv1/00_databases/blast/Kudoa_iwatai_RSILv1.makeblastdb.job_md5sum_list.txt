@@ -1,0 +1,2 @@
+d30c7b3f433d88ad369f44d3383518b1  Kudoa_iwatai_RSILv1.transcripts.cds.fna
+4255f175120d2a0aec9fcd0766a638a1  Kudoa_iwatai_RSILv1.transcripts.pep.faa

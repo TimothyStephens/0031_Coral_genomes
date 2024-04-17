@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 02:20:00 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_transcriptomes/Ctenactis_echinata_NAJPv1/00_databases/blast
+=====================================================================
+
+[Tue 06 Jun 2023 02:20:01 PM EDT]      CMD: md5sum Ctenactis_echinata_NAJPv1.transcripts.cds.fna Ctenactis_echinata_NAJPv1.transcripts.pep.faa | tee Ctenactis_echinata_NAJPv1.makeblastdb.job_md5sum_list.txt
+c7d5b62af3a23884124674f87b97bc1c  Ctenactis_echinata_NAJPv1.transcripts.cds.fna
+3a86524eaba334d2ba2bdeebc34d5259  Ctenactis_echinata_NAJPv1.transcripts.pep.faa
+[Tue 06 Jun 2023 02:20:01 PM EDT]      CMD: makeblastdb -dbtype nucl -in Ctenactis_echinata_NAJPv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 06/06/2023 14:20:01
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_transcriptomes/Ctenactis_echinata_NAJPv1/00_databases/blast/Ctenactis_echinata_NAJPv1.transcripts.cds.fna
+New DB title:  Ctenactis_echinata_NAJPv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 17065 sequences in 0.321807 seconds.
+
+
+[Tue 06 Jun 2023 02:20:02 PM EDT]      CMD: makeblastdb -dbtype prot -in Ctenactis_echinata_NAJPv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 06/06/2023 14:20:02
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_transcriptomes/Ctenactis_echinata_NAJPv1/00_databases/blast/Ctenactis_echinata_NAJPv1.transcripts.pep.faa
+New DB title:  Ctenactis_echinata_NAJPv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 17065 sequences in 0.258932 seconds.
+
+
+
+=====================================================================
+Started: at Tue 06 Jun 2023 02:20:00 PM EDT
+Finished: at Tue 06 Jun 2023 02:20:02 PM EDT
+ExitStatus: 0
+=====================================================================

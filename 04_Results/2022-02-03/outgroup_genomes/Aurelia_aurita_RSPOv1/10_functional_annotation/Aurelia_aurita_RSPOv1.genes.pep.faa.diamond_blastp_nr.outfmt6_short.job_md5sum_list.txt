@@ -1,0 +1,2 @@
+28187bf0b95b2609e4bcc0bedc81095b  Aurelia_aurita_RSPOv1.genes.pep.faa
+28187bf0b95b2609e4bcc0bedc81095b  ../00_databases/Aurelia_aurita_RSPOv1.genes.pep.faa

@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 14 Jun 2022 01:43:52 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Fungia_scutaria_REEFv1/00_databases/blast
+=====================================================================
+
+[Tue 14 Jun 2022 01:43:53 PM EDT]      CMD: md5sum Fungia_scutaria_REEFv1.transcripts.cds.fna Fungia_scutaria_REEFv1.transcripts.pep.faa | tee Fungia_scutaria_REEFv1.makeblastdb.job_md5sum_list.txt
+dae0041785a89b2379e9d50800d4a9d1  Fungia_scutaria_REEFv1.transcripts.cds.fna
+6429c80a7cfd54c460ec5338790990f6  Fungia_scutaria_REEFv1.transcripts.pep.faa
+[Tue 14 Jun 2022 01:43:53 PM EDT]      CMD: makeblastdb -dbtype nucl -in Fungia_scutaria_REEFv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 06/14/2022 13:43:53
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Fungia_scutaria_REEFv1/00_databases/blast/Fungia_scutaria_REEFv1.transcripts.cds.fna
+New DB title:  Fungia_scutaria_REEFv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 28265 sequences in 0.674183 seconds.
+
+
+[Tue 14 Jun 2022 01:43:54 PM EDT]      CMD: makeblastdb -dbtype prot -in Fungia_scutaria_REEFv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 06/14/2022 13:43:54
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Fungia_scutaria_REEFv1/00_databases/blast/Fungia_scutaria_REEFv1.transcripts.pep.faa
+New DB title:  Fungia_scutaria_REEFv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 28265 sequences in 0.608163 seconds.
+
+
+
+=====================================================================
+Started: at Tue 14 Jun 2022 01:43:52 PM EDT
+Finished: at Tue 14 Jun 2022 01:43:55 PM EDT
+ExitStatus: 0
+=====================================================================

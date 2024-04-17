@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 02:27:35 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_transcriptomes/Dipsastraea_lizardensis_NAJPv1/01_stats
+=====================================================================
+
+[Tue 06 Jun 2023 02:27:36 PM EDT]      CMD: md5sum Dipsastraea_lizardensis_NAJPv1.transcripts.cds.fna | tee Dipsastraea_lizardensis_NAJPv1.CDS_stats.job_md5sum_list.txt
+45a7c34aae2d1b1793bb88d7ab45b3ec  Dipsastraea_lizardensis_NAJPv1.transcripts.cds.fna
+[Tue 06 Jun 2023 02:27:37 PM EDT]      CMD: ./CDS_stats Dipsastraea_lizardensis_NAJPv1.transcripts.cds.fna > Dipsastraea_lizardensis_NAJPv1.GeneStats.tsv
+
+=====================================================================
+Started: at Tue 06 Jun 2023 02:27:35 PM EDT
+Finished: at Tue 06 Jun 2023 02:27:37 PM EDT
+ExitStatus: 0
+=====================================================================

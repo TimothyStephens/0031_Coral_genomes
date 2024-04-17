@@ -1,0 +1,2 @@
+63d10e98f355cb0f84628eb8f252a0e9  Pocillopora_cf_effusa_NAPFv3.assembly.fasta
+a064603973ed3ccb93e068d3a22cde03  Pocillopora_cf_effusa_NAPFv3.genes.gff3

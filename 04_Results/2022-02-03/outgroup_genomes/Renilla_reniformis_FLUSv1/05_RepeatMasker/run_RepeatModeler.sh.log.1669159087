@@ -1,0 +1,55 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue Nov 22 18:18:07 EST 2022
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_reniformis_FLUSv1/05_RepeatMasker
+=====================================================================
+
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+[Tue Nov 22 18:18:10 EST 2022]      CMD: sed -e 's/Renilla_reniformis_FLUSv1___//' Renilla_reniformis_FLUSv1.assembly.fasta > genome.fa
+[Tue Nov 22 18:18:10 EST 2022]      CMD: cat Renilla_reniformis_FLUSv1.assembly.fasta.RMDB-families.fa rmlib.fa > custom_repeat_library.fa
+[Tue Nov 22 18:18:11 EST 2022]      CMD: RepeatMasker -no_is -a -x -gff -pa 5 -lib custom_repeat_library.fa genome.fa 1> RepeatMasker.log 2>&1
+[Wed Nov 23 02:15:42 EST 2022]      CMD: /scratch/ts942/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/calcDivergenceFromAlign.pl -s genome.fa.divsum genome.fa.align
+....................................................................................................................................................................................................................................................................................................................................................................................................................................Renilla_reniformis_FLUSv1	
+[Wed Nov 23 02:16:27 EST 2022]      CMD: /scratch/ts942/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/createRepeatLandscape.pl -g  -div genome.fa.divsum > genome.fa.RepeatLandscape.html
+[Wed Nov 23 02:16:27 EST 2022]      CMD: bedtools maskfasta -fi genome.fa -fo genome.fa.softmasked -bed genome.fa.out.gff -soft
+[Wed Nov 23 02:16:29 EST 2022]      CMD: sed -e "s/^>/>Renilla_reniformis_FLUSv1___/" genome.fa.masked | reformat.sh in=stdin.fa out=stdout.fa fastawrap=0 > Renilla_reniformis_FLUSv1.assembly.fasta.masked
+java -ea -Xms300m -cp /home/ts942/PROGRAMS/bbmap/current/ jgi.ReformatReads in=stdin.fa out=stdout.fa fastawrap=0
+Executing jgi.ReformatReads [in=stdin.fa, out=stdout.fa, fastawrap=0]
+
+Input is being processed as unpaired
+Input:                  	171053 reads          	131554742 bases
+Output:                 	171053 reads (100.00%) 	131554742 bases (100.00%)
+
+Time:                         	2.296 seconds.
+Reads Processed:        171k 	74.51k reads/sec
+Bases Processed:        131m 	57.30m bases/sec
+[Wed Nov 23 02:16:33 EST 2022]      CMD: sed -e "s/^>/>Renilla_reniformis_FLUSv1___/" genome.fa.softmasked > Renilla_reniformis_FLUSv1.assembly.fasta.softmasked
+[Wed Nov 23 02:16:34 EST 2022]      CMD: awk -F'\t' -vPREFIX="Renilla_reniformis_FLUSv1" '{ if($1!~"^#") {print PREFIX"___"$0} else {print $0} }' genome.fa.out.gff > Renilla_reniformis_FLUSv1.assembly.fasta.out.gff
+[Wed Nov 23 02:16:34 EST 2022]      CMD: cp genome.fa.divsum Renilla_reniformis_FLUSv1.assembly.fasta.divsum
+[Wed Nov 23 02:16:34 EST 2022]      CMD: cp genome.fa.tbl Renilla_reniformis_FLUSv1.assembly.fasta.tbl
+[Wed Nov 23 02:16:34 EST 2022]      CMD: tail -n 72 Renilla_reniformis_FLUSv1.assembly.fasta.divsum | sed -e 's/ $//' > Renilla_reniformis_FLUSv1.assembly.fasta.divsum.Kimura_distance
+[Wed Nov 23 02:16:34 EST 2022]      CMD: gzip genome.fa.align genome.fa.divsum genome.fa.masked genome.fa.out genome.fa.out.gff genome.fa.softmasked genome.fa.tbl
+
+=====================================================================
+Started: at Tue Nov 22 18:18:07 EST 2022
+Finished: at Wed Nov 23 02:17:42 EST 2022
+ExitStatus: 0
+=====================================================================

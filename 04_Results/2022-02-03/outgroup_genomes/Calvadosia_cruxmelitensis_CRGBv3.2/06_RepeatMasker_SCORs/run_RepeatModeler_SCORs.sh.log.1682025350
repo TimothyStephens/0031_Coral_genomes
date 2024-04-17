@@ -1,0 +1,33 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 20 Apr 2023 05:15:50 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Calvadosia_cruxmelitensis_CRGBv3.2/06_RepeatMasker_SCORs
+=====================================================================
+
+[Thu 20 Apr 2023 05:15:52 PM EDT]      CMD: sed -e 's/Calvadosia_cruxmelitensis_CRGBv3.2___//' Calvadosia_cruxmelitensis_CRGBv3.2.assembly.fasta > genome.fa
+[Thu 20 Apr 2023 05:15:55 PM EDT]      CMD: RepeatMasker -no_is -nolow -a -x -gff -pa 18 -lib SCOR_consensus_sequences.fa genome.fa 1> RepeatMasker.log 2>&1
+[Thu 20 Apr 2023 05:18:48 PM EDT]      CMD: /home/timothy/programs/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/calcDivergenceFromAlign.pl -s genome.fa.divsum genome.fa.align
+.[Thu 20 Apr 2023 05:18:48 PM EDT]      CMD: bedtools maskfasta -fi genome.fa -fo genome.fa.softmasked -bed genome.fa.out.gff -soft
+[Thu 20 Apr 2023 05:18:49 PM EDT]      CMD: sed -e 's/^>/>Calvadosia_cruxmelitensis_CRGBv3.2___/' genome.fa.softmasked > Calvadosia_cruxmelitensis_CRGBv3.2.assembly.fasta.repmaskSCORs.softmasked
+[Thu 20 Apr 2023 05:18:49 PM EDT]      CMD: sed -e 's/^>/>Calvadosia_cruxmelitensis_CRGBv3.2___/' genome.fa.masked | reformat.sh in=stdin.fa out=stdout.fa fastawrap=0 > Calvadosia_cruxmelitensis_CRGBv3.2.assembly.fasta.repmaskSCORs.masked
+java -ea -Xms300m -cp /home/timothy/programs/bbmap/current/ jgi.ReformatReads in=stdin.fa out=stdout.fa fastawrap=0
+Executing jgi.ReformatReads [in=stdin.fa, out=stdout.fa, fastawrap=0]
+
+Input is being processed as unpaired
+Input:                  	50999 reads          	209392379 bases
+Output:                 	50999 reads (100.00%) 	209392379 bases (100.00%)
+
+Time:                         	1.519 seconds.
+Reads Processed:       50999 	33.56k reads/sec
+Bases Processed:        209m 	137.81m bases/sec
+[Thu 20 Apr 2023 05:18:51 PM EDT]      CMD: awk -F'\t' -vPREFIX=Calvadosia_cruxmelitensis_CRGBv3.2 '{ if($1!~"^#") {print PREFIX"___"$0} else {print $0} }' genome.fa.out.gff > Calvadosia_cruxmelitensis_CRGBv3.2.assembly.fasta.repmaskSCORs.out.gff
+[Thu 20 Apr 2023 05:18:51 PM EDT]      CMD: cp genome.fa.divsum Calvadosia_cruxmelitensis_CRGBv3.2.assembly.fasta.repmaskSCORs.divsum
+[Thu 20 Apr 2023 05:18:51 PM EDT]      CMD: cp genome.fa.tbl Calvadosia_cruxmelitensis_CRGBv3.2.assembly.fasta.repmaskSCORs.tbl
+[Thu 20 Apr 2023 05:18:51 PM EDT]      CMD: tail -n 72 Calvadosia_cruxmelitensis_CRGBv3.2.assembly.fasta.repmaskSCORs.divsum | sed -e 's/ $//' > Calvadosia_cruxmelitensis_CRGBv3.2.assembly.fasta.repmaskSCORs.divsum.Kimura_distance
+[Thu 20 Apr 2023 05:18:51 PM EDT]      CMD: gzip genome.fa.align genome.fa.divsum genome.fa.masked genome.fa.out genome.fa.out.gff genome.fa.softmasked genome.fa.tbl
+
+=====================================================================
+Started: at Thu 20 Apr 2023 05:15:50 PM EDT
+Finished: at Thu 20 Apr 2023 05:20:26 PM EDT
+ExitStatus: 0
+=====================================================================

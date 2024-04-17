@@ -1,0 +1,33 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 09 Jun 2023 05:44:33 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Porites_lobata_NAPFv3/06_RepeatMasker_SCORs
+=====================================================================
+
+[Fri 09 Jun 2023 05:44:34 PM EDT]      CMD: sed -e 's/Porites_lobata_NAPFv3___//' Porites_lobata_NAPFv3.assembly.fasta > genome.fa
+[Fri 09 Jun 2023 05:44:36 PM EDT]      CMD: RepeatMasker -no_is -nolow -a -x -gff -pa 18 -lib SCOR_consensus_sequences.fa genome.fa 1> RepeatMasker.log 2>&1
+[Fri 09 Jun 2023 05:51:16 PM EDT]      CMD: /home/timothy/programs/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/calcDivergenceFromAlign.pl -s genome.fa.divsum genome.fa.align
+...............................................................................[Fri 09 Jun 2023 05:51:22 PM EDT]      CMD: bedtools maskfasta -fi genome.fa -fo genome.fa.softmasked -bed genome.fa.out.gff -soft
+[Fri 09 Jun 2023 05:51:23 PM EDT]      CMD: sed -e 's/^>/>Porites_lobata_NAPFv3___/' genome.fa.softmasked > Porites_lobata_NAPFv3.assembly.fasta.repmaskSCORs.softmasked
+[Fri 09 Jun 2023 05:51:24 PM EDT]      CMD: sed -e 's/^>/>Porites_lobata_NAPFv3___/' genome.fa.masked | reformat.sh in=stdin.fa out=stdout.fa fastawrap=0 > Porites_lobata_NAPFv3.assembly.fasta.repmaskSCORs.masked
+java -ea -Xms300m -cp /home/timothy/programs/bbmap/current/ jgi.ReformatReads in=stdin.fa out=stdout.fa fastawrap=0
+Executing jgi.ReformatReads [in=stdin.fa, out=stdout.fa, fastawrap=0]
+
+Input is being processed as unpaired
+Input:                  	1098 reads          	646152978 bases
+Output:                 	1098 reads (100.00%) 	646152978 bases (100.00%)
+
+Time:                         	7.209 seconds.
+Reads Processed:        1098 	0.15k reads/sec
+Bases Processed:        646m 	89.63m bases/sec
+[Fri 09 Jun 2023 05:51:31 PM EDT]      CMD: awk -F'\t' -vPREFIX=Porites_lobata_NAPFv3 '{ if($1!~"^#") {print PREFIX"___"$0} else {print $0} }' genome.fa.out.gff > Porites_lobata_NAPFv3.assembly.fasta.repmaskSCORs.out.gff
+[Fri 09 Jun 2023 05:51:31 PM EDT]      CMD: cp genome.fa.divsum Porites_lobata_NAPFv3.assembly.fasta.repmaskSCORs.divsum
+[Fri 09 Jun 2023 05:51:31 PM EDT]      CMD: cp genome.fa.tbl Porites_lobata_NAPFv3.assembly.fasta.repmaskSCORs.tbl
+[Fri 09 Jun 2023 05:51:31 PM EDT]      CMD: tail -n 72 Porites_lobata_NAPFv3.assembly.fasta.repmaskSCORs.divsum | sed -e 's/ $//' > Porites_lobata_NAPFv3.assembly.fasta.repmaskSCORs.divsum.Kimura_distance
+[Fri 09 Jun 2023 05:51:31 PM EDT]      CMD: gzip genome.fa.align genome.fa.divsum genome.fa.masked genome.fa.out genome.fa.out.gff genome.fa.softmasked genome.fa.tbl
+
+=====================================================================
+Started: at Fri 09 Jun 2023 05:44:33 PM EDT
+Finished: at Fri 09 Jun 2023 05:53:57 PM EDT
+ExitStatus: 0
+=====================================================================

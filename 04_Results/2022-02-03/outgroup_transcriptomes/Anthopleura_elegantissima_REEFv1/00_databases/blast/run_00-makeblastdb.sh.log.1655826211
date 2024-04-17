@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 21 Jun 2022 11:43:31 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Anthopleura_elegantissima_REEFv1/00_databases/blast
+=====================================================================
+
+[Tue 21 Jun 2022 11:43:32 AM EDT]      CMD: md5sum Anthopleura_elegantissima_REEFv1.transcripts.cds.fna Anthopleura_elegantissima_REEFv1.transcripts.pep.faa | tee Anthopleura_elegantissima_REEFv1.makeblastdb.job_md5sum_list.txt
+ecbc336d222643d1f787ecaca72e6852  Anthopleura_elegantissima_REEFv1.transcripts.cds.fna
+a18f7629938391213c2d65b371bcf13c  Anthopleura_elegantissima_REEFv1.transcripts.pep.faa
+[Tue 21 Jun 2022 11:43:32 AM EDT]      CMD: makeblastdb -dbtype nucl -in Anthopleura_elegantissima_REEFv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 06/21/2022 11:43:32
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Anthopleura_elegantissima_REEFv1/00_databases/blast/Anthopleura_elegantissima_REEFv1.transcripts.cds.fna
+New DB title:  Anthopleura_elegantissima_REEFv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 28527 sequences in 1.19495 seconds.
+
+
+[Tue 21 Jun 2022 11:43:34 AM EDT]      CMD: makeblastdb -dbtype prot -in Anthopleura_elegantissima_REEFv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 06/21/2022 11:43:34
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Anthopleura_elegantissima_REEFv1/00_databases/blast/Anthopleura_elegantissima_REEFv1.transcripts.pep.faa
+New DB title:  Anthopleura_elegantissima_REEFv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 28527 sequences in 1.24403 seconds.
+
+
+
+=====================================================================
+Started: at Tue 21 Jun 2022 11:43:31 AM EDT
+Finished: at Tue 21 Jun 2022 11:43:35 AM EDT
+ExitStatus: 0
+=====================================================================

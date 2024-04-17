@@ -1,0 +1,79 @@
+[2022-08-31 18:09:54.391] [puff::index::jointLog] [info] Running fixFasta
+[2022-08-31 18:09:56.507] [puff::index::jointLog] [warning] Entry with header [Montipora_capitata_KBHIv3___RNAseq.g24024.t1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2022-08-31 18:09:56.955] [puff::index::jointLog] [warning] Entry with header [Montipora_capitata_KBHIv3___TS.g33481.t1b], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2022-08-31 18:09:58.837] [puff::index::jointLog] [warning] Removed 972 transcripts that were sequence duplicates of indexed transcripts.
+[2022-08-31 18:09:58.837] [puff::index::jointLog] [warning] If you wish to retain duplicate transcripts, please use the `--keepDuplicates` flag
+[2022-08-31 18:09:58.838] [puff::index::jointLog] [info] Replaced 800 non-ATCG nucleotides
+[2022-08-31 18:09:58.838] [puff::index::jointLog] [info] Clipped poly-A tails from 0 transcripts
+[2022-08-31 18:09:59.208] [puff::index::jointLog] [info] Filter size not provided; estimating from number of distinct k-mers
+[2022-08-31 18:10:00.993] [puff::index::jointLog] [info] ntHll estimated 46631840 distinct k-mers, setting filter size to 2^30
+[2022-08-31 18:10:29.157] [puff::index::jointLog] [info] Starting the Pufferfish indexing by reading the GFA binary file.
+[2022-08-31 18:10:29.157] [puff::index::jointLog] [info] Setting the index/BinaryGfa directory Montipora_capitata_KBHIv3.genes.cds.fna.salmon.idx
+[2022-08-31 18:10:29.405] [puff::index::jointLog] [info] Done wrapping the rank vector with a rank9sel structure.
+[2022-08-31 18:10:29.417] [puff::index::jointLog] [info] contig count for validation: 554,782
+[2022-08-31 18:10:29.637] [puff::index::jointLog] [info] Total # of Contigs : 554,782
+[2022-08-31 18:10:29.637] [puff::index::jointLog] [info] Total # of numerical Contigs : 554,782
+[2022-08-31 18:10:29.666] [puff::index::jointLog] [info] Total # of contig vec entries: 1,786,548
+[2022-08-31 18:10:29.666] [puff::index::jointLog] [info] bits per offset entry 21
+[2022-08-31 18:10:29.748] [puff::index::jointLog] [info] Done constructing the contig vector. 554783
+[2022-08-31 18:10:29.910] [puff::index::jointLog] [info] # segments = 554,782
+[2022-08-31 18:10:29.910] [puff::index::jointLog] [info] total length = 63,453,526
+[2022-08-31 18:10:29.942] [puff::index::jointLog] [info] Reading the reference files ...
+[2022-08-31 18:10:30.309] [puff::index::jointLog] [info] positional integer width = 26
+[2022-08-31 18:10:30.309] [puff::index::jointLog] [info] seqSize = 63,453,526
+[2022-08-31 18:10:30.309] [puff::index::jointLog] [info] rankSize = 63,453,526
+[2022-08-31 18:10:30.309] [puff::index::jointLog] [info] edgeVecSize = 0
+[2022-08-31 18:10:30.309] [puff::index::jointLog] [info] num keys = 46,810,066
+[2022-08-31 18:10:32.052] [puff::index::jointLog] [info] mphf size = 29.2391 MB
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk size = 1,321,949
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 0 = [0, 1,321,949)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 1 = [1,321,949, 2,643,903)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 2 = [2,643,903, 3,965,852)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 3 = [3,965,852, 5,287,801)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 4 = [5,287,801, 6,609,775)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 5 = [6,609,775, 7,931,724)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 6 = [7,931,724, 9,253,703)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 7 = [9,253,703, 10,575,653)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 8 = [10,575,653, 11,897,602)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 9 = [11,897,602, 13,219,579)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 10 = [13,219,579, 14,541,528)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 11 = [14,541,528, 15,863,477)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 12 = [15,863,477, 17,185,426)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 13 = [17,185,426, 18,507,385)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 14 = [18,507,385, 19,829,362)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 15 = [19,829,362, 21,151,311)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 16 = [21,151,311, 22,473,288)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 17 = [22,473,288, 23,795,237)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 18 = [23,795,237, 25,117,186)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 19 = [25,117,186, 26,439,136)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 20 = [26,439,136, 27,761,085)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 21 = [27,761,085, 29,083,038)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 22 = [29,083,038, 30,405,016)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 23 = [30,405,016, 31,726,965)
+[2022-08-31 18:10:32.187] [puff::index::jointLog] [info] chunk 24 = [31,726,965, 33,048,924)
+[2022-08-31 18:10:32.188] [puff::index::jointLog] [info] chunk 25 = [33,048,924, 34,370,873)
+[2022-08-31 18:10:32.188] [puff::index::jointLog] [info] chunk 26 = [34,370,873, 35,692,822)
+[2022-08-31 18:10:32.188] [puff::index::jointLog] [info] chunk 27 = [35,692,822, 37,014,771)
+[2022-08-31 18:10:32.188] [puff::index::jointLog] [info] chunk 28 = [37,014,771, 38,336,720)
+[2022-08-31 18:10:32.188] [puff::index::jointLog] [info] chunk 29 = [38,336,720, 39,658,669)
+[2022-08-31 18:10:32.188] [puff::index::jointLog] [info] chunk 30 = [39,658,669, 40,980,638)
+[2022-08-31 18:10:32.188] [puff::index::jointLog] [info] chunk 31 = [40,980,638, 42,302,587)
+[2022-08-31 18:10:32.188] [puff::index::jointLog] [info] chunk 32 = [42,302,587, 43,624,536)
+[2022-08-31 18:10:32.188] [puff::index::jointLog] [info] chunk 33 = [43,624,536, 44,946,485)
+[2022-08-31 18:10:32.188] [puff::index::jointLog] [info] chunk 34 = [44,946,485, 46,268,441)
+[2022-08-31 18:10:32.188] [puff::index::jointLog] [info] chunk 35 = [46,268,441, 47,590,390)
+[2022-08-31 18:10:32.188] [puff::index::jointLog] [info] chunk 36 = [47,590,390, 48,912,339)
+[2022-08-31 18:10:32.188] [puff::index::jointLog] [info] chunk 37 = [48,912,339, 50,234,288)
+[2022-08-31 18:10:32.188] [puff::index::jointLog] [info] chunk 38 = [50,234,288, 51,556,256)
+[2022-08-31 18:10:32.188] [puff::index::jointLog] [info] chunk 39 = [51,556,256, 52,878,205)
+[2022-08-31 18:10:32.188] [puff::index::jointLog] [info] chunk 40 = [52,878,205, 54,200,154)
+[2022-08-31 18:10:32.188] [puff::index::jointLog] [info] chunk 41 = [54,200,154, 55,522,103)
+[2022-08-31 18:10:32.188] [puff::index::jointLog] [info] chunk 42 = [55,522,103, 56,844,052)
+[2022-08-31 18:10:32.188] [puff::index::jointLog] [info] chunk 43 = [56,844,052, 58,166,001)
+[2022-08-31 18:10:32.188] [puff::index::jointLog] [info] chunk 44 = [58,166,001, 59,487,950)
+[2022-08-31 18:10:32.188] [puff::index::jointLog] [info] chunk 45 = [59,487,950, 60,809,899)
+[2022-08-31 18:10:32.188] [puff::index::jointLog] [info] chunk 46 = [60,809,899, 62,131,848)
+[2022-08-31 18:10:32.188] [puff::index::jointLog] [info] chunk 47 = [62,131,848, 63,453,496)
+[2022-08-31 18:10:32.731] [puff::index::jointLog] [info] finished populating pos vector
+[2022-08-31 18:10:32.731] [puff::index::jointLog] [info] writing index components
+[2022-08-31 18:10:32.924] [puff::index::jointLog] [info] finished writing dense pufferfish index

@@ -1,0 +1,2 @@
+473d2385d9cb4d783e017f2c1e4d7648  Millepora_complanata_PRUSv1.transcripts.pep.faa
+473d2385d9cb4d783e017f2c1e4d7648  ../00_databases/Millepora_complanata_PRUSv1.transcripts.pep.faa

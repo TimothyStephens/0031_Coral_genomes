@@ -1,0 +1,2 @@
+4e9024c60590c0708f60562a8ac9a783  Polypodium_hydriforme_OKUSv1.transcripts.pep.faa
+4e9024c60590c0708f60562a8ac9a783  ../00_databases/Polypodium_hydriforme_OKUSv1.transcripts.pep.faa

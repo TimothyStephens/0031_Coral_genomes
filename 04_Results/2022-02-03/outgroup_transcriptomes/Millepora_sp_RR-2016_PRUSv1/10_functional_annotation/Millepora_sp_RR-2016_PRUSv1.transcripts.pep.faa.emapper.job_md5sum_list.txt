@@ -1,0 +1,2 @@
+10236d23e47aae63f5a2d3fb62864f42  Millepora_sp_RR-2016_PRUSv1.transcripts.pep.faa
+10236d23e47aae63f5a2d3fb62864f42  ../00_databases/Millepora_sp_RR-2016_PRUSv1.transcripts.pep.faa

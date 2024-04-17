@@ -1,0 +1,144 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 08 Jun 2023 08:27:16 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Palythoa_variabilis_PCBRv1/10_functional_annotation
+=====================================================================
+
+[Thu 08 Jun 2023 08:27:21 AM EDT]      CMD: md5sum Palythoa_variabilis_PCBRv1.transcripts.pep.faa ../00_databases/Palythoa_variabilis_PCBRv1.transcripts.pep.faa | tee Palythoa_variabilis_PCBRv1.transcripts.pep.faa.emapper.job_md5sum_list.txt
+399fc347d1e5572b21b85ad47ea303de  Palythoa_variabilis_PCBRv1.transcripts.pep.faa
+399fc347d1e5572b21b85ad47ea303de  ../00_databases/Palythoa_variabilis_PCBRv1.transcripts.pep.faa
+[Thu 08 Jun 2023 08:27:21 AM EDT]      CMD: emapper.py -i Palythoa_variabilis_PCBRv1.transcripts.pep.faa --output Palythoa_variabilis_PCBRv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 2.384185791015625e-06 0.00 q/s (% mem usage: 55.90, % mem avail: 44.06)
+[1;34mTime to load the DB into memory: 76.5070526599884[0m
+#  emapper-2.1.6
+# emapper.py  -i Palythoa_variabilis_PCBRv1.transcripts.pep.faa --output Palythoa_variabilis_PCBRv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Palythoa_variabilis_PCBRv1/10_functional_annotation/Palythoa_variabilis_PCBRv1.transcripts.pep.faa --threads 96 -o /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Palythoa_variabilis_PCBRv1/10_functional_annotation/Palythoa_variabilis_PCBRv1.transcripts.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+CREATED ESL_REFORMAT DB. USING HMMSEARCH
+Namespace(Z=40000000, call_info='## Thu Jun  8 08:49:02 2023\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Palythoa_variabilis_PCBRv1.transcripts.pep.faa --output Palythoa_variabilis_PCBRv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem\n##', clean_overlaps='hmmsearch_clans', cpu=96, cpus_per_worker=96, cut_ga=True, db='/scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Palythoa_variabilis_PCBRv1/10_functional_annotation/tmpwn0yr87l', dbtype='seqdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='hmm', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Palythoa_variabilis_PCBRv1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+500 1491.8926208019257 0.34 q/s (% mem usage: 67.20, % mem avail: 32.81)
+1000 1495.469097852707 0.67 q/s (% mem usage: 67.20, % mem avail: 32.84)
+1500 1498.1477663516998 1.00 q/s (% mem usage: 67.20, % mem avail: 32.82)
+2000 1502.3753559589386 1.33 q/s (% mem usage: 67.20, % mem avail: 32.79)
+2500 1505.6061766147614 1.66 q/s (% mem usage: 67.30, % mem avail: 32.73)
+3000 1508.5742375850677 1.99 q/s (% mem usage: 67.30, % mem avail: 32.74)
+3500 1512.9405298233032 2.31 q/s (% mem usage: 67.30, % mem avail: 32.72)
+4000 1516.9361033439636 2.64 q/s (% mem usage: 67.30, % mem avail: 32.72)
+4500 1520.2126326560974 2.96 q/s (% mem usage: 67.30, % mem avail: 32.70)
+5000 1523.7517805099487 3.28 q/s (% mem usage: 67.30, % mem avail: 32.74)
+5500 1527.2976670265198 3.60 q/s (% mem usage: 67.30, % mem avail: 32.74)
+6000 1531.2547206878662 3.92 q/s (% mem usage: 67.30, % mem avail: 32.68)
+6500 1536.5340480804443 4.23 q/s (% mem usage: 67.30, % mem avail: 32.74)
+7000 1540.0939915180206 4.55 q/s (% mem usage: 67.30, % mem avail: 32.73)
+7500 1543.629534482956 4.86 q/s (% mem usage: 67.30, % mem avail: 32.72)
+8000 1546.7461185455322 5.17 q/s (% mem usage: 67.30, % mem avail: 32.68)
+8500 1551.0944337844849 5.48 q/s (% mem usage: 67.30, % mem avail: 32.71)
+9000 1555.41086935997 5.79 q/s (% mem usage: 67.30, % mem avail: 32.74)
+9500 1559.3956789970398 6.09 q/s (% mem usage: 67.20, % mem avail: 32.75)
+10000 1572.9848790168762 6.36 q/s (% mem usage: 67.30, % mem avail: 32.75)
+10500 1579.9450824260712 6.65 q/s (% mem usage: 67.30, % mem avail: 32.73)
+11000 1583.7940573692322 6.95 q/s (% mem usage: 67.30, % mem avail: 32.71)
+11500 1587.484462738037 7.24 q/s (% mem usage: 67.30, % mem avail: 32.74)
+12000 1590.986557006836 7.54 q/s (% mem usage: 67.30, % mem avail: 32.74)
+12500 1594.670653104782 7.84 q/s (% mem usage: 67.30, % mem avail: 32.72)
+13000 1597.5971057415009 8.14 q/s (% mem usage: 67.30, % mem avail: 32.73)
+13500 1601.263994693756 8.43 q/s (% mem usage: 67.30, % mem avail: 32.66)
+14000 1604.646672964096 8.72 q/s (% mem usage: 67.30, % mem avail: 32.69)
+14500 1607.501000404358 9.02 q/s (% mem usage: 67.30, % mem avail: 32.73)
+15000 1611.2523515224457 9.31 q/s (% mem usage: 67.40, % mem avail: 32.65)
+15500 1614.5117228031158 9.60 q/s (% mem usage: 67.40, % mem avail: 32.64)
+16000 1617.6006462574005 9.89 q/s (% mem usage: 67.30, % mem avail: 32.65)
+16500 1620.5189652442932 10.18 q/s (% mem usage: 67.40, % mem avail: 32.63)
+17000 1624.2200071811676 10.47 q/s (% mem usage: 67.40, % mem avail: 32.65)
+17500 1627.6217095851898 10.75 q/s (% mem usage: 67.40, % mem avail: 32.64)
+18000 1630.5419929027557 11.04 q/s (% mem usage: 67.40, % mem avail: 32.61)
+18500 1634.6735484600067 11.32 q/s (% mem usage: 67.40, % mem avail: 32.63)
+19000 1637.9808135032654 11.60 q/s (% mem usage: 67.40, % mem avail: 32.62)
+19500 1641.7595493793488 11.88 q/s (% mem usage: 67.40, % mem avail: 32.58)
+20000 1645.3368906974792 12.16 q/s (% mem usage: 67.40, % mem avail: 32.58)
+20500 1649.3681254386902 12.43 q/s (% mem usage: 67.40, % mem avail: 32.57)
+21000 1652.8828265666962 12.71 q/s (% mem usage: 67.50, % mem avail: 32.54)
+21500 1656.5132775306702 12.98 q/s (% mem usage: 67.40, % mem avail: 32.58)
+22000 1660.0745630264282 13.25 q/s (% mem usage: 67.50, % mem avail: 32.53)
+22500 1664.6879045963287 13.52 q/s (% mem usage: 67.40, % mem avail: 32.58)
+23000 1668.7742834091187 13.78 q/s (% mem usage: 67.20, % mem avail: 32.84)
+23500 1673.3825693130493 14.04 q/s (% mem usage: 67.20, % mem avail: 32.79)
+24000 1677.7212672233582 14.31 q/s (% mem usage: 67.20, % mem avail: 32.81)
+24500 1682.541561126709 14.56 q/s (% mem usage: 67.20, % mem avail: 32.82)
+25000 1687.668023109436 14.81 q/s (% mem usage: 67.20, % mem avail: 32.80)
+25500 1692.1896476745605 15.07 q/s (% mem usage: 67.20, % mem avail: 32.77)
+26000 1696.1036100387573 15.33 q/s (% mem usage: 67.20, % mem avail: 32.80)
+26500 1701.1084926128387 15.58 q/s (% mem usage: 67.20, % mem avail: 32.77)
+27000 1704.7563269138336 15.84 q/s (% mem usage: 67.20, % mem avail: 32.75)
+27500 1707.5221588611603 16.11 q/s (% mem usage: 67.30, % mem avail: 32.71)
+28000 1710.911188840866 16.37 q/s (% mem usage: 67.30, % mem avail: 32.68)
+28500 1715.4965825080872 16.61 q/s (% mem usage: 67.30, % mem avail: 32.68)
+29000 1719.6011533737183 16.86 q/s (% mem usage: 67.30, % mem avail: 32.68)
+29500 1723.1508338451385 17.12 q/s (% mem usage: 67.30, % mem avail: 32.67)
+30000 1726.3836789131165 17.38 q/s (% mem usage: 67.40, % mem avail: 32.65)
+30500 1729.2472469806671 17.64 q/s (% mem usage: 67.30, % mem avail: 32.72)
+31000 1732.651778936386 17.89 q/s (% mem usage: 67.30, % mem avail: 32.74)
+31500 1735.6498129367828 18.15 q/s (% mem usage: 67.30, % mem avail: 32.74)
+32000 1739.4221556186676 18.40 q/s (% mem usage: 67.20, % mem avail: 32.75)
+32500 1743.3522658348083 18.64 q/s (% mem usage: 67.30, % mem avail: 32.69)
+33000 1747.8749384880066 18.88 q/s (% mem usage: 67.30, % mem avail: 32.74)
+33500 1753.5518035888672 19.10 q/s (% mem usage: 67.30, % mem avail: 32.69)
+34000 1757.3706619739532 19.35 q/s (% mem usage: 67.30, % mem avail: 32.72)
+34500 1761.2589135169983 19.59 q/s (% mem usage: 67.30, % mem avail: 32.72)
+35000 1765.6988356113434 19.82 q/s (% mem usage: 67.30, % mem avail: 32.71)
+35500 1769.7511055469513 20.06 q/s (% mem usage: 67.30, % mem avail: 32.72)
+36000 1773.0700438022614 20.30 q/s (% mem usage: 67.30, % mem avail: 32.69)
+36500 1785.107254266739 20.45 q/s (% mem usage: 67.30, % mem avail: 32.66)
+37000 1790.9882957935333 20.66 q/s (% mem usage: 67.40, % mem avail: 32.65)
+37500 1794.9173336029053 20.89 q/s (% mem usage: 67.40, % mem avail: 32.61)
+38000 1799.5086460113525 21.12 q/s (% mem usage: 67.30, % mem avail: 32.68)
+38500 1803.4385209083557 21.35 q/s (% mem usage: 67.30, % mem avail: 32.67)
+39000 1807.6289293766022 21.58 q/s (% mem usage: 67.30, % mem avail: 32.66)
+39061 1809.7300925254822 21.58 q/s (% mem usage: 67.20, % mem avail: 32.76)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Palythoa_variabilis_PCBRv1/10_functional_annotation/Palythoa_variabilis_PCBRv1.transcripts.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Palythoa_variabilis_PCBRv1/10_functional_annotation/Palythoa_variabilis_PCBRv1.transcripts.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Palythoa_variabilis_PCBRv1/10_functional_annotation/Palythoa_variabilis_PCBRv1.transcripts.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Palythoa_variabilis_PCBRv1/10_functional_annotation/Palythoa_variabilis_PCBRv1.transcripts.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Palythoa_variabilis_PCBRv1/10_functional_annotation/Palythoa_variabilis_PCBRv1.transcripts.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 39061
+Total time: 2736 secs
+FINISHED
+[Thu 08 Jun 2023 09:13:06 AM EDT]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Thu 08 Jun 2023 08:27:16 AM EDT
+Finished: at Thu 08 Jun 2023 09:13:06 AM EDT
+ExitStatus: 0
+=====================================================================

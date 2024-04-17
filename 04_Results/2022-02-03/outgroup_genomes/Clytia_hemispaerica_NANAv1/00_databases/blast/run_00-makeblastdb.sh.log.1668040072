@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 09 Nov 2022 07:27:52 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Clytia_hemispaerica_NANAv1/00_databases/blast
+=====================================================================
+
+[Wed 09 Nov 2022 07:27:55 PM EST]      CMD: md5sum Clytia_hemispaerica_NANAv1.assembly.fasta Clytia_hemispaerica_NANAv1.genes.cds.fna Clytia_hemispaerica_NANAv1.genes.pep.faa | tee Clytia_hemispaerica_NANAv1.makeblastdb.job_md5sum_list.txt
+edd75f4ab5405068864175bdd15285ee  Clytia_hemispaerica_NANAv1.assembly.fasta
+7b1bdb4744fcdc986fe34fae3081fcb1  Clytia_hemispaerica_NANAv1.genes.cds.fna
+60b5edcbbf5c3db908baeb00fb975d7d  Clytia_hemispaerica_NANAv1.genes.pep.faa
+[Wed 09 Nov 2022 07:27:56 PM EST]      CMD: makeblastdb -dbtype nucl -in Clytia_hemispaerica_NANAv1.assembly.fasta
+
+
+Building a new DB, current time: 11/09/2022 19:27:56
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Clytia_hemispaerica_NANAv1/00_databases/blast/Clytia_hemispaerica_NANAv1.assembly.fasta
+New DB title:  Clytia_hemispaerica_NANAv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 7644 sequences in 10.0656 seconds.
+
+
+[Wed 09 Nov 2022 07:28:06 PM EST]      CMD: makeblastdb -dbtype nucl -in Clytia_hemispaerica_NANAv1.genes.cds.fna
+
+
+Building a new DB, current time: 11/09/2022 19:28:06
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Clytia_hemispaerica_NANAv1/00_databases/blast/Clytia_hemispaerica_NANAv1.genes.cds.fna
+New DB title:  Clytia_hemispaerica_NANAv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 25087 sequences in 1.42183 seconds.
+
+
+[Wed 09 Nov 2022 07:28:08 PM EST]      CMD: makeblastdb -dbtype prot -in Clytia_hemispaerica_NANAv1.genes.pep.faa
+
+
+Building a new DB, current time: 11/09/2022 19:28:08
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Clytia_hemispaerica_NANAv1/00_databases/blast/Clytia_hemispaerica_NANAv1.genes.pep.faa
+New DB title:  Clytia_hemispaerica_NANAv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 25087 sequences in 0.794974 seconds.
+
+
+
+=====================================================================
+Started: at Wed 09 Nov 2022 07:27:52 PM EST
+Finished: at Wed 09 Nov 2022 07:28:09 PM EST
+ExitStatus: 0
+=====================================================================

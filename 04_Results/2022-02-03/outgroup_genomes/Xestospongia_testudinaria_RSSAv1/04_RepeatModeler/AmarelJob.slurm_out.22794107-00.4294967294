@@ -1,0 +1,21 @@
+=====================================================================
+Slurm config version 0.4
+Starting on hal0010.amarel.rutgers.edu at Sun Oct 30 15:52:55 EDT 2022
+Nodelist hal0010
+Current JOB_ID is 22794107
+Current array index number is NA
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Xestospongia_testudinaria_RSSAv1/04_RepeatModeler
+=====================================================================
+
+[Mon Oct 31 05:58:52 EDT 2022]   - Done!
+
+=====================================================================
+Started: at Sun Oct 30 15:52:55 EDT 2022 on hal0010.amarel.rutgers.edu
+Finished: at Mon Oct 31 05:58:52 EDT 2022
+ExitStatus: 0
+
+   JobName   NTasks  AllocCPUS     ReqMem     MaxRSS  MaxVMSize  MaxDiskRead MaxDiskWrite   TotalCPU    CPUTime    Elapsed 
+---------- -------- ---------- ---------- ---------- ---------- ------------ ------------ ---------- ---------- ---------- 
+ AmarelJob                  24      120Gn                                                   00:00:00 14-02:23:12   14:05:58 
+    extern        1         24      120Gn                                                   00:00:00 14-02:23:12   14:05:58 
+=====================================================================

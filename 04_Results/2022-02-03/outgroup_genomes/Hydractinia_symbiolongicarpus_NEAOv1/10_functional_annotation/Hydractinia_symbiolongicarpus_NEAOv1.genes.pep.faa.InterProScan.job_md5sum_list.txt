@@ -1,0 +1,2 @@
+d9857a92f72da76b580911ee2bd5cfdf  Hydractinia_symbiolongicarpus_NEAOv1.genes.pep.faa
+d9857a92f72da76b580911ee2bd5cfdf  ../00_databases/Hydractinia_symbiolongicarpus_NEAOv1.genes.pep.faa

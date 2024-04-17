@@ -1,0 +1,21 @@
+=====================================================================
+Slurm config version 0.4
+Starting on slepner069.amarel.rutgers.edu at Tue Nov  1 11:27:58 EDT 2022
+Nodelist slepner069
+Current JOB_ID is 22859947
+Current array index number is NA
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Actinia_equina_RHUKv1/05_RepeatMasker
+=====================================================================
+
+[Wed Nov  2 15:24:25 EDT 2022]   - Done!
+
+=====================================================================
+Started: at Tue Nov  1 11:27:58 EDT 2022 on slepner069.amarel.rutgers.edu
+Finished: at Wed Nov  2 15:24:25 EDT 2022
+ExitStatus: 0
+
+   JobName   NTasks  AllocCPUS     ReqMem     MaxRSS  MaxVMSize  MaxDiskRead MaxDiskWrite   TotalCPU    CPUTime    Elapsed 
+---------- -------- ---------- ---------- ---------- ---------- ------------ ------------ ---------- ---------- ---------- 
+ AmarelJob                  24      120Gn                                                   00:00:00 27-22:35:12 1-03:56:28 
+    extern        1         24      120Gn                                                   00:00:00 27-22:35:12 1-03:56:28 
+=====================================================================

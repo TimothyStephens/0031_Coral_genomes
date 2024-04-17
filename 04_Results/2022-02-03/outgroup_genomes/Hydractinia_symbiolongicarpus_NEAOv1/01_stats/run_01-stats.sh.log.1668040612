@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 09 Nov 2022 07:36:52 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydractinia_symbiolongicarpus_NEAOv1/01_stats
+=====================================================================
+
+[Wed 09 Nov 2022 07:36:54 PM EST]      CMD: md5sum Hydractinia_symbiolongicarpus_NEAOv1.assembly.fasta Hydractinia_symbiolongicarpus_NEAOv1.genes.gff3 | tee Hydractinia_symbiolongicarpus_NEAOv1.genome_stats.job_md5sum_list.txt
+68835ac04c0ac038976a189dcec17d37  Hydractinia_symbiolongicarpus_NEAOv1.assembly.fasta
+79d1eb82eebd94a97c7810ff1e6b0693  Hydractinia_symbiolongicarpus_NEAOv1.genes.gff3
+[Wed 09 Nov 2022 07:36:55 PM EST]      CMD: ./genome_stats Hydractinia_symbiolongicarpus_NEAOv1.assembly.fasta Hydractinia_symbiolongicarpus_NEAOv1.genes.gff3 > Hydractinia_symbiolongicarpus_NEAOv1.GeneStats.tsv
+index file Hydractinia_symbiolongicarpus_NEAOv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Wed 09 Nov 2022 07:36:52 PM EST
+Finished: at Wed 09 Nov 2022 07:37:19 PM EST
+ExitStatus: 0
+=====================================================================

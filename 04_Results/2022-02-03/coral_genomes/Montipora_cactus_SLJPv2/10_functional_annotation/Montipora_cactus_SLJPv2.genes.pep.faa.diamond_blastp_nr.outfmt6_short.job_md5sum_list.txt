@@ -1,0 +1,2 @@
+d873cc3a078978e69d6b4816ab04618c  Montipora_cactus_SLJPv2.genes.pep.faa
+16bd66db55eb5543e386672d2dd06aeb  ../00_databases/Montipora_cactus_SLJPv2.genes.pep.faa

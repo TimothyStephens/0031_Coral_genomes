@@ -1,0 +1,32 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 15 Jun 2022 12:04:49 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Dendronephthya_gigantea_SJKRv1/10_functional_annotation
+=====================================================================
+
+[Wed 15 Jun 2022 12:04:50 AM EDT]      CMD: md5sum Dendronephthya_gigantea_SJKRv1.genes.pep.faa ../00_databases/Dendronephthya_gigantea_SJKRv1.genes.pep.faa | tee Dendronephthya_gigantea_SJKRv1.genes.pep.faa.InterProScan.job_md5sum_list.txt
+837fbc11ad88527ace50e30be0fdb1a9  Dendronephthya_gigantea_SJKRv1.genes.pep.faa
+837fbc11ad88527ace50e30be0fdb1a9  ../00_databases/Dendronephthya_gigantea_SJKRv1.genes.pep.faa
+[Wed 15 Jun 2022 12:04:50 AM EDT]      CMD: /home/timothy/programs/my_interproscan/interproscan-5.53-87.0/interproscan.sh -dp --goterms --cpu 48 --input Dendronephthya_gigantea_SJKRv1.genes.pep.faa --output-file-base Dendronephthya_gigantea_SJKRv1.genes.pep.faa.InterProScan
+15/06/2022 00:04:51:188 Welcome to InterProScan-5.53-87.0
+15/06/2022 00:04:51:190 Running InterProScan v5 in STANDALONE mode... on Linux
+15/06/2022 00:04:56:149 RunID: coral_20220615_000455652_isfy
+15/06/2022 00:05:03:799 Loading file /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Dendronephthya_gigantea_SJKRv1/10_functional_annotation/Dendronephthya_gigantea_SJKRv1.genes.pep.faa
+15/06/2022 00:05:03:800 Running the following analyses:
+[CDD-3.18,Coils-2.2.1,Gene3D-4.3.0,Hamap-2020_05,MobiDBLite-2.0,PANTHER-15.0,Pfam-34.0,Phobius-1.01,PIRSF-3.10,PIRSR-2021_02,PRINTS-42.0,ProSitePatterns-2021_01,ProSiteProfiles-2021_01,SFLD-4,SignalP_EUK-4.1,SignalP_GRAM_NEGATIVE-4.1,SignalP_GRAM_POSITIVE-4.1,SMART-7.1,SUPERFAMILY-1.75,TIGRFAM-15.0,TMHMM-2.0c]
+Pre-calculated match lookup service DISABLED.  Please wait for match calculations to complete...
+15/06/2022 00:05:09:129 Uploaded 21507 unique sequences for analysis
+15/06/2022 01:03:53:717 25% completed
+15/06/2022 01:21:44:802 50% completed
+15/06/2022 02:12:55:557 75% completed
+15/06/2022 02:48:24:294 90% completed
+15/06/2022 03:48:24:442 98% completed
+15/06/2022 04:16:48:487 100% done:  InterProScan analyses completed 
+
+[Wed 15 Jun 2022 04:16:49 AM EDT]      CMD: rm -fr temp
+
+=====================================================================
+Started: at Wed 15 Jun 2022 12:04:49 AM EDT
+Finished: at Wed 15 Jun 2022 04:16:49 AM EDT
+ExitStatus: 0
+=====================================================================

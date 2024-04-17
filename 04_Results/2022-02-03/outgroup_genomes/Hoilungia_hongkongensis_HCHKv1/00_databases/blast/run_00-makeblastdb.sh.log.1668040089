@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 09 Nov 2022 07:28:09 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hoilungia_hongkongensis_HCHKv1/00_databases/blast
+=====================================================================
+
+[Wed 09 Nov 2022 07:28:11 PM EST]      CMD: md5sum Hoilungia_hongkongensis_HCHKv1.assembly.fasta Hoilungia_hongkongensis_HCHKv1.genes.cds.fna Hoilungia_hongkongensis_HCHKv1.genes.pep.faa | tee Hoilungia_hongkongensis_HCHKv1.makeblastdb.job_md5sum_list.txt
+5f95f971cf0181f62c2812802fa54db6  Hoilungia_hongkongensis_HCHKv1.assembly.fasta
+2ab9d3abb6173fc5911d91dcd3c88e9b  Hoilungia_hongkongensis_HCHKv1.genes.cds.fna
+856c154e55681417e1299de807cdc0a5  Hoilungia_hongkongensis_HCHKv1.genes.pep.faa
+[Wed 09 Nov 2022 07:28:11 PM EST]      CMD: makeblastdb -dbtype nucl -in Hoilungia_hongkongensis_HCHKv1.assembly.fasta
+
+
+Building a new DB, current time: 11/09/2022 19:28:11
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hoilungia_hongkongensis_HCHKv1/00_databases/blast/Hoilungia_hongkongensis_HCHKv1.assembly.fasta
+New DB title:  Hoilungia_hongkongensis_HCHKv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 669 sequences in 1.53802 seconds.
+
+
+[Wed 09 Nov 2022 07:28:13 PM EST]      CMD: makeblastdb -dbtype nucl -in Hoilungia_hongkongensis_HCHKv1.genes.cds.fna
+
+
+Building a new DB, current time: 11/09/2022 19:28:13
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hoilungia_hongkongensis_HCHKv1/00_databases/blast/Hoilungia_hongkongensis_HCHKv1.genes.cds.fna
+New DB title:  Hoilungia_hongkongensis_HCHKv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 12010 sequences in 0.876404 seconds.
+
+
+[Wed 09 Nov 2022 07:28:14 PM EST]      CMD: makeblastdb -dbtype prot -in Hoilungia_hongkongensis_HCHKv1.genes.pep.faa
+
+
+Building a new DB, current time: 11/09/2022 19:28:14
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hoilungia_hongkongensis_HCHKv1/00_databases/blast/Hoilungia_hongkongensis_HCHKv1.genes.pep.faa
+New DB title:  Hoilungia_hongkongensis_HCHKv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 12010 sequences in 0.459893 seconds.
+
+
+
+=====================================================================
+Started: at Wed 09 Nov 2022 07:28:09 PM EST
+Finished: at Wed 09 Nov 2022 07:28:14 PM EST
+ExitStatus: 0
+=====================================================================

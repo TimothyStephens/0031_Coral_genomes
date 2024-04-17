@@ -1,0 +1,6 @@
+Complete	0	0.0%
+Single-copy	0	0.0%
+Duplicated	0	0.0%
+Fragmented	1	0.4%
+Missing	254	99.6%
+Total	255	100%

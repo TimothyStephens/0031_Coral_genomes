@@ -1,0 +1,2 @@
+60b5edcbbf5c3db908baeb00fb975d7d  Clytia_hemispaerica_NANAv1.genes.pep.faa
+60b5edcbbf5c3db908baeb00fb975d7d  ../00_databases/Clytia_hemispaerica_NANAv1.genes.pep.faa

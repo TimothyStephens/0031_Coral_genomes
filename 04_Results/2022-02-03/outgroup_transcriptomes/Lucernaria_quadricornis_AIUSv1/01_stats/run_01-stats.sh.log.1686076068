@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 02:27:48 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Lucernaria_quadricornis_AIUSv1/01_stats
+=====================================================================
+
+[Tue 06 Jun 2023 02:27:50 PM EDT]      CMD: md5sum Lucernaria_quadricornis_AIUSv1.transcripts.cds.fna | tee Lucernaria_quadricornis_AIUSv1.CDS_stats.job_md5sum_list.txt
+0a0e77c190d61cb5abc0f44a96fca6ad  Lucernaria_quadricornis_AIUSv1.transcripts.cds.fna
+[Tue 06 Jun 2023 02:27:50 PM EDT]      CMD: ./CDS_stats Lucernaria_quadricornis_AIUSv1.transcripts.cds.fna > Lucernaria_quadricornis_AIUSv1.GeneStats.tsv
+
+=====================================================================
+Started: at Tue 06 Jun 2023 02:27:48 PM EDT
+Finished: at Tue 06 Jun 2023 02:27:50 PM EDT
+ExitStatus: 0
+=====================================================================

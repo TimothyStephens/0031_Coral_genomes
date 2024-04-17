@@ -1,0 +1,21 @@
+=====================================================================
+Slurm config version 0.4
+Starting on slepner077.amarel.rutgers.edu at Mon Nov 14 23:04:26 EST 2022
+Nodelist slepner077
+Current JOB_ID is 22962128
+Current array index number is NA
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Aurelia_aurita_RSPOv1/05_RepeatMasker
+=====================================================================
+
+[Tue Nov 15 19:23:02 EST 2022]   - Done!
+
+=====================================================================
+Started: at Mon Nov 14 23:04:26 EST 2022 on slepner077.amarel.rutgers.edu
+Finished: at Tue Nov 15 19:23:02 EST 2022
+ExitStatus: 0
+
+   JobName   NTasks  AllocCPUS     ReqMem     MaxRSS  MaxVMSize  MaxDiskRead MaxDiskWrite   TotalCPU    CPUTime    Elapsed 
+---------- -------- ---------- ---------- ---------- ---------- ------------ ------------ ---------- ---------- ---------- 
+ AmarelJob                  24      120Gn                                                   00:00:00 20-07:26:24   20:18:36 
+    extern        1         24      120Gn                                                   00:00:00 20-07:26:24   20:18:36 
+=====================================================================

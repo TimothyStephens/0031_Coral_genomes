@@ -1,0 +1,43 @@
+# Files
+Genome file	Scolanthus_callimorphus_CRFRv1.assembly.fasta
+GFF file	Scolanthus_callimorphus_CRFRv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	596818173
+Total contig length (bp)	596774473
+Number of scaffolds	304
+Number of contigs	741
+N50 of scaffolds (bp)	31079131
+N50 of contigs (bp)	1653096
+Percent gaps	0.007
+Percent GC	40.81
+
+# Gene stats (combined CDS+introns)
+Number of genes	24594
+Total gene length	221997518
+Average gene length (bp)	9026.49
+Gene percent GC	41.11
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1475.83
+Average number of CDS per gene/transcript	8.51045
+
+# CDS stats
+Number of CDS	209306
+Total CDS length (bp)	36296528
+Average CDS length (bp)	173.414
+Number of single-CDS transcripts	1053
+Percent single-CDS transcripts	4.28153
+CDS percent GC	46.95
+
+# Intron stats (predicted between CDS features)
+Number of introns	184712
+Total intron length (bp)	185700990
+Average intron length (bp)	1005.35
+Intron percent GC	39.96
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	23917
+Total intergenic region length (bp)	364421132
+Average intergenic region length (bp)	15236.9
+Intergenic region percent GC	40.63

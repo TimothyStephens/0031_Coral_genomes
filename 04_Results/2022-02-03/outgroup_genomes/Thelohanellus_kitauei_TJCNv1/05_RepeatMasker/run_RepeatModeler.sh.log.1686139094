@@ -1,0 +1,67 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed Jun  7 07:58:14 EDT 2023
+Working directory is /scratch/ts942/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_genomes/Thelohanellus_kitauei_TJCNv1/05_RepeatMasker
+=====================================================================
+
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+-------------------------------------------------------------------------------
+There are messages associated with the following module(s):
+-------------------------------------------------------------------------------
+
+openjdk/14.0.1:
+   This module is deprecated and will be removed in the near future, as it
+   no longer receives security updates. All users should switch to a current
+   version of the "openjdk" module; contact help@oarc.rutgers.edu for
+   questions or concerns.
+
+-------------------------------------------------------------------------------
+
+[Wed Jun  7 07:58:16 EDT 2023]      CMD: sed -e 's/Thelohanellus_kitauei_TJCNv1___//' Thelohanellus_kitauei_TJCNv1.assembly.fasta > genome.fa
+[Wed Jun  7 07:58:18 EDT 2023]      CMD: cat Thelohanellus_kitauei_TJCNv1.assembly.fasta.RMDB-families.fa rmlib.fa > custom_repeat_library.fa
+[Wed Jun  7 07:58:18 EDT 2023]      CMD: RepeatMasker -no_is -a -x -gff -pa 5 -lib custom_repeat_library.fa genome.fa 1> RepeatMasker.log 2>&1
+[Wed Jun  7 13:33:04 EDT 2023]      CMD: /scratch/ts942/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/calcDivergenceFromAlign.pl -s genome.fa.divsum genome.fa.align
+....................................................................................................................................................................................Thelohanellus_kitauei_TJCNv1	
+[Wed Jun  7 13:33:27 EDT 2023]      CMD: /scratch/ts942/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/createRepeatLandscape.pl -g  -div genome.fa.divsum > genome.fa.RepeatLandscape.html
+[Wed Jun  7 13:33:27 EDT 2023]      CMD: bedtools maskfasta -fi genome.fa -fo genome.fa.softmasked -bed genome.fa.out.gff -soft
+[Wed Jun  7 13:33:28 EDT 2023]      CMD: sed -e "s/^>/>Thelohanellus_kitauei_TJCNv1___/" genome.fa.masked | reformat.sh in=stdin.fa out=stdout.fa fastawrap=0 > Thelohanellus_kitauei_TJCNv1.assembly.fasta.masked
+java -ea -Xms300m -cp /home/ts942/PROGRAMS/bbmap/current/ jgi.ReformatReads in=stdin.fa out=stdout.fa fastawrap=0
+Executing jgi.ReformatReads [in=stdin.fa, out=stdout.fa, fastawrap=0]
+
+Input is being processed as unpaired
+Input:                  	5757 reads          	150348159 bases
+Output:                 	5757 reads (100.00%) 	150348159 bases (100.00%)
+
+Time:                         	2.328 seconds.
+Reads Processed:        5757 	2.47k reads/sec
+Bases Processed:        150m 	64.59m bases/sec
+[Wed Jun  7 13:33:31 EDT 2023]      CMD: sed -e "s/^>/>Thelohanellus_kitauei_TJCNv1___/" genome.fa.softmasked > Thelohanellus_kitauei_TJCNv1.assembly.fasta.softmasked
+[Wed Jun  7 13:33:32 EDT 2023]      CMD: awk -F'\t' -vPREFIX="Thelohanellus_kitauei_TJCNv1" '{ if($1!~"^#") {print PREFIX"___"$0} else {print $0} }' genome.fa.out.gff > Thelohanellus_kitauei_TJCNv1.assembly.fasta.out.gff
+[Wed Jun  7 13:33:32 EDT 2023]      CMD: cp genome.fa.divsum Thelohanellus_kitauei_TJCNv1.assembly.fasta.divsum
+[Wed Jun  7 13:33:32 EDT 2023]      CMD: cp genome.fa.tbl Thelohanellus_kitauei_TJCNv1.assembly.fasta.tbl
+[Wed Jun  7 13:33:32 EDT 2023]      CMD: tail -n 72 Thelohanellus_kitauei_TJCNv1.assembly.fasta.divsum | sed -e 's/ $//' > Thelohanellus_kitauei_TJCNv1.assembly.fasta.divsum.Kimura_distance
+[Wed Jun  7 13:33:32 EDT 2023]      CMD: gzip genome.fa.align genome.fa.divsum genome.fa.masked genome.fa.out genome.fa.out.gff genome.fa.softmasked genome.fa.tbl
+
+=====================================================================
+Started: at Wed Jun  7 07:58:14 EDT 2023
+Finished: at Wed Jun  7 13:34:36 EDT 2023
+ExitStatus: 0
+=====================================================================

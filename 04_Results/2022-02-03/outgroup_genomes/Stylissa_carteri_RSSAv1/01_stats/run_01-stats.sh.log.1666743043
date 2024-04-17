@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 08:10:43 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Stylissa_carteri_RSSAv1/01_stats
+=====================================================================
+
+[Tue 25 Oct 2022 08:10:45 PM EDT]      CMD: md5sum Stylissa_carteri_RSSAv1.assembly.fasta Stylissa_carteri_RSSAv1.genes.gff3 | tee Stylissa_carteri_RSSAv1.genome_stats.job_md5sum_list.txt
+5e656cf15a68732247b6f415a0008a3c  Stylissa_carteri_RSSAv1.assembly.fasta
+87abc83ce505af531289c7a2967ae2a6  Stylissa_carteri_RSSAv1.genes.gff3
+[Tue 25 Oct 2022 08:10:46 PM EDT]      CMD: ./genome_stats Stylissa_carteri_RSSAv1.assembly.fasta Stylissa_carteri_RSSAv1.genes.gff3 > Stylissa_carteri_RSSAv1.GeneStats.tsv
+index file Stylissa_carteri_RSSAv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Tue 25 Oct 2022 08:10:43 PM EDT
+Finished: at Tue 25 Oct 2022 08:11:05 PM EDT
+ExitStatus: 0
+=====================================================================

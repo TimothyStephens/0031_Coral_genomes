@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 14 Jun 2022 02:39:40 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Montastraea_cavernosa_REEFv1/01_stats
+=====================================================================
+
+[Tue 14 Jun 2022 02:39:41 PM EDT]      CMD: md5sum Montastraea_cavernosa_REEFv1.transcripts.cds.fna | tee Montastraea_cavernosa_REEFv1.CDS_stats.job_md5sum_list.txt
+4f554ae293c7707c2c8e32c04211cdf9  Montastraea_cavernosa_REEFv1.transcripts.cds.fna
+[Tue 14 Jun 2022 02:39:41 PM EDT]      CMD: ./CDS_stats Montastraea_cavernosa_REEFv1.transcripts.cds.fna > Montastraea_cavernosa_REEFv1.GeneStats.tsv
+
+=====================================================================
+Started: at Tue 14 Jun 2022 02:39:40 PM EDT
+Finished: at Tue 14 Jun 2022 02:39:41 PM EDT
+ExitStatus: 0
+=====================================================================

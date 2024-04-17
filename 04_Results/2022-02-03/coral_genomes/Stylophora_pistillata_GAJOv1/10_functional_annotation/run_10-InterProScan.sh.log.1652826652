@@ -1,0 +1,31 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 17 May 2022 06:30:52 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Stylophora_pistillata_GAJOv1/10_functional_annotation
+=====================================================================
+
+[Tue 17 May 2022 06:30:53 PM EDT]      CMD: md5sum Stylophora_pistillata_GAJOv1.genes.pep.faa ../00_databases/Stylophora_pistillata_GAJOv1.genes.pep.faa | tee Stylophora_pistillata_GAJOv1.genes.pep.faa.InterProScan.job_md5sum_list.txt
+057df1324b1a1556312c1d8f68e9f485  Stylophora_pistillata_GAJOv1.genes.pep.faa
+5daa51c3169f0e2b2f987322c79c0e07  ../00_databases/Stylophora_pistillata_GAJOv1.genes.pep.faa
+[Tue 17 May 2022 06:30:53 PM EDT]      CMD: /home/timothy/programs/my_interproscan/interproscan-5.53-87.0/interproscan.sh -dp --goterms --cpu 96 --input Stylophora_pistillata_GAJOv1.genes.pep.faa --output-file-base Stylophora_pistillata_GAJOv1.genes.pep.faa.InterProScan
+17/05/2022 18:30:53:936 Welcome to InterProScan-5.53-87.0
+17/05/2022 18:30:53:938 Running InterProScan v5 in STANDALONE mode... on Linux
+17/05/2022 18:30:58:854 RunID: coral_20220517_183058301_isui
+17/05/2022 18:31:06:288 Loading file /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Stylophora_pistillata_GAJOv1/10_functional_annotation/Stylophora_pistillata_GAJOv1.genes.pep.faa
+17/05/2022 18:31:06:290 Running the following analyses:
+[CDD-3.18,Coils-2.2.1,Gene3D-4.3.0,Hamap-2020_05,MobiDBLite-2.0,PANTHER-15.0,Pfam-34.0,Phobius-1.01,PIRSF-3.10,PIRSR-2021_02,PRINTS-42.0,ProSitePatterns-2021_01,ProSiteProfiles-2021_01,SFLD-4,SignalP_EUK-4.1,SignalP_GRAM_NEGATIVE-4.1,SignalP_GRAM_POSITIVE-4.1,SMART-7.1,SUPERFAMILY-1.75,TIGRFAM-15.0,TMHMM-2.0c]
+Pre-calculated match lookup service DISABLED.  Please wait for match calculations to complete...
+17/05/2022 18:31:11:842 Uploaded 25690 unique sequences for analysis
+17/05/2022 19:20:26:672 25% completed
+17/05/2022 20:15:20:722 50% completed
+17/05/2022 20:38:06:568 75% completed
+17/05/2022 21:17:06:130 90% completed
+17/05/2022 22:08:23:203 100% done:  InterProScan analyses completed 
+
+[Tue 17 May 2022 10:08:24 PM EDT]      CMD: rm -fr temp
+
+=====================================================================
+Started: at Tue 17 May 2022 06:30:52 PM EDT
+Finished: at Tue 17 May 2022 10:08:24 PM EDT
+ExitStatus: 0
+=====================================================================

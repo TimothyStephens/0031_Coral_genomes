@@ -1,0 +1,2 @@
+a7b6d4715a680f2f1eb69b904a3dc870  Mnemiopsis_leidyi_WHUSv2.2.assembly.fasta
+4e6bd4c951aea42299737a25ba87a869  Mnemiopsis_leidyi_WHUSv2.2.genes.gff3

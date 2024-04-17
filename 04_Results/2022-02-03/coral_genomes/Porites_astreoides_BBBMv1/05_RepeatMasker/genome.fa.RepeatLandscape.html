@@ -1,0 +1,65 @@
+
+
+Missing '-div' option or the file is missing
+/scratch/ts942/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/createRepeatLandscape.pl - $Name:  $
+
+NAME
+    createRepeatLandscape.pl - Create a Repeat Landscape graph
+
+SYNOPSIS
+      createRepeatLandscape.pl [-version] -div *.divsum [-t "graph title"]
+                               [-j] -g # | -twoBit <twoBitFile>
+
+DESCRIPTION
+      Create a Repeat Landscape graph using the divergence summary data
+      generated with the calcDivergenceFromAlign.pl script.
+
+EXAMPLES
+      Older ( pre 4.0.4 ) RepeatMasker dataset:
+
+         ./calcDivergenceFromAlign.pl -s example.divsum -a example_with_div.align 
+                                      example.align.gz
+ 
+         This creates an additional file "example_with_div.align" which contains
+         the added Kimura divergence field after each alignment.
+
+         ./createRepeatLandscape.pl -div example.divsum > 
+                                    /home/user/public_html/example.html 
+
+
+      On newer RepeatMasker dataset that already contains the Kimura divergence
+      line following each alignment:
+
+         ./calcDivergenceFromAlign.pl -s example.divsum example.align.gz
+
+         ./createRepeatLandscape.pl -div example.divsum > 
+                                    /home/user/public_html/example.html
+
+    The options are:
+
+    -version
+        Displays the version of the program
+
+    -div <file>
+        The divergence summary file created with the
+        calcDivergenceFromAlign.pl script.
+
+    -g #
+        Set the genome size used in percentage calculations.
+
+    -twoBit <filename>
+        Get the genome size directly from the sequence file ( excluding Ns
+        ). This option requires that the UCSC utility "twoBitInfo" is in
+        your path.
+
+    -j  Output javascript only and not a fully constructed HTML page.
+
+SEE ALSO
+COPYRIGHT
+    Copyright 2013-2014 Robert Hubley, Institute for Systems Biology
+
+AUTHORS
+    Robert Hubley <rhubley@systemsbiology.org>
+
+    Juan Caballero <jcaballero@systemsbiology.org>
+

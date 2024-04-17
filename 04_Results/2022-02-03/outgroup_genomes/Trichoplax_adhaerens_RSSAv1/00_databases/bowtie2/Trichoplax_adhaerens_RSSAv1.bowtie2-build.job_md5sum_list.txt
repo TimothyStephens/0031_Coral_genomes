@@ -1,0 +1,2 @@
+1d3582402e003b3ddfcba86ce5134de7  Trichoplax_adhaerens_RSSAv1.assembly.fasta
+c3c90e7fe5592a71b136577d99de9ac8  Trichoplax_adhaerens_RSSAv1.genes.cds.fna

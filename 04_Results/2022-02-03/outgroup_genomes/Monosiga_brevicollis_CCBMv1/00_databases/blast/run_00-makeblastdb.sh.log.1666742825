@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 08:07:05 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Monosiga_brevicollis_CCBMv1/00_databases/blast
+=====================================================================
+
+[Tue 25 Oct 2022 08:07:06 PM EDT]      CMD: md5sum Monosiga_brevicollis_CCBMv1.assembly.fasta Monosiga_brevicollis_CCBMv1.genes.cds.fna Monosiga_brevicollis_CCBMv1.genes.pep.faa | tee Monosiga_brevicollis_CCBMv1.makeblastdb.job_md5sum_list.txt
+1735ff485cff28bfd2ecc8e862f5a898  Monosiga_brevicollis_CCBMv1.assembly.fasta
+568f8d4e1aa9cc5a5b7c4a2a0113875f  Monosiga_brevicollis_CCBMv1.genes.cds.fna
+0129af2b91b116e5b261ae155313a1df  Monosiga_brevicollis_CCBMv1.genes.pep.faa
+[Tue 25 Oct 2022 08:07:07 PM EDT]      CMD: makeblastdb -dbtype nucl -in Monosiga_brevicollis_CCBMv1.assembly.fasta
+
+
+Building a new DB, current time: 10/25/2022 20:07:07
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Monosiga_brevicollis_CCBMv1/00_databases/blast/Monosiga_brevicollis_CCBMv1.assembly.fasta
+New DB title:  Monosiga_brevicollis_CCBMv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 219 sequences in 1.0846 seconds.
+
+
+[Tue 25 Oct 2022 08:07:08 PM EDT]      CMD: makeblastdb -dbtype nucl -in Monosiga_brevicollis_CCBMv1.genes.cds.fna
+
+
+Building a new DB, current time: 10/25/2022 20:07:08
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Monosiga_brevicollis_CCBMv1/00_databases/blast/Monosiga_brevicollis_CCBMv1.genes.cds.fna
+New DB title:  Monosiga_brevicollis_CCBMv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 9202 sequences in 0.460795 seconds.
+
+
+[Tue 25 Oct 2022 08:07:08 PM EDT]      CMD: makeblastdb -dbtype prot -in Monosiga_brevicollis_CCBMv1.genes.pep.faa
+
+
+Building a new DB, current time: 10/25/2022 20:07:08
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Monosiga_brevicollis_CCBMv1/00_databases/blast/Monosiga_brevicollis_CCBMv1.genes.pep.faa
+New DB title:  Monosiga_brevicollis_CCBMv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 9202 sequences in 0.246932 seconds.
+
+
+
+=====================================================================
+Started: at Tue 25 Oct 2022 08:07:05 PM EDT
+Finished: at Tue 25 Oct 2022 08:07:09 PM EDT
+ExitStatus: 0
+=====================================================================

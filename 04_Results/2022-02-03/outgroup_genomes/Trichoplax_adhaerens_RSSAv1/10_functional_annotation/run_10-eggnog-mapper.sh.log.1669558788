@@ -1,0 +1,86 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 27 Nov 2022 09:19:48 AM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Trichoplax_adhaerens_RSSAv1/10_functional_annotation
+=====================================================================
+
+[Sun 27 Nov 2022 09:19:49 AM EST]      CMD: md5sum Trichoplax_adhaerens_RSSAv1.genes.pep.faa ../00_databases/Trichoplax_adhaerens_RSSAv1.genes.pep.faa | tee Trichoplax_adhaerens_RSSAv1.genes.pep.faa.emapper.job_md5sum_list.txt
+965f0a861b2d890b784bb8e482fb5115  Trichoplax_adhaerens_RSSAv1.genes.pep.faa
+965f0a861b2d890b784bb8e482fb5115  ../00_databases/Trichoplax_adhaerens_RSSAv1.genes.pep.faa
+[Sun 27 Nov 2022 09:19:49 AM EST]      CMD: emapper.py -i Trichoplax_adhaerens_RSSAv1.genes.pep.faa --output Trichoplax_adhaerens_RSSAv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 5.9604644775390625e-06 0.00 q/s (% mem usage: 2.00, % mem avail: 97.99)
+[1;34mTime to load the DB into memory: 95.53744149208069[0m
+#  emapper-2.1.6
+# emapper.py  -i Trichoplax_adhaerens_RSSAv1.genes.pep.faa --output Trichoplax_adhaerens_RSSAv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Trichoplax_adhaerens_RSSAv1/10_functional_annotation/Trichoplax_adhaerens_RSSAv1.genes.pep.faa --threads 48 -o /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Trichoplax_adhaerens_RSSAv1/10_functional_annotation/Trichoplax_adhaerens_RSSAv1.genes.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+Namespace(Z=40000000, call_info='## Sun Nov 27 09:26:01 2022\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Trichoplax_adhaerens_RSSAv1.genes.pep.faa --output Trichoplax_adhaerens_RSSAv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem\n##', clean_overlaps='clans', cpu=48, cpus_per_worker=48, cut_ga=True, db='/scratch/timothy/databases/eggnog-mapper-rel20211209/pfam/Pfam-A.hmm', dbtype='hmmdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='seq', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Trichoplax_adhaerens_RSSAv1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+Searching queries with a pool of 48 CPUs
+500 746.8957040309906 0.67 q/s (% mem usage: 13.20, % mem avail: 86.82)
+1000 748.9792597293854 1.34 q/s (% mem usage: 13.20, % mem avail: 86.82)
+1500 750.6444211006165 2.00 q/s (% mem usage: 13.20, % mem avail: 86.82)
+2000 752.2752680778503 2.66 q/s (% mem usage: 13.20, % mem avail: 86.82)
+2500 754.2555592060089 3.31 q/s (% mem usage: 13.20, % mem avail: 86.82)
+3000 755.8768968582153 3.97 q/s (% mem usage: 13.20, % mem avail: 86.82)
+3500 757.7046272754669 4.62 q/s (% mem usage: 13.20, % mem avail: 86.82)
+4000 759.3255019187927 5.27 q/s (% mem usage: 13.20, % mem avail: 86.82)
+4500 761.3132910728455 5.91 q/s (% mem usage: 13.20, % mem avail: 86.82)
+5000 762.9525701999664 6.55 q/s (% mem usage: 13.20, % mem avail: 86.82)
+5500 764.6162180900574 7.19 q/s (% mem usage: 13.20, % mem avail: 86.82)
+6000 766.34676861763 7.83 q/s (% mem usage: 13.20, % mem avail: 86.82)
+6500 768.2966103553772 8.46 q/s (% mem usage: 13.20, % mem avail: 86.82)
+7000 770.1362388134003 9.09 q/s (% mem usage: 13.20, % mem avail: 86.82)
+7500 772.0575938224792 9.71 q/s (% mem usage: 13.20, % mem avail: 86.82)
+8000 773.7483699321747 10.34 q/s (% mem usage: 13.20, % mem avail: 86.82)
+8500 775.5775027275085 10.96 q/s (% mem usage: 13.20, % mem avail: 86.82)
+9000 776.9007940292358 11.58 q/s (% mem usage: 13.20, % mem avail: 86.82)
+9500 778.5774698257446 12.20 q/s (% mem usage: 13.20, % mem avail: 86.82)
+10000 779.8128128051758 12.82 q/s (% mem usage: 13.20, % mem avail: 86.82)
+10419 781.1445200443268 13.34 q/s (% mem usage: 13.10, % mem avail: 86.86)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Trichoplax_adhaerens_RSSAv1/10_functional_annotation/Trichoplax_adhaerens_RSSAv1.genes.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Trichoplax_adhaerens_RSSAv1/10_functional_annotation/Trichoplax_adhaerens_RSSAv1.genes.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Trichoplax_adhaerens_RSSAv1/10_functional_annotation/Trichoplax_adhaerens_RSSAv1.genes.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Trichoplax_adhaerens_RSSAv1/10_functional_annotation/Trichoplax_adhaerens_RSSAv1.genes.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Trichoplax_adhaerens_RSSAv1/10_functional_annotation/Trichoplax_adhaerens_RSSAv1.genes.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 10419
+Total time: 1022 secs
+FINISHED
+[Sun 27 Nov 2022 09:36:57 AM EST]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Sun 27 Nov 2022 09:19:48 AM EST
+Finished: at Sun 27 Nov 2022 09:36:57 AM EST
+ExitStatus: 0
+=====================================================================

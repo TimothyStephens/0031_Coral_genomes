@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 02:20:26 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Myxobolus_pendula_ONCAv1/00_databases/blast
+=====================================================================
+
+[Tue 06 Jun 2023 02:20:28 PM EDT]      CMD: md5sum Myxobolus_pendula_ONCAv1.transcripts.cds.fna Myxobolus_pendula_ONCAv1.transcripts.pep.faa | tee Myxobolus_pendula_ONCAv1.makeblastdb.job_md5sum_list.txt
+abcd068f087dce88d23c7c5901469d14  Myxobolus_pendula_ONCAv1.transcripts.cds.fna
+30daf9ded0bad3721664bd6d82be2bf2  Myxobolus_pendula_ONCAv1.transcripts.pep.faa
+[Tue 06 Jun 2023 02:20:28 PM EDT]      CMD: makeblastdb -dbtype nucl -in Myxobolus_pendula_ONCAv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 06/06/2023 14:20:28
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Myxobolus_pendula_ONCAv1/00_databases/blast/Myxobolus_pendula_ONCAv1.transcripts.cds.fna
+New DB title:  Myxobolus_pendula_ONCAv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1532 sequences in 0.0370729 seconds.
+
+
+[Tue 06 Jun 2023 02:20:28 PM EDT]      CMD: makeblastdb -dbtype prot -in Myxobolus_pendula_ONCAv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 06/06/2023 14:20:28
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Myxobolus_pendula_ONCAv1/00_databases/blast/Myxobolus_pendula_ONCAv1.transcripts.pep.faa
+New DB title:  Myxobolus_pendula_ONCAv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1532 sequences in 0.0326829 seconds.
+
+
+
+=====================================================================
+Started: at Tue 06 Jun 2023 02:20:26 PM EDT
+Finished: at Tue 06 Jun 2023 02:20:28 PM EDT
+ExitStatus: 0
+=====================================================================

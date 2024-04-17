@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 14 Jun 2022 01:44:07 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Porites_lobata_REEFv1/00_databases/blast
+=====================================================================
+
+[Tue 14 Jun 2022 01:44:08 PM EDT]      CMD: md5sum Porites_lobata_REEFv1.transcripts.cds.fna Porites_lobata_REEFv1.transcripts.pep.faa | tee Porites_lobata_REEFv1.makeblastdb.job_md5sum_list.txt
+2fa66c83f78eee43a6f471368780c1c7  Porites_lobata_REEFv1.transcripts.cds.fna
+2d324d02f90f053bb2cbcd14811613a3  Porites_lobata_REEFv1.transcripts.pep.faa
+[Tue 14 Jun 2022 01:44:08 PM EDT]      CMD: makeblastdb -dbtype nucl -in Porites_lobata_REEFv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 06/14/2022 13:44:08
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Porites_lobata_REEFv1/00_databases/blast/Porites_lobata_REEFv1.transcripts.cds.fna
+New DB title:  Porites_lobata_REEFv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 21062 sequences in 0.386237 seconds.
+
+
+[Tue 14 Jun 2022 01:44:09 PM EDT]      CMD: makeblastdb -dbtype prot -in Porites_lobata_REEFv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 06/14/2022 13:44:09
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Porites_lobata_REEFv1/00_databases/blast/Porites_lobata_REEFv1.transcripts.pep.faa
+New DB title:  Porites_lobata_REEFv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 21062 sequences in 0.362686 seconds.
+
+
+
+=====================================================================
+Started: at Tue 14 Jun 2022 01:44:07 PM EDT
+Finished: at Tue 14 Jun 2022 01:44:09 PM EDT
+ExitStatus: 0
+=====================================================================

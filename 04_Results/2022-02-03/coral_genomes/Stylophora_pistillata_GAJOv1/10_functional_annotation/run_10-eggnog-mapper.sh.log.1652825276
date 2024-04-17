@@ -1,0 +1,110 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 17 May 2022 06:07:56 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Stylophora_pistillata_GAJOv1/10_functional_annotation
+=====================================================================
+
+[Tue 17 May 2022 06:07:57 PM EDT]      CMD: md5sum Stylophora_pistillata_GAJOv1.genes.pep.faa ../00_databases/Stylophora_pistillata_GAJOv1.genes.pep.faa | tee Stylophora_pistillata_GAJOv1.genes.pep.faa.emapper.job_md5sum_list.txt
+057df1324b1a1556312c1d8f68e9f485  Stylophora_pistillata_GAJOv1.genes.pep.faa
+5daa51c3169f0e2b2f987322c79c0e07  ../00_databases/Stylophora_pistillata_GAJOv1.genes.pep.faa
+[Tue 17 May 2022 06:07:57 PM EDT]      CMD: emapper.py -i Stylophora_pistillata_GAJOv1.genes.pep.faa --output Stylophora_pistillata_GAJOv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 6.4373016357421875e-06 0.00 q/s (% mem usage: 9.90, % mem avail: 90.12)
+[1;34mTime to load the DB into memory: 42.46587371826172[0m
+#  emapper-2.1.6
+# emapper.py  -i Stylophora_pistillata_GAJOv1.genes.pep.faa --output Stylophora_pistillata_GAJOv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Stylophora_pistillata_GAJOv1/10_functional_annotation/Stylophora_pistillata_GAJOv1.genes.pep.faa --threads 96 -o /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Stylophora_pistillata_GAJOv1/10_functional_annotation/Stylophora_pistillata_GAJOv1.genes.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+CREATED ESL_REFORMAT DB. USING HMMSEARCH
+Namespace(Z=40000000, call_info='## Tue May 17 18:15:34 2022\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Stylophora_pistillata_GAJOv1.genes.pep.faa --output Stylophora_pistillata_GAJOv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem\n##', clean_overlaps='hmmsearch_clans', cpu=96, cpus_per_worker=96, cut_ga=True, db='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Stylophora_pistillata_GAJOv1/10_functional_annotation/tmpscckhth6', dbtype='seqdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='hmm', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Stylophora_pistillata_GAJOv1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+500 964.5750527381897 0.52 q/s (% mem usage: 21.10, % mem avail: 78.89)
+1000 965.967499256134 1.04 q/s (% mem usage: 21.10, % mem avail: 78.89)
+1500 967.4395542144775 1.55 q/s (% mem usage: 21.10, % mem avail: 78.89)
+2000 968.7371695041656 2.06 q/s (% mem usage: 21.10, % mem avail: 78.89)
+2500 970.0255534648895 2.58 q/s (% mem usage: 21.10, % mem avail: 78.89)
+3000 971.3016889095306 3.09 q/s (% mem usage: 21.10, % mem avail: 78.89)
+3500 972.6769940853119 3.60 q/s (% mem usage: 21.10, % mem avail: 78.89)
+4000 974.2413024902344 4.11 q/s (% mem usage: 21.10, % mem avail: 78.89)
+4500 975.5788786411285 4.61 q/s (% mem usage: 21.10, % mem avail: 78.89)
+5000 977.0592803955078 5.12 q/s (% mem usage: 21.10, % mem avail: 78.89)
+5500 978.2307693958282 5.62 q/s (% mem usage: 21.10, % mem avail: 78.89)
+6000 979.564445734024 6.13 q/s (% mem usage: 21.10, % mem avail: 78.89)
+6500 980.9893534183502 6.63 q/s (% mem usage: 21.10, % mem avail: 78.89)
+7000 982.2809925079346 7.13 q/s (% mem usage: 21.10, % mem avail: 78.89)
+7500 983.6899254322052 7.62 q/s (% mem usage: 21.10, % mem avail: 78.89)
+8000 984.905070066452 8.12 q/s (% mem usage: 21.10, % mem avail: 78.89)
+8500 986.3124380111694 8.62 q/s (% mem usage: 21.10, % mem avail: 78.89)
+9000 987.5653054714203 9.11 q/s (% mem usage: 21.10, % mem avail: 78.89)
+9500 988.6586811542511 9.61 q/s (% mem usage: 21.10, % mem avail: 78.89)
+10000 989.9529330730438 10.10 q/s (% mem usage: 21.10, % mem avail: 78.89)
+10500 991.2513825893402 10.59 q/s (% mem usage: 21.10, % mem avail: 78.89)
+11000 992.4200403690338 11.08 q/s (% mem usage: 21.10, % mem avail: 78.89)
+11500 994.0263485908508 11.57 q/s (% mem usage: 21.10, % mem avail: 78.89)
+12000 995.1272597312927 12.06 q/s (% mem usage: 21.10, % mem avail: 78.89)
+12500 996.382316827774 12.55 q/s (% mem usage: 21.10, % mem avail: 78.89)
+13000 997.5517485141754 13.03 q/s (% mem usage: 21.10, % mem avail: 78.89)
+13500 998.8288064002991 13.52 q/s (% mem usage: 21.10, % mem avail: 78.89)
+14000 1000.0924973487854 14.00 q/s (% mem usage: 21.10, % mem avail: 78.89)
+14500 1001.2406258583069 14.48 q/s (% mem usage: 21.10, % mem avail: 78.89)
+15000 1002.3439295291901 14.96 q/s (% mem usage: 21.10, % mem avail: 78.89)
+15500 1003.4387748241425 15.45 q/s (% mem usage: 21.10, % mem avail: 78.89)
+16000 1004.9498121738434 15.92 q/s (% mem usage: 21.10, % mem avail: 78.89)
+16500 1006.1232850551605 16.40 q/s (% mem usage: 21.10, % mem avail: 78.89)
+17000 1007.219099521637 16.88 q/s (% mem usage: 21.10, % mem avail: 78.89)
+17500 1008.0572061538696 17.36 q/s (% mem usage: 21.10, % mem avail: 78.89)
+18000 1008.9824366569519 17.84 q/s (% mem usage: 21.10, % mem avail: 78.89)
+18500 1010.3836920261383 18.31 q/s (% mem usage: 21.10, % mem avail: 78.89)
+19000 1011.3964834213257 18.79 q/s (% mem usage: 21.10, % mem avail: 78.89)
+19500 1012.3841788768768 19.26 q/s (% mem usage: 21.10, % mem avail: 78.89)
+20000 1013.2424988746643 19.74 q/s (% mem usage: 21.10, % mem avail: 78.89)
+20500 1013.9135529994965 20.22 q/s (% mem usage: 21.10, % mem avail: 78.89)
+21000 1014.4956471920013 20.70 q/s (% mem usage: 21.10, % mem avail: 78.89)
+21500 1016.5915133953094 21.15 q/s (% mem usage: 21.10, % mem avail: 78.89)
+22000 1019.5641474723816 21.58 q/s (% mem usage: 21.10, % mem avail: 78.89)
+22009 1020.0431768894196 21.58 q/s (% mem usage: 21.00, % mem avail: 78.97)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Stylophora_pistillata_GAJOv1/10_functional_annotation/Stylophora_pistillata_GAJOv1.genes.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Stylophora_pistillata_GAJOv1/10_functional_annotation/Stylophora_pistillata_GAJOv1.genes.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Stylophora_pistillata_GAJOv1/10_functional_annotation/Stylophora_pistillata_GAJOv1.genes.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Stylophora_pistillata_GAJOv1/10_functional_annotation/Stylophora_pistillata_GAJOv1.genes.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Stylophora_pistillata_GAJOv1/10_functional_annotation/Stylophora_pistillata_GAJOv1.genes.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 22009
+Total time: 1369 secs
+FINISHED
+[Tue 17 May 2022 06:30:52 PM EDT]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Tue 17 May 2022 06:07:56 PM EDT
+Finished: at Tue 17 May 2022 06:30:52 PM EDT
+ExitStatus: 0
+=====================================================================

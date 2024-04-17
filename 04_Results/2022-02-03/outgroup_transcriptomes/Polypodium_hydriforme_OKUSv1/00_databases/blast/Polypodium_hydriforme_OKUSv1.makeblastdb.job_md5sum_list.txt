@@ -1,0 +1,2 @@
+ced92c9395dce0fa69863327630fd0d6  Polypodium_hydriforme_OKUSv1.transcripts.cds.fna
+4e9024c60590c0708f60562a8ac9a783  Polypodium_hydriforme_OKUSv1.transcripts.pep.faa

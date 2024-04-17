@@ -1,0 +1,92 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 02:33:07 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Palythoa_variabilis_PCBRv1/02_busco
+=====================================================================
+
+[Tue 06 Jun 2023 02:33:09 PM EDT]      CMD: md5sum Palythoa_variabilis_PCBRv1.transcripts.pep.faa | tee Palythoa_variabilis_PCBRv1.busco_protein.job_md5sum_list.txt
+399fc347d1e5572b21b85ad47ea303de  Palythoa_variabilis_PCBRv1.transcripts.pep.faa
+[Tue 06 Jun 2023 02:33:09 PM EDT]      CMD: mkdir /scratch/timothy/tmp/busco.1686076389
+[Tue 06 Jun 2023 02:33:09 PM EDT]      CMD: cd /scratch/timothy/tmp/busco.1686076389
+[Tue 06 Jun 2023 02:33:09 PM EDT]      CMD: ln -s /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Palythoa_variabilis_PCBRv1/02_busco/Palythoa_variabilis_PCBRv1.transcripts.pep.faa pep.faa
+[Tue 06 Jun 2023 02:33:09 PM EDT]      CMD: busco --cpu 48 --offline --lineage_dataset /scratch/timothy/databases/busco/metazoa_odb10 --mode protein --in pep.faa --out pep.faa.busco_metazoa_odb10
+INFO:	***** Start a BUSCO v5.0.0 analysis, current time: 06/06/2023 14:33:10 *****
+INFO:	Configuring BUSCO with local environment
+INFO:	Mode is proteins
+INFO:	Input file is /scratch/timothy/tmp/busco.1686076389/pep.faa
+INFO:	Using local lineages directory /scratch/timothy/databases/busco/metazoa_odb10
+INFO:	Running BUSCO using lineage dataset metazoa_odb10 (eukaryota, 2021-02-17)
+INFO:	***** Run HMMER on gene sequences *****
+INFO:	Running 954 job(s) on hmmsearch, starting at 06/06/2023 14:33:10
+INFO:	[hmmsearch]	191 of 954 task(s) completed
+INFO:	[hmmsearch]	287 of 954 task(s) completed
+INFO:	[hmmsearch]	382 of 954 task(s) completed
+INFO:	[hmmsearch]	478 of 954 task(s) completed
+INFO:	[hmmsearch]	573 of 954 task(s) completed
+INFO:	[hmmsearch]	668 of 954 task(s) completed
+INFO:	[hmmsearch]	668 of 954 task(s) completed
+INFO:	[hmmsearch]	764 of 954 task(s) completed
+INFO:	[hmmsearch]	859 of 954 task(s) completed
+INFO:	[hmmsearch]	954 of 954 task(s) completed
+INFO:	
+
+	--------------------------------------------------
+	|Results from dataset metazoa_odb10               |
+	--------------------------------------------------
+	|C:81.7%[S:70.3%,D:11.4%],F:8.3%,M:10.0%,n:954    |
+	|780	Complete BUSCOs (C)                       |
+	|671	Complete and single-copy BUSCOs (S)       |
+	|109	Complete and duplicated BUSCOs (D)        |
+	|79	Fragmented BUSCOs (F)                     |
+	|95	Missing BUSCOs (M)                        |
+	|954	Total BUSCO groups searched               |
+	--------------------------------------------------
+INFO:	BUSCO analysis done. Total running time: 23 seconds
+INFO:	Results written in /scratch/timothy/tmp/busco.1686076389/pep.faa.busco_metazoa_odb10
+INFO:	For assistance with interpreting the results, please consult the userguide: https://busco.ezlab.org/busco_userguide.html
+
+[Tue 06 Jun 2023 02:33:32 PM EDT]      CMD: busco --cpu 48 --offline --lineage_dataset /scratch/timothy/databases/busco/eukaryota_odb10 --mode protein --in pep.faa --out pep.faa.busco_eukaryota_odb10
+INFO:	***** Start a BUSCO v5.0.0 analysis, current time: 06/06/2023 14:33:33 *****
+INFO:	Configuring BUSCO with local environment
+INFO:	Mode is proteins
+INFO:	Input file is /scratch/timothy/tmp/busco.1686076389/pep.faa
+INFO:	Using local lineages directory /scratch/timothy/databases/busco/eukaryota_odb10
+INFO:	Running BUSCO using lineage dataset eukaryota_odb10 (eukaryota, 2020-09-10)
+INFO:	***** Run HMMER on gene sequences *****
+INFO:	Running 255 job(s) on hmmsearch, starting at 06/06/2023 14:33:33
+INFO:	[hmmsearch]	26 of 255 task(s) completed
+INFO:	[hmmsearch]	51 of 255 task(s) completed
+INFO:	[hmmsearch]	77 of 255 task(s) completed
+INFO:	[hmmsearch]	102 of 255 task(s) completed
+INFO:	[hmmsearch]	128 of 255 task(s) completed
+INFO:	[hmmsearch]	153 of 255 task(s) completed
+INFO:	[hmmsearch]	179 of 255 task(s) completed
+INFO:	[hmmsearch]	204 of 255 task(s) completed
+INFO:	[hmmsearch]	230 of 255 task(s) completed
+INFO:	[hmmsearch]	255 of 255 task(s) completed
+INFO:	
+
+	--------------------------------------------------
+	|Results from dataset eukaryota_odb10             |
+	--------------------------------------------------
+	|C:85.9%[S:67.5%,D:18.4%],F:9.0%,M:5.1%,n:255     |
+	|219	Complete BUSCOs (C)                       |
+	|172	Complete and single-copy BUSCOs (S)       |
+	|47	Complete and duplicated BUSCOs (D)        |
+	|23	Fragmented BUSCOs (F)                     |
+	|13	Missing BUSCOs (M)                        |
+	|255	Total BUSCO groups searched               |
+	--------------------------------------------------
+INFO:	BUSCO analysis done. Total running time: 18 seconds
+INFO:	Results written in /scratch/timothy/tmp/busco.1686076389/pep.faa.busco_eukaryota_odb10
+INFO:	For assistance with interpreting the results, please consult the userguide: https://busco.ezlab.org/busco_userguide.html
+
+[Tue 06 Jun 2023 02:33:51 PM EDT]      CMD: mv * /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Palythoa_variabilis_PCBRv1/02_busco/
+[Tue 06 Jun 2023 02:33:51 PM EDT]      CMD: cd /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Palythoa_variabilis_PCBRv1/02_busco
+[Tue 06 Jun 2023 02:33:51 PM EDT]      CMD: rm -fr /scratch/timothy/tmp/busco.1686076389
+
+=====================================================================
+Started: at Tue 06 Jun 2023 02:33:07 PM EDT
+Finished: at Tue 06 Jun 2023 02:33:51 PM EDT
+ExitStatus: 0
+=====================================================================

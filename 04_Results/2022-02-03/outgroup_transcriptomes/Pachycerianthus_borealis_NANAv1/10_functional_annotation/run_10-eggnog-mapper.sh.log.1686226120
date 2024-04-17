@@ -1,0 +1,85 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 08 Jun 2023 08:08:40 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Pachycerianthus_borealis_NANAv1/10_functional_annotation
+=====================================================================
+
+[Thu 08 Jun 2023 08:08:41 AM EDT]      CMD: md5sum Pachycerianthus_borealis_NANAv1.transcripts.pep.faa ../00_databases/Pachycerianthus_borealis_NANAv1.transcripts.pep.faa | tee Pachycerianthus_borealis_NANAv1.transcripts.pep.faa.emapper.job_md5sum_list.txt
+964c718de3baf2ae855cfd5b2b4ee331  Pachycerianthus_borealis_NANAv1.transcripts.pep.faa
+964c718de3baf2ae855cfd5b2b4ee331  ../00_databases/Pachycerianthus_borealis_NANAv1.transcripts.pep.faa
+[Thu 08 Jun 2023 08:08:41 AM EDT]      CMD: emapper.py -i Pachycerianthus_borealis_NANAv1.transcripts.pep.faa --output Pachycerianthus_borealis_NANAv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 3.0994415283203125e-06 0.00 q/s (% mem usage: 53.40, % mem avail: 46.64)
+[1;34mTime to load the DB into memory: 36.57470941543579[0m
+#  emapper-2.1.6
+# emapper.py  -i Pachycerianthus_borealis_NANAv1.transcripts.pep.faa --output Pachycerianthus_borealis_NANAv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Pachycerianthus_borealis_NANAv1/10_functional_annotation/Pachycerianthus_borealis_NANAv1.transcripts.pep.faa --threads 96 -o /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Pachycerianthus_borealis_NANAv1/10_functional_annotation/Pachycerianthus_borealis_NANAv1.transcripts.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+Namespace(Z=40000000, call_info='## Thu Jun  8 08:14:44 2023\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Pachycerianthus_borealis_NANAv1.transcripts.pep.faa --output Pachycerianthus_borealis_NANAv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem\n##', clean_overlaps='clans', cpu=96, cpus_per_worker=96, cut_ga=True, db='/scratch/timothy/databases/eggnog-mapper-rel20211209/pfam/Pfam-A.hmm', dbtype='hmmdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='seq', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Pachycerianthus_borealis_NANAv1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+Searching queries with a pool of 96 CPUs
+500 640.255206823349 0.78 q/s (% mem usage: 64.60, % mem avail: 35.37)
+1000 643.325097322464 1.55 q/s (% mem usage: 64.60, % mem avail: 35.37)
+1500 648.6456904411316 2.31 q/s (% mem usage: 64.60, % mem avail: 35.37)
+2000 650.9312009811401 3.07 q/s (% mem usage: 64.60, % mem avail: 35.37)
+2500 653.1726908683777 3.83 q/s (% mem usage: 64.60, % mem avail: 35.37)
+3000 656.0791645050049 4.57 q/s (% mem usage: 64.60, % mem avail: 35.37)
+3500 658.9668478965759 5.31 q/s (% mem usage: 64.60, % mem avail: 35.37)
+4000 661.8170158863068 6.04 q/s (% mem usage: 64.60, % mem avail: 35.37)
+4500 664.7599685192108 6.77 q/s (% mem usage: 64.60, % mem avail: 35.37)
+5000 669.3831996917725 7.47 q/s (% mem usage: 64.70, % mem avail: 35.25)
+5500 672.5399632453918 8.18 q/s (% mem usage: 64.90, % mem avail: 35.10)
+6000 675.2266974449158 8.89 q/s (% mem usage: 65.10, % mem avail: 34.87)
+6500 677.9459040164948 9.59 q/s (% mem usage: 65.20, % mem avail: 34.77)
+7000 680.9655439853668 10.28 q/s (% mem usage: 65.40, % mem avail: 34.61)
+7500 683.7755048274994 10.97 q/s (% mem usage: 65.40, % mem avail: 34.55)
+8000 687.8264255523682 11.63 q/s (% mem usage: 65.70, % mem avail: 34.35)
+8500 690.4720377922058 12.31 q/s (% mem usage: 65.70, % mem avail: 34.34)
+9000 693.963832616806 12.97 q/s (% mem usage: 65.70, % mem avail: 34.33)
+9500 698.9493236541748 13.59 q/s (% mem usage: 65.90, % mem avail: 34.08)
+9991 704.5914335250854 14.18 q/s (% mem usage: 66.20, % mem avail: 33.80)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Pachycerianthus_borealis_NANAv1/10_functional_annotation/Pachycerianthus_borealis_NANAv1.transcripts.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Pachycerianthus_borealis_NANAv1/10_functional_annotation/Pachycerianthus_borealis_NANAv1.transcripts.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Pachycerianthus_borealis_NANAv1/10_functional_annotation/Pachycerianthus_borealis_NANAv1.transcripts.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Pachycerianthus_borealis_NANAv1/10_functional_annotation/Pachycerianthus_borealis_NANAv1.transcripts.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Pachycerianthus_borealis_NANAv1/10_functional_annotation/Pachycerianthus_borealis_NANAv1.transcripts.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 9991
+Total time: 968 secs
+FINISHED
+[Thu 08 Jun 2023 08:24:57 AM EDT]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Thu 08 Jun 2023 08:08:40 AM EDT
+Finished: at Thu 08 Jun 2023 08:24:57 AM EDT
+ExitStatus: 0
+=====================================================================

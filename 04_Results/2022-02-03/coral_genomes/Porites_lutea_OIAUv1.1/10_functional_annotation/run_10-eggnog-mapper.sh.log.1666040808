@@ -1,0 +1,117 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Mon 17 Oct 2022 05:06:48 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_lutea_OIAUv1.1/10_functional_annotation
+=====================================================================
+
+[Mon 17 Oct 2022 05:06:49 PM EDT]      CMD: md5sum Porites_lutea_OIAUv1.1.genes.pep.faa ../00_databases/Porites_lutea_OIAUv1.1.genes.pep.faa | tee Porites_lutea_OIAUv1.1.genes.pep.faa.emapper.job_md5sum_list.txt
+4cbe262f6a9129a10e14cc4657bad32c  Porites_lutea_OIAUv1.1.genes.pep.faa
+4cbe262f6a9129a10e14cc4657bad32c  ../00_databases/Porites_lutea_OIAUv1.1.genes.pep.faa
+[Mon 17 Oct 2022 05:06:49 PM EDT]      CMD: emapper.py -i Porites_lutea_OIAUv1.1.genes.pep.faa --output Porites_lutea_OIAUv1.1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 2.1457672119140625e-06 0.00 q/s (% mem usage: 4.80, % mem avail: 95.20)
+[1;34mTime to load the DB into memory: 94.7656819820404[0m
+#  emapper-2.1.6
+# emapper.py  -i Porites_lutea_OIAUv1.1.genes.pep.faa --output Porites_lutea_OIAUv1.1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_lutea_OIAUv1.1/10_functional_annotation/Porites_lutea_OIAUv1.1.genes.pep.faa --threads 48 -o /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_lutea_OIAUv1.1/10_functional_annotation/Porites_lutea_OIAUv1.1.genes.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+CREATED ESL_REFORMAT DB. USING HMMSEARCH
+Namespace(Z=40000000, call_info='## Mon Oct 17 17:18:00 2022\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Porites_lutea_OIAUv1.1.genes.pep.faa --output Porites_lutea_OIAUv1.1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem\n##', clean_overlaps='hmmsearch_clans', cpu=48, cpus_per_worker=48, cut_ga=True, db='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_lutea_OIAUv1.1/10_functional_annotation/tmppvpix4p9', dbtype='seqdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='hmm', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_lutea_OIAUv1.1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+500 1036.9850144386292 0.48 q/s (% mem usage: 15.50, % mem avail: 84.49)
+1000 1038.594561100006 0.96 q/s (% mem usage: 15.60, % mem avail: 84.45)
+1500 1040.1012547016144 1.44 q/s (% mem usage: 15.60, % mem avail: 84.45)
+2000 1041.8428626060486 1.92 q/s (% mem usage: 15.60, % mem avail: 84.42)
+2500 1043.608873128891 2.40 q/s (% mem usage: 15.60, % mem avail: 84.36)
+3000 1045.142694234848 2.87 q/s (% mem usage: 15.60, % mem avail: 84.36)
+3500 1047.1344420909882 3.34 q/s (% mem usage: 15.70, % mem avail: 84.33)
+4000 1048.7590610980988 3.81 q/s (% mem usage: 15.70, % mem avail: 84.28)
+4500 1050.2143416404724 4.28 q/s (% mem usage: 15.70, % mem avail: 84.28)
+5000 1051.8238377571106 4.75 q/s (% mem usage: 15.70, % mem avail: 84.27)
+5500 1053.6273221969604 5.22 q/s (% mem usage: 15.80, % mem avail: 84.21)
+6000 1055.1873512268066 5.69 q/s (% mem usage: 15.80, % mem avail: 84.20)
+6500 1056.7231073379517 6.15 q/s (% mem usage: 15.80, % mem avail: 84.20)
+7000 1058.587170600891 6.61 q/s (% mem usage: 15.80, % mem avail: 84.17)
+7500 1060.0285215377808 7.08 q/s (% mem usage: 15.90, % mem avail: 84.14)
+8000 1061.7170782089233 7.53 q/s (% mem usage: 15.90, % mem avail: 84.14)
+8500 1064.8424458503723 7.98 q/s (% mem usage: 15.90, % mem avail: 84.08)
+9000 1066.920291185379 8.44 q/s (% mem usage: 15.90, % mem avail: 84.07)
+9500 1068.623110294342 8.89 q/s (% mem usage: 15.90, % mem avail: 84.05)
+10000 1070.316265821457 9.34 q/s (% mem usage: 16.00, % mem avail: 84.02)
+10500 1071.9594430923462 9.80 q/s (% mem usage: 16.00, % mem avail: 84.02)
+11000 1073.4792020320892 10.25 q/s (% mem usage: 16.00, % mem avail: 84.01)
+11500 1075.0254950523376 10.70 q/s (% mem usage: 16.00, % mem avail: 83.98)
+12000 1076.552942276001 11.15 q/s (% mem usage: 16.00, % mem avail: 83.97)
+12500 1078.092903137207 11.59 q/s (% mem usage: 16.00, % mem avail: 83.97)
+13000 1079.7953782081604 12.04 q/s (% mem usage: 16.00, % mem avail: 83.96)
+13500 1081.614193201065 12.48 q/s (% mem usage: 16.10, % mem avail: 83.94)
+14000 1083.1342492103577 12.93 q/s (% mem usage: 16.10, % mem avail: 83.94)
+14500 1084.8447868824005 13.37 q/s (% mem usage: 16.10, % mem avail: 83.93)
+15000 1086.4123980998993 13.81 q/s (% mem usage: 16.10, % mem avail: 83.92)
+15500 1087.8494441509247 14.25 q/s (% mem usage: 16.10, % mem avail: 83.91)
+16000 1089.362049818039 14.69 q/s (% mem usage: 16.10, % mem avail: 83.92)
+16500 1091.1040694713593 15.12 q/s (% mem usage: 16.10, % mem avail: 83.91)
+17000 1092.732140302658 15.56 q/s (% mem usage: 16.10, % mem avail: 83.90)
+17500 1094.1866171360016 15.99 q/s (% mem usage: 16.10, % mem avail: 83.90)
+18000 1095.73788022995 16.43 q/s (% mem usage: 16.10, % mem avail: 83.90)
+18500 1097.2450709342957 16.86 q/s (% mem usage: 16.10, % mem avail: 83.89)
+19000 1098.9170587062836 17.29 q/s (% mem usage: 16.10, % mem avail: 83.89)
+19500 1100.6858785152435 17.72 q/s (% mem usage: 16.10, % mem avail: 83.89)
+20000 1102.4391152858734 18.14 q/s (% mem usage: 16.10, % mem avail: 83.89)
+20500 1103.9087164402008 18.57 q/s (% mem usage: 16.10, % mem avail: 83.89)
+21000 1105.5719044208527 18.99 q/s (% mem usage: 16.10, % mem avail: 83.89)
+21500 1107.475236415863 19.41 q/s (% mem usage: 16.10, % mem avail: 83.89)
+22000 1109.0508108139038 19.84 q/s (% mem usage: 16.10, % mem avail: 83.88)
+22500 1110.6275792121887 20.26 q/s (% mem usage: 16.10, % mem avail: 83.88)
+23000 1112.3752987384796 20.68 q/s (% mem usage: 16.10, % mem avail: 83.88)
+23500 1113.7882165908813 21.10 q/s (% mem usage: 16.10, % mem avail: 83.88)
+24000 1115.3286311626434 21.52 q/s (% mem usage: 16.10, % mem avail: 83.88)
+24500 1116.8867309093475 21.94 q/s (% mem usage: 16.10, % mem avail: 83.88)
+25000 1118.6456637382507 22.35 q/s (% mem usage: 16.10, % mem avail: 83.88)
+25500 1120.2158675193787 22.76 q/s (% mem usage: 16.10, % mem avail: 83.88)
+25906 1122.4176404476166 23.08 q/s (% mem usage: 16.00, % mem avail: 83.98)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_lutea_OIAUv1.1/10_functional_annotation/Porites_lutea_OIAUv1.1.genes.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_lutea_OIAUv1.1/10_functional_annotation/Porites_lutea_OIAUv1.1.genes.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_lutea_OIAUv1.1/10_functional_annotation/Porites_lutea_OIAUv1.1.genes.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_lutea_OIAUv1.1/10_functional_annotation/Porites_lutea_OIAUv1.1.genes.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_lutea_OIAUv1.1/10_functional_annotation/Porites_lutea_OIAUv1.1.genes.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 25906
+Total time: 1559 secs
+FINISHED
+[Mon 17 Oct 2022 05:32:55 PM EDT]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Mon 17 Oct 2022 05:06:48 PM EDT
+Finished: at Mon 17 Oct 2022 05:32:55 PM EDT
+ExitStatus: 0
+=====================================================================

@@ -1,0 +1,2 @@
+fa8ca3c9d9fa1349a61d0c9fa7d72827  Hydra_viridissima_99AUv1.genes.pep.faa
+fa8ca3c9d9fa1349a61d0c9fa7d72827  ../00_databases/Hydra_viridissima_99AUv1.genes.pep.faa

@@ -1,0 +1,43 @@
+# Files
+Genome file	Clytia_hemispaerica_NANAv1.assembly.fasta
+GFF file	Clytia_hemispaerica_NANAv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	445210146
+Total contig length (bp)	371155944
+Number of scaffolds	7644
+Number of contigs	106776
+N50 of scaffolds (bp)	366311
+N50 of contigs (bp)	7948
+Percent gaps	16.634
+Percent GC	35.34
+
+# Gene stats (combined exon+introns)
+Number of genes	25087
+Total gene length	222077604
+Average gene length (bp)	8852.3
+Gene percent GC	35.52
+
+# Transcript stats (based on exon features)
+Average transcript length (bp)	1945.61
+Average number of exon per gene/transcript	6.09108
+
+# exon stats
+Number of exon	152807
+Total exon length (bp)	48809417
+Average exon length (bp)	319.419
+Number of single-exon transcripts	7819
+Percent single-exon transcripts	31.1675
+exon percent GC	38.14
+
+# Intron stats (predicted between exon features)
+Number of introns	135478
+Total intron length (bp)	181860381
+Average intron length (bp)	1342.36
+Intron percent GC	34.83
+
+# Intergenic stats (predicted between genes built from exon features)
+Number of intergenic regions	19181
+Total intergenic region length (bp)	145566040
+Average intergenic region length (bp)	7589.07
+Intergenic region percent GC	35.12

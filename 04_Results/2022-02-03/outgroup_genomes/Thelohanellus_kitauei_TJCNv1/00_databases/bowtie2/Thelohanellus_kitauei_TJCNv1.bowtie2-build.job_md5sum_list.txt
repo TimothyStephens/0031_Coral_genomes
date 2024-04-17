@@ -1,0 +1,2 @@
+045c0c62ece5e05746493e52710aa766  Thelohanellus_kitauei_TJCNv1.assembly.fasta
+0325f2e50223d9da99fafd103f8a6cd9  Thelohanellus_kitauei_TJCNv1.genes.cds.fna

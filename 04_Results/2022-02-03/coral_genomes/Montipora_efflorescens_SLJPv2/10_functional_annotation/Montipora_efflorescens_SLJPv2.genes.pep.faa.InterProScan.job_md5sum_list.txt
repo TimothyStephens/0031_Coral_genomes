@@ -1,0 +1,2 @@
+244f33d093c2df9424a1b076d09be147  Montipora_efflorescens_SLJPv2.genes.pep.faa
+6f34c40e6e06ed14aabbbc3039cc1b46  ../00_databases/Montipora_efflorescens_SLJPv2.genes.pep.faa

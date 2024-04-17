@@ -1,0 +1,98 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 23 Jun 2022 12:37:10 PM EDT
+Working directory is /scratch/timothy/tmp/interproscan/Porites_lobata_REEFv1/10_functional_annotation
+=====================================================================
+
+[Thu 23 Jun 2022 12:37:11 PM EDT]      CMD: md5sum Porites_lobata_REEFv1.transcripts.pep.faa ../00_databases/Porites_lobata_REEFv1.transcripts.pep.faa | tee Porites_lobata_REEFv1.transcripts.pep.faa.emapper.job_md5sum_list.txt
+2d324d02f90f053bb2cbcd14811613a3  Porites_lobata_REEFv1.transcripts.pep.faa
+2d324d02f90f053bb2cbcd14811613a3  ../00_databases/Porites_lobata_REEFv1.transcripts.pep.faa
+[Thu 23 Jun 2022 12:37:11 PM EDT]      CMD: emapper.py -i Porites_lobata_REEFv1.transcripts.pep.faa --output Porites_lobata_REEFv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 5.9604644775390625e-06 0.00 q/s (% mem usage: 51.20, % mem avail: 48.84)
+[1;34mTime to load the DB into memory: 61.87343192100525[0m
+#  emapper-2.1.6
+# emapper.py  -i Porites_lobata_REEFv1.transcripts.pep.faa --output Porites_lobata_REEFv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Porites_lobata_REEFv1/10_functional_annotation/Porites_lobata_REEFv1.transcripts.pep.faa --threads 96 -o /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Porites_lobata_REEFv1/10_functional_annotation/Porites_lobata_REEFv1.transcripts.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+CREATED ESL_REFORMAT DB. USING HMMSEARCH
+Namespace(Z=40000000, call_info='## Thu Jun 23 12:47:17 2022\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Porites_lobata_REEFv1.transcripts.pep.faa --output Porites_lobata_REEFv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem\n##', clean_overlaps='hmmsearch_clans', cpu=96, cpus_per_worker=96, cut_ga=True, db='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Porites_lobata_REEFv1/10_functional_annotation/tmp2w6xynos', dbtype='seqdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='hmm', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Porites_lobata_REEFv1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+500 936.3077480792999 0.53 q/s (% mem usage: 62.60, % mem avail: 37.45)
+1000 938.1340086460114 1.07 q/s (% mem usage: 62.50, % mem avail: 37.45)
+1500 939.8102085590363 1.60 q/s (% mem usage: 62.50, % mem avail: 37.45)
+2000 941.5537099838257 2.12 q/s (% mem usage: 62.50, % mem avail: 37.45)
+2500 943.4149134159088 2.65 q/s (% mem usage: 62.50, % mem avail: 37.45)
+3000 945.2345826625824 3.17 q/s (% mem usage: 62.60, % mem avail: 37.45)
+3500 946.7463326454163 3.70 q/s (% mem usage: 62.60, % mem avail: 37.45)
+4000 948.6460309028625 4.22 q/s (% mem usage: 62.50, % mem avail: 37.46)
+4500 950.2974712848663 4.74 q/s (% mem usage: 62.50, % mem avail: 37.46)
+5000 951.9088072776794 5.25 q/s (% mem usage: 62.50, % mem avail: 37.46)
+5500 953.873085975647 5.77 q/s (% mem usage: 62.50, % mem avail: 37.46)
+6000 955.3982110023499 6.28 q/s (% mem usage: 62.50, % mem avail: 37.46)
+6500 957.2273542881012 6.79 q/s (% mem usage: 62.50, % mem avail: 37.47)
+7000 958.8746876716614 7.30 q/s (% mem usage: 62.50, % mem avail: 37.45)
+7500 960.7438633441925 7.81 q/s (% mem usage: 62.50, % mem avail: 37.45)
+8000 962.5526127815247 8.31 q/s (% mem usage: 62.50, % mem avail: 37.45)
+8500 964.3244009017944 8.81 q/s (% mem usage: 62.50, % mem avail: 37.47)
+9000 965.9912872314453 9.32 q/s (% mem usage: 62.50, % mem avail: 37.47)
+9500 967.5156915187836 9.82 q/s (% mem usage: 62.50, % mem avail: 37.47)
+10000 969.1882193088531 10.32 q/s (% mem usage: 62.50, % mem avail: 37.47)
+10500 970.8479907512665 10.82 q/s (% mem usage: 62.50, % mem avail: 37.47)
+11000 972.6416914463043 11.31 q/s (% mem usage: 62.50, % mem avail: 37.47)
+11500 974.4238705635071 11.80 q/s (% mem usage: 62.50, % mem avail: 37.45)
+12000 976.2476692199707 12.29 q/s (% mem usage: 62.50, % mem avail: 37.45)
+12500 978.355119228363 12.78 q/s (% mem usage: 62.50, % mem avail: 37.47)
+13000 980.0700130462646 13.26 q/s (% mem usage: 62.60, % mem avail: 37.44)
+13500 981.6446101665497 13.75 q/s (% mem usage: 62.60, % mem avail: 37.44)
+14000 983.316342830658 14.24 q/s (% mem usage: 62.60, % mem avail: 37.44)
+14500 985.0732598304749 14.72 q/s (% mem usage: 62.60, % mem avail: 37.42)
+15000 986.7673234939575 15.20 q/s (% mem usage: 62.60, % mem avail: 37.42)
+15500 988.4883947372437 15.68 q/s (% mem usage: 62.60, % mem avail: 37.42)
+16000 990.0418584346771 16.16 q/s (% mem usage: 62.60, % mem avail: 37.44)
+16389 992.0295562744141 16.52 q/s (% mem usage: 62.50, % mem avail: 37.51)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Porites_lobata_REEFv1/10_functional_annotation/Porites_lobata_REEFv1.transcripts.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Porites_lobata_REEFv1/10_functional_annotation/Porites_lobata_REEFv1.transcripts.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Porites_lobata_REEFv1/10_functional_annotation/Porites_lobata_REEFv1.transcripts.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Porites_lobata_REEFv1/10_functional_annotation/Porites_lobata_REEFv1.transcripts.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Porites_lobata_REEFv1/10_functional_annotation/Porites_lobata_REEFv1.transcripts.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 16389
+Total time: 1438 secs
+FINISHED
+[Thu 23 Jun 2022 01:01:15 PM EDT]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Thu 23 Jun 2022 12:37:10 PM EDT
+Finished: at Thu 23 Jun 2022 01:01:15 PM EDT
+ExitStatus: 0
+=====================================================================

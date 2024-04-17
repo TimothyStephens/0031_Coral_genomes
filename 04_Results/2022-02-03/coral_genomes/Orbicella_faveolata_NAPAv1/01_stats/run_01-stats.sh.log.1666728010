@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 04:00:10 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Orbicella_faveolata_NAPAv1/01_stats
+=====================================================================
+
+[Tue 25 Oct 2022 04:00:12 PM EDT]      CMD: md5sum Orbicella_faveolata_NAPAv1.assembly.fasta Orbicella_faveolata_NAPAv1.genes.gff3 | tee Orbicella_faveolata_NAPAv1.genome_stats.job_md5sum_list.txt
+5133ff92fbd92c331f07712095bac856  Orbicella_faveolata_NAPAv1.assembly.fasta
+2bb783e3eedbb1cb47444e78d84557d3  Orbicella_faveolata_NAPAv1.genes.gff3
+[Tue 25 Oct 2022 04:00:13 PM EDT]      CMD: ./genome_stats Orbicella_faveolata_NAPAv1.assembly.fasta Orbicella_faveolata_NAPAv1.genes.gff3 > Orbicella_faveolata_NAPAv1.GeneStats.tsv
+index file Orbicella_faveolata_NAPAv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Tue 25 Oct 2022 04:00:10 PM EDT
+Finished: at Tue 25 Oct 2022 04:00:40 PM EDT
+ExitStatus: 0
+=====================================================================

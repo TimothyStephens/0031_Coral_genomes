@@ -1,0 +1,2 @@
+37a19c096ba1ca8d8fffe1db02ff5f7e  Morbakka_virulenta_ODJPv1.genes.pep.faa
+37a19c096ba1ca8d8fffe1db02ff5f7e  ../00_databases/Morbakka_virulenta_ODJPv1.genes.pep.faa

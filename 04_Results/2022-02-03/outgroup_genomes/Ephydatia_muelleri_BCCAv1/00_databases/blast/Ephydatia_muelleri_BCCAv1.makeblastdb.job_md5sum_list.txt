@@ -1,0 +1,3 @@
+91f2c89711ef040acf38cacb6580e6c7  Ephydatia_muelleri_BCCAv1.assembly.fasta
+374cefab4adbdb0cfd1b349ba10c7e8f  Ephydatia_muelleri_BCCAv1.genes.cds.fna
+d9273b9bb8d4e2570358be2619aeb034  Ephydatia_muelleri_BCCAv1.genes.pep.faa

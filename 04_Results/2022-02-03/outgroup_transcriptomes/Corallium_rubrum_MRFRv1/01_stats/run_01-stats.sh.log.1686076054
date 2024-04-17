@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 02:27:34 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Corallium_rubrum_MRFRv1/01_stats
+=====================================================================
+
+[Tue 06 Jun 2023 02:27:35 PM EDT]      CMD: md5sum Corallium_rubrum_MRFRv1.transcripts.cds.fna | tee Corallium_rubrum_MRFRv1.CDS_stats.job_md5sum_list.txt
+3c1b2893e4220630789ebeb434d49217  Corallium_rubrum_MRFRv1.transcripts.cds.fna
+[Tue 06 Jun 2023 02:27:35 PM EDT]      CMD: ./CDS_stats Corallium_rubrum_MRFRv1.transcripts.cds.fna > Corallium_rubrum_MRFRv1.GeneStats.tsv
+
+=====================================================================
+Started: at Tue 06 Jun 2023 02:27:34 PM EDT
+Finished: at Tue 06 Jun 2023 02:27:36 PM EDT
+ExitStatus: 0
+=====================================================================

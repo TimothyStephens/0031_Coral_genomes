@@ -1,0 +1,80 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 24 Nov 2022 10:44:09 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_reniformis_FLUSv1/10_functional_annotation
+=====================================================================
+
+[Thu 24 Nov 2022 10:44:11 PM EST]      CMD: md5sum Renilla_reniformis_FLUSv1.genes.pep.faa ../00_databases/Renilla_reniformis_FLUSv1.genes.pep.faa | tee Renilla_reniformis_FLUSv1.genes.pep.faa.emapper.job_md5sum_list.txt
+8b882a30a2de5ed54f04c34b8d140ee7  Renilla_reniformis_FLUSv1.genes.pep.faa
+8b882a30a2de5ed54f04c34b8d140ee7  ../00_databases/Renilla_reniformis_FLUSv1.genes.pep.faa
+[Thu 24 Nov 2022 10:44:11 PM EST]      CMD: emapper.py -i Renilla_reniformis_FLUSv1.genes.pep.faa --output Renilla_reniformis_FLUSv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 5.245208740234375e-06 0.00 q/s (% mem usage: 2.10, % mem avail: 97.88)
+[1;34mTime to load the DB into memory: 47.605292320251465[0m
+#  emapper-2.1.6
+# emapper.py  -i Renilla_reniformis_FLUSv1.genes.pep.faa --output Renilla_reniformis_FLUSv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_reniformis_FLUSv1/10_functional_annotation/Renilla_reniformis_FLUSv1.genes.pep.faa --threads 48 -o /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_reniformis_FLUSv1/10_functional_annotation/Renilla_reniformis_FLUSv1.genes.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+Namespace(Z=40000000, call_info='## Thu Nov 24 22:50:25 2022\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Renilla_reniformis_FLUSv1.genes.pep.faa --output Renilla_reniformis_FLUSv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem\n##', clean_overlaps='clans', cpu=48, cpus_per_worker=48, cut_ga=True, db='/scratch/timothy/databases/eggnog-mapper-rel20211209/pfam/Pfam-A.hmm', dbtype='hmmdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='seq', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_reniformis_FLUSv1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+Searching queries with a pool of 48 CPUs
+500 498.32311820983887 1.00 q/s (% mem usage: 13.20, % mem avail: 86.75)
+1000 499.78998947143555 2.00 q/s (% mem usage: 13.20, % mem avail: 86.75)
+1500 501.02013301849365 2.99 q/s (% mem usage: 13.20, % mem avail: 86.75)
+2000 502.1069209575653 3.98 q/s (% mem usage: 13.20, % mem avail: 86.75)
+2500 503.59434962272644 4.96 q/s (% mem usage: 13.20, % mem avail: 86.75)
+3000 504.97163939476013 5.94 q/s (% mem usage: 13.20, % mem avail: 86.75)
+3500 506.47728657722473 6.91 q/s (% mem usage: 13.20, % mem avail: 86.75)
+4000 513.9299509525299 7.78 q/s (% mem usage: 13.20, % mem avail: 86.75)
+4500 515.5000529289246 8.73 q/s (% mem usage: 13.20, % mem avail: 86.75)
+5000 517.1009993553162 9.67 q/s (% mem usage: 13.20, % mem avail: 86.75)
+5500 518.5443308353424 10.61 q/s (% mem usage: 13.20, % mem avail: 86.75)
+6000 520.0784056186676 11.54 q/s (% mem usage: 13.20, % mem avail: 86.75)
+6500 522.0947644710541 12.45 q/s (% mem usage: 13.20, % mem avail: 86.75)
+7000 524.2652142047882 13.35 q/s (% mem usage: 13.20, % mem avail: 86.75)
+7415 525.9395794868469 14.10 q/s (% mem usage: 13.20, % mem avail: 86.77)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_reniformis_FLUSv1/10_functional_annotation/Renilla_reniformis_FLUSv1.genes.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_reniformis_FLUSv1/10_functional_annotation/Renilla_reniformis_FLUSv1.genes.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_reniformis_FLUSv1/10_functional_annotation/Renilla_reniformis_FLUSv1.genes.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_reniformis_FLUSv1/10_functional_annotation/Renilla_reniformis_FLUSv1.genes.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_reniformis_FLUSv1/10_functional_annotation/Renilla_reniformis_FLUSv1.genes.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 7415
+Total time: 818 secs
+FINISHED
+[Thu 24 Nov 2022 10:57:55 PM EST]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Thu 24 Nov 2022 10:44:09 PM EST
+Finished: at Thu 24 Nov 2022 10:57:55 PM EST
+ExitStatus: 0
+=====================================================================

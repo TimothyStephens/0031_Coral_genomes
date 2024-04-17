@@ -1,0 +1,3 @@
+612d9ab06be964c5d58eb756e92c993d  Xenia_sp_CTEAv1.assembly.fasta
+3573e9541cde0d1d09502a99f51bac75  Xenia_sp_CTEAv1.genes.cds.fna
+de3624a4d9780cde87b52a6c7218e6ba  Xenia_sp_CTEAv1.genes.pep.faa

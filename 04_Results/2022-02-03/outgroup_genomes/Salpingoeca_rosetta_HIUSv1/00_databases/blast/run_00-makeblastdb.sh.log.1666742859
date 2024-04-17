@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 08:07:39 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Salpingoeca_rosetta_HIUSv1/00_databases/blast
+=====================================================================
+
+[Tue 25 Oct 2022 08:07:41 PM EDT]      CMD: md5sum Salpingoeca_rosetta_HIUSv1.assembly.fasta Salpingoeca_rosetta_HIUSv1.genes.cds.fna Salpingoeca_rosetta_HIUSv1.genes.pep.faa | tee Salpingoeca_rosetta_HIUSv1.makeblastdb.job_md5sum_list.txt
+351b5027f8a9ce268c7e7b89cfa0490e  Salpingoeca_rosetta_HIUSv1.assembly.fasta
+b8ed0be2a9f7274b1449ace4887b7ed3  Salpingoeca_rosetta_HIUSv1.genes.cds.fna
+9c7785d973aae5cbb506379c9381b4b7  Salpingoeca_rosetta_HIUSv1.genes.pep.faa
+[Tue 25 Oct 2022 08:07:42 PM EDT]      CMD: makeblastdb -dbtype nucl -in Salpingoeca_rosetta_HIUSv1.assembly.fasta
+
+
+Building a new DB, current time: 10/25/2022 20:07:42
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Salpingoeca_rosetta_HIUSv1/00_databases/blast/Salpingoeca_rosetta_HIUSv1.assembly.fasta
+New DB title:  Salpingoeca_rosetta_HIUSv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 154 sequences in 0.627188 seconds.
+
+
+[Tue 25 Oct 2022 08:07:42 PM EDT]      CMD: makeblastdb -dbtype nucl -in Salpingoeca_rosetta_HIUSv1.genes.cds.fna
+
+
+Building a new DB, current time: 10/25/2022 20:07:42
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Salpingoeca_rosetta_HIUSv1/00_databases/blast/Salpingoeca_rosetta_HIUSv1.genes.cds.fna
+New DB title:  Salpingoeca_rosetta_HIUSv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 11618 sequences in 0.384092 seconds.
+
+
+[Tue 25 Oct 2022 08:07:43 PM EDT]      CMD: makeblastdb -dbtype prot -in Salpingoeca_rosetta_HIUSv1.genes.pep.faa
+
+
+Building a new DB, current time: 10/25/2022 20:07:43
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Salpingoeca_rosetta_HIUSv1/00_databases/blast/Salpingoeca_rosetta_HIUSv1.genes.pep.faa
+New DB title:  Salpingoeca_rosetta_HIUSv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 11618 sequences in 0.319672 seconds.
+
+
+
+=====================================================================
+Started: at Tue 25 Oct 2022 08:07:39 PM EDT
+Finished: at Tue 25 Oct 2022 08:07:43 PM EDT
+ExitStatus: 0
+=====================================================================

@@ -1,0 +1,3 @@
+f7b9af4c98c06dfb1ef353e241af0533  Calvadosia_cruxmelitensis_CRGBv3.2.assembly.fasta
+94d84485526d866c9b3b7a344de8b77d  Calvadosia_cruxmelitensis_CRGBv3.2.genes.cds.fna
+9b2ef3a78579a0b99727b38c2f948deb  Calvadosia_cruxmelitensis_CRGBv3.2.genes.pep.faa

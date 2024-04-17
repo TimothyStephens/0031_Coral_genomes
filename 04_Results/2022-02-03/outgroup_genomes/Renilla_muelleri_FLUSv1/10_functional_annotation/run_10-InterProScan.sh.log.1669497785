@@ -1,0 +1,88 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat 26 Nov 2022 04:23:05 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_muelleri_FLUSv1/10_functional_annotation
+=====================================================================
+
+[Sat 26 Nov 2022 04:23:06 PM EST]      CMD: md5sum Renilla_muelleri_FLUSv1.genes.pep.faa ../00_databases/Renilla_muelleri_FLUSv1.genes.pep.faa | tee Renilla_muelleri_FLUSv1.genes.pep.faa.InterProScan.job_md5sum_list.txt
+36c150161851d4d550d542c227e0ad93  Renilla_muelleri_FLUSv1.genes.pep.faa
+36c150161851d4d550d542c227e0ad93  ../00_databases/Renilla_muelleri_FLUSv1.genes.pep.faa
+[Sat 26 Nov 2022 04:23:06 PM EST]      CMD: /home/timothy/programs/my_interproscan/interproscan-5.53-87.0/interproscan.sh -dp --goterms --cpu 48 --input Renilla_muelleri_FLUSv1.genes.pep.faa --output-file-base Renilla_muelleri_FLUSv1.genes.pep.faa.InterProScan
+26/11/2022 16:23:07:443 Welcome to InterProScan-5.53-87.0
+26/11/2022 16:23:07:445 Running InterProScan v5 in STANDALONE mode... on Linux
+26/11/2022 16:23:12:055 RunID: coral_20221126_162311580_jp54
+26/11/2022 16:23:19:473 Loading file /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_muelleri_FLUSv1/10_functional_annotation/Renilla_muelleri_FLUSv1.genes.pep.faa
+26/11/2022 16:23:19:475 Running the following analyses:
+[CDD-3.18,Coils-2.2.1,Gene3D-4.3.0,Hamap-2020_05,MobiDBLite-2.0,PANTHER-15.0,Pfam-34.0,Phobius-1.01,PIRSF-3.10,PIRSR-2021_02,PRINTS-42.0,ProSitePatterns-2021_01,ProSiteProfiles-2021_01,SFLD-4,SignalP_EUK-4.1,SignalP_GRAM_NEGATIVE-4.1,SignalP_GRAM_POSITIVE-4.1,SMART-7.1,SUPERFAMILY-1.75,TIGRFAM-15.0,TMHMM-2.0c]
+Pre-calculated match lookup service DISABLED.  Please wait for match calculations to complete...
+26/11/2022 16:23:24:250 Uploaded 23145 unique sequences for analysis
+26/11/2022 17:32:01:839 25% completed
+com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String "Nter": not a valid Integer value
+ at [Source: (FileInputStream); line: 4514, column: 38] (through reference chain: java.util.LinkedHashMap["5456"]->uk.ac.ebi.interpro.scan.io.SimpleSequenceMatch["domainMatches"]->java.util.LinkedHashMap["PIRSR001355-5"]->java.util.ArrayList[0]->uk.ac.ebi.interpro.scan.io.SimpleDomainMatch["ruleSites"]->java.util.ArrayList[0]->uk.ac.ebi.interpro.scan.io.RuleSite["start"])
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.weirdStringException(DeserializationContext.java:1549)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleWeirdStringValue(DeserializationContext.java:911)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer._parseInteger(NumberDeserializers.java:522)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:474)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:452)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:127)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:286)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:245)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:27)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:127)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:286)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:245)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:27)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer._readAndBindStringKeyMap(MapDeserializer.java:527)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:364)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:29)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:127)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer._readAndBindStringKeyMap(MapDeserializer.java:527)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:364)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:29)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3077)
+	at uk.ac.ebi.interpro.scan.io.match.hmmer.hmmer3.PIRSRHmmer3MatchParser.parseFileInput(PIRSRHmmer3MatchParser.java:336)
+	at uk.ac.ebi.interpro.scan.io.match.hmmer.hmmer3.PIRSRHmmer3MatchParser.parseMatchesAndSites(PIRSRHmmer3MatchParser.java:101)
+	at uk.ac.ebi.interpro.scan.management.model.implementations.CompositeParseStep.execute(CompositeParseStep.java:97)
+	at uk.ac.ebi.interpro.scan.jms.activemq.StepExecutionTransactionImpl.executeInTransaction(StepExecutionTransactionImpl.java:87)
+	at jdk.internal.reflect.GeneratedMethodAccessor93.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy142.executeInTransaction(Unknown Source)
+	at uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener.onMessage(LocalJobQueueListener.java:200)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1189)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1179)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1076)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+26/11/2022 17:41:16:616 50% completed
+26/11/2022 18:08:03:604 75% completed
+26/11/2022 18:35:13:083 90% completed
+26/11/2022 19:35:13:177 98% completed
+26/11/2022 20:06:22:447 100% done:  InterProScan analyses completed 
+
+[Sat 26 Nov 2022 08:06:23 PM EST]      CMD: rm -fr temp
+
+=====================================================================
+Started: at Sat 26 Nov 2022 04:23:05 PM EST
+Finished: at Sat 26 Nov 2022 08:06:23 PM EST
+ExitStatus: 0
+=====================================================================

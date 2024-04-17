@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat 12 Nov 2022 11:01:32 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Cassiopea_xamachana_T1-Av2/01_stats
+=====================================================================
+
+[Sat 12 Nov 2022 11:01:40 PM EST]      CMD: md5sum Cassiopea_xamachana_T1-Av2.transcripts.cds.fna | tee Cassiopea_xamachana_T1-Av2.CDS_stats.job_md5sum_list.txt
+f7c64330f97a9352fa963f79c4c0e4d3  Cassiopea_xamachana_T1-Av2.transcripts.cds.fna
+[Sat 12 Nov 2022 11:01:40 PM EST]      CMD: ./CDS_stats Cassiopea_xamachana_T1-Av2.transcripts.cds.fna > Cassiopea_xamachana_T1-Av2.GeneStats.tsv
+
+=====================================================================
+Started: at Sat 12 Nov 2022 11:01:32 PM EST
+Finished: at Sat 12 Nov 2022 11:01:42 PM EST
+ExitStatus: 0
+=====================================================================

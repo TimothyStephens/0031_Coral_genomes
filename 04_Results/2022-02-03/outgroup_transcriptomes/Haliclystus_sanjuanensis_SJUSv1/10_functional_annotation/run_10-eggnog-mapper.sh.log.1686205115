@@ -1,0 +1,117 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 08 Jun 2023 02:18:35 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Haliclystus_sanjuanensis_SJUSv1/10_functional_annotation
+=====================================================================
+
+[Thu 08 Jun 2023 02:18:37 AM EDT]      CMD: md5sum Haliclystus_sanjuanensis_SJUSv1.transcripts.pep.faa ../00_databases/Haliclystus_sanjuanensis_SJUSv1.transcripts.pep.faa | tee Haliclystus_sanjuanensis_SJUSv1.transcripts.pep.faa.emapper.job_md5sum_list.txt
+2598632fc0ab695825d9424412a1661b  Haliclystus_sanjuanensis_SJUSv1.transcripts.pep.faa
+2598632fc0ab695825d9424412a1661b  ../00_databases/Haliclystus_sanjuanensis_SJUSv1.transcripts.pep.faa
+[Thu 08 Jun 2023 02:18:37 AM EDT]      CMD: emapper.py -i Haliclystus_sanjuanensis_SJUSv1.transcripts.pep.faa --output Haliclystus_sanjuanensis_SJUSv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 3.0994415283203125e-06 0.00 q/s (% mem usage: 50.50, % mem avail: 49.54)
+[1;34mTime to load the DB into memory: 40.50949001312256[0m
+#  emapper-2.1.6
+# emapper.py  -i Haliclystus_sanjuanensis_SJUSv1.transcripts.pep.faa --output Haliclystus_sanjuanensis_SJUSv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Haliclystus_sanjuanensis_SJUSv1/10_functional_annotation/Haliclystus_sanjuanensis_SJUSv1.transcripts.pep.faa --threads 96 -o /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Haliclystus_sanjuanensis_SJUSv1/10_functional_annotation/Haliclystus_sanjuanensis_SJUSv1.transcripts.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+CREATED ESL_REFORMAT DB. USING HMMSEARCH
+Namespace(Z=40000000, call_info='## Thu Jun  8 02:27:22 2023\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Haliclystus_sanjuanensis_SJUSv1.transcripts.pep.faa --output Haliclystus_sanjuanensis_SJUSv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem\n##', clean_overlaps='hmmsearch_clans', cpu=96, cpus_per_worker=96, cut_ga=True, db='/scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Haliclystus_sanjuanensis_SJUSv1/10_functional_annotation/tmp30wnu_dr', dbtype='seqdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='hmm', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Haliclystus_sanjuanensis_SJUSv1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+500 873.8917303085327 0.57 q/s (% mem usage: 61.80, % mem avail: 38.20)
+1000 875.5983374118805 1.14 q/s (% mem usage: 61.80, % mem avail: 38.20)
+1500 877.1292386054993 1.71 q/s (% mem usage: 61.80, % mem avail: 38.20)
+2000 878.9515490531921 2.28 q/s (% mem usage: 61.80, % mem avail: 38.20)
+2500 880.5404796600342 2.84 q/s (% mem usage: 61.80, % mem avail: 38.20)
+3000 882.3391170501709 3.40 q/s (% mem usage: 61.80, % mem avail: 38.20)
+3500 884.0925507545471 3.96 q/s (% mem usage: 61.80, % mem avail: 38.20)
+4000 885.8763301372528 4.52 q/s (% mem usage: 61.80, % mem avail: 38.16)
+4500 887.6986055374146 5.07 q/s (% mem usage: 61.80, % mem avail: 38.20)
+5000 889.220055103302 5.62 q/s (% mem usage: 61.80, % mem avail: 38.20)
+5500 890.9905469417572 6.17 q/s (% mem usage: 61.80, % mem avail: 38.20)
+6000 892.7800657749176 6.72 q/s (% mem usage: 61.80, % mem avail: 38.20)
+6500 894.7115561962128 7.26 q/s (% mem usage: 61.80, % mem avail: 38.20)
+7000 896.6649363040924 7.81 q/s (% mem usage: 61.80, % mem avail: 38.20)
+7500 898.3685431480408 8.35 q/s (% mem usage: 61.80, % mem avail: 38.20)
+8000 900.2867078781128 8.89 q/s (% mem usage: 61.80, % mem avail: 38.19)
+8500 902.0351526737213 9.42 q/s (% mem usage: 61.80, % mem avail: 38.19)
+9000 903.8698971271515 9.96 q/s (% mem usage: 61.80, % mem avail: 38.19)
+9500 905.6985466480255 10.49 q/s (% mem usage: 61.80, % mem avail: 38.19)
+10000 907.5705862045288 11.02 q/s (% mem usage: 61.80, % mem avail: 38.19)
+10500 909.3219656944275 11.55 q/s (% mem usage: 61.80, % mem avail: 38.20)
+11000 910.9246952533722 12.08 q/s (% mem usage: 61.80, % mem avail: 38.20)
+11500 912.9595160484314 12.60 q/s (% mem usage: 61.80, % mem avail: 38.20)
+12000 914.951899766922 13.12 q/s (% mem usage: 61.80, % mem avail: 38.20)
+12500 916.7133619785309 13.64 q/s (% mem usage: 61.80, % mem avail: 38.20)
+13000 918.6228513717651 14.15 q/s (% mem usage: 61.80, % mem avail: 38.19)
+13500 920.408097743988 14.67 q/s (% mem usage: 61.80, % mem avail: 38.19)
+14000 922.3905339241028 15.18 q/s (% mem usage: 61.80, % mem avail: 38.19)
+14500 924.5373327732086 15.68 q/s (% mem usage: 61.80, % mem avail: 38.19)
+15000 926.4870100021362 16.19 q/s (% mem usage: 61.80, % mem avail: 38.19)
+15500 928.3627572059631 16.70 q/s (% mem usage: 61.80, % mem avail: 38.19)
+16000 930.1602079868317 17.20 q/s (% mem usage: 61.80, % mem avail: 38.19)
+16500 932.1379466056824 17.70 q/s (% mem usage: 61.80, % mem avail: 38.19)
+17000 933.8949916362762 18.20 q/s (% mem usage: 61.80, % mem avail: 38.19)
+17500 935.6700356006622 18.70 q/s (% mem usage: 61.80, % mem avail: 38.19)
+18000 937.5289971828461 19.20 q/s (% mem usage: 61.80, % mem avail: 38.18)
+18500 939.3251161575317 19.69 q/s (% mem usage: 61.80, % mem avail: 38.18)
+19000 940.9255795478821 20.19 q/s (% mem usage: 61.80, % mem avail: 38.18)
+19500 942.6337745189667 20.69 q/s (% mem usage: 61.80, % mem avail: 38.18)
+20000 944.4589803218842 21.18 q/s (% mem usage: 61.80, % mem avail: 38.18)
+20500 946.0361685752869 21.67 q/s (% mem usage: 61.80, % mem avail: 38.18)
+21000 947.3702926635742 22.17 q/s (% mem usage: 61.80, % mem avail: 38.18)
+21500 948.8292963504791 22.66 q/s (% mem usage: 61.80, % mem avail: 38.18)
+22000 950.3291602134705 23.15 q/s (% mem usage: 61.80, % mem avail: 38.18)
+22500 951.9498455524445 23.64 q/s (% mem usage: 61.80, % mem avail: 38.18)
+23000 953.5360641479492 24.12 q/s (% mem usage: 61.80, % mem avail: 38.18)
+23500 955.1842086315155 24.60 q/s (% mem usage: 61.80, % mem avail: 38.18)
+24000 956.7731399536133 25.08 q/s (% mem usage: 61.80, % mem avail: 38.18)
+24500 958.3061215877533 25.57 q/s (% mem usage: 61.80, % mem avail: 38.18)
+25000 959.7591845989227 26.05 q/s (% mem usage: 61.80, % mem avail: 38.18)
+25500 961.183685541153 26.53 q/s (% mem usage: 61.80, % mem avail: 38.18)
+25540 962.0202622413635 26.55 q/s (% mem usage: 61.70, % mem avail: 38.30)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Haliclystus_sanjuanensis_SJUSv1/10_functional_annotation/Haliclystus_sanjuanensis_SJUSv1.transcripts.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Haliclystus_sanjuanensis_SJUSv1/10_functional_annotation/Haliclystus_sanjuanensis_SJUSv1.transcripts.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Haliclystus_sanjuanensis_SJUSv1/10_functional_annotation/Haliclystus_sanjuanensis_SJUSv1.transcripts.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Haliclystus_sanjuanensis_SJUSv1/10_functional_annotation/Haliclystus_sanjuanensis_SJUSv1.transcripts.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Haliclystus_sanjuanensis_SJUSv1/10_functional_annotation/Haliclystus_sanjuanensis_SJUSv1.transcripts.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 25540
+Total time: 1303 secs
+FINISHED
+[Thu 08 Jun 2023 02:40:24 AM EDT]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Thu 08 Jun 2023 02:18:35 AM EDT
+Finished: at Thu 08 Jun 2023 02:40:24 AM EDT
+ExitStatus: 0
+=====================================================================

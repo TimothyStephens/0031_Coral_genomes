@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 21 Jun 2022 11:45:27 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Anthopleura_elegantissima_REEFv1/01_stats
+=====================================================================
+
+[Tue 21 Jun 2022 11:45:28 AM EDT]      CMD: md5sum Anthopleura_elegantissima_REEFv1.transcripts.cds.fna | tee Anthopleura_elegantissima_REEFv1.CDS_stats.job_md5sum_list.txt
+ecbc336d222643d1f787ecaca72e6852  Anthopleura_elegantissima_REEFv1.transcripts.cds.fna
+[Tue 21 Jun 2022 11:45:28 AM EDT]      CMD: ./CDS_stats Anthopleura_elegantissima_REEFv1.transcripts.cds.fna > Anthopleura_elegantissima_REEFv1.GeneStats.tsv
+
+=====================================================================
+Started: at Tue 21 Jun 2022 11:45:27 AM EDT
+Finished: at Tue 21 Jun 2022 11:45:29 AM EDT
+ExitStatus: 0
+=====================================================================

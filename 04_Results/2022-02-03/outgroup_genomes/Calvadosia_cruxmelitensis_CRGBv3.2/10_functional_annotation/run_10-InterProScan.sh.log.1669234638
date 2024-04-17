@@ -1,0 +1,31 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 23 Nov 2022 03:17:18 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Calvadosia_cruxmelitensis_CRGBv3.2/10_functional_annotation
+=====================================================================
+
+[Wed 23 Nov 2022 03:17:19 PM EST]      CMD: md5sum Calvadosia_cruxmelitensis_CRGBv3.2.genes.pep.faa ../00_databases/Calvadosia_cruxmelitensis_CRGBv3.2.genes.pep.faa | tee Calvadosia_cruxmelitensis_CRGBv3.2.genes.pep.faa.InterProScan.job_md5sum_list.txt
+b73402dc7b457695a2b2a2a780d43822  Calvadosia_cruxmelitensis_CRGBv3.2.genes.pep.faa
+9b2ef3a78579a0b99727b38c2f948deb  ../00_databases/Calvadosia_cruxmelitensis_CRGBv3.2.genes.pep.faa
+[Wed 23 Nov 2022 03:17:20 PM EST]      CMD: /home/timothy/programs/my_interproscan/interproscan-5.53-87.0/interproscan.sh -dp --goterms --cpu 48 --input Calvadosia_cruxmelitensis_CRGBv3.2.genes.pep.faa --output-file-base Calvadosia_cruxmelitensis_CRGBv3.2.genes.pep.faa.InterProScan
+23/11/2022 15:17:22:299 Welcome to InterProScan-5.53-87.0
+23/11/2022 15:17:22:302 Running InterProScan v5 in STANDALONE mode... on Linux
+23/11/2022 15:17:30:361 RunID: coral_20221123_151729674_gvnw
+23/11/2022 15:17:39:938 Loading file /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Calvadosia_cruxmelitensis_CRGBv3.2/10_functional_annotation/Calvadosia_cruxmelitensis_CRGBv3.2.genes.pep.faa
+23/11/2022 15:17:39:940 Running the following analyses:
+[CDD-3.18,Coils-2.2.1,Gene3D-4.3.0,Hamap-2020_05,MobiDBLite-2.0,PANTHER-15.0,Pfam-34.0,Phobius-1.01,PIRSF-3.10,PIRSR-2021_02,PRINTS-42.0,ProSitePatterns-2021_01,ProSiteProfiles-2021_01,SFLD-4,SignalP_EUK-4.1,SignalP_GRAM_NEGATIVE-4.1,SignalP_GRAM_POSITIVE-4.1,SMART-7.1,SUPERFAMILY-1.75,TIGRFAM-15.0,TMHMM-2.0c]
+Pre-calculated match lookup service DISABLED.  Please wait for match calculations to complete...
+23/11/2022 15:17:48:367 Uploaded 26224 unique sequences for analysis
+23/11/2022 16:26:20:912 25% completed
+23/11/2022 16:45:26:674 50% completed
+23/11/2022 17:09:01:143 75% completed
+23/11/2022 17:25:16:048 90% completed
+23/11/2022 18:01:05:951 100% done:  InterProScan analyses completed 
+
+[Wed 23 Nov 2022 06:01:06 PM EST]      CMD: rm -fr temp
+
+=====================================================================
+Started: at Wed 23 Nov 2022 03:17:18 PM EST
+Finished: at Wed 23 Nov 2022 06:01:06 PM EST
+ExitStatus: 0
+=====================================================================

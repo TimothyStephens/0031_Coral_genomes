@@ -1,0 +1,2 @@
+057df1324b1a1556312c1d8f68e9f485  Stylophora_pistillata_GAJOv1.genes.pep.faa
+5daa51c3169f0e2b2f987322c79c0e07  ../00_databases/Stylophora_pistillata_GAJOv1.genes.pep.faa

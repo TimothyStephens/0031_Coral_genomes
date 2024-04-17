@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 08:09:33 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_muelleri_FLUSv1/01_stats
+=====================================================================
+
+[Tue 25 Oct 2022 08:09:36 PM EDT]      CMD: md5sum Renilla_muelleri_FLUSv1.assembly.fasta Renilla_muelleri_FLUSv1.genes.gff3 | tee Renilla_muelleri_FLUSv1.genome_stats.job_md5sum_list.txt
+be9fb375b095c193518f0904edabe730  Renilla_muelleri_FLUSv1.assembly.fasta
+bac92c0b2aa45b14faf4050a5f54e9cb  Renilla_muelleri_FLUSv1.genes.gff3
+[Tue 25 Oct 2022 08:09:37 PM EDT]      CMD: ./genome_stats Renilla_muelleri_FLUSv1.assembly.fasta Renilla_muelleri_FLUSv1.genes.gff3 > Renilla_muelleri_FLUSv1.GeneStats.tsv
+index file Renilla_muelleri_FLUSv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Tue 25 Oct 2022 08:09:33 PM EDT
+Finished: at Tue 25 Oct 2022 08:09:53 PM EDT
+ExitStatus: 0
+=====================================================================

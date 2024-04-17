@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 14 Jun 2022 02:39:43 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Platygyra_carnosus_REEFv1/01_stats
+=====================================================================
+
+[Tue 14 Jun 2022 02:39:44 PM EDT]      CMD: md5sum Platygyra_carnosus_REEFv1.transcripts.cds.fna | tee Platygyra_carnosus_REEFv1.CDS_stats.job_md5sum_list.txt
+f90a7abf06ad9aff15da55c886e848af  Platygyra_carnosus_REEFv1.transcripts.cds.fna
+[Tue 14 Jun 2022 02:39:44 PM EDT]      CMD: ./CDS_stats Platygyra_carnosus_REEFv1.transcripts.cds.fna > Platygyra_carnosus_REEFv1.GeneStats.tsv
+
+=====================================================================
+Started: at Tue 14 Jun 2022 02:39:43 PM EDT
+Finished: at Tue 14 Jun 2022 02:39:44 PM EDT
+ExitStatus: 0
+=====================================================================

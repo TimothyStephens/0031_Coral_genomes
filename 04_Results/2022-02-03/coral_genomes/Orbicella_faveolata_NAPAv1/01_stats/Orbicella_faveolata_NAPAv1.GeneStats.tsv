@@ -1,0 +1,43 @@
+# Files
+Genome file	Orbicella_faveolata_NAPAv1.assembly.fasta
+GFF file	Orbicella_faveolata_NAPAv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	485548939
+Total contig length (bp)	355984562
+Number of scaffolds	1933
+Number of contigs	55730
+N50 of scaffolds (bp)	1162446
+N50 of contigs (bp)	12468
+Percent gaps	26.684
+Percent GC	38.99
+
+# Gene stats (combined CDS+introns)
+Number of genes	25929
+Total gene length	204116905
+Average gene length (bp)	7872.15
+Gene percent GC	39.3
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1435.52
+Average number of CDS per gene/transcript	6.58132
+
+# CDS stats
+Number of CDS	170647
+Total CDS length (bp)	37221641
+Average CDS length (bp)	218.121
+Number of single-CDS transcripts	4802
+Percent single-CDS transcripts	18.5198
+CDS percent GC	44.87
+
+# Intron stats (predicted between CDS features)
+Number of introns	144718
+Total intron length (bp)	166895264
+Average intron length (bp)	1153.24
+Intron percent GC	37.73
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	23966
+Total intergenic region length (bp)	242353566
+Average intergenic region length (bp)	10112.4
+Intergenic region percent GC	38.65

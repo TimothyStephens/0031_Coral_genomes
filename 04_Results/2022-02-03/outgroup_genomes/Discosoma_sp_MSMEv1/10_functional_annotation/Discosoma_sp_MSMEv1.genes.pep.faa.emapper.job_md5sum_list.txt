@@ -1,0 +1,2 @@
+922580bfa39833d9bd527177b9a51f23  Discosoma_sp_MSMEv1.genes.pep.faa
+54ff449319261dcc65b260b620a68f81  ../00_databases/Discosoma_sp_MSMEv1.genes.pep.faa

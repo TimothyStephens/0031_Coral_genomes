@@ -1,0 +1,2 @@
+a50d1a31f5e4c969bcad2a1d036f0b37  Acropora_yongei_SLJPv1.genes.pep.faa
+14821b04fee1f8d73f251ea39b70c0a6  ../00_databases/Acropora_yongei_SLJPv1.genes.pep.faa

@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat 12 Nov 2022 07:14:58 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Porpita_porpita_YOJPv1/00_databases/blast
+=====================================================================
+
+[Sat 12 Nov 2022 07:15:00 PM EST]      CMD: md5sum Porpita_porpita_YOJPv1.transcripts.cds.fna Porpita_porpita_YOJPv1.transcripts.pep.faa | tee Porpita_porpita_YOJPv1.makeblastdb.job_md5sum_list.txt
+8f80f54538bea2a6c0606d4106d2a52f  Porpita_porpita_YOJPv1.transcripts.cds.fna
+0b77c6900c63cf7409a8de88c3feba4d  Porpita_porpita_YOJPv1.transcripts.pep.faa
+[Sat 12 Nov 2022 07:15:00 PM EST]      CMD: makeblastdb -dbtype nucl -in Porpita_porpita_YOJPv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 11/12/2022 19:15:00
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Porpita_porpita_YOJPv1/00_databases/blast/Porpita_porpita_YOJPv1.transcripts.cds.fna
+New DB title:  Porpita_porpita_YOJPv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 35414 sequences in 0.863885 seconds.
+
+
+[Sat 12 Nov 2022 07:15:01 PM EST]      CMD: makeblastdb -dbtype prot -in Porpita_porpita_YOJPv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 11/12/2022 19:15:01
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Porpita_porpita_YOJPv1/00_databases/blast/Porpita_porpita_YOJPv1.transcripts.pep.faa
+New DB title:  Porpita_porpita_YOJPv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 35414 sequences in 0.74631 seconds.
+
+
+
+=====================================================================
+Started: at Sat 12 Nov 2022 07:14:58 PM EST
+Finished: at Sat 12 Nov 2022 07:15:01 PM EST
+ExitStatus: 0
+=====================================================================

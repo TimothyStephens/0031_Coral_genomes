@@ -1,0 +1,2 @@
+bf7f132c11cc6794709e97a653f2d6e1  Paramuricea_clavata_CTESv1.genes.pep.faa
+1a63b788cc6b9cedf0bb7ba31dfb9cfe  ../00_databases/Paramuricea_clavata_CTESv1.genes.pep.faa

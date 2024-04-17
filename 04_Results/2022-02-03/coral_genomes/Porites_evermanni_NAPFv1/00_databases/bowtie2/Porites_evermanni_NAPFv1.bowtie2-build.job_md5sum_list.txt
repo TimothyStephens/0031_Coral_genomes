@@ -1,0 +1,2 @@
+833d79ee134ad9396850e58fefdd43c5  Porites_evermanni_NAPFv1.assembly.fasta
+62db446586275fae355edbe25bdf28fa  Porites_evermanni_NAPFv1.genes.cds.fna

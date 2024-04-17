@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat 12 Nov 2022 07:15:50 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Millepora_sp_RR-2016_PRUSv1/01_stats
+=====================================================================
+
+[Sat 12 Nov 2022 07:15:51 PM EST]      CMD: md5sum Millepora_sp_RR-2016_PRUSv1.transcripts.cds.fna | tee Millepora_sp_RR-2016_PRUSv1.CDS_stats.job_md5sum_list.txt
+5c33528fd160fd09f9901e97a6878a1d  Millepora_sp_RR-2016_PRUSv1.transcripts.cds.fna
+[Sat 12 Nov 2022 07:15:52 PM EST]      CMD: ./CDS_stats Millepora_sp_RR-2016_PRUSv1.transcripts.cds.fna > Millepora_sp_RR-2016_PRUSv1.GeneStats.tsv
+
+=====================================================================
+Started: at Sat 12 Nov 2022 07:15:50 PM EST
+Finished: at Sat 12 Nov 2022 07:15:52 PM EST
+ExitStatus: 0
+=====================================================================

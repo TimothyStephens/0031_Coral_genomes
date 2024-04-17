@@ -1,0 +1,2 @@
+f718b41eb664ee7bdc0d6638f1533596  Porites_astreoides_BBBMv1.genes.pep.faa
+f718b41eb664ee7bdc0d6638f1533596  ../00_databases/Porites_astreoides_BBBMv1.genes.pep.faa

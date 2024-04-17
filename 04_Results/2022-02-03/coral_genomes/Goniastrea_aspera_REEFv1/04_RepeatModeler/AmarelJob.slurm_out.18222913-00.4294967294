@@ -1,0 +1,21 @@
+=====================================================================
+Slurm config version 0.4
+Starting on hal0228.amarel.rutgers.edu at Thu Mar 24 01:11:18 EDT 2022
+Nodelist hal0228
+Current JOB_ID is 18222913
+Current array index number is NA
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/test/Goniastrea_aspera_REEFv1/04_RepeatModeler
+=====================================================================
+
+[Fri Mar 25 02:07:28 EDT 2022]   - Done!
+
+=====================================================================
+Started: at Thu Mar 24 01:11:18 EDT 2022 on hal0228.amarel.rutgers.edu
+Finished: at Fri Mar 25 02:07:28 EDT 2022
+ExitStatus: 0
+
+   JobName   NTasks  AllocCPUS     ReqMem     MaxRSS  MaxVMSize  MaxDiskRead MaxDiskWrite   TotalCPU    CPUTime    Elapsed 
+---------- -------- ---------- ---------- ---------- ---------- ------------ ------------ ---------- ---------- ---------- 
+ AmarelJob                  48      120Gn                                                   00:00:00 49-20:56:48 1-00:56:11 
+    extern        1         48      120Gn                                                   00:00:00 49-20:56:48 1-00:56:11 
+=====================================================================

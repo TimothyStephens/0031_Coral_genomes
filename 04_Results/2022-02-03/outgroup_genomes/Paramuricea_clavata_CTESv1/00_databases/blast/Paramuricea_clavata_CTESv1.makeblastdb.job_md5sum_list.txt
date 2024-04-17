@@ -1,0 +1,3 @@
+31249a1f445e686d51b4e864c1685013  Paramuricea_clavata_CTESv1.assembly.fasta
+2d346529995ca062d0ca1fcf82a4e3cb  Paramuricea_clavata_CTESv1.genes.cds.fna
+1a63b788cc6b9cedf0bb7ba31dfb9cfe  Paramuricea_clavata_CTESv1.genes.pep.faa

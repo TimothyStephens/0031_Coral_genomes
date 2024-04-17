@@ -1,0 +1,93 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu Mar 17 14:18:56 EDT 2022
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/Pocillopora_verrucosa_RSSAv1/05_RepeatMasker
+=====================================================================
+
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+[Thu Mar 17 14:18:57 EDT 2022]      CMD: sed -e 's/Pocillopora_verrucosa_RSSAv1___//' Pocillopora_verrucosa_RSSAv1.assembly.fasta > genome.fa
+[Thu Mar 17 14:18:58 EDT 2022]      CMD: cat Pocillopora_verrucosa_RSSAv1.assembly.fasta.RMDB-families.fa rmlib.fa > custom_repeat_library.fa
+[Thu Mar 17 14:18:59 EDT 2022]      CMD: RepeatMasker -no_is -a -x -gff -pa 5 -lib custom_repeat_library.fa genome.fa 1> RepeatMasker.log 2>&1
+[Fri Mar 18 08:53:48 EDT 2022]      CMD: /scratch/ts942/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/calcDivergenceFromAlign.pl -s genome.fa.divsum genome.fa.align
+........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................Pocillopora_verrucosa_RSSAv1	379995663
+[Fri Mar 18 08:55:28 EDT 2022]      CMD: /scratch/ts942/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/createRepeatLandscape.pl -g 379995663 -div genome.fa.divsum > genome.fa.RepeatLandscape.html
+Parsing genome.fa.divsum
+DNA/hAT-hATm will not be graphed!
+LINE/R1-LOA will not be graphed!
+ARTEFACT will not be graphed!
+Retroposon/L2-derived will not be graphed!
+DNA/PiggyBac-X will not be graphed!
+LINE/Tad1 will not be graphed!
+SINE/tRNA-V-RTE will not be graphed!
+DNA/Crypton-A will not be graphed!
+DNA/Academ-H will not be graphed!
+Satellite/macro will not be graphed!
+LTR/Cassandra will not be graphed!
+LINE/CRE-Ambal will not be graphed!
+Satellite/W-chromosome will not be graphed!
+DNA/Crypton-S will not be graphed!
+Retroposon/L1-dep will not be graphed!
+SINE/5S-Core-RTE will not be graphed!
+DNA/Novosib will not be graphed!
+DNA/Academ-1 will not be graphed!
+DNA/IS3EU will not be graphed!
+DNA/PIF will not be graphed!
+DNA/Kolobok-E will not be graphed!
+DNA/Sola-2 will not be graphed!
+DNA/Ginger-1 will not be graphed!
+DNA/Crypton-C will not be graphed!
+LTR/Caulimovirus will not be graphed!
+DNA/Zisupton will not be graphed!
+DNA/Ginger-2 will not be graphed!
+SINE/tRNA-L1 will not be graphed!
+LTR/Viper will not be graphed!
+DNA/Academ-2 will not be graphed!
+DNA/Crypton-V will not be graphed!
+SINE/tRNA-Meta will not be graphed!
+DNA/Kolobok-H will not be graphed!
+DNA/Sola-1 will not be graphed!
+DNA/Crypton-H will not be graphed!
+DNA/hAT-hATx will not be graphed!
+DNA/Sola-3 will not be graphed!
+[Fri Mar 18 08:55:28 EDT 2022]      CMD: bedtools maskfasta -fi genome.fa -fo genome.fa.softmasked -bed genome.fa.out.gff -soft
+[Fri Mar 18 08:55:31 EDT 2022]      CMD: sed -e "s/^>/>Pocillopora_verrucosa_RSSAv1___/" genome.fa.masked | reformat.sh in=stdin.fa out=stdout.fa fastawrap=0 > Pocillopora_verrucosa_RSSAv1.assembly.fasta.masked
+java -ea -Xms300m -cp /home/ts942/PROGRAMS/bbmap/current/ jgi.ReformatReads in=stdin.fa out=stdout.fa fastawrap=0
+Executing jgi.ReformatReads [in=stdin.fa, out=stdout.fa, fastawrap=0]
+
+Input is being processed as unpaired
+Input:                  	18268 reads          	380505698 bases
+Output:                 	18268 reads (100.00%) 	380505698 bases (100.00%)
+
+Time:                         	4.392 seconds.
+Reads Processed:       18268 	4.16k reads/sec
+Bases Processed:        380m 	86.63m bases/sec
+[Fri Mar 18 08:55:36 EDT 2022]      CMD: sed -e "s/^>/>Pocillopora_verrucosa_RSSAv1___/" genome.fa.softmasked > Pocillopora_verrucosa_RSSAv1.assembly.fasta.softmasked
+[Fri Mar 18 08:55:37 EDT 2022]      CMD: awk -F'\t' -vPREFIX="Pocillopora_verrucosa_RSSAv1" '{ if($1!~"^#") {print PREFIX"___"$0} else {print $0} }' genome.fa.out.gff > Pocillopora_verrucosa_RSSAv1.assembly.fasta.out.gff
+[Fri Mar 18 08:55:37 EDT 2022]      CMD: cp genome.fa.divsum Pocillopora_verrucosa_RSSAv1.assembly.fasta.divsum
+[Fri Mar 18 08:55:37 EDT 2022]      CMD: cp genome.fa.tbl Pocillopora_verrucosa_RSSAv1.assembly.fasta.tbl
+[Fri Mar 18 08:55:37 EDT 2022]      CMD: tail -n 72 Pocillopora_verrucosa_RSSAv1.assembly.fasta.divsum | sed -e 's/ $//' > Pocillopora_verrucosa_RSSAv1.assembly.fasta.divsum.Kimura_distance
+[Fri Mar 18 08:55:37 EDT 2022]      CMD: gzip genome.fa.align genome.fa.divsum genome.fa.masked genome.fa.out genome.fa.out.gff genome.fa.softmasked genome.fa.tbl
+
+=====================================================================
+Started: at Thu Mar 17 14:18:56 EDT 2022
+Finished: at Fri Mar 18 08:58:49 EDT 2022
+ExitStatus: 0
+=====================================================================

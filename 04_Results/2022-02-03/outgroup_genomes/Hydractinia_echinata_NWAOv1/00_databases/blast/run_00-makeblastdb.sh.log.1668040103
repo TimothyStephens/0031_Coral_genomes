@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 09 Nov 2022 07:28:23 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydractinia_echinata_NWAOv1/00_databases/blast
+=====================================================================
+
+[Wed 09 Nov 2022 07:28:25 PM EST]      CMD: md5sum Hydractinia_echinata_NWAOv1.assembly.fasta Hydractinia_echinata_NWAOv1.genes.cds.fna Hydractinia_echinata_NWAOv1.genes.pep.faa | tee Hydractinia_echinata_NWAOv1.makeblastdb.job_md5sum_list.txt
+2e1d73d54050dbc5974be9decb401f88  Hydractinia_echinata_NWAOv1.assembly.fasta
+26cf5f8cf54c57b622d26fd1c9c4047a  Hydractinia_echinata_NWAOv1.genes.cds.fna
+84d668091f93b4304c56a921d2d8c27b  Hydractinia_echinata_NWAOv1.genes.pep.faa
+[Wed 09 Nov 2022 07:28:27 PM EST]      CMD: makeblastdb -dbtype nucl -in Hydractinia_echinata_NWAOv1.assembly.fasta
+
+
+Building a new DB, current time: 11/09/2022 19:28:27
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydractinia_echinata_NWAOv1/00_databases/blast/Hydractinia_echinata_NWAOv1.assembly.fasta
+New DB title:  Hydractinia_echinata_NWAOv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 7767 sequences in 11.0915 seconds.
+
+
+[Wed 09 Nov 2022 07:28:38 PM EST]      CMD: makeblastdb -dbtype nucl -in Hydractinia_echinata_NWAOv1.genes.cds.fna
+
+
+Building a new DB, current time: 11/09/2022 19:28:38
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydractinia_echinata_NWAOv1/00_databases/blast/Hydractinia_echinata_NWAOv1.genes.cds.fna
+New DB title:  Hydractinia_echinata_NWAOv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 28825 sequences in 1.74538 seconds.
+
+
+[Wed 09 Nov 2022 07:28:40 PM EST]      CMD: makeblastdb -dbtype prot -in Hydractinia_echinata_NWAOv1.genes.pep.faa
+
+
+Building a new DB, current time: 11/09/2022 19:28:40
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydractinia_echinata_NWAOv1/00_databases/blast/Hydractinia_echinata_NWAOv1.genes.pep.faa
+New DB title:  Hydractinia_echinata_NWAOv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 28825 sequences in 0.99644 seconds.
+
+
+
+=====================================================================
+Started: at Wed 09 Nov 2022 07:28:23 PM EST
+Finished: at Wed 09 Nov 2022 07:28:41 PM EST
+ExitStatus: 0
+=====================================================================

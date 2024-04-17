@@ -1,0 +1,2 @@
+a61927dddf58e6afecf32f5f92885167  Montastrea_cavernosa_FGUSv2.genes.pep.faa
+a61927dddf58e6afecf32f5f92885167  ../00_databases/Montastrea_cavernosa_FGUSv2.genes.pep.faa

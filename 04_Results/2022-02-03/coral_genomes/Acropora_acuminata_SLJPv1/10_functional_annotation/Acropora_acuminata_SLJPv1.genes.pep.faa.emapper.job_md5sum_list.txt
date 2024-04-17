@@ -1,0 +1,2 @@
+9bf8936fe3322b39c65db4ef499e0c60  Acropora_acuminata_SLJPv1.genes.pep.faa
+66ff81009de2ca7c61089f4639a0a47d  ../00_databases/Acropora_acuminata_SLJPv1.genes.pep.faa

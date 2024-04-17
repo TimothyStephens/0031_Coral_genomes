@@ -1,0 +1,2 @@
+88e80782b93d105dbf62407b7c6d9233  Acropora_hyacinthus_SLJPv1.genes.pep.faa
+4ededf5532ace4a4e2cfb3c6503055b8  ../00_databases/Acropora_hyacinthus_SLJPv1.genes.pep.faa

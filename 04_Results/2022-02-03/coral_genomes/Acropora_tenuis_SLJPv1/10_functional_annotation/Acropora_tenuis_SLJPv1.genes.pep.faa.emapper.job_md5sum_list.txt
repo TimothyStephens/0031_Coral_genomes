@@ -1,0 +1,2 @@
+03f49ed857d7962c8394f5d7403d1f24  Acropora_tenuis_SLJPv1.genes.pep.faa
+6355f6cc9fbac8b5d8111365dd8279b7  ../00_databases/Acropora_tenuis_SLJPv1.genes.pep.faa

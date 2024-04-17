@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 08:06:56 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Mnemiopsis_leidyi_WHUSv2.2/00_databases/blast
+=====================================================================
+
+[Tue 25 Oct 2022 08:06:58 PM EDT]      CMD: md5sum Mnemiopsis_leidyi_WHUSv2.2.assembly.fasta Mnemiopsis_leidyi_WHUSv2.2.genes.cds.fna Mnemiopsis_leidyi_WHUSv2.2.genes.pep.faa | tee Mnemiopsis_leidyi_WHUSv2.2.makeblastdb.job_md5sum_list.txt
+a7b6d4715a680f2f1eb69b904a3dc870  Mnemiopsis_leidyi_WHUSv2.2.assembly.fasta
+01808eecd5718b49e6dbe82c07afe19b  Mnemiopsis_leidyi_WHUSv2.2.genes.cds.fna
+616377ec2bbc8d571e270893c3afd89e  Mnemiopsis_leidyi_WHUSv2.2.genes.pep.faa
+[Tue 25 Oct 2022 08:06:58 PM EDT]      CMD: makeblastdb -dbtype nucl -in Mnemiopsis_leidyi_WHUSv2.2.assembly.fasta
+
+
+Building a new DB, current time: 10/25/2022 20:06:58
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Mnemiopsis_leidyi_WHUSv2.2/00_databases/blast/Mnemiopsis_leidyi_WHUSv2.2.assembly.fasta
+New DB title:  Mnemiopsis_leidyi_WHUSv2.2.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 5100 sequences in 4.40514 seconds.
+
+
+[Tue 25 Oct 2022 08:07:03 PM EDT]      CMD: makeblastdb -dbtype nucl -in Mnemiopsis_leidyi_WHUSv2.2.genes.cds.fna
+
+
+Building a new DB, current time: 10/25/2022 20:07:03
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Mnemiopsis_leidyi_WHUSv2.2/00_databases/blast/Mnemiopsis_leidyi_WHUSv2.2.genes.cds.fna
+New DB title:  Mnemiopsis_leidyi_WHUSv2.2.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 16548 sequences in 1.0342 seconds.
+
+
+[Tue 25 Oct 2022 08:07:04 PM EDT]      CMD: makeblastdb -dbtype prot -in Mnemiopsis_leidyi_WHUSv2.2.genes.pep.faa
+
+
+Building a new DB, current time: 10/25/2022 20:07:04
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Mnemiopsis_leidyi_WHUSv2.2/00_databases/blast/Mnemiopsis_leidyi_WHUSv2.2.genes.pep.faa
+New DB title:  Mnemiopsis_leidyi_WHUSv2.2.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 16548 sequences in 0.679456 seconds.
+
+
+
+=====================================================================
+Started: at Tue 25 Oct 2022 08:06:56 PM EDT
+Finished: at Tue 25 Oct 2022 08:07:04 PM EDT
+ExitStatus: 0
+=====================================================================

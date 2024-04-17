@@ -1,0 +1,2 @@
+83db835f79e18775dacbfe038753fc61  Montastraea_faveolata_REEFv1.transcripts.cds.fna
+dc347c618ac8fbe8262e36769b04c7e4  Montastraea_faveolata_REEFv1.transcripts.pep.faa

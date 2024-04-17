@@ -1,0 +1,43 @@
+# Files
+Genome file	Morbakka_virulenta_ODJPv1.assembly.fasta
+GFF file	Morbakka_virulenta_ODJPv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	951575644
+Total contig length (bp)	838661037
+Number of scaffolds	4538
+Number of contigs	55363
+N50 of scaffolds (bp)	2173999
+N50 of contigs (bp)	30861
+Percent gaps	11.866
+Percent GC	35.59
+
+# Gene stats (combined CDS+introns)
+Number of genes	24278
+Total gene length	429389478
+Average gene length (bp)	17686.4
+Gene percent GC	35.68
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1387.12
+Average number of CDS per gene/transcript	5.39394
+
+# CDS stats
+Number of CDS	130954
+Total CDS length (bp)	33676584
+Average CDS length (bp)	257.163
+Number of single-CDS transcripts	9540
+Percent single-CDS transcripts	39.2948
+CDS percent GC	40.24
+
+# Intron stats (predicted between CDS features)
+Number of introns	106676
+Total intron length (bp)	395712894
+Average intron length (bp)	3709.48
+Intron percent GC	35.24
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	22326
+Total intergenic region length (bp)	477905528
+Average intergenic region length (bp)	21405.8
+Intergenic region percent GC	35.55

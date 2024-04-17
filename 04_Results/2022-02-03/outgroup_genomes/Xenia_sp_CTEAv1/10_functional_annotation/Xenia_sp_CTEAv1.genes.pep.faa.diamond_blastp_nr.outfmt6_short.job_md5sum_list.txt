@@ -1,0 +1,2 @@
+65837fb0de3bf84ecc8f316805888138  Xenia_sp_CTEAv1.genes.pep.faa
+de3624a4d9780cde87b52a6c7218e6ba  ../00_databases/Xenia_sp_CTEAv1.genes.pep.faa

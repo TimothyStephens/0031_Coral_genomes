@@ -1,0 +1,2 @@
+ad3ded86db67debe2f07df5a224f1ad6  Acropora_muricata_XSCSv1.transcripts.cds.fna
+50bee11ca0290b6e3898ae1a672b76ae  Acropora_muricata_XSCSv1.transcripts.pep.faa

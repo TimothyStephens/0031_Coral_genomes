@@ -1,0 +1,30 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 09 Jun 2023 11:52:14 AM EDT
+Working directory is /scratch/timothy/InterProScan_v4/10_functional_annotation
+=====================================================================
+
+[Fri 09 Jun 2023 11:52:15 AM EDT]      CMD: md5sum Myxobolus_cerebralis_NANAv1.transcripts.pep.faa ../00_databases/Myxobolus_cerebralis_NANAv1.transcripts.pep.faa | tee Myxobolus_cerebralis_NANAv1.transcripts.pep.faa.InterProScan.job_md5sum_list.txt
+97e78218c180cf4498a4b6100eaaf2df  Myxobolus_cerebralis_NANAv1.transcripts.pep.faa
+97e78218c180cf4498a4b6100eaaf2df  ../00_databases/Myxobolus_cerebralis_NANAv1.transcripts.pep.faa
+[Fri 09 Jun 2023 11:52:16 AM EDT]      CMD: /home/timothy/programs/my_interproscan/interproscan-5.53-87.0/interproscan.sh -dp --goterms --cpu 96 --input Myxobolus_cerebralis_NANAv1.transcripts.pep.faa --output-file-base Myxobolus_cerebralis_NANAv1.transcripts.pep.faa.InterProScan
+09/06/2023 11:52:17:097 Welcome to InterProScan-5.53-87.0
+09/06/2023 11:52:17:099 Running InterProScan v5 in STANDALONE mode... on Linux
+09/06/2023 11:52:22:196 RunID: coral_20230609_115221762_b0fg
+09/06/2023 11:52:29:907 Loading file /scratch/timothy/InterProScan_v4/10_functional_annotation/Myxobolus_cerebralis_NANAv1.transcripts.pep.faa
+09/06/2023 11:52:29:908 Running the following analyses:
+[CDD-3.18,Coils-2.2.1,Gene3D-4.3.0,Hamap-2020_05,MobiDBLite-2.0,PANTHER-15.0,Pfam-34.0,Phobius-1.01,PIRSF-3.10,PIRSR-2021_02,PRINTS-42.0,ProSitePatterns-2021_01,ProSiteProfiles-2021_01,SFLD-4,SignalP_EUK-4.1,SignalP_GRAM_NEGATIVE-4.1,SignalP_GRAM_POSITIVE-4.1,SMART-7.1,SUPERFAMILY-1.75,TIGRFAM-15.0,TMHMM-2.0c]
+Pre-calculated match lookup service DISABLED.  Please wait for match calculations to complete...
+09/06/2023 12:00:02:481 25% completed
+09/06/2023 12:15:01:846 50% completed
+09/06/2023 12:22:04:563 75% completed
+09/06/2023 12:24:37:644 90% completed
+09/06/2023 12:43:05:703 100% done:  InterProScan analyses completed 
+
+[Fri 09 Jun 2023 12:43:06 PM EDT]      CMD: rm -fr temp
+
+=====================================================================
+Started: at Fri 09 Jun 2023 11:52:14 AM EDT
+Finished: at Fri 09 Jun 2023 12:43:06 PM EDT
+ExitStatus: 0
+=====================================================================

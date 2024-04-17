@@ -1,0 +1,43 @@
+# Files
+Genome file	Pocillopora_cf_effusa_NAPFv3.assembly.fasta
+GFF file	Pocillopora_cf_effusa_NAPFv3.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	347233126
+Total contig length (bp)	347233126
+Number of scaffolds	252
+Number of contigs	252
+N50 of scaffolds (bp)	4753879
+N50 of contigs (bp)	4753879
+Percent gaps	0.000
+Percent GC	37.99
+
+# Gene stats (combined CDS+introns)
+Number of genes	32095
+Total gene length	170929273
+Average gene length (bp)	5325.73
+Gene percent GC	38.4
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1458.4
+Average number of CDS per gene/transcript	6.53314
+
+# CDS stats
+Number of CDS	209681
+Total CDS length (bp)	46807221
+Average CDS length (bp)	223.231
+Number of single-CDS transcripts	5341
+Percent single-CDS transcripts	16.6412
+CDS percent GC	43.73
+
+# Intron stats (predicted between CDS features)
+Number of introns	177586
+Total intron length (bp)	124122052
+Average intron length (bp)	698.941
+Intron percent GC	36.39
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	30850
+Total intergenic region length (bp)	172469213
+Average intergenic region length (bp)	5590.57
+Intergenic region percent GC	37.58

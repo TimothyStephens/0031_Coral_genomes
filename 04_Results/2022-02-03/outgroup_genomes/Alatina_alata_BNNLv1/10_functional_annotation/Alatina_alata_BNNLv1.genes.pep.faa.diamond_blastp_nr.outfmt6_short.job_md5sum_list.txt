@@ -1,0 +1,2 @@
+bc2ec8173e155ba7f757d5ecce6e3566  Alatina_alata_BNNLv1.genes.pep.faa
+34d7286aee36838d628abe3ea36711c4  ../00_databases/Alatina_alata_BNNLv1.genes.pep.faa

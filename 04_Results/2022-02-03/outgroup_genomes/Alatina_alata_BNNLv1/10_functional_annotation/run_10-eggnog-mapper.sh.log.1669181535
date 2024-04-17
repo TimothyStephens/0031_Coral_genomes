@@ -1,0 +1,121 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 23 Nov 2022 12:32:15 AM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Alatina_alata_BNNLv1/10_functional_annotation
+=====================================================================
+
+[Wed 23 Nov 2022 12:32:16 AM EST]      CMD: md5sum Alatina_alata_BNNLv1.genes.pep.faa ../00_databases/Alatina_alata_BNNLv1.genes.pep.faa | tee Alatina_alata_BNNLv1.genes.pep.faa.emapper.job_md5sum_list.txt
+bc2ec8173e155ba7f757d5ecce6e3566  Alatina_alata_BNNLv1.genes.pep.faa
+34d7286aee36838d628abe3ea36711c4  ../00_databases/Alatina_alata_BNNLv1.genes.pep.faa
+[Wed 23 Nov 2022 12:32:17 AM EST]      CMD: emapper.py -i Alatina_alata_BNNLv1.genes.pep.faa --output Alatina_alata_BNNLv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 1.6689300537109375e-06 0.00 q/s (% mem usage: 2.10, % mem avail: 97.90)
+[1;34mTime to load the DB into memory: 54.77852702140808[0m
+#  emapper-2.1.6
+# emapper.py  -i Alatina_alata_BNNLv1.genes.pep.faa --output Alatina_alata_BNNLv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Alatina_alata_BNNLv1/10_functional_annotation/Alatina_alata_BNNLv1.genes.pep.faa --threads 48 -o /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Alatina_alata_BNNLv1/10_functional_annotation/Alatina_alata_BNNLv1.genes.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+CREATED ESL_REFORMAT DB. USING HMMSEARCH
+Namespace(Z=40000000, call_info='## Wed Nov 23 00:41:57 2022\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Alatina_alata_BNNLv1.genes.pep.faa --output Alatina_alata_BNNLv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem\n##', clean_overlaps='hmmsearch_clans', cpu=48, cpus_per_worker=48, cut_ga=True, db='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Alatina_alata_BNNLv1/10_functional_annotation/tmpog46wx8_', dbtype='seqdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='hmm', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Alatina_alata_BNNLv1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+500 781.0100040435791 0.64 q/s (% mem usage: 13.30, % mem avail: 86.67)
+1000 782.0988726615906 1.28 q/s (% mem usage: 13.30, % mem avail: 86.67)
+1500 783.1131455898285 1.92 q/s (% mem usage: 13.30, % mem avail: 86.67)
+2000 784.1777079105377 2.55 q/s (% mem usage: 13.30, % mem avail: 86.67)
+2500 785.2685067653656 3.18 q/s (% mem usage: 13.30, % mem avail: 86.67)
+3000 786.4407799243927 3.81 q/s (% mem usage: 13.30, % mem avail: 86.67)
+3500 787.5826530456543 4.44 q/s (% mem usage: 13.30, % mem avail: 86.67)
+4000 788.6392352581024 5.07 q/s (% mem usage: 13.30, % mem avail: 86.67)
+4500 789.7135760784149 5.70 q/s (% mem usage: 13.30, % mem avail: 86.67)
+5000 790.6227121353149 6.32 q/s (% mem usage: 13.30, % mem avail: 86.67)
+5500 791.6115939617157 6.95 q/s (% mem usage: 13.30, % mem avail: 86.67)
+6000 792.829710483551 7.57 q/s (% mem usage: 13.30, % mem avail: 86.67)
+6500 793.8742303848267 8.19 q/s (% mem usage: 13.30, % mem avail: 86.67)
+7000 794.9257762432098 8.81 q/s (% mem usage: 13.30, % mem avail: 86.67)
+7500 796.0278420448303 9.42 q/s (% mem usage: 13.30, % mem avail: 86.67)
+8000 797.0952985286713 10.04 q/s (% mem usage: 13.30, % mem avail: 86.67)
+8500 797.9682478904724 10.65 q/s (% mem usage: 13.30, % mem avail: 86.68)
+9000 798.5898373126984 11.27 q/s (% mem usage: 13.30, % mem avail: 86.68)
+9500 799.3789932727814 11.88 q/s (% mem usage: 13.30, % mem avail: 86.68)
+10000 800.1320433616638 12.50 q/s (% mem usage: 13.30, % mem avail: 86.68)
+10500 800.7882506847382 13.11 q/s (% mem usage: 13.30, % mem avail: 86.68)
+11000 801.7858040332794 13.72 q/s (% mem usage: 13.30, % mem avail: 86.68)
+11500 802.5025322437286 14.33 q/s (% mem usage: 13.30, % mem avail: 86.68)
+12000 803.5323002338409 14.93 q/s (% mem usage: 13.30, % mem avail: 86.68)
+12500 804.4333508014679 15.54 q/s (% mem usage: 13.30, % mem avail: 86.68)
+13000 805.3941330909729 16.14 q/s (% mem usage: 13.30, % mem avail: 86.68)
+13500 806.3609397411346 16.74 q/s (% mem usage: 13.30, % mem avail: 86.68)
+14000 807.2202308177948 17.34 q/s (% mem usage: 13.30, % mem avail: 86.68)
+14500 808.264438867569 17.94 q/s (% mem usage: 13.30, % mem avail: 86.68)
+15000 809.2768635749817 18.54 q/s (% mem usage: 13.30, % mem avail: 86.68)
+15500 810.3761389255524 19.13 q/s (% mem usage: 13.30, % mem avail: 86.68)
+16000 811.25532746315 19.72 q/s (% mem usage: 13.30, % mem avail: 86.68)
+16500 812.2144103050232 20.31 q/s (% mem usage: 13.30, % mem avail: 86.68)
+17000 812.9969208240509 20.91 q/s (% mem usage: 13.30, % mem avail: 86.68)
+17500 813.8806171417236 21.50 q/s (% mem usage: 13.30, % mem avail: 86.68)
+18000 814.8014507293701 22.09 q/s (% mem usage: 13.30, % mem avail: 86.68)
+18500 815.6508448123932 22.68 q/s (% mem usage: 13.30, % mem avail: 86.68)
+19000 816.6497991085052 23.27 q/s (% mem usage: 13.30, % mem avail: 86.68)
+19500 817.6129534244537 23.85 q/s (% mem usage: 13.30, % mem avail: 86.68)
+20000 818.3761637210846 24.44 q/s (% mem usage: 13.30, % mem avail: 86.68)
+20500 819.1085567474365 25.03 q/s (% mem usage: 13.30, % mem avail: 86.68)
+21000 819.9619679450989 25.61 q/s (% mem usage: 13.30, % mem avail: 86.68)
+21500 820.7917804718018 26.19 q/s (% mem usage: 13.30, % mem avail: 86.68)
+22000 821.8534467220306 26.77 q/s (% mem usage: 13.30, % mem avail: 86.68)
+22500 822.9795572757721 27.34 q/s (% mem usage: 13.30, % mem avail: 86.68)
+23000 823.970858335495 27.91 q/s (% mem usage: 13.30, % mem avail: 86.68)
+23500 825.0038051605225 28.48 q/s (% mem usage: 13.30, % mem avail: 86.68)
+24000 825.8919134140015 29.06 q/s (% mem usage: 13.30, % mem avail: 86.68)
+24500 826.8670289516449 29.63 q/s (% mem usage: 13.30, % mem avail: 86.68)
+25000 827.7888085842133 30.20 q/s (% mem usage: 13.30, % mem avail: 86.68)
+25500 828.7159595489502 30.77 q/s (% mem usage: 13.30, % mem avail: 86.68)
+26000 829.553284406662 31.34 q/s (% mem usage: 13.30, % mem avail: 86.68)
+26500 830.4031383991241 31.91 q/s (% mem usage: 13.30, % mem avail: 86.68)
+27000 831.289158821106 32.48 q/s (% mem usage: 13.30, % mem avail: 86.68)
+27500 832.2535674571991 33.04 q/s (% mem usage: 13.30, % mem avail: 86.68)
+27522 832.7459762096405 33.05 q/s (% mem usage: 13.20, % mem avail: 86.76)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Alatina_alata_BNNLv1/10_functional_annotation/Alatina_alata_BNNLv1.genes.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Alatina_alata_BNNLv1/10_functional_annotation/Alatina_alata_BNNLv1.genes.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Alatina_alata_BNNLv1/10_functional_annotation/Alatina_alata_BNNLv1.genes.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Alatina_alata_BNNLv1/10_functional_annotation/Alatina_alata_BNNLv1.genes.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Alatina_alata_BNNLv1/10_functional_annotation/Alatina_alata_BNNLv1.genes.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 27522
+Total time: 1288 secs
+FINISHED
+[Wed 23 Nov 2022 12:53:51 AM EST]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Wed 23 Nov 2022 12:32:15 AM EST
+Finished: at Wed 23 Nov 2022 12:53:51 AM EST
+ExitStatus: 0
+=====================================================================

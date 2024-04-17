@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat 12 Nov 2022 07:15:57 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Plexaura_homomalla_PRUSv1/01_stats
+=====================================================================
+
+[Sat 12 Nov 2022 07:15:58 PM EST]      CMD: md5sum Plexaura_homomalla_PRUSv1.transcripts.cds.fna | tee Plexaura_homomalla_PRUSv1.CDS_stats.job_md5sum_list.txt
+679efa2110d904322166fdb7483f1f8b  Plexaura_homomalla_PRUSv1.transcripts.cds.fna
+[Sat 12 Nov 2022 07:15:58 PM EST]      CMD: ./CDS_stats Plexaura_homomalla_PRUSv1.transcripts.cds.fna > Plexaura_homomalla_PRUSv1.GeneStats.tsv
+
+=====================================================================
+Started: at Sat 12 Nov 2022 07:15:57 PM EST
+Finished: at Sat 12 Nov 2022 07:15:59 PM EST
+ExitStatus: 0
+=====================================================================

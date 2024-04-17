@@ -1,0 +1,2 @@
+15e29aaec58e83aa1e8198251dfca453  Acropora_gemmifera_SLJPv1.genes.pep.faa
+832b73c6ff23c6f2dc80b9d7dae61eec  ../00_databases/Acropora_gemmifera_SLJPv1.genes.pep.faa

@@ -8,7 +8,7 @@ source ~/scripts/script_setup.sh
 set +eu; conda activate py27; set -eu
 
 export PATH="$PATH:/home/timothy/programs/bowtie2-2.4.4-linux-x86_64"
-NCPUS=24
+NCPUS=48
 
 PREFIX="Pocillopora_damicornis_SIPAv1"
 

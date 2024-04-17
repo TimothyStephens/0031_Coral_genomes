@@ -1,0 +1,55 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat Mar 26 15:46:46 EDT 2022
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/Pocillopora_acuta_LBIDv1/05_RepeatMasker
+=====================================================================
+
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+[Sat Mar 26 15:46:49 EDT 2022]      CMD: sed -e 's/Pocillopora_acuta_LBIDv1___//' Pocillopora_acuta_LBIDv1.assembly.fasta > genome.fa
+[Sat Mar 26 15:46:50 EDT 2022]      CMD: cat Pocillopora_acuta_LBIDv1.assembly.fasta.RMDB-families.fa rmlib.fa > custom_repeat_library.fa
+[Sat Mar 26 15:46:51 EDT 2022]      CMD: RepeatMasker -no_is -a -x -gff -pa 12 -lib custom_repeat_library.fa genome.fa 1> RepeatMasker.log 2>&1
+[Sat Mar 26 23:18:21 EDT 2022]      CMD: /scratch/ts942/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/calcDivergenceFromAlign.pl -s genome.fa.divsum genome.fa.align
+........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................Pocillopora_acuta_LBIDv1	
+[Sat Mar 26 23:19:48 EDT 2022]      CMD: /scratch/ts942/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/createRepeatLandscape.pl -g  -div genome.fa.divsum > genome.fa.RepeatLandscape.html
+[Sat Mar 26 23:19:48 EDT 2022]      CMD: bedtools maskfasta -fi genome.fa -fo genome.fa.softmasked -bed genome.fa.out.gff -soft
+[Sat Mar 26 23:19:52 EDT 2022]      CMD: sed -e "s/^>/>Pocillopora_acuta_LBIDv1___/" genome.fa.masked | reformat.sh in=stdin.fa out=stdout.fa fastawrap=0 > Pocillopora_acuta_LBIDv1.assembly.fasta.masked
+java -ea -Xms300m -cp /home/ts942/PROGRAMS/bbmap/current/ jgi.ReformatReads in=stdin.fa out=stdout.fa fastawrap=0
+Executing jgi.ReformatReads [in=stdin.fa, out=stdout.fa, fastawrap=0]
+
+Input is being processed as unpaired
+Input:                  	168465 reads          	352019984 bases
+Output:                 	168465 reads (100.00%) 	352019984 bases (100.00%)
+
+Time:                         	3.679 seconds.
+Reads Processed:        168k 	45.79k reads/sec
+Bases Processed:        352m 	95.69m bases/sec
+[Sat Mar 26 23:19:57 EDT 2022]      CMD: sed -e "s/^>/>Pocillopora_acuta_LBIDv1___/" genome.fa.softmasked > Pocillopora_acuta_LBIDv1.assembly.fasta.softmasked
+[Sat Mar 26 23:19:57 EDT 2022]      CMD: awk -F'\t' -vPREFIX="Pocillopora_acuta_LBIDv1" '{ if($1!~"^#") {print PREFIX"___"$0} else {print $0} }' genome.fa.out.gff > Pocillopora_acuta_LBIDv1.assembly.fasta.out.gff
+[Sat Mar 26 23:19:58 EDT 2022]      CMD: cp genome.fa.divsum Pocillopora_acuta_LBIDv1.assembly.fasta.divsum
+[Sat Mar 26 23:19:58 EDT 2022]      CMD: cp genome.fa.tbl Pocillopora_acuta_LBIDv1.assembly.fasta.tbl
+[Sat Mar 26 23:19:58 EDT 2022]      CMD: tail -n 72 Pocillopora_acuta_LBIDv1.assembly.fasta.divsum | sed -e 's/ $//' > Pocillopora_acuta_LBIDv1.assembly.fasta.divsum.Kimura_distance
+[Sat Mar 26 23:19:58 EDT 2022]      CMD: gzip genome.fa.align genome.fa.divsum genome.fa.masked genome.fa.out genome.fa.out.gff genome.fa.softmasked genome.fa.tbl
+
+=====================================================================
+Started: at Sat Mar 26 15:46:46 EDT 2022
+Finished: at Sat Mar 26 23:23:42 EDT 2022
+ExitStatus: 0
+=====================================================================

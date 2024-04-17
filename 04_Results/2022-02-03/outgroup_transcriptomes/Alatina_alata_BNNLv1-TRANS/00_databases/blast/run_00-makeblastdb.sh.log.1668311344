@@ -1,0 +1,26 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat 12 Nov 2022 10:49:04 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Alatina_alata_BNNLv1-TRANS/00_databases/blast
+=====================================================================
+
+[Sat 12 Nov 2022 10:49:06 PM EST]      CMD: md5sum Alatina_alata_BNNLv1-TRANS.transcripts.pep.faa | tee Alatina_alata_BNNLv1-TRANS.makeblastdb.job_md5sum_list.txt
+ac173c141520ecfba70bf7e663fd81de  Alatina_alata_BNNLv1-TRANS.transcripts.pep.faa
+[Sat 12 Nov 2022 10:49:06 PM EST]      CMD: makeblastdb -dbtype prot -in Alatina_alata_BNNLv1-TRANS.transcripts.pep.faa
+
+
+Building a new DB, current time: 11/12/2022 22:49:06
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Alatina_alata_BNNLv1-TRANS/00_databases/blast/Alatina_alata_BNNLv1-TRANS.transcripts.pep.faa
+New DB title:  Alatina_alata_BNNLv1-TRANS.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 76685 sequences in 1.94807 seconds.
+
+
+
+=====================================================================
+Started: at Sat 12 Nov 2022 10:49:04 PM EST
+Finished: at Sat 12 Nov 2022 10:49:08 PM EST
+ExitStatus: 0
+=====================================================================

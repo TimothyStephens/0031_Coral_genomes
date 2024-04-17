@@ -1,0 +1,2 @@
+e32975a9a7d3d216edc91b0be39aa027  Goniastrea_aspera_REEFv1.genes.pep.faa
+e32975a9a7d3d216edc91b0be39aa027  ../00_databases/Goniastrea_aspera_REEFv1.genes.pep.faa

@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 08:08:20 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Trichoplax_adhaerens_RSSAv1/00_databases/blast
+=====================================================================
+
+[Tue 25 Oct 2022 08:08:23 PM EDT]      CMD: md5sum Trichoplax_adhaerens_RSSAv1.assembly.fasta Trichoplax_adhaerens_RSSAv1.genes.cds.fna Trichoplax_adhaerens_RSSAv1.genes.pep.faa | tee Trichoplax_adhaerens_RSSAv1.makeblastdb.job_md5sum_list.txt
+1d3582402e003b3ddfcba86ce5134de7  Trichoplax_adhaerens_RSSAv1.assembly.fasta
+c3c90e7fe5592a71b136577d99de9ac8  Trichoplax_adhaerens_RSSAv1.genes.cds.fna
+965f0a861b2d890b784bb8e482fb5115  Trichoplax_adhaerens_RSSAv1.genes.pep.faa
+[Tue 25 Oct 2022 08:08:23 PM EDT]      CMD: makeblastdb -dbtype nucl -in Trichoplax_adhaerens_RSSAv1.assembly.fasta
+
+
+Building a new DB, current time: 10/25/2022 20:08:23
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Trichoplax_adhaerens_RSSAv1/00_databases/blast/Trichoplax_adhaerens_RSSAv1.assembly.fasta
+New DB title:  Trichoplax_adhaerens_RSSAv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1415 sequences in 2.23227 seconds.
+
+
+[Tue 25 Oct 2022 08:08:25 PM EDT]      CMD: makeblastdb -dbtype nucl -in Trichoplax_adhaerens_RSSAv1.genes.cds.fna
+
+
+Building a new DB, current time: 10/25/2022 20:08:25
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Trichoplax_adhaerens_RSSAv1/00_databases/blast/Trichoplax_adhaerens_RSSAv1.genes.cds.fna
+New DB title:  Trichoplax_adhaerens_RSSAv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 11520 sequences in 0.499074 seconds.
+
+
+[Tue 25 Oct 2022 08:08:26 PM EDT]      CMD: makeblastdb -dbtype prot -in Trichoplax_adhaerens_RSSAv1.genes.pep.faa
+
+
+Building a new DB, current time: 10/25/2022 20:08:26
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Trichoplax_adhaerens_RSSAv1/00_databases/blast/Trichoplax_adhaerens_RSSAv1.genes.pep.faa
+New DB title:  Trichoplax_adhaerens_RSSAv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 11520 sequences in 0.398375 seconds.
+
+
+
+=====================================================================
+Started: at Tue 25 Oct 2022 08:08:20 PM EDT
+Finished: at Tue 25 Oct 2022 08:08:27 PM EDT
+ExitStatus: 0
+=====================================================================

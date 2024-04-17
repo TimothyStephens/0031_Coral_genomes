@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Mon 20 Feb 2023 10:49:46 AM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Turritopsis_sp_SK-2016_TBJPv1/01_stats
+=====================================================================
+
+[Mon 20 Feb 2023 10:49:48 AM EST]      CMD: md5sum Turritopsis_sp_SK-2016_TBJPv1.transcripts.cds.fna | tee Turritopsis_sp_SK-2016_TBJPv1.CDS_stats.job_md5sum_list.txt
+d0887a346be546e3ef8733dac7a99eea  Turritopsis_sp_SK-2016_TBJPv1.transcripts.cds.fna
+[Mon 20 Feb 2023 10:49:48 AM EST]      CMD: ./CDS_stats Turritopsis_sp_SK-2016_TBJPv1.transcripts.cds.fna > Turritopsis_sp_SK-2016_TBJPv1.GeneStats.tsv
+
+=====================================================================
+Started: at Mon 20 Feb 2023 10:49:46 AM EST
+Finished: at Mon 20 Feb 2023 10:49:48 AM EST
+ExitStatus: 0
+=====================================================================

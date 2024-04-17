@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 03:55:57 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Orbicella_faveolata_NAPAv1/00_databases/blast
+=====================================================================
+
+[Tue 25 Oct 2022 03:55:59 PM EDT]      CMD: md5sum Orbicella_faveolata_NAPAv1.assembly.fasta Orbicella_faveolata_NAPAv1.genes.cds.fna Orbicella_faveolata_NAPAv1.genes.pep.faa | tee Orbicella_faveolata_NAPAv1.makeblastdb.job_md5sum_list.txt
+5133ff92fbd92c331f07712095bac856  Orbicella_faveolata_NAPAv1.assembly.fasta
+7cf1d147da36b50fd9d42aef8d857fb9  Orbicella_faveolata_NAPAv1.genes.cds.fna
+5943a39cdf6f183f174633da6cdeb6f3  Orbicella_faveolata_NAPAv1.genes.pep.faa
+[Tue 25 Oct 2022 03:56:00 PM EDT]      CMD: makeblastdb -dbtype nucl -in Orbicella_faveolata_NAPAv1.assembly.fasta
+
+
+Building a new DB, current time: 10/25/2022 15:56:00
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Orbicella_faveolata_NAPAv1/00_databases/blast/Orbicella_faveolata_NAPAv1.assembly.fasta
+New DB title:  Orbicella_faveolata_NAPAv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1933 sequences in 8.79757 seconds.
+
+
+[Tue 25 Oct 2022 03:56:09 PM EDT]      CMD: makeblastdb -dbtype nucl -in Orbicella_faveolata_NAPAv1.genes.cds.fna
+
+
+Building a new DB, current time: 10/25/2022 15:56:09
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Orbicella_faveolata_NAPAv1/00_databases/blast/Orbicella_faveolata_NAPAv1.genes.cds.fna
+New DB title:  Orbicella_faveolata_NAPAv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 25929 sequences in 1.20222 seconds.
+
+
+[Tue 25 Oct 2022 03:56:10 PM EDT]      CMD: makeblastdb -dbtype prot -in Orbicella_faveolata_NAPAv1.genes.pep.faa
+
+
+Building a new DB, current time: 10/25/2022 15:56:10
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Orbicella_faveolata_NAPAv1/00_databases/blast/Orbicella_faveolata_NAPAv1.genes.pep.faa
+New DB title:  Orbicella_faveolata_NAPAv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 25929 sequences in 0.642641 seconds.
+
+
+
+=====================================================================
+Started: at Tue 25 Oct 2022 03:55:57 PM EDT
+Finished: at Tue 25 Oct 2022 03:56:11 PM EDT
+ExitStatus: 0
+=====================================================================

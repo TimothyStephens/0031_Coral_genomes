@@ -1,0 +1,31 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 22 Jun 2022 11:27:31 PM EDT
+Working directory is /scratch/timothy/tmp/interproscan/Madracis_auretenra_REEFv1/10_functional_annotation
+=====================================================================
+
+[Wed 22 Jun 2022 11:27:32 PM EDT]      CMD: md5sum Madracis_auretenra_REEFv1.transcripts.pep.faa ../00_databases/Madracis_auretenra_REEFv1.transcripts.pep.faa | tee Madracis_auretenra_REEFv1.transcripts.pep.faa.InterProScan.job_md5sum_list.txt
+2aa5af6e4dbce903834a34261cfbb8d8  Madracis_auretenra_REEFv1.transcripts.pep.faa
+2aa5af6e4dbce903834a34261cfbb8d8  ../00_databases/Madracis_auretenra_REEFv1.transcripts.pep.faa
+[Wed 22 Jun 2022 11:27:32 PM EDT]      CMD: /home/timothy/programs/my_interproscan/interproscan-5.53-87.0/interproscan.sh -dp --goterms --cpu 96 --input Madracis_auretenra_REEFv1.transcripts.pep.faa --output-file-base Madracis_auretenra_REEFv1.transcripts.pep.faa.InterProScan
+22/06/2022 23:27:33:086 Welcome to InterProScan-5.53-87.0
+22/06/2022 23:27:33:088 Running InterProScan v5 in STANDALONE mode... on Linux
+22/06/2022 23:27:38:728 RunID: coral_20220622_232738218_cfnu
+22/06/2022 23:27:53:480 Loading file /scratch/timothy/tmp/interproscan/Madracis_auretenra_REEFv1/10_functional_annotation/Madracis_auretenra_REEFv1.transcripts.pep.faa
+22/06/2022 23:27:53:482 Running the following analyses:
+[CDD-3.18,Coils-2.2.1,Gene3D-4.3.0,Hamap-2020_05,MobiDBLite-2.0,PANTHER-15.0,Pfam-34.0,Phobius-1.01,PIRSF-3.10,PIRSR-2021_02,PRINTS-42.0,ProSitePatterns-2021_01,ProSiteProfiles-2021_01,SFLD-4,SignalP_EUK-4.1,SignalP_GRAM_NEGATIVE-4.1,SignalP_GRAM_POSITIVE-4.1,SMART-7.1,SUPERFAMILY-1.75,TIGRFAM-15.0,TMHMM-2.0c]
+Pre-calculated match lookup service DISABLED.  Please wait for match calculations to complete...
+22/06/2022 23:28:05:901 Uploaded 42119 unique sequences for analysis
+23/06/2022 00:18:44:743 25% completed
+23/06/2022 00:41:25:869 50% completed
+23/06/2022 01:05:54:760 75% completed
+23/06/2022 01:18:19:626 90% completed
+23/06/2022 02:05:30:927 100% done:  InterProScan analyses completed 
+
+[Thu 23 Jun 2022 02:05:32 AM EDT]      CMD: rm -fr temp
+
+=====================================================================
+Started: at Wed 22 Jun 2022 11:27:31 PM EDT
+Finished: at Thu 23 Jun 2022 02:05:32 AM EDT
+ExitStatus: 0
+=====================================================================

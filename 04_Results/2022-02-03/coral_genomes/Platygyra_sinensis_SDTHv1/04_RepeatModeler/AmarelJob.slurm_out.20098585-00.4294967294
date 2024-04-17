@@ -1,0 +1,21 @@
+=====================================================================
+Slurm config version 0.4
+Starting on hal0023.amarel.rutgers.edu at Wed Jun  8 20:20:31 EDT 2022
+Nodelist hal0023
+Current JOB_ID is 20098585
+Current array index number is NA
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Platygyra_sinensis_SDTHv1/04_RepeatModeler
+=====================================================================
+
+[Fri Jun 10 10:24:48 EDT 2022]   - Done!
+
+=====================================================================
+Started: at Wed Jun  8 20:20:31 EDT 2022 on hal0023.amarel.rutgers.edu
+Finished: at Fri Jun 10 10:24:48 EDT 2022
+ExitStatus: 0
+
+   JobName   NTasks  AllocCPUS     ReqMem     MaxRSS  MaxVMSize  MaxDiskRead MaxDiskWrite   TotalCPU    CPUTime    Elapsed 
+---------- -------- ---------- ---------- ---------- ---------- ------------ ------------ ---------- ---------- ---------- 
+ AmarelJob                  24      120Gn                                                   00:00:00 38-01:43:36 1-14:04:19 
+    extern        1         24      120Gn                                                   00:00:00 38-01:43:36 1-14:04:19 
+=====================================================================

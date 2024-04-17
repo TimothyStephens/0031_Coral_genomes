@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 14 Jun 2022 01:43:55 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Madracis_auretenra_REEFv1/00_databases/blast
+=====================================================================
+
+[Tue 14 Jun 2022 01:43:56 PM EDT]      CMD: md5sum Madracis_auretenra_REEFv1.transcripts.cds.fna Madracis_auretenra_REEFv1.transcripts.pep.faa | tee Madracis_auretenra_REEFv1.makeblastdb.job_md5sum_list.txt
+e50991679de60e06596c4bde657f6900  Madracis_auretenra_REEFv1.transcripts.cds.fna
+2aa5af6e4dbce903834a34261cfbb8d8  Madracis_auretenra_REEFv1.transcripts.pep.faa
+[Tue 14 Jun 2022 01:43:56 PM EDT]      CMD: makeblastdb -dbtype nucl -in Madracis_auretenra_REEFv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 06/14/2022 13:43:56
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Madracis_auretenra_REEFv1/00_databases/blast/Madracis_auretenra_REEFv1.transcripts.cds.fna
+New DB title:  Madracis_auretenra_REEFv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 42119 sequences in 0.696199 seconds.
+
+
+[Tue 14 Jun 2022 01:43:56 PM EDT]      CMD: makeblastdb -dbtype prot -in Madracis_auretenra_REEFv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 06/14/2022 13:43:56
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Madracis_auretenra_REEFv1/00_databases/blast/Madracis_auretenra_REEFv1.transcripts.pep.faa
+New DB title:  Madracis_auretenra_REEFv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 42119 sequences in 0.585709 seconds.
+
+
+
+=====================================================================
+Started: at Tue 14 Jun 2022 01:43:55 PM EDT
+Finished: at Tue 14 Jun 2022 01:43:57 PM EDT
+ExitStatus: 0
+=====================================================================

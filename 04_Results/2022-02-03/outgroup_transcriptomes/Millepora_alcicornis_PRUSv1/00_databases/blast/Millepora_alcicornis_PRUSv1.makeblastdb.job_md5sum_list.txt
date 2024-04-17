@@ -1,0 +1,2 @@
+25cdca1b4f990bfa0272bc9ed370b03a  Millepora_alcicornis_PRUSv1.transcripts.cds.fna
+6eba1174edb67bfbca81bf90aaec6958  Millepora_alcicornis_PRUSv1.transcripts.pep.faa

@@ -1,0 +1,21 @@
+=====================================================================
+Slurm config version 0.4
+Starting on hal0153.amarel.rutgers.edu at Sun Jun 12 13:50:05 EDT 2022
+Nodelist hal0153
+Current JOB_ID is 20158861
+Current array index number is NA
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Amplexidiscus_fenestrafer_MSMEv1/05_RepeatMasker
+=====================================================================
+
+[Mon Jun 13 03:59:37 EDT 2022]   - Done!
+
+=====================================================================
+Started: at Sun Jun 12 13:50:05 EDT 2022 on hal0153.amarel.rutgers.edu
+Finished: at Mon Jun 13 03:59:37 EDT 2022
+ExitStatus: 0
+
+   JobName   NTasks  AllocCPUS     ReqMem     MaxRSS  MaxVMSize  MaxDiskRead MaxDiskWrite   TotalCPU    CPUTime    Elapsed 
+---------- -------- ---------- ---------- ---------- ---------- ------------ ------------ ---------- ---------- ---------- 
+ AmarelJob                  24      120Gn                                                   00:00:00 14-03:49:36   14:09:34 
+    extern        1         24      120Gn                                                   00:00:00 14-03:49:36   14:09:34 
+=====================================================================

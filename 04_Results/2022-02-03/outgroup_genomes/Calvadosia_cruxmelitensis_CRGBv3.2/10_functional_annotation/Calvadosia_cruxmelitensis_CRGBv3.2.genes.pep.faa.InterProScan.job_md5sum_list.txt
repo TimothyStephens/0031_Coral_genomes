@@ -1,0 +1,2 @@
+b73402dc7b457695a2b2a2a780d43822  Calvadosia_cruxmelitensis_CRGBv3.2.genes.pep.faa
+9b2ef3a78579a0b99727b38c2f948deb  ../00_databases/Calvadosia_cruxmelitensis_CRGBv3.2.genes.pep.faa

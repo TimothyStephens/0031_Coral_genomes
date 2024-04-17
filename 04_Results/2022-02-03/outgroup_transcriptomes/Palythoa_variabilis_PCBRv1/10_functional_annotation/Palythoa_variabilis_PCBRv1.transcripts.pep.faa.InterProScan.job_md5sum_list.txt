@@ -1,0 +1,2 @@
+399fc347d1e5572b21b85ad47ea303de  Palythoa_variabilis_PCBRv1.transcripts.pep.faa
+399fc347d1e5572b21b85ad47ea303de  ../00_databases/Palythoa_variabilis_PCBRv1.transcripts.pep.faa

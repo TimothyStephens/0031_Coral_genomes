@@ -1,0 +1,2 @@
+88f6af282bbc56127ae39bbbcc534c07  Pocillopora_damicornis_XSCSv1.transcripts.cds.fna
+5ac3d55966342700e572896829a32984  Pocillopora_damicornis_XSCSv1.transcripts.pep.faa

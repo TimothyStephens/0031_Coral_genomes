@@ -1,0 +1,2 @@
+e8c4b736c9c49d338adca4461571549b  Astreopora_sp_REEFv1.transcripts.pep.faa
+e8c4b736c9c49d338adca4461571549b  ../00_databases/Astreopora_sp_REEFv1.transcripts.pep.faa

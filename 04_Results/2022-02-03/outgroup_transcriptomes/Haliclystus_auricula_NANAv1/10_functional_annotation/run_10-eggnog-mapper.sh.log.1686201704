@@ -1,0 +1,99 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 08 Jun 2023 01:21:44 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Haliclystus_auricula_NANAv1/10_functional_annotation
+=====================================================================
+
+[Thu 08 Jun 2023 01:21:45 AM EDT]      CMD: md5sum Haliclystus_auricula_NANAv1.transcripts.pep.faa ../00_databases/Haliclystus_auricula_NANAv1.transcripts.pep.faa | tee Haliclystus_auricula_NANAv1.transcripts.pep.faa.emapper.job_md5sum_list.txt
+fde5043ecff4e65cf23fa4f89fa5afd6  Haliclystus_auricula_NANAv1.transcripts.pep.faa
+fde5043ecff4e65cf23fa4f89fa5afd6  ../00_databases/Haliclystus_auricula_NANAv1.transcripts.pep.faa
+[Thu 08 Jun 2023 01:21:45 AM EDT]      CMD: emapper.py -i Haliclystus_auricula_NANAv1.transcripts.pep.faa --output Haliclystus_auricula_NANAv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 2.86102294921875e-06 0.00 q/s (% mem usage: 58.70, % mem avail: 41.29)
+[1;34mTime to load the DB into memory: 67.87498426437378[0m
+#  emapper-2.1.6
+# emapper.py  -i Haliclystus_auricula_NANAv1.transcripts.pep.faa --output Haliclystus_auricula_NANAv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Haliclystus_auricula_NANAv1/10_functional_annotation/Haliclystus_auricula_NANAv1.transcripts.pep.faa --threads 96 -o /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Haliclystus_auricula_NANAv1/10_functional_annotation/Haliclystus_auricula_NANAv1.transcripts.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+CREATED ESL_REFORMAT DB. USING HMMSEARCH
+Namespace(Z=40000000, call_info='## Thu Jun  8 01:30:05 2023\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Haliclystus_auricula_NANAv1.transcripts.pep.faa --output Haliclystus_auricula_NANAv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem\n##', clean_overlaps='hmmsearch_clans', cpu=96, cpus_per_worker=96, cut_ga=True, db='/scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Haliclystus_auricula_NANAv1/10_functional_annotation/tmp8f4bfzrs', dbtype='seqdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='hmm', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Haliclystus_auricula_NANAv1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+500 819.3644721508026 0.61 q/s (% mem usage: 70.20, % mem avail: 29.78)
+1000 821.4912190437317 1.22 q/s (% mem usage: 70.20, % mem avail: 29.81)
+1500 823.5520331859589 1.82 q/s (% mem usage: 70.20, % mem avail: 29.82)
+2000 825.7871379852295 2.42 q/s (% mem usage: 70.20, % mem avail: 29.82)
+2500 828.3898718357086 3.02 q/s (% mem usage: 70.20, % mem avail: 29.83)
+3000 830.5758104324341 3.61 q/s (% mem usage: 70.30, % mem avail: 29.74)
+3500 833.3007085323334 4.20 q/s (% mem usage: 70.20, % mem avail: 29.83)
+4000 835.4885859489441 4.79 q/s (% mem usage: 70.30, % mem avail: 29.74)
+4500 837.8158073425293 5.37 q/s (% mem usage: 70.20, % mem avail: 29.80)
+5000 840.3718159198761 5.95 q/s (% mem usage: 70.20, % mem avail: 29.80)
+5500 842.9276702404022 6.52 q/s (% mem usage: 70.30, % mem avail: 29.73)
+6000 845.0111591815948 7.10 q/s (% mem usage: 70.20, % mem avail: 29.80)
+6500 847.5130586624146 7.67 q/s (% mem usage: 70.20, % mem avail: 29.83)
+7000 850.1501080989838 8.23 q/s (% mem usage: 70.20, % mem avail: 29.80)
+7500 852.4893014431 8.80 q/s (% mem usage: 70.20, % mem avail: 29.81)
+8000 855.2896418571472 9.35 q/s (% mem usage: 70.20, % mem avail: 29.80)
+8500 858.0380806922913 9.91 q/s (% mem usage: 70.20, % mem avail: 29.76)
+9000 860.9310610294342 10.45 q/s (% mem usage: 70.20, % mem avail: 29.75)
+9500 863.3430428504944 11.00 q/s (% mem usage: 70.20, % mem avail: 29.78)
+10000 866.3482575416565 11.54 q/s (% mem usage: 70.20, % mem avail: 29.77)
+10500 868.7247366905212 12.09 q/s (% mem usage: 70.30, % mem avail: 29.74)
+11000 870.297696352005 12.64 q/s (% mem usage: 70.30, % mem avail: 29.74)
+11500 872.7263081073761 13.18 q/s (% mem usage: 70.30, % mem avail: 29.74)
+12000 874.4604284763336 13.72 q/s (% mem usage: 70.20, % mem avail: 29.82)
+12500 877.3925344944 14.25 q/s (% mem usage: 70.20, % mem avail: 29.83)
+13000 880.443297624588 14.77 q/s (% mem usage: 70.20, % mem avail: 29.81)
+13500 882.8252623081207 15.29 q/s (% mem usage: 70.20, % mem avail: 29.81)
+14000 885.0222926139832 15.82 q/s (% mem usage: 70.20, % mem avail: 29.76)
+14500 888.0782799720764 16.33 q/s (% mem usage: 70.20, % mem avail: 29.82)
+15000 890.2452397346497 16.85 q/s (% mem usage: 70.20, % mem avail: 29.83)
+15500 892.5991609096527 17.37 q/s (% mem usage: 70.20, % mem avail: 29.81)
+16000 894.8668811321259 17.88 q/s (% mem usage: 70.20, % mem avail: 29.76)
+16500 897.5016720294952 18.38 q/s (% mem usage: 70.20, % mem avail: 29.77)
+16595 898.7712159156799 18.46 q/s (% mem usage: 70.10, % mem avail: 29.89)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Haliclystus_auricula_NANAv1/10_functional_annotation/Haliclystus_auricula_NANAv1.transcripts.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Haliclystus_auricula_NANAv1/10_functional_annotation/Haliclystus_auricula_NANAv1.transcripts.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Haliclystus_auricula_NANAv1/10_functional_annotation/Haliclystus_auricula_NANAv1.transcripts.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Haliclystus_auricula_NANAv1/10_functional_annotation/Haliclystus_auricula_NANAv1.transcripts.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Haliclystus_auricula_NANAv1/10_functional_annotation/Haliclystus_auricula_NANAv1.transcripts.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 16595
+Total time: 1238 secs
+FINISHED
+[Thu 08 Jun 2023 01:42:28 AM EDT]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Thu 08 Jun 2023 01:21:44 AM EDT
+Finished: at Thu 08 Jun 2023 01:42:28 AM EDT
+ExitStatus: 0
+=====================================================================

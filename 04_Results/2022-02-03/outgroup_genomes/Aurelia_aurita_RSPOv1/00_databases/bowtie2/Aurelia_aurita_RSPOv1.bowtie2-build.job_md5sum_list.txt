@@ -1,0 +1,2 @@
+a0834c4335f843f600a5a3ef046cd467  Aurelia_aurita_RSPOv1.assembly.fasta
+fe6dfb9cac9778d3bb4c4a0e072c4693  Aurelia_aurita_RSPOv1.genes.cds.fna

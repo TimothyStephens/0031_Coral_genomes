@@ -1,0 +1,26 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat 12 Nov 2022 10:51:04 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Calvadosia_cruxmelitensis_CRGBv3.2-TRANS/00_databases/blast
+=====================================================================
+
+[Sat 12 Nov 2022 10:51:12 PM EST]      CMD: md5sum Calvadosia_cruxmelitensis_CRGBv3.2-TRANS.transcripts.pep.faa | tee Calvadosia_cruxmelitensis_CRGBv3.2-TRANS.makeblastdb.job_md5sum_list.txt
+7f166859a896d99923048f7f8700c6e8  Calvadosia_cruxmelitensis_CRGBv3.2-TRANS.transcripts.pep.faa
+[Sat 12 Nov 2022 10:51:12 PM EST]      CMD: makeblastdb -dbtype prot -in Calvadosia_cruxmelitensis_CRGBv3.2-TRANS.transcripts.pep.faa
+
+
+Building a new DB, current time: 11/12/2022 22:51:12
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Calvadosia_cruxmelitensis_CRGBv3.2-TRANS/00_databases/blast/Calvadosia_cruxmelitensis_CRGBv3.2-TRANS.transcripts.pep.faa
+New DB title:  Calvadosia_cruxmelitensis_CRGBv3.2-TRANS.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 74577 sequences in 2.16645 seconds.
+
+
+
+=====================================================================
+Started: at Sat 12 Nov 2022 10:51:04 PM EST
+Finished: at Sat 12 Nov 2022 10:51:15 PM EST
+ExitStatus: 0
+=====================================================================

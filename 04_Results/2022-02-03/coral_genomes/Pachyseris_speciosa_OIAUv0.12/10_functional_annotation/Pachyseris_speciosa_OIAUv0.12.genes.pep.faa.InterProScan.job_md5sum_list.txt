@@ -1,0 +1,2 @@
+ea2eed5d72bf2e98ab9189a0758d26ad  Pachyseris_speciosa_OIAUv0.12.genes.pep.faa
+ea2eed5d72bf2e98ab9189a0758d26ad  ../00_databases/Pachyseris_speciosa_OIAUv0.12.genes.pep.faa

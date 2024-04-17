@@ -1,0 +1,2 @@
+cd3bf9ee9dd94a18e05298a035adba54  Acropora_muricata_SLJPv1.genes.pep.faa
+fdfdb6b393e17a09eb46f5513b65102e  ../00_databases/Acropora_muricata_SLJPv1.genes.pep.faa

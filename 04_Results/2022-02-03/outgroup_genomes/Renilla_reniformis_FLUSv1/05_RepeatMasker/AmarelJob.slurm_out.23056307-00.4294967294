@@ -1,0 +1,21 @@
+=====================================================================
+Slurm config version 0.4
+Starting on slepner085.amarel.rutgers.edu at Tue Nov 22 18:18:01 EST 2022
+Nodelist slepner085
+Current JOB_ID is 23056307
+Current array index number is NA
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_reniformis_FLUSv1/05_RepeatMasker
+=====================================================================
+
+[Wed Nov 23 02:17:42 EST 2022]   - Done!
+
+=====================================================================
+Started: at Tue Nov 22 18:18:01 EST 2022 on slepner085.amarel.rutgers.edu
+Finished: at Wed Nov 23 02:17:42 EST 2022
+ExitStatus: 0
+
+   JobName   NTasks  AllocCPUS     ReqMem     MaxRSS  MaxVMSize  MaxDiskRead MaxDiskWrite   TotalCPU    CPUTime    Elapsed 
+---------- -------- ---------- ---------- ---------- ---------- ------------ ------------ ---------- ---------- ---------- 
+ AmarelJob                  24      120Gn                                                   00:00:00 7-23:52:48   07:59:42 
+    extern        1         24      120Gn                                                   00:00:00 7-23:52:48   07:59:42 
+=====================================================================

@@ -1,0 +1,2 @@
+f2bbe2705df92326de6754bc5e3d1bfc  Porites_evermanni_NAPFv1.genes.pep.faa
+f2bbe2705df92326de6754bc5e3d1bfc  ../00_databases/Porites_evermanni_NAPFv1.genes.pep.faa

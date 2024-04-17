@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 14 Jun 2022 02:39:47 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Pseudodiploria_strigosa_REEFv1/01_stats
+=====================================================================
+
+[Tue 14 Jun 2022 02:39:48 PM EDT]      CMD: md5sum Pseudodiploria_strigosa_REEFv1.transcripts.cds.fna | tee Pseudodiploria_strigosa_REEFv1.CDS_stats.job_md5sum_list.txt
+b08b169ae399dd4b13287f2720cdd5bf  Pseudodiploria_strigosa_REEFv1.transcripts.cds.fna
+[Tue 14 Jun 2022 02:39:48 PM EDT]      CMD: ./CDS_stats Pseudodiploria_strigosa_REEFv1.transcripts.cds.fna > Pseudodiploria_strigosa_REEFv1.GeneStats.tsv
+
+=====================================================================
+Started: at Tue 14 Jun 2022 02:39:47 PM EDT
+Finished: at Tue 14 Jun 2022 02:39:49 PM EDT
+ExitStatus: 0
+=====================================================================

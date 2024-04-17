@@ -1,0 +1,2 @@
+99fbf8b14554de74469c8b200bb11ce2  Seriatopora_hystrix_REEFv1.transcripts.cds.fna
+b3baefd68e9005637cf8267abcd7e558  Seriatopora_hystrix_REEFv1.transcripts.pep.faa

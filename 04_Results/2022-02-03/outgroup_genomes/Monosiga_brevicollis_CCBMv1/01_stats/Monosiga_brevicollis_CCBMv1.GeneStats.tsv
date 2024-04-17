@@ -1,0 +1,43 @@
+# Files
+Genome file	Monosiga_brevicollis_CCBMv1.assembly.fasta
+GFF file	Monosiga_brevicollis_CCBMv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	41709928
+Total contig length (bp)	38725360
+Number of scaffolds	219
+Number of contigs	2144
+N50 of scaffolds (bp)	1073601
+N50 of contigs (bp)	49874
+Percent gaps	7.156
+Percent GC	54.81
+
+# Gene stats (combined CDS+introns)
+Number of genes	9202
+Total gene length	26746793
+Average gene length (bp)	2906.63
+Gene percent GC	55.7
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1800.53
+Average number of CDS per gene/transcript	7.50369
+
+# CDS stats
+Number of CDS	69049
+Total CDS length (bp)	16568465
+Average CDS length (bp)	239.952
+Number of single-CDS transcripts	1065
+Percent single-CDS transcripts	11.5736
+CDS percent GC	57.19
+
+# Intron stats (predicted between CDS features)
+Number of introns	59847
+Total intron length (bp)	10178328
+Average intron length (bp)	170.072
+Intron percent GC	53.06
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	8990
+Total intergenic region length (bp)	13801308
+Average intergenic region length (bp)	1535.18
+Intergenic region percent GC	53.02

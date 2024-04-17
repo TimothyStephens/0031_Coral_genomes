@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 02:20:08 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Gorgonia_ventalina_LRPRv1/00_databases/blast
+=====================================================================
+
+[Tue 06 Jun 2023 02:20:10 PM EDT]      CMD: md5sum Gorgonia_ventalina_LRPRv1.transcripts.cds.fna Gorgonia_ventalina_LRPRv1.transcripts.pep.faa | tee Gorgonia_ventalina_LRPRv1.makeblastdb.job_md5sum_list.txt
+0488f3996ef2a1dd6c07123e5299ddf4  Gorgonia_ventalina_LRPRv1.transcripts.cds.fna
+fca6e38af386722033661434c7befb4f  Gorgonia_ventalina_LRPRv1.transcripts.pep.faa
+[Tue 06 Jun 2023 02:20:10 PM EDT]      CMD: makeblastdb -dbtype nucl -in Gorgonia_ventalina_LRPRv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 06/06/2023 14:20:10
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Gorgonia_ventalina_LRPRv1/00_databases/blast/Gorgonia_ventalina_LRPRv1.transcripts.cds.fna
+New DB title:  Gorgonia_ventalina_LRPRv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 74554 sequences in 1.21977 seconds.
+
+
+[Tue 06 Jun 2023 02:20:11 PM EDT]      CMD: makeblastdb -dbtype prot -in Gorgonia_ventalina_LRPRv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 06/06/2023 14:20:11
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Gorgonia_ventalina_LRPRv1/00_databases/blast/Gorgonia_ventalina_LRPRv1.transcripts.pep.faa
+New DB title:  Gorgonia_ventalina_LRPRv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 74554 sequences in 1.00976 seconds.
+
+
+
+=====================================================================
+Started: at Tue 06 Jun 2023 02:20:08 PM EDT
+Finished: at Tue 06 Jun 2023 02:20:13 PM EDT
+ExitStatus: 0
+=====================================================================

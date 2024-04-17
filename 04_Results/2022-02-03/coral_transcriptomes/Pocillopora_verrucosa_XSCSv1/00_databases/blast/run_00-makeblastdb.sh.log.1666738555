@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 06:55:55 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Pocillopora_verrucosa_XSCSv1/00_databases/blast
+=====================================================================
+
+[Tue 25 Oct 2022 06:55:57 PM EDT]      CMD: md5sum Pocillopora_verrucosa_XSCSv1.transcripts.cds.fna Pocillopora_verrucosa_XSCSv1.transcripts.pep.faa | tee Pocillopora_verrucosa_XSCSv1.makeblastdb.job_md5sum_list.txt
+77fc6241d193d03ec409e634a367bb7c  Pocillopora_verrucosa_XSCSv1.transcripts.cds.fna
+ff683ee267b99f78dfea08c4efd6f7f8  Pocillopora_verrucosa_XSCSv1.transcripts.pep.faa
+[Tue 25 Oct 2022 06:55:57 PM EDT]      CMD: makeblastdb -dbtype nucl -in Pocillopora_verrucosa_XSCSv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 10/25/2022 18:55:57
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Pocillopora_verrucosa_XSCSv1/00_databases/blast/Pocillopora_verrucosa_XSCSv1.transcripts.cds.fna
+New DB title:  Pocillopora_verrucosa_XSCSv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 12675 sequences in 0.310825 seconds.
+
+
+[Tue 25 Oct 2022 06:55:58 PM EDT]      CMD: makeblastdb -dbtype prot -in Pocillopora_verrucosa_XSCSv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 10/25/2022 18:55:58
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Pocillopora_verrucosa_XSCSv1/00_databases/blast/Pocillopora_verrucosa_XSCSv1.transcripts.pep.faa
+New DB title:  Pocillopora_verrucosa_XSCSv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 12675 sequences in 0.231686 seconds.
+
+
+
+=====================================================================
+Started: at Tue 25 Oct 2022 06:55:55 PM EDT
+Finished: at Tue 25 Oct 2022 06:55:58 PM EDT
+ExitStatus: 0
+=====================================================================

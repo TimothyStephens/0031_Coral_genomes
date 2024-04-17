@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 10:47:56 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Porites_lobata_NAPFv3/00_databases/blast
+=====================================================================
+
+[Tue 06 Jun 2023 10:47:58 AM EDT]      CMD: md5sum Porites_lobata_NAPFv3.assembly.fasta Porites_lobata_NAPFv3.genes.cds.fna Porites_lobata_NAPFv3.genes.pep.faa | tee Porites_lobata_NAPFv3.makeblastdb.job_md5sum_list.txt
+0ced58bd1e4a8c4ae96cfa29b7e48c99  Porites_lobata_NAPFv3.assembly.fasta
+6dace9d54f59234d4699ee499b4f3e03  Porites_lobata_NAPFv3.genes.cds.fna
+b96afa7fcd1c65fc715c8d7540e2b3ae  Porites_lobata_NAPFv3.genes.pep.faa
+[Tue 06 Jun 2023 10:48:00 AM EDT]      CMD: makeblastdb -dbtype nucl -in Porites_lobata_NAPFv3.assembly.fasta
+
+
+Building a new DB, current time: 06/06/2023 10:48:00
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Porites_lobata_NAPFv3/00_databases/blast/Porites_lobata_NAPFv3.assembly.fasta
+New DB title:  Porites_lobata_NAPFv3.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1098 sequences in 5.42819 seconds.
+
+
+[Tue 06 Jun 2023 10:48:05 AM EDT]      CMD: makeblastdb -dbtype nucl -in Porites_lobata_NAPFv3.genes.cds.fna
+
+
+Building a new DB, current time: 06/06/2023 10:48:05
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Porites_lobata_NAPFv3/00_databases/blast/Porites_lobata_NAPFv3.genes.cds.fna
+New DB title:  Porites_lobata_NAPFv3.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 42872 sequences in 1.12265 seconds.
+
+
+[Tue 06 Jun 2023 10:48:06 AM EDT]      CMD: makeblastdb -dbtype prot -in Porites_lobata_NAPFv3.genes.pep.faa
+
+
+Building a new DB, current time: 06/06/2023 10:48:06
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Porites_lobata_NAPFv3/00_databases/blast/Porites_lobata_NAPFv3.genes.pep.faa
+New DB title:  Porites_lobata_NAPFv3.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 42872 sequences in 0.842004 seconds.
+
+
+
+=====================================================================
+Started: at Tue 06 Jun 2023 10:47:56 AM EDT
+Finished: at Tue 06 Jun 2023 10:48:07 AM EDT
+ExitStatus: 0
+=====================================================================

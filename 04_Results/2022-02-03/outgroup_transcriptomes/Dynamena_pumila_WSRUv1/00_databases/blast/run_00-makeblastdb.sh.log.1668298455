@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat 12 Nov 2022 07:14:15 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Dynamena_pumila_WSRUv1/00_databases/blast
+=====================================================================
+
+[Sat 12 Nov 2022 07:14:17 PM EST]      CMD: md5sum Dynamena_pumila_WSRUv1.transcripts.cds.fna Dynamena_pumila_WSRUv1.transcripts.pep.faa | tee Dynamena_pumila_WSRUv1.makeblastdb.job_md5sum_list.txt
+d13032f4f61f81b5b1b00a2471768ed9  Dynamena_pumila_WSRUv1.transcripts.cds.fna
+c88ee89318d8fa84af38c04aaa833bc2  Dynamena_pumila_WSRUv1.transcripts.pep.faa
+[Sat 12 Nov 2022 07:14:17 PM EST]      CMD: makeblastdb -dbtype nucl -in Dynamena_pumila_WSRUv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 11/12/2022 19:14:18
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Dynamena_pumila_WSRUv1/00_databases/blast/Dynamena_pumila_WSRUv1.transcripts.cds.fna
+New DB title:  Dynamena_pumila_WSRUv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 31863 sequences in 1.43426 seconds.
+
+
+[Sat 12 Nov 2022 07:14:19 PM EST]      CMD: makeblastdb -dbtype prot -in Dynamena_pumila_WSRUv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 11/12/2022 19:14:19
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Dynamena_pumila_WSRUv1/00_databases/blast/Dynamena_pumila_WSRUv1.transcripts.pep.faa
+New DB title:  Dynamena_pumila_WSRUv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 31863 sequences in 0.719116 seconds.
+
+
+
+=====================================================================
+Started: at Sat 12 Nov 2022 07:14:15 PM EST
+Finished: at Sat 12 Nov 2022 07:14:20 PM EST
+ExitStatus: 0
+=====================================================================

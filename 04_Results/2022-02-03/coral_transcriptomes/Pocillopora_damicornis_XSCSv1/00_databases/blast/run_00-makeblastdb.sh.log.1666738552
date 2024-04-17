@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 06:55:52 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Pocillopora_damicornis_XSCSv1/00_databases/blast
+=====================================================================
+
+[Tue 25 Oct 2022 06:55:54 PM EDT]      CMD: md5sum Pocillopora_damicornis_XSCSv1.transcripts.cds.fna Pocillopora_damicornis_XSCSv1.transcripts.pep.faa | tee Pocillopora_damicornis_XSCSv1.makeblastdb.job_md5sum_list.txt
+88f6af282bbc56127ae39bbbcc534c07  Pocillopora_damicornis_XSCSv1.transcripts.cds.fna
+5ac3d55966342700e572896829a32984  Pocillopora_damicornis_XSCSv1.transcripts.pep.faa
+[Tue 25 Oct 2022 06:55:54 PM EDT]      CMD: makeblastdb -dbtype nucl -in Pocillopora_damicornis_XSCSv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 10/25/2022 18:55:54
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Pocillopora_damicornis_XSCSv1/00_databases/blast/Pocillopora_damicornis_XSCSv1.transcripts.cds.fna
+New DB title:  Pocillopora_damicornis_XSCSv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 14101 sequences in 0.345845 seconds.
+
+
+[Tue 25 Oct 2022 06:55:55 PM EDT]      CMD: makeblastdb -dbtype prot -in Pocillopora_damicornis_XSCSv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 10/25/2022 18:55:55
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Pocillopora_damicornis_XSCSv1/00_databases/blast/Pocillopora_damicornis_XSCSv1.transcripts.pep.faa
+New DB title:  Pocillopora_damicornis_XSCSv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 14101 sequences in 0.273464 seconds.
+
+
+
+=====================================================================
+Started: at Tue 25 Oct 2022 06:55:52 PM EDT
+Finished: at Tue 25 Oct 2022 06:55:55 PM EDT
+ExitStatus: 0
+=====================================================================

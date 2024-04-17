@@ -1,1 +1,1 @@
-69fc065c909385ab4240b68ddee2f3ee  Pocillopora_damicornis_SIPAv1.genes.pep.faa
+5cf6e2c2484e48d71792bce0299c403a  Pocillopora_damicornis_SIPAv1.genes.pep.faa

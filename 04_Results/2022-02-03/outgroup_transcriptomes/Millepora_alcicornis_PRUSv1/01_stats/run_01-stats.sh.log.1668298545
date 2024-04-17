@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat 12 Nov 2022 07:15:45 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Millepora_alcicornis_PRUSv1/01_stats
+=====================================================================
+
+[Sat 12 Nov 2022 07:15:47 PM EST]      CMD: md5sum Millepora_alcicornis_PRUSv1.transcripts.cds.fna | tee Millepora_alcicornis_PRUSv1.CDS_stats.job_md5sum_list.txt
+25cdca1b4f990bfa0272bc9ed370b03a  Millepora_alcicornis_PRUSv1.transcripts.cds.fna
+[Sat 12 Nov 2022 07:15:47 PM EST]      CMD: ./CDS_stats Millepora_alcicornis_PRUSv1.transcripts.cds.fna > Millepora_alcicornis_PRUSv1.GeneStats.tsv
+
+=====================================================================
+Started: at Sat 12 Nov 2022 07:15:45 PM EST
+Finished: at Sat 12 Nov 2022 07:15:48 PM EST
+ExitStatus: 0
+=====================================================================

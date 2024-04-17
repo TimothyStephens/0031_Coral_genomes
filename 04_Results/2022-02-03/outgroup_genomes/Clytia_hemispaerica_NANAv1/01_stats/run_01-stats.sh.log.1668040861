@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 09 Nov 2022 07:41:01 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Clytia_hemispaerica_NANAv1/01_stats
+=====================================================================
+
+[Wed 09 Nov 2022 07:41:03 PM EST]      CMD: md5sum Clytia_hemispaerica_NANAv1.assembly.fasta Clytia_hemispaerica_NANAv1.genes.gff3 | tee Clytia_hemispaerica_NANAv1.genome_stats.job_md5sum_list.txt
+edd75f4ab5405068864175bdd15285ee  Clytia_hemispaerica_NANAv1.assembly.fasta
+3aaea5e51f0684e2e925c08a81b8e812  Clytia_hemispaerica_NANAv1.genes.gff3
+[Wed 09 Nov 2022 07:41:04 PM EST]      CMD: ./genome_stats --feature exon Clytia_hemispaerica_NANAv1.assembly.fasta Clytia_hemispaerica_NANAv1.genes.gff3 > Clytia_hemispaerica_NANAv1.GeneStats.tsv
+index file Clytia_hemispaerica_NANAv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Wed 09 Nov 2022 07:41:01 PM EST
+Finished: at Wed 09 Nov 2022 07:41:31 PM EST
+ExitStatus: 0
+=====================================================================

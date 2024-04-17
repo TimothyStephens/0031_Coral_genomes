@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 14 Jun 2022 01:44:11 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Seriatopora_hystrix_REEFv1/00_databases/blast
+=====================================================================
+
+[Tue 14 Jun 2022 01:44:12 PM EDT]      CMD: md5sum Seriatopora_hystrix_REEFv1.transcripts.cds.fna Seriatopora_hystrix_REEFv1.transcripts.pep.faa | tee Seriatopora_hystrix_REEFv1.makeblastdb.job_md5sum_list.txt
+99fbf8b14554de74469c8b200bb11ce2  Seriatopora_hystrix_REEFv1.transcripts.cds.fna
+b3baefd68e9005637cf8267abcd7e558  Seriatopora_hystrix_REEFv1.transcripts.pep.faa
+[Tue 14 Jun 2022 01:44:12 PM EDT]      CMD: makeblastdb -dbtype nucl -in Seriatopora_hystrix_REEFv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 06/14/2022 13:44:12
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Seriatopora_hystrix_REEFv1/00_databases/blast/Seriatopora_hystrix_REEFv1.transcripts.cds.fna
+New DB title:  Seriatopora_hystrix_REEFv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 27680 sequences in 0.587395 seconds.
+
+
+[Tue 14 Jun 2022 01:44:13 PM EDT]      CMD: makeblastdb -dbtype prot -in Seriatopora_hystrix_REEFv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 06/14/2022 13:44:13
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Seriatopora_hystrix_REEFv1/00_databases/blast/Seriatopora_hystrix_REEFv1.transcripts.pep.faa
+New DB title:  Seriatopora_hystrix_REEFv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 27680 sequences in 0.666099 seconds.
+
+
+
+=====================================================================
+Started: at Tue 14 Jun 2022 01:44:11 PM EDT
+Finished: at Tue 14 Jun 2022 01:44:14 PM EDT
+ExitStatus: 0
+=====================================================================

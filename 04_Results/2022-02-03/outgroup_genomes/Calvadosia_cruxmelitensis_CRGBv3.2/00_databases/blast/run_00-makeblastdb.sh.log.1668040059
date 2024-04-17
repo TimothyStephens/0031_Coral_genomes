@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 09 Nov 2022 07:27:39 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Calvadosia_cruxmelitensis_CRGBv3.2/00_databases/blast
+=====================================================================
+
+[Wed 09 Nov 2022 07:27:42 PM EST]      CMD: md5sum Calvadosia_cruxmelitensis_CRGBv3.2.assembly.fasta Calvadosia_cruxmelitensis_CRGBv3.2.genes.cds.fna Calvadosia_cruxmelitensis_CRGBv3.2.genes.pep.faa | tee Calvadosia_cruxmelitensis_CRGBv3.2.makeblastdb.job_md5sum_list.txt
+f7b9af4c98c06dfb1ef353e241af0533  Calvadosia_cruxmelitensis_CRGBv3.2.assembly.fasta
+94d84485526d866c9b3b7a344de8b77d  Calvadosia_cruxmelitensis_CRGBv3.2.genes.cds.fna
+9b2ef3a78579a0b99727b38c2f948deb  Calvadosia_cruxmelitensis_CRGBv3.2.genes.pep.faa
+[Wed 09 Nov 2022 07:27:43 PM EST]      CMD: makeblastdb -dbtype nucl -in Calvadosia_cruxmelitensis_CRGBv3.2.assembly.fasta
+
+
+Building a new DB, current time: 11/09/2022 19:27:43
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Calvadosia_cruxmelitensis_CRGBv3.2/00_databases/blast/Calvadosia_cruxmelitensis_CRGBv3.2.assembly.fasta
+New DB title:  Calvadosia_cruxmelitensis_CRGBv3.2.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 50999 sequences in 5.92615 seconds.
+
+
+[Wed 09 Nov 2022 07:27:49 PM EST]      CMD: makeblastdb -dbtype nucl -in Calvadosia_cruxmelitensis_CRGBv3.2.genes.cds.fna
+
+
+Building a new DB, current time: 11/09/2022 19:27:49
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Calvadosia_cruxmelitensis_CRGBv3.2/00_databases/blast/Calvadosia_cruxmelitensis_CRGBv3.2.genes.cds.fna
+New DB title:  Calvadosia_cruxmelitensis_CRGBv3.2.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 26258 sequences in 1.31519 seconds.
+
+
+[Wed 09 Nov 2022 07:27:51 PM EST]      CMD: makeblastdb -dbtype prot -in Calvadosia_cruxmelitensis_CRGBv3.2.genes.pep.faa
+
+
+Building a new DB, current time: 11/09/2022 19:27:51
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Calvadosia_cruxmelitensis_CRGBv3.2/00_databases/blast/Calvadosia_cruxmelitensis_CRGBv3.2.genes.pep.faa
+New DB title:  Calvadosia_cruxmelitensis_CRGBv3.2.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 26258 sequences in 1.17641 seconds.
+
+
+
+=====================================================================
+Started: at Wed 09 Nov 2022 07:27:39 PM EST
+Finished: at Wed 09 Nov 2022 07:27:52 PM EST
+ExitStatus: 0
+=====================================================================

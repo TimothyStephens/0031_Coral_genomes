@@ -1,0 +1,26 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat 12 Nov 2022 10:56:21 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Cassiopea_xamachana_T1-Av2-TRANS/00_databases/blast
+=====================================================================
+
+[Sat 12 Nov 2022 10:56:22 PM EST]      CMD: md5sum Cassiopea_xamachana_T1-Av2-TRANS.transcripts.pep.faa | tee Cassiopea_xamachana_T1-Av2-TRANS.makeblastdb.job_md5sum_list.txt
+19e5eec8b52913356325cbcbf2e354b3  Cassiopea_xamachana_T1-Av2-TRANS.transcripts.pep.faa
+[Sat 12 Nov 2022 10:56:22 PM EST]      CMD: makeblastdb -dbtype prot -in Cassiopea_xamachana_T1-Av2-TRANS.transcripts.pep.faa
+
+
+Building a new DB, current time: 11/12/2022 22:56:22
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Cassiopea_xamachana_T1-Av2-TRANS/00_databases/blast/Cassiopea_xamachana_T1-Av2-TRANS.transcripts.pep.faa
+New DB title:  Cassiopea_xamachana_T1-Av2-TRANS.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 156224 sequences in 3.5883 seconds.
+
+
+
+=====================================================================
+Started: at Sat 12 Nov 2022 10:56:21 PM EST
+Finished: at Sat 12 Nov 2022 10:56:26 PM EST
+ExitStatus: 0
+=====================================================================

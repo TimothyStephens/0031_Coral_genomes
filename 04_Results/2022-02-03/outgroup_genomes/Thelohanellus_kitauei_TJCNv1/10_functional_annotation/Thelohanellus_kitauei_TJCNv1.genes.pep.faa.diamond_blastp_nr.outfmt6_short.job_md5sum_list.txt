@@ -1,0 +1,2 @@
+b657ab29c7e22b13a7266c5014b50cbe  Thelohanellus_kitauei_TJCNv1.genes.pep.faa
+b657ab29c7e22b13a7266c5014b50cbe  ../00_databases/Thelohanellus_kitauei_TJCNv1.genes.pep.faa

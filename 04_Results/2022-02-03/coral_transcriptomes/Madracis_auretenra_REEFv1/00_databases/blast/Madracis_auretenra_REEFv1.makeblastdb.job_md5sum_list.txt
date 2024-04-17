@@ -1,0 +1,2 @@
+e50991679de60e06596c4bde657f6900  Madracis_auretenra_REEFv1.transcripts.cds.fna
+2aa5af6e4dbce903834a34261cfbb8d8  Madracis_auretenra_REEFv1.transcripts.pep.faa

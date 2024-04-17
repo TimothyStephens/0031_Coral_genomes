@@ -1,0 +1,33 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 24 Mar 2022 04:32:50 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/Montipora_cactus_SLJPv2/06_RepeatMasker_SCORs
+=====================================================================
+
+[Thu 24 Mar 2022 04:32:50 PM EDT]      CMD: sed -e 's/Montipora_cactus_SLJPv2___//' Montipora_cactus_SLJPv2.assembly.fasta > genome.fa
+[Thu 24 Mar 2022 04:32:52 PM EDT]      CMD: RepeatMasker -no_is -nolow -a -x -gff -pa 18 -lib SCOR_consensus_sequences.fa genome.fa 1> RepeatMasker.log 2>&1
+[Thu 24 Mar 2022 04:45:28 PM EDT]      CMD: /home/timothy/programs/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/calcDivergenceFromAlign.pl -s genome.fa.divsum genome.fa.align
+..................................................................................................................................................................................................................................................................................................................................................................[Thu 24 Mar 2022 04:45:54 PM EDT]      CMD: bedtools maskfasta -fi genome.fa -fo genome.fa.softmasked -bed genome.fa.out.gff -soft
+[Thu 24 Mar 2022 04:45:56 PM EDT]      CMD: sed -e 's/^>/>Montipora_cactus_SLJPv2___/' genome.fa.softmasked > Montipora_cactus_SLJPv2.assembly.fasta.repmaskSCORs.softmasked
+[Thu 24 Mar 2022 04:45:57 PM EDT]      CMD: sed -e 's/^>/>Montipora_cactus_SLJPv2___/' genome.fa.masked | reformat.sh in=stdin.fa out=stdout.fa fastawrap=0 > Montipora_cactus_SLJPv2.assembly.fasta.repmaskSCORs.masked
+java -ea -Xms300m -cp /home/timothy/programs/bbmap/current/ jgi.ReformatReads in=stdin.fa out=stdout.fa fastawrap=0
+Executing jgi.ReformatReads [in=stdin.fa, out=stdout.fa, fastawrap=0]
+
+Input is being processed as unpaired
+Input:                  	3532 reads          	640828888 bases
+Output:                 	3532 reads (100.00%) 	640828888 bases (100.00%)
+
+Time:                         	5.471 seconds.
+Reads Processed:        3532 	0.65k reads/sec
+Bases Processed:        640m 	117.14m bases/sec
+[Thu 24 Mar 2022 04:46:03 PM EDT]      CMD: awk -F'\t' -vPREFIX=Montipora_cactus_SLJPv2 '{ if($1!~"^#") {print PREFIX"___"$0} else {print $0} }' genome.fa.out.gff > Montipora_cactus_SLJPv2.assembly.fasta.repmaskSCORs.out.gff
+[Thu 24 Mar 2022 04:46:03 PM EDT]      CMD: cp genome.fa.divsum Montipora_cactus_SLJPv2.assembly.fasta.repmaskSCORs.divsum
+[Thu 24 Mar 2022 04:46:03 PM EDT]      CMD: cp genome.fa.tbl Montipora_cactus_SLJPv2.assembly.fasta.repmaskSCORs.tbl
+[Thu 24 Mar 2022 04:46:03 PM EDT]      CMD: tail -n 72 Montipora_cactus_SLJPv2.assembly.fasta.repmaskSCORs.divsum | sed -e 's/ $//' > Montipora_cactus_SLJPv2.assembly.fasta.repmaskSCORs.divsum.Kimura_distance
+[Thu 24 Mar 2022 04:46:03 PM EDT]      CMD: gzip genome.fa.align genome.fa.divsum genome.fa.masked genome.fa.out genome.fa.out.gff genome.fa.softmasked genome.fa.tbl
+
+=====================================================================
+Started: at Thu 24 Mar 2022 04:32:50 PM EDT
+Finished: at Thu 24 Mar 2022 04:48:37 PM EDT
+ExitStatus: 0
+=====================================================================

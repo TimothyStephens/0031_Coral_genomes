@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 09 Nov 2022 07:35:02 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Aurelia_aurita_ALTOv1/01_stats
+=====================================================================
+
+[Wed 09 Nov 2022 07:35:04 PM EST]      CMD: md5sum Aurelia_aurita_ALTOv1.assembly.fasta Aurelia_aurita_ALTOv1.genes.gff3 | tee Aurelia_aurita_ALTOv1.genome_stats.job_md5sum_list.txt
+f360c55e25b95c473404781a7c6223fd  Aurelia_aurita_ALTOv1.assembly.fasta
+c5056aa471d7d08c980b383e6f0af08c  Aurelia_aurita_ALTOv1.genes.gff3
+[Wed 09 Nov 2022 07:35:05 PM EST]      CMD: ./genome_stats Aurelia_aurita_ALTOv1.assembly.fasta Aurelia_aurita_ALTOv1.genes.gff3 > Aurelia_aurita_ALTOv1.GeneStats.tsv
+index file Aurelia_aurita_ALTOv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Wed 09 Nov 2022 07:35:02 PM EST
+Finished: at Wed 09 Nov 2022 07:35:25 PM EST
+ExitStatus: 0
+=====================================================================

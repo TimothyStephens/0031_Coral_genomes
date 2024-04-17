@@ -1,0 +1,132 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 08 Jun 2022 08:39:32 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Exaiptasia_diaphana_CC7v1/02_busco
+=====================================================================
+
+[Wed 08 Jun 2022 08:39:35 PM EDT]      CMD: md5sum Exaiptasia_diaphana_CC7v1.assembly.fasta | tee Exaiptasia_diaphana_CC7v1.busco_genome.job_md5sum_list.txt
+4808d7d30f31902c1a1ee0523805cb1c  Exaiptasia_diaphana_CC7v1.assembly.fasta
+[Wed 08 Jun 2022 08:39:35 PM EDT]      CMD: mkdir /scratch/timothy/tmp/busco.1654735175
+[Wed 08 Jun 2022 08:39:35 PM EDT]      CMD: cd /scratch/timothy/tmp/busco.1654735175
+[Wed 08 Jun 2022 08:39:35 PM EDT]      CMD: ln -s /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Exaiptasia_diaphana_CC7v1/02_busco/Exaiptasia_diaphana_CC7v1.assembly.fasta genome.fa
+[Wed 08 Jun 2022 08:39:35 PM EDT]      CMD: busco --cpu 48 --offline --lineage_dataset /scratch/timothy/databases/busco/metazoa_odb10 --mode genome --in genome.fa --out genome.fa.busco_metazoa_odb10
+INFO:	***** Start a BUSCO v5.0.0 analysis, current time: 06/08/2022 20:39:36 *****
+INFO:	Configuring BUSCO with local environment
+INFO:	Mode is genome
+INFO:	Input file is /scratch/timothy/tmp/busco.1654735175/genome.fa
+INFO:	Using local lineages directory /scratch/timothy/databases/busco/metazoa_odb10
+INFO:	Running BUSCO using lineage dataset metazoa_odb10 (eukaryota, 2021-02-17)
+INFO:	Running 1 job(s) on metaeuk, starting at 06/08/2022 20:39:36
+INFO:	[metaeuk]	1 of 1 task(s) completed
+INFO:	***** Run HMMER on gene sequences *****
+INFO:	Running 954 job(s) on hmmsearch, starting at 06/08/2022 20:43:32
+INFO:	[hmmsearch]	96 of 954 task(s) completed
+INFO:	[hmmsearch]	191 of 954 task(s) completed
+INFO:	[hmmsearch]	382 of 954 task(s) completed
+INFO:	[hmmsearch]	478 of 954 task(s) completed
+INFO:	[hmmsearch]	573 of 954 task(s) completed
+INFO:	[hmmsearch]	668 of 954 task(s) completed
+INFO:	[hmmsearch]	764 of 954 task(s) completed
+INFO:	[hmmsearch]	859 of 954 task(s) completed
+INFO:	[hmmsearch]	954 of 954 task(s) completed
+INFO:	Extracting missing and fragmented buscos from the file refseq_db.faa...
+INFO:	Running 1 job(s) on metaeuk, starting at 06/08/2022 20:43:51
+INFO:	[metaeuk]	1 of 1 task(s) completed
+INFO:	***** Run HMMER on gene sequences *****
+INFO:	Running 98 job(s) on hmmsearch, starting at 06/08/2022 20:50:14
+INFO:	[hmmsearch]	10 of 98 task(s) completed
+INFO:	[hmmsearch]	20 of 98 task(s) completed
+INFO:	[hmmsearch]	30 of 98 task(s) completed
+INFO:	[hmmsearch]	40 of 98 task(s) completed
+INFO:	[hmmsearch]	50 of 98 task(s) completed
+INFO:	[hmmsearch]	59 of 98 task(s) completed
+INFO:	[hmmsearch]	69 of 98 task(s) completed
+INFO:	[hmmsearch]	69 of 98 task(s) completed
+INFO:	[hmmsearch]	79 of 98 task(s) completed
+INFO:	[hmmsearch]	89 of 98 task(s) completed
+INFO:	[hmmsearch]	98 of 98 task(s) completed
+INFO:	Validating exons and removing overlapping matches
+INFO:	Results:	C:91.7%[S:88.9%,D:2.8%],F:4.6%,M:3.7%,n:954	   
+
+INFO:	
+
+	--------------------------------------------------
+	|Results from dataset metazoa_odb10               |
+	--------------------------------------------------
+	|C:91.7%[S:88.9%,D:2.8%],F:4.6%,M:3.7%,n:954      |
+	|875	Complete BUSCOs (C)                       |
+	|848	Complete and single-copy BUSCOs (S)       |
+	|27	Complete and duplicated BUSCOs (D)        |
+	|44	Fragmented BUSCOs (F)                     |
+	|35	Missing BUSCOs (M)                        |
+	|954	Total BUSCO groups searched               |
+	--------------------------------------------------
+INFO:	BUSCO analysis done. Total running time: 665 seconds
+INFO:	Results written in /scratch/timothy/tmp/busco.1654735175/genome.fa.busco_metazoa_odb10
+INFO:	For assistance with interpreting the results, please consult the userguide: https://busco.ezlab.org/busco_userguide.html
+
+[Wed 08 Jun 2022 08:50:41 PM EDT]      CMD: busco --cpu 48 --offline --lineage_dataset /scratch/timothy/databases/busco/eukaryota_odb10 --mode genome --in genome.fa --out genome.fa.busco_eukaryota_odb10
+INFO:	***** Start a BUSCO v5.0.0 analysis, current time: 06/08/2022 20:50:42 *****
+INFO:	Configuring BUSCO with local environment
+INFO:	Mode is genome
+INFO:	Input file is /scratch/timothy/tmp/busco.1654735175/genome.fa
+INFO:	Using local lineages directory /scratch/timothy/databases/busco/eukaryota_odb10
+INFO:	Running BUSCO using lineage dataset eukaryota_odb10 (eukaryota, 2020-09-10)
+INFO:	Running 1 job(s) on metaeuk, starting at 06/08/2022 20:50:42
+INFO:	[metaeuk]	1 of 1 task(s) completed
+INFO:	***** Run HMMER on gene sequences *****
+INFO:	Running 255 job(s) on hmmsearch, starting at 06/08/2022 20:55:07
+INFO:	[hmmsearch]	26 of 255 task(s) completed
+INFO:	[hmmsearch]	51 of 255 task(s) completed
+INFO:	[hmmsearch]	77 of 255 task(s) completed
+INFO:	[hmmsearch]	102 of 255 task(s) completed
+INFO:	[hmmsearch]	128 of 255 task(s) completed
+INFO:	[hmmsearch]	153 of 255 task(s) completed
+INFO:	[hmmsearch]	179 of 255 task(s) completed
+INFO:	[hmmsearch]	204 of 255 task(s) completed
+INFO:	[hmmsearch]	230 of 255 task(s) completed
+INFO:	[hmmsearch]	255 of 255 task(s) completed
+INFO:	Extracting missing and fragmented buscos from the file refseq_db.faa...
+INFO:	Running 1 job(s) on metaeuk, starting at 06/08/2022 20:55:13
+INFO:	[metaeuk]	1 of 1 task(s) completed
+INFO:	***** Run HMMER on gene sequences *****
+INFO:	Running 16 job(s) on hmmsearch, starting at 06/08/2022 21:01:44
+INFO:	[hmmsearch]	2 of 16 task(s) completed
+INFO:	[hmmsearch]	4 of 16 task(s) completed
+INFO:	[hmmsearch]	5 of 16 task(s) completed
+INFO:	[hmmsearch]	7 of 16 task(s) completed
+INFO:	[hmmsearch]	9 of 16 task(s) completed
+INFO:	[hmmsearch]	10 of 16 task(s) completed
+INFO:	[hmmsearch]	12 of 16 task(s) completed
+INFO:	[hmmsearch]	13 of 16 task(s) completed
+INFO:	[hmmsearch]	15 of 16 task(s) completed
+INFO:	[hmmsearch]	16 of 16 task(s) completed
+INFO:	Validating exons and removing overlapping matches
+INFO:	Results:	C:94.9%[S:92.9%,D:2.0%],F:3.1%,M:2.0%,n:255	   
+
+INFO:	
+
+	--------------------------------------------------
+	|Results from dataset eukaryota_odb10             |
+	--------------------------------------------------
+	|C:94.9%[S:92.9%,D:2.0%],F:3.1%,M:2.0%,n:255      |
+	|242	Complete BUSCOs (C)                       |
+	|237	Complete and single-copy BUSCOs (S)       |
+	|5	Complete and duplicated BUSCOs (D)        |
+	|8	Fragmented BUSCOs (F)                     |
+	|5	Missing BUSCOs (M)                        |
+	|255	Total BUSCO groups searched               |
+	--------------------------------------------------
+INFO:	BUSCO analysis done. Total running time: 673 seconds
+INFO:	Results written in /scratch/timothy/tmp/busco.1654735175/genome.fa.busco_eukaryota_odb10
+INFO:	For assistance with interpreting the results, please consult the userguide: https://busco.ezlab.org/busco_userguide.html
+
+[Wed 08 Jun 2022 09:01:55 PM EDT]      CMD: mv * /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Exaiptasia_diaphana_CC7v1/02_busco/
+[Wed 08 Jun 2022 09:01:55 PM EDT]      CMD: cd /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Exaiptasia_diaphana_CC7v1/02_busco
+[Wed 08 Jun 2022 09:01:55 PM EDT]      CMD: rm -fr /scratch/timothy/tmp/busco.1654735175
+
+=====================================================================
+Started: at Wed 08 Jun 2022 08:39:32 PM EDT
+Finished: at Wed 08 Jun 2022 09:01:55 PM EDT
+ExitStatus: 0
+=====================================================================

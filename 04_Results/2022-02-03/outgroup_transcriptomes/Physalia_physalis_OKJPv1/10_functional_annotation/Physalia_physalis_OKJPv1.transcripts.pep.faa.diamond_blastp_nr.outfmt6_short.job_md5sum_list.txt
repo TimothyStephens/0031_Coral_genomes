@@ -1,0 +1,2 @@
+5c58f0d47933303f855a9f13ee6bee6f  Physalia_physalis_OKJPv1.transcripts.pep.faa
+5c58f0d47933303f855a9f13ee6bee6f  ../00_databases/Physalia_physalis_OKJPv1.transcripts.pep.faa

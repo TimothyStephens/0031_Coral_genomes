@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat 12 Nov 2022 07:14:43 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Physalia_physalis_OKJPv1/00_databases/blast
+=====================================================================
+
+[Sat 12 Nov 2022 07:14:44 PM EST]      CMD: md5sum Physalia_physalis_OKJPv1.transcripts.cds.fna Physalia_physalis_OKJPv1.transcripts.pep.faa | tee Physalia_physalis_OKJPv1.makeblastdb.job_md5sum_list.txt
+452a5f16b99fdf250fff346cf960e5d2  Physalia_physalis_OKJPv1.transcripts.cds.fna
+5c58f0d47933303f855a9f13ee6bee6f  Physalia_physalis_OKJPv1.transcripts.pep.faa
+[Sat 12 Nov 2022 07:14:44 PM EST]      CMD: makeblastdb -dbtype nucl -in Physalia_physalis_OKJPv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 11/12/2022 19:14:44
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Physalia_physalis_OKJPv1/00_databases/blast/Physalia_physalis_OKJPv1.transcripts.cds.fna
+New DB title:  Physalia_physalis_OKJPv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 18437 sequences in 0.416822 seconds.
+
+
+[Sat 12 Nov 2022 07:14:45 PM EST]      CMD: makeblastdb -dbtype prot -in Physalia_physalis_OKJPv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 11/12/2022 19:14:45
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Physalia_physalis_OKJPv1/00_databases/blast/Physalia_physalis_OKJPv1.transcripts.pep.faa
+New DB title:  Physalia_physalis_OKJPv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 18437 sequences in 0.394774 seconds.
+
+
+
+=====================================================================
+Started: at Sat 12 Nov 2022 07:14:43 PM EST
+Finished: at Sat 12 Nov 2022 07:14:45 PM EST
+ExitStatus: 0
+=====================================================================

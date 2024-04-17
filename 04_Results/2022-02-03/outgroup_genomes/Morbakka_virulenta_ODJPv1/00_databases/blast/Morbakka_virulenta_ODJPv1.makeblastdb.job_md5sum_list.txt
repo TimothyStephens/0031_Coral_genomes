@@ -1,0 +1,3 @@
+b3781e9b471797f0ffb0a63cf2fbd36f  Morbakka_virulenta_ODJPv1.assembly.fasta
+d3a0f6dda68df1f81f98d1608e7f7993  Morbakka_virulenta_ODJPv1.genes.cds.fna
+37a19c096ba1ca8d8fffe1db02ff5f7e  Morbakka_virulenta_ODJPv1.genes.pep.faa

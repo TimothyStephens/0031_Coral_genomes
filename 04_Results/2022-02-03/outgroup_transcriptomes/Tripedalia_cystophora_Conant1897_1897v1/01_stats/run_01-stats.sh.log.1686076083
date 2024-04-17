@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 02:28:03 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Tripedalia_cystophora_Conant1897_1897v1/01_stats
+=====================================================================
+
+[Tue 06 Jun 2023 02:28:04 PM EDT]      CMD: md5sum Tripedalia_cystophora_Conant1897_1897v1.transcripts.cds.fna | tee Tripedalia_cystophora_Conant1897_1897v1.CDS_stats.job_md5sum_list.txt
+e2f9f5c0ac8d441d4991b3a233463fa3  Tripedalia_cystophora_Conant1897_1897v1.transcripts.cds.fna
+[Tue 06 Jun 2023 02:28:04 PM EDT]      CMD: ./CDS_stats Tripedalia_cystophora_Conant1897_1897v1.transcripts.cds.fna > Tripedalia_cystophora_Conant1897_1897v1.GeneStats.tsv
+
+=====================================================================
+Started: at Tue 06 Jun 2023 02:28:03 PM EDT
+Finished: at Tue 06 Jun 2023 02:28:04 PM EDT
+ExitStatus: 0
+=====================================================================

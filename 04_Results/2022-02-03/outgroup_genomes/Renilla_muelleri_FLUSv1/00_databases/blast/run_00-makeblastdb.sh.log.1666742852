@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 08:07:32 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_muelleri_FLUSv1/00_databases/blast
+=====================================================================
+
+[Tue 25 Oct 2022 08:07:34 PM EDT]      CMD: md5sum Renilla_muelleri_FLUSv1.assembly.fasta Renilla_muelleri_FLUSv1.genes.cds.fna Renilla_muelleri_FLUSv1.genes.pep.faa | tee Renilla_muelleri_FLUSv1.makeblastdb.job_md5sum_list.txt
+be9fb375b095c193518f0904edabe730  Renilla_muelleri_FLUSv1.assembly.fasta
+db791c878c2be68b8a13b779336d8c2b  Renilla_muelleri_FLUSv1.genes.cds.fna
+36c150161851d4d550d542c227e0ad93  Renilla_muelleri_FLUSv1.genes.pep.faa
+[Tue 25 Oct 2022 08:07:34 PM EDT]      CMD: makeblastdb -dbtype nucl -in Renilla_muelleri_FLUSv1.assembly.fasta
+
+
+Building a new DB, current time: 10/25/2022 20:07:34
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_muelleri_FLUSv1/00_databases/blast/Renilla_muelleri_FLUSv1.assembly.fasta
+New DB title:  Renilla_muelleri_FLUSv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 4925 sequences in 2.09996 seconds.
+
+
+[Tue 25 Oct 2022 08:07:36 PM EDT]      CMD: makeblastdb -dbtype nucl -in Renilla_muelleri_FLUSv1.genes.cds.fna
+
+
+Building a new DB, current time: 10/25/2022 20:07:36
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_muelleri_FLUSv1/00_databases/blast/Renilla_muelleri_FLUSv1.genes.cds.fna
+New DB title:  Renilla_muelleri_FLUSv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 23671 sequences in 1.21023 seconds.
+
+
+[Tue 25 Oct 2022 08:07:38 PM EDT]      CMD: makeblastdb -dbtype prot -in Renilla_muelleri_FLUSv1.genes.pep.faa
+
+
+Building a new DB, current time: 10/25/2022 20:07:38
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_muelleri_FLUSv1/00_databases/blast/Renilla_muelleri_FLUSv1.genes.pep.faa
+New DB title:  Renilla_muelleri_FLUSv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 23671 sequences in 1.11378 seconds.
+
+
+
+=====================================================================
+Started: at Tue 25 Oct 2022 08:07:32 PM EDT
+Finished: at Tue 25 Oct 2022 08:07:39 PM EDT
+ExitStatus: 0
+=====================================================================

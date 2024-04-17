@@ -1,0 +1,33 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue Nov  1 08:37:01 EDT 2022
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Orbicella_faveolata_NAPAv1/04_RepeatModeler
+=====================================================================
+
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+[Tue Nov  1 08:37:01 EDT 2022]      CMD: BuildDatabase -name Orbicella_faveolata_NAPAv1.assembly.fasta.RMDB Orbicella_faveolata_NAPAv1.assembly.fasta 1> BuildDatabase.log 2>&1
+[Tue Nov  1 08:37:07 EDT 2022]      CMD: RepeatModeler -database Orbicella_faveolata_NAPAv1.assembly.fasta.RMDB -pa 5 -LTRStruct 1> RepeatModeler.log 2>&1
+
+=====================================================================
+Started: at Tue Nov  1 08:37:01 EDT 2022
+Finished: at Wed Nov  2 23:07:38 EDT 2022
+ExitStatus: 0
+=====================================================================

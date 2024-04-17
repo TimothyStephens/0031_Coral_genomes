@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 06:58:49 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Acropora_hyacinthus_NANAv1/01_stats
+=====================================================================
+
+[Tue 25 Oct 2022 06:58:51 PM EDT]      CMD: md5sum Acropora_hyacinthus_NANAv1.transcripts.cds.fna | tee Acropora_hyacinthus_NANAv1.CDS_stats.job_md5sum_list.txt
+04af846a6bce8c0192f006138f756507  Acropora_hyacinthus_NANAv1.transcripts.cds.fna
+[Tue 25 Oct 2022 06:58:51 PM EDT]      CMD: ./CDS_stats Acropora_hyacinthus_NANAv1.transcripts.cds.fna > Acropora_hyacinthus_NANAv1.GeneStats.tsv
+
+=====================================================================
+Started: at Tue 25 Oct 2022 06:58:49 PM EDT
+Finished: at Tue 25 Oct 2022 06:58:51 PM EDT
+ExitStatus: 0
+=====================================================================

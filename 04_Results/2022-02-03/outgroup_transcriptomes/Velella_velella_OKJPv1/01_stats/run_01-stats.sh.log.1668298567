@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat 12 Nov 2022 07:16:07 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Velella_velella_OKJPv1/01_stats
+=====================================================================
+
+[Sat 12 Nov 2022 07:16:08 PM EST]      CMD: md5sum Velella_velella_OKJPv1.transcripts.cds.fna | tee Velella_velella_OKJPv1.CDS_stats.job_md5sum_list.txt
+1150b5ea7e388f3d569934fc1ee7138f  Velella_velella_OKJPv1.transcripts.cds.fna
+[Sat 12 Nov 2022 07:16:08 PM EST]      CMD: ./CDS_stats Velella_velella_OKJPv1.transcripts.cds.fna > Velella_velella_OKJPv1.GeneStats.tsv
+
+=====================================================================
+Started: at Sat 12 Nov 2022 07:16:07 PM EST
+Finished: at Sat 12 Nov 2022 07:16:09 PM EST
+ExitStatus: 0
+=====================================================================

@@ -1,0 +1,43 @@
+# Files
+Genome file	Trichoplax_sp_H2_CRPAv1.assembly.fasta
+GFF file	Trichoplax_sp_H2_CRPAv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	94878730
+Total contig length (bp)	94833964
+Number of scaffolds	1128
+Number of contigs	2765
+N50 of scaffolds (bp)	376320
+N50 of contigs (bp)	91942
+Percent gaps	0.047
+Percent GC	32.75
+
+# Gene stats (combined CDS+introns)
+Number of genes	12174
+Total gene length	48823241
+Average gene length (bp)	4010.45
+Gene percent GC	33.19
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1628.18
+Average number of CDS per gene/transcript	9.80721
+
+# CDS stats
+Number of CDS	119393
+Total CDS length (bp)	19821450
+Average CDS length (bp)	166.019
+Number of single-CDS transcripts	1914
+Percent single-CDS transcripts	15.722
+CDS percent GC	37.69
+
+# Intron stats (predicted between CDS features)
+Number of introns	107219
+Total intron length (bp)	29001791
+Average intron length (bp)	270.491
+Intron percent GC	30.11
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	11315
+Total intergenic region length (bp)	41061719
+Average intergenic region length (bp)	3628.96
+Intergenic region percent GC	32.32

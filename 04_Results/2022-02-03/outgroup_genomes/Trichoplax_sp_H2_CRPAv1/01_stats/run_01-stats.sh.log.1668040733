@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 09 Nov 2022 07:38:53 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Trichoplax_sp_H2_CRPAv1/01_stats
+=====================================================================
+
+[Wed 09 Nov 2022 07:38:55 PM EST]      CMD: md5sum Trichoplax_sp_H2_CRPAv1.assembly.fasta Trichoplax_sp_H2_CRPAv1.genes.gff3 | tee Trichoplax_sp_H2_CRPAv1.genome_stats.job_md5sum_list.txt
+84522c74f79d74001247660290ea4a36  Trichoplax_sp_H2_CRPAv1.assembly.fasta
+2ae9bf8e079ed066d2b877cf286ecd7d  Trichoplax_sp_H2_CRPAv1.genes.gff3
+[Wed 09 Nov 2022 07:38:56 PM EST]      CMD: ./genome_stats Trichoplax_sp_H2_CRPAv1.assembly.fasta Trichoplax_sp_H2_CRPAv1.genes.gff3 > Trichoplax_sp_H2_CRPAv1.GeneStats.tsv
+index file Trichoplax_sp_H2_CRPAv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Wed 09 Nov 2022 07:38:53 PM EST
+Finished: at Wed 09 Nov 2022 07:39:11 PM EST
+ExitStatus: 0
+=====================================================================

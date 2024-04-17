@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 14 Jun 2022 02:39:46 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Porites_lobata_REEFv1/01_stats
+=====================================================================
+
+[Tue 14 Jun 2022 02:39:47 PM EDT]      CMD: md5sum Porites_lobata_REEFv1.transcripts.cds.fna | tee Porites_lobata_REEFv1.CDS_stats.job_md5sum_list.txt
+2fa66c83f78eee43a6f471368780c1c7  Porites_lobata_REEFv1.transcripts.cds.fna
+[Tue 14 Jun 2022 02:39:47 PM EDT]      CMD: ./CDS_stats Porites_lobata_REEFv1.transcripts.cds.fna > Porites_lobata_REEFv1.GeneStats.tsv
+
+=====================================================================
+Started: at Tue 14 Jun 2022 02:39:46 PM EDT
+Finished: at Tue 14 Jun 2022 02:39:47 PM EDT
+ExitStatus: 0
+=====================================================================

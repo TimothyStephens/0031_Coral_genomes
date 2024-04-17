@@ -1,0 +1,2 @@
+5133ff92fbd92c331f07712095bac856  Orbicella_faveolata_NAPAv1.assembly.fasta
+2bb783e3eedbb1cb47444e78d84557d3  Orbicella_faveolata_NAPAv1.genes.gff3

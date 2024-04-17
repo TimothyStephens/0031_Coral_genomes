@@ -1,0 +1,2 @@
+2d324d02f90f053bb2cbcd14811613a3  Porites_lobata_REEFv1.transcripts.pep.faa
+2d324d02f90f053bb2cbcd14811613a3  ../00_databases/Porites_lobata_REEFv1.transcripts.pep.faa

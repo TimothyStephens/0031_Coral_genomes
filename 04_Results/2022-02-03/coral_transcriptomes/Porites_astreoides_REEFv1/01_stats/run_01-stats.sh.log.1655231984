@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 14 Jun 2022 02:39:44 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Porites_astreoides_REEFv1/01_stats
+=====================================================================
+
+[Tue 14 Jun 2022 02:39:45 PM EDT]      CMD: md5sum Porites_astreoides_REEFv1.transcripts.cds.fna | tee Porites_astreoides_REEFv1.CDS_stats.job_md5sum_list.txt
+c32aa25e9ac9d5a8c8783b46ec0980e7  Porites_astreoides_REEFv1.transcripts.cds.fna
+[Tue 14 Jun 2022 02:39:46 PM EDT]      CMD: ./CDS_stats Porites_astreoides_REEFv1.transcripts.cds.fna > Porites_astreoides_REEFv1.GeneStats.tsv
+
+=====================================================================
+Started: at Tue 14 Jun 2022 02:39:44 PM EDT
+Finished: at Tue 14 Jun 2022 02:39:46 PM EDT
+ExitStatus: 0
+=====================================================================

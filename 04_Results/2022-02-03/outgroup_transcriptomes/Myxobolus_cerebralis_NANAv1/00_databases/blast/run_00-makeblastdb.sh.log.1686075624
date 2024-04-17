@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 02:20:24 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Myxobolus_cerebralis_NANAv1/00_databases/blast
+=====================================================================
+
+[Tue 06 Jun 2023 02:20:26 PM EDT]      CMD: md5sum Myxobolus_cerebralis_NANAv1.transcripts.cds.fna Myxobolus_cerebralis_NANAv1.transcripts.pep.faa | tee Myxobolus_cerebralis_NANAv1.makeblastdb.job_md5sum_list.txt
+c7d31fd621e72fef58d8df06e3faaaf6  Myxobolus_cerebralis_NANAv1.transcripts.cds.fna
+97e78218c180cf4498a4b6100eaaf2df  Myxobolus_cerebralis_NANAv1.transcripts.pep.faa
+[Tue 06 Jun 2023 02:20:26 PM EDT]      CMD: makeblastdb -dbtype nucl -in Myxobolus_cerebralis_NANAv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 06/06/2023 14:20:26
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Myxobolus_cerebralis_NANAv1/00_databases/blast/Myxobolus_cerebralis_NANAv1.transcripts.cds.fna
+New DB title:  Myxobolus_cerebralis_NANAv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 9193 sequences in 0.15007 seconds.
+
+
+[Tue 06 Jun 2023 02:20:26 PM EDT]      CMD: makeblastdb -dbtype prot -in Myxobolus_cerebralis_NANAv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 06/06/2023 14:20:26
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Myxobolus_cerebralis_NANAv1/00_databases/blast/Myxobolus_cerebralis_NANAv1.transcripts.pep.faa
+New DB title:  Myxobolus_cerebralis_NANAv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 9193 sequences in 0.13535 seconds.
+
+
+
+=====================================================================
+Started: at Tue 06 Jun 2023 02:20:24 PM EDT
+Finished: at Tue 06 Jun 2023 02:20:26 PM EDT
+ExitStatus: 0
+=====================================================================

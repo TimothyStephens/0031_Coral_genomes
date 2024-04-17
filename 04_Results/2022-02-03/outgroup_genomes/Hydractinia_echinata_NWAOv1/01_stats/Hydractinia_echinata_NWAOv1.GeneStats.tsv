@@ -1,0 +1,43 @@
+# Files
+Genome file	Hydractinia_echinata_NWAOv1.assembly.fasta
+GFF file	Hydractinia_echinata_NWAOv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	565065865
+Total contig length (bp)	565037649
+Number of scaffolds	7767
+Number of contigs	8310
+N50 of scaffolds (bp)	904215
+N50 of contigs (bp)	554117
+Percent gaps	0.005
+Percent GC	35.87
+
+# Gene stats (combined CDS+introns)
+Number of genes	28825
+Total gene length	196421466
+Average gene length (bp)	6814.27
+Gene percent GC	34.16
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1395.35
+Average number of CDS per gene/transcript	6.50911
+
+# CDS stats
+Number of CDS	187625
+Total CDS length (bp)	40221090
+Average CDS length (bp)	214.37
+Number of single-CDS transcripts	7284
+Percent single-CDS transcripts	25.2697
+CDS percent GC	38.78
+
+# Intron stats (predicted between CDS features)
+Number of introns	158800
+Total intron length (bp)	156200376
+Average intron length (bp)	983.63
+Intron percent GC	32.98
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	25675
+Total intergenic region length (bp)	212112972
+Average intergenic region length (bp)	8261.46
+Intergenic region percent GC	35.27

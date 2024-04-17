@@ -1,0 +1,2 @@
+50bee11ca0290b6e3898ae1a672b76ae  Acropora_muricata_XSCSv1.transcripts.pep.faa
+50bee11ca0290b6e3898ae1a672b76ae  ../00_databases/Acropora_muricata_XSCSv1.transcripts.pep.faa

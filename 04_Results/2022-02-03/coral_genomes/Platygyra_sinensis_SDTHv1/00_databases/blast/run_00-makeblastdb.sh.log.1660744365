@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 17 Aug 2022 09:52:45 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Platygyra_sinensis_SDTHv1/00_databases/blast
+=====================================================================
+
+[Wed 17 Aug 2022 09:52:46 AM EDT]      CMD: md5sum Platygyra_sinensis_SDTHv1.assembly.fasta Platygyra_sinensis_SDTHv1.genes.cds.fna Platygyra_sinensis_SDTHv1.genes.pep.faa | tee Platygyra_sinensis_SDTHv1.makeblastdb.job_md5sum_list.txt
+e111633491e36b3c2c5ac444dba92896  Platygyra_sinensis_SDTHv1.assembly.fasta
+0b994f67cbaaaff078b24718c42ed028  Platygyra_sinensis_SDTHv1.genes.cds.fna
+6d7fcb3f9d01b8a07476499387ba1128  Platygyra_sinensis_SDTHv1.genes.pep.faa
+[Wed 17 Aug 2022 09:52:49 AM EDT]      CMD: makeblastdb -dbtype nucl -in Platygyra_sinensis_SDTHv1.assembly.fasta
+
+
+Building a new DB, current time: 08/17/2022 09:52:49
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Platygyra_sinensis_SDTHv1/00_databases/blast/Platygyra_sinensis_SDTHv1.assembly.fasta
+New DB title:  Platygyra_sinensis_SDTHv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 56369 sequences in 17.4607 seconds.
+
+
+[Wed 17 Aug 2022 09:53:07 AM EDT]      CMD: makeblastdb -dbtype nucl -in Platygyra_sinensis_SDTHv1.genes.cds.fna
+
+
+Building a new DB, current time: 08/17/2022 09:53:07
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Platygyra_sinensis_SDTHv1/00_databases/blast/Platygyra_sinensis_SDTHv1.genes.cds.fna
+New DB title:  Platygyra_sinensis_SDTHv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 62638 sequences in 2.55722 seconds.
+
+
+[Wed 17 Aug 2022 09:53:09 AM EDT]      CMD: makeblastdb -dbtype prot -in Platygyra_sinensis_SDTHv1.genes.pep.faa
+
+
+Building a new DB, current time: 08/17/2022 09:53:09
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Platygyra_sinensis_SDTHv1/00_databases/blast/Platygyra_sinensis_SDTHv1.genes.pep.faa
+New DB title:  Platygyra_sinensis_SDTHv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 62638 sequences in 2.09977 seconds.
+
+
+
+=====================================================================
+Started: at Wed 17 Aug 2022 09:52:45 AM EDT
+Finished: at Wed 17 Aug 2022 09:53:11 AM EDT
+ExitStatus: 0
+=====================================================================

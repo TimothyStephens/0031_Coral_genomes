@@ -1,0 +1,2 @@
+816e48c0829bcf126a1d4be97d64a9fe  Amplexidiscus_fenestrafer_MSMEv1.genes.pep.faa
+6ac99358e7a48fd41c126f9e63c1737b  ../00_databases/Amplexidiscus_fenestrafer_MSMEv1.genes.pep.faa

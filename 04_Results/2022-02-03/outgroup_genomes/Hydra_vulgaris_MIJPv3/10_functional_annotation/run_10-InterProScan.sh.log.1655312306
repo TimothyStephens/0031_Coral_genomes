@@ -1,0 +1,32 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 15 Jun 2022 12:58:26 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_vulgaris_MIJPv3/10_functional_annotation
+=====================================================================
+
+[Wed 15 Jun 2022 12:58:32 PM EDT]      CMD: md5sum Hydra_vulgaris_MIJPv3.genes.pep.faa ../00_databases/Hydra_vulgaris_MIJPv3.genes.pep.faa | tee Hydra_vulgaris_MIJPv3.genes.pep.faa.InterProScan.job_md5sum_list.txt
+a1c424f9a3db61b993e813936065348f  Hydra_vulgaris_MIJPv3.genes.pep.faa
+a1c424f9a3db61b993e813936065348f  ../00_databases/Hydra_vulgaris_MIJPv3.genes.pep.faa
+[Wed 15 Jun 2022 12:58:32 PM EDT]      CMD: /home/timothy/programs/my_interproscan/interproscan-5.53-87.0/interproscan.sh -dp --goterms --cpu 48 --input Hydra_vulgaris_MIJPv3.genes.pep.faa --output-file-base Hydra_vulgaris_MIJPv3.genes.pep.faa.InterProScan
+15/06/2022 12:58:35:669 Welcome to InterProScan-5.53-87.0
+15/06/2022 12:58:35:712 Running InterProScan v5 in STANDALONE mode... on Linux
+15/06/2022 12:58:40:636 RunID: coral_20220615_125840132_jgwq
+15/06/2022 12:58:48:688 Loading file /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_vulgaris_MIJPv3/10_functional_annotation/Hydra_vulgaris_MIJPv3.genes.pep.faa
+15/06/2022 12:58:48:689 Running the following analyses:
+[CDD-3.18,Coils-2.2.1,Gene3D-4.3.0,Hamap-2020_05,MobiDBLite-2.0,PANTHER-15.0,Pfam-34.0,Phobius-1.01,PIRSF-3.10,PIRSR-2021_02,PRINTS-42.0,ProSitePatterns-2021_01,ProSiteProfiles-2021_01,SFLD-4,SignalP_EUK-4.1,SignalP_GRAM_NEGATIVE-4.1,SignalP_GRAM_POSITIVE-4.1,SMART-7.1,SUPERFAMILY-1.75,TIGRFAM-15.0,TMHMM-2.0c]
+Pre-calculated match lookup service DISABLED.  Please wait for match calculations to complete...
+15/06/2022 12:58:53:927 Uploaded 21075 unique sequences for analysis
+15/06/2022 13:58:50:799 25% completed
+15/06/2022 14:29:14:344 50% completed
+15/06/2022 14:53:03:484 75% completed
+15/06/2022 15:19:11:159 90% completed
+15/06/2022 16:19:11:227 98% completed
+15/06/2022 17:01:19:024 100% done:  InterProScan analyses completed 
+
+[Wed 15 Jun 2022 05:01:19 PM EDT]      CMD: rm -fr temp
+
+=====================================================================
+Started: at Wed 15 Jun 2022 12:58:26 PM EDT
+Finished: at Wed 15 Jun 2022 05:01:19 PM EDT
+ExitStatus: 0
+=====================================================================

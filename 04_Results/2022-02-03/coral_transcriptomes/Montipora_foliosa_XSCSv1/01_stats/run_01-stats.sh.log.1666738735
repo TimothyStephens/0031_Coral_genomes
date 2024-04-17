@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 06:58:55 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Montipora_foliosa_XSCSv1/01_stats
+=====================================================================
+
+[Tue 25 Oct 2022 06:58:58 PM EDT]      CMD: md5sum Montipora_foliosa_XSCSv1.transcripts.cds.fna | tee Montipora_foliosa_XSCSv1.CDS_stats.job_md5sum_list.txt
+969960eafc185cc32ee59f8e10e7182a  Montipora_foliosa_XSCSv1.transcripts.cds.fna
+[Tue 25 Oct 2022 06:58:58 PM EDT]      CMD: ./CDS_stats Montipora_foliosa_XSCSv1.transcripts.cds.fna > Montipora_foliosa_XSCSv1.GeneStats.tsv
+
+=====================================================================
+Started: at Tue 25 Oct 2022 06:58:55 PM EDT
+Finished: at Tue 25 Oct 2022 06:58:58 PM EDT
+ExitStatus: 0
+=====================================================================

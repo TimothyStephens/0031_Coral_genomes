@@ -1,0 +1,30 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 23 Nov 2022 10:59:32 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hoilungia_hongkongensis_HCHKv1/10_functional_annotation
+=====================================================================
+
+[Wed 23 Nov 2022 10:59:34 PM EST]      CMD: md5sum Hoilungia_hongkongensis_HCHKv1.genes.pep.faa ../00_databases/Hoilungia_hongkongensis_HCHKv1.genes.pep.faa | tee Hoilungia_hongkongensis_HCHKv1.genes.pep.faa.InterProScan.job_md5sum_list.txt
+856c154e55681417e1299de807cdc0a5  Hoilungia_hongkongensis_HCHKv1.genes.pep.faa
+856c154e55681417e1299de807cdc0a5  ../00_databases/Hoilungia_hongkongensis_HCHKv1.genes.pep.faa
+[Wed 23 Nov 2022 10:59:34 PM EST]      CMD: /home/timothy/programs/my_interproscan/interproscan-5.53-87.0/interproscan.sh -dp --goterms --cpu 48 --input Hoilungia_hongkongensis_HCHKv1.genes.pep.faa --output-file-base Hoilungia_hongkongensis_HCHKv1.genes.pep.faa.InterProScan
+23/11/2022 22:59:35:044 Welcome to InterProScan-5.53-87.0
+23/11/2022 22:59:35:047 Running InterProScan v5 in STANDALONE mode... on Linux
+23/11/2022 22:59:41:247 RunID: coral_20221123_225940761_jonb
+23/11/2022 22:59:49:792 Loading file /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hoilungia_hongkongensis_HCHKv1/10_functional_annotation/Hoilungia_hongkongensis_HCHKv1.genes.pep.faa
+23/11/2022 22:59:49:794 Running the following analyses:
+[CDD-3.18,Coils-2.2.1,Gene3D-4.3.0,Hamap-2020_05,MobiDBLite-2.0,PANTHER-15.0,Pfam-34.0,Phobius-1.01,PIRSF-3.10,PIRSR-2021_02,PRINTS-42.0,ProSitePatterns-2021_01,ProSiteProfiles-2021_01,SFLD-4,SignalP_EUK-4.1,SignalP_GRAM_NEGATIVE-4.1,SignalP_GRAM_POSITIVE-4.1,SMART-7.1,SUPERFAMILY-1.75,TIGRFAM-15.0,TMHMM-2.0c]
+Pre-calculated match lookup service DISABLED.  Please wait for match calculations to complete...
+23/11/2022 23:43:16:190 25% completed
+24/11/2022 00:34:02:649 50% completed
+24/11/2022 01:31:52:718 75% completed
+24/11/2022 01:49:57:834 90% completed
+24/11/2022 02:04:38:096 100% done:  InterProScan analyses completed 
+
+[Thu 24 Nov 2022 02:04:38 AM EST]      CMD: rm -fr temp
+
+=====================================================================
+Started: at Wed 23 Nov 2022 10:59:32 PM EST
+Finished: at Thu 24 Nov 2022 02:04:38 AM EST
+ExitStatus: 0
+=====================================================================

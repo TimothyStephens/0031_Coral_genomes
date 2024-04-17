@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 01:07:00 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_genomes/Thelohanellus_kitauei_TJCNv1/00_databases/blast
+=====================================================================
+
+[Tue 06 Jun 2023 01:07:02 PM EDT]      CMD: md5sum Thelohanellus_kitauei_TJCNv1.assembly.fasta Thelohanellus_kitauei_TJCNv1.genes.cds.fna Thelohanellus_kitauei_TJCNv1.genes.pep.faa | tee Thelohanellus_kitauei_TJCNv1.makeblastdb.job_md5sum_list.txt
+045c0c62ece5e05746493e52710aa766  Thelohanellus_kitauei_TJCNv1.assembly.fasta
+0325f2e50223d9da99fafd103f8a6cd9  Thelohanellus_kitauei_TJCNv1.genes.cds.fna
+b657ab29c7e22b13a7266c5014b50cbe  Thelohanellus_kitauei_TJCNv1.genes.pep.faa
+[Tue 06 Jun 2023 01:07:02 PM EDT]      CMD: makeblastdb -dbtype nucl -in Thelohanellus_kitauei_TJCNv1.assembly.fasta
+
+
+Building a new DB, current time: 06/06/2023 13:07:02
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_genomes/Thelohanellus_kitauei_TJCNv1/00_databases/blast/Thelohanellus_kitauei_TJCNv1.assembly.fasta
+New DB title:  Thelohanellus_kitauei_TJCNv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 5757 sequences in 1.52218 seconds.
+
+
+[Tue 06 Jun 2023 01:07:04 PM EDT]      CMD: makeblastdb -dbtype nucl -in Thelohanellus_kitauei_TJCNv1.genes.cds.fna
+
+
+Building a new DB, current time: 06/06/2023 13:07:04
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_genomes/Thelohanellus_kitauei_TJCNv1/00_databases/blast/Thelohanellus_kitauei_TJCNv1.genes.cds.fna
+New DB title:  Thelohanellus_kitauei_TJCNv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 15020 sequences in 0.256909 seconds.
+
+
+[Tue 06 Jun 2023 01:07:04 PM EDT]      CMD: makeblastdb -dbtype prot -in Thelohanellus_kitauei_TJCNv1.genes.pep.faa
+
+
+Building a new DB, current time: 06/06/2023 13:07:04
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_genomes/Thelohanellus_kitauei_TJCNv1/00_databases/blast/Thelohanellus_kitauei_TJCNv1.genes.pep.faa
+New DB title:  Thelohanellus_kitauei_TJCNv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 15020 sequences in 0.217499 seconds.
+
+
+
+=====================================================================
+Started: at Tue 06 Jun 2023 01:07:00 PM EDT
+Finished: at Tue 06 Jun 2023 01:07:04 PM EDT
+ExitStatus: 0
+=====================================================================

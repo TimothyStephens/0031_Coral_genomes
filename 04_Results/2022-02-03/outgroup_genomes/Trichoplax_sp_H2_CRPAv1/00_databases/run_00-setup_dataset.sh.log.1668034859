@@ -1,0 +1,46 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 09 Nov 2022 06:00:59 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Trichoplax_sp_H2_CRPAv1/00_databases
+=====================================================================
+
+[Wed 09 Nov 2022 06:01:00 PM EST]      CMD: samtools faidx Trichoplax_sp_H2_CRPAv1.assembly.fasta
+[Wed 09 Nov 2022 06:01:01 PM EST]      CMD: samtools faidx Trichoplax_sp_H2_CRPAv1.genes.cds.fna
+[Wed 09 Nov 2022 06:01:01 PM EST]      CMD: samtools faidx Trichoplax_sp_H2_CRPAv1.genes.pep.faa
+[Wed 09 Nov 2022 06:01:01 PM EST]      CMD: gatk CreateSequenceDictionary --REFERENCE Trichoplax_sp_H2_CRPAv1.assembly.fasta
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar CreateSequenceDictionary --REFERENCE Trichoplax_sp_H2_CRPAv1.assembly.fasta
+INFO	2022-11-09 18:01:03	CreateSequenceDictionary	Output dictionary will be written in Trichoplax_sp_H2_CRPAv1.assembly.dict
+18:01:03.620 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Wed Nov 09 18:01:03 EST 2022] CreateSequenceDictionary --REFERENCE Trichoplax_sp_H2_CRPAv1.assembly.fasta --TRUNCATE_NAMES_AT_WHITESPACE true --NUM_SEQUENCES 2147483647 --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+Nov 09, 2022 6:01:03 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+[Wed Nov 09 18:01:03 EST 2022] Executing as timothy@coral on Linux 5.4.0-121-generic amd64; OpenJDK 64-Bit Server VM 11.0.16+8-post-Ubuntu-0ubuntu120.04; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.2.0.0
+[Wed Nov 09 18:01:04 EST 2022] picard.sam.CreateSequenceDictionary done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=2155872256
+Tool returned:
+0
+[Wed 09 Nov 2022 06:01:04 PM EST]      CMD: gatk CreateSequenceDictionary --REFERENCE Trichoplax_sp_H2_CRPAv1.genes.cds.fna
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar CreateSequenceDictionary --REFERENCE Trichoplax_sp_H2_CRPAv1.genes.cds.fna
+INFO	2022-11-09 18:01:06	CreateSequenceDictionary	Output dictionary will be written in Trichoplax_sp_H2_CRPAv1.genes.cds.dict
+18:01:06.889 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Wed Nov 09 18:01:06 EST 2022] CreateSequenceDictionary --REFERENCE Trichoplax_sp_H2_CRPAv1.genes.cds.fna --TRUNCATE_NAMES_AT_WHITESPACE true --NUM_SEQUENCES 2147483647 --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+Nov 09, 2022 6:01:07 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+[Wed Nov 09 18:01:07 EST 2022] Executing as timothy@coral on Linux 5.4.0-121-generic amd64; OpenJDK 64-Bit Server VM 11.0.16+8-post-Ubuntu-0ubuntu120.04; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.2.0.0
+[Wed Nov 09 18:01:07 EST 2022] picard.sam.CreateSequenceDictionary done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=2155872256
+Tool returned:
+0
+[Wed 09 Nov 2022 06:01:07 PM EST]      CMD: stats.sh -Xmx12g Trichoplax_sp_H2_CRPAv1.assembly.fasta 1>Trichoplax_sp_H2_CRPAv1.assembly.fasta.stats 2>&1
+[Wed 09 Nov 2022 06:01:09 PM EST]      CMD: stats.sh -Xmx12g Trichoplax_sp_H2_CRPAv1.genes.cds.fna  1>Trichoplax_sp_H2_CRPAv1.genes.cds.fna.stats 2>&1
+[Wed 09 Nov 2022 06:01:09 PM EST]      CMD: md5sum Trichoplax_sp_H2_CRPAv1.assembly.fasta Trichoplax_sp_H2_CRPAv1.genes.cds.fna Trichoplax_sp_H2_CRPAv1.genes.pep.faa Trichoplax_sp_H2_CRPAv1.genes.gff3 > Trichoplax_sp_H2_CRPAv1.md5sum_list.txt
+
+=====================================================================
+Started: at Wed 09 Nov 2022 06:00:59 PM EST
+Finished: at Wed 09 Nov 2022 06:01:09 PM EST
+ExitStatus: 0
+=====================================================================

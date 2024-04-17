@@ -1,0 +1,2 @@
+c9c63e35668bb8e71927a8cd461a4cdd  Montipora_capitata_WTHIv1.1.genes.pep.faa
+c9c63e35668bb8e71927a8cd461a4cdd  ../00_databases/Montipora_capitata_WTHIv1.1.genes.pep.faa

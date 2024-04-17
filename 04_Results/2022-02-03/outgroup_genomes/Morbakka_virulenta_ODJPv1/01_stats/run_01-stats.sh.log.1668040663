@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 09 Nov 2022 07:37:43 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Morbakka_virulenta_ODJPv1/01_stats
+=====================================================================
+
+[Wed 09 Nov 2022 07:37:44 PM EST]      CMD: md5sum Morbakka_virulenta_ODJPv1.assembly.fasta Morbakka_virulenta_ODJPv1.genes.gff3 | tee Morbakka_virulenta_ODJPv1.genome_stats.job_md5sum_list.txt
+b3781e9b471797f0ffb0a63cf2fbd36f  Morbakka_virulenta_ODJPv1.assembly.fasta
+4c487c061dd63cae28de356202de8b04  Morbakka_virulenta_ODJPv1.genes.gff3
+[Wed 09 Nov 2022 07:37:47 PM EST]      CMD: ./genome_stats Morbakka_virulenta_ODJPv1.assembly.fasta Morbakka_virulenta_ODJPv1.genes.gff3 > Morbakka_virulenta_ODJPv1.GeneStats.tsv
+index file Morbakka_virulenta_ODJPv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Wed 09 Nov 2022 07:37:43 PM EST
+Finished: at Wed 09 Nov 2022 07:38:40 PM EST
+ExitStatus: 0
+=====================================================================

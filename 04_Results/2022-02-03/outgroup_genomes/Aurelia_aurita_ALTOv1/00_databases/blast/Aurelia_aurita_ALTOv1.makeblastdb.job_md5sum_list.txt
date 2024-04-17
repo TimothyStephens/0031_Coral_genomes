@@ -1,0 +1,3 @@
+f360c55e25b95c473404781a7c6223fd  Aurelia_aurita_ALTOv1.assembly.fasta
+be55d170a96078fa2fc43a36cfb11f7d  Aurelia_aurita_ALTOv1.genes.cds.fna
+8363e8fa256d2cc03be07a3753bef91b  Aurelia_aurita_ALTOv1.genes.pep.faa

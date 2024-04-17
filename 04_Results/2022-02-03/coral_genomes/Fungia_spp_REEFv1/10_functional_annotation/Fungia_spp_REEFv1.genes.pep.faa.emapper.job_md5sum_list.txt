@@ -1,0 +1,2 @@
+344d8007d89e7dee307f116658b2038d  Fungia_spp_REEFv1.genes.pep.faa
+344d8007d89e7dee307f116658b2038d  ../00_databases/Fungia_spp_REEFv1.genes.pep.faa

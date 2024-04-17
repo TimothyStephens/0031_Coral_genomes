@@ -1,0 +1,2 @@
+158edcd17fae2a0310b84946555aec43  Acropora_microphthalma_SLJPv1.genes.pep.faa
+53d0dd53701003dfa28a5bb210773d33  ../00_databases/Acropora_microphthalma_SLJPv1.genes.pep.faa

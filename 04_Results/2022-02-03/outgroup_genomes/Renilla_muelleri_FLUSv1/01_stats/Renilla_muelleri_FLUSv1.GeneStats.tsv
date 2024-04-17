@@ -1,0 +1,43 @@
+# Files
+Genome file	Renilla_muelleri_FLUSv1.assembly.fasta
+GFF file	Renilla_muelleri_FLUSv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	172160214
+Total contig length (bp)	172090828
+Number of scaffolds	4925
+Number of contigs	5196
+N50 of scaffolds (bp)	70522
+N50 of contigs (bp)	64781
+Percent gaps	0.040
+Percent GC	36.17
+
+# Gene stats (combined CDS+introns)
+Number of genes	23671
+Total gene length	96049225
+Average gene length (bp)	4057.68
+Gene percent GC	36.6
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1479.34
+Average number of CDS per gene/transcript	5.93063
+
+# CDS stats
+Number of CDS	140384
+Total CDS length (bp)	35017538
+Average CDS length (bp)	249.441
+Number of single-CDS transcripts	8684
+Percent single-CDS transcripts	36.6862
+CDS percent GC	41.21
+
+# Intron stats (predicted between CDS features)
+Number of introns	116713
+Total intron length (bp)	61031687
+Average intron length (bp)	522.921
+Intron percent GC	33.95
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	19430
+Total intergenic region length (bp)	47939203
+Average intergenic region length (bp)	2467.28
+Intergenic region percent GC	35.27

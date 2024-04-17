@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 08:08:36 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Xestospongia_testudinaria_RSSAv1/00_databases/blast
+=====================================================================
+
+[Tue 25 Oct 2022 08:08:38 PM EDT]      CMD: md5sum Xestospongia_testudinaria_RSSAv1.assembly.fasta Xestospongia_testudinaria_RSSAv1.genes.cds.fna Xestospongia_testudinaria_RSSAv1.genes.pep.faa | tee Xestospongia_testudinaria_RSSAv1.makeblastdb.job_md5sum_list.txt
+6f68fde0908efa5352d4ca653863f72f  Xestospongia_testudinaria_RSSAv1.assembly.fasta
+2151fc879bd3b04243babf619f275732  Xestospongia_testudinaria_RSSAv1.genes.cds.fna
+f75fa89e60c8e8d012d0a362d331af0a  Xestospongia_testudinaria_RSSAv1.genes.pep.faa
+[Tue 25 Oct 2022 08:08:39 PM EDT]      CMD: makeblastdb -dbtype nucl -in Xestospongia_testudinaria_RSSAv1.assembly.fasta
+
+
+Building a new DB, current time: 10/25/2022 20:08:39
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Xestospongia_testudinaria_RSSAv1/00_databases/blast/Xestospongia_testudinaria_RSSAv1.assembly.fasta
+New DB title:  Xestospongia_testudinaria_RSSAv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 97640 sequences in 7.75668 seconds.
+
+
+[Tue 25 Oct 2022 08:08:47 PM EDT]      CMD: makeblastdb -dbtype nucl -in Xestospongia_testudinaria_RSSAv1.genes.cds.fna
+
+
+Building a new DB, current time: 10/25/2022 20:08:47
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Xestospongia_testudinaria_RSSAv1/00_databases/blast/Xestospongia_testudinaria_RSSAv1.genes.cds.fna
+New DB title:  Xestospongia_testudinaria_RSSAv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 52876 sequences in 1.88966 seconds.
+
+
+[Tue 25 Oct 2022 08:08:49 PM EDT]      CMD: makeblastdb -dbtype prot -in Xestospongia_testudinaria_RSSAv1.genes.pep.faa
+
+
+Building a new DB, current time: 10/25/2022 20:08:49
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Xestospongia_testudinaria_RSSAv1/00_databases/blast/Xestospongia_testudinaria_RSSAv1.genes.pep.faa
+New DB title:  Xestospongia_testudinaria_RSSAv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 52876 sequences in 1.52806 seconds.
+
+
+
+=====================================================================
+Started: at Tue 25 Oct 2022 08:08:36 PM EDT
+Finished: at Tue 25 Oct 2022 08:08:51 PM EDT
+ExitStatus: 0
+=====================================================================

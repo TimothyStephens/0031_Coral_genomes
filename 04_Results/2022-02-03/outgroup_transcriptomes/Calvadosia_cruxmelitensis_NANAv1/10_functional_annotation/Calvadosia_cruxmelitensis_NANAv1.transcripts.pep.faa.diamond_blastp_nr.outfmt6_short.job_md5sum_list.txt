@@ -1,0 +1,2 @@
+685ae686baf71abac7a4025239e919eb  Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa
+685ae686baf71abac7a4025239e919eb  ../00_databases/Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa

@@ -1,0 +1,43 @@
+# Files
+Genome file	Porites_evermanni_NAPFv1.assembly.fasta
+GFF file	Porites_evermanni_NAPFv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	603805388
+Total contig length (bp)	563049165
+Number of scaffolds	8186
+Number of contigs	32888
+N50 of scaffolds (bp)	171385
+N50 of contigs (bp)	33680
+Percent gaps	6.750
+Percent GC	39.02
+
+# Gene stats (combined CDS+introns)
+Number of genes	40389
+Total gene length	273544834
+Average gene length (bp)	6772.76
+Gene percent GC	39.34
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1337.52
+Average number of CDS per gene/transcript	5.7273
+
+# CDS stats
+Number of CDS	231320
+Total CDS length (bp)	54020937
+Average CDS length (bp)	233.533
+Number of single-CDS transcripts	7760
+Percent single-CDS transcripts	19.2132
+CDS percent GC	43.74
+
+# Intron stats (predicted between CDS features)
+Number of introns	190931
+Total intron length (bp)	219523897
+Average intron length (bp)	1149.76
+Intron percent GC	38.21
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	32648
+Total intergenic region length (bp)	240949617
+Average intergenic region length (bp)	7380.23
+Intergenic region percent GC	38.74

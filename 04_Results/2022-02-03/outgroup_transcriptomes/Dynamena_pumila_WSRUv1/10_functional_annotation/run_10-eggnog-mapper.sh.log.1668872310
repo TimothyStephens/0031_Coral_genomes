@@ -1,0 +1,114 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat 19 Nov 2022 10:38:30 AM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Dynamena_pumila_WSRUv1/10_functional_annotation
+=====================================================================
+
+[Sat 19 Nov 2022 10:38:32 AM EST]      CMD: md5sum Dynamena_pumila_WSRUv1.transcripts.pep.faa ../00_databases/Dynamena_pumila_WSRUv1.transcripts.pep.faa | tee Dynamena_pumila_WSRUv1.transcripts.pep.faa.emapper.job_md5sum_list.txt
+c88ee89318d8fa84af38c04aaa833bc2  Dynamena_pumila_WSRUv1.transcripts.pep.faa
+c88ee89318d8fa84af38c04aaa833bc2  ../00_databases/Dynamena_pumila_WSRUv1.transcripts.pep.faa
+[Sat 19 Nov 2022 10:38:32 AM EST]      CMD: emapper.py -i Dynamena_pumila_WSRUv1.transcripts.pep.faa --output Dynamena_pumila_WSRUv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 4.5299530029296875e-06 0.00 q/s (% mem usage: 2.30, % mem avail: 97.67)
+[1;34mTime to load the DB into memory: 61.78298878669739[0m
+#  emapper-2.1.6
+# emapper.py  -i Dynamena_pumila_WSRUv1.transcripts.pep.faa --output Dynamena_pumila_WSRUv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Dynamena_pumila_WSRUv1/10_functional_annotation/Dynamena_pumila_WSRUv1.transcripts.pep.faa --threads 48 -o /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Dynamena_pumila_WSRUv1/10_functional_annotation/Dynamena_pumila_WSRUv1.transcripts.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+CREATED ESL_REFORMAT DB. USING HMMSEARCH
+Namespace(Z=40000000, call_info='## Sat Nov 19 10:49:55 2022\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Dynamena_pumila_WSRUv1.transcripts.pep.faa --output Dynamena_pumila_WSRUv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem\n##', clean_overlaps='hmmsearch_clans', cpu=48, cpus_per_worker=48, cut_ga=True, db='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Dynamena_pumila_WSRUv1/10_functional_annotation/tmp8odw7lhz', dbtype='seqdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='hmm', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Dynamena_pumila_WSRUv1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+500 984.1262743473053 0.51 q/s (% mem usage: 13.40, % mem avail: 86.55)
+1000 986.4496977329254 1.01 q/s (% mem usage: 13.40, % mem avail: 86.55)
+1500 989.4753034114838 1.52 q/s (% mem usage: 13.40, % mem avail: 86.55)
+2000 992.4222621917725 2.02 q/s (% mem usage: 13.40, % mem avail: 86.55)
+2500 994.5192213058472 2.51 q/s (% mem usage: 13.40, % mem avail: 86.55)
+3000 996.7495121955872 3.01 q/s (% mem usage: 13.40, % mem avail: 86.55)
+3500 998.9013829231262 3.50 q/s (% mem usage: 13.40, % mem avail: 86.55)
+4000 1001.0471003055573 4.00 q/s (% mem usage: 13.40, % mem avail: 86.55)
+4500 1003.8592858314514 4.48 q/s (% mem usage: 13.40, % mem avail: 86.55)
+5000 1005.9015109539032 4.97 q/s (% mem usage: 13.40, % mem avail: 86.55)
+5500 1007.862202167511 5.46 q/s (% mem usage: 13.40, % mem avail: 86.55)
+6000 1010.4866669178009 5.94 q/s (% mem usage: 13.40, % mem avail: 86.55)
+6500 1013.0256071090698 6.42 q/s (% mem usage: 13.40, % mem avail: 86.55)
+7000 1015.1079730987549 6.90 q/s (% mem usage: 13.40, % mem avail: 86.55)
+7500 1017.6051034927368 7.37 q/s (% mem usage: 13.40, % mem avail: 86.55)
+8000 1020.2274944782257 7.84 q/s (% mem usage: 13.40, % mem avail: 86.55)
+8500 1022.5883891582489 8.31 q/s (% mem usage: 13.40, % mem avail: 86.55)
+9000 1024.6476225852966 8.78 q/s (% mem usage: 13.40, % mem avail: 86.56)
+9500 1026.4301199913025 9.26 q/s (% mem usage: 13.40, % mem avail: 86.56)
+10000 1028.1222455501556 9.73 q/s (% mem usage: 13.40, % mem avail: 86.56)
+10500 1029.928986787796 10.19 q/s (% mem usage: 13.40, % mem avail: 86.56)
+11000 1032.1695330142975 10.66 q/s (% mem usage: 13.40, % mem avail: 86.56)
+11500 1034.226063966751 11.12 q/s (% mem usage: 13.40, % mem avail: 86.56)
+12000 1036.5636401176453 11.58 q/s (% mem usage: 13.40, % mem avail: 86.56)
+12500 1039.0886557102203 12.03 q/s (% mem usage: 13.40, % mem avail: 86.56)
+13000 1041.8293721675873 12.48 q/s (% mem usage: 13.40, % mem avail: 86.56)
+13500 1044.1095476150513 12.93 q/s (% mem usage: 13.40, % mem avail: 86.56)
+14000 1046.1695175170898 13.38 q/s (% mem usage: 13.40, % mem avail: 86.56)
+14500 1048.6897830963135 13.83 q/s (% mem usage: 13.40, % mem avail: 86.56)
+15000 1051.3029267787933 14.27 q/s (% mem usage: 13.40, % mem avail: 86.56)
+15500 1055.0839631557465 14.69 q/s (% mem usage: 13.40, % mem avail: 86.56)
+16000 1057.0078201293945 15.14 q/s (% mem usage: 13.40, % mem avail: 86.56)
+16500 1059.6965515613556 15.57 q/s (% mem usage: 13.40, % mem avail: 86.56)
+17000 1062.2617359161377 16.00 q/s (% mem usage: 13.40, % mem avail: 86.56)
+17500 1063.9565019607544 16.45 q/s (% mem usage: 13.40, % mem avail: 86.56)
+18000 1066.0841693878174 16.88 q/s (% mem usage: 13.40, % mem avail: 86.56)
+18500 1068.3564715385437 17.32 q/s (% mem usage: 13.40, % mem avail: 86.56)
+19000 1070.559901714325 17.75 q/s (% mem usage: 13.40, % mem avail: 86.56)
+19500 1072.589788198471 18.18 q/s (% mem usage: 13.40, % mem avail: 86.56)
+20000 1074.6477456092834 18.61 q/s (% mem usage: 13.40, % mem avail: 86.56)
+20500 1077.2964861392975 19.03 q/s (% mem usage: 13.40, % mem avail: 86.56)
+21000 1079.5765776634216 19.45 q/s (% mem usage: 13.40, % mem avail: 86.56)
+21500 1081.8382198810577 19.87 q/s (% mem usage: 13.40, % mem avail: 86.57)
+22000 1083.5572338104248 20.30 q/s (% mem usage: 13.40, % mem avail: 86.57)
+22500 1085.7546486854553 20.72 q/s (% mem usage: 13.40, % mem avail: 86.57)
+23000 1088.0730538368225 21.14 q/s (% mem usage: 13.40, % mem avail: 86.57)
+23500 1090.3950724601746 21.55 q/s (% mem usage: 13.40, % mem avail: 86.57)
+24000 1092.6679232120514 21.96 q/s (% mem usage: 13.40, % mem avail: 86.57)
+24039 1093.4078483581543 21.99 q/s (% mem usage: 13.30, % mem avail: 86.68)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Dynamena_pumila_WSRUv1/10_functional_annotation/Dynamena_pumila_WSRUv1.transcripts.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Dynamena_pumila_WSRUv1/10_functional_annotation/Dynamena_pumila_WSRUv1.transcripts.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Dynamena_pumila_WSRUv1/10_functional_annotation/Dynamena_pumila_WSRUv1.transcripts.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Dynamena_pumila_WSRUv1/10_functional_annotation/Dynamena_pumila_WSRUv1.transcripts.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Dynamena_pumila_WSRUv1/10_functional_annotation/Dynamena_pumila_WSRUv1.transcripts.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 24039
+Total time: 1561 secs
+FINISHED
+[Sat 19 Nov 2022 11:04:40 AM EST]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Sat 19 Nov 2022 10:38:30 AM EST
+Finished: at Sat 19 Nov 2022 11:04:40 AM EST
+ExitStatus: 0
+=====================================================================

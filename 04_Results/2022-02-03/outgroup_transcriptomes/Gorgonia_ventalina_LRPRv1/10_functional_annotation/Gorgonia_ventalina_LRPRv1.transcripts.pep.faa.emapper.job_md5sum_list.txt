@@ -1,0 +1,2 @@
+fca6e38af386722033661434c7befb4f  Gorgonia_ventalina_LRPRv1.transcripts.pep.faa
+fca6e38af386722033661434c7befb4f  ../00_databases/Gorgonia_ventalina_LRPRv1.transcripts.pep.faa

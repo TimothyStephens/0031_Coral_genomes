@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 06:55:45 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Montipora_aequituberculata_NANAv1/00_databases/blast
+=====================================================================
+
+[Tue 25 Oct 2022 06:55:48 PM EDT]      CMD: md5sum Montipora_aequituberculata_NANAv1.transcripts.cds.fna Montipora_aequituberculata_NANAv1.transcripts.pep.faa | tee Montipora_aequituberculata_NANAv1.makeblastdb.job_md5sum_list.txt
+2df807d6a89a1cc8304aea28912fdf0b  Montipora_aequituberculata_NANAv1.transcripts.cds.fna
+850e5a2203d657df4eef532d05bc4ac6  Montipora_aequituberculata_NANAv1.transcripts.pep.faa
+[Tue 25 Oct 2022 06:55:48 PM EDT]      CMD: makeblastdb -dbtype nucl -in Montipora_aequituberculata_NANAv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 10/25/2022 18:55:48
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Montipora_aequituberculata_NANAv1/00_databases/blast/Montipora_aequituberculata_NANAv1.transcripts.cds.fna
+New DB title:  Montipora_aequituberculata_NANAv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 28717 sequences in 0.880197 seconds.
+
+
+[Tue 25 Oct 2022 06:55:49 PM EDT]      CMD: makeblastdb -dbtype prot -in Montipora_aequituberculata_NANAv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 10/25/2022 18:55:49
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Montipora_aequituberculata_NANAv1/00_databases/blast/Montipora_aequituberculata_NANAv1.transcripts.pep.faa
+New DB title:  Montipora_aequituberculata_NANAv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 28717 sequences in 0.558135 seconds.
+
+
+
+=====================================================================
+Started: at Tue 25 Oct 2022 06:55:45 PM EDT
+Finished: at Tue 25 Oct 2022 06:55:50 PM EDT
+ExitStatus: 0
+=====================================================================

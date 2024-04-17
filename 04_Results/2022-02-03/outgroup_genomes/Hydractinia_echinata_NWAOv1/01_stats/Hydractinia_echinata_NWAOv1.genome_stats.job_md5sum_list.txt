@@ -1,0 +1,2 @@
+2e1d73d54050dbc5974be9decb401f88  Hydractinia_echinata_NWAOv1.assembly.fasta
+eb3a12fd8b84ca7742b7c13434936fcf  Hydractinia_echinata_NWAOv1.genes.gff3

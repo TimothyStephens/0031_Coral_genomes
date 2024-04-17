@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 10:47:45 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Porites_evermanni_NAPFv1/00_databases/blast
+=====================================================================
+
+[Tue 06 Jun 2023 10:47:46 AM EDT]      CMD: md5sum Porites_evermanni_NAPFv1.assembly.fasta Porites_evermanni_NAPFv1.genes.cds.fna Porites_evermanni_NAPFv1.genes.pep.faa | tee Porites_evermanni_NAPFv1.makeblastdb.job_md5sum_list.txt
+833d79ee134ad9396850e58fefdd43c5  Porites_evermanni_NAPFv1.assembly.fasta
+62db446586275fae355edbe25bdf28fa  Porites_evermanni_NAPFv1.genes.cds.fna
+f2bbe2705df92326de6754bc5e3d1bfc  Porites_evermanni_NAPFv1.genes.pep.faa
+[Tue 06 Jun 2023 10:47:48 AM EDT]      CMD: makeblastdb -dbtype nucl -in Porites_evermanni_NAPFv1.assembly.fasta
+
+
+Building a new DB, current time: 06/06/2023 10:47:48
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Porites_evermanni_NAPFv1/00_databases/blast/Porites_evermanni_NAPFv1.assembly.fasta
+New DB title:  Porites_evermanni_NAPFv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 8186 sequences in 6.1887 seconds.
+
+
+[Tue 06 Jun 2023 10:47:54 AM EDT]      CMD: makeblastdb -dbtype nucl -in Porites_evermanni_NAPFv1.genes.cds.fna
+
+
+Building a new DB, current time: 06/06/2023 10:47:54
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Porites_evermanni_NAPFv1/00_databases/blast/Porites_evermanni_NAPFv1.genes.cds.fna
+New DB title:  Porites_evermanni_NAPFv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 40389 sequences in 1.02735 seconds.
+
+
+[Tue 06 Jun 2023 10:47:55 AM EDT]      CMD: makeblastdb -dbtype prot -in Porites_evermanni_NAPFv1.genes.pep.faa
+
+
+Building a new DB, current time: 06/06/2023 10:47:55
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Porites_evermanni_NAPFv1/00_databases/blast/Porites_evermanni_NAPFv1.genes.pep.faa
+New DB title:  Porites_evermanni_NAPFv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 40389 sequences in 0.776943 seconds.
+
+
+
+=====================================================================
+Started: at Tue 06 Jun 2023 10:47:45 AM EDT
+Finished: at Tue 06 Jun 2023 10:47:56 AM EDT
+ExitStatus: 0
+=====================================================================

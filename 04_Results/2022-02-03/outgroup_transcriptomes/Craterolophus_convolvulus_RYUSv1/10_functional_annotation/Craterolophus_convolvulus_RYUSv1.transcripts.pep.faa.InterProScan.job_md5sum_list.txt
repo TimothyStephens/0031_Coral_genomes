@@ -1,0 +1,2 @@
+c66ef85df2c5af2634306bd23e97f08c  Craterolophus_convolvulus_RYUSv1.transcripts.pep.faa
+c66ef85df2c5af2634306bd23e97f08c  ../00_databases/Craterolophus_convolvulus_RYUSv1.transcripts.pep.faa

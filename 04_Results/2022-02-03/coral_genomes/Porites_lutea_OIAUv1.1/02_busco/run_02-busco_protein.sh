@@ -7,6 +7,9 @@ exec 1> "${0}.log.$(date +%s)" 2>&1
 source ~/scripts/script_setup.sh
 set +eu; conda activate BUSCO_v5.0.0; set -eu
 
+export PYTHONPATH=/home/timothy/miniconda3/envs/BUSCO_v5.0.0/lib/python3.7/site-packages
+export PATH=/home/timothy/miniconda3/envs/BUSCO_v5.0.0/bin:$PATH
+
 PREFIX="Porites_lutea_OIAUv1.1"
 NCPUS=48
 TMPDIR="/scratch/timothy/tmp"

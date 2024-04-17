@@ -1,0 +1,2 @@
+5943a39cdf6f183f174633da6cdeb6f3  Orbicella_faveolata_NAPAv1.genes.pep.faa
+5943a39cdf6f183f174633da6cdeb6f3  ../00_databases/Orbicella_faveolata_NAPAv1.genes.pep.faa

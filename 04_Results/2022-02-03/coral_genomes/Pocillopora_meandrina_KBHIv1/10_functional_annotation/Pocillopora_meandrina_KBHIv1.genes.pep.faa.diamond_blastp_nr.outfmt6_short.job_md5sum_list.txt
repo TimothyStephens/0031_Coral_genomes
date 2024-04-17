@@ -1,0 +1,2 @@
+890de3fa0c4ef335eafce955911940d0  Pocillopora_meandrina_KBHIv1.genes.pep.faa
+890de3fa0c4ef335eafce955911940d0  ../00_databases/Pocillopora_meandrina_KBHIv1.genes.pep.faa

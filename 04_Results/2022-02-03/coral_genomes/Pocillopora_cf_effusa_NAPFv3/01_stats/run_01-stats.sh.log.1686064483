@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 11:14:43 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Pocillopora_cf_effusa_NAPFv3/01_stats
+=====================================================================
+
+[Tue 06 Jun 2023 11:14:45 AM EDT]      CMD: md5sum Pocillopora_cf_effusa_NAPFv3.assembly.fasta Pocillopora_cf_effusa_NAPFv3.genes.gff3 | tee Pocillopora_cf_effusa_NAPFv3.genome_stats.job_md5sum_list.txt
+63d10e98f355cb0f84628eb8f252a0e9  Pocillopora_cf_effusa_NAPFv3.assembly.fasta
+a064603973ed3ccb93e068d3a22cde03  Pocillopora_cf_effusa_NAPFv3.genes.gff3
+[Tue 06 Jun 2023 11:14:46 AM EDT]      CMD: ./genome_stats Pocillopora_cf_effusa_NAPFv3.assembly.fasta Pocillopora_cf_effusa_NAPFv3.genes.gff3 > Pocillopora_cf_effusa_NAPFv3.GeneStats.tsv
+index file Pocillopora_cf_effusa_NAPFv3.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Tue 06 Jun 2023 11:14:43 AM EDT
+Finished: at Tue 06 Jun 2023 11:15:01 AM EDT
+ExitStatus: 0
+=====================================================================

@@ -1,0 +1,2 @@
+fa71f09c098a75c3e12a6d59b1b99851  Platygyra_carnosus_REEFv1.transcripts.pep.faa
+fa71f09c098a75c3e12a6d59b1b99851  ../00_databases/Platygyra_carnosus_REEFv1.transcripts.pep.faa

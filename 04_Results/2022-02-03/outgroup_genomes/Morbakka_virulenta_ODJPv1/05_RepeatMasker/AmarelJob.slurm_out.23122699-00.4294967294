@@ -1,0 +1,21 @@
+=====================================================================
+Slurm config version 0.4
+Starting on hal0212.amarel.rutgers.edu at Wed Nov 23 16:31:06 EST 2022
+Nodelist hal0212
+Current JOB_ID is 23122699
+Current array index number is NA
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Morbakka_virulenta_ODJPv1/05_RepeatMasker
+=====================================================================
+
+[Fri Nov 25 05:09:48 EST 2022]   - Done!
+
+=====================================================================
+Started: at Wed Nov 23 16:31:06 EST 2022 on hal0212.amarel.rutgers.edu
+Finished: at Fri Nov 25 05:09:48 EST 2022
+ExitStatus: 0
+
+   JobName   NTasks  AllocCPUS     ReqMem     MaxRSS  MaxVMSize  MaxDiskRead MaxDiskWrite   TotalCPU    CPUTime    Elapsed 
+---------- -------- ---------- ---------- ---------- ---------- ------------ ------------ ---------- ---------- ---------- 
+ AmarelJob                  52      120Gn                                                   00:00:00 79-09:33:16 1-12:38:43 
+    extern        1         52      120Gn                                                   00:00:00 79-09:33:16 1-12:38:43 
+=====================================================================

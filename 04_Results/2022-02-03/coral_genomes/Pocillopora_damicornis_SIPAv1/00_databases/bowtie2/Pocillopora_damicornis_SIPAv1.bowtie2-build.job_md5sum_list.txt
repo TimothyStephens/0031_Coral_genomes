@@ -1,2 +1,2 @@
 0c39b29eaeb5c7e95d83d4dce4f9ef30  Pocillopora_damicornis_SIPAv1.assembly.fasta
-b616bc70fe0854bc2dd9fcd32dbec0eb  Pocillopora_damicornis_SIPAv1.genes.cds.fna
+47259c970328b6163bdd4be0e2d5c881  Pocillopora_damicornis_SIPAv1.genes.cds.fna

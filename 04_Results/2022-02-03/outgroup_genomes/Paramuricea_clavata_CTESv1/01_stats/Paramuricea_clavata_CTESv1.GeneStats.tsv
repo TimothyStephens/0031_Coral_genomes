@@ -1,0 +1,43 @@
+# Files
+Genome file	Paramuricea_clavata_CTESv1.assembly.fasta
+GFF file	Paramuricea_clavata_CTESv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	606969498
+Total contig length (bp)	606183174
+Number of scaffolds	64145
+Number of contigs	79709
+N50 of scaffolds (bp)	23918
+N50 of contigs (bp)	19152
+Percent gaps	0.130
+Percent GC	36.83
+
+# Gene stats (combined CDS+introns)
+Number of genes	62652
+Total gene length	221637522
+Average gene length (bp)	3537.6
+Gene percent GC	37.93
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1079.95
+Average number of CDS per gene/transcript	4.31989
+
+# CDS stats
+Number of CDS	270650
+Total CDS length (bp)	67661208
+Average CDS length (bp)	249.995
+Number of single-CDS transcripts	24878
+Percent single-CDS transcripts	39.7082
+CDS percent GC	41.58
+
+# Intron stats (predicted between CDS features)
+Number of introns	207998
+Total intron length (bp)	153976314
+Average intron length (bp)	740.278
+Intron percent GC	36.33
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	35458
+Total intergenic region length (bp)	115910705
+Average intergenic region length (bp)	3268.96
+Intergenic region percent GC	36.3

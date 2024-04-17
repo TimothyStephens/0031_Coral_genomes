@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 08:11:05 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Trichoplax_adhaerens_RSSAv1/01_stats
+=====================================================================
+
+[Tue 25 Oct 2022 08:11:07 PM EDT]      CMD: md5sum Trichoplax_adhaerens_RSSAv1.assembly.fasta Trichoplax_adhaerens_RSSAv1.genes.gff3 | tee Trichoplax_adhaerens_RSSAv1.genome_stats.job_md5sum_list.txt
+1d3582402e003b3ddfcba86ce5134de7  Trichoplax_adhaerens_RSSAv1.assembly.fasta
+5e3b51082bc6ef35c6785e860927355d  Trichoplax_adhaerens_RSSAv1.genes.gff3
+[Tue 25 Oct 2022 08:11:07 PM EDT]      CMD: ./genome_stats Trichoplax_adhaerens_RSSAv1.assembly.fasta Trichoplax_adhaerens_RSSAv1.genes.gff3 > Trichoplax_adhaerens_RSSAv1.GeneStats.tsv
+index file Trichoplax_adhaerens_RSSAv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Tue 25 Oct 2022 08:11:05 PM EDT
+Finished: at Tue 25 Oct 2022 08:11:21 PM EDT
+ExitStatus: 0
+=====================================================================

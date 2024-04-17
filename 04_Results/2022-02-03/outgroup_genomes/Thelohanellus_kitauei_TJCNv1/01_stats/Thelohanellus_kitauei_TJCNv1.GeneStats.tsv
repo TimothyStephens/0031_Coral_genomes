@@ -1,0 +1,43 @@
+# Files
+Genome file	Thelohanellus_kitauei_TJCNv1.assembly.fasta
+GFF file	Thelohanellus_kitauei_TJCNv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	150348159
+Total contig length (bp)	122737609
+Number of scaffolds	5757
+Number of contigs	15632
+N50 of scaffolds (bp)	149756
+N50 of contigs (bp)	13033
+Percent gaps	18.364
+Percent GC	31.23
+
+# Gene stats (combined CDS+introns)
+Number of genes	15020
+Total gene length	18617773
+Average gene length (bp)	1239.53
+Gene percent GC	35.28
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	719.352
+Average number of CDS per gene/transcript	3.09847
+
+# CDS stats
+Number of CDS	46539
+Total CDS length (bp)	10804662
+Average CDS length (bp)	232.164
+Number of single-CDS transcripts	4452
+Percent single-CDS transcripts	29.6405
+CDS percent GC	38.97
+
+# Intron stats (predicted between CDS features)
+Number of introns	31519
+Total intron length (bp)	7813111
+Average intron length (bp)	247.886
+Intron percent GC	30.13
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	12573
+Total intergenic region length (bp)	90448854
+Average intergenic region length (bp)	7193.9
+Intergenic region percent GC	30.81

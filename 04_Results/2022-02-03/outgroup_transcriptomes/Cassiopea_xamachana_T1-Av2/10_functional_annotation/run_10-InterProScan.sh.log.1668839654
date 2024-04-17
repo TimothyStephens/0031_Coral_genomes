@@ -1,0 +1,31 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat 19 Nov 2022 01:34:14 AM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Cassiopea_xamachana_T1-Av2/10_functional_annotation
+=====================================================================
+
+[Sat 19 Nov 2022 01:34:15 AM EST]      CMD: md5sum Cassiopea_xamachana_T1-Av2.transcripts.pep.faa ../00_databases/Cassiopea_xamachana_T1-Av2.transcripts.pep.faa | tee Cassiopea_xamachana_T1-Av2.transcripts.pep.faa.InterProScan.job_md5sum_list.txt
+43962e0877a44c45bf420feda069bfcf  Cassiopea_xamachana_T1-Av2.transcripts.pep.faa
+43962e0877a44c45bf420feda069bfcf  ../00_databases/Cassiopea_xamachana_T1-Av2.transcripts.pep.faa
+[Sat 19 Nov 2022 01:34:15 AM EST]      CMD: /home/timothy/programs/my_interproscan/interproscan-5.53-87.0/interproscan.sh -dp --goterms --cpu 48 --input Cassiopea_xamachana_T1-Av2.transcripts.pep.faa --output-file-base Cassiopea_xamachana_T1-Av2.transcripts.pep.faa.InterProScan
+19/11/2022 01:34:17:419 Welcome to InterProScan-5.53-87.0
+19/11/2022 01:34:17:422 Running InterProScan v5 in STANDALONE mode... on Linux
+19/11/2022 01:34:25:520 RunID: coral_20221119_013424995_9gvl
+19/11/2022 01:34:34:852 Loading file /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Cassiopea_xamachana_T1-Av2/10_functional_annotation/Cassiopea_xamachana_T1-Av2.transcripts.pep.faa
+19/11/2022 01:34:34:854 Running the following analyses:
+[CDD-3.18,Coils-2.2.1,Gene3D-4.3.0,Hamap-2020_05,MobiDBLite-2.0,PANTHER-15.0,Pfam-34.0,Phobius-1.01,PIRSF-3.10,PIRSR-2021_02,PRINTS-42.0,ProSitePatterns-2021_01,ProSiteProfiles-2021_01,SFLD-4,SignalP_EUK-4.1,SignalP_GRAM_NEGATIVE-4.1,SignalP_GRAM_POSITIVE-4.1,SMART-7.1,SUPERFAMILY-1.75,TIGRFAM-15.0,TMHMM-2.0c]
+Pre-calculated match lookup service DISABLED.  Please wait for match calculations to complete...
+19/11/2022 01:34:43:216 Uploaded 31416 unique sequences for analysis
+19/11/2022 03:05:02:027 25% completed
+19/11/2022 03:25:14:339 50% completed
+19/11/2022 04:00:49:328 75% completed
+19/11/2022 04:32:48:361 90% completed
+19/11/2022 05:05:21:247 100% done:  InterProScan analyses completed 
+
+[Sat 19 Nov 2022 05:05:22 AM EST]      CMD: rm -fr temp
+
+=====================================================================
+Started: at Sat 19 Nov 2022 01:34:14 AM EST
+Finished: at Sat 19 Nov 2022 05:05:22 AM EST
+ExitStatus: 0
+=====================================================================

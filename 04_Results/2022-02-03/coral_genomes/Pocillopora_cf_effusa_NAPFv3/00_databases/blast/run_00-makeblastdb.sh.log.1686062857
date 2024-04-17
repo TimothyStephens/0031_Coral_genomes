@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 10:47:37 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Pocillopora_cf_effusa_NAPFv3/00_databases/blast
+=====================================================================
+
+[Tue 06 Jun 2023 10:47:39 AM EDT]      CMD: md5sum Pocillopora_cf_effusa_NAPFv3.assembly.fasta Pocillopora_cf_effusa_NAPFv3.genes.cds.fna Pocillopora_cf_effusa_NAPFv3.genes.pep.faa | tee Pocillopora_cf_effusa_NAPFv3.makeblastdb.job_md5sum_list.txt
+63d10e98f355cb0f84628eb8f252a0e9  Pocillopora_cf_effusa_NAPFv3.assembly.fasta
+1f62fc470420d7d13785216df589d891  Pocillopora_cf_effusa_NAPFv3.genes.cds.fna
+aa7335ebfe24483ca39ac3090f7ae6e1  Pocillopora_cf_effusa_NAPFv3.genes.pep.faa
+[Tue 06 Jun 2023 10:47:39 AM EDT]      CMD: makeblastdb -dbtype nucl -in Pocillopora_cf_effusa_NAPFv3.assembly.fasta
+
+
+Building a new DB, current time: 06/06/2023 10:47:40
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Pocillopora_cf_effusa_NAPFv3/00_databases/blast/Pocillopora_cf_effusa_NAPFv3.assembly.fasta
+New DB title:  Pocillopora_cf_effusa_NAPFv3.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 252 sequences in 3.11236 seconds.
+
+
+[Tue 06 Jun 2023 10:47:43 AM EDT]      CMD: makeblastdb -dbtype nucl -in Pocillopora_cf_effusa_NAPFv3.genes.cds.fna
+
+
+Building a new DB, current time: 06/06/2023 10:47:43
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Pocillopora_cf_effusa_NAPFv3/00_databases/blast/Pocillopora_cf_effusa_NAPFv3.genes.cds.fna
+New DB title:  Pocillopora_cf_effusa_NAPFv3.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 32095 sequences in 0.794258 seconds.
+
+
+[Tue 06 Jun 2023 10:47:44 AM EDT]      CMD: makeblastdb -dbtype prot -in Pocillopora_cf_effusa_NAPFv3.genes.pep.faa
+
+
+Building a new DB, current time: 06/06/2023 10:47:44
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Pocillopora_cf_effusa_NAPFv3/00_databases/blast/Pocillopora_cf_effusa_NAPFv3.genes.pep.faa
+New DB title:  Pocillopora_cf_effusa_NAPFv3.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 32095 sequences in 0.589566 seconds.
+
+
+
+=====================================================================
+Started: at Tue 06 Jun 2023 10:47:37 AM EDT
+Finished: at Tue 06 Jun 2023 10:47:45 AM EDT
+ExitStatus: 0
+=====================================================================

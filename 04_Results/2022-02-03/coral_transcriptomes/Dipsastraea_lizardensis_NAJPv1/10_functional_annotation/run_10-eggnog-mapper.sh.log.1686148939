@@ -1,0 +1,93 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 07 Jun 2023 10:42:19 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_transcriptomes/Dipsastraea_lizardensis_NAJPv1/10_functional_annotation
+=====================================================================
+
+[Wed 07 Jun 2023 10:42:20 AM EDT]      CMD: md5sum Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa ../00_databases/Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa | tee Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa.emapper.job_md5sum_list.txt
+79cc92e9fb1ef451b2ef8d8a2859ba87  Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa
+79cc92e9fb1ef451b2ef8d8a2859ba87  ../00_databases/Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa
+[Wed 07 Jun 2023 10:42:20 AM EDT]      CMD: emapper.py -i Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa --output Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 4.76837158203125e-06 0.00 q/s (% mem usage: 83.60, % mem avail: 16.36)
+[1;34mTime to load the DB into memory: 108.26921820640564[0m
+#  emapper-2.1.6
+# emapper.py  -i Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa --output Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_transcriptomes/Dipsastraea_lizardensis_NAJPv1/10_functional_annotation/Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa --threads 96 -o /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_transcriptomes/Dipsastraea_lizardensis_NAJPv1/10_functional_annotation/Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+Namespace(Z=40000000, call_info='## Wed Jun  7 10:50:16 2023\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa --output Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem\n##', clean_overlaps='clans', cpu=96, cpus_per_worker=96, cut_ga=True, db='/scratch/timothy/databases/eggnog-mapper-rel20211209/pfam/Pfam-A.hmm', dbtype='hmmdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='seq', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_transcriptomes/Dipsastraea_lizardensis_NAJPv1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+Searching queries with a pool of 96 CPUs
+500 1026.0582780838013 0.49 q/s (% mem usage: 94.30, % mem avail: 5.71)
+1000 1027.4645929336548 0.97 q/s (% mem usage: 94.30, % mem avail: 5.71)
+1500 1028.5750877857208 1.46 q/s (% mem usage: 94.30, % mem avail: 5.71)
+2000 1029.7030727863312 1.94 q/s (% mem usage: 94.30, % mem avail: 5.71)
+2500 1030.8278214931488 2.43 q/s (% mem usage: 94.30, % mem avail: 5.71)
+3000 1032.2729268074036 2.91 q/s (% mem usage: 94.30, % mem avail: 5.71)
+3500 1033.6915714740753 3.39 q/s (% mem usage: 94.30, % mem avail: 5.71)
+4000 1035.1460011005402 3.86 q/s (% mem usage: 94.30, % mem avail: 5.71)
+4500 1036.6081330776215 4.34 q/s (% mem usage: 94.30, % mem avail: 5.71)
+5000 1038.0590360164642 4.82 q/s (% mem usage: 94.30, % mem avail: 5.71)
+5500 1039.6343321800232 5.29 q/s (% mem usage: 94.30, % mem avail: 5.71)
+6000 1041.3210096359253 5.76 q/s (% mem usage: 94.30, % mem avail: 5.71)
+6500 1042.9903554916382 6.23 q/s (% mem usage: 94.30, % mem avail: 5.71)
+7000 1044.6208634376526 6.70 q/s (% mem usage: 94.30, % mem avail: 5.71)
+7500 1046.354801416397 7.17 q/s (% mem usage: 94.30, % mem avail: 5.71)
+8000 1048.4432554244995 7.63 q/s (% mem usage: 94.30, % mem avail: 5.71)
+8500 1050.5461506843567 8.09 q/s (% mem usage: 94.30, % mem avail: 5.71)
+9000 1052.5887014865875 8.55 q/s (% mem usage: 94.30, % mem avail: 5.71)
+9500 1054.5382537841797 9.01 q/s (% mem usage: 94.30, % mem avail: 5.71)
+10000 1056.3910219669342 9.47 q/s (% mem usage: 94.30, % mem avail: 5.71)
+10500 1058.351675748825 9.92 q/s (% mem usage: 94.30, % mem avail: 5.71)
+11000 1060.3464345932007 10.37 q/s (% mem usage: 94.30, % mem avail: 5.71)
+11500 1062.4027650356293 10.82 q/s (% mem usage: 94.30, % mem avail: 5.71)
+12000 1064.5166392326355 11.27 q/s (% mem usage: 94.30, % mem avail: 5.71)
+12500 1066.5318546295166 11.72 q/s (% mem usage: 94.30, % mem avail: 5.71)
+13000 1068.436283826828 12.17 q/s (% mem usage: 94.30, % mem avail: 5.71)
+13500 1069.7690918445587 12.62 q/s (% mem usage: 94.30, % mem avail: 5.71)
+13846 1070.9877772331238 12.93 q/s (% mem usage: 94.20, % mem avail: 5.77)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_transcriptomes/Dipsastraea_lizardensis_NAJPv1/10_functional_annotation/Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_transcriptomes/Dipsastraea_lizardensis_NAJPv1/10_functional_annotation/Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_transcriptomes/Dipsastraea_lizardensis_NAJPv1/10_functional_annotation/Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_transcriptomes/Dipsastraea_lizardensis_NAJPv1/10_functional_annotation/Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_transcriptomes/Dipsastraea_lizardensis_NAJPv1/10_functional_annotation/Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 13846
+Total time: 1352 secs
+FINISHED
+[Wed 07 Jun 2023 11:04:59 AM EDT]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Wed 07 Jun 2023 10:42:19 AM EDT
+Finished: at Wed 07 Jun 2023 11:04:59 AM EDT
+ExitStatus: 0
+=====================================================================

@@ -1,0 +1,33 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 21 Jun 2022 08:36:14 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Platygyra_sinensis_SDTHv1/06_RepeatMasker_SCORs
+=====================================================================
+
+[Tue 21 Jun 2022 08:36:15 AM EDT]      CMD: sed -e 's/Platygyra_sinensis_SDTHv1___//' Platygyra_sinensis_SDTHv1.assembly.fasta > genome.fa
+[Tue 21 Jun 2022 08:36:18 AM EDT]      CMD: RepeatMasker -no_is -nolow -a -x -gff -pa 18 -lib SCOR_consensus_sequences.fa genome.fa 1> RepeatMasker.log 2>&1
+[Tue 21 Jun 2022 08:54:33 AM EDT]      CMD: /home/timothy/programs/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/calcDivergenceFromAlign.pl -s genome.fa.divsum genome.fa.align
+........................................................................................................................................................................................................[Tue 21 Jun 2022 08:54:45 AM EDT]      CMD: bedtools maskfasta -fi genome.fa -fo genome.fa.softmasked -bed genome.fa.out.gff -soft
+[Tue 21 Jun 2022 08:54:47 AM EDT]      CMD: sed -e 's/^>/>Platygyra_sinensis_SDTHv1___/' genome.fa.softmasked > Platygyra_sinensis_SDTHv1.assembly.fasta.repmaskSCORs.softmasked
+[Tue 21 Jun 2022 08:54:49 AM EDT]      CMD: sed -e 's/^>/>Platygyra_sinensis_SDTHv1___/' genome.fa.masked | reformat.sh in=stdin.fa out=stdout.fa fastawrap=0 > Platygyra_sinensis_SDTHv1.assembly.fasta.repmaskSCORs.masked
+java -ea -Xms300m -cp /home/timothy/programs/bbmap/current/ jgi.ReformatReads in=stdin.fa out=stdout.fa fastawrap=0
+Executing jgi.ReformatReads [in=stdin.fa, out=stdout.fa, fastawrap=0]
+
+Input is being processed as unpaired
+Input:                  	56369 reads          	1096359891 bases
+Output:                 	56369 reads (100.00%) 	1096359891 bases (100.00%)
+
+Time:                         	3.871 seconds.
+Reads Processed:       56369 	14.56k reads/sec
+Bases Processed:       1096m 	283.26m bases/sec
+[Tue 21 Jun 2022 08:54:54 AM EDT]      CMD: awk -F'\t' -vPREFIX=Platygyra_sinensis_SDTHv1 '{ if($1!~"^#") {print PREFIX"___"$0} else {print $0} }' genome.fa.out.gff > Platygyra_sinensis_SDTHv1.assembly.fasta.repmaskSCORs.out.gff
+[Tue 21 Jun 2022 08:54:54 AM EDT]      CMD: cp genome.fa.divsum Platygyra_sinensis_SDTHv1.assembly.fasta.repmaskSCORs.divsum
+[Tue 21 Jun 2022 08:54:54 AM EDT]      CMD: cp genome.fa.tbl Platygyra_sinensis_SDTHv1.assembly.fasta.repmaskSCORs.tbl
+[Tue 21 Jun 2022 08:54:54 AM EDT]      CMD: tail -n 72 Platygyra_sinensis_SDTHv1.assembly.fasta.repmaskSCORs.divsum | sed -e 's/ $//' > Platygyra_sinensis_SDTHv1.assembly.fasta.repmaskSCORs.divsum.Kimura_distance
+[Tue 21 Jun 2022 08:54:54 AM EDT]      CMD: gzip genome.fa.align genome.fa.divsum genome.fa.masked genome.fa.out genome.fa.out.gff genome.fa.softmasked genome.fa.tbl
+
+=====================================================================
+Started: at Tue 21 Jun 2022 08:36:14 AM EDT
+Finished: at Tue 21 Jun 2022 08:58:45 AM EDT
+ExitStatus: 0
+=====================================================================

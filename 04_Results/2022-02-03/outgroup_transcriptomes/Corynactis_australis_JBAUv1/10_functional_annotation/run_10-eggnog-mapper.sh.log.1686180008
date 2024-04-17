@@ -1,0 +1,108 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 07 Jun 2023 07:20:08 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Corynactis_australis_JBAUv1/10_functional_annotation
+=====================================================================
+
+[Wed 07 Jun 2023 07:20:10 PM EDT]      CMD: md5sum Corynactis_australis_JBAUv1.transcripts.pep.faa ../00_databases/Corynactis_australis_JBAUv1.transcripts.pep.faa | tee Corynactis_australis_JBAUv1.transcripts.pep.faa.emapper.job_md5sum_list.txt
+3ddb8affef9be9cf513aaf5b71213a88  Corynactis_australis_JBAUv1.transcripts.pep.faa
+3ddb8affef9be9cf513aaf5b71213a88  ../00_databases/Corynactis_australis_JBAUv1.transcripts.pep.faa
+[Wed 07 Jun 2023 07:20:10 PM EDT]      CMD: emapper.py -i Corynactis_australis_JBAUv1.transcripts.pep.faa --output Corynactis_australis_JBAUv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 5.0067901611328125e-06 0.00 q/s (% mem usage: 84.90, % mem avail: 15.08)
+[1;34mTime to load the DB into memory: 67.97489881515503[0m
+#  emapper-2.1.6
+# emapper.py  -i Corynactis_australis_JBAUv1.transcripts.pep.faa --output Corynactis_australis_JBAUv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Corynactis_australis_JBAUv1/10_functional_annotation/Corynactis_australis_JBAUv1.transcripts.pep.faa --threads 96 -o /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Corynactis_australis_JBAUv1/10_functional_annotation/Corynactis_australis_JBAUv1.transcripts.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+CREATED ESL_REFORMAT DB. USING HMMSEARCH
+Namespace(Z=40000000, call_info='## Wed Jun  7 19:28:08 2023\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Corynactis_australis_JBAUv1.transcripts.pep.faa --output Corynactis_australis_JBAUv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem\n##', clean_overlaps='hmmsearch_clans', cpu=96, cpus_per_worker=96, cut_ga=True, db='/scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Corynactis_australis_JBAUv1/10_functional_annotation/tmp4uuvurx5', dbtype='seqdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='hmm', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Corynactis_australis_JBAUv1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+500 875.6822550296783 0.57 q/s (% mem usage: 95.60, % mem avail: 4.38)
+1000 876.629688501358 1.14 q/s (% mem usage: 95.60, % mem avail: 4.38)
+1500 877.6592268943787 1.71 q/s (% mem usage: 95.60, % mem avail: 4.38)
+2000 879.0111985206604 2.28 q/s (% mem usage: 95.60, % mem avail: 4.38)
+2500 881.3388381004333 2.84 q/s (% mem usage: 95.60, % mem avail: 4.38)
+3000 882.7919571399689 3.40 q/s (% mem usage: 95.60, % mem avail: 4.38)
+3500 884.0086789131165 3.96 q/s (% mem usage: 95.60, % mem avail: 4.38)
+4000 885.3700518608093 4.52 q/s (% mem usage: 95.60, % mem avail: 4.38)
+4500 886.4855320453644 5.08 q/s (% mem usage: 95.60, % mem avail: 4.38)
+5000 887.455534696579 5.63 q/s (% mem usage: 95.60, % mem avail: 4.38)
+5500 888.4446218013763 6.19 q/s (% mem usage: 95.60, % mem avail: 4.38)
+6000 889.5563006401062 6.74 q/s (% mem usage: 95.60, % mem avail: 4.38)
+6500 890.7672827243805 7.30 q/s (% mem usage: 95.60, % mem avail: 4.38)
+7000 892.0979285240173 7.85 q/s (% mem usage: 95.60, % mem avail: 4.38)
+7500 893.2349717617035 8.40 q/s (% mem usage: 95.60, % mem avail: 4.38)
+8000 894.4852550029755 8.94 q/s (% mem usage: 95.60, % mem avail: 4.38)
+8500 895.9145367145538 9.49 q/s (% mem usage: 95.60, % mem avail: 4.38)
+9000 897.172242641449 10.03 q/s (% mem usage: 95.60, % mem avail: 4.38)
+9500 898.3921990394592 10.57 q/s (% mem usage: 95.60, % mem avail: 4.38)
+10000 899.8038218021393 11.11 q/s (% mem usage: 95.60, % mem avail: 4.38)
+10500 901.1845591068268 11.65 q/s (% mem usage: 95.60, % mem avail: 4.38)
+11000 902.5044476985931 12.19 q/s (% mem usage: 95.60, % mem avail: 4.38)
+11500 903.9906716346741 12.72 q/s (% mem usage: 95.60, % mem avail: 4.38)
+12000 905.3241667747498 13.25 q/s (% mem usage: 95.60, % mem avail: 4.38)
+12500 906.8330209255219 13.78 q/s (% mem usage: 95.60, % mem avail: 4.38)
+13000 908.3038265705109 14.31 q/s (% mem usage: 95.60, % mem avail: 4.38)
+13500 909.8761959075928 14.84 q/s (% mem usage: 95.60, % mem avail: 4.38)
+14000 911.266135931015 15.36 q/s (% mem usage: 95.60, % mem avail: 4.38)
+14500 912.8197836875916 15.88 q/s (% mem usage: 95.60, % mem avail: 4.38)
+15000 914.2649188041687 16.41 q/s (% mem usage: 95.60, % mem avail: 4.38)
+15500 915.8046782016754 16.93 q/s (% mem usage: 95.60, % mem avail: 4.38)
+16000 917.3436179161072 17.44 q/s (% mem usage: 95.60, % mem avail: 4.38)
+16500 919.1660578250885 17.95 q/s (% mem usage: 95.60, % mem avail: 4.38)
+17000 920.8690059185028 18.46 q/s (% mem usage: 95.60, % mem avail: 4.38)
+17500 922.4665877819061 18.97 q/s (% mem usage: 95.60, % mem avail: 4.38)
+18000 924.158616065979 19.48 q/s (% mem usage: 95.60, % mem avail: 4.38)
+18500 925.9915196895599 19.98 q/s (% mem usage: 95.60, % mem avail: 4.38)
+19000 927.640998840332 20.48 q/s (% mem usage: 95.60, % mem avail: 4.38)
+19500 929.2877595424652 20.98 q/s (% mem usage: 95.60, % mem avail: 4.38)
+20000 930.8683574199677 21.49 q/s (% mem usage: 95.60, % mem avail: 4.38)
+20500 932.455105304718 21.98 q/s (% mem usage: 95.60, % mem avail: 4.38)
+21000 933.7555725574493 22.49 q/s (% mem usage: 95.60, % mem avail: 4.38)
+21064 934.3274080753326 22.54 q/s (% mem usage: 95.50, % mem avail: 4.46)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Corynactis_australis_JBAUv1/10_functional_annotation/Corynactis_australis_JBAUv1.transcripts.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Corynactis_australis_JBAUv1/10_functional_annotation/Corynactis_australis_JBAUv1.transcripts.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Corynactis_australis_JBAUv1/10_functional_annotation/Corynactis_australis_JBAUv1.transcripts.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Corynactis_australis_JBAUv1/10_functional_annotation/Corynactis_australis_JBAUv1.transcripts.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Corynactis_australis_JBAUv1/10_functional_annotation/Corynactis_australis_JBAUv1.transcripts.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 21064
+Total time: 1261 secs
+FINISHED
+[Wed 07 Jun 2023 07:41:17 PM EDT]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Wed 07 Jun 2023 07:20:08 PM EDT
+Finished: at Wed 07 Jun 2023 07:41:17 PM EDT
+ExitStatus: 0
+=====================================================================

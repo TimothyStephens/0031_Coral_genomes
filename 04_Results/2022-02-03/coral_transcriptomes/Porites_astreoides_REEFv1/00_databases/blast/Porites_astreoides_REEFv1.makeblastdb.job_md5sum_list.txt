@@ -1,0 +1,2 @@
+c32aa25e9ac9d5a8c8783b46ec0980e7  Porites_astreoides_REEFv1.transcripts.cds.fna
+791b1bed7b818a1103f2c7879919e913  Porites_astreoides_REEFv1.transcripts.pep.faa

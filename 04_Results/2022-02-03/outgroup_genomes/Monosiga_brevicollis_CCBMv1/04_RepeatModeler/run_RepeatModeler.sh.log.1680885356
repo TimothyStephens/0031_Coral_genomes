@@ -1,0 +1,14 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 07 Apr 2023 12:35:56 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Monosiga_brevicollis_CCBMv1/04_RepeatModeler
+=====================================================================
+
+[Fri 07 Apr 2023 12:35:57 PM EDT]      CMD: BuildDatabase -name Monosiga_brevicollis_CCBMv1.assembly.fasta.RMDB Monosiga_brevicollis_CCBMv1.assembly.fasta 1> BuildDatabase.log 2>&1
+[Fri 07 Apr 2023 12:36:08 PM EDT]      CMD: RepeatModeler -database Monosiga_brevicollis_CCBMv1.assembly.fasta.RMDB -pa 12 -LTRStruct -genomeSampleSizeMax 27000000 1> RepeatModeler.log 2>&1
+
+=====================================================================
+Started: at Fri 07 Apr 2023 12:35:56 PM EDT
+Finished: at Fri 07 Apr 2023 01:35:36 PM EDT
+ExitStatus: 0
+=====================================================================

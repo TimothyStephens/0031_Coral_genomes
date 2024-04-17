@@ -1,0 +1,43 @@
+# Files
+Genome file	Salpingoeca_rosetta_HIUSv1.assembly.fasta
+GFF file	Salpingoeca_rosetta_HIUSv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	55440309
+Total contig length (bp)	51703572
+Number of scaffolds	154
+Number of contigs	3086
+N50 of scaffolds (bp)	1519553
+N50 of contigs (bp)	34760
+Percent gaps	6.740
+Percent GC	56.01
+
+# Gene stats (combined CDS+introns)
+Number of genes	11618
+Total gene length	45032346
+Average gene length (bp)	3876.08
+Gene percent GC	56.7
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1997.81
+Average number of CDS per gene/transcript	8.4444
+
+# CDS stats
+Number of CDS	98107
+Total CDS length (bp)	23210543
+Average CDS length (bp)	236.584
+Number of single-CDS transcripts	1059
+Percent single-CDS transcripts	9.11517
+CDS percent GC	60.38
+
+# Intron stats (predicted between CDS features)
+Number of introns	86489
+Total intron length (bp)	21821803
+Average intron length (bp)	252.307
+Intron percent GC	52.52
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	11451
+Total intergenic region length (bp)	9841012
+Average intergenic region length (bp)	859.402
+Intergenic region percent GC	52.25

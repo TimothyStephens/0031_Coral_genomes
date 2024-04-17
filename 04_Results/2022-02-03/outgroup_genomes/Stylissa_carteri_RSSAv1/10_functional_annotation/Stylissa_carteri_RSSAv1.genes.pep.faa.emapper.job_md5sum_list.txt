@@ -1,0 +1,2 @@
+910a64e1319dbcb24416e4ae15454f0a  Stylissa_carteri_RSSAv1.genes.pep.faa
+910a64e1319dbcb24416e4ae15454f0a  ../00_databases/Stylissa_carteri_RSSAv1.genes.pep.faa

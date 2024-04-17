@@ -1,0 +1,2 @@
+36c150161851d4d550d542c227e0ad93  Renilla_muelleri_FLUSv1.genes.pep.faa
+36c150161851d4d550d542c227e0ad93  ../00_databases/Renilla_muelleri_FLUSv1.genes.pep.faa

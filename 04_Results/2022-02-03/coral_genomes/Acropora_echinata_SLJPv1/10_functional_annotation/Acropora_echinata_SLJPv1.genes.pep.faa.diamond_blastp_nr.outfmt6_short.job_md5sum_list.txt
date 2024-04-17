@@ -1,0 +1,2 @@
+11c0f3d4c22787e9fcc959c27c1e6379  Acropora_echinata_SLJPv1.genes.pep.faa
+e24be93a3d23fa48f106886a78ac50ae  ../00_databases/Acropora_echinata_SLJPv1.genes.pep.faa

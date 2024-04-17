@@ -1,0 +1,2 @@
+edd75f4ab5405068864175bdd15285ee  Clytia_hemispaerica_NANAv1.assembly.fasta
+3aaea5e51f0684e2e925c08a81b8e812  Clytia_hemispaerica_NANAv1.genes.gff3

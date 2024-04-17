@@ -1,0 +1,2 @@
+8f80f54538bea2a6c0606d4106d2a52f  Porpita_porpita_YOJPv1.transcripts.cds.fna
+0b77c6900c63cf7409a8de88c3feba4d  Porpita_porpita_YOJPv1.transcripts.pep.faa

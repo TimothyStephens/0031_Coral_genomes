@@ -1,0 +1,2 @@
+9c7785d973aae5cbb506379c9381b4b7  Salpingoeca_rosetta_HIUSv1.genes.pep.faa
+9c7785d973aae5cbb506379c9381b4b7  ../00_databases/Salpingoeca_rosetta_HIUSv1.genes.pep.faa

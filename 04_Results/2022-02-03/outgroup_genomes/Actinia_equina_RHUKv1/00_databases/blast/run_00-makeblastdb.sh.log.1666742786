@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 08:06:26 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Actinia_equina_RHUKv1/00_databases/blast
+=====================================================================
+
+[Tue 25 Oct 2022 08:06:28 PM EDT]      CMD: md5sum Actinia_equina_RHUKv1.assembly.fasta Actinia_equina_RHUKv1.genes.cds.fna Actinia_equina_RHUKv1.genes.pep.faa | tee Actinia_equina_RHUKv1.makeblastdb.job_md5sum_list.txt
+fe7ab9b3d04b6e6637849bec20c6f98b  Actinia_equina_RHUKv1.assembly.fasta
+6c852a9ca42c1ff9a47fb228279545b7  Actinia_equina_RHUKv1.genes.cds.fna
+a2bc5963199a4dd8bcbbee6e55e28c93  Actinia_equina_RHUKv1.genes.pep.faa
+[Tue 25 Oct 2022 08:06:29 PM EDT]      CMD: makeblastdb -dbtype nucl -in Actinia_equina_RHUKv1.assembly.fasta
+
+
+Building a new DB, current time: 10/25/2022 20:06:29
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Actinia_equina_RHUKv1/00_databases/blast/Actinia_equina_RHUKv1.assembly.fasta
+New DB title:  Actinia_equina_RHUKv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1486 sequences in 3.79377 seconds.
+
+
+[Tue 25 Oct 2022 08:06:33 PM EDT]      CMD: makeblastdb -dbtype nucl -in Actinia_equina_RHUKv1.genes.cds.fna
+
+
+Building a new DB, current time: 10/25/2022 20:06:33
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Actinia_equina_RHUKv1/00_databases/blast/Actinia_equina_RHUKv1.genes.cds.fna
+New DB title:  Actinia_equina_RHUKv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 47671 sequences in 1.60698 seconds.
+
+
+[Tue 25 Oct 2022 08:06:35 PM EDT]      CMD: makeblastdb -dbtype prot -in Actinia_equina_RHUKv1.genes.pep.faa
+
+
+Building a new DB, current time: 10/25/2022 20:06:35
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Actinia_equina_RHUKv1/00_databases/blast/Actinia_equina_RHUKv1.genes.pep.faa
+New DB title:  Actinia_equina_RHUKv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 47671 sequences in 1.25417 seconds.
+
+
+
+=====================================================================
+Started: at Tue 25 Oct 2022 08:06:26 PM EDT
+Finished: at Tue 25 Oct 2022 08:06:36 PM EDT
+ExitStatus: 0
+=====================================================================

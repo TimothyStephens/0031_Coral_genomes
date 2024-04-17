@@ -1,0 +1,3 @@
+be1350ceabb85c8b731790b25441da57  Renilla_reniformis_FLUSv1.assembly.fasta
+e308d2ed64d9dec2b678da31d9ed2f3d  Renilla_reniformis_FLUSv1.genes.cds.fna
+8b882a30a2de5ed54f04c34b8d140ee7  Renilla_reniformis_FLUSv1.genes.pep.faa

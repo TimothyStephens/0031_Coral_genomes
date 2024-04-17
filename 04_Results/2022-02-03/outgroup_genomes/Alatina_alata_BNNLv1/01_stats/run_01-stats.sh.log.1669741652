@@ -1,0 +1,16 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 29 Nov 2022 12:07:32 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Alatina_alata_BNNLv1/01_stats
+=====================================================================
+
+[Tue 29 Nov 2022 12:07:34 PM EST]      CMD: md5sum Alatina_alata_BNNLv1.assembly.fasta | tee Alatina_alata_BNNLv1.genome_stats.job_md5sum_list.txt
+11f66e0dcbcd74b05c997663476d8f37  Alatina_alata_BNNLv1.assembly.fasta
+[Tue 29 Nov 2022 12:07:37 PM EST]      CMD: ./genome_stats.tmp Alatina_alata_BNNLv1.assembly.fasta > Alatina_alata_BNNLv1.GeneStats.genome.tsv
+[Tue 29 Nov 2022 12:07:47 PM EST]      CMD: ./CDS_stats Alatina_alata_BNNLv1.genes.cds.fna > Alatina_alata_BNNLv1.GeneStats.CDS.tsv
+
+=====================================================================
+Started: at Tue 29 Nov 2022 12:07:32 PM EST
+Finished: at Tue 29 Nov 2022 12:07:48 PM EST
+ExitStatus: 0
+=====================================================================

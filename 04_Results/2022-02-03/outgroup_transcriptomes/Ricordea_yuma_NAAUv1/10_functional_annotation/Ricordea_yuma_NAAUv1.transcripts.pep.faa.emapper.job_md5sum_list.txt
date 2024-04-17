@@ -1,0 +1,2 @@
+1bc2dccd98689221c7db1f02eeb51b94  Ricordea_yuma_NAAUv1.transcripts.pep.faa
+1bc2dccd98689221c7db1f02eeb51b94  ../00_databases/Ricordea_yuma_NAAUv1.transcripts.pep.faa

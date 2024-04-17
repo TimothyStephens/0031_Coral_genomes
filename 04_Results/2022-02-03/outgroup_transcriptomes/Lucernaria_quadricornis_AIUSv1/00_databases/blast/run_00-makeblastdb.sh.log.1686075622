@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 02:20:22 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Lucernaria_quadricornis_AIUSv1/00_databases/blast
+=====================================================================
+
+[Tue 06 Jun 2023 02:20:23 PM EDT]      CMD: md5sum Lucernaria_quadricornis_AIUSv1.transcripts.cds.fna Lucernaria_quadricornis_AIUSv1.transcripts.pep.faa | tee Lucernaria_quadricornis_AIUSv1.makeblastdb.job_md5sum_list.txt
+0a0e77c190d61cb5abc0f44a96fca6ad  Lucernaria_quadricornis_AIUSv1.transcripts.cds.fna
+3fa888d767c275caf14a30b77eb5feac  Lucernaria_quadricornis_AIUSv1.transcripts.pep.faa
+[Tue 06 Jun 2023 02:20:23 PM EDT]      CMD: makeblastdb -dbtype nucl -in Lucernaria_quadricornis_AIUSv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 06/06/2023 14:20:23
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Lucernaria_quadricornis_AIUSv1/00_databases/blast/Lucernaria_quadricornis_AIUSv1.transcripts.cds.fna
+New DB title:  Lucernaria_quadricornis_AIUSv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 24354 sequences in 0.417073 seconds.
+
+
+[Tue 06 Jun 2023 02:20:24 PM EDT]      CMD: makeblastdb -dbtype prot -in Lucernaria_quadricornis_AIUSv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 06/06/2023 14:20:24
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Lucernaria_quadricornis_AIUSv1/00_databases/blast/Lucernaria_quadricornis_AIUSv1.transcripts.pep.faa
+New DB title:  Lucernaria_quadricornis_AIUSv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 24354 sequences in 0.338813 seconds.
+
+
+
+=====================================================================
+Started: at Tue 06 Jun 2023 02:20:22 PM EDT
+Finished: at Tue 06 Jun 2023 02:20:24 PM EDT
+ExitStatus: 0
+=====================================================================

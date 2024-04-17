@@ -1,0 +1,2 @@
+df634167b6c2db26cdcf5c89f0cfcf6d  Amphimedon_queenslandica_HIAUv1.1.assembly.fasta
+9a17318f2ecb5d2495152b62fecaf3cb  Amphimedon_queenslandica_HIAUv1.1.genes.gff3

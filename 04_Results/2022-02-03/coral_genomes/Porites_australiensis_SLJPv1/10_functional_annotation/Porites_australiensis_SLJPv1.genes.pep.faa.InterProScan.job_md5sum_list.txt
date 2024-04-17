@@ -1,0 +1,2 @@
+64126cfc6352fddf8a8ff73084f18027  Porites_australiensis_SLJPv1.genes.pep.faa
+1c2f35cb7aaa9482c3f7a9ba6eec4917  ../00_databases/Porites_australiensis_SLJPv1.genes.pep.faa

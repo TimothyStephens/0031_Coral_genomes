@@ -1,0 +1,2 @@
+3c1b2893e4220630789ebeb434d49217  Corallium_rubrum_MRFRv1.transcripts.cds.fna
+8040d6b56b21f66e2288a68868a8d343  Corallium_rubrum_MRFRv1.transcripts.pep.faa

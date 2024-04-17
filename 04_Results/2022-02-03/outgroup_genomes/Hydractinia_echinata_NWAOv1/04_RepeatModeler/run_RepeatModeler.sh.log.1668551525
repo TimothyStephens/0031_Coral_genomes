@@ -1,0 +1,33 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue Nov 15 17:32:05 EST 2022
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydractinia_echinata_NWAOv1/04_RepeatModeler
+=====================================================================
+
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+[Tue Nov 15 17:32:05 EST 2022]      CMD: BuildDatabase -name Hydractinia_echinata_NWAOv1.assembly.fasta.RMDB Hydractinia_echinata_NWAOv1.assembly.fasta 1> BuildDatabase.log 2>&1
+[Tue Nov 15 17:32:11 EST 2022]      CMD: RepeatModeler -database Hydractinia_echinata_NWAOv1.assembly.fasta.RMDB -pa 5 -LTRStruct 1> RepeatModeler.log 2>&1
+
+=====================================================================
+Started: at Tue Nov 15 17:32:05 EST 2022
+Finished: at Thu Nov 17 02:24:08 EST 2022
+ExitStatus: 0
+=====================================================================

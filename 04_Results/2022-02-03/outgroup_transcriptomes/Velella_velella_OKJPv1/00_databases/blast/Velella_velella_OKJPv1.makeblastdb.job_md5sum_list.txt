@@ -1,0 +1,2 @@
+1150b5ea7e388f3d569934fc1ee7138f  Velella_velella_OKJPv1.transcripts.cds.fna
+047484a24c8c3386019352e42e81f6ba  Velella_velella_OKJPv1.transcripts.pep.faa

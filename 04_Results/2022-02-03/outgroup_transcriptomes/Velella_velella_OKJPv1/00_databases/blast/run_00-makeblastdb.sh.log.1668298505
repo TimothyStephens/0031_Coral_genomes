@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat 12 Nov 2022 07:15:05 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Velella_velella_OKJPv1/00_databases/blast
+=====================================================================
+
+[Sat 12 Nov 2022 07:15:07 PM EST]      CMD: md5sum Velella_velella_OKJPv1.transcripts.cds.fna Velella_velella_OKJPv1.transcripts.pep.faa | tee Velella_velella_OKJPv1.makeblastdb.job_md5sum_list.txt
+1150b5ea7e388f3d569934fc1ee7138f  Velella_velella_OKJPv1.transcripts.cds.fna
+047484a24c8c3386019352e42e81f6ba  Velella_velella_OKJPv1.transcripts.pep.faa
+[Sat 12 Nov 2022 07:15:07 PM EST]      CMD: makeblastdb -dbtype nucl -in Velella_velella_OKJPv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 11/12/2022 19:15:07
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Velella_velella_OKJPv1/00_databases/blast/Velella_velella_OKJPv1.transcripts.cds.fna
+New DB title:  Velella_velella_OKJPv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 87289 sequences in 1.84647 seconds.
+
+
+[Sat 12 Nov 2022 07:15:09 PM EST]      CMD: makeblastdb -dbtype prot -in Velella_velella_OKJPv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 11/12/2022 19:15:09
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Velella_velella_OKJPv1/00_databases/blast/Velella_velella_OKJPv1.transcripts.pep.faa
+New DB title:  Velella_velella_OKJPv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 87289 sequences in 1.61843 seconds.
+
+
+
+=====================================================================
+Started: at Sat 12 Nov 2022 07:15:05 PM EST
+Finished: at Sat 12 Nov 2022 07:15:10 PM EST
+ExitStatus: 0
+=====================================================================

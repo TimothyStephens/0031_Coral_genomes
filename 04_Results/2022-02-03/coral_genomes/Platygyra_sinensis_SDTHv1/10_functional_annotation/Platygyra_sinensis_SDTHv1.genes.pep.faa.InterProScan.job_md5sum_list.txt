@@ -1,0 +1,2 @@
+6d7fcb3f9d01b8a07476499387ba1128  Platygyra_sinensis_SDTHv1.genes.pep.faa
+6d7fcb3f9d01b8a07476499387ba1128  ../00_databases/Platygyra_sinensis_SDTHv1.genes.pep.faa

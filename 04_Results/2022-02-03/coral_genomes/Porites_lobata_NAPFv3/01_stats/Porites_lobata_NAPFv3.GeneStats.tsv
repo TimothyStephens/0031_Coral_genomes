@@ -1,0 +1,43 @@
+# Files
+Genome file	Porites_lobata_NAPFv3.assembly.fasta
+GFF file	Porites_lobata_NAPFv3.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	646152978
+Total contig length (bp)	646152978
+Number of scaffolds	1098
+Number of contigs	1098
+N50 of scaffolds (bp)	2154615
+N50 of contigs (bp)	2154615
+Percent gaps	0.000
+Percent GC	39.13
+
+# Gene stats (combined CDS+introns)
+Number of genes	42872
+Total gene length	300446423
+Average gene length (bp)	7007.99
+Gene percent GC	39.44
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1383.8
+Average number of CDS per gene/transcript	5.68238
+
+# CDS stats
+Number of CDS	243615
+Total CDS length (bp)	59326467
+Average CDS length (bp)	243.526
+Number of single-CDS transcripts	7496
+Percent single-CDS transcripts	17.4846
+CDS percent GC	43.9
+
+# Intron stats (predicted between CDS features)
+Number of introns	200743
+Total intron length (bp)	241119956
+Average intron length (bp)	1201.14
+Intron percent GC	38.35
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	39307
+Total intergenic region length (bp)	324622063
+Average intergenic region length (bp)	8258.63
+Intergenic region percent GC	38.88

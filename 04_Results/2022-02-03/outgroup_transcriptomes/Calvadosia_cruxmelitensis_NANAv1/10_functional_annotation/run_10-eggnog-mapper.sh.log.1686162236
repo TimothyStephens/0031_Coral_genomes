@@ -1,0 +1,107 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 07 Jun 2023 02:23:56 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Calvadosia_cruxmelitensis_NANAv1/10_functional_annotation
+=====================================================================
+
+[Wed 07 Jun 2023 02:23:57 PM EDT]      CMD: md5sum Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa ../00_databases/Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa | tee Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa.emapper.job_md5sum_list.txt
+685ae686baf71abac7a4025239e919eb  Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa
+685ae686baf71abac7a4025239e919eb  ../00_databases/Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa
+[Wed 07 Jun 2023 02:23:57 PM EDT]      CMD: emapper.py -i Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa --output Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 3.337860107421875e-06 0.00 q/s (% mem usage: 84.30, % mem avail: 15.67)
+[1;34mTime to load the DB into memory: 82.68300342559814[0m
+#  emapper-2.1.6
+# emapper.py  -i Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa --output Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Calvadosia_cruxmelitensis_NANAv1/10_functional_annotation/Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa --threads 96 -o /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Calvadosia_cruxmelitensis_NANAv1/10_functional_annotation/Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+CREATED ESL_REFORMAT DB. USING HMMSEARCH
+Namespace(Z=40000000, call_info='## Wed Jun  7 14:32:43 2023\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa --output Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem\n##', clean_overlaps='hmmsearch_clans', cpu=96, cpus_per_worker=96, cut_ga=True, db='/scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Calvadosia_cruxmelitensis_NANAv1/10_functional_annotation/tmpiv0d55bi', dbtype='seqdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='hmm', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Calvadosia_cruxmelitensis_NANAv1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+500 892.2145984172821 0.56 q/s (% mem usage: 95.20, % mem avail: 4.81)
+1000 894.1451725959778 1.12 q/s (% mem usage: 95.20, % mem avail: 4.81)
+1500 895.8758087158203 1.67 q/s (% mem usage: 95.20, % mem avail: 4.82)
+2000 897.4779481887817 2.23 q/s (% mem usage: 95.20, % mem avail: 4.82)
+2500 899.2423946857452 2.78 q/s (% mem usage: 95.20, % mem avail: 4.82)
+3000 900.7419514656067 3.33 q/s (% mem usage: 95.20, % mem avail: 4.82)
+3500 902.2150359153748 3.88 q/s (% mem usage: 95.20, % mem avail: 4.82)
+4000 903.8403570652008 4.43 q/s (% mem usage: 95.20, % mem avail: 4.82)
+4500 905.4219954013824 4.97 q/s (% mem usage: 95.20, % mem avail: 4.82)
+5000 906.8440799713135 5.51 q/s (% mem usage: 95.20, % mem avail: 4.82)
+5500 909.714480638504 6.05 q/s (% mem usage: 95.20, % mem avail: 4.82)
+6000 911.3561232089996 6.58 q/s (% mem usage: 95.20, % mem avail: 4.82)
+6500 912.9051837921143 7.12 q/s (% mem usage: 95.20, % mem avail: 4.82)
+7000 914.4654564857483 7.65 q/s (% mem usage: 95.20, % mem avail: 4.82)
+7500 915.7758045196533 8.19 q/s (% mem usage: 95.20, % mem avail: 4.82)
+8000 917.3158128261566 8.72 q/s (% mem usage: 95.20, % mem avail: 4.82)
+8500 918.9878122806549 9.25 q/s (% mem usage: 95.20, % mem avail: 4.82)
+9000 920.5760762691498 9.78 q/s (% mem usage: 95.20, % mem avail: 4.82)
+9500 922.2366120815277 10.30 q/s (% mem usage: 95.20, % mem avail: 4.82)
+10000 923.8603219985962 10.82 q/s (% mem usage: 95.20, % mem avail: 4.82)
+10500 925.7184228897095 11.34 q/s (% mem usage: 95.20, % mem avail: 4.82)
+11000 927.4917590618134 11.86 q/s (% mem usage: 95.20, % mem avail: 4.82)
+11500 928.7168805599213 12.38 q/s (% mem usage: 95.20, % mem avail: 4.82)
+12000 930.0548820495605 12.90 q/s (% mem usage: 95.20, % mem avail: 4.82)
+12500 932.3888132572174 13.41 q/s (% mem usage: 95.20, % mem avail: 4.82)
+13000 933.8847563266754 13.92 q/s (% mem usage: 95.20, % mem avail: 4.82)
+13500 935.2736549377441 14.43 q/s (% mem usage: 95.20, % mem avail: 4.82)
+14000 936.3468019962311 14.95 q/s (% mem usage: 95.20, % mem avail: 4.82)
+14500 937.3170449733734 15.47 q/s (% mem usage: 95.20, % mem avail: 4.82)
+15000 938.4923532009125 15.98 q/s (% mem usage: 95.20, % mem avail: 4.82)
+15500 939.3581168651581 16.50 q/s (% mem usage: 95.20, % mem avail: 4.82)
+16000 940.0683875083923 17.02 q/s (% mem usage: 95.20, % mem avail: 4.82)
+16500 940.4926035404205 17.54 q/s (% mem usage: 95.20, % mem avail: 4.82)
+17000 942.0263040065765 18.05 q/s (% mem usage: 95.20, % mem avail: 4.82)
+17500 943.6423642635345 18.55 q/s (% mem usage: 95.20, % mem avail: 4.82)
+18000 945.0616579055786 19.05 q/s (% mem usage: 95.20, % mem avail: 4.82)
+18500 946.4987027645111 19.55 q/s (% mem usage: 95.20, % mem avail: 4.82)
+19000 948.0626847743988 20.04 q/s (% mem usage: 95.20, % mem avail: 4.82)
+19500 949.4373037815094 20.54 q/s (% mem usage: 95.20, % mem avail: 4.82)
+20000 950.7811307907104 21.04 q/s (% mem usage: 95.20, % mem avail: 4.82)
+20500 952.3289203643799 21.53 q/s (% mem usage: 95.20, % mem avail: 4.82)
+20650 953.1764307022095 21.66 q/s (% mem usage: 95.10, % mem avail: 4.91)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Calvadosia_cruxmelitensis_NANAv1/10_functional_annotation/Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Calvadosia_cruxmelitensis_NANAv1/10_functional_annotation/Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Calvadosia_cruxmelitensis_NANAv1/10_functional_annotation/Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Calvadosia_cruxmelitensis_NANAv1/10_functional_annotation/Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Calvadosia_cruxmelitensis_NANAv1/10_functional_annotation/Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 20650
+Total time: 1288 secs
+FINISHED
+[Wed 07 Jun 2023 02:45:30 PM EDT]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Wed 07 Jun 2023 02:23:56 PM EDT
+Finished: at Wed 07 Jun 2023 02:45:30 PM EDT
+ExitStatus: 0
+=====================================================================

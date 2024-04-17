@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 09 Nov 2022 07:29:41 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_reniformis_FLUSv1/00_databases/blast
+=====================================================================
+
+[Wed 09 Nov 2022 07:29:43 PM EST]      CMD: md5sum Renilla_reniformis_FLUSv1.assembly.fasta Renilla_reniformis_FLUSv1.genes.cds.fna Renilla_reniformis_FLUSv1.genes.pep.faa | tee Renilla_reniformis_FLUSv1.makeblastdb.job_md5sum_list.txt
+be1350ceabb85c8b731790b25441da57  Renilla_reniformis_FLUSv1.assembly.fasta
+e308d2ed64d9dec2b678da31d9ed2f3d  Renilla_reniformis_FLUSv1.genes.cds.fna
+8b882a30a2de5ed54f04c34b8d140ee7  Renilla_reniformis_FLUSv1.genes.pep.faa
+[Wed 09 Nov 2022 07:29:43 PM EST]      CMD: makeblastdb -dbtype nucl -in Renilla_reniformis_FLUSv1.assembly.fasta
+
+
+Building a new DB, current time: 11/09/2022 19:29:43
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_reniformis_FLUSv1/00_databases/blast/Renilla_reniformis_FLUSv1.assembly.fasta
+New DB title:  Renilla_reniformis_FLUSv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 171053 sequences in 6.56625 seconds.
+
+
+[Wed 09 Nov 2022 07:29:50 PM EST]      CMD: makeblastdb -dbtype nucl -in Renilla_reniformis_FLUSv1.genes.cds.fna
+
+
+Building a new DB, current time: 11/09/2022 19:29:50
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_reniformis_FLUSv1/00_databases/blast/Renilla_reniformis_FLUSv1.genes.cds.fna
+New DB title:  Renilla_reniformis_FLUSv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 12689 sequences in 0.574262 seconds.
+
+
+[Wed 09 Nov 2022 07:29:51 PM EST]      CMD: makeblastdb -dbtype prot -in Renilla_reniformis_FLUSv1.genes.pep.faa
+
+
+Building a new DB, current time: 11/09/2022 19:29:51
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_reniformis_FLUSv1/00_databases/blast/Renilla_reniformis_FLUSv1.genes.pep.faa
+New DB title:  Renilla_reniformis_FLUSv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 12689 sequences in 0.410802 seconds.
+
+
+
+=====================================================================
+Started: at Wed 09 Nov 2022 07:29:41 PM EST
+Finished: at Wed 09 Nov 2022 07:29:51 PM EST
+ExitStatus: 0
+=====================================================================

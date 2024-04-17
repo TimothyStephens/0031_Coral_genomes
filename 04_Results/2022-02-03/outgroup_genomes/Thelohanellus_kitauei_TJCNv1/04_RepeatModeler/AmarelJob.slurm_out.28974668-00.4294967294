@@ -1,0 +1,21 @@
+=====================================================================
+Slurm config version 0.4
+Starting on hal0262.amarel.rutgers.edu at Tue Jun  6 15:25:35 EDT 2023
+Nodelist hal0262
+Current JOB_ID is 28974668
+Current array index number is NA
+Working directory is /scratch/ts942/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_genomes/Thelohanellus_kitauei_TJCNv1/04_RepeatModeler
+=====================================================================
+
+[Tue Jun  6 20:52:22 EDT 2023]   - Done!
+
+=====================================================================
+Started: at Tue Jun  6 15:25:35 EDT 2023 on hal0262.amarel.rutgers.edu
+Finished: at Tue Jun  6 20:52:22 EDT 2023
+ExitStatus: 0
+
+   JobName   NTasks  AllocCPUS     ReqMem     MaxRSS  MaxVMSize  MaxDiskRead MaxDiskWrite   TotalCPU    CPUTime    Elapsed 
+---------- -------- ---------- ---------- ---------- ---------- ------------ ------------ ---------- ---------- ---------- 
+ AmarelJob                  24      120Gn                                                   00:00:00 5-10:42:48   05:26:47 
+    extern        1         24      120Gn                                                   00:00:00 5-10:42:48   05:26:47 
+=====================================================================

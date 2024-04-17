@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 14 Jun 2022 01:44:01 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Platygyra_carnosus_REEFv1/00_databases/blast
+=====================================================================
+
+[Tue 14 Jun 2022 01:44:02 PM EDT]      CMD: md5sum Platygyra_carnosus_REEFv1.transcripts.cds.fna Platygyra_carnosus_REEFv1.transcripts.pep.faa | tee Platygyra_carnosus_REEFv1.makeblastdb.job_md5sum_list.txt
+f90a7abf06ad9aff15da55c886e848af  Platygyra_carnosus_REEFv1.transcripts.cds.fna
+fa71f09c098a75c3e12a6d59b1b99851  Platygyra_carnosus_REEFv1.transcripts.pep.faa
+[Tue 14 Jun 2022 01:44:03 PM EDT]      CMD: makeblastdb -dbtype nucl -in Platygyra_carnosus_REEFv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 06/14/2022 13:44:03
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Platygyra_carnosus_REEFv1/00_databases/blast/Platygyra_carnosus_REEFv1.transcripts.cds.fna
+New DB title:  Platygyra_carnosus_REEFv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 66449 sequences in 1.58909 seconds.
+
+
+[Tue 14 Jun 2022 01:44:04 PM EDT]      CMD: makeblastdb -dbtype prot -in Platygyra_carnosus_REEFv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 06/14/2022 13:44:04
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Platygyra_carnosus_REEFv1/00_databases/blast/Platygyra_carnosus_REEFv1.transcripts.pep.faa
+New DB title:  Platygyra_carnosus_REEFv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 66449 sequences in 1.0689 seconds.
+
+
+
+=====================================================================
+Started: at Tue 14 Jun 2022 01:44:01 PM EDT
+Finished: at Tue 14 Jun 2022 01:44:06 PM EDT
+ExitStatus: 0
+=====================================================================

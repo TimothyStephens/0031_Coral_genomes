@@ -1,0 +1,21 @@
+=====================================================================
+Slurm config version 0.4
+Starting on hal0047.amarel.rutgers.edu at Tue Nov 15 01:43:24 EST 2022
+Nodelist hal0047
+Current JOB_ID is 22962130
+Current array index number is NA
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hoilungia_hongkongensis_HCHKv1/05_RepeatMasker
+=====================================================================
+
+[Tue Nov 15 05:12:21 EST 2022]   - Done!
+
+=====================================================================
+Started: at Tue Nov 15 01:43:24 EST 2022 on hal0047.amarel.rutgers.edu
+Finished: at Tue Nov 15 05:12:21 EST 2022
+ExitStatus: 0
+
+   JobName   NTasks  AllocCPUS     ReqMem     MaxRSS  MaxVMSize  MaxDiskRead MaxDiskWrite   TotalCPU    CPUTime    Elapsed 
+---------- -------- ---------- ---------- ---------- ---------- ------------ ------------ ---------- ---------- ---------- 
+ AmarelJob                  24      120Gn                                                   00:00:00 3-11:34:48   03:28:57 
+    extern        1         24      120Gn                                                   00:00:00 3-11:34:48   03:28:57 
+=====================================================================

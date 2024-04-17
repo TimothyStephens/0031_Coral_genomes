@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 09 Nov 2022 07:26:27 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Alatina_alata_BNNLv1/00_databases/blast
+=====================================================================
+
+[Wed 09 Nov 2022 07:26:29 PM EST]      CMD: md5sum Alatina_alata_BNNLv1.assembly.fasta Alatina_alata_BNNLv1.genes.cds.fna Alatina_alata_BNNLv1.genes.pep.faa | tee Alatina_alata_BNNLv1.makeblastdb.job_md5sum_list.txt
+11f66e0dcbcd74b05c997663476d8f37  Alatina_alata_BNNLv1.assembly.fasta
+e4e2c8c90d4ece63d8fd41a4bccb1682  Alatina_alata_BNNLv1.genes.cds.fna
+34d7286aee36838d628abe3ea36711c4  Alatina_alata_BNNLv1.genes.pep.faa
+[Wed 09 Nov 2022 07:26:32 PM EST]      CMD: makeblastdb -dbtype nucl -in Alatina_alata_BNNLv1.assembly.fasta
+
+
+Building a new DB, current time: 11/09/2022 19:26:32
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Alatina_alata_BNNLv1/00_databases/blast/Alatina_alata_BNNLv1.assembly.fasta
+New DB title:  Alatina_alata_BNNLv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 337988 sequences in 25.8334 seconds.
+
+
+[Wed 09 Nov 2022 07:26:58 PM EST]      CMD: makeblastdb -dbtype nucl -in Alatina_alata_BNNLv1.genes.cds.fna
+
+
+Building a new DB, current time: 11/09/2022 19:26:58
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Alatina_alata_BNNLv1/00_databases/blast/Alatina_alata_BNNLv1.genes.cds.fna
+New DB title:  Alatina_alata_BNNLv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 66156 sequences in 2.59092 seconds.
+
+
+[Wed 09 Nov 2022 07:27:01 PM EST]      CMD: makeblastdb -dbtype prot -in Alatina_alata_BNNLv1.genes.pep.faa
+
+
+Building a new DB, current time: 11/09/2022 19:27:01
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Alatina_alata_BNNLv1/00_databases/blast/Alatina_alata_BNNLv1.genes.pep.faa
+New DB title:  Alatina_alata_BNNLv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 66156 sequences in 1.90202 seconds.
+
+
+
+=====================================================================
+Started: at Wed 09 Nov 2022 07:26:27 PM EST
+Finished: at Wed 09 Nov 2022 07:27:03 PM EST
+ExitStatus: 0
+=====================================================================

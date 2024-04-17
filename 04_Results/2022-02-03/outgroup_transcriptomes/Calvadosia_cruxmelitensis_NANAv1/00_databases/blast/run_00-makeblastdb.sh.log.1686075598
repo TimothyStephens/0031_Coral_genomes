@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 02:19:58 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Calvadosia_cruxmelitensis_NANAv1/00_databases/blast
+=====================================================================
+
+[Tue 06 Jun 2023 02:20:00 PM EDT]      CMD: md5sum Calvadosia_cruxmelitensis_NANAv1.transcripts.cds.fna Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa | tee Calvadosia_cruxmelitensis_NANAv1.makeblastdb.job_md5sum_list.txt
+4b445558fca2262551f16c2e2b6bf3f7  Calvadosia_cruxmelitensis_NANAv1.transcripts.cds.fna
+685ae686baf71abac7a4025239e919eb  Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa
+[Tue 06 Jun 2023 02:20:00 PM EDT]      CMD: makeblastdb -dbtype nucl -in Calvadosia_cruxmelitensis_NANAv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 06/06/2023 14:20:00
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Calvadosia_cruxmelitensis_NANAv1/00_databases/blast/Calvadosia_cruxmelitensis_NANAv1.transcripts.cds.fna
+New DB title:  Calvadosia_cruxmelitensis_NANAv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 29463 sequences in 0.501153 seconds.
+
+
+[Tue 06 Jun 2023 02:20:00 PM EDT]      CMD: makeblastdb -dbtype prot -in Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 06/06/2023 14:20:00
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Calvadosia_cruxmelitensis_NANAv1/00_databases/blast/Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa
+New DB title:  Calvadosia_cruxmelitensis_NANAv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 29463 sequences in 0.411389 seconds.
+
+
+
+=====================================================================
+Started: at Tue 06 Jun 2023 02:19:58 PM EDT
+Finished: at Tue 06 Jun 2023 02:20:01 PM EDT
+ExitStatus: 0
+=====================================================================

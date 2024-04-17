@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 02:27:57 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Polypodium_hydriforme_OKUSv1/01_stats
+=====================================================================
+
+[Tue 06 Jun 2023 02:27:59 PM EDT]      CMD: md5sum Polypodium_hydriforme_OKUSv1.transcripts.cds.fna | tee Polypodium_hydriforme_OKUSv1.CDS_stats.job_md5sum_list.txt
+ced92c9395dce0fa69863327630fd0d6  Polypodium_hydriforme_OKUSv1.transcripts.cds.fna
+[Tue 06 Jun 2023 02:27:59 PM EDT]      CMD: ./CDS_stats Polypodium_hydriforme_OKUSv1.transcripts.cds.fna > Polypodium_hydriforme_OKUSv1.GeneStats.tsv
+
+=====================================================================
+Started: at Tue 06 Jun 2023 02:27:57 PM EDT
+Finished: at Tue 06 Jun 2023 02:27:59 PM EDT
+ExitStatus: 0
+=====================================================================

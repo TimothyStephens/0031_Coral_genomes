@@ -1,0 +1,32 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat 14 May 2022 04:31:23 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Goniastrea_aspera_REEFv1/10_functional_annotation
+=====================================================================
+
+[Sat 14 May 2022 04:31:24 AM EDT]      CMD: md5sum Goniastrea_aspera_REEFv1.genes.pep.faa ../00_databases/Goniastrea_aspera_REEFv1.genes.pep.faa | tee Goniastrea_aspera_REEFv1.genes.pep.faa.InterProScan.job_md5sum_list.txt
+e32975a9a7d3d216edc91b0be39aa027  Goniastrea_aspera_REEFv1.genes.pep.faa
+e32975a9a7d3d216edc91b0be39aa027  ../00_databases/Goniastrea_aspera_REEFv1.genes.pep.faa
+[Sat 14 May 2022 04:31:24 AM EDT]      CMD: /home/timothy/programs/my_interproscan/interproscan-5.53-87.0/interproscan.sh -dp --goterms --cpu 96 --input Goniastrea_aspera_REEFv1.genes.pep.faa --output-file-base Goniastrea_aspera_REEFv1.genes.pep.faa.InterProScan
+14/05/2022 04:31:25:937 Welcome to InterProScan-5.53-87.0
+14/05/2022 04:31:25:941 Running InterProScan v5 in STANDALONE mode... on Linux
+14/05/2022 04:31:34:323 RunID: coral_20220514_043133839_8cz6
+14/05/2022 04:31:48:197 Loading file /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Goniastrea_aspera_REEFv1/10_functional_annotation/Goniastrea_aspera_REEFv1.genes.pep.faa
+14/05/2022 04:31:48:198 Running the following analyses:
+[CDD-3.18,Coils-2.2.1,Gene3D-4.3.0,Hamap-2020_05,MobiDBLite-2.0,PANTHER-15.0,Pfam-34.0,Phobius-1.01,PIRSF-3.10,PIRSR-2021_02,PRINTS-42.0,ProSitePatterns-2021_01,ProSiteProfiles-2021_01,SFLD-4,SignalP_EUK-4.1,SignalP_GRAM_NEGATIVE-4.1,SignalP_GRAM_POSITIVE-4.1,SMART-7.1,SUPERFAMILY-1.75,TIGRFAM-15.0,TMHMM-2.0c]
+Pre-calculated match lookup service DISABLED.  Please wait for match calculations to complete...
+14/05/2022 04:32:00:638 Uploaded 35802 unique sequences for analysis
+14/05/2022 05:49:46:363 25% completed
+14/05/2022 06:49:46:662 45% completed
+14/05/2022 07:49:46:986 63% completed
+14/05/2022 08:42:56:789 90% completed
+14/05/2022 09:42:57:046 99% completed
+14/05/2022 09:55:38:637 100% done:  InterProScan analyses completed 
+
+[Sat 14 May 2022 09:55:39 AM EDT]      CMD: rm -fr temp
+
+=====================================================================
+Started: at Sat 14 May 2022 04:31:23 AM EDT
+Finished: at Sat 14 May 2022 09:55:39 AM EDT
+ExitStatus: 0
+=====================================================================

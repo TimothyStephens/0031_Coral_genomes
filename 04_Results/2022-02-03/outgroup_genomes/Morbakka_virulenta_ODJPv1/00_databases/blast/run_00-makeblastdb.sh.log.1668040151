@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 09 Nov 2022 07:29:11 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Morbakka_virulenta_ODJPv1/00_databases/blast
+=====================================================================
+
+[Wed 09 Nov 2022 07:29:13 PM EST]      CMD: md5sum Morbakka_virulenta_ODJPv1.assembly.fasta Morbakka_virulenta_ODJPv1.genes.cds.fna Morbakka_virulenta_ODJPv1.genes.pep.faa | tee Morbakka_virulenta_ODJPv1.makeblastdb.job_md5sum_list.txt
+b3781e9b471797f0ffb0a63cf2fbd36f  Morbakka_virulenta_ODJPv1.assembly.fasta
+d3a0f6dda68df1f81f98d1608e7f7993  Morbakka_virulenta_ODJPv1.genes.cds.fna
+37a19c096ba1ca8d8fffe1db02ff5f7e  Morbakka_virulenta_ODJPv1.genes.pep.faa
+[Wed 09 Nov 2022 07:29:16 PM EST]      CMD: makeblastdb -dbtype nucl -in Morbakka_virulenta_ODJPv1.assembly.fasta
+
+
+Building a new DB, current time: 11/09/2022 19:29:16
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Morbakka_virulenta_ODJPv1/00_databases/blast/Morbakka_virulenta_ODJPv1.assembly.fasta
+New DB title:  Morbakka_virulenta_ODJPv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 4538 sequences in 21.5857 seconds.
+
+
+[Wed 09 Nov 2022 07:29:38 PM EST]      CMD: makeblastdb -dbtype nucl -in Morbakka_virulenta_ODJPv1.genes.cds.fna
+
+
+Building a new DB, current time: 11/09/2022 19:29:38
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Morbakka_virulenta_ODJPv1/00_databases/blast/Morbakka_virulenta_ODJPv1.genes.cds.fna
+New DB title:  Morbakka_virulenta_ODJPv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 24278 sequences in 1.65226 seconds.
+
+
+[Wed 09 Nov 2022 07:29:40 PM EST]      CMD: makeblastdb -dbtype prot -in Morbakka_virulenta_ODJPv1.genes.pep.faa
+
+
+Building a new DB, current time: 11/09/2022 19:29:40
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Morbakka_virulenta_ODJPv1/00_databases/blast/Morbakka_virulenta_ODJPv1.genes.pep.faa
+New DB title:  Morbakka_virulenta_ODJPv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 24278 sequences in 0.91015 seconds.
+
+
+
+=====================================================================
+Started: at Wed 09 Nov 2022 07:29:11 PM EST
+Finished: at Wed 09 Nov 2022 07:29:41 PM EST
+ExitStatus: 0
+=====================================================================

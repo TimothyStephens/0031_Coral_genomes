@@ -1,0 +1,2 @@
+0ced58bd1e4a8c4ae96cfa29b7e48c99  Porites_lobata_NAPFv3.assembly.fasta
+6dace9d54f59234d4699ee499b4f3e03  Porites_lobata_NAPFv3.genes.cds.fna

@@ -1,0 +1,32 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed Jul 20 19:00:38 EDT 2022
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_vulgaris_MIJPv3/04_RepeatModeler
+=====================================================================
+
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+[Wed Jul 20 19:00:39 EDT 2022]      CMD: RepeatModeler -database Hydra_vulgaris_MIJPv3.assembly.fasta.RMDB -pa 12 -LTRStruct -recoverDir RM_46431.FriJul151155372022 1>> RepeatModeler.log 2>&1
+
+=====================================================================
+Started: at Wed Jul 20 19:00:38 EDT 2022
+Finished: at Sat Jul 23 03:44:20 EDT 2022
+ExitStatus: 0
+=====================================================================

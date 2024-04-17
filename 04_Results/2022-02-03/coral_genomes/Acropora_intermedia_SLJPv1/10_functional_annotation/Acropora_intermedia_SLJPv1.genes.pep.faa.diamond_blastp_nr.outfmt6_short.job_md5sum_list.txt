@@ -1,0 +1,2 @@
+5aab060e7d366767a2c8e6332385e239  Acropora_intermedia_SLJPv1.genes.pep.faa
+3f9f1f35bd114ec1f4911aa61c59d7ff  ../00_databases/Acropora_intermedia_SLJPv1.genes.pep.faa

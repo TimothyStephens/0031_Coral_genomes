@@ -1,0 +1,55 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Mon Jun 13 11:59:33 EDT 2022
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Exaiptasia_diaphana_CC7v1/05_RepeatMasker
+=====================================================================
+
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+[Mon Jun 13 11:59:35 EDT 2022]      CMD: sed -e 's/Exaiptasia_diaphana_CC7v1___//' Exaiptasia_diaphana_CC7v1.assembly.fasta > genome.fa
+[Mon Jun 13 11:59:36 EDT 2022]      CMD: cat Exaiptasia_diaphana_CC7v1.assembly.fasta.RMDB-families.fa rmlib.fa > custom_repeat_library.fa
+[Mon Jun 13 11:59:36 EDT 2022]      CMD: RepeatMasker -no_is -a -x -gff -pa 5 -lib custom_repeat_library.fa genome.fa 1> RepeatMasker.log 2>&1
+[Mon Jun 13 22:26:21 EDT 2022]      CMD: /scratch/ts942/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/calcDivergenceFromAlign.pl -s genome.fa.divsum genome.fa.align
+.............................................................................................................................................................................................................................................................................................................................................................................................................................................................................Exaiptasia_diaphana_CC7v1	
+[Mon Jun 13 22:26:58 EDT 2022]      CMD: /scratch/ts942/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/createRepeatLandscape.pl -g  -div genome.fa.divsum > genome.fa.RepeatLandscape.html
+[Mon Jun 13 22:26:58 EDT 2022]      CMD: bedtools maskfasta -fi genome.fa -fo genome.fa.softmasked -bed genome.fa.out.gff -soft
+[Mon Jun 13 22:26:59 EDT 2022]      CMD: sed -e "s/^>/>Exaiptasia_diaphana_CC7v1___/" genome.fa.masked | reformat.sh in=stdin.fa out=stdout.fa fastawrap=0 > Exaiptasia_diaphana_CC7v1.assembly.fasta.masked
+java -ea -Xms300m -cp /home/ts942/PROGRAMS/bbmap/current/ jgi.ReformatReads in=stdin.fa out=stdout.fa fastawrap=0
+Executing jgi.ReformatReads [in=stdin.fa, out=stdout.fa, fastawrap=0]
+
+Input is being processed as unpaired
+Input:                  	5065 reads          	258189365 bases
+Output:                 	5065 reads (100.00%) 	258189365 bases (100.00%)
+
+Time:                         	3.226 seconds.
+Reads Processed:        5065 	1.57k reads/sec
+Bases Processed:        258m 	80.04m bases/sec
+[Mon Jun 13 22:27:04 EDT 2022]      CMD: sed -e "s/^>/>Exaiptasia_diaphana_CC7v1___/" genome.fa.softmasked > Exaiptasia_diaphana_CC7v1.assembly.fasta.softmasked
+[Mon Jun 13 22:27:04 EDT 2022]      CMD: awk -F'\t' -vPREFIX="Exaiptasia_diaphana_CC7v1" '{ if($1!~"^#") {print PREFIX"___"$0} else {print $0} }' genome.fa.out.gff > Exaiptasia_diaphana_CC7v1.assembly.fasta.out.gff
+[Mon Jun 13 22:27:05 EDT 2022]      CMD: cp genome.fa.divsum Exaiptasia_diaphana_CC7v1.assembly.fasta.divsum
+[Mon Jun 13 22:27:05 EDT 2022]      CMD: cp genome.fa.tbl Exaiptasia_diaphana_CC7v1.assembly.fasta.tbl
+[Mon Jun 13 22:27:05 EDT 2022]      CMD: tail -n 72 Exaiptasia_diaphana_CC7v1.assembly.fasta.divsum | sed -e 's/ $//' > Exaiptasia_diaphana_CC7v1.assembly.fasta.divsum.Kimura_distance
+[Mon Jun 13 22:27:05 EDT 2022]      CMD: gzip genome.fa.align genome.fa.divsum genome.fa.masked genome.fa.out genome.fa.out.gff genome.fa.softmasked genome.fa.tbl
+
+=====================================================================
+Started: at Mon Jun 13 11:59:33 EDT 2022
+Finished: at Mon Jun 13 22:28:50 EDT 2022
+ExitStatus: 0
+=====================================================================

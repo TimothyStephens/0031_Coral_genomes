@@ -1,0 +1,3 @@
+68835ac04c0ac038976a189dcec17d37  Hydractinia_symbiolongicarpus_NEAOv1.assembly.fasta
+af1d406366ad181efd121492b4a66ab2  Hydractinia_symbiolongicarpus_NEAOv1.genes.cds.fna
+d9857a92f72da76b580911ee2bd5cfdf  Hydractinia_symbiolongicarpus_NEAOv1.genes.pep.faa

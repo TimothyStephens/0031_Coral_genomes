@@ -1,0 +1,2 @@
+1ef625c880d0375c6210068a32111f5e  Hydra_oligactis_GNCHv1.transcripts.pep.faa
+1ef625c880d0375c6210068a32111f5e  ../00_databases/Hydra_oligactis_GNCHv1.transcripts.pep.faa

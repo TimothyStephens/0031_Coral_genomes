@@ -1,0 +1,2 @@
+3a86524eaba334d2ba2bdeebc34d5259  Ctenactis_echinata_NAJPv1.transcripts.pep.faa
+3a86524eaba334d2ba2bdeebc34d5259  ../00_databases/Ctenactis_echinata_NAJPv1.transcripts.pep.faa

@@ -1,0 +1,43 @@
+# Files
+Genome file	Hydra_viridissima_99AUv1.assembly.fasta
+GFF file	Hydra_viridissima_99AUv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	284265305
+Total contig length (bp)	236587078
+Number of scaffolds	2677
+Number of contigs	23863
+N50 of scaffolds (bp)	1079704
+N50 of contigs (bp)	19523
+Percent gaps	16.772
+Percent GC	29.71
+
+# Gene stats (combined CDS+introns)
+Number of genes	21475
+Total gene length	125107979
+Average gene length (bp)	5825.75
+Gene percent GC	29.62
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1456.8
+Average number of CDS per gene/transcript	6.27534
+
+# CDS stats
+Number of CDS	134763
+Total CDS length (bp)	31284741
+Average CDS length (bp)	232.146
+Number of single-CDS transcripts	5639
+Percent single-CDS transcripts	26.2584
+CDS percent GC	36.39
+
+# Intron stats (predicted between CDS features)
+Number of introns	113288
+Total intron length (bp)	93823238
+Average intron length (bp)	828.183
+Intron percent GC	27.03
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	19554
+Total intergenic region length (bp)	140028911
+Average intergenic region length (bp)	7161.14
+Intergenic region percent GC	29.84

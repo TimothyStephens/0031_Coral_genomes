@@ -1,0 +1,2 @@
+60fe5ae7cbab1779d940276853d758ff  Palythoa_variabilis_PCBRv1.transcripts.cds.fna
+399fc347d1e5572b21b85ad47ea303de  Palythoa_variabilis_PCBRv1.transcripts.pep.faa

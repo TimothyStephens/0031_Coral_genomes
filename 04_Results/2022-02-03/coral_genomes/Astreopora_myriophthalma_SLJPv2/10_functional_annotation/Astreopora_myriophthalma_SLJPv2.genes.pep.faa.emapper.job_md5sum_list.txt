@@ -1,0 +1,2 @@
+76a1b563ba12701b10646538c161ea2d  Astreopora_myriophthalma_SLJPv2.genes.pep.faa
+cd6531f545f22f2900feb2ab87f4090b  ../00_databases/Astreopora_myriophthalma_SLJPv2.genes.pep.faa

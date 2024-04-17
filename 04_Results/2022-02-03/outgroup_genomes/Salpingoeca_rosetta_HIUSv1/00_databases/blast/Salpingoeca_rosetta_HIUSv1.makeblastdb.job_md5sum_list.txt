@@ -1,0 +1,3 @@
+351b5027f8a9ce268c7e7b89cfa0490e  Salpingoeca_rosetta_HIUSv1.assembly.fasta
+b8ed0be2a9f7274b1449ace4887b7ed3  Salpingoeca_rosetta_HIUSv1.genes.cds.fna
+9c7785d973aae5cbb506379c9381b4b7  Salpingoeca_rosetta_HIUSv1.genes.pep.faa

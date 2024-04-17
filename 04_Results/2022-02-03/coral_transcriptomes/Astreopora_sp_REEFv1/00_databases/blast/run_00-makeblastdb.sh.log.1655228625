@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 14 Jun 2022 01:43:45 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Astreopora_sp_REEFv1/00_databases/blast
+=====================================================================
+
+[Tue 14 Jun 2022 01:43:46 PM EDT]      CMD: md5sum Astreopora_sp_REEFv1.transcripts.cds.fna Astreopora_sp_REEFv1.transcripts.pep.faa | tee Astreopora_sp_REEFv1.makeblastdb.job_md5sum_list.txt
+54a8fd187c6682c49f5b6362f4a87ea5  Astreopora_sp_REEFv1.transcripts.cds.fna
+e8c4b736c9c49d338adca4461571549b  Astreopora_sp_REEFv1.transcripts.pep.faa
+[Tue 14 Jun 2022 01:43:47 PM EDT]      CMD: makeblastdb -dbtype nucl -in Astreopora_sp_REEFv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 06/14/2022 13:43:48
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Astreopora_sp_REEFv1/00_databases/blast/Astreopora_sp_REEFv1.transcripts.cds.fna
+New DB title:  Astreopora_sp_REEFv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 23921 sequences in 0.590178 seconds.
+
+
+[Tue 14 Jun 2022 01:43:49 PM EDT]      CMD: makeblastdb -dbtype prot -in Astreopora_sp_REEFv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 06/14/2022 13:43:49
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Astreopora_sp_REEFv1/00_databases/blast/Astreopora_sp_REEFv1.transcripts.pep.faa
+New DB title:  Astreopora_sp_REEFv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 23921 sequences in 0.436941 seconds.
+
+
+
+=====================================================================
+Started: at Tue 14 Jun 2022 01:43:45 PM EDT
+Finished: at Tue 14 Jun 2022 01:43:50 PM EDT
+ExitStatus: 0
+=====================================================================

@@ -1,0 +1,101 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 24 Nov 2022 03:01:57 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_viridissima_99AUv1/10_functional_annotation
+=====================================================================
+
+[Thu 24 Nov 2022 03:01:58 PM EST]      CMD: md5sum Hydra_viridissima_99AUv1.genes.pep.faa ../00_databases/Hydra_viridissima_99AUv1.genes.pep.faa | tee Hydra_viridissima_99AUv1.genes.pep.faa.emapper.job_md5sum_list.txt
+fa8ca3c9d9fa1349a61d0c9fa7d72827  Hydra_viridissima_99AUv1.genes.pep.faa
+fa8ca3c9d9fa1349a61d0c9fa7d72827  ../00_databases/Hydra_viridissima_99AUv1.genes.pep.faa
+[Thu 24 Nov 2022 03:01:59 PM EST]      CMD: emapper.py -i Hydra_viridissima_99AUv1.genes.pep.faa --output Hydra_viridissima_99AUv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 4.76837158203125e-06 0.00 q/s (% mem usage: 2.10, % mem avail: 97.90)
+[1;34mTime to load the DB into memory: 48.91207242012024[0m
+#  emapper-2.1.6
+# emapper.py  -i Hydra_viridissima_99AUv1.genes.pep.faa --output Hydra_viridissima_99AUv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_viridissima_99AUv1/10_functional_annotation/Hydra_viridissima_99AUv1.genes.pep.faa --threads 48 -o /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_viridissima_99AUv1/10_functional_annotation/Hydra_viridissima_99AUv1.genes.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+CREATED ESL_REFORMAT DB. USING HMMSEARCH
+Namespace(Z=40000000, call_info='## Thu Nov 24 15:09:43 2022\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Hydra_viridissima_99AUv1.genes.pep.faa --output Hydra_viridissima_99AUv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem\n##', clean_overlaps='hmmsearch_clans', cpu=48, cpus_per_worker=48, cut_ga=True, db='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_viridissima_99AUv1/10_functional_annotation/tmpg6n6yapg', dbtype='seqdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='hmm', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_viridissima_99AUv1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+500 829.4148769378662 0.60 q/s (% mem usage: 13.30, % mem avail: 86.67)
+1000 831.5962748527527 1.20 q/s (% mem usage: 13.30, % mem avail: 86.67)
+1500 833.6936168670654 1.80 q/s (% mem usage: 13.30, % mem avail: 86.67)
+2000 835.6564257144928 2.39 q/s (% mem usage: 13.30, % mem avail: 86.67)
+2500 837.4597337245941 2.99 q/s (% mem usage: 13.30, % mem avail: 86.67)
+3000 839.3826115131378 3.57 q/s (% mem usage: 13.30, % mem avail: 86.67)
+3500 841.2479960918427 4.16 q/s (% mem usage: 13.30, % mem avail: 86.67)
+4000 843.0738039016724 4.74 q/s (% mem usage: 13.30, % mem avail: 86.67)
+4500 845.1755850315094 5.32 q/s (% mem usage: 13.30, % mem avail: 86.67)
+5000 847.1028258800507 5.90 q/s (% mem usage: 13.30, % mem avail: 86.67)
+5500 849.0886881351471 6.48 q/s (% mem usage: 13.30, % mem avail: 86.67)
+6000 851.3389666080475 7.05 q/s (% mem usage: 13.30, % mem avail: 86.67)
+6500 853.21191239357 7.62 q/s (% mem usage: 13.30, % mem avail: 86.67)
+7000 855.0341691970825 8.19 q/s (% mem usage: 13.30, % mem avail: 86.67)
+7500 857.1052439212799 8.75 q/s (% mem usage: 13.30, % mem avail: 86.67)
+8000 858.7301123142242 9.32 q/s (% mem usage: 13.30, % mem avail: 86.67)
+8500 860.8490407466888 9.87 q/s (% mem usage: 13.30, % mem avail: 86.67)
+9000 862.6224188804626 10.43 q/s (% mem usage: 13.30, % mem avail: 86.67)
+9500 864.9070038795471 10.98 q/s (% mem usage: 13.30, % mem avail: 86.67)
+10000 866.8061633110046 11.54 q/s (% mem usage: 13.30, % mem avail: 86.67)
+10500 868.5349297523499 12.09 q/s (% mem usage: 13.30, % mem avail: 86.67)
+11000 870.4601130485535 12.64 q/s (% mem usage: 13.30, % mem avail: 86.67)
+11500 872.1850340366364 13.19 q/s (% mem usage: 13.30, % mem avail: 86.67)
+12000 873.721009016037 13.73 q/s (% mem usage: 13.30, % mem avail: 86.67)
+12500 875.5371351242065 14.28 q/s (% mem usage: 13.30, % mem avail: 86.67)
+13000 877.2450888156891 14.82 q/s (% mem usage: 13.30, % mem avail: 86.67)
+13500 878.7254264354706 15.36 q/s (% mem usage: 13.30, % mem avail: 86.67)
+14000 879.9098353385925 15.91 q/s (% mem usage: 13.30, % mem avail: 86.67)
+14500 880.8301150798798 16.46 q/s (% mem usage: 13.30, % mem avail: 86.67)
+15000 884.2624118328094 16.96 q/s (% mem usage: 13.30, % mem avail: 86.67)
+15500 885.8466198444366 17.50 q/s (% mem usage: 13.30, % mem avail: 86.67)
+16000 887.1353251934052 18.04 q/s (% mem usage: 13.30, % mem avail: 86.67)
+16500 888.5039238929749 18.57 q/s (% mem usage: 13.30, % mem avail: 86.67)
+17000 890.4489283561707 19.09 q/s (% mem usage: 13.30, % mem avail: 86.67)
+17500 891.6152422428131 19.63 q/s (% mem usage: 13.30, % mem avail: 86.67)
+17668 892.8352978229523 19.79 q/s (% mem usage: 13.30, % mem avail: 86.74)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_viridissima_99AUv1/10_functional_annotation/Hydra_viridissima_99AUv1.genes.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_viridissima_99AUv1/10_functional_annotation/Hydra_viridissima_99AUv1.genes.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_viridissima_99AUv1/10_functional_annotation/Hydra_viridissima_99AUv1.genes.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_viridissima_99AUv1/10_functional_annotation/Hydra_viridissima_99AUv1.genes.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_viridissima_99AUv1/10_functional_annotation/Hydra_viridissima_99AUv1.genes.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 17668
+Total time: 1234 secs
+FINISHED
+[Thu 24 Nov 2022 03:22:39 PM EST]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Thu 24 Nov 2022 03:01:57 PM EST
+Finished: at Thu 24 Nov 2022 03:22:39 PM EST
+ExitStatus: 0
+=====================================================================

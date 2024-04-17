@@ -1,0 +1,2 @@
+f7e7a4a0de3f8ea8c2d3ffe5127fb9de  Acropora_selago_SLJPv1.genes.pep.faa
+ca13e1d405e89905cd781c3987838b6c  ../00_databases/Acropora_selago_SLJPv1.genes.pep.faa

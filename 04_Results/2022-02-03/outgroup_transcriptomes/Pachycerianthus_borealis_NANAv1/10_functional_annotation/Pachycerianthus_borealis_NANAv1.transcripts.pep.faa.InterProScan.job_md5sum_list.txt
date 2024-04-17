@@ -1,0 +1,2 @@
+964c718de3baf2ae855cfd5b2b4ee331  Pachycerianthus_borealis_NANAv1.transcripts.pep.faa
+964c718de3baf2ae855cfd5b2b4ee331  ../00_databases/Pachycerianthus_borealis_NANAv1.transcripts.pep.faa

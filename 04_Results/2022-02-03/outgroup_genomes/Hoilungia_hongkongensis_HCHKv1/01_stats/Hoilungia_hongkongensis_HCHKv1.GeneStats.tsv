@@ -1,0 +1,43 @@
+# Files
+Genome file	Hoilungia_hongkongensis_HCHKv1.assembly.fasta
+GFF file	Hoilungia_hongkongensis_HCHKv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	87194036
+Total contig length (bp)	87194036
+Number of scaffolds	669
+Number of contigs	669
+N50 of scaffolds (bp)	407767
+N50 of contigs (bp)	407767
+Percent gaps	0.000
+Percent GC	31.27
+
+# Gene stats (combined CDS+introns)
+Number of genes	12010
+Total gene length	50674858
+Average gene length (bp)	4219.39
+Gene percent GC	31.71
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1668.85
+Average number of CDS per gene/transcript	10.2022
+
+# CDS stats
+Number of CDS	122528
+Total CDS length (bp)	20042868
+Average CDS length (bp)	163.578
+Number of single-CDS transcripts	1893
+Percent single-CDS transcripts	15.7619
+CDS percent GC	36.8
+
+# Intron stats (predicted between CDS features)
+Number of introns	110518
+Total intron length (bp)	30631990
+Average intron length (bp)	277.167
+Intron percent GC	28.38
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	11447
+Total intergenic region length (bp)	34082750
+Average intergenic region length (bp)	2977.44
+Intergenic region percent GC	30.74

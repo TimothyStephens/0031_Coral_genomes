@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 06:58:51 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Acropora_muricata_XSCSv1/01_stats
+=====================================================================
+
+[Tue 25 Oct 2022 06:58:53 PM EDT]      CMD: md5sum Acropora_muricata_XSCSv1.transcripts.cds.fna | tee Acropora_muricata_XSCSv1.CDS_stats.job_md5sum_list.txt
+ad3ded86db67debe2f07df5a224f1ad6  Acropora_muricata_XSCSv1.transcripts.cds.fna
+[Tue 25 Oct 2022 06:58:53 PM EDT]      CMD: ./CDS_stats Acropora_muricata_XSCSv1.transcripts.cds.fna > Acropora_muricata_XSCSv1.GeneStats.tsv
+
+=====================================================================
+Started: at Tue 25 Oct 2022 06:58:51 PM EDT
+Finished: at Tue 25 Oct 2022 06:58:53 PM EDT
+ExitStatus: 0
+=====================================================================

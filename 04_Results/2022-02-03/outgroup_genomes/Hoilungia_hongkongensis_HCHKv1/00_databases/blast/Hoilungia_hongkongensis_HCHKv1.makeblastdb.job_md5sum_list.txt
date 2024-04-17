@@ -1,0 +1,3 @@
+5f95f971cf0181f62c2812802fa54db6  Hoilungia_hongkongensis_HCHKv1.assembly.fasta
+2ab9d3abb6173fc5911d91dcd3c88e9b  Hoilungia_hongkongensis_HCHKv1.genes.cds.fna
+856c154e55681417e1299de807cdc0a5  Hoilungia_hongkongensis_HCHKv1.genes.pep.faa

@@ -1,0 +1,1 @@
+2c1d93e0e70232038e43ddc66ab19474  Hydra_vulgaris_MIJPv3.assembly.fasta

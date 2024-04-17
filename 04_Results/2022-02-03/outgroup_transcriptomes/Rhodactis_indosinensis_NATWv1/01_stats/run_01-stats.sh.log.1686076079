@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 02:27:59 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Rhodactis_indosinensis_NATWv1/01_stats
+=====================================================================
+
+[Tue 06 Jun 2023 02:28:00 PM EDT]      CMD: md5sum Rhodactis_indosinensis_NATWv1.transcripts.cds.fna | tee Rhodactis_indosinensis_NATWv1.CDS_stats.job_md5sum_list.txt
+982e76f95e41feb3a29e45c8141d136f  Rhodactis_indosinensis_NATWv1.transcripts.cds.fna
+[Tue 06 Jun 2023 02:28:00 PM EDT]      CMD: ./CDS_stats Rhodactis_indosinensis_NATWv1.transcripts.cds.fna > Rhodactis_indosinensis_NATWv1.GeneStats.tsv
+
+=====================================================================
+Started: at Tue 06 Jun 2023 02:27:59 PM EDT
+Finished: at Tue 06 Jun 2023 02:28:01 PM EDT
+ExitStatus: 0
+=====================================================================

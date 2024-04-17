@@ -1,0 +1,2 @@
+45a7c34aae2d1b1793bb88d7ab45b3ec  Dipsastraea_lizardensis_NAJPv1.transcripts.cds.fna
+79cc92e9fb1ef451b2ef8d8a2859ba87  Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa

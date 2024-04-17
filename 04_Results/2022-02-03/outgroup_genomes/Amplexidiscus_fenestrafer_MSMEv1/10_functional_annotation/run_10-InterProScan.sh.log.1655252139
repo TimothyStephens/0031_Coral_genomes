@@ -1,0 +1,32 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 14 Jun 2022 08:15:39 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Amplexidiscus_fenestrafer_MSMEv1/10_functional_annotation
+=====================================================================
+
+[Tue 14 Jun 2022 08:15:40 PM EDT]      CMD: md5sum Amplexidiscus_fenestrafer_MSMEv1.genes.pep.faa ../00_databases/Amplexidiscus_fenestrafer_MSMEv1.genes.pep.faa | tee Amplexidiscus_fenestrafer_MSMEv1.genes.pep.faa.InterProScan.job_md5sum_list.txt
+816e48c0829bcf126a1d4be97d64a9fe  Amplexidiscus_fenestrafer_MSMEv1.genes.pep.faa
+6ac99358e7a48fd41c126f9e63c1737b  ../00_databases/Amplexidiscus_fenestrafer_MSMEv1.genes.pep.faa
+[Tue 14 Jun 2022 08:15:40 PM EDT]      CMD: /home/timothy/programs/my_interproscan/interproscan-5.53-87.0/interproscan.sh -dp --goterms --cpu 48 --input Amplexidiscus_fenestrafer_MSMEv1.genes.pep.faa --output-file-base Amplexidiscus_fenestrafer_MSMEv1.genes.pep.faa.InterProScan
+14/06/2022 20:15:41:756 Welcome to InterProScan-5.53-87.0
+14/06/2022 20:15:41:758 Running InterProScan v5 in STANDALONE mode... on Linux
+14/06/2022 20:15:46:870 RunID: coral_20220614_201546358_jpim
+14/06/2022 20:15:54:867 Loading file /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Amplexidiscus_fenestrafer_MSMEv1/10_functional_annotation/Amplexidiscus_fenestrafer_MSMEv1.genes.pep.faa
+14/06/2022 20:15:54:869 Running the following analyses:
+[CDD-3.18,Coils-2.2.1,Gene3D-4.3.0,Hamap-2020_05,MobiDBLite-2.0,PANTHER-15.0,Pfam-34.0,Phobius-1.01,PIRSF-3.10,PIRSR-2021_02,PRINTS-42.0,ProSitePatterns-2021_01,ProSiteProfiles-2021_01,SFLD-4,SignalP_EUK-4.1,SignalP_GRAM_NEGATIVE-4.1,SignalP_GRAM_POSITIVE-4.1,SMART-7.1,SUPERFAMILY-1.75,TIGRFAM-15.0,TMHMM-2.0c]
+Pre-calculated match lookup service DISABLED.  Please wait for match calculations to complete...
+14/06/2022 20:16:00:266 Uploaded 21343 unique sequences for analysis
+14/06/2022 21:07:03:419 25% completed
+14/06/2022 21:35:02:592 50% completed
+14/06/2022 21:50:18:065 75% completed
+14/06/2022 22:09:57:827 90% completed
+14/06/2022 23:09:57:872 98% completed
+14/06/2022 23:43:37:490 100% done:  InterProScan analyses completed 
+
+[Tue 14 Jun 2022 11:43:38 PM EDT]      CMD: rm -fr temp
+
+=====================================================================
+Started: at Tue 14 Jun 2022 08:15:39 PM EDT
+Finished: at Tue 14 Jun 2022 11:43:38 PM EDT
+ExitStatus: 0
+=====================================================================

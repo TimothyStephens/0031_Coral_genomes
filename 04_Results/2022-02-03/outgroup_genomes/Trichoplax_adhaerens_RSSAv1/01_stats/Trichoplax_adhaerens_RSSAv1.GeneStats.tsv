@@ -1,0 +1,43 @@
+# Files
+Genome file	Trichoplax_adhaerens_RSSAv1.assembly.fasta
+GFF file	Trichoplax_adhaerens_RSSAv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	105632827
+Total contig length (bp)	94750107
+Number of scaffolds	1415
+Number of contigs	3218
+N50 of scaffolds (bp)	5978658
+N50 of contigs (bp)	204191
+Percent gaps	10.302
+Percent GC	32.74
+
+# Gene stats (combined CDS+introns)
+Number of genes	11520
+Total gene length	39905639
+Average gene length (bp)	3464.03
+Gene percent GC	33.27
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1361.97
+Average number of CDS per gene/transcript	8.41693
+
+# CDS stats
+Number of CDS	96963
+Total CDS length (bp)	15689870
+Average CDS length (bp)	161.813
+Number of single-CDS transcripts	1815
+Percent single-CDS transcripts	15.7552
+CDS percent GC	37.71
+
+# Intron stats (predicted between CDS features)
+Number of introns	85443
+Total intron length (bp)	24215769
+Average intron length (bp)	283.414
+Intron percent GC	30.35
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	10934
+Total intergenic region length (bp)	59550593
+Average intergenic region length (bp)	5446.37
+Intergenic region percent GC	32.39

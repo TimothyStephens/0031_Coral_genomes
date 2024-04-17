@@ -1,0 +1,118 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 12 May 2022 05:01:17 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_millepora_JSIDv2.1/10_functional_annotation
+=====================================================================
+
+[Thu 12 May 2022 05:01:18 AM EDT]      CMD: md5sum Acropora_millepora_JSIDv2.1.genes.pep.faa ../00_databases/Acropora_millepora_JSIDv2.1.genes.pep.faa | tee Acropora_millepora_JSIDv2.1.genes.pep.faa.emapper.job_md5sum_list.txt
+e070ed2bf116df2ebb83fc41e69bee74  Acropora_millepora_JSIDv2.1.genes.pep.faa
+e070ed2bf116df2ebb83fc41e69bee74  ../00_databases/Acropora_millepora_JSIDv2.1.genes.pep.faa
+[Thu 12 May 2022 05:01:18 AM EDT]      CMD: emapper.py -i Acropora_millepora_JSIDv2.1.genes.pep.faa --output Acropora_millepora_JSIDv2.1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 5.9604644775390625e-06 0.00 q/s (% mem usage: 10.80, % mem avail: 89.15)
+[1;34mTime to load the DB into memory: 38.323163986206055[0m
+#  emapper-2.1.6
+# emapper.py  -i Acropora_millepora_JSIDv2.1.genes.pep.faa --output Acropora_millepora_JSIDv2.1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_millepora_JSIDv2.1/10_functional_annotation/Acropora_millepora_JSIDv2.1.genes.pep.faa --threads 96 -o /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_millepora_JSIDv2.1/10_functional_annotation/Acropora_millepora_JSIDv2.1.genes.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+CREATED ESL_REFORMAT DB. USING HMMSEARCH
+Namespace(Z=40000000, call_info='## Thu May 12 05:09:01 2022\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Acropora_millepora_JSIDv2.1.genes.pep.faa --output Acropora_millepora_JSIDv2.1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem\n##', clean_overlaps='hmmsearch_clans', cpu=96, cpus_per_worker=96, cut_ga=True, db='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_millepora_JSIDv2.1/10_functional_annotation/tmpb75eyjcx', dbtype='seqdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='hmm', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_millepora_JSIDv2.1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+500 941.8203301429749 0.53 q/s (% mem usage: 22.10, % mem avail: 77.90)
+1000 942.8771438598633 1.06 q/s (% mem usage: 22.10, % mem avail: 77.90)
+1500 944.206535577774 1.59 q/s (% mem usage: 22.10, % mem avail: 77.90)
+2000 945.875167131424 2.11 q/s (% mem usage: 22.10, % mem avail: 77.90)
+2500 947.4057219028473 2.64 q/s (% mem usage: 22.10, % mem avail: 77.90)
+3000 948.9458608627319 3.16 q/s (% mem usage: 22.10, % mem avail: 77.90)
+3500 950.6194839477539 3.68 q/s (% mem usage: 22.10, % mem avail: 77.91)
+4000 952.0820422172546 4.20 q/s (% mem usage: 22.10, % mem avail: 77.91)
+4500 953.7372243404388 4.72 q/s (% mem usage: 22.10, % mem avail: 77.90)
+5000 955.0497660636902 5.24 q/s (% mem usage: 22.10, % mem avail: 77.90)
+5500 956.4754731655121 5.75 q/s (% mem usage: 22.10, % mem avail: 77.90)
+6000 958.0435826778412 6.26 q/s (% mem usage: 22.10, % mem avail: 77.90)
+6500 959.5537402629852 6.77 q/s (% mem usage: 22.10, % mem avail: 77.90)
+7000 960.9474241733551 7.28 q/s (% mem usage: 22.10, % mem avail: 77.90)
+7500 962.4423072338104 7.79 q/s (% mem usage: 22.10, % mem avail: 77.90)
+8000 963.6999740600586 8.30 q/s (% mem usage: 22.10, % mem avail: 77.90)
+8500 964.9614508152008 8.81 q/s (% mem usage: 22.10, % mem avail: 77.90)
+9000 966.364853143692 9.31 q/s (% mem usage: 22.10, % mem avail: 77.90)
+9500 967.9402375221252 9.81 q/s (% mem usage: 22.10, % mem avail: 77.90)
+10000 969.2730948925018 10.32 q/s (% mem usage: 22.10, % mem avail: 77.90)
+10500 970.2595460414886 10.82 q/s (% mem usage: 22.10, % mem avail: 77.90)
+11000 971.5479679107666 11.32 q/s (% mem usage: 22.10, % mem avail: 77.90)
+11500 973.0410776138306 11.82 q/s (% mem usage: 22.10, % mem avail: 77.90)
+12000 974.4708986282349 12.31 q/s (% mem usage: 22.10, % mem avail: 77.91)
+12500 975.2719385623932 12.82 q/s (% mem usage: 22.10, % mem avail: 77.90)
+13000 976.0551662445068 13.32 q/s (% mem usage: 22.10, % mem avail: 77.90)
+13500 976.6116149425507 13.82 q/s (% mem usage: 22.10, % mem avail: 77.90)
+14000 977.0437021255493 14.33 q/s (% mem usage: 22.10, % mem avail: 77.90)
+14500 977.5699508190155 14.83 q/s (% mem usage: 22.10, % mem avail: 77.90)
+15000 977.9758441448212 15.34 q/s (% mem usage: 22.10, % mem avail: 77.90)
+15500 978.4225239753723 15.84 q/s (% mem usage: 22.10, % mem avail: 77.92)
+16000 979.2041113376617 16.34 q/s (% mem usage: 22.10, % mem avail: 77.91)
+16500 979.9046049118042 16.84 q/s (% mem usage: 22.10, % mem avail: 77.90)
+17000 980.5831162929535 17.34 q/s (% mem usage: 22.10, % mem avail: 77.90)
+17500 981.1492693424225 17.84 q/s (% mem usage: 22.10, % mem avail: 77.90)
+18000 981.6485185623169 18.34 q/s (% mem usage: 22.10, % mem avail: 77.90)
+18500 982.1850554943085 18.84 q/s (% mem usage: 22.10, % mem avail: 77.90)
+19000 983.239851474762 19.32 q/s (% mem usage: 22.10, % mem avail: 77.93)
+19500 984.1751189231873 19.81 q/s (% mem usage: 22.10, % mem avail: 77.90)
+20000 984.9371054172516 20.31 q/s (% mem usage: 22.10, % mem avail: 77.90)
+20500 985.7558546066284 20.80 q/s (% mem usage: 22.10, % mem avail: 77.90)
+21000 986.4923615455627 21.29 q/s (% mem usage: 22.10, % mem avail: 77.90)
+21500 987.6375818252563 21.77 q/s (% mem usage: 22.10, % mem avail: 77.90)
+22000 988.5769331455231 22.25 q/s (% mem usage: 22.10, % mem avail: 77.90)
+22500 989.4625971317291 22.74 q/s (% mem usage: 22.10, % mem avail: 77.90)
+23000 990.1732759475708 23.23 q/s (% mem usage: 22.10, % mem avail: 77.90)
+23500 990.9053270816803 23.72 q/s (% mem usage: 22.10, % mem avail: 77.90)
+24000 991.7432646751404 24.20 q/s (% mem usage: 22.10, % mem avail: 77.90)
+24500 992.4799244403839 24.69 q/s (% mem usage: 22.10, % mem avail: 77.90)
+25000 993.2842619419098 25.17 q/s (% mem usage: 22.10, % mem avail: 77.91)
+25500 994.0654680728912 25.65 q/s (% mem usage: 22.10, % mem avail: 77.90)
+26000 995.0195028781891 26.13 q/s (% mem usage: 22.10, % mem avail: 77.90)
+26159 996.0263192653656 26.26 q/s (% mem usage: 22.00, % mem avail: 77.99)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_millepora_JSIDv2.1/10_functional_annotation/Acropora_millepora_JSIDv2.1.genes.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_millepora_JSIDv2.1/10_functional_annotation/Acropora_millepora_JSIDv2.1.genes.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_millepora_JSIDv2.1/10_functional_annotation/Acropora_millepora_JSIDv2.1.genes.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_millepora_JSIDv2.1/10_functional_annotation/Acropora_millepora_JSIDv2.1.genes.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_millepora_JSIDv2.1/10_functional_annotation/Acropora_millepora_JSIDv2.1.genes.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 26159
+Total time: 1347 secs
+FINISHED
+[Thu 12 May 2022 05:23:50 AM EDT]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Thu 12 May 2022 05:01:17 AM EDT
+Finished: at Thu 12 May 2022 05:23:50 AM EDT
+ExitStatus: 0
+=====================================================================

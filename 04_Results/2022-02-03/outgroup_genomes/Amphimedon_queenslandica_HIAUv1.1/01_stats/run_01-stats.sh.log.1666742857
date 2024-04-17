@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 08:07:37 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Amphimedon_queenslandica_HIAUv1.1/01_stats
+=====================================================================
+
+[Tue 25 Oct 2022 08:07:40 PM EDT]      CMD: md5sum Amphimedon_queenslandica_HIAUv1.1.assembly.fasta Amphimedon_queenslandica_HIAUv1.1.genes.gff3 | tee Amphimedon_queenslandica_HIAUv1.1.genome_stats.job_md5sum_list.txt
+df634167b6c2db26cdcf5c89f0cfcf6d  Amphimedon_queenslandica_HIAUv1.1.assembly.fasta
+9a17318f2ecb5d2495152b62fecaf3cb  Amphimedon_queenslandica_HIAUv1.1.genes.gff3
+[Tue 25 Oct 2022 08:07:41 PM EDT]      CMD: ./genome_stats Amphimedon_queenslandica_HIAUv1.1.assembly.fasta Amphimedon_queenslandica_HIAUv1.1.genes.gff3 > Amphimedon_queenslandica_HIAUv1.1.GeneStats.tsv
+index file Amphimedon_queenslandica_HIAUv1.1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Tue 25 Oct 2022 08:07:37 PM EDT
+Finished: at Tue 25 Oct 2022 08:07:56 PM EDT
+ExitStatus: 0
+=====================================================================

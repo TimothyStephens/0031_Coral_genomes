@@ -1,0 +1,108 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 27 Nov 2022 01:57:39 AM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Scolanthus_callimorphus_CRFRv1/10_functional_annotation
+=====================================================================
+
+[Sun 27 Nov 2022 01:57:40 AM EST]      CMD: md5sum Scolanthus_callimorphus_CRFRv1.genes.pep.faa ../00_databases/Scolanthus_callimorphus_CRFRv1.genes.pep.faa | tee Scolanthus_callimorphus_CRFRv1.genes.pep.faa.emapper.job_md5sum_list.txt
+2772b677547a553c20585ecdd4e754fe  Scolanthus_callimorphus_CRFRv1.genes.pep.faa
+2772b677547a553c20585ecdd4e754fe  ../00_databases/Scolanthus_callimorphus_CRFRv1.genes.pep.faa
+[Sun 27 Nov 2022 01:57:40 AM EST]      CMD: emapper.py -i Scolanthus_callimorphus_CRFRv1.genes.pep.faa --output Scolanthus_callimorphus_CRFRv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 4.0531158447265625e-06 0.00 q/s (% mem usage: 2.00, % mem avail: 97.97)
+[1;34mTime to load the DB into memory: 43.88300585746765[0m
+#  emapper-2.1.6
+# emapper.py  -i Scolanthus_callimorphus_CRFRv1.genes.pep.faa --output Scolanthus_callimorphus_CRFRv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Scolanthus_callimorphus_CRFRv1/10_functional_annotation/Scolanthus_callimorphus_CRFRv1.genes.pep.faa --threads 48 -o /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Scolanthus_callimorphus_CRFRv1/10_functional_annotation/Scolanthus_callimorphus_CRFRv1.genes.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+CREATED ESL_REFORMAT DB. USING HMMSEARCH
+Namespace(Z=40000000, call_info='## Sun Nov 27 02:04:59 2022\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Scolanthus_callimorphus_CRFRv1.genes.pep.faa --output Scolanthus_callimorphus_CRFRv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem\n##', clean_overlaps='hmmsearch_clans', cpu=48, cpus_per_worker=48, cut_ga=True, db='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Scolanthus_callimorphus_CRFRv1/10_functional_annotation/tmppkcpv7i3', dbtype='seqdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='hmm', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Scolanthus_callimorphus_CRFRv1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+500 909.8429358005524 0.55 q/s (% mem usage: 13.30, % mem avail: 86.69)
+1000 911.6236689090729 1.10 q/s (% mem usage: 13.30, % mem avail: 86.69)
+1500 913.3127126693726 1.64 q/s (% mem usage: 13.30, % mem avail: 86.69)
+2000 915.1786971092224 2.19 q/s (% mem usage: 13.30, % mem avail: 86.69)
+2500 916.9718837738037 2.73 q/s (% mem usage: 13.30, % mem avail: 86.69)
+3000 918.8410539627075 3.26 q/s (% mem usage: 13.30, % mem avail: 86.69)
+3500 920.4750881195068 3.80 q/s (% mem usage: 13.30, % mem avail: 86.69)
+4000 922.0806684494019 4.34 q/s (% mem usage: 13.30, % mem avail: 86.69)
+4500 923.6977791786194 4.87 q/s (% mem usage: 13.30, % mem avail: 86.69)
+5000 925.2819449901581 5.40 q/s (% mem usage: 13.30, % mem avail: 86.69)
+5500 926.9480445384979 5.93 q/s (% mem usage: 13.30, % mem avail: 86.69)
+6000 928.3806326389313 6.46 q/s (% mem usage: 13.30, % mem avail: 86.69)
+6500 930.1093783378601 6.99 q/s (% mem usage: 13.30, % mem avail: 86.69)
+7000 931.6287202835083 7.51 q/s (% mem usage: 13.30, % mem avail: 86.69)
+7500 933.5406036376953 8.03 q/s (% mem usage: 13.30, % mem avail: 86.69)
+8000 939.6037619113922 8.51 q/s (% mem usage: 13.30, % mem avail: 86.70)
+8500 941.2040317058563 9.03 q/s (% mem usage: 13.30, % mem avail: 86.70)
+9000 942.906441450119 9.54 q/s (% mem usage: 13.30, % mem avail: 86.70)
+9500 944.6903624534607 10.06 q/s (% mem usage: 13.30, % mem avail: 86.70)
+10000 946.5240235328674 10.56 q/s (% mem usage: 13.30, % mem avail: 86.70)
+10500 948.3203320503235 11.07 q/s (% mem usage: 13.30, % mem avail: 86.70)
+11000 949.9944467544556 11.58 q/s (% mem usage: 13.30, % mem avail: 86.70)
+11500 951.4009280204773 12.09 q/s (% mem usage: 13.30, % mem avail: 86.70)
+12000 952.9169323444366 12.59 q/s (% mem usage: 13.30, % mem avail: 86.70)
+12500 954.5746388435364 13.09 q/s (% mem usage: 13.30, % mem avail: 86.70)
+13000 956.071085691452 13.60 q/s (% mem usage: 13.30, % mem avail: 86.70)
+13500 957.6562128067017 14.10 q/s (% mem usage: 13.30, % mem avail: 86.70)
+14000 959.2095079421997 14.60 q/s (% mem usage: 13.30, % mem avail: 86.70)
+14500 961.1128036975861 15.09 q/s (% mem usage: 13.30, % mem avail: 86.70)
+15000 963.0292091369629 15.58 q/s (% mem usage: 13.30, % mem avail: 86.70)
+15500 964.670948266983 16.07 q/s (% mem usage: 13.30, % mem avail: 86.70)
+16000 966.2436633110046 16.56 q/s (% mem usage: 13.30, % mem avail: 86.70)
+16500 967.9253332614899 17.05 q/s (% mem usage: 13.30, % mem avail: 86.70)
+17000 969.7889144420624 17.53 q/s (% mem usage: 13.30, % mem avail: 86.70)
+17500 971.1850295066833 18.02 q/s (% mem usage: 13.30, % mem avail: 86.70)
+18000 973.176139831543 18.50 q/s (% mem usage: 13.30, % mem avail: 86.70)
+18500 974.9036657810211 18.98 q/s (% mem usage: 13.30, % mem avail: 86.70)
+19000 976.4892866611481 19.46 q/s (% mem usage: 13.30, % mem avail: 86.70)
+19500 978.0497269630432 19.94 q/s (% mem usage: 13.30, % mem avail: 86.70)
+20000 979.7404000759125 20.41 q/s (% mem usage: 13.30, % mem avail: 86.70)
+20500 981.4925932884216 20.89 q/s (% mem usage: 13.30, % mem avail: 86.70)
+21000 983.323493719101 21.36 q/s (% mem usage: 13.30, % mem avail: 86.70)
+21371 985.2435619831085 21.69 q/s (% mem usage: 13.20, % mem avail: 86.80)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Scolanthus_callimorphus_CRFRv1/10_functional_annotation/Scolanthus_callimorphus_CRFRv1.genes.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Scolanthus_callimorphus_CRFRv1/10_functional_annotation/Scolanthus_callimorphus_CRFRv1.genes.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Scolanthus_callimorphus_CRFRv1/10_functional_annotation/Scolanthus_callimorphus_CRFRv1.genes.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Scolanthus_callimorphus_CRFRv1/10_functional_annotation/Scolanthus_callimorphus_CRFRv1.genes.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Scolanthus_callimorphus_CRFRv1/10_functional_annotation/Scolanthus_callimorphus_CRFRv1.genes.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 21371
+Total time: 1299 secs
+FINISHED
+[Sun 27 Nov 2022 02:19:25 AM EST]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Sun 27 Nov 2022 01:57:39 AM EST
+Finished: at Sun 27 Nov 2022 02:19:25 AM EST
+ExitStatus: 0
+=====================================================================

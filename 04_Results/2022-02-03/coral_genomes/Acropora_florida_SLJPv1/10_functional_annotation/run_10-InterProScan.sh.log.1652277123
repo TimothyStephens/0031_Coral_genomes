@@ -1,0 +1,32 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 11 May 2022 09:52:03 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_florida_SLJPv1/10_functional_annotation
+=====================================================================
+
+[Wed 11 May 2022 09:52:03 AM EDT]      CMD: md5sum Acropora_florida_SLJPv1.genes.pep.faa ../00_databases/Acropora_florida_SLJPv1.genes.pep.faa | tee Acropora_florida_SLJPv1.genes.pep.faa.InterProScan.job_md5sum_list.txt
+5bbc9ad21a9357ff3810b6b272854166  Acropora_florida_SLJPv1.genes.pep.faa
+a78ada70b06f614e898b1f02ddcdf82f  ../00_databases/Acropora_florida_SLJPv1.genes.pep.faa
+[Wed 11 May 2022 09:52:03 AM EDT]      CMD: /home/timothy/programs/my_interproscan/interproscan-5.53-87.0/interproscan.sh -dp --goterms --cpu 96 --input Acropora_florida_SLJPv1.genes.pep.faa --output-file-base Acropora_florida_SLJPv1.genes.pep.faa.InterProScan
+11/05/2022 09:52:04:746 Welcome to InterProScan-5.53-87.0
+11/05/2022 09:52:04:748 Running InterProScan v5 in STANDALONE mode... on Linux
+11/05/2022 09:52:09:517 RunID: coral_20220511_095209057_9dsj
+11/05/2022 09:52:17:704 Loading file /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_florida_SLJPv1/10_functional_annotation/Acropora_florida_SLJPv1.genes.pep.faa
+11/05/2022 09:52:17:705 Running the following analyses:
+[CDD-3.18,Coils-2.2.1,Gene3D-4.3.0,Hamap-2020_05,MobiDBLite-2.0,PANTHER-15.0,Pfam-34.0,Phobius-1.01,PIRSF-3.10,PIRSR-2021_02,PRINTS-42.0,ProSitePatterns-2021_01,ProSiteProfiles-2021_01,SFLD-4,SignalP_EUK-4.1,SignalP_GRAM_NEGATIVE-4.1,SignalP_GRAM_POSITIVE-4.1,SMART-7.1,SUPERFAMILY-1.75,TIGRFAM-15.0,TMHMM-2.0c]
+Pre-calculated match lookup service DISABLED.  Please wait for match calculations to complete...
+11/05/2022 09:52:23:193 Uploaded 23822 unique sequences for analysis
+11/05/2022 10:32:59:318 25% completed
+11/05/2022 11:09:37:905 50% completed
+11/05/2022 11:31:14:126 75% completed
+11/05/2022 11:54:30:539 90% completed
+11/05/2022 12:54:30:683 99% completed
+11/05/2022 13:09:22:008 100% done:  InterProScan analyses completed 
+
+[Wed 11 May 2022 01:09:22 PM EDT]      CMD: rm -fr temp
+
+=====================================================================
+Started: at Wed 11 May 2022 09:52:03 AM EDT
+Finished: at Wed 11 May 2022 01:09:22 PM EDT
+ExitStatus: 0
+=====================================================================

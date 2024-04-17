@@ -1,0 +1,2 @@
+69f734b94b87e7621126977b18d7a504  Montipora_sp1_aff_capitata_ULFMv1.genes.pep.faa
+69f734b94b87e7621126977b18d7a504  ../00_databases/Montipora_sp1_aff_capitata_ULFMv1.genes.pep.faa

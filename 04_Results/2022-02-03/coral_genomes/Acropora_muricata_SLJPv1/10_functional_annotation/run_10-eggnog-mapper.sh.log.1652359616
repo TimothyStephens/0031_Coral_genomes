@@ -1,0 +1,104 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 12 May 2022 08:46:56 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_muricata_SLJPv1/10_functional_annotation
+=====================================================================
+
+[Thu 12 May 2022 08:46:57 AM EDT]      CMD: md5sum Acropora_muricata_SLJPv1.genes.pep.faa ../00_databases/Acropora_muricata_SLJPv1.genes.pep.faa | tee Acropora_muricata_SLJPv1.genes.pep.faa.emapper.job_md5sum_list.txt
+cd3bf9ee9dd94a18e05298a035adba54  Acropora_muricata_SLJPv1.genes.pep.faa
+fdfdb6b393e17a09eb46f5513b65102e  ../00_databases/Acropora_muricata_SLJPv1.genes.pep.faa
+[Thu 12 May 2022 08:46:57 AM EDT]      CMD: emapper.py -i Acropora_muricata_SLJPv1.genes.pep.faa --output Acropora_muricata_SLJPv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 3.5762786865234375e-06 0.00 q/s (% mem usage: 11.10, % mem avail: 88.93)
+[1;34mTime to load the DB into memory: 38.293973207473755[0m
+#  emapper-2.1.6
+# emapper.py  -i Acropora_muricata_SLJPv1.genes.pep.faa --output Acropora_muricata_SLJPv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_muricata_SLJPv1/10_functional_annotation/Acropora_muricata_SLJPv1.genes.pep.faa --threads 96 -o /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_muricata_SLJPv1/10_functional_annotation/Acropora_muricata_SLJPv1.genes.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+CREATED ESL_REFORMAT DB. USING HMMSEARCH
+Namespace(Z=40000000, call_info='## Thu May 12 08:54:16 2022\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Acropora_muricata_SLJPv1.genes.pep.faa --output Acropora_muricata_SLJPv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem\n##', clean_overlaps='hmmsearch_clans', cpu=96, cpus_per_worker=96, cut_ga=True, db='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_muricata_SLJPv1/10_functional_annotation/tmpj06s730h', dbtype='seqdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='hmm', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_muricata_SLJPv1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+500 914.0101957321167 0.55 q/s (% mem usage: 22.30, % mem avail: 77.70)
+1000 915.2591297626495 1.09 q/s (% mem usage: 22.30, % mem avail: 77.70)
+1500 916.4494664669037 1.64 q/s (% mem usage: 22.30, % mem avail: 77.70)
+2000 917.8093466758728 2.18 q/s (% mem usage: 22.30, % mem avail: 77.70)
+2500 919.2351040840149 2.72 q/s (% mem usage: 22.30, % mem avail: 77.70)
+3000 920.7187099456787 3.26 q/s (% mem usage: 22.30, % mem avail: 77.70)
+3500 922.0347964763641 3.80 q/s (% mem usage: 22.30, % mem avail: 77.70)
+4000 923.474550485611 4.33 q/s (% mem usage: 22.30, % mem avail: 77.70)
+4500 924.7778668403625 4.87 q/s (% mem usage: 22.30, % mem avail: 77.70)
+5000 925.9714212417603 5.40 q/s (% mem usage: 22.30, % mem avail: 77.70)
+5500 927.6127035617828 5.93 q/s (% mem usage: 22.30, % mem avail: 77.70)
+6000 928.8302054405212 6.46 q/s (% mem usage: 22.30, % mem avail: 77.70)
+6500 930.3473722934723 6.99 q/s (% mem usage: 22.30, % mem avail: 77.70)
+7000 931.658951997757 7.51 q/s (% mem usage: 22.30, % mem avail: 77.70)
+7500 933.0275688171387 8.04 q/s (% mem usage: 22.30, % mem avail: 77.70)
+8000 934.2850689888 8.56 q/s (% mem usage: 22.30, % mem avail: 77.70)
+8500 935.7477462291718 9.08 q/s (% mem usage: 22.30, % mem avail: 77.70)
+9000 937.0653958320618 9.60 q/s (% mem usage: 22.30, % mem avail: 77.70)
+9500 938.3909022808075 10.12 q/s (% mem usage: 22.30, % mem avail: 77.70)
+10000 939.9191780090332 10.64 q/s (% mem usage: 22.30, % mem avail: 77.70)
+10500 941.4779348373413 11.15 q/s (% mem usage: 22.30, % mem avail: 77.70)
+11000 942.6973795890808 11.67 q/s (% mem usage: 22.30, % mem avail: 77.70)
+11500 944.1768419742584 12.18 q/s (% mem usage: 22.30, % mem avail: 77.70)
+12000 945.4845185279846 12.69 q/s (% mem usage: 22.30, % mem avail: 77.70)
+12500 946.8182725906372 13.20 q/s (% mem usage: 22.30, % mem avail: 77.70)
+13000 948.3225705623627 13.71 q/s (% mem usage: 22.30, % mem avail: 77.70)
+13500 949.6422371864319 14.22 q/s (% mem usage: 22.30, % mem avail: 77.70)
+14000 951.0071406364441 14.72 q/s (% mem usage: 22.30, % mem avail: 77.70)
+14500 952.4139096736908 15.22 q/s (% mem usage: 22.30, % mem avail: 77.70)
+15000 953.8466248512268 15.73 q/s (% mem usage: 22.30, % mem avail: 77.70)
+15500 955.3347327709198 16.22 q/s (% mem usage: 22.30, % mem avail: 77.70)
+16000 956.7747213840485 16.72 q/s (% mem usage: 22.30, % mem avail: 77.72)
+16500 958.2128314971924 17.22 q/s (% mem usage: 22.30, % mem avail: 77.70)
+17000 959.5618546009064 17.72 q/s (% mem usage: 22.30, % mem avail: 77.70)
+17500 960.6151061058044 18.22 q/s (% mem usage: 22.30, % mem avail: 77.70)
+18000 961.9011657238007 18.71 q/s (% mem usage: 22.30, % mem avail: 77.70)
+18500 963.1629071235657 19.21 q/s (% mem usage: 22.30, % mem avail: 77.70)
+19000 964.5027136802673 19.70 q/s (% mem usage: 22.30, % mem avail: 77.70)
+19349 965.7252585887909 20.04 q/s (% mem usage: 22.20, % mem avail: 77.78)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_muricata_SLJPv1/10_functional_annotation/Acropora_muricata_SLJPv1.genes.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_muricata_SLJPv1/10_functional_annotation/Acropora_muricata_SLJPv1.genes.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_muricata_SLJPv1/10_functional_annotation/Acropora_muricata_SLJPv1.genes.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_muricata_SLJPv1/10_functional_annotation/Acropora_muricata_SLJPv1.genes.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Acropora_muricata_SLJPv1/10_functional_annotation/Acropora_muricata_SLJPv1.genes.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 19349
+Total time: 1295 secs
+FINISHED
+[Thu 12 May 2022 09:08:38 AM EDT]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Thu 12 May 2022 08:46:56 AM EDT
+Finished: at Thu 12 May 2022 09:08:38 AM EDT
+ExitStatus: 0
+=====================================================================

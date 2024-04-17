@@ -1,0 +1,32 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 24 Nov 2022 10:18:47 AM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydractinia_symbiolongicarpus_NEAOv1/10_functional_annotation
+=====================================================================
+
+[Thu 24 Nov 2022 10:18:49 AM EST]      CMD: md5sum Hydractinia_symbiolongicarpus_NEAOv1.genes.pep.faa ../00_databases/Hydractinia_symbiolongicarpus_NEAOv1.genes.pep.faa | tee Hydractinia_symbiolongicarpus_NEAOv1.genes.pep.faa.InterProScan.job_md5sum_list.txt
+d9857a92f72da76b580911ee2bd5cfdf  Hydractinia_symbiolongicarpus_NEAOv1.genes.pep.faa
+d9857a92f72da76b580911ee2bd5cfdf  ../00_databases/Hydractinia_symbiolongicarpus_NEAOv1.genes.pep.faa
+[Thu 24 Nov 2022 10:18:49 AM EST]      CMD: /home/timothy/programs/my_interproscan/interproscan-5.53-87.0/interproscan.sh -dp --goterms --cpu 48 --input Hydractinia_symbiolongicarpus_NEAOv1.genes.pep.faa --output-file-base Hydractinia_symbiolongicarpus_NEAOv1.genes.pep.faa.InterProScan
+24/11/2022 10:18:49:947 Welcome to InterProScan-5.53-87.0
+24/11/2022 10:18:49:950 Running InterProScan v5 in STANDALONE mode... on Linux
+24/11/2022 10:18:56:129 RunID: coral_20221124_101855682_2z5
+24/11/2022 10:19:04:697 Loading file /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydractinia_symbiolongicarpus_NEAOv1/10_functional_annotation/Hydractinia_symbiolongicarpus_NEAOv1.genes.pep.faa
+24/11/2022 10:19:04:699 Running the following analyses:
+[CDD-3.18,Coils-2.2.1,Gene3D-4.3.0,Hamap-2020_05,MobiDBLite-2.0,PANTHER-15.0,Pfam-34.0,Phobius-1.01,PIRSF-3.10,PIRSR-2021_02,PRINTS-42.0,ProSitePatterns-2021_01,ProSiteProfiles-2021_01,SFLD-4,SignalP_EUK-4.1,SignalP_GRAM_NEGATIVE-4.1,SignalP_GRAM_POSITIVE-4.1,SMART-7.1,SUPERFAMILY-1.75,TIGRFAM-15.0,TMHMM-2.0c]
+Pre-calculated match lookup service DISABLED.  Please wait for match calculations to complete...
+24/11/2022 10:19:12:013 Uploaded 21422 unique sequences for analysis
+24/11/2022 11:44:21:810 25% completed
+24/11/2022 11:56:17:622 50% completed
+24/11/2022 12:38:01:761 75% completed
+24/11/2022 13:24:11:167 90% completed
+24/11/2022 14:24:11:234 97% completed
+24/11/2022 15:01:56:649 100% done:  InterProScan analyses completed 
+
+[Thu 24 Nov 2022 03:01:57 PM EST]      CMD: rm -fr temp
+
+=====================================================================
+Started: at Thu 24 Nov 2022 10:18:47 AM EST
+Finished: at Thu 24 Nov 2022 03:01:57 PM EST
+ExitStatus: 0
+=====================================================================

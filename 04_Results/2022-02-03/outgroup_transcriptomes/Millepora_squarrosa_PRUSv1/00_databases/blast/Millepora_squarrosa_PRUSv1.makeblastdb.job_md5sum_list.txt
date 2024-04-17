@@ -1,0 +1,2 @@
+d69713cc29147c2967f8d8249dcff4f8  Millepora_squarrosa_PRUSv1.transcripts.cds.fna
+61854aea33e1032f7d36f5370d0001b3  Millepora_squarrosa_PRUSv1.transcripts.pep.faa

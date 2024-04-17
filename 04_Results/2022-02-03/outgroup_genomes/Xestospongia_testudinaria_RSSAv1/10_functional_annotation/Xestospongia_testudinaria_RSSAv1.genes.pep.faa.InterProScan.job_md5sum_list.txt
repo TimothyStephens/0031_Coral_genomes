@@ -1,0 +1,2 @@
+f75fa89e60c8e8d012d0a362d331af0a  Xestospongia_testudinaria_RSSAv1.genes.pep.faa
+f75fa89e60c8e8d012d0a362d331af0a  ../00_databases/Xestospongia_testudinaria_RSSAv1.genes.pep.faa

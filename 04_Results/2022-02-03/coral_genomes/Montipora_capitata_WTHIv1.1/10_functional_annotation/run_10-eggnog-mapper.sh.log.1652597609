@@ -1,0 +1,122 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 15 May 2022 02:53:29 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_capitata_WTHIv1.1/10_functional_annotation
+=====================================================================
+
+[Sun 15 May 2022 02:53:30 AM EDT]      CMD: md5sum Montipora_capitata_WTHIv1.1.genes.pep.faa ../00_databases/Montipora_capitata_WTHIv1.1.genes.pep.faa | tee Montipora_capitata_WTHIv1.1.genes.pep.faa.emapper.job_md5sum_list.txt
+c9c63e35668bb8e71927a8cd461a4cdd  Montipora_capitata_WTHIv1.1.genes.pep.faa
+c9c63e35668bb8e71927a8cd461a4cdd  ../00_databases/Montipora_capitata_WTHIv1.1.genes.pep.faa
+[Sun 15 May 2022 02:53:30 AM EDT]      CMD: emapper.py -i Montipora_capitata_WTHIv1.1.genes.pep.faa --output Montipora_capitata_WTHIv1.1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 8.344650268554688e-06 0.00 q/s (% mem usage: 33.90, % mem avail: 66.07)
+[1;34mTime to load the DB into memory: 55.099642276763916[0m
+#  emapper-2.1.6
+# emapper.py  -i Montipora_capitata_WTHIv1.1.genes.pep.faa --output Montipora_capitata_WTHIv1.1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_capitata_WTHIv1.1/10_functional_annotation/Montipora_capitata_WTHIv1.1.genes.pep.faa --threads 96 -o /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_capitata_WTHIv1.1/10_functional_annotation/Montipora_capitata_WTHIv1.1.genes.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+CREATED ESL_REFORMAT DB. USING HMMSEARCH
+Namespace(Z=40000000, call_info='## Sun May 15 03:05:55 2022\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Montipora_capitata_WTHIv1.1.genes.pep.faa --output Montipora_capitata_WTHIv1.1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem\n##', clean_overlaps='hmmsearch_clans', cpu=96, cpus_per_worker=96, cut_ga=True, db='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_capitata_WTHIv1.1/10_functional_annotation/tmpuvzoo7wu', dbtype='seqdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='hmm', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_capitata_WTHIv1.1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+500 1192.3715348243713 0.42 q/s (% mem usage: 38.10, % mem avail: 61.95)
+1000 1195.6823632717133 0.84 q/s (% mem usage: 38.10, % mem avail: 61.95)
+1500 1198.591670513153 1.25 q/s (% mem usage: 38.10, % mem avail: 61.95)
+2000 1202.485096693039 1.66 q/s (% mem usage: 38.10, % mem avail: 61.95)
+2500 1206.1301083564758 2.07 q/s (% mem usage: 38.00, % mem avail: 61.95)
+3000 1209.7888793945312 2.48 q/s (% mem usage: 38.00, % mem avail: 61.95)
+3500 1212.7060110569 2.89 q/s (% mem usage: 38.00, % mem avail: 61.95)
+4000 1215.6211755275726 3.29 q/s (% mem usage: 38.10, % mem avail: 61.95)
+4500 1218.730844259262 3.69 q/s (% mem usage: 38.00, % mem avail: 61.95)
+5000 1221.7473604679108 4.09 q/s (% mem usage: 38.10, % mem avail: 61.95)
+5500 1225.344182252884 4.49 q/s (% mem usage: 38.10, % mem avail: 61.95)
+6000 1228.5044600963593 4.88 q/s (% mem usage: 38.00, % mem avail: 61.95)
+6500 1231.4534137248993 5.28 q/s (% mem usage: 38.00, % mem avail: 61.95)
+7000 1234.3089945316315 5.67 q/s (% mem usage: 38.00, % mem avail: 61.97)
+7500 1237.3349254131317 6.06 q/s (% mem usage: 38.00, % mem avail: 61.97)
+8000 1240.433605670929 6.45 q/s (% mem usage: 38.00, % mem avail: 61.96)
+8500 1243.3646371364594 6.84 q/s (% mem usage: 38.10, % mem avail: 61.95)
+9000 1245.8018460273743 7.22 q/s (% mem usage: 38.10, % mem avail: 61.95)
+9500 1248.5912148952484 7.61 q/s (% mem usage: 38.10, % mem avail: 61.95)
+10000 1251.7164521217346 7.99 q/s (% mem usage: 38.00, % mem avail: 61.96)
+10500 1254.8375360965729 8.37 q/s (% mem usage: 38.00, % mem avail: 61.96)
+11000 1258.1924562454224 8.74 q/s (% mem usage: 38.00, % mem avail: 61.95)
+11500 1261.7556579113007 9.11 q/s (% mem usage: 38.00, % mem avail: 61.95)
+12000 1264.5064299106598 9.49 q/s (% mem usage: 38.00, % mem avail: 61.95)
+12500 1267.0138952732086 9.87 q/s (% mem usage: 38.00, % mem avail: 61.95)
+13000 1269.5429861545563 10.24 q/s (% mem usage: 38.00, % mem avail: 61.95)
+13500 1272.4859483242035 10.61 q/s (% mem usage: 38.00, % mem avail: 61.97)
+14000 1274.952077627182 10.98 q/s (% mem usage: 38.00, % mem avail: 61.96)
+14500 1277.3099482059479 11.35 q/s (% mem usage: 38.10, % mem avail: 61.95)
+15000 1279.2547028064728 11.73 q/s (% mem usage: 38.10, % mem avail: 61.95)
+15500 1281.0131542682648 12.10 q/s (% mem usage: 38.10, % mem avail: 61.95)
+16000 1282.759524345398 12.47 q/s (% mem usage: 38.00, % mem avail: 61.96)
+16500 1284.8740224838257 12.84 q/s (% mem usage: 38.00, % mem avail: 61.96)
+17000 1287.030189037323 13.21 q/s (% mem usage: 38.00, % mem avail: 61.95)
+17500 1288.8639562129974 13.58 q/s (% mem usage: 38.00, % mem avail: 61.95)
+18000 1290.9415385723114 13.94 q/s (% mem usage: 38.00, % mem avail: 61.95)
+18500 1293.2132351398468 14.31 q/s (% mem usage: 38.00, % mem avail: 61.95)
+19000 1294.8269264698029 14.67 q/s (% mem usage: 38.00, % mem avail: 61.95)
+19500 1296.29794049263 15.04 q/s (% mem usage: 38.00, % mem avail: 61.95)
+20000 1297.8339631557465 15.41 q/s (% mem usage: 38.00, % mem avail: 61.95)
+20500 1299.266092300415 15.78 q/s (% mem usage: 38.00, % mem avail: 61.95)
+21000 1301.677787065506 16.13 q/s (% mem usage: 38.00, % mem avail: 61.95)
+21500 1305.4235799312592 16.47 q/s (% mem usage: 38.10, % mem avail: 61.95)
+22000 1308.4484887123108 16.81 q/s (% mem usage: 38.10, % mem avail: 61.95)
+22500 1311.3617856502533 17.16 q/s (% mem usage: 38.10, % mem avail: 61.95)
+23000 1313.276025056839 17.51 q/s (% mem usage: 38.10, % mem avail: 61.95)
+23500 1315.1673049926758 17.87 q/s (% mem usage: 38.10, % mem avail: 61.95)
+24000 1317.0630877017975 18.22 q/s (% mem usage: 38.10, % mem avail: 61.95)
+24500 1319.135715007782 18.57 q/s (% mem usage: 38.10, % mem avail: 61.95)
+25000 1320.947120666504 18.93 q/s (% mem usage: 38.10, % mem avail: 61.95)
+25500 1322.6266469955444 19.28 q/s (% mem usage: 38.10, % mem avail: 61.95)
+26000 1324.1541497707367 19.64 q/s (% mem usage: 38.10, % mem avail: 61.95)
+26500 1325.7077658176422 19.99 q/s (% mem usage: 38.10, % mem avail: 61.95)
+27000 1328.8980658054352 20.32 q/s (% mem usage: 38.10, % mem avail: 61.95)
+27500 1330.8060162067413 20.66 q/s (% mem usage: 38.10, % mem avail: 61.95)
+28000 1332.07071518898 21.02 q/s (% mem usage: 38.10, % mem avail: 61.95)
+28058 1333.4074065685272 21.04 q/s (% mem usage: 38.00, % mem avail: 62.04)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_capitata_WTHIv1.1/10_functional_annotation/Montipora_capitata_WTHIv1.1.genes.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_capitata_WTHIv1.1/10_functional_annotation/Montipora_capitata_WTHIv1.1.genes.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_capitata_WTHIv1.1/10_functional_annotation/Montipora_capitata_WTHIv1.1.genes.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_capitata_WTHIv1.1/10_functional_annotation/Montipora_capitata_WTHIv1.1.genes.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_capitata_WTHIv1.1/10_functional_annotation/Montipora_capitata_WTHIv1.1.genes.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 28058
+Total time: 1880 secs
+FINISHED
+[Sun 15 May 2022 03:25:02 AM EDT]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Sun 15 May 2022 02:53:29 AM EDT
+Finished: at Sun 15 May 2022 03:25:02 AM EDT
+ExitStatus: 0
+=====================================================================

@@ -1,0 +1,2 @@
+9fa447619d783cbfc02da34bc9e27d61  Amphimedon_queenslandica_HIAUv1.1.genes.pep.faa
+9fa447619d783cbfc02da34bc9e27d61  ../00_databases/Amphimedon_queenslandica_HIAUv1.1.genes.pep.faa

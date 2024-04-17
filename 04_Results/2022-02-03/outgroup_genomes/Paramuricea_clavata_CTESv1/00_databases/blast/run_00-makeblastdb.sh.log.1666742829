@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 08:07:09 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Paramuricea_clavata_CTESv1/00_databases/blast
+=====================================================================
+
+[Tue 25 Oct 2022 08:07:11 PM EDT]      CMD: md5sum Paramuricea_clavata_CTESv1.assembly.fasta Paramuricea_clavata_CTESv1.genes.cds.fna Paramuricea_clavata_CTESv1.genes.pep.faa | tee Paramuricea_clavata_CTESv1.makeblastdb.job_md5sum_list.txt
+31249a1f445e686d51b4e864c1685013  Paramuricea_clavata_CTESv1.assembly.fasta
+2d346529995ca062d0ca1fcf82a4e3cb  Paramuricea_clavata_CTESv1.genes.cds.fna
+1a63b788cc6b9cedf0bb7ba31dfb9cfe  Paramuricea_clavata_CTESv1.genes.pep.faa
+[Tue 25 Oct 2022 08:07:13 PM EDT]      CMD: makeblastdb -dbtype nucl -in Paramuricea_clavata_CTESv1.assembly.fasta
+
+
+Building a new DB, current time: 10/25/2022 20:07:13
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Paramuricea_clavata_CTESv1/00_databases/blast/Paramuricea_clavata_CTESv1.assembly.fasta
+New DB title:  Paramuricea_clavata_CTESv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 64145 sequences in 13.7718 seconds.
+
+
+[Tue 25 Oct 2022 08:07:27 PM EDT]      CMD: makeblastdb -dbtype nucl -in Paramuricea_clavata_CTESv1.genes.cds.fna
+
+
+Building a new DB, current time: 10/25/2022 20:07:27
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Paramuricea_clavata_CTESv1/00_databases/blast/Paramuricea_clavata_CTESv1.genes.cds.fna
+New DB title:  Paramuricea_clavata_CTESv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 62652 sequences in 2.52094 seconds.
+
+
+[Tue 25 Oct 2022 08:07:30 PM EDT]      CMD: makeblastdb -dbtype prot -in Paramuricea_clavata_CTESv1.genes.pep.faa
+
+
+Building a new DB, current time: 10/25/2022 20:07:30
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Paramuricea_clavata_CTESv1/00_databases/blast/Paramuricea_clavata_CTESv1.genes.pep.faa
+New DB title:  Paramuricea_clavata_CTESv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 62652 sequences in 1.80226 seconds.
+
+
+
+=====================================================================
+Started: at Tue 25 Oct 2022 08:07:09 PM EDT
+Finished: at Tue 25 Oct 2022 08:07:31 PM EDT
+ExitStatus: 0
+=====================================================================

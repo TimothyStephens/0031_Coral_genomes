@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 02:27:47 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Kudoa_iwatai_RSILv1/01_stats
+=====================================================================
+
+[Tue 06 Jun 2023 02:27:48 PM EDT]      CMD: md5sum Kudoa_iwatai_RSILv1.transcripts.cds.fna | tee Kudoa_iwatai_RSILv1.CDS_stats.job_md5sum_list.txt
+d30c7b3f433d88ad369f44d3383518b1  Kudoa_iwatai_RSILv1.transcripts.cds.fna
+[Tue 06 Jun 2023 02:27:48 PM EDT]      CMD: ./CDS_stats Kudoa_iwatai_RSILv1.transcripts.cds.fna > Kudoa_iwatai_RSILv1.GeneStats.tsv
+
+=====================================================================
+Started: at Tue 06 Jun 2023 02:27:47 PM EDT
+Finished: at Tue 06 Jun 2023 02:27:48 PM EDT
+ExitStatus: 0
+=====================================================================

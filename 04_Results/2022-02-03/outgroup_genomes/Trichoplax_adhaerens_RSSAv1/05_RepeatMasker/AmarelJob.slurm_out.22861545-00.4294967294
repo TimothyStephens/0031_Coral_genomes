@@ -1,0 +1,21 @@
+=====================================================================
+Slurm config version 0.4
+Starting on hal0162.amarel.rutgers.edu at Tue Nov  1 15:11:41 EDT 2022
+Nodelist hal0162
+Current JOB_ID is 22861545
+Current array index number is NA
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Trichoplax_adhaerens_RSSAv1/05_RepeatMasker
+=====================================================================
+
+[Tue Nov  1 19:26:50 EDT 2022]   - Done!
+
+=====================================================================
+Started: at Tue Nov  1 15:11:41 EDT 2022 on hal0162.amarel.rutgers.edu
+Finished: at Tue Nov  1 19:26:50 EDT 2022
+ExitStatus: 0
+
+   JobName   NTasks  AllocCPUS     ReqMem     MaxRSS  MaxVMSize  MaxDiskRead MaxDiskWrite   TotalCPU    CPUTime    Elapsed 
+---------- -------- ---------- ---------- ---------- ---------- ------------ ------------ ---------- ---------- ---------- 
+ AmarelJob                  24      120Gn                                                   00:00:00 4-06:03:36   04:15:09 
+    extern        1         24      120Gn                                                   00:00:00 4-06:03:36   04:15:09 
+=====================================================================

@@ -1,0 +1,43 @@
+# Files
+Genome file	Renilla_reniformis_FLUSv1.assembly.fasta
+GFF file	Renilla_reniformis_FLUSv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	131554742
+Total contig length (bp)	131273069
+Number of scaffolds	171053
+Number of contigs	175762
+N50 of scaffolds (bp)	1843
+N50 of contigs (bp)	1741
+Percent gaps	0.214
+Percent GC	36.65
+
+# Gene stats (combined CDS+introns)
+Number of genes	12689
+Total gene length	7817709
+Average gene length (bp)	616.101
+Gene percent GC	44.28
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	616.101
+Average number of CDS per gene/transcript	1
+
+# CDS stats
+Number of CDS	12689
+Total CDS length (bp)	7817709
+Average CDS length (bp)	616.101
+Number of single-CDS transcripts	12689
+Percent single-CDS transcripts	100
+CDS percent GC	44.28
+
+# Intron stats (predicted between CDS features)
+Number of introns	0
+Total intron length (bp)	0
+Average intron length (bp)	0
+Intron percent GC	0
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	2944
+Total intergenic region length (bp)	2622756
+Average intergenic region length (bp)	890.882
+Intergenic region percent GC	37.37

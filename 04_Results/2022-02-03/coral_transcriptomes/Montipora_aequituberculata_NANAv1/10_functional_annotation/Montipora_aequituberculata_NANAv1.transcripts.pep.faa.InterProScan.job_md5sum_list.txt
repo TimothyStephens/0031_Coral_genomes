@@ -1,0 +1,2 @@
+850e5a2203d657df4eef532d05bc4ac6  Montipora_aequituberculata_NANAv1.transcripts.pep.faa
+850e5a2203d657df4eef532d05bc4ac6  ../00_databases/Montipora_aequituberculata_NANAv1.transcripts.pep.faa

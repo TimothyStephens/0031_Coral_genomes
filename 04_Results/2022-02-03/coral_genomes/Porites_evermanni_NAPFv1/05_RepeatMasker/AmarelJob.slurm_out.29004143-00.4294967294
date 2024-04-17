@@ -1,0 +1,21 @@
+=====================================================================
+Slurm config version 0.4
+Starting on hal0095.amarel.rutgers.edu at Thu Jun  8 08:13:15 EDT 2023
+Nodelist hal0095
+Current JOB_ID is 29004143
+Current array index number is NA
+Working directory is /scratch/ts942/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Porites_evermanni_NAPFv1/05_RepeatMasker
+=====================================================================
+
+[Fri Jun  9 10:21:37 EDT 2023]   - Done!
+
+=====================================================================
+Started: at Thu Jun  8 08:13:15 EDT 2023 on hal0095.amarel.rutgers.edu
+Finished: at Fri Jun  9 10:21:37 EDT 2023
+ExitStatus: 0
+
+   JobName   NTasks  AllocCPUS     ReqMem     MaxRSS  MaxVMSize  MaxDiskRead MaxDiskWrite   TotalCPU    CPUTime    Elapsed 
+---------- -------- ---------- ---------- ---------- ---------- ------------ ------------ ---------- ---------- ---------- 
+ AmarelJob                  24      120Gn                                                   00:00:00 26-03:20:48 1-02:08:22 
+    extern        1         24      120Gn                                                   00:00:00 26-03:20:48 1-02:08:22 
+=====================================================================

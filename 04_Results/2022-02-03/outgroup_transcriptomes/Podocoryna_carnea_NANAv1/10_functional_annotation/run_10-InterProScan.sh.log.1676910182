@@ -1,0 +1,32 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Mon 20 Feb 2023 11:23:02 AM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Podocoryna_carnea_NANAv1/10_functional_annotation
+=====================================================================
+
+[Mon 20 Feb 2023 11:23:03 AM EST]      CMD: md5sum Podocoryna_carnea_NANAv1.transcripts.pep.faa ../00_databases/Podocoryna_carnea_NANAv1.transcripts.pep.faa | tee Podocoryna_carnea_NANAv1.transcripts.pep.faa.InterProScan.job_md5sum_list.txt
+cd74a403292093266d092c39b4eda548  Podocoryna_carnea_NANAv1.transcripts.pep.faa
+cd74a403292093266d092c39b4eda548  ../00_databases/Podocoryna_carnea_NANAv1.transcripts.pep.faa
+[Mon 20 Feb 2023 11:23:04 AM EST]      CMD: /home/timothy/programs/my_interproscan/interproscan-5.53-87.0/interproscan.sh -dp --goterms --cpu 48 --input Podocoryna_carnea_NANAv1.transcripts.pep.faa --output-file-base Podocoryna_carnea_NANAv1.transcripts.pep.faa.InterProScan
+20/02/2023 11:23:05:723 Welcome to InterProScan-5.53-87.0
+20/02/2023 11:23:05:728 Running InterProScan v5 in STANDALONE mode... on Linux
+20/02/2023 11:23:11:960 RunID: coral_20230220_112311345_e4r1
+20/02/2023 11:23:19:911 Loading file /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Podocoryna_carnea_NANAv1/10_functional_annotation/Podocoryna_carnea_NANAv1.transcripts.pep.faa
+20/02/2023 11:23:19:912 Running the following analyses:
+[CDD-3.18,Coils-2.2.1,Gene3D-4.3.0,Hamap-2020_05,MobiDBLite-2.0,PANTHER-15.0,Pfam-34.0,Phobius-1.01,PIRSF-3.10,PIRSR-2021_02,PRINTS-42.0,ProSitePatterns-2021_01,ProSiteProfiles-2021_01,SFLD-4,SignalP_EUK-4.1,SignalP_GRAM_NEGATIVE-4.1,SignalP_GRAM_POSITIVE-4.1,SMART-7.1,SUPERFAMILY-1.75,TIGRFAM-15.0,TMHMM-2.0c]
+Pre-calculated match lookup service DISABLED.  Please wait for match calculations to complete...
+20/02/2023 11:23:36:979 Uploaded 52275 unique sequences for analysis
+20/02/2023 14:12:19:552 25% completed
+20/02/2023 14:37:23:206 50% completed
+20/02/2023 14:58:26:140 75% completed
+20/02/2023 15:06:25:815 90% completed
+20/02/2023 16:06:26:183 99% completed
+20/02/2023 16:13:44:438 100% done:  InterProScan analyses completed 
+
+[Mon 20 Feb 2023 04:13:46 PM EST]      CMD: rm -fr temp
+
+=====================================================================
+Started: at Mon 20 Feb 2023 11:23:02 AM EST
+Finished: at Mon 20 Feb 2023 04:13:46 PM EST
+ExitStatus: 0
+=====================================================================

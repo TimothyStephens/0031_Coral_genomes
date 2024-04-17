@@ -1,0 +1,2 @@
+04af846a6bce8c0192f006138f756507  Acropora_hyacinthus_NANAv1.transcripts.cds.fna
+3bd4be31467e6ccf34b9339a50601ed2  Acropora_hyacinthus_NANAv1.transcripts.pep.faa

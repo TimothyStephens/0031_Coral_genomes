@@ -1,0 +1,2 @@
+95895cd4a52f9f7cff0f65f8f9d6e273  Acropora_cytherea_SLJPv1.genes.pep.faa
+16e7f4edf10e27a9679bdd059e4c9698  ../00_databases/Acropora_cytherea_SLJPv1.genes.pep.faa

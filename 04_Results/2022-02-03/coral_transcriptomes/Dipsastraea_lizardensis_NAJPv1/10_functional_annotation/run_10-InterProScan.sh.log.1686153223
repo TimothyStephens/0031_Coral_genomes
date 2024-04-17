@@ -1,0 +1,31 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 07 Jun 2023 11:53:43 AM EDT
+Working directory is /scratch/timothy/InterProScan/10_functional_annotation
+=====================================================================
+
+[Wed 07 Jun 2023 11:53:44 AM EDT]      CMD: md5sum Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa ../00_databases/Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa | tee Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa.InterProScan.job_md5sum_list.txt
+79cc92e9fb1ef451b2ef8d8a2859ba87  Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa
+79cc92e9fb1ef451b2ef8d8a2859ba87  ../00_databases/Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa
+[Wed 07 Jun 2023 11:53:44 AM EDT]      CMD: /home/timothy/programs/my_interproscan/interproscan-5.53-87.0/interproscan.sh -dp --goterms --cpu 96 --input Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa --output-file-base Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa.InterProScan
+07/06/2023 11:53:45:201 Welcome to InterProScan-5.53-87.0
+07/06/2023 11:53:45:203 Running InterProScan v5 in STANDALONE mode... on Linux
+07/06/2023 11:53:49:768 RunID: coral_20230607_115349258_h6az
+07/06/2023 11:53:56:733 Loading file /scratch/timothy/InterProScan/10_functional_annotation/Dipsastraea_lizardensis_NAJPv1.transcripts.pep.faa
+07/06/2023 11:53:56:734 Running the following analyses:
+[CDD-3.18,Coils-2.2.1,Gene3D-4.3.0,Hamap-2020_05,MobiDBLite-2.0,PANTHER-15.0,Pfam-34.0,Phobius-1.01,PIRSF-3.10,PIRSR-2021_02,PRINTS-42.0,ProSitePatterns-2021_01,ProSiteProfiles-2021_01,SFLD-4,SignalP_EUK-4.1,SignalP_GRAM_NEGATIVE-4.1,SignalP_GRAM_POSITIVE-4.1,SMART-7.1,SUPERFAMILY-1.75,TIGRFAM-15.0,TMHMM-2.0c]
+Pre-calculated match lookup service DISABLED.  Please wait for match calculations to complete...
+07/06/2023 11:54:00:300 Uploaded 16655 unique sequences for analysis
+07/06/2023 12:16:55:129 25% completed
+07/06/2023 12:34:07:296 50% completed
+07/06/2023 12:51:07:058 75% completed
+07/06/2023 13:08:28:597 90% completed
+07/06/2023 13:49:46:963 100% done:  InterProScan analyses completed 
+
+[Wed 07 Jun 2023 01:49:48 PM EDT]      CMD: rm -fr temp
+
+=====================================================================
+Started: at Wed 07 Jun 2023 11:53:43 AM EDT
+Finished: at Wed 07 Jun 2023 01:49:48 PM EDT
+ExitStatus: 0
+=====================================================================

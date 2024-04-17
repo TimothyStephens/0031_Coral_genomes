@@ -1,0 +1,113 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 15 Jun 2022 07:52:17 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Exaiptasia_diaphana_CC7v1/10_functional_annotation
+=====================================================================
+
+[Wed 15 Jun 2022 07:52:18 AM EDT]      CMD: md5sum Exaiptasia_diaphana_CC7v1.genes.pep.faa ../00_databases/Exaiptasia_diaphana_CC7v1.genes.pep.faa | tee Exaiptasia_diaphana_CC7v1.genes.pep.faa.emapper.job_md5sum_list.txt
+fe81100ff0e73f4d6538377a6e7e5097  Exaiptasia_diaphana_CC7v1.genes.pep.faa
+65fd42f0911ef79c0e0877ba74d8183b  ../00_databases/Exaiptasia_diaphana_CC7v1.genes.pep.faa
+[Wed 15 Jun 2022 07:52:19 AM EDT]      CMD: emapper.py -i Exaiptasia_diaphana_CC7v1.genes.pep.faa --output Exaiptasia_diaphana_CC7v1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 5.0067901611328125e-06 0.00 q/s (% mem usage: 59.50, % mem avail: 40.47)
+[1;34mTime to load the DB into memory: 110.5616226196289[0m
+#  emapper-2.1.6
+# emapper.py  -i Exaiptasia_diaphana_CC7v1.genes.pep.faa --output Exaiptasia_diaphana_CC7v1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Exaiptasia_diaphana_CC7v1/10_functional_annotation/Exaiptasia_diaphana_CC7v1.genes.pep.faa --threads 48 -o /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Exaiptasia_diaphana_CC7v1/10_functional_annotation/Exaiptasia_diaphana_CC7v1.genes.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+CREATED ESL_REFORMAT DB. USING HMMSEARCH
+Namespace(Z=40000000, call_info='## Wed Jun 15 08:01:26 2022\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Exaiptasia_diaphana_CC7v1.genes.pep.faa --output Exaiptasia_diaphana_CC7v1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem\n##', clean_overlaps='hmmsearch_clans', cpu=48, cpus_per_worker=48, cut_ga=True, db='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Exaiptasia_diaphana_CC7v1/10_functional_annotation/tmp6dig4jdf', dbtype='seqdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='hmm', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Exaiptasia_diaphana_CC7v1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+500 983.0962600708008 0.51 q/s (% mem usage: 72.70, % mem avail: 27.28)
+1000 984.7017154693604 1.02 q/s (% mem usage: 72.70, % mem avail: 27.26)
+1500 986.1374938488007 1.52 q/s (% mem usage: 72.70, % mem avail: 27.26)
+2000 987.6417944431305 2.03 q/s (% mem usage: 72.80, % mem avail: 27.21)
+2500 989.1847732067108 2.53 q/s (% mem usage: 72.80, % mem avail: 27.24)
+3000 990.5427339076996 3.03 q/s (% mem usage: 72.80, % mem avail: 27.22)
+3500 992.0988836288452 3.53 q/s (% mem usage: 72.80, % mem avail: 27.21)
+4000 993.5621149539948 4.03 q/s (% mem usage: 72.80, % mem avail: 27.21)
+4500 995.2140712738037 4.52 q/s (% mem usage: 72.80, % mem avail: 27.19)
+5000 1001.6676065921783 4.99 q/s (% mem usage: 72.90, % mem avail: 27.14)
+5500 1003.2916722297668 5.48 q/s (% mem usage: 72.90, % mem avail: 27.13)
+6000 1004.9611656665802 5.97 q/s (% mem usage: 72.90, % mem avail: 27.11)
+6500 1006.5625939369202 6.46 q/s (% mem usage: 72.90, % mem avail: 27.11)
+7000 1008.0960240364075 6.94 q/s (% mem usage: 72.90, % mem avail: 27.09)
+7500 1009.5179471969604 7.43 q/s (% mem usage: 72.90, % mem avail: 27.08)
+8000 1011.1533370018005 7.91 q/s (% mem usage: 72.70, % mem avail: 27.31)
+8500 1013.0597982406616 8.39 q/s (% mem usage: 72.70, % mem avail: 27.29)
+9000 1014.7240953445435 8.87 q/s (% mem usage: 72.70, % mem avail: 27.28)
+9500 1016.2154397964478 9.35 q/s (% mem usage: 72.70, % mem avail: 27.26)
+10000 1017.8563985824585 9.82 q/s (% mem usage: 72.70, % mem avail: 27.26)
+10500 1019.4728260040283 10.30 q/s (% mem usage: 72.50, % mem avail: 27.50)
+11000 1021.0364968776703 10.77 q/s (% mem usage: 72.50, % mem avail: 27.50)
+11500 1022.5309472084045 11.25 q/s (% mem usage: 72.50, % mem avail: 27.49)
+12000 1024.427078485489 11.71 q/s (% mem usage: 72.50, % mem avail: 27.49)
+12500 1026.203850030899 12.18 q/s (% mem usage: 72.50, % mem avail: 27.48)
+13000 1027.863255739212 12.65 q/s (% mem usage: 72.30, % mem avail: 27.74)
+13500 1029.2523248195648 13.12 q/s (% mem usage: 72.00, % mem avail: 28.01)
+14000 1031.038509130478 13.58 q/s (% mem usage: 72.00, % mem avail: 28.00)
+14500 1032.8818309307098 14.04 q/s (% mem usage: 72.00, % mem avail: 28.00)
+15000 1034.6170547008514 14.50 q/s (% mem usage: 72.00, % mem avail: 28.01)
+15500 1036.2893288135529 14.96 q/s (% mem usage: 72.00, % mem avail: 28.00)
+16000 1038.1501247882843 15.41 q/s (% mem usage: 72.00, % mem avail: 28.01)
+16500 1039.644210100174 15.87 q/s (% mem usage: 72.00, % mem avail: 28.03)
+17000 1041.1301457881927 16.33 q/s (% mem usage: 72.00, % mem avail: 28.01)
+17500 1042.5249445438385 16.79 q/s (% mem usage: 72.00, % mem avail: 28.01)
+18000 1044.0097856521606 17.24 q/s (% mem usage: 72.00, % mem avail: 28.00)
+18500 1045.690931558609 17.69 q/s (% mem usage: 72.00, % mem avail: 28.00)
+19000 1047.1758687496185 18.14 q/s (% mem usage: 72.00, % mem avail: 28.00)
+19500 1049.119110584259 18.59 q/s (% mem usage: 72.00, % mem avail: 27.99)
+20000 1050.694034576416 19.04 q/s (% mem usage: 72.00, % mem avail: 27.99)
+20500 1052.263652086258 19.48 q/s (% mem usage: 72.00, % mem avail: 27.99)
+21000 1053.7837672233582 19.93 q/s (% mem usage: 72.00, % mem avail: 27.98)
+21500 1055.300343990326 20.37 q/s (% mem usage: 72.00, % mem avail: 27.98)
+22000 1057.060967206955 20.81 q/s (% mem usage: 72.00, % mem avail: 27.99)
+22500 1058.512867450714 21.26 q/s (% mem usage: 72.00, % mem avail: 27.99)
+23000 1060.0665562152863 21.70 q/s (% mem usage: 72.00, % mem avail: 27.98)
+23500 1061.6622626781464 22.14 q/s (% mem usage: 72.00, % mem avail: 27.97)
+23961 1063.9377491474152 22.52 q/s (% mem usage: 71.90, % mem avail: 28.07)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Exaiptasia_diaphana_CC7v1/10_functional_annotation/Exaiptasia_diaphana_CC7v1.genes.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Exaiptasia_diaphana_CC7v1/10_functional_annotation/Exaiptasia_diaphana_CC7v1.genes.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Exaiptasia_diaphana_CC7v1/10_functional_annotation/Exaiptasia_diaphana_CC7v1.genes.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Exaiptasia_diaphana_CC7v1/10_functional_annotation/Exaiptasia_diaphana_CC7v1.genes.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Exaiptasia_diaphana_CC7v1/10_functional_annotation/Exaiptasia_diaphana_CC7v1.genes.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 23961
+Total time: 1432 secs
+FINISHED
+[Wed 15 Jun 2022 08:16:19 AM EDT]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Wed 15 Jun 2022 07:52:17 AM EDT
+Finished: at Wed 15 Jun 2022 08:16:19 AM EDT
+ExitStatus: 0
+=====================================================================

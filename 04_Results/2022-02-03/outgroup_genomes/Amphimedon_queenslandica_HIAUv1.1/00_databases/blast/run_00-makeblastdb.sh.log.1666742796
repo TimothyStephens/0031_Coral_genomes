@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 08:06:36 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Amphimedon_queenslandica_HIAUv1.1/00_databases/blast
+=====================================================================
+
+[Tue 25 Oct 2022 08:06:38 PM EDT]      CMD: md5sum Amphimedon_queenslandica_HIAUv1.1.assembly.fasta Amphimedon_queenslandica_HIAUv1.1.genes.cds.fna Amphimedon_queenslandica_HIAUv1.1.genes.pep.faa | tee Amphimedon_queenslandica_HIAUv1.1.makeblastdb.job_md5sum_list.txt
+df634167b6c2db26cdcf5c89f0cfcf6d  Amphimedon_queenslandica_HIAUv1.1.assembly.fasta
+bc26366601f3d292f94de253da22ef58  Amphimedon_queenslandica_HIAUv1.1.genes.cds.fna
+9fa447619d783cbfc02da34bc9e27d61  Amphimedon_queenslandica_HIAUv1.1.genes.pep.faa
+[Tue 25 Oct 2022 08:06:38 PM EDT]      CMD: makeblastdb -dbtype nucl -in Amphimedon_queenslandica_HIAUv1.1.assembly.fasta
+
+
+Building a new DB, current time: 10/25/2022 20:06:38
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Amphimedon_queenslandica_HIAUv1.1/00_databases/blast/Amphimedon_queenslandica_HIAUv1.1.assembly.fasta
+New DB title:  Amphimedon_queenslandica_HIAUv1.1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 13133 sequences in 4.43865 seconds.
+
+
+[Tue 25 Oct 2022 08:06:43 PM EDT]      CMD: makeblastdb -dbtype nucl -in Amphimedon_queenslandica_HIAUv1.1.genes.cds.fna
+
+
+Building a new DB, current time: 10/25/2022 20:06:43
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Amphimedon_queenslandica_HIAUv1.1/00_databases/blast/Amphimedon_queenslandica_HIAUv1.1.genes.cds.fna
+New DB title:  Amphimedon_queenslandica_HIAUv1.1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 20214 sequences in 0.784395 seconds.
+
+
+[Tue 25 Oct 2022 08:06:44 PM EDT]      CMD: makeblastdb -dbtype prot -in Amphimedon_queenslandica_HIAUv1.1.genes.pep.faa
+
+
+Building a new DB, current time: 10/25/2022 20:06:44
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Amphimedon_queenslandica_HIAUv1.1/00_databases/blast/Amphimedon_queenslandica_HIAUv1.1.genes.pep.faa
+New DB title:  Amphimedon_queenslandica_HIAUv1.1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 20214 sequences in 0.75515 seconds.
+
+
+
+=====================================================================
+Started: at Tue 25 Oct 2022 08:06:36 PM EDT
+Finished: at Tue 25 Oct 2022 08:06:45 PM EDT
+ExitStatus: 0
+=====================================================================

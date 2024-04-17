@@ -1,0 +1,33 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 24 Mar 2022 04:48:37 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/Montipora_capitata_KBHIv3/06_RepeatMasker_SCORs
+=====================================================================
+
+[Thu 24 Mar 2022 04:48:38 PM EDT]      CMD: sed -e 's/Montipora_capitata_KBHIv3___//' Montipora_capitata_KBHIv3.assembly.fasta > genome.fa
+[Thu 24 Mar 2022 04:48:41 PM EDT]      CMD: RepeatMasker -no_is -nolow -a -x -gff -pa 18 -lib SCOR_consensus_sequences.fa genome.fa 1> RepeatMasker.log 2>&1
+[Thu 24 Mar 2022 05:16:53 PM EDT]      CMD: /home/timothy/programs/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/calcDivergenceFromAlign.pl -s genome.fa.divsum genome.fa.align
+.........................................................................................................................................................................................................................................................................................................................................................................................................................................[Thu 24 Mar 2022 05:17:24 PM EDT]      CMD: bedtools maskfasta -fi genome.fa -fo genome.fa.softmasked -bed genome.fa.out.gff -soft
+[Thu 24 Mar 2022 05:17:27 PM EDT]      CMD: sed -e 's/^>/>Montipora_capitata_KBHIv3___/' genome.fa.softmasked > Montipora_capitata_KBHIv3.assembly.fasta.repmaskSCORs.softmasked
+[Thu 24 Mar 2022 05:17:28 PM EDT]      CMD: sed -e 's/^>/>Montipora_capitata_KBHIv3___/' genome.fa.masked | reformat.sh in=stdin.fa out=stdout.fa fastawrap=0 > Montipora_capitata_KBHIv3.assembly.fasta.repmaskSCORs.masked
+java -ea -Xms300m -cp /home/timothy/programs/bbmap/current/ jgi.ReformatReads in=stdin.fa out=stdout.fa fastawrap=0
+Executing jgi.ReformatReads [in=stdin.fa, out=stdout.fa, fastawrap=0]
+
+Input is being processed as unpaired
+Input:                  	1699 reads          	780507976 bases
+Output:                 	1699 reads (100.00%) 	780507976 bases (100.00%)
+
+Time:                         	6.282 seconds.
+Reads Processed:        1699 	0.27k reads/sec
+Bases Processed:        780m 	124.25m bases/sec
+[Thu 24 Mar 2022 05:17:35 PM EDT]      CMD: awk -F'\t' -vPREFIX=Montipora_capitata_KBHIv3 '{ if($1!~"^#") {print PREFIX"___"$0} else {print $0} }' genome.fa.out.gff > Montipora_capitata_KBHIv3.assembly.fasta.repmaskSCORs.out.gff
+[Thu 24 Mar 2022 05:17:35 PM EDT]      CMD: cp genome.fa.divsum Montipora_capitata_KBHIv3.assembly.fasta.repmaskSCORs.divsum
+[Thu 24 Mar 2022 05:17:35 PM EDT]      CMD: cp genome.fa.tbl Montipora_capitata_KBHIv3.assembly.fasta.repmaskSCORs.tbl
+[Thu 24 Mar 2022 05:17:35 PM EDT]      CMD: tail -n 72 Montipora_capitata_KBHIv3.assembly.fasta.repmaskSCORs.divsum | sed -e 's/ $//' > Montipora_capitata_KBHIv3.assembly.fasta.repmaskSCORs.divsum.Kimura_distance
+[Thu 24 Mar 2022 05:17:35 PM EDT]      CMD: gzip genome.fa.align genome.fa.divsum genome.fa.masked genome.fa.out genome.fa.out.gff genome.fa.softmasked genome.fa.tbl
+
+=====================================================================
+Started: at Thu 24 Mar 2022 04:48:37 PM EDT
+Finished: at Thu 24 Mar 2022 05:20:56 PM EDT
+ExitStatus: 0
+=====================================================================

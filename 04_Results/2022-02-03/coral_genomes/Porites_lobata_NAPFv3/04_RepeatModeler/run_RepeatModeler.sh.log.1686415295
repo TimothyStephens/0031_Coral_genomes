@@ -1,0 +1,33 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat Jun 10 12:41:35 EDT 2023
+Working directory is /scratch/ts942/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Porites_lobata_NAPFv3/04_RepeatModeler
+=====================================================================
+
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+[Sat Jun 10 12:41:36 EDT 2023]      CMD: BuildDatabase -name Porites_lobata_NAPFv3.assembly.fasta.RMDB Porites_lobata_NAPFv3.assembly.fasta 1> BuildDatabase.log 2>&1
+[Sat Jun 10 12:41:41 EDT 2023]      CMD: RepeatModeler -database Porites_lobata_NAPFv3.assembly.fasta.RMDB -pa 10 -LTRStruct 1> RepeatModeler.log 2>&1
+
+=====================================================================
+Started: at Sat Jun 10 12:41:35 EDT 2023
+Finished: at Sun Jun 11 16:03:17 EDT 2023
+ExitStatus: 0
+=====================================================================

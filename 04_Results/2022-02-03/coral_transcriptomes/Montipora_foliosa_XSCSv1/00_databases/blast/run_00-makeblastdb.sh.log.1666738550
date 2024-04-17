@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 06:55:50 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Montipora_foliosa_XSCSv1/00_databases/blast
+=====================================================================
+
+[Tue 25 Oct 2022 06:55:52 PM EDT]      CMD: md5sum Montipora_foliosa_XSCSv1.transcripts.cds.fna Montipora_foliosa_XSCSv1.transcripts.pep.faa | tee Montipora_foliosa_XSCSv1.makeblastdb.job_md5sum_list.txt
+969960eafc185cc32ee59f8e10e7182a  Montipora_foliosa_XSCSv1.transcripts.cds.fna
+aa6b36a998221c2c09d21b7e9f582d56  Montipora_foliosa_XSCSv1.transcripts.pep.faa
+[Tue 25 Oct 2022 06:55:52 PM EDT]      CMD: makeblastdb -dbtype nucl -in Montipora_foliosa_XSCSv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 10/25/2022 18:55:52
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Montipora_foliosa_XSCSv1/00_databases/blast/Montipora_foliosa_XSCSv1.transcripts.cds.fna
+New DB title:  Montipora_foliosa_XSCSv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 10295 sequences in 0.2433 seconds.
+
+
+[Tue 25 Oct 2022 06:55:52 PM EDT]      CMD: makeblastdb -dbtype prot -in Montipora_foliosa_XSCSv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 10/25/2022 18:55:52
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Montipora_foliosa_XSCSv1/00_databases/blast/Montipora_foliosa_XSCSv1.transcripts.pep.faa
+New DB title:  Montipora_foliosa_XSCSv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 10295 sequences in 0.203779 seconds.
+
+
+
+=====================================================================
+Started: at Tue 25 Oct 2022 06:55:50 PM EDT
+Finished: at Tue 25 Oct 2022 06:55:52 PM EDT
+ExitStatus: 0
+=====================================================================

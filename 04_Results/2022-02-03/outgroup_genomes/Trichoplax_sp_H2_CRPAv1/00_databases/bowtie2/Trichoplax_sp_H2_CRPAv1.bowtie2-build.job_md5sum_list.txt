@@ -1,0 +1,2 @@
+84522c74f79d74001247660290ea4a36  Trichoplax_sp_H2_CRPAv1.assembly.fasta
+d382c09ad0f7c1f4a98cb62326d2f341  Trichoplax_sp_H2_CRPAv1.genes.cds.fna

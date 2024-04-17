@@ -1,0 +1,43 @@
+# Files
+Genome file	Calvadosia_cruxmelitensis_CRGBv3.2.assembly.fasta
+GFF file	NA
+
+# Genome stats
+Total scaffold length (bp)	209392379
+Total contig length (bp)	206643190
+Number of scaffolds	50999
+Number of contigs	61381
+N50 of scaffolds (bp)	16443
+N50 of contigs (bp)	11652
+Percent gaps	1.313
+Percent GC	39.95
+
+# Gene stats (combined CDS+introns)
+Number of genes	26258
+Total gene length	0
+Average gene length (bp)	0
+Gene percent GC	0
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	0
+Average number of CDS per gene/transcript	0
+
+# CDS stats
+Number of CDS	26258
+Total CDS length (bp)	26685154
+Average CDS length (bp)	1016.27
+Number of single-CDS transcripts	0
+Percent single-CDS transcripts	0
+Percent GC	46.18
+
+# Intron stats (predicted between CDS features)
+Number of introns	0
+Total intron length (bp)	0
+Average intron length (bp)	0
+Intron percent GC	0
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	0
+Total intergenic region length (bp)	0
+Average intergenic region length (bp)	0
+Intergenic region percent GC	0

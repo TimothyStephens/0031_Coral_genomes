@@ -1,0 +1,33 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue Jun  6 15:23:35 EDT 2023
+Working directory is /scratch/ts942/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Pocillopora_cf_effusa_NAPFv3/04_RepeatModeler
+=====================================================================
+
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+[Tue Jun  6 15:23:35 EDT 2023]      CMD: BuildDatabase -name Pocillopora_cf_effusa_NAPFv3.assembly.fasta.RMDB Pocillopora_cf_effusa_NAPFv3.assembly.fasta 1> BuildDatabase.log 2>&1
+[Tue Jun  6 15:23:38 EDT 2023]      CMD: RepeatModeler -database Pocillopora_cf_effusa_NAPFv3.assembly.fasta.RMDB -pa 5 -LTRStruct 1> RepeatModeler.log 2>&1
+
+=====================================================================
+Started: at Tue Jun  6 15:23:35 EDT 2023
+Finished: at Wed Jun  7 19:01:49 EDT 2023
+ExitStatus: 0
+=====================================================================

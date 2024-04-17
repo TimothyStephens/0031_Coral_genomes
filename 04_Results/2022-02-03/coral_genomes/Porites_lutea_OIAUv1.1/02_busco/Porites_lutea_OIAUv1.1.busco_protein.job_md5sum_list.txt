@@ -1,1 +1,1 @@
-625249998688d8b9d149afa54c02f6d5  Porites_lutea_OIAUv1.1.genes.pep.faa
+4cbe262f6a9129a10e14cc4657bad32c  Porites_lutea_OIAUv1.1.genes.pep.faa

@@ -1,0 +1,31 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 22 Jun 2022 05:08:33 PM EDT
+Working directory is /scratch/timothy/tmp/interproscan/Favia_sp_REEFv1/10_functional_annotation
+=====================================================================
+
+[Wed 22 Jun 2022 05:08:34 PM EDT]      CMD: md5sum Favia_sp_REEFv1.transcripts.pep.faa ../00_databases/Favia_sp_REEFv1.transcripts.pep.faa | tee Favia_sp_REEFv1.transcripts.pep.faa.InterProScan.job_md5sum_list.txt
+891ac1882140308d621ad1a39b4e713a  Favia_sp_REEFv1.transcripts.pep.faa
+891ac1882140308d621ad1a39b4e713a  ../00_databases/Favia_sp_REEFv1.transcripts.pep.faa
+[Wed 22 Jun 2022 05:08:34 PM EDT]      CMD: /home/timothy/programs/my_interproscan/interproscan-5.53-87.0/interproscan.sh -dp --goterms --cpu 96 --input Favia_sp_REEFv1.transcripts.pep.faa --output-file-base Favia_sp_REEFv1.transcripts.pep.faa.InterProScan
+22/06/2022 17:08:35:215 Welcome to InterProScan-5.53-87.0
+22/06/2022 17:08:35:217 Running InterProScan v5 in STANDALONE mode... on Linux
+22/06/2022 17:08:40:327 RunID: coral_20220622_170839839_9k63
+22/06/2022 17:08:47:982 Loading file /scratch/timothy/tmp/interproscan/Favia_sp_REEFv1/10_functional_annotation/Favia_sp_REEFv1.transcripts.pep.faa
+22/06/2022 17:08:47:983 Running the following analyses:
+[CDD-3.18,Coils-2.2.1,Gene3D-4.3.0,Hamap-2020_05,MobiDBLite-2.0,PANTHER-15.0,Pfam-34.0,Phobius-1.01,PIRSF-3.10,PIRSR-2021_02,PRINTS-42.0,ProSitePatterns-2021_01,ProSiteProfiles-2021_01,SFLD-4,SignalP_EUK-4.1,SignalP_GRAM_NEGATIVE-4.1,SignalP_GRAM_POSITIVE-4.1,SMART-7.1,SUPERFAMILY-1.75,TIGRFAM-15.0,TMHMM-2.0c]
+Pre-calculated match lookup service DISABLED.  Please wait for match calculations to complete...
+22/06/2022 17:08:55:137 Uploaded 26627 unique sequences for analysis
+22/06/2022 17:34:47:665 25% completed
+22/06/2022 18:03:47:783 50% completed
+22/06/2022 18:19:05:807 75% completed
+22/06/2022 18:31:16:564 90% completed
+22/06/2022 19:16:15:658 100% done:  InterProScan analyses completed 
+
+[Wed 22 Jun 2022 07:16:16 PM EDT]      CMD: rm -fr temp
+
+=====================================================================
+Started: at Wed 22 Jun 2022 05:08:33 PM EDT
+Finished: at Wed 22 Jun 2022 07:16:16 PM EDT
+ExitStatus: 0
+=====================================================================

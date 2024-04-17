@@ -1,0 +1,2 @@
+d13032f4f61f81b5b1b00a2471768ed9  Dynamena_pumila_WSRUv1.transcripts.cds.fna
+c88ee89318d8fa84af38c04aaa833bc2  Dynamena_pumila_WSRUv1.transcripts.pep.faa

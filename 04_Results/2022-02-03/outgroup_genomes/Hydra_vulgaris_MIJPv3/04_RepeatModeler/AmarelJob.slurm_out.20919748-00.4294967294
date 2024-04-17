@@ -1,0 +1,21 @@
+=====================================================================
+Slurm config version 0.4
+Starting on hal0283.amarel.rutgers.edu at Fri Jul 15 11:55:14 EDT 2022
+Nodelist hal0283
+Current JOB_ID is 20919748
+Current array index number is NA
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_vulgaris_MIJPv3/04_RepeatModeler
+=====================================================================
+
+slurmstepd: error: *** JOB 20919748 ON hal0283 CANCELLED AT 2022-07-18T09:12:36 ***
+
+=====================================================================
+Started: at Fri Jul 15 11:55:14 EDT 2022 on hal0283.amarel.rutgers.edu
+Finished: at Mon Jul 18 09:12:36 EDT 2022
+ExitStatus: 0
+
+   JobName   NTasks  AllocCPUS     ReqMem     MaxRSS  MaxVMSize  MaxDiskRead MaxDiskWrite   TotalCPU    CPUTime    Elapsed 
+---------- -------- ---------- ---------- ---------- ---------- ------------ ------------ ---------- ---------- ---------- 
+ AmarelJob                  12      240Gn                                                  00:00.001 34-15:28:36 2-21:17:23 
+    extern        1         12      240Gn          0      0.10G        0.00M            0  00:00.001 34-15:28:36 2-21:17:23 
+=====================================================================

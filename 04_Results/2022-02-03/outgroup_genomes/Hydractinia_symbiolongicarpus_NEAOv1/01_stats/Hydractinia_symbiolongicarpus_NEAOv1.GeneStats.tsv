@@ -1,0 +1,43 @@
+# Files
+Genome file	Hydractinia_symbiolongicarpus_NEAOv1.assembly.fasta
+GFF file	Hydractinia_symbiolongicarpus_NEAOv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	406663980
+Total contig length (bp)	406636696
+Number of scaffolds	4840
+Number of contigs	5414
+N50 of scaffolds (bp)	2235630
+N50 of contigs (bp)	580416
+Percent gaps	0.007
+Percent GC	35.22
+
+# Gene stats (combined CDS+introns)
+Number of genes	22022
+Total gene length	157168250
+Average gene length (bp)	7136.87
+Gene percent GC	33.74
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1530.86
+Average number of CDS per gene/transcript	7.37594
+
+# CDS stats
+Number of CDS	162433
+Total CDS length (bp)	33712671
+Average CDS length (bp)	207.548
+Number of single-CDS transcripts	4810
+Percent single-CDS transcripts	21.8418
+CDS percent GC	38.7
+
+# Intron stats (predicted between CDS features)
+Number of introns	140411
+Total intron length (bp)	123455579
+Average intron length (bp)	879.244
+Intron percent GC	32.38
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	20583
+Total intergenic region length (bp)	149293408
+Average intergenic region length (bp)	7253.24
+Intergenic region percent GC	34.52

@@ -1,0 +1,2 @@
+fe7ab9b3d04b6e6637849bec20c6f98b  Actinia_equina_RHUKv1.assembly.fasta
+4674b002e024f2e641cebf41b368a66a  Actinia_equina_RHUKv1.genes.gff3

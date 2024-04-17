@@ -1,0 +1,32 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun 15 May 2022 03:25:02 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_capitata_WTHIv1.1/10_functional_annotation
+=====================================================================
+
+[Sun 15 May 2022 03:25:02 AM EDT]      CMD: md5sum Montipora_capitata_WTHIv1.1.genes.pep.faa ../00_databases/Montipora_capitata_WTHIv1.1.genes.pep.faa | tee Montipora_capitata_WTHIv1.1.genes.pep.faa.InterProScan.job_md5sum_list.txt
+c9c63e35668bb8e71927a8cd461a4cdd  Montipora_capitata_WTHIv1.1.genes.pep.faa
+c9c63e35668bb8e71927a8cd461a4cdd  ../00_databases/Montipora_capitata_WTHIv1.1.genes.pep.faa
+[Sun 15 May 2022 03:25:02 AM EDT]      CMD: /home/timothy/programs/my_interproscan/interproscan-5.53-87.0/interproscan.sh -dp --goterms --cpu 96 --input Montipora_capitata_WTHIv1.1.genes.pep.faa --output-file-base Montipora_capitata_WTHIv1.1.genes.pep.faa.InterProScan
+15/05/2022 03:25:04:218 Welcome to InterProScan-5.53-87.0
+15/05/2022 03:25:04:222 Running InterProScan v5 in STANDALONE mode... on Linux
+15/05/2022 03:25:12:478 RunID: coral_20220515_032512010_i0gh
+15/05/2022 03:25:27:337 Loading file /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Montipora_capitata_WTHIv1.1/10_functional_annotation/Montipora_capitata_WTHIv1.1.genes.pep.faa
+15/05/2022 03:25:27:338 Running the following analyses:
+[CDD-3.18,Coils-2.2.1,Gene3D-4.3.0,Hamap-2020_05,MobiDBLite-2.0,PANTHER-15.0,Pfam-34.0,Phobius-1.01,PIRSF-3.10,PIRSR-2021_02,PRINTS-42.0,ProSitePatterns-2021_01,ProSiteProfiles-2021_01,SFLD-4,SignalP_EUK-4.1,SignalP_GRAM_NEGATIVE-4.1,SignalP_GRAM_POSITIVE-4.1,SMART-7.1,SUPERFAMILY-1.75,TIGRFAM-15.0,TMHMM-2.0c]
+Pre-calculated match lookup service DISABLED.  Please wait for match calculations to complete...
+15/05/2022 03:25:41:025 Uploaded 36528 unique sequences for analysis
+15/05/2022 04:48:18:182 25% completed
+15/05/2022 05:22:31:552 50% completed
+15/05/2022 06:22:32:606 66% completed
+15/05/2022 07:05:26:754 90% completed
+15/05/2022 08:05:26:760 99% completed
+15/05/2022 08:19:12:496 100% done:  InterProScan analyses completed 
+
+[Sun 15 May 2022 08:19:13 AM EDT]      CMD: rm -fr temp
+
+=====================================================================
+Started: at Sun 15 May 2022 03:25:02 AM EDT
+Finished: at Sun 15 May 2022 08:19:13 AM EDT
+ExitStatus: 0
+=====================================================================

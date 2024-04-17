@@ -1,0 +1,2 @@
+a25e0c05c9da9477870e3ba31d9cb8b5  Corynactis_australis_JBAUv1.transcripts.cds.fna
+3ddb8affef9be9cf513aaf5b71213a88  Corynactis_australis_JBAUv1.transcripts.pep.faa

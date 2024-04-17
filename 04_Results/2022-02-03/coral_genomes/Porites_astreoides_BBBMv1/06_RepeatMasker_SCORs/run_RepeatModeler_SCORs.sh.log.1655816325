@@ -1,0 +1,33 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 21 Jun 2022 08:58:45 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_astreoides_BBBMv1/06_RepeatMasker_SCORs
+=====================================================================
+
+[Tue 21 Jun 2022 08:58:46 AM EDT]      CMD: sed -e 's/Porites_astreoides_BBBMv1___//' Porites_astreoides_BBBMv1.assembly.fasta > genome.fa
+[Tue 21 Jun 2022 08:58:47 AM EDT]      CMD: RepeatMasker -no_is -nolow -a -x -gff -pa 18 -lib SCOR_consensus_sequences.fa genome.fa 1> RepeatMasker.log 2>&1
+[Tue 21 Jun 2022 09:05:31 AM EDT]      CMD: /home/timothy/programs/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/calcDivergenceFromAlign.pl -s genome.fa.divsum genome.fa.align
+...........................................................................................[Tue 21 Jun 2022 09:05:36 AM EDT]      CMD: bedtools maskfasta -fi genome.fa -fo genome.fa.softmasked -bed genome.fa.out.gff -soft
+[Tue 21 Jun 2022 09:05:37 AM EDT]      CMD: sed -e 's/^>/>Porites_astreoides_BBBMv1___/' genome.fa.softmasked > Porites_astreoides_BBBMv1.assembly.fasta.repmaskSCORs.softmasked
+[Tue 21 Jun 2022 09:05:38 AM EDT]      CMD: sed -e 's/^>/>Porites_astreoides_BBBMv1___/' genome.fa.masked | reformat.sh in=stdin.fa out=stdout.fa fastawrap=0 > Porites_astreoides_BBBMv1.assembly.fasta.repmaskSCORs.masked
+java -ea -Xms300m -cp /home/timothy/programs/bbmap/current/ jgi.ReformatReads in=stdin.fa out=stdout.fa fastawrap=0
+Executing jgi.ReformatReads [in=stdin.fa, out=stdout.fa, fastawrap=0]
+
+Input is being processed as unpaired
+Input:                  	3051 reads          	677753397 bases
+Output:                 	3051 reads (100.00%) 	677753397 bases (100.00%)
+
+Time:                         	6.273 seconds.
+Reads Processed:        3051 	0.49k reads/sec
+Bases Processed:        677m 	108.04m bases/sec
+[Tue 21 Jun 2022 09:05:44 AM EDT]      CMD: awk -F'\t' -vPREFIX=Porites_astreoides_BBBMv1 '{ if($1!~"^#") {print PREFIX"___"$0} else {print $0} }' genome.fa.out.gff > Porites_astreoides_BBBMv1.assembly.fasta.repmaskSCORs.out.gff
+[Tue 21 Jun 2022 09:05:44 AM EDT]      CMD: cp genome.fa.divsum Porites_astreoides_BBBMv1.assembly.fasta.repmaskSCORs.divsum
+[Tue 21 Jun 2022 09:05:44 AM EDT]      CMD: cp genome.fa.tbl Porites_astreoides_BBBMv1.assembly.fasta.repmaskSCORs.tbl
+[Tue 21 Jun 2022 09:05:44 AM EDT]      CMD: tail -n 72 Porites_astreoides_BBBMv1.assembly.fasta.repmaskSCORs.divsum | sed -e 's/ $//' > Porites_astreoides_BBBMv1.assembly.fasta.repmaskSCORs.divsum.Kimura_distance
+[Tue 21 Jun 2022 09:05:44 AM EDT]      CMD: gzip genome.fa.align genome.fa.divsum genome.fa.masked genome.fa.out genome.fa.out.gff genome.fa.softmasked genome.fa.tbl
+
+=====================================================================
+Started: at Tue 21 Jun 2022 08:58:45 AM EDT
+Finished: at Tue 21 Jun 2022 09:08:06 AM EDT
+ExitStatus: 0
+=====================================================================

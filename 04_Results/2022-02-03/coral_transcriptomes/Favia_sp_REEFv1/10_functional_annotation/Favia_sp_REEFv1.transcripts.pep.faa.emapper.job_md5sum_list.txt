@@ -1,0 +1,2 @@
+891ac1882140308d621ad1a39b4e713a  Favia_sp_REEFv1.transcripts.pep.faa
+891ac1882140308d621ad1a39b4e713a  ../00_databases/Favia_sp_REEFv1.transcripts.pep.faa

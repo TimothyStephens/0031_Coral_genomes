@@ -1,0 +1,2 @@
+b4fd513a1423c826979d0ca94ac7650e  Millepora_complanata_PRUSv1.transcripts.cds.fna
+473d2385d9cb4d783e017f2c1e4d7648  Millepora_complanata_PRUSv1.transcripts.pep.faa

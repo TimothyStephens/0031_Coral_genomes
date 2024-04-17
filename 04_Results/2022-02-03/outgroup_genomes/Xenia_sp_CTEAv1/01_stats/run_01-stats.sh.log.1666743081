@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 08:11:21 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Xenia_sp_CTEAv1/01_stats
+=====================================================================
+
+[Tue 25 Oct 2022 08:11:22 PM EDT]      CMD: md5sum Xenia_sp_CTEAv1.assembly.fasta Xenia_sp_CTEAv1.genes.gff3 | tee Xenia_sp_CTEAv1.genome_stats.job_md5sum_list.txt
+612d9ab06be964c5d58eb756e92c993d  Xenia_sp_CTEAv1.assembly.fasta
+1b259918425114a1ec2acf0aa5e75999  Xenia_sp_CTEAv1.genes.gff3
+[Tue 25 Oct 2022 08:11:23 PM EDT]      CMD: ./genome_stats Xenia_sp_CTEAv1.assembly.fasta Xenia_sp_CTEAv1.genes.gff3 > Xenia_sp_CTEAv1.GeneStats.tsv
+index file Xenia_sp_CTEAv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Tue 25 Oct 2022 08:11:21 PM EDT
+Finished: at Tue 25 Oct 2022 08:11:43 PM EDT
+ExitStatus: 0
+=====================================================================

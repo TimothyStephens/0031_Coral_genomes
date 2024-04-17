@@ -1,0 +1,2 @@
+67e5fec9a470c4dcd01462f368cf0a04  Rhodactis_indosinensis_NATWv1.transcripts.pep.faa
+67e5fec9a470c4dcd01462f368cf0a04  ../00_databases/Rhodactis_indosinensis_NATWv1.transcripts.pep.faa

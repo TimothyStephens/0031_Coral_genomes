@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat 12 Nov 2022 07:16:03 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Porpita_porpita_YOJPv1/01_stats
+=====================================================================
+
+[Sat 12 Nov 2022 07:16:04 PM EST]      CMD: md5sum Porpita_porpita_YOJPv1.transcripts.cds.fna | tee Porpita_porpita_YOJPv1.CDS_stats.job_md5sum_list.txt
+8f80f54538bea2a6c0606d4106d2a52f  Porpita_porpita_YOJPv1.transcripts.cds.fna
+[Sat 12 Nov 2022 07:16:04 PM EST]      CMD: ./CDS_stats Porpita_porpita_YOJPv1.transcripts.cds.fna > Porpita_porpita_YOJPv1.GeneStats.tsv
+
+=====================================================================
+Started: at Sat 12 Nov 2022 07:16:03 PM EST
+Finished: at Sat 12 Nov 2022 07:16:05 PM EST
+ExitStatus: 0
+=====================================================================

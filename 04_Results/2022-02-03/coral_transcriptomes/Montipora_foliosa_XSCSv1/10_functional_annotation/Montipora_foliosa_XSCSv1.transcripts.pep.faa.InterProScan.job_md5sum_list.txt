@@ -1,0 +1,2 @@
+aa6b36a998221c2c09d21b7e9f582d56  Montipora_foliosa_XSCSv1.transcripts.pep.faa
+aa6b36a998221c2c09d21b7e9f582d56  ../00_databases/Montipora_foliosa_XSCSv1.transcripts.pep.faa

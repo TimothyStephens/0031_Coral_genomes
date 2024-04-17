@@ -1,0 +1,21 @@
+=====================================================================
+Slurm config version 0.4
+Starting on hal0193.amarel.rutgers.edu at Tue Mar  8 21:12:53 EST 2022
+Nodelist hal0193
+Current JOB_ID is 17992713
+Current array index number is NA
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/Acropora_acuminata_SLJPv1/04_RepeatModeler
+=====================================================================
+
+slurmstepd: error: *** JOB 17992713 ON hal0193 CANCELLED AT 2022-03-09T16:38:52 DUE TO PREEMPTION ***
+
+=====================================================================
+Started: at Tue Mar  8 21:12:53 EST 2022 on hal0193.amarel.rutgers.edu
+Finished: at Wed Mar  9 16:38:52 EST 2022
+ExitStatus: 0
+
+   JobName   NTasks  AllocCPUS     ReqMem     MaxRSS  MaxVMSize  MaxDiskRead MaxDiskWrite   TotalCPU    CPUTime    Elapsed 
+---------- -------- ---------- ---------- ---------- ---------- ------------ ------------ ---------- ---------- ---------- 
+ AmarelJob                  24      120Gn                                                  00:00.001 19-10:23:12   19:25:58 
+    extern        1         24      120Gn          0      0.10G        0.00M            0  00:00.001 19-10:23:36   19:25:59 
+=====================================================================

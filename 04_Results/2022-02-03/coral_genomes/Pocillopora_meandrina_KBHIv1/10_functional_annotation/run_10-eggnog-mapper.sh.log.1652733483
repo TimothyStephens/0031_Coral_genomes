@@ -1,0 +1,114 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Mon 16 May 2022 04:38:03 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_meandrina_KBHIv1/10_functional_annotation
+=====================================================================
+
+[Mon 16 May 2022 04:38:04 PM EDT]      CMD: md5sum Pocillopora_meandrina_KBHIv1.genes.pep.faa ../00_databases/Pocillopora_meandrina_KBHIv1.genes.pep.faa | tee Pocillopora_meandrina_KBHIv1.genes.pep.faa.emapper.job_md5sum_list.txt
+890de3fa0c4ef335eafce955911940d0  Pocillopora_meandrina_KBHIv1.genes.pep.faa
+890de3fa0c4ef335eafce955911940d0  ../00_databases/Pocillopora_meandrina_KBHIv1.genes.pep.faa
+[Mon 16 May 2022 04:38:04 PM EDT]      CMD: emapper.py -i Pocillopora_meandrina_KBHIv1.genes.pep.faa --output Pocillopora_meandrina_KBHIv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 5.0067901611328125e-06 0.00 q/s (% mem usage: 5.30, % mem avail: 94.69)
+[1;34mTime to load the DB into memory: 41.40368413925171[0m
+#  emapper-2.1.6
+# emapper.py  -i Pocillopora_meandrina_KBHIv1.genes.pep.faa --output Pocillopora_meandrina_KBHIv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_meandrina_KBHIv1/10_functional_annotation/Pocillopora_meandrina_KBHIv1.genes.pep.faa --threads 96 -o /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_meandrina_KBHIv1/10_functional_annotation/Pocillopora_meandrina_KBHIv1.genes.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+CREATED ESL_REFORMAT DB. USING HMMSEARCH
+Namespace(Z=40000000, call_info='## Mon May 16 16:46:32 2022\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Pocillopora_meandrina_KBHIv1.genes.pep.faa --output Pocillopora_meandrina_KBHIv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem\n##', clean_overlaps='hmmsearch_clans', cpu=96, cpus_per_worker=96, cut_ga=True, db='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_meandrina_KBHIv1/10_functional_annotation/tmptdn_3u2z', dbtype='seqdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='hmm', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_meandrina_KBHIv1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+500 942.6528217792511 0.53 q/s (% mem usage: 16.50, % mem avail: 83.45)
+1000 943.7783663272858 1.06 q/s (% mem usage: 16.50, % mem avail: 83.45)
+1500 944.9798538684845 1.59 q/s (% mem usage: 16.50, % mem avail: 83.45)
+2000 946.1873934268951 2.11 q/s (% mem usage: 16.50, % mem avail: 83.45)
+2500 948.8947839736938 2.63 q/s (% mem usage: 16.50, % mem avail: 83.45)
+3000 950.0410537719727 3.16 q/s (% mem usage: 16.50, % mem avail: 83.45)
+3500 951.0807204246521 3.68 q/s (% mem usage: 16.50, % mem avail: 83.45)
+4000 952.176361322403 4.20 q/s (% mem usage: 16.50, % mem avail: 83.45)
+4500 953.4799213409424 4.72 q/s (% mem usage: 16.50, % mem avail: 83.45)
+5000 954.7286303043365 5.24 q/s (% mem usage: 16.50, % mem avail: 83.45)
+5500 955.8620665073395 5.75 q/s (% mem usage: 16.50, % mem avail: 83.45)
+6000 957.0305018424988 6.27 q/s (% mem usage: 16.50, % mem avail: 83.46)
+6500 958.2498788833618 6.78 q/s (% mem usage: 16.50, % mem avail: 83.46)
+7000 959.4613516330719 7.30 q/s (% mem usage: 16.50, % mem avail: 83.46)
+7500 960.792078256607 7.81 q/s (% mem usage: 16.50, % mem avail: 83.46)
+8000 961.9083244800568 8.32 q/s (% mem usage: 16.50, % mem avail: 83.46)
+8500 963.1570234298706 8.83 q/s (% mem usage: 16.50, % mem avail: 83.46)
+9000 964.2691893577576 9.33 q/s (% mem usage: 16.50, % mem avail: 83.46)
+9500 965.4986095428467 9.84 q/s (% mem usage: 16.50, % mem avail: 83.46)
+10000 966.7729740142822 10.34 q/s (% mem usage: 16.50, % mem avail: 83.46)
+10500 967.9810972213745 10.85 q/s (% mem usage: 16.50, % mem avail: 83.46)
+11000 970.649879693985 11.33 q/s (% mem usage: 16.50, % mem avail: 83.46)
+11500 971.9462320804596 11.83 q/s (% mem usage: 16.50, % mem avail: 83.46)
+12000 973.2611708641052 12.33 q/s (% mem usage: 16.50, % mem avail: 83.46)
+12500 974.5737571716309 12.83 q/s (% mem usage: 16.50, % mem avail: 83.46)
+13000 975.863790512085 13.32 q/s (% mem usage: 16.50, % mem avail: 83.46)
+13500 977.1253290176392 13.82 q/s (% mem usage: 16.50, % mem avail: 83.46)
+14000 978.2917385101318 14.31 q/s (% mem usage: 16.50, % mem avail: 83.46)
+14500 979.6085748672485 14.80 q/s (% mem usage: 16.50, % mem avail: 83.46)
+15000 981.0617249011993 15.29 q/s (% mem usage: 16.50, % mem avail: 83.46)
+15500 982.2091391086578 15.78 q/s (% mem usage: 16.50, % mem avail: 83.46)
+16000 983.4530069828033 16.27 q/s (% mem usage: 16.50, % mem avail: 83.46)
+16500 984.6839118003845 16.76 q/s (% mem usage: 16.50, % mem avail: 83.46)
+17000 985.8726534843445 17.24 q/s (% mem usage: 16.50, % mem avail: 83.46)
+17500 987.1393668651581 17.73 q/s (% mem usage: 16.50, % mem avail: 83.46)
+18000 988.2487952709198 18.21 q/s (% mem usage: 16.50, % mem avail: 83.46)
+18500 989.3284239768982 18.70 q/s (% mem usage: 16.50, % mem avail: 83.46)
+19000 990.600902557373 19.18 q/s (% mem usage: 16.50, % mem avail: 83.46)
+19500 991.7674844264984 19.66 q/s (% mem usage: 16.50, % mem avail: 83.46)
+20000 992.9382281303406 20.14 q/s (% mem usage: 16.50, % mem avail: 83.46)
+20500 994.1277461051941 20.62 q/s (% mem usage: 16.50, % mem avail: 83.46)
+21000 995.4301705360413 21.10 q/s (% mem usage: 16.50, % mem avail: 83.46)
+21500 996.6028165817261 21.57 q/s (% mem usage: 16.50, % mem avail: 83.46)
+22000 997.7538177967072 22.05 q/s (% mem usage: 16.50, % mem avail: 83.46)
+22500 998.9683220386505 22.52 q/s (% mem usage: 16.50, % mem avail: 83.46)
+23000 1000.1462438106537 23.00 q/s (% mem usage: 16.50, % mem avail: 83.46)
+23500 1001.3220102787018 23.47 q/s (% mem usage: 16.50, % mem avail: 83.46)
+24000 1002.6010737419128 23.94 q/s (% mem usage: 16.50, % mem avail: 83.46)
+24125 1003.5850784778595 24.04 q/s (% mem usage: 16.40, % mem avail: 83.55)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_meandrina_KBHIv1/10_functional_annotation/Pocillopora_meandrina_KBHIv1.genes.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_meandrina_KBHIv1/10_functional_annotation/Pocillopora_meandrina_KBHIv1.genes.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_meandrina_KBHIv1/10_functional_annotation/Pocillopora_meandrina_KBHIv1.genes.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_meandrina_KBHIv1/10_functional_annotation/Pocillopora_meandrina_KBHIv1.genes.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Pocillopora_meandrina_KBHIv1/10_functional_annotation/Pocillopora_meandrina_KBHIv1.genes.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 24125
+Total time: 1396 secs
+FINISHED
+[Mon 16 May 2022 05:01:26 PM EDT]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Mon 16 May 2022 04:38:03 PM EDT
+Finished: at Mon 16 May 2022 05:01:26 PM EDT
+ExitStatus: 0
+=====================================================================

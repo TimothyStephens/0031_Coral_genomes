@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 02:25:35 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Palythoa_variabilis_PCBRv1/00_databases/blast
+=====================================================================
+
+[Tue 06 Jun 2023 02:25:37 PM EDT]      CMD: md5sum Palythoa_variabilis_PCBRv1.transcripts.cds.fna Palythoa_variabilis_PCBRv1.transcripts.pep.faa | tee Palythoa_variabilis_PCBRv1.makeblastdb.job_md5sum_list.txt
+60fe5ae7cbab1779d940276853d758ff  Palythoa_variabilis_PCBRv1.transcripts.cds.fna
+399fc347d1e5572b21b85ad47ea303de  Palythoa_variabilis_PCBRv1.transcripts.pep.faa
+[Tue 06 Jun 2023 02:25:37 PM EDT]      CMD: makeblastdb -dbtype nucl -in Palythoa_variabilis_PCBRv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 06/06/2023 14:25:37
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Palythoa_variabilis_PCBRv1/00_databases/blast/Palythoa_variabilis_PCBRv1.transcripts.cds.fna
+New DB title:  Palythoa_variabilis_PCBRv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 65614 sequences in 1.17761 seconds.
+
+
+[Tue 06 Jun 2023 02:25:38 PM EDT]      CMD: makeblastdb -dbtype prot -in Palythoa_variabilis_PCBRv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 06/06/2023 14:25:38
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Palythoa_variabilis_PCBRv1/00_databases/blast/Palythoa_variabilis_PCBRv1.transcripts.pep.faa
+New DB title:  Palythoa_variabilis_PCBRv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 65614 sequences in 1.04132 seconds.
+
+
+
+=====================================================================
+Started: at Tue 06 Jun 2023 02:25:35 PM EDT
+Finished: at Tue 06 Jun 2023 02:25:39 PM EDT
+ExitStatus: 0
+=====================================================================

@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 08:08:27 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Xenia_sp_CTEAv1/00_databases/blast
+=====================================================================
+
+[Tue 25 Oct 2022 08:08:28 PM EDT]      CMD: md5sum Xenia_sp_CTEAv1.assembly.fasta Xenia_sp_CTEAv1.genes.cds.fna Xenia_sp_CTEAv1.genes.pep.faa | tee Xenia_sp_CTEAv1.makeblastdb.job_md5sum_list.txt
+612d9ab06be964c5d58eb756e92c993d  Xenia_sp_CTEAv1.assembly.fasta
+3573e9541cde0d1d09502a99f51bac75  Xenia_sp_CTEAv1.genes.cds.fna
+de3624a4d9780cde87b52a6c7218e6ba  Xenia_sp_CTEAv1.genes.pep.faa
+[Tue 25 Oct 2022 08:08:29 PM EDT]      CMD: makeblastdb -dbtype nucl -in Xenia_sp_CTEAv1.assembly.fasta
+
+
+Building a new DB, current time: 10/25/2022 20:08:29
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Xenia_sp_CTEAv1/00_databases/blast/Xenia_sp_CTEAv1.assembly.fasta
+New DB title:  Xenia_sp_CTEAv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 168 sequences in 4.49761 seconds.
+
+
+[Tue 25 Oct 2022 08:08:34 PM EDT]      CMD: makeblastdb -dbtype nucl -in Xenia_sp_CTEAv1.genes.cds.fna
+
+
+Building a new DB, current time: 10/25/2022 20:08:34
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Xenia_sp_CTEAv1/00_databases/blast/Xenia_sp_CTEAv1.genes.cds.fna
+New DB title:  Xenia_sp_CTEAv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 27158 sequences in 1.42629 seconds.
+
+
+[Tue 25 Oct 2022 08:08:35 PM EDT]      CMD: makeblastdb -dbtype prot -in Xenia_sp_CTEAv1.genes.pep.faa
+
+
+Building a new DB, current time: 10/25/2022 20:08:35
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Xenia_sp_CTEAv1/00_databases/blast/Xenia_sp_CTEAv1.genes.pep.faa
+New DB title:  Xenia_sp_CTEAv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 27158 sequences in 1.11174 seconds.
+
+
+
+=====================================================================
+Started: at Tue 25 Oct 2022 08:08:27 PM EDT
+Finished: at Tue 25 Oct 2022 08:08:36 PM EDT
+ExitStatus: 0
+=====================================================================

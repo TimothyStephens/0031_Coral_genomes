@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 09 Nov 2022 07:27:20 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Aurelia_aurita_RSPOv1/00_databases/blast
+=====================================================================
+
+[Wed 09 Nov 2022 07:27:24 PM EST]      CMD: md5sum Aurelia_aurita_RSPOv1.assembly.fasta Aurelia_aurita_RSPOv1.genes.cds.fna Aurelia_aurita_RSPOv1.genes.pep.faa | tee Aurelia_aurita_RSPOv1.makeblastdb.job_md5sum_list.txt
+a0834c4335f843f600a5a3ef046cd467  Aurelia_aurita_RSPOv1.assembly.fasta
+fe6dfb9cac9778d3bb4c4a0e072c4693  Aurelia_aurita_RSPOv1.genes.cds.fna
+28187bf0b95b2609e4bcc0bedc81095b  Aurelia_aurita_RSPOv1.genes.pep.faa
+[Wed 09 Nov 2022 07:27:25 PM EST]      CMD: makeblastdb -dbtype nucl -in Aurelia_aurita_RSPOv1.assembly.fasta
+
+
+Building a new DB, current time: 11/09/2022 19:27:25
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Aurelia_aurita_RSPOv1/00_databases/blast/Aurelia_aurita_RSPOv1.assembly.fasta
+New DB title:  Aurelia_aurita_RSPOv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 7744 sequences in 10.4992 seconds.
+
+
+[Wed 09 Nov 2022 07:27:36 PM EST]      CMD: makeblastdb -dbtype nucl -in Aurelia_aurita_RSPOv1.genes.cds.fna
+
+
+Building a new DB, current time: 11/09/2022 19:27:36
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Aurelia_aurita_RSPOv1/00_databases/blast/Aurelia_aurita_RSPOv1.genes.cds.fna
+New DB title:  Aurelia_aurita_RSPOv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 30161 sequences in 2.31664 seconds.
+
+
+[Wed 09 Nov 2022 07:27:38 PM EST]      CMD: makeblastdb -dbtype prot -in Aurelia_aurita_RSPOv1.genes.pep.faa
+
+
+Building a new DB, current time: 11/09/2022 19:27:38
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Aurelia_aurita_RSPOv1/00_databases/blast/Aurelia_aurita_RSPOv1.genes.pep.faa
+New DB title:  Aurelia_aurita_RSPOv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 30161 sequences in 0.979747 seconds.
+
+
+
+=====================================================================
+Started: at Wed 09 Nov 2022 07:27:20 PM EST
+Finished: at Wed 09 Nov 2022 07:27:39 PM EST
+ExitStatus: 0
+=====================================================================

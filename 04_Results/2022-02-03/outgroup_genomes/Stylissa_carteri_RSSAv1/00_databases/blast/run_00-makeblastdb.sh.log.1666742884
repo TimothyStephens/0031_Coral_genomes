@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 08:08:04 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Stylissa_carteri_RSSAv1/00_databases/blast
+=====================================================================
+
+[Tue 25 Oct 2022 08:08:07 PM EDT]      CMD: md5sum Stylissa_carteri_RSSAv1.assembly.fasta Stylissa_carteri_RSSAv1.genes.cds.fna Stylissa_carteri_RSSAv1.genes.pep.faa | tee Stylissa_carteri_RSSAv1.makeblastdb.job_md5sum_list.txt
+5e656cf15a68732247b6f415a0008a3c  Stylissa_carteri_RSSAv1.assembly.fasta
+cef8a689e4b0dbc0668cd4caa9cf3d6d  Stylissa_carteri_RSSAv1.genes.cds.fna
+910a64e1319dbcb24416e4ae15454f0a  Stylissa_carteri_RSSAv1.genes.pep.faa
+[Tue 25 Oct 2022 08:08:08 PM EDT]      CMD: makeblastdb -dbtype nucl -in Stylissa_carteri_RSSAv1.assembly.fasta
+
+
+Building a new DB, current time: 10/25/2022 20:08:08
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Stylissa_carteri_RSSAv1/00_databases/blast/Stylissa_carteri_RSSAv1.assembly.fasta
+New DB title:  Stylissa_carteri_RSSAv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 97497 sequences in 7.27618 seconds.
+
+
+[Tue 25 Oct 2022 08:08:16 PM EDT]      CMD: makeblastdb -dbtype nucl -in Stylissa_carteri_RSSAv1.genes.cds.fna
+
+
+Building a new DB, current time: 10/25/2022 20:08:16
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Stylissa_carteri_RSSAv1/00_databases/blast/Stylissa_carteri_RSSAv1.genes.cds.fna
+New DB title:  Stylissa_carteri_RSSAv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 46312 sequences in 2.49718 seconds.
+
+
+[Tue 25 Oct 2022 08:08:18 PM EDT]      CMD: makeblastdb -dbtype prot -in Stylissa_carteri_RSSAv1.genes.pep.faa
+
+
+Building a new DB, current time: 10/25/2022 20:08:18
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Stylissa_carteri_RSSAv1/00_databases/blast/Stylissa_carteri_RSSAv1.genes.pep.faa
+New DB title:  Stylissa_carteri_RSSAv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 46312 sequences in 1.49404 seconds.
+
+
+
+=====================================================================
+Started: at Tue 25 Oct 2022 08:08:04 PM EDT
+Finished: at Tue 25 Oct 2022 08:08:20 PM EDT
+ExitStatus: 0
+=====================================================================

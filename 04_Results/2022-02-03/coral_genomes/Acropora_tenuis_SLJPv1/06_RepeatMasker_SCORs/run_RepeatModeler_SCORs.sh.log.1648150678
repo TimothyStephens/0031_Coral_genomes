@@ -1,0 +1,33 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 24 Mar 2022 03:37:58 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/Acropora_tenuis_SLJPv1/06_RepeatMasker_SCORs
+=====================================================================
+
+[Thu 24 Mar 2022 03:37:58 PM EDT]      CMD: sed -e 's/Acropora_tenuis_SLJPv1___//' Acropora_tenuis_SLJPv1.assembly.fasta > genome.fa
+[Thu 24 Mar 2022 03:38:00 PM EDT]      CMD: RepeatMasker -no_is -nolow -a -x -gff -pa 18 -lib SCOR_consensus_sequences.fa genome.fa 1> RepeatMasker.log 2>&1
+[Thu 24 Mar 2022 03:43:11 PM EDT]      CMD: /home/timothy/programs/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/calcDivergenceFromAlign.pl -s genome.fa.divsum genome.fa.align
+..............................................................................................................................[Thu 24 Mar 2022 03:43:20 PM EDT]      CMD: bedtools maskfasta -fi genome.fa -fo genome.fa.softmasked -bed genome.fa.out.gff -soft
+[Thu 24 Mar 2022 03:43:20 PM EDT]      CMD: sed -e 's/^>/>Acropora_tenuis_SLJPv1___/' genome.fa.softmasked > Acropora_tenuis_SLJPv1.assembly.fasta.repmaskSCORs.softmasked
+[Thu 24 Mar 2022 03:43:21 PM EDT]      CMD: sed -e 's/^>/>Acropora_tenuis_SLJPv1___/' genome.fa.masked | reformat.sh in=stdin.fa out=stdout.fa fastawrap=0 > Acropora_tenuis_SLJPv1.assembly.fasta.repmaskSCORs.masked
+java -ea -Xms300m -cp /home/timothy/programs/bbmap/current/ jgi.ReformatReads in=stdin.fa out=stdout.fa fastawrap=0
+Executing jgi.ReformatReads [in=stdin.fa, out=stdout.fa, fastawrap=0]
+
+Input is being processed as unpaired
+Input:                  	1848 reads          	406871833 bases
+Output:                 	1848 reads (100.00%) 	406871833 bases (100.00%)
+
+Time:                         	3.901 seconds.
+Reads Processed:        1848 	0.47k reads/sec
+Bases Processed:        406m 	104.29m bases/sec
+[Thu 24 Mar 2022 03:43:25 PM EDT]      CMD: awk -F'\t' -vPREFIX=Acropora_tenuis_SLJPv1 '{ if($1!~"^#") {print PREFIX"___"$0} else {print $0} }' genome.fa.out.gff > Acropora_tenuis_SLJPv1.assembly.fasta.repmaskSCORs.out.gff
+[Thu 24 Mar 2022 03:43:25 PM EDT]      CMD: cp genome.fa.divsum Acropora_tenuis_SLJPv1.assembly.fasta.repmaskSCORs.divsum
+[Thu 24 Mar 2022 03:43:25 PM EDT]      CMD: cp genome.fa.tbl Acropora_tenuis_SLJPv1.assembly.fasta.repmaskSCORs.tbl
+[Thu 24 Mar 2022 03:43:25 PM EDT]      CMD: tail -n 72 Acropora_tenuis_SLJPv1.assembly.fasta.repmaskSCORs.divsum | sed -e 's/ $//' > Acropora_tenuis_SLJPv1.assembly.fasta.repmaskSCORs.divsum.Kimura_distance
+[Thu 24 Mar 2022 03:43:25 PM EDT]      CMD: gzip genome.fa.align genome.fa.divsum genome.fa.masked genome.fa.out genome.fa.out.gff genome.fa.softmasked genome.fa.tbl
+
+=====================================================================
+Started: at Thu 24 Mar 2022 03:37:58 PM EDT
+Finished: at Thu 24 Mar 2022 03:45:01 PM EDT
+ExitStatus: 0
+=====================================================================

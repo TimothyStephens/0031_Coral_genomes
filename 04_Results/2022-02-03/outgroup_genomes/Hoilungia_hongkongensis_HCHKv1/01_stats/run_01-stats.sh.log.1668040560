@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 09 Nov 2022 07:36:00 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hoilungia_hongkongensis_HCHKv1/01_stats
+=====================================================================
+
+[Wed 09 Nov 2022 07:36:02 PM EST]      CMD: md5sum Hoilungia_hongkongensis_HCHKv1.assembly.fasta Hoilungia_hongkongensis_HCHKv1.genes.gff3 | tee Hoilungia_hongkongensis_HCHKv1.genome_stats.job_md5sum_list.txt
+5f95f971cf0181f62c2812802fa54db6  Hoilungia_hongkongensis_HCHKv1.assembly.fasta
+6397d02b1ded5afc2ddfabe3b88abf54  Hoilungia_hongkongensis_HCHKv1.genes.gff3
+[Wed 09 Nov 2022 07:36:02 PM EST]      CMD: ./genome_stats Hoilungia_hongkongensis_HCHKv1.assembly.fasta Hoilungia_hongkongensis_HCHKv1.genes.gff3 > Hoilungia_hongkongensis_HCHKv1.GeneStats.tsv
+index file Hoilungia_hongkongensis_HCHKv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Wed 09 Nov 2022 07:36:00 PM EST
+Finished: at Wed 09 Nov 2022 07:36:14 PM EST
+ExitStatus: 0
+=====================================================================

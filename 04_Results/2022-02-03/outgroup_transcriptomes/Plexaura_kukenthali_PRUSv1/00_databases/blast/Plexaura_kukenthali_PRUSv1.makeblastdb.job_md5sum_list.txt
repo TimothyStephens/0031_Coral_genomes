@@ -1,0 +1,2 @@
+e2703764871d396a3d4274b4ad9949dd  Plexaura_kukenthali_PRUSv1.transcripts.cds.fna
+83789adba6f35c99aa167f0acd7b438e  Plexaura_kukenthali_PRUSv1.transcripts.pep.faa

@@ -1,0 +1,2 @@
+44bef7547f244d4d19e38e0badeb3f72  Acropora_nasuta_SLJPv1.genes.pep.faa
+77b4030d5bade5089e339349777cbc31  ../00_databases/Acropora_nasuta_SLJPv1.genes.pep.faa

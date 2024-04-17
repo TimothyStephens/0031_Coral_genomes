@@ -1,0 +1,117 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 03:36:49 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Pocillopora_cf_effusa_NAPFv3/10_functional_annotation
+=====================================================================
+
+[Tue 06 Jun 2023 03:36:50 PM EDT]      CMD: md5sum Pocillopora_cf_effusa_NAPFv3.genes.pep.faa ../00_databases/Pocillopora_cf_effusa_NAPFv3.genes.pep.faa | tee Pocillopora_cf_effusa_NAPFv3.genes.pep.faa.emapper.job_md5sum_list.txt
+aa7335ebfe24483ca39ac3090f7ae6e1  Pocillopora_cf_effusa_NAPFv3.genes.pep.faa
+aa7335ebfe24483ca39ac3090f7ae6e1  ../00_databases/Pocillopora_cf_effusa_NAPFv3.genes.pep.faa
+[Tue 06 Jun 2023 03:36:50 PM EDT]      CMD: emapper.py -i Pocillopora_cf_effusa_NAPFv3.genes.pep.faa --output Pocillopora_cf_effusa_NAPFv3.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 4.291534423828125e-06 0.00 q/s (% mem usage: 92.00, % mem avail: 8.01)
+[1;34mTime to load the DB into memory: 118.39582419395447[0m
+#  emapper-2.1.6
+# emapper.py  -i Pocillopora_cf_effusa_NAPFv3.genes.pep.faa --output Pocillopora_cf_effusa_NAPFv3.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Pocillopora_cf_effusa_NAPFv3/10_functional_annotation/Pocillopora_cf_effusa_NAPFv3.genes.pep.faa --threads 96 -o /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Pocillopora_cf_effusa_NAPFv3/10_functional_annotation/Pocillopora_cf_effusa_NAPFv3.genes.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+CREATED ESL_REFORMAT DB. USING HMMSEARCH
+Namespace(Z=40000000, call_info='## Tue Jun  6 15:46:59 2023\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Pocillopora_cf_effusa_NAPFv3.genes.pep.faa --output Pocillopora_cf_effusa_NAPFv3.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem\n##', clean_overlaps='hmmsearch_clans', cpu=96, cpus_per_worker=96, cut_ga=True, db='/scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Pocillopora_cf_effusa_NAPFv3/10_functional_annotation/tmpcb2bled4', dbtype='seqdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='hmm', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Pocillopora_cf_effusa_NAPFv3/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+500 1135.378100156784 0.44 q/s (% mem usage: 98.70, % mem avail: 1.32)
+1000 1136.2489922046661 0.88 q/s (% mem usage: 98.70, % mem avail: 1.32)
+1500 1137.4075515270233 1.32 q/s (% mem usage: 98.70, % mem avail: 1.32)
+2000 1138.4884541034698 1.76 q/s (% mem usage: 98.70, % mem avail: 1.32)
+2500 1139.4658131599426 2.19 q/s (% mem usage: 98.70, % mem avail: 1.32)
+3000 1140.919460773468 2.63 q/s (% mem usage: 98.70, % mem avail: 1.32)
+3500 1142.141879081726 3.06 q/s (% mem usage: 98.70, % mem avail: 1.32)
+4000 1143.2886674404144 3.50 q/s (% mem usage: 98.70, % mem avail: 1.32)
+4500 1144.4425706863403 3.93 q/s (% mem usage: 98.70, % mem avail: 1.32)
+5000 1145.7583763599396 4.36 q/s (% mem usage: 98.70, % mem avail: 1.32)
+5500 1146.790885925293 4.80 q/s (% mem usage: 98.70, % mem avail: 1.32)
+6000 1147.9999585151672 5.23 q/s (% mem usage: 98.70, % mem avail: 1.31)
+6500 1149.3676300048828 5.66 q/s (% mem usage: 98.70, % mem avail: 1.31)
+7000 1150.5711901187897 6.08 q/s (% mem usage: 98.70, % mem avail: 1.31)
+7500 1151.688910484314 6.51 q/s (% mem usage: 98.70, % mem avail: 1.31)
+8000 1152.7372546195984 6.94 q/s (% mem usage: 98.70, % mem avail: 1.31)
+8500 1153.627794265747 7.37 q/s (% mem usage: 98.70, % mem avail: 1.31)
+9000 1154.6707878112793 7.79 q/s (% mem usage: 98.70, % mem avail: 1.31)
+9500 1155.997908115387 8.22 q/s (% mem usage: 98.70, % mem avail: 1.31)
+10000 1156.9640619754791 8.64 q/s (% mem usage: 98.70, % mem avail: 1.31)
+10500 1158.1087729930878 9.07 q/s (% mem usage: 98.70, % mem avail: 1.31)
+11000 1159.032674074173 9.49 q/s (% mem usage: 98.70, % mem avail: 1.31)
+11500 1160.2723064422607 9.91 q/s (% mem usage: 98.70, % mem avail: 1.31)
+12000 1161.383608341217 10.33 q/s (% mem usage: 98.70, % mem avail: 1.31)
+12500 1162.5200364589691 10.75 q/s (% mem usage: 98.70, % mem avail: 1.31)
+13000 1163.4105217456818 11.17 q/s (% mem usage: 98.70, % mem avail: 1.31)
+13500 1164.7182273864746 11.59 q/s (% mem usage: 98.70, % mem avail: 1.31)
+14000 1165.7200248241425 12.01 q/s (% mem usage: 98.70, % mem avail: 1.31)
+14500 1166.745331287384 12.43 q/s (% mem usage: 98.70, % mem avail: 1.31)
+15000 1168.050626039505 12.84 q/s (% mem usage: 98.70, % mem avail: 1.31)
+15500 1169.2562119960785 13.26 q/s (% mem usage: 98.70, % mem avail: 1.30)
+16000 1170.4041414260864 13.67 q/s (% mem usage: 98.70, % mem avail: 1.30)
+16500 1171.654284954071 14.08 q/s (% mem usage: 98.70, % mem avail: 1.30)
+17000 1172.9423277378082 14.49 q/s (% mem usage: 98.70, % mem avail: 1.30)
+17500 1174.0040881633759 14.91 q/s (% mem usage: 98.70, % mem avail: 1.30)
+18000 1175.351886510849 15.31 q/s (% mem usage: 98.70, % mem avail: 1.30)
+18500 1176.832997560501 15.72 q/s (% mem usage: 98.70, % mem avail: 1.30)
+19000 1178.09894156456 16.13 q/s (% mem usage: 98.70, % mem avail: 1.30)
+19500 1179.3020408153534 16.54 q/s (% mem usage: 98.70, % mem avail: 1.30)
+20000 1180.3710861206055 16.94 q/s (% mem usage: 98.70, % mem avail: 1.30)
+20500 1181.5702662467957 17.35 q/s (% mem usage: 98.70, % mem avail: 1.30)
+21000 1182.9051752090454 17.75 q/s (% mem usage: 98.70, % mem avail: 1.30)
+21500 1184.1093759536743 18.16 q/s (% mem usage: 98.70, % mem avail: 1.30)
+22000 1184.979975938797 18.57 q/s (% mem usage: 98.70, % mem avail: 1.30)
+22500 1185.9093790054321 18.97 q/s (% mem usage: 98.70, % mem avail: 1.30)
+23000 1187.104760169983 19.37 q/s (% mem usage: 98.70, % mem avail: 1.30)
+23500 1188.2103052139282 19.78 q/s (% mem usage: 98.70, % mem avail: 1.30)
+24000 1189.4279417991638 20.18 q/s (% mem usage: 98.70, % mem avail: 1.30)
+24500 1190.7133662700653 20.58 q/s (% mem usage: 98.70, % mem avail: 1.30)
+25000 1191.774222612381 20.98 q/s (% mem usage: 98.70, % mem avail: 1.30)
+25500 1192.848932504654 21.38 q/s (% mem usage: 98.70, % mem avail: 1.29)
+25920 1194.8742139339447 21.69 q/s (% mem usage: 98.60, % mem avail: 1.39)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Pocillopora_cf_effusa_NAPFv3/10_functional_annotation/Pocillopora_cf_effusa_NAPFv3.genes.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Pocillopora_cf_effusa_NAPFv3/10_functional_annotation/Pocillopora_cf_effusa_NAPFv3.genes.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Pocillopora_cf_effusa_NAPFv3/10_functional_annotation/Pocillopora_cf_effusa_NAPFv3.genes.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Pocillopora_cf_effusa_NAPFv3/10_functional_annotation/Pocillopora_cf_effusa_NAPFv3.genes.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Pocillopora_cf_effusa_NAPFv3/10_functional_annotation/Pocillopora_cf_effusa_NAPFv3.genes.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 25920
+Total time: 1558 secs
+FINISHED
+[Tue 06 Jun 2023 04:02:55 PM EDT]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Tue 06 Jun 2023 03:36:49 PM EDT
+Finished: at Tue 06 Jun 2023 04:02:55 PM EDT
+ExitStatus: 0
+=====================================================================

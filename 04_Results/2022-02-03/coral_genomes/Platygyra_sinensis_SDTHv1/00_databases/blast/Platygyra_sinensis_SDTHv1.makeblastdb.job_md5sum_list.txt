@@ -1,3 +1,3 @@
 e111633491e36b3c2c5ac444dba92896  Platygyra_sinensis_SDTHv1.assembly.fasta
-d3f6f348dce3123a3ce2cbb63d2cdd16  Platygyra_sinensis_SDTHv1.genes.cds.fna
+0b994f67cbaaaff078b24718c42ed028  Platygyra_sinensis_SDTHv1.genes.cds.fna
 6d7fcb3f9d01b8a07476499387ba1128  Platygyra_sinensis_SDTHv1.genes.pep.faa

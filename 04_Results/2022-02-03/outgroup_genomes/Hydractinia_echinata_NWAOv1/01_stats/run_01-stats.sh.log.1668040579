@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 09 Nov 2022 07:36:19 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydractinia_echinata_NWAOv1/01_stats
+=====================================================================
+
+[Wed 09 Nov 2022 07:36:21 PM EST]      CMD: md5sum Hydractinia_echinata_NWAOv1.assembly.fasta Hydractinia_echinata_NWAOv1.genes.gff3 | tee Hydractinia_echinata_NWAOv1.genome_stats.job_md5sum_list.txt
+2e1d73d54050dbc5974be9decb401f88  Hydractinia_echinata_NWAOv1.assembly.fasta
+eb3a12fd8b84ca7742b7c13434936fcf  Hydractinia_echinata_NWAOv1.genes.gff3
+[Wed 09 Nov 2022 07:36:23 PM EST]      CMD: ./genome_stats Hydractinia_echinata_NWAOv1.assembly.fasta Hydractinia_echinata_NWAOv1.genes.gff3 > Hydractinia_echinata_NWAOv1.GeneStats.tsv
+index file Hydractinia_echinata_NWAOv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Wed 09 Nov 2022 07:36:19 PM EST
+Finished: at Wed 09 Nov 2022 07:36:52 PM EST
+ExitStatus: 0
+=====================================================================

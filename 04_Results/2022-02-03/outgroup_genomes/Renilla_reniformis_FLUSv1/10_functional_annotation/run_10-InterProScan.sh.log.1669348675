@@ -1,0 +1,31 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 24 Nov 2022 10:57:55 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_reniformis_FLUSv1/10_functional_annotation
+=====================================================================
+
+[Thu 24 Nov 2022 10:57:57 PM EST]      CMD: md5sum Renilla_reniformis_FLUSv1.genes.pep.faa ../00_databases/Renilla_reniformis_FLUSv1.genes.pep.faa | tee Renilla_reniformis_FLUSv1.genes.pep.faa.InterProScan.job_md5sum_list.txt
+8b882a30a2de5ed54f04c34b8d140ee7  Renilla_reniformis_FLUSv1.genes.pep.faa
+8b882a30a2de5ed54f04c34b8d140ee7  ../00_databases/Renilla_reniformis_FLUSv1.genes.pep.faa
+[Thu 24 Nov 2022 10:57:57 PM EST]      CMD: /home/timothy/programs/my_interproscan/interproscan-5.53-87.0/interproscan.sh -dp --goterms --cpu 48 --input Renilla_reniformis_FLUSv1.genes.pep.faa --output-file-base Renilla_reniformis_FLUSv1.genes.pep.faa.InterProScan
+24/11/2022 22:57:58:054 Welcome to InterProScan-5.53-87.0
+24/11/2022 22:57:58:056 Running InterProScan v5 in STANDALONE mode... on Linux
+24/11/2022 22:58:04:374 RunID: coral_20221124_225803847_d45w
+24/11/2022 22:58:13:369 Loading file /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_reniformis_FLUSv1/10_functional_annotation/Renilla_reniformis_FLUSv1.genes.pep.faa
+24/11/2022 22:58:13:370 Running the following analyses:
+[CDD-3.18,Coils-2.2.1,Gene3D-4.3.0,Hamap-2020_05,MobiDBLite-2.0,PANTHER-15.0,Pfam-34.0,Phobius-1.01,PIRSF-3.10,PIRSR-2021_02,PRINTS-42.0,ProSitePatterns-2021_01,ProSiteProfiles-2021_01,SFLD-4,SignalP_EUK-4.1,SignalP_GRAM_NEGATIVE-4.1,SignalP_GRAM_POSITIVE-4.1,SMART-7.1,SUPERFAMILY-1.75,TIGRFAM-15.0,TMHMM-2.0c]
+Pre-calculated match lookup service DISABLED.  Please wait for match calculations to complete...
+24/11/2022 22:58:17:613 Uploaded 12613 unique sequences for analysis
+24/11/2022 23:12:24:017 25% completed
+24/11/2022 23:22:46:544 50% completed
+24/11/2022 23:35:28:795 75% completed
+24/11/2022 23:45:21:858 90% completed
+25/11/2022 00:05:14:582 100% done:  InterProScan analyses completed 
+
+[Fri 25 Nov 2022 12:05:15 AM EST]      CMD: rm -fr temp
+
+=====================================================================
+Started: at Thu 24 Nov 2022 10:57:55 PM EST
+Finished: at Fri 25 Nov 2022 12:05:15 AM EST
+ExitStatus: 0
+=====================================================================

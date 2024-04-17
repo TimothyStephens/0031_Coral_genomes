@@ -1,0 +1,2 @@
+6f68fde0908efa5352d4ca653863f72f  Xestospongia_testudinaria_RSSAv1.assembly.fasta
+768a72dcddc0d07eae546d24eb04841b  Xestospongia_testudinaria_RSSAv1.genes.gff3

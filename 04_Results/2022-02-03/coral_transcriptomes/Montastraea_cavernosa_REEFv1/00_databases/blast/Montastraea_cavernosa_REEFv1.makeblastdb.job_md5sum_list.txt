@@ -1,0 +1,2 @@
+4f554ae293c7707c2c8e32c04211cdf9  Montastraea_cavernosa_REEFv1.transcripts.cds.fna
+c35eb8e47613e9571e6f365adad17824  Montastraea_cavernosa_REEFv1.transcripts.pep.faa

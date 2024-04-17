@@ -1,0 +1,36 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 07 Apr 2023 02:03:14 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Monosiga_brevicollis_CCBMv1/05_RepeatMasker
+=====================================================================
+
+[Fri 07 Apr 2023 02:03:14 PM EDT]      CMD: sed -e 's/Monosiga_brevicollis_CCBMv1___//' Monosiga_brevicollis_CCBMv1.assembly.fasta > genome.fa
+[Fri 07 Apr 2023 02:03:15 PM EDT]      CMD: cat Monosiga_brevicollis_CCBMv1.assembly.fasta.RMDB-families.fa rmlib.fa > custom_repeat_library.fa
+[Fri 07 Apr 2023 02:03:17 PM EDT]      CMD: RepeatMasker -no_is -a -x -gff -pa 20 -lib custom_repeat_library.fa genome.fa 1> RepeatMasker.log 2>&1
+[Fri 07 Apr 2023 03:25:08 PM EDT]      CMD: /home/timothy/programs/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/calcDivergenceFromAlign.pl -s genome.fa.divsum genome.fa.align
+............................................Monosiga_brevicollis_CCBMv1	
+[Fri 07 Apr 2023 03:25:12 PM EDT]      CMD: /home/timothy/programs/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/createRepeatLandscape.pl -g  -div genome.fa.divsum > genome.fa.RepeatLandscape.html
+[Fri 07 Apr 2023 03:25:13 PM EDT]      CMD: bedtools maskfasta -fi genome.fa -fo genome.fa.softmasked -bed genome.fa.out.gff -soft
+[Fri 07 Apr 2023 03:25:20 PM EDT]      CMD: sed -e "s/^>/>Monosiga_brevicollis_CCBMv1___/" genome.fa.masked | reformat.sh in=stdin.fa out=stdout.fa fastawrap=0 > Monosiga_brevicollis_CCBMv1.assembly.fasta.masked
+java -ea -Xms300m -cp /home/timothy/programs/bbmap/current/ jgi.ReformatReads in=stdin.fa out=stdout.fa fastawrap=0
+Executing jgi.ReformatReads [in=stdin.fa, out=stdout.fa, fastawrap=0]
+
+Input is being processed as unpaired
+Input:                  	219 reads          	41709928 bases
+Output:                 	219 reads (100.00%) 	41709928 bases (100.00%)
+
+Time:                         	5.589 seconds.
+Reads Processed:         219 	0.04k reads/sec
+Bases Processed:      41709k 	7.46m bases/sec
+[Fri 07 Apr 2023 03:25:26 PM EDT]      CMD: sed -e "s/^>/>Monosiga_brevicollis_CCBMv1___/" genome.fa.softmasked > Monosiga_brevicollis_CCBMv1.assembly.fasta.softmasked
+[Fri 07 Apr 2023 03:25:30 PM EDT]      CMD: awk -F'\t' -vPREFIX="Monosiga_brevicollis_CCBMv1" '{ if($1!~"^#") {print PREFIX"___"$0} else {print $0} }' genome.fa.out.gff > Monosiga_brevicollis_CCBMv1.assembly.fasta.out.gff
+[Fri 07 Apr 2023 03:25:31 PM EDT]      CMD: cp genome.fa.divsum Monosiga_brevicollis_CCBMv1.assembly.fasta.divsum
+[Fri 07 Apr 2023 03:25:31 PM EDT]      CMD: cp genome.fa.tbl Monosiga_brevicollis_CCBMv1.assembly.fasta.tbl
+[Fri 07 Apr 2023 03:25:31 PM EDT]      CMD: tail -n 72 Monosiga_brevicollis_CCBMv1.assembly.fasta.divsum | sed -e 's/ $//' > Monosiga_brevicollis_CCBMv1.assembly.fasta.divsum.Kimura_distance
+[Fri 07 Apr 2023 03:25:31 PM EDT]      CMD: gzip genome.fa.align genome.fa.divsum genome.fa.masked genome.fa.out genome.fa.out.gff genome.fa.softmasked genome.fa.tbl
+
+=====================================================================
+Started: at Fri 07 Apr 2023 02:03:14 PM EDT
+Finished: at Fri 07 Apr 2023 03:25:44 PM EDT
+ExitStatus: 0
+=====================================================================

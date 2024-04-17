@@ -1,0 +1,2 @@
+d9273b9bb8d4e2570358be2619aeb034  Ephydatia_muelleri_BCCAv1.genes.pep.faa
+d9273b9bb8d4e2570358be2619aeb034  ../00_databases/Ephydatia_muelleri_BCCAv1.genes.pep.faa

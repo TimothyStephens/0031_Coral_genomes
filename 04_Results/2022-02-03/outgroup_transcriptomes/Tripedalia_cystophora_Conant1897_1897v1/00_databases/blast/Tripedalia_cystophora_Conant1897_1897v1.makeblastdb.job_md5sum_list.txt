@@ -1,0 +1,2 @@
+e2f9f5c0ac8d441d4991b3a233463fa3  Tripedalia_cystophora_Conant1897_1897v1.transcripts.cds.fna
+c6994ffaa59fff6141f46ee7e053ef02  Tripedalia_cystophora_Conant1897_1897v1.transcripts.pep.faa

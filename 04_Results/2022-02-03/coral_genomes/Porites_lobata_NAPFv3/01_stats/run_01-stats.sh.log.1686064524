@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 11:15:24 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/coral_genomes/Porites_lobata_NAPFv3/01_stats
+=====================================================================
+
+[Tue 06 Jun 2023 11:15:25 AM EDT]      CMD: md5sum Porites_lobata_NAPFv3.assembly.fasta Porites_lobata_NAPFv3.genes.gff3 | tee Porites_lobata_NAPFv3.genome_stats.job_md5sum_list.txt
+0ced58bd1e4a8c4ae96cfa29b7e48c99  Porites_lobata_NAPFv3.assembly.fasta
+8a69336de7911f08d7c8f5f5ea13bc52  Porites_lobata_NAPFv3.genes.gff3
+[Tue 06 Jun 2023 11:15:27 AM EDT]      CMD: ./genome_stats Porites_lobata_NAPFv3.assembly.fasta Porites_lobata_NAPFv3.genes.gff3 > Porites_lobata_NAPFv3.GeneStats.tsv
+index file Porites_lobata_NAPFv3.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Tue 06 Jun 2023 11:15:24 AM EDT
+Finished: at Tue 06 Jun 2023 11:15:48 AM EDT
+ExitStatus: 0
+=====================================================================

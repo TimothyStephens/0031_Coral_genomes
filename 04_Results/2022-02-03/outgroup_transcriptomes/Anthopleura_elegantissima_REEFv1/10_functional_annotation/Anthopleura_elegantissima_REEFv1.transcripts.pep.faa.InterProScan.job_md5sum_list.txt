@@ -1,0 +1,2 @@
+a18f7629938391213c2d65b371bcf13c  Anthopleura_elegantissima_REEFv1.transcripts.pep.faa
+a18f7629938391213c2d65b371bcf13c  ../00_databases/Anthopleura_elegantissima_REEFv1.transcripts.pep.faa

@@ -1,0 +1,2 @@
+ac173c141520ecfba70bf7e663fd81de  Alatina_alata_BNNLv1-TRANS.transcripts.pep.faa
+ac173c141520ecfba70bf7e663fd81de  ../00_databases/Alatina_alata_BNNLv1-TRANS.transcripts.pep.faa

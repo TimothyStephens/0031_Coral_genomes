@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 06:59:01 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_transcriptomes/Pocillopora_verrucosa_XSCSv1/01_stats
+=====================================================================
+
+[Tue 25 Oct 2022 06:59:02 PM EDT]      CMD: md5sum Pocillopora_verrucosa_XSCSv1.transcripts.cds.fna | tee Pocillopora_verrucosa_XSCSv1.CDS_stats.job_md5sum_list.txt
+77fc6241d193d03ec409e634a367bb7c  Pocillopora_verrucosa_XSCSv1.transcripts.cds.fna
+[Tue 25 Oct 2022 06:59:02 PM EDT]      CMD: ./CDS_stats Pocillopora_verrucosa_XSCSv1.transcripts.cds.fna > Pocillopora_verrucosa_XSCSv1.GeneStats.tsv
+
+=====================================================================
+Started: at Tue 25 Oct 2022 06:59:01 PM EDT
+Finished: at Tue 25 Oct 2022 06:59:03 PM EDT
+ExitStatus: 0
+=====================================================================

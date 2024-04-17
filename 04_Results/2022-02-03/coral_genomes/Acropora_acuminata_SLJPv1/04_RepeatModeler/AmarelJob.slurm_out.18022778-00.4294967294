@@ -1,0 +1,21 @@
+=====================================================================
+Slurm config version 0.4
+Starting on hal0042.amarel.rutgers.edu at Thu Mar 10 17:58:25 EST 2022
+Nodelist hal0042
+Current JOB_ID is 18022778
+Current array index number is NA
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/Acropora_acuminata_SLJPv1/04_RepeatModeler
+=====================================================================
+
+[Fri Mar 11 21:31:01 EST 2022]   - Done!
+
+=====================================================================
+Started: at Thu Mar 10 17:58:25 EST 2022 on hal0042.amarel.rutgers.edu
+Finished: at Fri Mar 11 21:31:01 EST 2022
+ExitStatus: 0
+
+   JobName   NTasks  AllocCPUS     ReqMem     MaxRSS  MaxVMSize  MaxDiskRead MaxDiskWrite   TotalCPU    CPUTime    Elapsed 
+---------- -------- ---------- ---------- ---------- ---------- ------------ ------------ ---------- ---------- ---------- 
+ AmarelJob                  24      120Gn                                                   00:00:00 27-13:02:24 1-03:32:36 
+    extern        1         24      120Gn                                                   00:00:00 27-13:02:24 1-03:32:36 
+=====================================================================

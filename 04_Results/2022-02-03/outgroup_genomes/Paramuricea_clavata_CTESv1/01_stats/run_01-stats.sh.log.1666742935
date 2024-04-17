@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 08:08:55 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Paramuricea_clavata_CTESv1/01_stats
+=====================================================================
+
+[Tue 25 Oct 2022 08:08:58 PM EDT]      CMD: md5sum Paramuricea_clavata_CTESv1.assembly.fasta Paramuricea_clavata_CTESv1.genes.gff3 | tee Paramuricea_clavata_CTESv1.genome_stats.job_md5sum_list.txt
+31249a1f445e686d51b4e864c1685013  Paramuricea_clavata_CTESv1.assembly.fasta
+f8b4509203a412f92b23bccd9e57f275  Paramuricea_clavata_CTESv1.genes.gff3
+[Tue 25 Oct 2022 08:09:00 PM EDT]      CMD: ./genome_stats Paramuricea_clavata_CTESv1.assembly.fasta Paramuricea_clavata_CTESv1.genes.gff3 > Paramuricea_clavata_CTESv1.GeneStats.tsv
+index file Paramuricea_clavata_CTESv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Tue 25 Oct 2022 08:08:55 PM EDT
+Finished: at Tue 25 Oct 2022 08:09:33 PM EDT
+ExitStatus: 0
+=====================================================================

@@ -1,0 +1,33 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sun Oct 30 15:42:18 EDT 2022
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Mnemiopsis_leidyi_WHUSv2.2/04_RepeatModeler
+=====================================================================
+
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+[Sun Oct 30 15:42:18 EDT 2022]      CMD: BuildDatabase -name Mnemiopsis_leidyi_WHUSv2.2.assembly.fasta.RMDB Mnemiopsis_leidyi_WHUSv2.2.assembly.fasta 1> BuildDatabase.log 2>&1
+[Sun Oct 30 15:42:21 EDT 2022]      CMD: RepeatModeler -database Mnemiopsis_leidyi_WHUSv2.2.assembly.fasta.RMDB -pa 5 -LTRStruct 1> RepeatModeler.log 2>&1
+
+=====================================================================
+Started: at Sun Oct 30 15:42:18 EDT 2022
+Finished: at Sun Oct 30 21:37:40 EDT 2022
+ExitStatus: 0
+=====================================================================

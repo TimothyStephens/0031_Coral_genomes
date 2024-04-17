@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 09 Nov 2022 07:28:56 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_viridissima_99AUv1/00_databases/blast
+=====================================================================
+
+[Wed 09 Nov 2022 07:28:59 PM EST]      CMD: md5sum Hydra_viridissima_99AUv1.assembly.fasta Hydra_viridissima_99AUv1.genes.cds.fna Hydra_viridissima_99AUv1.genes.pep.faa | tee Hydra_viridissima_99AUv1.makeblastdb.job_md5sum_list.txt
+77c25ede06ab134e55c2aea198b8d15b  Hydra_viridissima_99AUv1.assembly.fasta
+6cf774a3b32d65f0a7129b59379a8b26  Hydra_viridissima_99AUv1.genes.cds.fna
+fa8ca3c9d9fa1349a61d0c9fa7d72827  Hydra_viridissima_99AUv1.genes.pep.faa
+[Wed 09 Nov 2022 07:29:01 PM EST]      CMD: makeblastdb -dbtype nucl -in Hydra_viridissima_99AUv1.assembly.fasta
+
+
+Building a new DB, current time: 11/09/2022 19:29:01
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_viridissima_99AUv1/00_databases/blast/Hydra_viridissima_99AUv1.assembly.fasta
+New DB title:  Hydra_viridissima_99AUv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 2677 sequences in 7.51828 seconds.
+
+
+[Wed 09 Nov 2022 07:29:08 PM EST]      CMD: makeblastdb -dbtype nucl -in Hydra_viridissima_99AUv1.genes.cds.fna
+
+
+Building a new DB, current time: 11/09/2022 19:29:08
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_viridissima_99AUv1/00_databases/blast/Hydra_viridissima_99AUv1.genes.cds.fna
+New DB title:  Hydra_viridissima_99AUv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 21475 sequences in 1.32852 seconds.
+
+
+[Wed 09 Nov 2022 07:29:10 PM EST]      CMD: makeblastdb -dbtype prot -in Hydra_viridissima_99AUv1.genes.pep.faa
+
+
+Building a new DB, current time: 11/09/2022 19:29:10
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_viridissima_99AUv1/00_databases/blast/Hydra_viridissima_99AUv1.genes.pep.faa
+New DB title:  Hydra_viridissima_99AUv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 21475 sequences in 0.864637 seconds.
+
+
+
+=====================================================================
+Started: at Wed 09 Nov 2022 07:28:56 PM EST
+Finished: at Wed 09 Nov 2022 07:29:11 PM EST
+ExitStatus: 0
+=====================================================================

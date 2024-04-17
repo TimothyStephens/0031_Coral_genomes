@@ -1,0 +1,161 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Mon 20 Feb 2023 11:22:44 AM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Podocoryna_carnea_NANAv1/10_functional_annotation
+=====================================================================
+
+[Mon 20 Feb 2023 11:22:45 AM EST]      CMD: md5sum Podocoryna_carnea_NANAv1.transcripts.pep.faa ../00_databases/Podocoryna_carnea_NANAv1.transcripts.pep.faa | tee Podocoryna_carnea_NANAv1.transcripts.pep.faa.emapper.job_md5sum_list.txt
+cd74a403292093266d092c39b4eda548  Podocoryna_carnea_NANAv1.transcripts.pep.faa
+cd74a403292093266d092c39b4eda548  ../00_databases/Podocoryna_carnea_NANAv1.transcripts.pep.faa
+[Mon 20 Feb 2023 11:22:45 AM EST]      CMD: emapper.py -i Podocoryna_carnea_NANAv1.transcripts.pep.faa --output Podocoryna_carnea_NANAv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 4.0531158447265625e-06 0.00 q/s (% mem usage: 5.10, % mem avail: 94.89)
+[1;34mTime to load the DB into memory: 157.06771731376648[0m
+#  emapper-2.1.6
+# emapper.py  -i Podocoryna_carnea_NANAv1.transcripts.pep.faa --output Podocoryna_carnea_NANAv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Podocoryna_carnea_NANAv1/10_functional_annotation/Podocoryna_carnea_NANAv1.transcripts.pep.faa --threads 48 -o /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Podocoryna_carnea_NANAv1/10_functional_annotation/Podocoryna_carnea_NANAv1.transcripts.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+CREATED ESL_REFORMAT DB. USING HMMSEARCH
+Namespace(Z=40000000, call_info='## Mon Feb 20 11:47:25 2023\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Podocoryna_carnea_NANAv1.transcripts.pep.faa --output Podocoryna_carnea_NANAv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem\n##', clean_overlaps='hmmsearch_clans', cpu=48, cpus_per_worker=48, cut_ga=True, db='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Podocoryna_carnea_NANAv1/10_functional_annotation/tmpfhwtlfgm', dbtype='seqdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='hmm', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Podocoryna_carnea_NANAv1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+500 1975.838681936264 0.25 q/s (% mem usage: 28.00, % mem avail: 72.00)
+1000 1980.8087182044983 0.50 q/s (% mem usage: 28.00, % mem avail: 71.99)
+1500 1985.2904734611511 0.76 q/s (% mem usage: 28.00, % mem avail: 72.01)
+2000 1989.873190164566 1.01 q/s (% mem usage: 28.00, % mem avail: 72.03)
+2500 1994.3929371833801 1.25 q/s (% mem usage: 28.10, % mem avail: 71.93)
+3000 1998.7905766963959 1.50 q/s (% mem usage: 28.00, % mem avail: 72.01)
+3500 2003.6937551498413 1.75 q/s (% mem usage: 28.00, % mem avail: 72.02)
+4000 2008.3198838233948 1.99 q/s (% mem usage: 28.00, % mem avail: 72.04)
+4500 2012.481193780899 2.24 q/s (% mem usage: 28.10, % mem avail: 71.92)
+5000 2017.1431958675385 2.48 q/s (% mem usage: 28.00, % mem avail: 72.02)
+5500 2022.0575478076935 2.72 q/s (% mem usage: 28.00, % mem avail: 72.01)
+6000 2026.7280011177063 2.96 q/s (% mem usage: 28.00, % mem avail: 72.02)
+6500 2033.0967082977295 3.20 q/s (% mem usage: 28.00, % mem avail: 72.00)
+7000 2037.8735933303833 3.43 q/s (% mem usage: 28.00, % mem avail: 72.01)
+7500 2042.5341999530792 3.67 q/s (% mem usage: 28.00, % mem avail: 72.02)
+8000 2047.1637563705444 3.91 q/s (% mem usage: 28.00, % mem avail: 72.03)
+8500 2052.6934337615967 4.14 q/s (% mem usage: 28.10, % mem avail: 71.92)
+9000 2057.3890743255615 4.37 q/s (% mem usage: 28.00, % mem avail: 72.03)
+9500 2061.786952495575 4.61 q/s (% mem usage: 28.00, % mem avail: 71.95)
+10000 2066.5674698352814 4.84 q/s (% mem usage: 28.00, % mem avail: 72.00)
+10500 2071.111207485199 5.07 q/s (% mem usage: 28.10, % mem avail: 71.88)
+11000 2075.8205683231354 5.30 q/s (% mem usage: 28.00, % mem avail: 71.96)
+11500 2080.871212244034 5.53 q/s (% mem usage: 28.00, % mem avail: 72.00)
+12000 2085.7694416046143 5.75 q/s (% mem usage: 28.00, % mem avail: 71.97)
+12500 2090.2897753715515 5.98 q/s (% mem usage: 28.10, % mem avail: 71.94)
+13000 2094.851761341095 6.21 q/s (% mem usage: 28.10, % mem avail: 71.89)
+13500 2099.6168127059937 6.43 q/s (% mem usage: 28.10, % mem avail: 71.91)
+14000 2104.5147857666016 6.65 q/s (% mem usage: 28.10, % mem avail: 71.91)
+14500 2109.005447626114 6.88 q/s (% mem usage: 28.10, % mem avail: 71.93)
+15000 2113.3953199386597 7.10 q/s (% mem usage: 28.10, % mem avail: 71.87)
+15500 2118.6409344673157 7.32 q/s (% mem usage: 28.10, % mem avail: 71.92)
+16000 2123.28591632843 7.54 q/s (% mem usage: 28.10, % mem avail: 71.90)
+16500 2127.8922715187073 7.75 q/s (% mem usage: 28.10, % mem avail: 71.91)
+17000 2132.823763370514 7.97 q/s (% mem usage: 28.10, % mem avail: 71.89)
+17500 2137.2456514835358 8.19 q/s (% mem usage: 28.10, % mem avail: 71.86)
+18000 2141.5362617969513 8.41 q/s (% mem usage: 28.10, % mem avail: 71.86)
+18500 2146.0975494384766 8.62 q/s (% mem usage: 28.10, % mem avail: 71.86)
+19000 2150.9368896484375 8.83 q/s (% mem usage: 28.20, % mem avail: 71.82)
+19500 2155.4940423965454 9.05 q/s (% mem usage: 28.20, % mem avail: 71.81)
+20000 2160.126767396927 9.26 q/s (% mem usage: 28.20, % mem avail: 71.79)
+20500 2165.068977832794 9.47 q/s (% mem usage: 28.20, % mem avail: 71.80)
+21000 2169.8059260845184 9.68 q/s (% mem usage: 28.20, % mem avail: 71.85)
+21500 2174.1966211795807 9.89 q/s (% mem usage: 28.20, % mem avail: 71.83)
+22000 2178.6327946186066 10.10 q/s (% mem usage: 28.20, % mem avail: 71.77)
+22500 2183.4978103637695 10.30 q/s (% mem usage: 28.20, % mem avail: 71.75)
+23000 2188.7892367839813 10.51 q/s (% mem usage: 28.20, % mem avail: 71.77)
+23500 2194.0426552295685 10.71 q/s (% mem usage: 28.30, % mem avail: 71.73)
+24000 2199.4681441783905 10.91 q/s (% mem usage: 28.20, % mem avail: 71.78)
+24500 2204.548774957657 11.11 q/s (% mem usage: 28.30, % mem avail: 71.74)
+25000 2209.633866786957 11.31 q/s (% mem usage: 28.30, % mem avail: 71.74)
+25500 2214.766961336136 11.51 q/s (% mem usage: 28.20, % mem avail: 71.76)
+26000 2220.1760494709015 11.71 q/s (% mem usage: 28.20, % mem avail: 71.76)
+26500 2225.664827823639 11.91 q/s (% mem usage: 28.30, % mem avail: 71.67)
+27000 2231.1089119911194 12.10 q/s (% mem usage: 28.30, % mem avail: 71.69)
+27500 2236.440596103668 12.30 q/s (% mem usage: 28.30, % mem avail: 71.69)
+28000 2241.615490436554 12.49 q/s (% mem usage: 28.30, % mem avail: 71.66)
+28500 2247.0921664237976 12.68 q/s (% mem usage: 28.40, % mem avail: 71.58)
+29000 2252.090082168579 12.88 q/s (% mem usage: 28.40, % mem avail: 71.59)
+29500 2256.9910786151886 13.07 q/s (% mem usage: 28.40, % mem avail: 71.57)
+30000 2261.804576396942 13.26 q/s (% mem usage: 28.40, % mem avail: 71.58)
+30500 2266.7029762268066 13.46 q/s (% mem usage: 28.50, % mem avail: 71.54)
+31000 2271.577780485153 13.65 q/s (% mem usage: 28.40, % mem avail: 71.59)
+31500 2276.5111815929413 13.84 q/s (% mem usage: 28.40, % mem avail: 71.56)
+32000 2281.7404022216797 14.02 q/s (% mem usage: 28.40, % mem avail: 71.60)
+32500 2286.7872002124786 14.21 q/s (% mem usage: 28.40, % mem avail: 71.56)
+33000 2291.995539665222 14.40 q/s (% mem usage: 28.50, % mem avail: 71.54)
+33500 2297.754148006439 14.58 q/s (% mem usage: 28.50, % mem avail: 71.50)
+34000 2302.672292470932 14.77 q/s (% mem usage: 28.50, % mem avail: 71.48)
+34500 2307.7850675582886 14.95 q/s (% mem usage: 28.50, % mem avail: 71.52)
+35000 2312.689138174057 15.13 q/s (% mem usage: 28.60, % mem avail: 71.45)
+35500 2317.7813732624054 15.32 q/s (% mem usage: 28.60, % mem avail: 71.44)
+36000 2323.0844044685364 15.50 q/s (% mem usage: 28.60, % mem avail: 71.41)
+36500 2328.4867854118347 15.68 q/s (% mem usage: 28.70, % mem avail: 71.33)
+37000 2333.375526189804 15.86 q/s (% mem usage: 28.60, % mem avail: 71.38)
+37500 2338.6145017147064 16.04 q/s (% mem usage: 28.70, % mem avail: 71.28)
+38000 2344.1407380104065 16.21 q/s (% mem usage: 28.70, % mem avail: 71.29)
+38500 2349.041296482086 16.39 q/s (% mem usage: 28.70, % mem avail: 71.29)
+39000 2354.0468938350677 16.57 q/s (% mem usage: 28.70, % mem avail: 71.29)
+39500 2359.260509252548 16.74 q/s (% mem usage: 28.70, % mem avail: 71.34)
+40000 2364.2579338550568 16.92 q/s (% mem usage: 28.70, % mem avail: 71.28)
+40500 2369.5992317199707 17.09 q/s (% mem usage: 28.70, % mem avail: 71.32)
+41000 2374.5638539791107 17.27 q/s (% mem usage: 28.70, % mem avail: 71.29)
+41500 2379.791270017624 17.44 q/s (% mem usage: 28.80, % mem avail: 71.24)
+42000 2384.7855620384216 17.61 q/s (% mem usage: 28.80, % mem avail: 71.21)
+42500 2389.6617760658264 17.78 q/s (% mem usage: 28.80, % mem avail: 71.22)
+43000 2394.4000313282013 17.96 q/s (% mem usage: 28.50, % mem avail: 71.45)
+43500 2399.1482503414154 18.13 q/s (% mem usage: 28.60, % mem avail: 71.43)
+44000 2404.166403055191 18.30 q/s (% mem usage: 28.50, % mem avail: 71.46)
+44500 2409.138074874878 18.47 q/s (% mem usage: 28.60, % mem avail: 71.41)
+45000 2414.4387834072113 18.64 q/s (% mem usage: 28.60, % mem avail: 71.38)
+45500 2419.2641248703003 18.81 q/s (% mem usage: 28.60, % mem avail: 71.39)
+46000 2424.137191295624 18.98 q/s (% mem usage: 28.70, % mem avail: 71.35)
+46500 2429.035799264908 19.14 q/s (% mem usage: 28.70, % mem avail: 71.35)
+47000 2434.406468629837 19.31 q/s (% mem usage: 28.40, % mem avail: 71.65)
+47500 2439.133137702942 19.47 q/s (% mem usage: 28.30, % mem avail: 71.66)
+47519 2442.6903915405273 19.45 q/s (% mem usage: 28.10, % mem avail: 71.89)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Podocoryna_carnea_NANAv1/10_functional_annotation/Podocoryna_carnea_NANAv1.transcripts.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Podocoryna_carnea_NANAv1/10_functional_annotation/Podocoryna_carnea_NANAv1.transcripts.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Podocoryna_carnea_NANAv1/10_functional_annotation/Podocoryna_carnea_NANAv1.transcripts.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Podocoryna_carnea_NANAv1/10_functional_annotation/Podocoryna_carnea_NANAv1.transcripts.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Podocoryna_carnea_NANAv1/10_functional_annotation/Podocoryna_carnea_NANAv1.transcripts.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 47519
+Total time: 3163 secs
+FINISHED
+[Mon 20 Feb 2023 12:15:42 PM EST]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Mon 20 Feb 2023 11:22:44 AM EST
+Finished: at Mon 20 Feb 2023 12:15:42 PM EST
+ExitStatus: 0
+=====================================================================

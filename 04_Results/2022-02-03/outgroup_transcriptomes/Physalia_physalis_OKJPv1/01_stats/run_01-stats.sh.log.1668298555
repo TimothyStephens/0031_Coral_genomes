@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat 12 Nov 2022 07:15:55 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Physalia_physalis_OKJPv1/01_stats
+=====================================================================
+
+[Sat 12 Nov 2022 07:15:56 PM EST]      CMD: md5sum Physalia_physalis_OKJPv1.transcripts.cds.fna | tee Physalia_physalis_OKJPv1.CDS_stats.job_md5sum_list.txt
+452a5f16b99fdf250fff346cf960e5d2  Physalia_physalis_OKJPv1.transcripts.cds.fna
+[Sat 12 Nov 2022 07:15:56 PM EST]      CMD: ./CDS_stats Physalia_physalis_OKJPv1.transcripts.cds.fna > Physalia_physalis_OKJPv1.GeneStats.tsv
+
+=====================================================================
+Started: at Sat 12 Nov 2022 07:15:55 PM EST
+Finished: at Sat 12 Nov 2022 07:15:57 PM EST
+ExitStatus: 0
+=====================================================================

@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 02:27:32 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Calvadosia_cruxmelitensis_NANAv1/01_stats
+=====================================================================
+
+[Tue 06 Jun 2023 02:27:33 PM EDT]      CMD: md5sum Calvadosia_cruxmelitensis_NANAv1.transcripts.cds.fna | tee Calvadosia_cruxmelitensis_NANAv1.CDS_stats.job_md5sum_list.txt
+4b445558fca2262551f16c2e2b6bf3f7  Calvadosia_cruxmelitensis_NANAv1.transcripts.cds.fna
+[Tue 06 Jun 2023 02:27:33 PM EDT]      CMD: ./CDS_stats Calvadosia_cruxmelitensis_NANAv1.transcripts.cds.fna > Calvadosia_cruxmelitensis_NANAv1.GeneStats.tsv
+
+=====================================================================
+Started: at Tue 06 Jun 2023 02:27:32 PM EDT
+Finished: at Tue 06 Jun 2023 02:27:34 PM EDT
+ExitStatus: 0
+=====================================================================

@@ -1,0 +1,55 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue Nov  1 11:28:04 EDT 2022
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Actinia_equina_RHUKv1/05_RepeatMasker
+=====================================================================
+
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+[Tue Nov  1 11:28:06 EDT 2022]      CMD: sed -e 's/Actinia_equina_RHUKv1___//' Actinia_equina_RHUKv1.assembly.fasta > genome.fa
+[Tue Nov  1 11:28:11 EDT 2022]      CMD: cat Actinia_equina_RHUKv1.assembly.fasta.RMDB-families.fa rmlib.fa > custom_repeat_library.fa
+[Tue Nov  1 11:28:12 EDT 2022]      CMD: RepeatMasker -no_is -a -x -gff -pa 5 -lib custom_repeat_library.fa genome.fa 1> RepeatMasker.log 2>&1
+[Wed Nov  2 15:17:51 EDT 2022]      CMD: /scratch/ts942/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/calcDivergenceFromAlign.pl -s genome.fa.divsum genome.fa.align
+..........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................Actinia_equina_RHUKv1	
+[Wed Nov  2 15:20:19 EDT 2022]      CMD: /scratch/ts942/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/createRepeatLandscape.pl -g  -div genome.fa.divsum > genome.fa.RepeatLandscape.html
+[Wed Nov  2 15:20:19 EDT 2022]      CMD: bedtools maskfasta -fi genome.fa -fo genome.fa.softmasked -bed genome.fa.out.gff -soft
+[Wed Nov  2 15:20:23 EDT 2022]      CMD: sed -e "s/^>/>Actinia_equina_RHUKv1___/" genome.fa.masked | reformat.sh in=stdin.fa out=stdout.fa fastawrap=0 > Actinia_equina_RHUKv1.assembly.fasta.masked
+java -ea -Xms300m -cp /home/ts942/PROGRAMS/bbmap/current/ jgi.ReformatReads in=stdin.fa out=stdout.fa fastawrap=0
+Executing jgi.ReformatReads [in=stdin.fa, out=stdout.fa, fastawrap=0]
+
+Input is being processed as unpaired
+Input:                  	1486 reads          	409058327 bases
+Output:                 	1486 reads (100.00%) 	409058327 bases (100.00%)
+
+Time:                         	5.778 seconds.
+Reads Processed:        1486 	0.26k reads/sec
+Bases Processed:        409m 	70.80m bases/sec
+[Wed Nov  2 15:20:30 EDT 2022]      CMD: sed -e "s/^>/>Actinia_equina_RHUKv1___/" genome.fa.softmasked > Actinia_equina_RHUKv1.assembly.fasta.softmasked
+[Wed Nov  2 15:20:31 EDT 2022]      CMD: awk -F'\t' -vPREFIX="Actinia_equina_RHUKv1" '{ if($1!~"^#") {print PREFIX"___"$0} else {print $0} }' genome.fa.out.gff > Actinia_equina_RHUKv1.assembly.fasta.out.gff
+[Wed Nov  2 15:20:31 EDT 2022]      CMD: cp genome.fa.divsum Actinia_equina_RHUKv1.assembly.fasta.divsum
+[Wed Nov  2 15:20:31 EDT 2022]      CMD: cp genome.fa.tbl Actinia_equina_RHUKv1.assembly.fasta.tbl
+[Wed Nov  2 15:20:31 EDT 2022]      CMD: tail -n 72 Actinia_equina_RHUKv1.assembly.fasta.divsum | sed -e 's/ $//' > Actinia_equina_RHUKv1.assembly.fasta.divsum.Kimura_distance
+[Wed Nov  2 15:20:31 EDT 2022]      CMD: gzip genome.fa.align genome.fa.divsum genome.fa.masked genome.fa.out genome.fa.out.gff genome.fa.softmasked genome.fa.tbl
+
+=====================================================================
+Started: at Tue Nov  1 11:28:04 EDT 2022
+Finished: at Wed Nov  2 15:24:25 EDT 2022
+ExitStatus: 0
+=====================================================================

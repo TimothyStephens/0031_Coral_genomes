@@ -1,0 +1,21 @@
+=====================================================================
+Slurm config version 0.4
+Starting on slepner065.amarel.rutgers.edu at Wed Jun 15 23:49:39 EDT 2022
+Nodelist slepner065
+Current JOB_ID is 20255286
+Current array index number is NA
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_rus_NAIDv1/05_RepeatMasker
+=====================================================================
+
+[Thu Jun 16 16:31:26 EDT 2022]   - Done!
+
+=====================================================================
+Started: at Wed Jun 15 23:49:39 EDT 2022 on slepner065.amarel.rutgers.edu
+Finished: at Thu Jun 16 16:31:26 EDT 2022
+ExitStatus: 0
+
+   JobName   NTasks  AllocCPUS     ReqMem     MaxRSS  MaxVMSize  MaxDiskRead MaxDiskWrite   TotalCPU    CPUTime    Elapsed 
+---------- -------- ---------- ---------- ---------- ---------- ------------ ------------ ---------- ---------- ---------- 
+ AmarelJob                  24      120Gn                                                   00:00:00 16-16:43:36   16:41:49 
+    extern        1         24      120Gn                                                   00:00:00 16-16:43:36   16:41:49 
+=====================================================================

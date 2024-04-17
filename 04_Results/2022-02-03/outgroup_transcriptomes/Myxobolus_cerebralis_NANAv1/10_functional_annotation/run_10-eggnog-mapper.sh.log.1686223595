@@ -1,0 +1,78 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 08 Jun 2023 07:26:35 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Myxobolus_cerebralis_NANAv1/10_functional_annotation
+=====================================================================
+
+[Thu 08 Jun 2023 07:26:37 AM EDT]      CMD: md5sum Myxobolus_cerebralis_NANAv1.transcripts.pep.faa ../00_databases/Myxobolus_cerebralis_NANAv1.transcripts.pep.faa | tee Myxobolus_cerebralis_NANAv1.transcripts.pep.faa.emapper.job_md5sum_list.txt
+97e78218c180cf4498a4b6100eaaf2df  Myxobolus_cerebralis_NANAv1.transcripts.pep.faa
+97e78218c180cf4498a4b6100eaaf2df  ../00_databases/Myxobolus_cerebralis_NANAv1.transcripts.pep.faa
+[Thu 08 Jun 2023 07:26:37 AM EDT]      CMD: emapper.py -i Myxobolus_cerebralis_NANAv1.transcripts.pep.faa --output Myxobolus_cerebralis_NANAv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 2.86102294921875e-06 0.00 q/s (% mem usage: 53.30, % mem avail: 46.70)
+[1;34mTime to load the DB into memory: 41.4639356136322[0m
+#  emapper-2.1.6
+# emapper.py  -i Myxobolus_cerebralis_NANAv1.transcripts.pep.faa --output Myxobolus_cerebralis_NANAv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Myxobolus_cerebralis_NANAv1/10_functional_annotation/Myxobolus_cerebralis_NANAv1.transcripts.pep.faa --threads 96 -o /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Myxobolus_cerebralis_NANAv1/10_functional_annotation/Myxobolus_cerebralis_NANAv1.transcripts.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+Namespace(Z=40000000, call_info='## Thu Jun  8 07:32:27 2023\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Myxobolus_cerebralis_NANAv1.transcripts.pep.faa --output Myxobolus_cerebralis_NANAv1.transcripts.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 96 --dbmem\n##', clean_overlaps='clans', cpu=96, cpus_per_worker=96, cut_ga=True, db='/scratch/timothy/databases/eggnog-mapper-rel20211209/pfam/Pfam-A.hmm', dbtype='hmmdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='seq', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Myxobolus_cerebralis_NANAv1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+Searching queries with a pool of 96 CPUs
+500 520.1812801361084 0.96 q/s (% mem usage: 64.40, % mem avail: 35.60)
+1000 525.5459694862366 1.90 q/s (% mem usage: 64.40, % mem avail: 35.59)
+1500 529.6244974136353 2.83 q/s (% mem usage: 64.40, % mem avail: 35.58)
+2000 533.6480951309204 3.75 q/s (% mem usage: 64.40, % mem avail: 35.58)
+2500 537.4382531642914 4.65 q/s (% mem usage: 64.40, % mem avail: 35.59)
+3000 541.129403591156 5.54 q/s (% mem usage: 64.40, % mem avail: 35.58)
+3500 544.6882591247559 6.43 q/s (% mem usage: 64.40, % mem avail: 35.57)
+4000 548.1240622997284 7.30 q/s (% mem usage: 64.40, % mem avail: 35.58)
+4500 551.9678616523743 8.15 q/s (% mem usage: 64.40, % mem avail: 35.55)
+5000 555.4664723873138 9.00 q/s (% mem usage: 64.40, % mem avail: 35.61)
+5500 559.4990792274475 9.83 q/s (% mem usage: 64.40, % mem avail: 35.61)
+6000 563.1426737308502 10.65 q/s (% mem usage: 64.40, % mem avail: 35.59)
+6017 563.5271801948547 10.68 q/s (% mem usage: 64.40, % mem avail: 35.62)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Myxobolus_cerebralis_NANAv1/10_functional_annotation/Myxobolus_cerebralis_NANAv1.transcripts.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Myxobolus_cerebralis_NANAv1/10_functional_annotation/Myxobolus_cerebralis_NANAv1.transcripts.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Myxobolus_cerebralis_NANAv1/10_functional_annotation/Myxobolus_cerebralis_NANAv1.transcripts.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Myxobolus_cerebralis_NANAv1/10_functional_annotation/Myxobolus_cerebralis_NANAv1.transcripts.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Myxobolus_cerebralis_NANAv1/10_functional_annotation/Myxobolus_cerebralis_NANAv1.transcripts.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 6017
+Total time: 806 secs
+FINISHED
+[Thu 08 Jun 2023 07:40:08 AM EDT]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Thu 08 Jun 2023 07:26:35 AM EDT
+Finished: at Thu 08 Jun 2023 07:40:08 AM EDT
+ExitStatus: 0
+=====================================================================

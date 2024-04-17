@@ -1,0 +1,35 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 19 Apr 2023 12:54:40 PM EDT
+Working directory is /scratch/timothy/InterProScan/10_functional_annotation
+=====================================================================
+
+[Wed 19 Apr 2023 12:54:41 PM EDT]      CMD: md5sum Calvadosia_cruxmelitensis_CRGBv3.2-TRANS.transcripts.pep.faa ../00_databases/Calvadosia_cruxmelitensis_CRGBv3.2-TRANS.transcripts.pep.faa | tee Calvadosia_cruxmelitensis_CRGBv3.2-TRANS.transcripts.pep.faa.InterProScan.job_md5sum_list.txt
+7f166859a896d99923048f7f8700c6e8  Calvadosia_cruxmelitensis_CRGBv3.2-TRANS.transcripts.pep.faa
+7f166859a896d99923048f7f8700c6e8  ../00_databases/Calvadosia_cruxmelitensis_CRGBv3.2-TRANS.transcripts.pep.faa
+[Wed 19 Apr 2023 12:54:41 PM EDT]      CMD: /home/timothy/programs/my_interproscan/interproscan-5.53-87.0/interproscan.sh -dp --goterms --cpu 8 --input Calvadosia_cruxmelitensis_CRGBv3.2-TRANS.transcripts.pep.faa --output-file-base Calvadosia_cruxmelitensis_CRGBv3.2-TRANS.transcripts.pep.faa.InterProScan
+19/04/2023 12:54:45:032 Welcome to InterProScan-5.53-87.0
+19/04/2023 12:54:45:036 Running InterProScan v5 in STANDALONE mode... on Linux
+19/04/2023 12:54:55:785 RunID: coral_20230419_125455117_kd0s
+19/04/2023 12:55:09:294 Loading file /scratch/timothy/InterProScan/10_functional_annotation/Calvadosia_cruxmelitensis_CRGBv3.2-TRANS.transcripts.pep.faa
+19/04/2023 12:55:09:295 Running the following analyses:
+[CDD-3.18,Coils-2.2.1,Gene3D-4.3.0,Hamap-2020_05,MobiDBLite-2.0,PANTHER-15.0,Pfam-34.0,Phobius-1.01,PIRSF-3.10,PIRSR-2021_02,PRINTS-42.0,ProSitePatterns-2021_01,ProSiteProfiles-2021_01,SFLD-4,SignalP_EUK-4.1,SignalP_GRAM_NEGATIVE-4.1,SignalP_GRAM_POSITIVE-4.1,SMART-7.1,SUPERFAMILY-1.75,TIGRFAM-15.0,TMHMM-2.0c]
+Pre-calculated match lookup service DISABLED.  Please wait for match calculations to complete...
+19/04/2023 12:56:00:331 Uploaded 63507 unique sequences for analysis
+20/04/2023 06:32:14:172 25% completed
+20/04/2023 07:32:15:814 25% completed
+20/04/2023 08:32:16:048 26% completed
+20/04/2023 09:32:16:528 26% completed
+20/04/2023 10:32:17:873 46% completed
+20/04/2023 11:32:18:197 91% completed
+20/04/2023 12:32:18:809 98% completed
+20/04/2023 13:32:19:405 99% completed
+20/04/2023 13:40:30:011 100% done:  InterProScan analyses completed 
+
+[Thu 20 Apr 2023 01:40:31 PM EDT]      CMD: rm -fr temp
+
+=====================================================================
+Started: at Wed 19 Apr 2023 12:54:40 PM EDT
+Finished: at Thu 20 Apr 2023 01:40:31 PM EDT
+ExitStatus: 0
+=====================================================================

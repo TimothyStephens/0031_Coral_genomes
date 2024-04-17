@@ -1,0 +1,2 @@
+8b882a30a2de5ed54f04c34b8d140ee7  Renilla_reniformis_FLUSv1.genes.pep.faa
+8b882a30a2de5ed54f04c34b8d140ee7  ../00_databases/Renilla_reniformis_FLUSv1.genes.pep.faa

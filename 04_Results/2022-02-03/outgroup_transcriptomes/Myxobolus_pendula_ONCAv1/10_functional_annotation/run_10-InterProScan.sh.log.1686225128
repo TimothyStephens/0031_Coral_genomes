@@ -1,0 +1,30 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 08 Jun 2023 07:52:08 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Myxobolus_pendula_ONCAv1/10_functional_annotation
+=====================================================================
+
+[Thu 08 Jun 2023 07:52:10 AM EDT]      CMD: md5sum Myxobolus_pendula_ONCAv1.transcripts.pep.faa ../00_databases/Myxobolus_pendula_ONCAv1.transcripts.pep.faa | tee Myxobolus_pendula_ONCAv1.transcripts.pep.faa.InterProScan.job_md5sum_list.txt
+30daf9ded0bad3721664bd6d82be2bf2  Myxobolus_pendula_ONCAv1.transcripts.pep.faa
+30daf9ded0bad3721664bd6d82be2bf2  ../00_databases/Myxobolus_pendula_ONCAv1.transcripts.pep.faa
+[Thu 08 Jun 2023 07:52:10 AM EDT]      CMD: /home/timothy/programs/my_interproscan/interproscan-5.53-87.0/interproscan.sh -dp --goterms --cpu 96 --input Myxobolus_pendula_ONCAv1.transcripts.pep.faa --output-file-base Myxobolus_pendula_ONCAv1.transcripts.pep.faa.InterProScan
+08/06/2023 07:52:10:982 Welcome to InterProScan-5.53-87.0
+08/06/2023 07:52:10:984 Running InterProScan v5 in STANDALONE mode... on Linux
+08/06/2023 07:52:15:929 RunID: coral_20230608_075215416_dqqi
+08/06/2023 07:52:23:531 Loading file /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Myxobolus_pendula_ONCAv1/10_functional_annotation/Myxobolus_pendula_ONCAv1.transcripts.pep.faa
+08/06/2023 07:52:23:532 Running the following analyses:
+[CDD-3.18,Coils-2.2.1,Gene3D-4.3.0,Hamap-2020_05,MobiDBLite-2.0,PANTHER-15.0,Pfam-34.0,Phobius-1.01,PIRSF-3.10,PIRSR-2021_02,PRINTS-42.0,ProSitePatterns-2021_01,ProSiteProfiles-2021_01,SFLD-4,SignalP_EUK-4.1,SignalP_GRAM_NEGATIVE-4.1,SignalP_GRAM_POSITIVE-4.1,SMART-7.1,SUPERFAMILY-1.75,TIGRFAM-15.0,TMHMM-2.0c]
+Pre-calculated match lookup service DISABLED.  Please wait for match calculations to complete...
+08/06/2023 07:52:38:047 25% completed
+08/06/2023 07:54:06:625 50% completed
+08/06/2023 07:58:33:325 75% completed
+08/06/2023 08:08:08:301 90% completed
+08/06/2023 08:08:39:628 100% done:  InterProScan analyses completed 
+
+[Thu 08 Jun 2023 08:08:40 AM EDT]      CMD: rm -fr temp
+
+=====================================================================
+Started: at Thu 08 Jun 2023 07:52:08 AM EDT
+Finished: at Thu 08 Jun 2023 08:08:40 AM EDT
+ExitStatus: 0
+=====================================================================

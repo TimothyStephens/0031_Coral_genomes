@@ -1,0 +1,2 @@
+43962e0877a44c45bf420feda069bfcf  Cassiopea_xamachana_T1-Av2.transcripts.pep.faa
+43962e0877a44c45bf420feda069bfcf  ../00_databases/Cassiopea_xamachana_T1-Av2.transcripts.pep.faa

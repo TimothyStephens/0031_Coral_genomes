@@ -1,0 +1,2 @@
+f0d9deb0e740bbe5ff980b6e1110ebe9  Acropora_digitifera_SLJPv2.genes.pep.faa
+654241fc0f4f4e6d39f48f14c8529916  ../00_databases/Acropora_digitifera_SLJPv2.genes.pep.faa

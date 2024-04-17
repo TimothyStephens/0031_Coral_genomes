@@ -1,0 +1,15 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Mon 20 Feb 2023 10:45:46 AM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_transcriptomes/Podocoryna_carnea_NANAv1/01_stats
+=====================================================================
+
+[Mon 20 Feb 2023 10:45:47 AM EST]      CMD: md5sum Podocoryna_carnea_NANAv1.transcripts.cds.fna | tee Podocoryna_carnea_NANAv1.CDS_stats.job_md5sum_list.txt
+b941d3d98e28d8e993a1cb9cca6b02a5  Podocoryna_carnea_NANAv1.transcripts.cds.fna
+[Mon 20 Feb 2023 10:45:47 AM EST]      CMD: ./CDS_stats Podocoryna_carnea_NANAv1.transcripts.cds.fna > Podocoryna_carnea_NANAv1.GeneStats.tsv
+
+=====================================================================
+Started: at Mon 20 Feb 2023 10:45:46 AM EST
+Finished: at Mon 20 Feb 2023 10:45:48 AM EST
+ExitStatus: 0
+=====================================================================

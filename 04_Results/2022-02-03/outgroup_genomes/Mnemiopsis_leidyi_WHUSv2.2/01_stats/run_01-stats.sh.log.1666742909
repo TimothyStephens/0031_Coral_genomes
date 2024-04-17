@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 08:08:29 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Mnemiopsis_leidyi_WHUSv2.2/01_stats
+=====================================================================
+
+[Tue 25 Oct 2022 08:08:31 PM EDT]      CMD: md5sum Mnemiopsis_leidyi_WHUSv2.2.assembly.fasta Mnemiopsis_leidyi_WHUSv2.2.genes.gff3 | tee Mnemiopsis_leidyi_WHUSv2.2.genome_stats.job_md5sum_list.txt
+a7b6d4715a680f2f1eb69b904a3dc870  Mnemiopsis_leidyi_WHUSv2.2.assembly.fasta
+4e6bd4c951aea42299737a25ba87a869  Mnemiopsis_leidyi_WHUSv2.2.genes.gff3
+[Tue 25 Oct 2022 08:08:32 PM EDT]      CMD: ./genome_stats Mnemiopsis_leidyi_WHUSv2.2.assembly.fasta Mnemiopsis_leidyi_WHUSv2.2.genes.gff3 > Mnemiopsis_leidyi_WHUSv2.2.GeneStats.tsv
+index file Mnemiopsis_leidyi_WHUSv2.2.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Tue 25 Oct 2022 08:08:29 PM EDT
+Finished: at Tue 25 Oct 2022 08:08:46 PM EDT
+ExitStatus: 0
+=====================================================================

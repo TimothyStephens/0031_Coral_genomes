@@ -1,0 +1,2 @@
+616377ec2bbc8d571e270893c3afd89e  Mnemiopsis_leidyi_WHUSv2.2.genes.pep.faa
+616377ec2bbc8d571e270893c3afd89e  ../00_databases/Mnemiopsis_leidyi_WHUSv2.2.genes.pep.faa

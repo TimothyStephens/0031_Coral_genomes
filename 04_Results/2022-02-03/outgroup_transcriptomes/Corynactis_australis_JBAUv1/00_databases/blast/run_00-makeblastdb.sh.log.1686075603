@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 02:20:03 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Corynactis_australis_JBAUv1/00_databases/blast
+=====================================================================
+
+[Tue 06 Jun 2023 02:20:05 PM EDT]      CMD: md5sum Corynactis_australis_JBAUv1.transcripts.cds.fna Corynactis_australis_JBAUv1.transcripts.pep.faa | tee Corynactis_australis_JBAUv1.makeblastdb.job_md5sum_list.txt
+a25e0c05c9da9477870e3ba31d9cb8b5  Corynactis_australis_JBAUv1.transcripts.cds.fna
+3ddb8affef9be9cf513aaf5b71213a88  Corynactis_australis_JBAUv1.transcripts.pep.faa
+[Tue 06 Jun 2023 02:20:05 PM EDT]      CMD: makeblastdb -dbtype nucl -in Corynactis_australis_JBAUv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 06/06/2023 14:20:05
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Corynactis_australis_JBAUv1/00_databases/blast/Corynactis_australis_JBAUv1.transcripts.cds.fna
+New DB title:  Corynactis_australis_JBAUv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 27220 sequences in 0.49868 seconds.
+
+
+[Tue 06 Jun 2023 02:20:06 PM EDT]      CMD: makeblastdb -dbtype prot -in Corynactis_australis_JBAUv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 06/06/2023 14:20:06
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Corynactis_australis_JBAUv1/00_databases/blast/Corynactis_australis_JBAUv1.transcripts.pep.faa
+New DB title:  Corynactis_australis_JBAUv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 27220 sequences in 0.398687 seconds.
+
+
+
+=====================================================================
+Started: at Tue 06 Jun 2023 02:20:03 PM EDT
+Finished: at Tue 06 Jun 2023 02:20:06 PM EDT
+ExitStatus: 0
+=====================================================================

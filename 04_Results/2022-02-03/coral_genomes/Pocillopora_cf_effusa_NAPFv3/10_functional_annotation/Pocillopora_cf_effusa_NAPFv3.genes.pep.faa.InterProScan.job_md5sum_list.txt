@@ -1,0 +1,2 @@
+aa7335ebfe24483ca39ac3090f7ae6e1  Pocillopora_cf_effusa_NAPFv3.genes.pep.faa
+aa7335ebfe24483ca39ac3090f7ae6e1  ../00_databases/Pocillopora_cf_effusa_NAPFv3.genes.pep.faa

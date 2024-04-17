@@ -1,0 +1,2 @@
+487247d8f6621637ebe032c283a6b0fa  Acropora_awi_SLJPv1.genes.pep.faa
+e468f6071d041ee5d72205dd1b6ec46d  ../00_databases/Acropora_awi_SLJPv1.genes.pep.faa

@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 02:20:18 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Hydra_oligactis_GNCHv1/00_databases/blast
+=====================================================================
+
+[Tue 06 Jun 2023 02:20:19 PM EDT]      CMD: md5sum Hydra_oligactis_GNCHv1.transcripts.cds.fna Hydra_oligactis_GNCHv1.transcripts.pep.faa | tee Hydra_oligactis_GNCHv1.makeblastdb.job_md5sum_list.txt
+b4ad229b208656585c5ab31a00a5c919  Hydra_oligactis_GNCHv1.transcripts.cds.fna
+1ef625c880d0375c6210068a32111f5e  Hydra_oligactis_GNCHv1.transcripts.pep.faa
+[Tue 06 Jun 2023 02:20:19 PM EDT]      CMD: makeblastdb -dbtype nucl -in Hydra_oligactis_GNCHv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 06/06/2023 14:20:19
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Hydra_oligactis_GNCHv1/00_databases/blast/Hydra_oligactis_GNCHv1.transcripts.cds.fna
+New DB title:  Hydra_oligactis_GNCHv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 21535 sequences in 0.410477 seconds.
+
+
+[Tue 06 Jun 2023 02:20:20 PM EDT]      CMD: makeblastdb -dbtype prot -in Hydra_oligactis_GNCHv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 06/06/2023 14:20:20
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Hydra_oligactis_GNCHv1/00_databases/blast/Hydra_oligactis_GNCHv1.transcripts.pep.faa
+New DB title:  Hydra_oligactis_GNCHv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 21535 sequences in 0.331028 seconds.
+
+
+
+=====================================================================
+Started: at Tue 06 Jun 2023 02:20:18 PM EDT
+Finished: at Tue 06 Jun 2023 02:20:20 PM EDT
+ExitStatus: 0
+=====================================================================

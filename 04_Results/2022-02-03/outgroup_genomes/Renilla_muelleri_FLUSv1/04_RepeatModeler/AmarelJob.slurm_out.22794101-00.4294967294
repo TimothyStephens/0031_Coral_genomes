@@ -1,0 +1,21 @@
+=====================================================================
+Slurm config version 0.4
+Starting on hal0154.amarel.rutgers.edu at Tue Oct 25 21:50:21 EDT 2022
+Nodelist hal0154
+Current JOB_ID is 22794101
+Current array index number is NA
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Renilla_muelleri_FLUSv1/04_RepeatModeler
+=====================================================================
+
+[Wed Oct 26 09:27:16 EDT 2022]   - Done!
+
+=====================================================================
+Started: at Tue Oct 25 21:50:21 EDT 2022 on hal0154.amarel.rutgers.edu
+Finished: at Wed Oct 26 09:27:16 EDT 2022
+ExitStatus: 0
+
+   JobName   NTasks  AllocCPUS     ReqMem     MaxRSS  MaxVMSize  MaxDiskRead MaxDiskWrite   TotalCPU    CPUTime    Elapsed 
+---------- -------- ---------- ---------- ---------- ---------- ------------ ------------ ---------- ---------- ---------- 
+ AmarelJob                  24      120Gn                                                   00:00:00 11-14:46:48   11:36:57 
+    extern        1         24      120Gn                                                   00:00:00 11-14:46:48   11:36:57 
+=====================================================================

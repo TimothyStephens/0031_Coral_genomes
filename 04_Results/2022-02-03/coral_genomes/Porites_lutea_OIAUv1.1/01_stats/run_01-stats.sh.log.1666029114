@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Mon 17 Oct 2022 01:51:54 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_lutea_OIAUv1.1/01_stats
+=====================================================================
+
+[Mon 17 Oct 2022 01:51:56 PM EDT]      CMD: md5sum Porites_lutea_OIAUv1.1.assembly.fasta Porites_lutea_OIAUv1.1.genes.gff3 | tee Porites_lutea_OIAUv1.1.genome_stats.job_md5sum_list.txt
+b5f44acc6d0a5c455b9e787db0ade717  Porites_lutea_OIAUv1.1.assembly.fasta
+a08b916c2b7a8c77d93d0a73f62c2f50  Porites_lutea_OIAUv1.1.genes.gff3
+[Mon 17 Oct 2022 01:51:58 PM EDT]      CMD: ./genome_stats Porites_lutea_OIAUv1.1.assembly.fasta Porites_lutea_OIAUv1.1.genes.gff3 > Porites_lutea_OIAUv1.1.GeneStats.tsv
+index file Porites_lutea_OIAUv1.1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Mon 17 Oct 2022 01:51:54 PM EDT
+Finished: at Mon 17 Oct 2022 01:52:37 PM EDT
+ExitStatus: 0
+=====================================================================

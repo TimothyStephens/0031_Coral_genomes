@@ -1,0 +1,2 @@
+969960eafc185cc32ee59f8e10e7182a  Montipora_foliosa_XSCSv1.transcripts.cds.fna
+aa6b36a998221c2c09d21b7e9f582d56  Montipora_foliosa_XSCSv1.transcripts.pep.faa

@@ -1,0 +1,21 @@
+=====================================================================
+Slurm config version 0.4
+Starting on hal0071.amarel.rutgers.edu at Tue Nov  1 16:07:21 EDT 2022
+Nodelist hal0071
+Current JOB_ID is 22861549
+Current array index number is NA
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Xenia_sp_CTEAv1/05_RepeatMasker
+=====================================================================
+
+[Wed Nov  2 02:46:32 EDT 2022]   - Done!
+
+=====================================================================
+Started: at Tue Nov  1 16:07:21 EDT 2022 on hal0071.amarel.rutgers.edu
+Finished: at Wed Nov  2 02:46:32 EDT 2022
+ExitStatus: 0
+
+   JobName   NTasks  AllocCPUS     ReqMem     MaxRSS  MaxVMSize  MaxDiskRead MaxDiskWrite   TotalCPU    CPUTime    Elapsed 
+---------- -------- ---------- ---------- ---------- ---------- ------------ ------------ ---------- ---------- ---------- 
+ AmarelJob                  24      120Gn                                                   00:00:00 10-15:40:24   10:39:11 
+    extern        1         24      120Gn                                                   00:00:00 10-15:40:24   10:39:11 
+=====================================================================

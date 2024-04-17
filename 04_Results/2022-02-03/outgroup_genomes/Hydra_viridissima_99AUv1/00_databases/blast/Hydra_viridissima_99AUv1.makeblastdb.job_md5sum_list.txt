@@ -1,0 +1,3 @@
+77c25ede06ab134e55c2aea198b8d15b  Hydra_viridissima_99AUv1.assembly.fasta
+6cf774a3b32d65f0a7129b59379a8b26  Hydra_viridissima_99AUv1.genes.cds.fna
+fa8ca3c9d9fa1349a61d0c9fa7d72827  Hydra_viridissima_99AUv1.genes.pep.faa

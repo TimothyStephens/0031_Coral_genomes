@@ -1,0 +1,2 @@
+856c154e55681417e1299de807cdc0a5  Hoilungia_hongkongensis_HCHKv1.genes.pep.faa
+856c154e55681417e1299de807cdc0a5  ../00_databases/Hoilungia_hongkongensis_HCHKv1.genes.pep.faa

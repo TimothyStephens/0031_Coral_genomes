@@ -1,0 +1,43 @@
+# Files
+Genome file	Ephydatia_muelleri_BCCAv1.assembly.fasta
+GFF file	Ephydatia_muelleri_BCCAv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	322620753
+Total contig length (bp)	320756053
+Number of scaffolds	1444
+Number of contigs	3630
+N50 of scaffolds (bp)	9883643
+N50 of contigs (bp)	211556
+Percent gaps	0.578
+Percent GC	43.19
+
+# Gene stats (combined CDS+introns)
+Number of genes	39245
+Total gene length	140909838
+Average gene length (bp)	3590.52
+Gene percent GC	45.46
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	1496.42
+Average number of CDS per gene/transcript	6.39325
+
+# CDS stats
+Number of CDS	250903
+Total CDS length (bp)	58727168
+Average CDS length (bp)	234.063
+Number of single-CDS transcripts	7075
+Percent single-CDS transcripts	18.0278
+CDS percent GC	49.05
+
+# Intron stats (predicted between CDS features)
+Number of introns	211658
+Total intron length (bp)	82182670
+Average intron length (bp)	388.28
+Intron percent GC	42.88
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	38017
+Total intergenic region length (bp)	170649849
+Average intergenic region length (bp)	4488.78
+Intergenic region percent GC	41.4

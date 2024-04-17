@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 09 Nov 2022 07:37:19 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydra_viridissima_99AUv1/01_stats
+=====================================================================
+
+[Wed 09 Nov 2022 07:37:21 PM EST]      CMD: md5sum Hydra_viridissima_99AUv1.assembly.fasta Hydra_viridissima_99AUv1.genes.gff3 | tee Hydra_viridissima_99AUv1.genome_stats.job_md5sum_list.txt
+77c25ede06ab134e55c2aea198b8d15b  Hydra_viridissima_99AUv1.assembly.fasta
+a713a9fa7ea4abc9f359c4f48c48207b  Hydra_viridissima_99AUv1.genes.gff3
+[Wed 09 Nov 2022 07:37:22 PM EST]      CMD: ./genome_stats Hydra_viridissima_99AUv1.assembly.fasta Hydra_viridissima_99AUv1.genes.gff3 > Hydra_viridissima_99AUv1.GeneStats.tsv
+index file Hydra_viridissima_99AUv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Wed 09 Nov 2022 07:37:19 PM EST
+Finished: at Wed 09 Nov 2022 07:37:43 PM EST
+ExitStatus: 0
+=====================================================================

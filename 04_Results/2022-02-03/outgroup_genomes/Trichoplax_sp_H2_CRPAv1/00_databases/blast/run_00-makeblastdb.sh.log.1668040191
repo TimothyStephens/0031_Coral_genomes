@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 09 Nov 2022 07:29:51 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Trichoplax_sp_H2_CRPAv1/00_databases/blast
+=====================================================================
+
+[Wed 09 Nov 2022 07:29:55 PM EST]      CMD: md5sum Trichoplax_sp_H2_CRPAv1.assembly.fasta Trichoplax_sp_H2_CRPAv1.genes.cds.fna Trichoplax_sp_H2_CRPAv1.genes.pep.faa | tee Trichoplax_sp_H2_CRPAv1.makeblastdb.job_md5sum_list.txt
+84522c74f79d74001247660290ea4a36  Trichoplax_sp_H2_CRPAv1.assembly.fasta
+d382c09ad0f7c1f4a98cb62326d2f341  Trichoplax_sp_H2_CRPAv1.genes.cds.fna
+e2ed4e68cfb8474e4b165bd69f86b94e  Trichoplax_sp_H2_CRPAv1.genes.pep.faa
+[Wed 09 Nov 2022 07:29:55 PM EST]      CMD: makeblastdb -dbtype nucl -in Trichoplax_sp_H2_CRPAv1.assembly.fasta
+
+
+Building a new DB, current time: 11/09/2022 19:29:55
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Trichoplax_sp_H2_CRPAv1/00_databases/blast/Trichoplax_sp_H2_CRPAv1.assembly.fasta
+New DB title:  Trichoplax_sp_H2_CRPAv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1128 sequences in 2.31202 seconds.
+
+
+[Wed 09 Nov 2022 07:29:58 PM EST]      CMD: makeblastdb -dbtype nucl -in Trichoplax_sp_H2_CRPAv1.genes.cds.fna
+
+
+Building a new DB, current time: 11/09/2022 19:29:58
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Trichoplax_sp_H2_CRPAv1/00_databases/blast/Trichoplax_sp_H2_CRPAv1.genes.cds.fna
+New DB title:  Trichoplax_sp_H2_CRPAv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 12174 sequences in 0.641578 seconds.
+
+
+[Wed 09 Nov 2022 07:29:58 PM EST]      CMD: makeblastdb -dbtype prot -in Trichoplax_sp_H2_CRPAv1.genes.pep.faa
+
+
+Building a new DB, current time: 11/09/2022 19:29:58
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Trichoplax_sp_H2_CRPAv1/00_databases/blast/Trichoplax_sp_H2_CRPAv1.genes.pep.faa
+New DB title:  Trichoplax_sp_H2_CRPAv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 12174 sequences in 0.479051 seconds.
+
+
+
+=====================================================================
+Started: at Wed 09 Nov 2022 07:29:51 PM EST
+Finished: at Wed 09 Nov 2022 07:29:59 PM EST
+ExitStatus: 0
+=====================================================================

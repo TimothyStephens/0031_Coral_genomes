@@ -1,0 +1,43 @@
+# Files
+Genome file	Stylissa_carteri_RSSAv1.assembly.fasta
+GFF file	Stylissa_carteri_RSSAv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	418920728
+Total contig length (bp)	369967272
+Number of scaffolds	97497
+Number of contigs	262335
+N50 of scaffolds (bp)	10236
+N50 of contigs (bp)	2047
+Percent gaps	11.686
+Percent GC	43.87
+
+# Gene stats (combined CDS+introns)
+Number of genes	46312
+Total gene length	103196686
+Average gene length (bp)	2228.29
+Gene percent GC	44.87
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	703.158
+Average number of CDS per gene/transcript	3.3782
+
+# CDS stats
+Number of CDS	156451
+Total CDS length (bp)	32564674
+Average CDS length (bp)	208.146
+Number of single-CDS transcripts	9777
+Percent single-CDS transcripts	21.1112
+CDS percent GC	49.66
+
+# Intron stats (predicted between CDS features)
+Number of introns	109491
+Total intron length (bp)	70706962
+Average intron length (bp)	645.779
+Intron percent GC	42.37
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	17766
+Total intergenic region length (bp)	83973349
+Average intergenic region length (bp)	4726.63
+Intergenic region percent GC	43.72

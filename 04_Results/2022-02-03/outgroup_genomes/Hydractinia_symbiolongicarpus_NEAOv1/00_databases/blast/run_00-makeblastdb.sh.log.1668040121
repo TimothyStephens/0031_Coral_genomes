@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 09 Nov 2022 07:28:41 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydractinia_symbiolongicarpus_NEAOv1/00_databases/blast
+=====================================================================
+
+[Wed 09 Nov 2022 07:28:43 PM EST]      CMD: md5sum Hydractinia_symbiolongicarpus_NEAOv1.assembly.fasta Hydractinia_symbiolongicarpus_NEAOv1.genes.cds.fna Hydractinia_symbiolongicarpus_NEAOv1.genes.pep.faa | tee Hydractinia_symbiolongicarpus_NEAOv1.makeblastdb.job_md5sum_list.txt
+68835ac04c0ac038976a189dcec17d37  Hydractinia_symbiolongicarpus_NEAOv1.assembly.fasta
+af1d406366ad181efd121492b4a66ab2  Hydractinia_symbiolongicarpus_NEAOv1.genes.cds.fna
+d9857a92f72da76b580911ee2bd5cfdf  Hydractinia_symbiolongicarpus_NEAOv1.genes.pep.faa
+[Wed 09 Nov 2022 07:28:45 PM EST]      CMD: makeblastdb -dbtype nucl -in Hydractinia_symbiolongicarpus_NEAOv1.assembly.fasta
+
+
+Building a new DB, current time: 11/09/2022 19:28:45
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydractinia_symbiolongicarpus_NEAOv1/00_databases/blast/Hydractinia_symbiolongicarpus_NEAOv1.assembly.fasta
+New DB title:  Hydractinia_symbiolongicarpus_NEAOv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 4840 sequences in 8.8821 seconds.
+
+
+[Wed 09 Nov 2022 07:28:54 PM EST]      CMD: makeblastdb -dbtype nucl -in Hydractinia_symbiolongicarpus_NEAOv1.genes.cds.fna
+
+
+Building a new DB, current time: 11/09/2022 19:28:54
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydractinia_symbiolongicarpus_NEAOv1/00_databases/blast/Hydractinia_symbiolongicarpus_NEAOv1.genes.cds.fna
+New DB title:  Hydractinia_symbiolongicarpus_NEAOv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 22022 sequences in 1.35474 seconds.
+
+
+[Wed 09 Nov 2022 07:28:55 PM EST]      CMD: makeblastdb -dbtype prot -in Hydractinia_symbiolongicarpus_NEAOv1.genes.pep.faa
+
+
+Building a new DB, current time: 11/09/2022 19:28:55
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hydractinia_symbiolongicarpus_NEAOv1/00_databases/blast/Hydractinia_symbiolongicarpus_NEAOv1.genes.pep.faa
+New DB title:  Hydractinia_symbiolongicarpus_NEAOv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 22022 sequences in 0.832717 seconds.
+
+
+
+=====================================================================
+Started: at Wed 09 Nov 2022 07:28:41 PM EST
+Finished: at Wed 09 Nov 2022 07:28:56 PM EST
+ExitStatus: 0
+=====================================================================

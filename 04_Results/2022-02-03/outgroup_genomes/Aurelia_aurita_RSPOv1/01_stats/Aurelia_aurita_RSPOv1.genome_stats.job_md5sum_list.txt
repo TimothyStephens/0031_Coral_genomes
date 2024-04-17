@@ -1,0 +1,2 @@
+a0834c4335f843f600a5a3ef046cd467  Aurelia_aurita_RSPOv1.assembly.fasta
+9c546a54b62820d181b28ef22c503bd7  Aurelia_aurita_RSPOv1.genes.gff3

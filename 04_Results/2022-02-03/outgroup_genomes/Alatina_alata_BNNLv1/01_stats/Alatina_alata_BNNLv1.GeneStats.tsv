@@ -1,0 +1,43 @@
+# Files
+Genome file	Alatina_alata_BNNLv1.assembly.fasta
+GFF file	NA
+
+# Genome stats
+Total scaffold length (bp)	1075357049
+Total contig length (bp)	1074911764
+Number of scaffolds	337988
+Number of contigs	349697
+N50 of scaffolds (bp)	7756
+N50 of contigs (bp)	7515
+Percent gaps	0.041
+Percent GC	38.03
+
+# Gene stats (combined CDS+introns)
+Number of genes	66156
+Total gene length	0
+Average gene length (bp)	0
+Gene percent GC	0
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	0
+Average number of CDS per gene/transcript	0
+
+# CDS stats
+Number of CDS	66156
+Total CDS length (bp)	42995978
+Average CDS length (bp)	649.918
+Number of single-CDS transcripts	0
+Percent single-CDS transcripts	0
+Percent GC	41.74
+
+# Intron stats (predicted between CDS features)
+Number of introns	0
+Total intron length (bp)	0
+Average intron length (bp)	0
+Intron percent GC	0
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	0
+Total intergenic region length (bp)	0
+Average intergenic region length (bp)	0
+Intergenic region percent GC	0

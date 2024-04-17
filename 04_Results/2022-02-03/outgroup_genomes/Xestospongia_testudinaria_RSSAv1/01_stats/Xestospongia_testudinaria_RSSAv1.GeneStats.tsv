@@ -1,0 +1,43 @@
+# Files
+Genome file	Xestospongia_testudinaria_RSSAv1.assembly.fasta
+GFF file	Xestospongia_testudinaria_RSSAv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	257935546
+Total contig length (bp)	226452938
+Number of scaffolds	97640
+Number of contigs	215790
+N50 of scaffolds (bp)	4078
+N50 of contigs (bp)	1394
+Percent gaps	12.206
+Percent GC	49.9
+
+# Gene stats (combined CDS+introns)
+Number of genes	52876
+Total gene length	66063515
+Average gene length (bp)	1249.4
+Gene percent GC	47.7
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	900.303
+Average number of CDS per gene/transcript	2.79312
+
+# CDS stats
+Number of CDS	147689
+Total CDS length (bp)	47604421
+Average CDS length (bp)	322.329
+Number of single-CDS transcripts	28779
+Percent single-CDS transcripts	54.4273
+CDS percent GC	52.68
+
+# Intron stats (predicted between CDS features)
+Number of introns	93906
+Total intron length (bp)	18654905
+Average intron length (bp)	198.655
+Intron percent GC	32.29
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	19420
+Total intergenic region length (bp)	42337213
+Average intergenic region length (bp)	2180.08
+Intergenic region percent GC	55.52

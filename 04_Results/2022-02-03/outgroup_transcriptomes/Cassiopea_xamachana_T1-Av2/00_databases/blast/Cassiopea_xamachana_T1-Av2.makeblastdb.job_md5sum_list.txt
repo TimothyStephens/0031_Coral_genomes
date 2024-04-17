@@ -1,0 +1,2 @@
+f7c64330f97a9352fa963f79c4c0e4d3  Cassiopea_xamachana_T1-Av2.transcripts.cds.fna
+43962e0877a44c45bf420feda069bfcf  Cassiopea_xamachana_T1-Av2.transcripts.pep.faa

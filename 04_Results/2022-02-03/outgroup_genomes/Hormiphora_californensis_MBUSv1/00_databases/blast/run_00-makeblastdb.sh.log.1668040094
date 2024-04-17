@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 09 Nov 2022 07:28:14 PM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hormiphora_californensis_MBUSv1/00_databases/blast
+=====================================================================
+
+[Wed 09 Nov 2022 07:28:18 PM EST]      CMD: md5sum Hormiphora_californensis_MBUSv1.assembly.fasta Hormiphora_californensis_MBUSv1.genes.cds.fna Hormiphora_californensis_MBUSv1.genes.pep.faa | tee Hormiphora_californensis_MBUSv1.makeblastdb.job_md5sum_list.txt
+92b668e74e22017ab220055215ef0204  Hormiphora_californensis_MBUSv1.assembly.fasta
+4a4df15812b8ec0328b12dce7dbc8c3b  Hormiphora_californensis_MBUSv1.genes.cds.fna
+9e90df366fa0ea2b8d075dad2e54b125  Hormiphora_californensis_MBUSv1.genes.pep.faa
+[Wed 09 Nov 2022 07:28:18 PM EST]      CMD: makeblastdb -dbtype nucl -in Hormiphora_californensis_MBUSv1.assembly.fasta
+
+
+Building a new DB, current time: 11/09/2022 19:28:18
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hormiphora_californensis_MBUSv1/00_databases/blast/Hormiphora_californensis_MBUSv1.assembly.fasta
+New DB title:  Hormiphora_californensis_MBUSv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 44 sequences in 2.65985 seconds.
+
+
+[Wed 09 Nov 2022 07:28:21 PM EST]      CMD: makeblastdb -dbtype nucl -in Hormiphora_californensis_MBUSv1.genes.cds.fna
+
+
+Building a new DB, current time: 11/09/2022 19:28:21
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hormiphora_californensis_MBUSv1/00_databases/blast/Hormiphora_californensis_MBUSv1.genes.cds.fna
+New DB title:  Hormiphora_californensis_MBUSv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 14258 sequences in 1.02675 seconds.
+
+
+[Wed 09 Nov 2022 07:28:22 PM EST]      CMD: makeblastdb -dbtype prot -in Hormiphora_californensis_MBUSv1.genes.pep.faa
+
+
+Building a new DB, current time: 11/09/2022 19:28:22
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Hormiphora_californensis_MBUSv1/00_databases/blast/Hormiphora_californensis_MBUSv1.genes.pep.faa
+New DB title:  Hormiphora_californensis_MBUSv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 14258 sequences in 0.517098 seconds.
+
+
+
+=====================================================================
+Started: at Wed 09 Nov 2022 07:28:14 PM EST
+Finished: at Wed 09 Nov 2022 07:28:23 PM EST
+ExitStatus: 0
+=====================================================================

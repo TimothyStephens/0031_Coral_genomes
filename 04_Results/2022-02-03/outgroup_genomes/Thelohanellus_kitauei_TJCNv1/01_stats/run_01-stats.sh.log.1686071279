@@ -1,0 +1,17 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 01:07:59 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_genomes/Thelohanellus_kitauei_TJCNv1/01_stats
+=====================================================================
+
+[Tue 06 Jun 2023 01:08:01 PM EDT]      CMD: md5sum Thelohanellus_kitauei_TJCNv1.assembly.fasta Thelohanellus_kitauei_TJCNv1.genes.gff3 | tee Thelohanellus_kitauei_TJCNv1.genome_stats.job_md5sum_list.txt
+045c0c62ece5e05746493e52710aa766  Thelohanellus_kitauei_TJCNv1.assembly.fasta
+171d67e2c6c0e20cd8773436d83aed96  Thelohanellus_kitauei_TJCNv1.genes.gff3
+[Tue 06 Jun 2023 01:08:01 PM EDT]      CMD: ./genome_stats Thelohanellus_kitauei_TJCNv1.assembly.fasta Thelohanellus_kitauei_TJCNv1.genes.gff3 > Thelohanellus_kitauei_TJCNv1.GeneStats.tsv
+index file Thelohanellus_kitauei_TJCNv1.assembly.fasta.fai not found, generating...
+
+=====================================================================
+Started: at Tue 06 Jun 2023 01:07:59 PM EDT
+Finished: at Tue 06 Jun 2023 01:08:06 PM EDT
+ExitStatus: 0
+=====================================================================

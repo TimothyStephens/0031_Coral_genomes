@@ -1,0 +1,123 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Sat 26 Nov 2022 12:33:44 AM EST
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Ephydatia_muelleri_BCCAv1/10_functional_annotation
+=====================================================================
+
+[Sat 26 Nov 2022 12:33:45 AM EST]      CMD: md5sum Ephydatia_muelleri_BCCAv1.genes.pep.faa ../00_databases/Ephydatia_muelleri_BCCAv1.genes.pep.faa | tee Ephydatia_muelleri_BCCAv1.genes.pep.faa.emapper.job_md5sum_list.txt
+d9273b9bb8d4e2570358be2619aeb034  Ephydatia_muelleri_BCCAv1.genes.pep.faa
+d9273b9bb8d4e2570358be2619aeb034  ../00_databases/Ephydatia_muelleri_BCCAv1.genes.pep.faa
+[Sat 26 Nov 2022 12:33:46 AM EST]      CMD: emapper.py -i Ephydatia_muelleri_BCCAv1.genes.pep.faa --output Ephydatia_muelleri_BCCAv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem
+[1;32mFunctional annotation of hits...[0m
+0 2.384185791015625e-06 0.00 q/s (% mem usage: 2.00, % mem avail: 97.98)
+[1;34mTime to load the DB into memory: 38.89972901344299[0m
+#  emapper-2.1.6
+# emapper.py  -i Ephydatia_muelleri_BCCAv1.genes.pep.faa --output Ephydatia_muelleri_BCCAv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem
+[1;33m  /home/timothy/programs/eggnog-mapper-2.1.6/eggnogmapper/bin/diamond blastp -d /scratch/timothy/databases/eggnog-mapper-rel20211209/eggnog_proteins.dmnd -q /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Ephydatia_muelleri_BCCAv1/10_functional_annotation/Ephydatia_muelleri_BCCAv1.genes.pep.faa --threads 48 -o /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Ephydatia_muelleri_BCCAv1/10_functional_annotation/Ephydatia_muelleri_BCCAv1.genes.pep.faa.emapper.hits  --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDe novo scan of PFAM domains[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+CREATED ESL_REFORMAT DB. USING HMMSEARCH
+Namespace(Z=40000000, call_info='## Sat Nov 26 00:42:27 2022\n## emapper-2.1.6\n## /home/timothy/programs/eggnog-mapper-2.1.6/emapper.py -i Ephydatia_muelleri_BCCAv1.genes.pep.faa --output Ephydatia_muelleri_BCCAv1.genes.pep.faa --data_dir /scratch/timothy/databases/eggnog-mapper-rel20211209 --pfam_realign denovo --report_orthologs --no_file_comments --cpu 48 --dbmem\n##', clean_overlaps='hmmsearch_clans', cpu=48, cpus_per_worker=48, cut_ga=True, db='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Ephydatia_muelleri_BCCAv1/10_functional_annotation/tmp8eu1aead', dbtype='seqdb', end_port=53200, evalue=1e-10, excluded_taxa=None, maxhits=0, maxseqlen=None, no_file_comments=False, num_servers=1, num_workers=1, port=51700, qcov=0, qtype='hmm', report_no_hits=False, resume=False, scan_type='mem', score=None, servers_list=None, temp_dir='/scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Ephydatia_muelleri_BCCAv1/10_functional_annotation', trans_table=None, translate=False, usemem=True)
+500 911.3891463279724 0.55 q/s (% mem usage: 13.30, % mem avail: 86.69)
+1000 912.3360075950623 1.10 q/s (% mem usage: 13.30, % mem avail: 86.70)
+1500 913.1676728725433 1.64 q/s (% mem usage: 13.30, % mem avail: 86.70)
+2000 914.0236170291901 2.19 q/s (% mem usage: 13.30, % mem avail: 86.70)
+2500 914.662101984024 2.73 q/s (% mem usage: 13.30, % mem avail: 86.70)
+3000 919.9455623626709 3.26 q/s (% mem usage: 13.30, % mem avail: 86.70)
+3500 921.0566310882568 3.80 q/s (% mem usage: 13.30, % mem avail: 86.70)
+4000 921.9735624790192 4.34 q/s (% mem usage: 13.30, % mem avail: 86.70)
+4500 923.0604245662689 4.88 q/s (% mem usage: 13.30, % mem avail: 86.70)
+5000 923.8634135723114 5.41 q/s (% mem usage: 13.30, % mem avail: 86.70)
+5500 925.1752414703369 5.94 q/s (% mem usage: 13.30, % mem avail: 86.70)
+6000 925.9142360687256 6.48 q/s (% mem usage: 13.30, % mem avail: 86.70)
+6500 926.7239956855774 7.01 q/s (% mem usage: 13.30, % mem avail: 86.70)
+7000 927.8748052120209 7.54 q/s (% mem usage: 13.30, % mem avail: 86.70)
+7500 928.7374913692474 8.08 q/s (% mem usage: 13.30, % mem avail: 86.70)
+8000 929.9472646713257 8.60 q/s (% mem usage: 13.30, % mem avail: 86.70)
+8500 930.990594625473 9.13 q/s (% mem usage: 13.30, % mem avail: 86.70)
+9000 931.9341013431549 9.66 q/s (% mem usage: 13.30, % mem avail: 86.70)
+9500 932.5674641132355 10.19 q/s (% mem usage: 13.30, % mem avail: 86.70)
+10000 933.1810729503632 10.72 q/s (% mem usage: 13.30, % mem avail: 86.70)
+10500 934.2486176490784 11.24 q/s (% mem usage: 13.30, % mem avail: 86.70)
+11000 935.5484261512756 11.76 q/s (% mem usage: 13.30, % mem avail: 86.70)
+11500 936.6045389175415 12.28 q/s (% mem usage: 13.30, % mem avail: 86.70)
+12000 938.290730714798 12.79 q/s (% mem usage: 13.30, % mem avail: 86.70)
+12500 939.205451965332 13.31 q/s (% mem usage: 13.30, % mem avail: 86.70)
+13000 940.7070894241333 13.82 q/s (% mem usage: 13.30, % mem avail: 86.70)
+13500 941.8316118717194 14.33 q/s (% mem usage: 13.30, % mem avail: 86.70)
+14000 943.0307364463806 14.85 q/s (% mem usage: 13.30, % mem avail: 86.70)
+14500 944.3871791362762 15.35 q/s (% mem usage: 13.30, % mem avail: 86.70)
+15000 945.8597731590271 15.86 q/s (% mem usage: 13.30, % mem avail: 86.70)
+15500 946.9982755184174 16.37 q/s (% mem usage: 13.30, % mem avail: 86.70)
+16000 948.3175699710846 16.87 q/s (% mem usage: 13.30, % mem avail: 86.70)
+16500 949.8450975418091 17.37 q/s (% mem usage: 13.30, % mem avail: 86.70)
+17000 951.156183719635 17.87 q/s (% mem usage: 13.30, % mem avail: 86.70)
+17500 953.5079617500305 18.35 q/s (% mem usage: 13.30, % mem avail: 86.70)
+18000 954.9166657924652 18.85 q/s (% mem usage: 13.30, % mem avail: 86.70)
+18500 956.2508566379547 19.35 q/s (% mem usage: 13.30, % mem avail: 86.70)
+19000 957.3205754756927 19.85 q/s (% mem usage: 13.30, % mem avail: 86.70)
+19500 958.533932685852 20.34 q/s (% mem usage: 13.30, % mem avail: 86.70)
+20000 960.3805255889893 20.83 q/s (% mem usage: 13.30, % mem avail: 86.70)
+20500 961.8473031520844 21.31 q/s (% mem usage: 13.30, % mem avail: 86.70)
+21000 963.3316864967346 21.80 q/s (% mem usage: 13.30, % mem avail: 86.70)
+21500 965.0042622089386 22.28 q/s (% mem usage: 13.30, % mem avail: 86.70)
+22000 966.5531001091003 22.76 q/s (% mem usage: 13.30, % mem avail: 86.70)
+22500 968.1552953720093 23.24 q/s (% mem usage: 13.30, % mem avail: 86.70)
+23000 969.8461654186249 23.72 q/s (% mem usage: 13.30, % mem avail: 86.70)
+23500 971.3813374042511 24.19 q/s (% mem usage: 13.30, % mem avail: 86.70)
+24000 973.0136985778809 24.67 q/s (% mem usage: 13.30, % mem avail: 86.70)
+24500 973.8928308486938 25.16 q/s (% mem usage: 13.30, % mem avail: 86.70)
+25000 974.7928569316864 25.65 q/s (% mem usage: 13.30, % mem avail: 86.70)
+25500 975.5977025032043 26.14 q/s (% mem usage: 13.30, % mem avail: 86.70)
+26000 976.6800866127014 26.62 q/s (% mem usage: 13.30, % mem avail: 86.70)
+26500 977.906492471695 27.10 q/s (% mem usage: 13.30, % mem avail: 86.70)
+27000 978.9681105613708 27.58 q/s (% mem usage: 13.30, % mem avail: 86.70)
+27500 980.3966066837311 28.05 q/s (% mem usage: 13.30, % mem avail: 86.70)
+28000 981.7433407306671 28.52 q/s (% mem usage: 13.30, % mem avail: 86.70)
+28500 983.1789758205414 28.99 q/s (% mem usage: 13.30, % mem avail: 86.70)
+28699 984.2097954750061 29.16 q/s (% mem usage: 13.20, % mem avail: 86.81)
+[32mDone[0m
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Ephydatia_muelleri_BCCAv1/10_functional_annotation/Ephydatia_muelleri_BCCAv1.genes.pep.faa.emapper.hits
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Ephydatia_muelleri_BCCAv1/10_functional_annotation/Ephydatia_muelleri_BCCAv1.genes.pep.faa.emapper.seed_orthologs
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Ephydatia_muelleri_BCCAv1/10_functional_annotation/Ephydatia_muelleri_BCCAv1.genes.pep.faa.emapper.annotations
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Ephydatia_muelleri_BCCAv1/10_functional_annotation/Ephydatia_muelleri_BCCAv1.genes.pep.faa.emapper.pfam
+   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Ephydatia_muelleri_BCCAv1/10_functional_annotation/Ephydatia_muelleri_BCCAv1.genes.pep.faa.emapper.orthologs
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using emapper-2.1.6 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 28699
+Total time: 1378 secs
+FINISHED
+[Sat 26 Nov 2022 12:56:49 AM EST]      CMD: rm -fr emappertmp_*
+
+=====================================================================
+Started: at Sat 26 Nov 2022 12:33:44 AM EST
+Finished: at Sat 26 Nov 2022 12:56:49 AM EST
+ExitStatus: 0
+=====================================================================

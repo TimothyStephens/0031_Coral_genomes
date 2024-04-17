@@ -1,0 +1,21 @@
+=====================================================================
+Slurm config version 0.4
+Starting on hal0123.amarel.rutgers.edu at Thu Nov  3 00:53:37 EDT 2022
+Nodelist hal0123
+Current JOB_ID is 22878612
+Current array index number is NA
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Stylissa_carteri_RSSAv1/05_RepeatMasker
+=====================================================================
+
+[Fri Nov  4 16:02:50 EDT 2022]   - Done!
+
+=====================================================================
+Started: at Thu Nov  3 00:53:37 EDT 2022 on hal0123.amarel.rutgers.edu
+Finished: at Fri Nov  4 16:02:50 EDT 2022
+ExitStatus: 0
+
+   JobName   NTasks  AllocCPUS     ReqMem     MaxRSS  MaxVMSize  MaxDiskRead MaxDiskWrite   TotalCPU    CPUTime    Elapsed 
+---------- -------- ---------- ---------- ---------- ---------- ------------ ------------ ---------- ---------- ---------- 
+ AmarelJob                  24      120Gn                                                   00:00:00 39-03:41:36 1-15:09:14 
+    extern        1         24      120Gn                                                   00:00:00 39-03:41:36 1-15:09:14 
+=====================================================================

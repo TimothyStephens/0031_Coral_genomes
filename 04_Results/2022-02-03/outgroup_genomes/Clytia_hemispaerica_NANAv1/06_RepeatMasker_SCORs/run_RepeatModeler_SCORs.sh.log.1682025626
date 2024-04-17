@@ -1,0 +1,33 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 20 Apr 2023 05:20:26 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Clytia_hemispaerica_NANAv1/06_RepeatMasker_SCORs
+=====================================================================
+
+[Thu 20 Apr 2023 05:20:28 PM EDT]      CMD: sed -e 's/Clytia_hemispaerica_NANAv1___//' Clytia_hemispaerica_NANAv1.assembly.fasta > genome.fa
+[Thu 20 Apr 2023 05:20:32 PM EDT]      CMD: RepeatMasker -no_is -nolow -a -x -gff -pa 18 -lib SCOR_consensus_sequences.fa genome.fa 1> RepeatMasker.log 2>&1
+[Thu 20 Apr 2023 05:26:54 PM EDT]      CMD: /home/timothy/programs/RepeatAnalysis/RepeatMasker-4.1.2-p1/util/calcDivergenceFromAlign.pl -s genome.fa.divsum genome.fa.align
+.[Thu 20 Apr 2023 05:26:54 PM EDT]      CMD: bedtools maskfasta -fi genome.fa -fo genome.fa.softmasked -bed genome.fa.out.gff -soft
+[Thu 20 Apr 2023 05:26:55 PM EDT]      CMD: sed -e 's/^>/>Clytia_hemispaerica_NANAv1___/' genome.fa.softmasked > Clytia_hemispaerica_NANAv1.assembly.fasta.repmaskSCORs.softmasked
+[Thu 20 Apr 2023 05:26:56 PM EDT]      CMD: sed -e 's/^>/>Clytia_hemispaerica_NANAv1___/' genome.fa.masked | reformat.sh in=stdin.fa out=stdout.fa fastawrap=0 > Clytia_hemispaerica_NANAv1.assembly.fasta.repmaskSCORs.masked
+java -ea -Xms300m -cp /home/timothy/programs/bbmap/current/ jgi.ReformatReads in=stdin.fa out=stdout.fa fastawrap=0
+Executing jgi.ReformatReads [in=stdin.fa, out=stdout.fa, fastawrap=0]
+
+Input is being processed as unpaired
+Input:                  	7644 reads          	445210146 bases
+Output:                 	7644 reads (100.00%) 	445210146 bases (100.00%)
+
+Time:                         	5.461 seconds.
+Reads Processed:        7644 	1.40k reads/sec
+Bases Processed:        445m 	81.52m bases/sec
+[Thu 20 Apr 2023 05:27:02 PM EDT]      CMD: awk -F'\t' -vPREFIX=Clytia_hemispaerica_NANAv1 '{ if($1!~"^#") {print PREFIX"___"$0} else {print $0} }' genome.fa.out.gff > Clytia_hemispaerica_NANAv1.assembly.fasta.repmaskSCORs.out.gff
+[Thu 20 Apr 2023 05:27:02 PM EDT]      CMD: cp genome.fa.divsum Clytia_hemispaerica_NANAv1.assembly.fasta.repmaskSCORs.divsum
+[Thu 20 Apr 2023 05:27:02 PM EDT]      CMD: cp genome.fa.tbl Clytia_hemispaerica_NANAv1.assembly.fasta.repmaskSCORs.tbl
+[Thu 20 Apr 2023 05:27:02 PM EDT]      CMD: tail -n 72 Clytia_hemispaerica_NANAv1.assembly.fasta.repmaskSCORs.divsum | sed -e 's/ $//' > Clytia_hemispaerica_NANAv1.assembly.fasta.repmaskSCORs.divsum.Kimura_distance
+[Thu 20 Apr 2023 05:27:02 PM EDT]      CMD: gzip genome.fa.align genome.fa.divsum genome.fa.masked genome.fa.out genome.fa.out.gff genome.fa.softmasked genome.fa.tbl
+
+=====================================================================
+Started: at Thu 20 Apr 2023 05:20:26 PM EDT
+Finished: at Thu 20 Apr 2023 05:29:45 PM EDT
+ExitStatus: 0
+=====================================================================

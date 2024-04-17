@@ -1,0 +1,32 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu Mar 10 19:15:18 EST 2022
+Working directory is /scratch/ts942/projects/0031_Coral_genomes/03_Analysis/2022-02-03/Acropora_millepora_JSIDv2.1/04_RepeatModeler
+=====================================================================
+
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+[Thu Mar 10 19:15:19 EST 2022]      CMD: RepeatModeler -database Acropora_millepora_JSIDv2.1.assembly.fasta.RMDB -pa 5 -LTRStruct -recoverDir RM_11823.WedMar90245522022 1>> RepeatModeler.log 2>&1
+
+=====================================================================
+Started: at Thu Mar 10 19:15:18 EST 2022
+Finished: at Fri Mar 11 22:57:53 EST 2022
+ExitStatus: 0
+=====================================================================

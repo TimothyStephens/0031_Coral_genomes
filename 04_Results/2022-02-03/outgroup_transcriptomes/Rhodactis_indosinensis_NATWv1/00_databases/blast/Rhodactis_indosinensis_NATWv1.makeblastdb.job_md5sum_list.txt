@@ -1,0 +1,2 @@
+982e76f95e41feb3a29e45c8141d136f  Rhodactis_indosinensis_NATWv1.transcripts.cds.fna
+67e5fec9a470c4dcd01462f368cf0a04  Rhodactis_indosinensis_NATWv1.transcripts.pep.faa

@@ -1,0 +1,2 @@
+20a6fe8d92e14a7987a1d911ea370f9f  Porites_compressa_KBHIv1.genes.pep.faa
+20a6fe8d92e14a7987a1d911ea370f9f  ../00_databases/Porites_compressa_KBHIv1.genes.pep.faa

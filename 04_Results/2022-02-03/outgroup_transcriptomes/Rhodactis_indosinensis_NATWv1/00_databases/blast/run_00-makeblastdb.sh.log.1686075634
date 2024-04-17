@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 02:20:34 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Rhodactis_indosinensis_NATWv1/00_databases/blast
+=====================================================================
+
+[Tue 06 Jun 2023 02:20:35 PM EDT]      CMD: md5sum Rhodactis_indosinensis_NATWv1.transcripts.cds.fna Rhodactis_indosinensis_NATWv1.transcripts.pep.faa | tee Rhodactis_indosinensis_NATWv1.makeblastdb.job_md5sum_list.txt
+982e76f95e41feb3a29e45c8141d136f  Rhodactis_indosinensis_NATWv1.transcripts.cds.fna
+67e5fec9a470c4dcd01462f368cf0a04  Rhodactis_indosinensis_NATWv1.transcripts.pep.faa
+[Tue 06 Jun 2023 02:20:35 PM EDT]      CMD: makeblastdb -dbtype nucl -in Rhodactis_indosinensis_NATWv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 06/06/2023 14:20:35
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Rhodactis_indosinensis_NATWv1/00_databases/blast/Rhodactis_indosinensis_NATWv1.transcripts.cds.fna
+New DB title:  Rhodactis_indosinensis_NATWv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 19253 sequences in 0.369352 seconds.
+
+
+[Tue 06 Jun 2023 02:20:36 PM EDT]      CMD: makeblastdb -dbtype prot -in Rhodactis_indosinensis_NATWv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 06/06/2023 14:20:36
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Rhodactis_indosinensis_NATWv1/00_databases/blast/Rhodactis_indosinensis_NATWv1.transcripts.pep.faa
+New DB title:  Rhodactis_indosinensis_NATWv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 19253 sequences in 0.301667 seconds.
+
+
+
+=====================================================================
+Started: at Tue 06 Jun 2023 02:20:34 PM EDT
+Finished: at Tue 06 Jun 2023 02:20:36 PM EDT
+ExitStatus: 0
+=====================================================================

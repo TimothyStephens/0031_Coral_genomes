@@ -1,0 +1,2 @@
+5bbc9ad21a9357ff3810b6b272854166  Acropora_florida_SLJPv1.genes.pep.faa
+a78ada70b06f614e898b1f02ddcdf82f  ../00_databases/Acropora_florida_SLJPv1.genes.pep.faa

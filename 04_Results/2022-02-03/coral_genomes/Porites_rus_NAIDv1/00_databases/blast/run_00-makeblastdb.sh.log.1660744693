@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 17 Aug 2022 09:58:13 AM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_rus_NAIDv1/00_databases/blast
+=====================================================================
+
+[Wed 17 Aug 2022 09:58:15 AM EDT]      CMD: md5sum Porites_rus_NAIDv1.assembly.fasta Porites_rus_NAIDv1.genes.cds.fna Porites_rus_NAIDv1.genes.pep.faa | tee Porites_rus_NAIDv1.makeblastdb.job_md5sum_list.txt
+74624a2d287ddb7f32c852f6a8df36f9  Porites_rus_NAIDv1.assembly.fasta
+54dd55c39a3e3d7353eb858018a0f55f  Porites_rus_NAIDv1.genes.cds.fna
+75faf2988c020c0386ad30aefe7daebe  Porites_rus_NAIDv1.genes.pep.faa
+[Wed 17 Aug 2022 09:58:16 AM EDT]      CMD: makeblastdb -dbtype nucl -in Porites_rus_NAIDv1.assembly.fasta
+
+
+Building a new DB, current time: 08/17/2022 09:58:16
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_rus_NAIDv1/00_databases/blast/Porites_rus_NAIDv1.assembly.fasta
+New DB title:  Porites_rus_NAIDv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 14982 sequences in 12.8787 seconds.
+
+
+[Wed 17 Aug 2022 09:58:30 AM EDT]      CMD: makeblastdb -dbtype nucl -in Porites_rus_NAIDv1.genes.cds.fna
+
+
+Building a new DB, current time: 08/17/2022 09:58:30
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_rus_NAIDv1/00_databases/blast/Porites_rus_NAIDv1.genes.cds.fna
+New DB title:  Porites_rus_NAIDv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 39453 sequences in 1.89475 seconds.
+
+
+[Wed 17 Aug 2022 09:58:32 AM EDT]      CMD: makeblastdb -dbtype prot -in Porites_rus_NAIDv1.genes.pep.faa
+
+
+Building a new DB, current time: 08/17/2022 09:58:32
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/coral_genomes/Porites_rus_NAIDv1/00_databases/blast/Porites_rus_NAIDv1.genes.pep.faa
+New DB title:  Porites_rus_NAIDv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 39453 sequences in 1.4617 seconds.
+
+
+
+=====================================================================
+Started: at Wed 17 Aug 2022 09:58:13 AM EDT
+Finished: at Wed 17 Aug 2022 09:58:34 AM EDT
+ExitStatus: 0
+=====================================================================

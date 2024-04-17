@@ -1,0 +1,46 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 08:03:03 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Mnemiopsis_leidyi_WHUSv2.2/00_databases
+=====================================================================
+
+[Tue 25 Oct 2022 08:03:04 PM EDT]      CMD: samtools faidx Mnemiopsis_leidyi_WHUSv2.2.assembly.fasta
+[Tue 25 Oct 2022 08:03:05 PM EDT]      CMD: samtools faidx Mnemiopsis_leidyi_WHUSv2.2.genes.cds.fna
+[Tue 25 Oct 2022 08:03:06 PM EDT]      CMD: samtools faidx Mnemiopsis_leidyi_WHUSv2.2.genes.pep.faa
+[Tue 25 Oct 2022 08:03:06 PM EDT]      CMD: gatk CreateSequenceDictionary --REFERENCE Mnemiopsis_leidyi_WHUSv2.2.assembly.fasta
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar CreateSequenceDictionary --REFERENCE Mnemiopsis_leidyi_WHUSv2.2.assembly.fasta
+INFO	2022-10-25 20:03:08	CreateSequenceDictionary	Output dictionary will be written in Mnemiopsis_leidyi_WHUSv2.2.assembly.dict
+20:03:08.542 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Tue Oct 25 20:03:08 EDT 2022] CreateSequenceDictionary --REFERENCE Mnemiopsis_leidyi_WHUSv2.2.assembly.fasta --TRUNCATE_NAMES_AT_WHITESPACE true --NUM_SEQUENCES 2147483647 --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+Oct 25, 2022 8:03:08 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+[Tue Oct 25 20:03:08 EDT 2022] Executing as timothy@coral on Linux 5.4.0-121-generic amd64; OpenJDK 64-Bit Server VM 11.0.16+8-post-Ubuntu-0ubuntu120.04; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.2.0.0
+[Tue Oct 25 20:03:09 EDT 2022] picard.sam.CreateSequenceDictionary done. Elapsed time: 0.02 minutes.
+Runtime.totalMemory()=3183476736
+Tool returned:
+0
+[Tue 25 Oct 2022 08:03:09 PM EDT]      CMD: gatk CreateSequenceDictionary --REFERENCE Mnemiopsis_leidyi_WHUSv2.2.genes.cds.fna
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar CreateSequenceDictionary --REFERENCE Mnemiopsis_leidyi_WHUSv2.2.genes.cds.fna
+INFO	2022-10-25 20:03:11	CreateSequenceDictionary	Output dictionary will be written in Mnemiopsis_leidyi_WHUSv2.2.genes.cds.dict
+20:03:11.953 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Tue Oct 25 20:03:11 EDT 2022] CreateSequenceDictionary --REFERENCE Mnemiopsis_leidyi_WHUSv2.2.genes.cds.fna --TRUNCATE_NAMES_AT_WHITESPACE true --NUM_SEQUENCES 2147483647 --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+Oct 25, 2022 8:03:12 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+[Tue Oct 25 20:03:12 EDT 2022] Executing as timothy@coral on Linux 5.4.0-121-generic amd64; OpenJDK 64-Bit Server VM 11.0.16+8-post-Ubuntu-0ubuntu120.04; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.2.0.0
+[Tue Oct 25 20:03:13 EDT 2022] picard.sam.CreateSequenceDictionary done. Elapsed time: 0.02 minutes.
+Runtime.totalMemory()=2155872256
+Tool returned:
+0
+[Tue 25 Oct 2022 08:03:13 PM EDT]      CMD: stats.sh -Xmx12g Mnemiopsis_leidyi_WHUSv2.2.assembly.fasta 1>Mnemiopsis_leidyi_WHUSv2.2.assembly.fasta.stats 2>&1
+[Tue 25 Oct 2022 08:03:15 PM EDT]      CMD: stats.sh -Xmx12g Mnemiopsis_leidyi_WHUSv2.2.genes.cds.fna  1>Mnemiopsis_leidyi_WHUSv2.2.genes.cds.fna.stats 2>&1
+[Tue 25 Oct 2022 08:03:16 PM EDT]      CMD: md5sum Mnemiopsis_leidyi_WHUSv2.2.assembly.fasta Mnemiopsis_leidyi_WHUSv2.2.genes.cds.fna Mnemiopsis_leidyi_WHUSv2.2.genes.pep.faa Mnemiopsis_leidyi_WHUSv2.2.genes.gff3 > Mnemiopsis_leidyi_WHUSv2.2.md5sum_list.txt
+
+=====================================================================
+Started: at Tue 25 Oct 2022 08:03:03 PM EDT
+Finished: at Tue 25 Oct 2022 08:03:16 PM EDT
+ExitStatus: 0
+=====================================================================

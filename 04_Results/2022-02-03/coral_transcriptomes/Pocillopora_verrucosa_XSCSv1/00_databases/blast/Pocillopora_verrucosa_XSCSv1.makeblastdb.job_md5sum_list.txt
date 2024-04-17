@@ -1,0 +1,2 @@
+77fc6241d193d03ec409e634a367bb7c  Pocillopora_verrucosa_XSCSv1.transcripts.cds.fna
+ff683ee267b99f78dfea08c4efd6f7f8  Pocillopora_verrucosa_XSCSv1.transcripts.pep.faa

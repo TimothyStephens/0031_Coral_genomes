@@ -1,0 +1,2 @@
+54a8fd187c6682c49f5b6362f4a87ea5  Astreopora_sp_REEFv1.transcripts.cds.fna
+e8c4b736c9c49d338adca4461571549b  Astreopora_sp_REEFv1.transcripts.pep.faa

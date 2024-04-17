@@ -1,0 +1,52 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 25 Oct 2022 08:06:45 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Ephydatia_muelleri_BCCAv1/00_databases/blast
+=====================================================================
+
+[Tue 25 Oct 2022 08:06:48 PM EDT]      CMD: md5sum Ephydatia_muelleri_BCCAv1.assembly.fasta Ephydatia_muelleri_BCCAv1.genes.cds.fna Ephydatia_muelleri_BCCAv1.genes.pep.faa | tee Ephydatia_muelleri_BCCAv1.makeblastdb.job_md5sum_list.txt
+91f2c89711ef040acf38cacb6580e6c7  Ephydatia_muelleri_BCCAv1.assembly.fasta
+374cefab4adbdb0cfd1b349ba10c7e8f  Ephydatia_muelleri_BCCAv1.genes.cds.fna
+d9273b9bb8d4e2570358be2619aeb034  Ephydatia_muelleri_BCCAv1.genes.pep.faa
+[Tue 25 Oct 2022 08:06:50 PM EDT]      CMD: makeblastdb -dbtype nucl -in Ephydatia_muelleri_BCCAv1.assembly.fasta
+
+
+Building a new DB, current time: 10/25/2022 20:06:50
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Ephydatia_muelleri_BCCAv1/00_databases/blast/Ephydatia_muelleri_BCCAv1.assembly.fasta
+New DB title:  Ephydatia_muelleri_BCCAv1.assembly.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1444 sequences in 3.78131 seconds.
+
+
+[Tue 25 Oct 2022 08:06:54 PM EDT]      CMD: makeblastdb -dbtype nucl -in Ephydatia_muelleri_BCCAv1.genes.cds.fna
+
+
+Building a new DB, current time: 10/25/2022 20:06:54
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Ephydatia_muelleri_BCCAv1/00_databases/blast/Ephydatia_muelleri_BCCAv1.genes.cds.fna
+New DB title:  Ephydatia_muelleri_BCCAv1.genes.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 39245 sequences in 0.938504 seconds.
+
+
+[Tue 25 Oct 2022 08:06:55 PM EDT]      CMD: makeblastdb -dbtype prot -in Ephydatia_muelleri_BCCAv1.genes.pep.faa
+
+
+Building a new DB, current time: 10/25/2022 20:06:55
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes/03_Analysis/2022-02-03/outgroup_genomes/Ephydatia_muelleri_BCCAv1/00_databases/blast/Ephydatia_muelleri_BCCAv1.genes.pep.faa
+New DB title:  Ephydatia_muelleri_BCCAv1.genes.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 39245 sequences in 0.705266 seconds.
+
+
+
+=====================================================================
+Started: at Tue 25 Oct 2022 08:06:45 PM EDT
+Finished: at Tue 25 Oct 2022 08:06:56 PM EDT
+ExitStatus: 0
+=====================================================================

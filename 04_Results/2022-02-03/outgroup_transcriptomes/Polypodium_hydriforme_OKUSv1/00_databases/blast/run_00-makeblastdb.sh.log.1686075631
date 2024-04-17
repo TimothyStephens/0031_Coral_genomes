@@ -1,0 +1,39 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 06 Jun 2023 02:20:31 PM EDT
+Working directory is /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Polypodium_hydriforme_OKUSv1/00_databases/blast
+=====================================================================
+
+[Tue 06 Jun 2023 02:20:33 PM EDT]      CMD: md5sum Polypodium_hydriforme_OKUSv1.transcripts.cds.fna Polypodium_hydriforme_OKUSv1.transcripts.pep.faa | tee Polypodium_hydriforme_OKUSv1.makeblastdb.job_md5sum_list.txt
+ced92c9395dce0fa69863327630fd0d6  Polypodium_hydriforme_OKUSv1.transcripts.cds.fna
+4e9024c60590c0708f60562a8ac9a783  Polypodium_hydriforme_OKUSv1.transcripts.pep.faa
+[Tue 06 Jun 2023 02:20:33 PM EDT]      CMD: makeblastdb -dbtype nucl -in Polypodium_hydriforme_OKUSv1.transcripts.cds.fna
+
+
+Building a new DB, current time: 06/06/2023 14:20:33
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Polypodium_hydriforme_OKUSv1/00_databases/blast/Polypodium_hydriforme_OKUSv1.transcripts.cds.fna
+New DB title:  Polypodium_hydriforme_OKUSv1.transcripts.cds.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 18882 sequences in 0.324455 seconds.
+
+
+[Tue 06 Jun 2023 02:20:33 PM EDT]      CMD: makeblastdb -dbtype prot -in Polypodium_hydriforme_OKUSv1.transcripts.pep.faa
+
+
+Building a new DB, current time: 06/06/2023 14:20:33
+New DB name:   /scratch/timothy/projects/0031_Coral_genomes_NEW/03_Analysis/2022-02-03/outgroup_transcriptomes/Polypodium_hydriforme_OKUSv1/00_databases/blast/Polypodium_hydriforme_OKUSv1.transcripts.pep.faa
+New DB title:  Polypodium_hydriforme_OKUSv1.transcripts.pep.faa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 18882 sequences in 0.277073 seconds.
+
+
+
+=====================================================================
+Started: at Tue 06 Jun 2023 02:20:31 PM EDT
+Finished: at Tue 06 Jun 2023 02:20:34 PM EDT
+ExitStatus: 0
+=====================================================================

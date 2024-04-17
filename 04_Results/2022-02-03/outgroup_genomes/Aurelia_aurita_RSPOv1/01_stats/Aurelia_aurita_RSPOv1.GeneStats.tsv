@@ -1,0 +1,43 @@
+# Files
+Genome file	Aurelia_aurita_RSPOv1.assembly.fasta
+GFF file	Aurelia_aurita_RSPOv1.genes.gff3
+
+# Genome stats
+Total scaffold length (bp)	428705645
+Total contig length (bp)	366762729
+Number of scaffolds	7744
+Number of contigs	48140
+N50 of scaffolds (bp)	181220
+N50 of contigs (bp)	12470
+Percent gaps	14.449
+Percent GC	37.58
+
+# Gene stats (combined CDS+introns)
+Number of genes	30161
+Total gene length	176383281
+Average gene length (bp)	5848.06
+Gene percent GC	37.51
+
+# Transcript stats (based on CDS features)
+Average transcript length (bp)	933.451
+Average number of CDS per gene/transcript	3.99944
+
+# CDS stats
+Number of CDS	120627
+Total CDS length (bp)	28153830
+Average CDS length (bp)	233.396
+Number of single-CDS transcripts	12353
+Percent single-CDS transcripts	40.9569
+CDS percent GC	41.48
+
+# Intron stats (predicted between CDS features)
+Number of introns	90466
+Total intron length (bp)	148229451
+Average intron length (bp)	1638.51
+Intron percent GC	36.65
+
+# Intergenic stats (predicted between genes built from CDS features)
+Number of intergenic regions	24003
+Total intergenic region length (bp)	185727425
+Average intergenic region length (bp)	7737.68
+Intergenic region percent GC	37.55
